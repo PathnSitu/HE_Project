@@ -1,0 +1,45 @@
+--------------------------------------------------------------------------
+Source : While Signing Up the User System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'SignoutTme'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at HematoxinandEosin.LoginScreen.btn_SignIn_Click(Object sender, EventArgs e) in G:\projects\mukesh\HematoxinandEosin\HematoxinandEosin\LoginScreen.cs:line 530
+ClientConnectionId:024db129-21d9-4834-9d70-2cdc6ba8f1a5
+Error Number:207,State:1,Class:16
+Method : In Frm_Login form while clicking on SignUp Button
+Logged Date & time : 08 February 2023 18:29
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : While Signing Up the User System.Data.SqlClient.SqlException (0x80131904): There are more columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at HematoxinandEosin.LoginScreen.btn_SignIn_Click(Object sender, EventArgs e) in G:\projects\mukesh\HematoxinandEosin\HematoxinandEosin\LoginScreen.cs:line 530
+ClientConnectionId:046dab14-f6bf-4af6-afbb-c2ffcc596793
+Error Number:109,State:1,Class:15
+Method : In Frm_Login form while clicking on SignUp Button
+Logged Date & time : 08 February 2023 18:30
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : While Signing Up the User System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'SignoutTme'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at HematoxinandEosin.LoginScreen.btn_SignIn_Click(Object sender, EventArgs e) in G:\projects\mukesh\HematoxinandEosin\HematoxinandEosin\LoginScreen.cs:line 530
+ClientConnectionId:3dc9137b-519d-4bf8-9833-433d1c85922d
+Error Number:207,State:1,Class:16
+Method : In Frm_Login form while clicking on SignUp Button
+Logged Date & time : 08 February 2023 18:31
+--------------------------------------------------------------------------

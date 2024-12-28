@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33027.164
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HematoxinandEosin", "HematoxinandEosin\HematoxinandEosin.csproj", "{5D77B970-3A21-4848-A75E-FE5ED9276036}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "HESetup_1", "HESetup_1\HESetup_1.vdproj", "{93AE5C09-C69E-40AC-94C0-EA5381B7E943}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D77B970-3A21-4848-A75E-FE5ED9276036}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D77B970-3A21-4848-A75E-FE5ED9276036}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D77B970-3A21-4848-A75E-FE5ED9276036}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D77B970-3A21-4848-A75E-FE5ED9276036}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93AE5C09-C69E-40AC-94C0-EA5381B7E943}.Debug|Any CPU.ActiveCfg = Debug
+		{93AE5C09-C69E-40AC-94C0-EA5381B7E943}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C7591D5A-7584-4B66-8249-1A823A651E55}
+	EndGlobalSection
+EndGlobal

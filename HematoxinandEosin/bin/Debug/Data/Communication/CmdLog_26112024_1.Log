@@ -1,0 +1,71 @@
+Device Intialization started * 26-11-2024 12:41:30.63
+Command * HEATER ON - #0,12,1*0ae6
+ * 26-11-2024 12:41:30.175
+CRC-Response  - 0,12,F000*f8e8 * 26-11-2024 12:41:30.294
+Command * SET TEMPERATURE - #1,10,37*44da
+ * 26-11-2024 12:41:31.549
+CRC-Response  - 1,10,F000*8ae4 * 26-11-2024 12:41:36.659
+Command * DOOR STATUS - #2,9*dd0c
+ * 26-11-2024 12:42:54.240
+Response  - 2,9,F000,11*a877 * 26-11-2024 12:42:54.481
+Command * HEATER ON - #3,12,1*39e6
+ * 26-11-2024 12:42:57.404
+Response  - 3,12,F000*08fc * 26-11-2024 12:42:57.574
+Command * HEATER OFF - #4,12,0*4e26
+ * 26-11-2024 12:42:59.296
+Response  - 4,12,F000*38da * 26-11-2024 12:42:59.466
+Device Intialization started * 26-11-2024 13:04:36.250
+Command * HEATER ON - #0,12,1*0ae6
+ * 26-11-2024 13:04:36.652
+CRC-Response  - 0,12,F000*f8e8 * 26-11-2024 13:04:36.820
+Command * SET TEMPERATURE - #1,10,37*44da
+ * 26-11-2024 13:04:37.999
+CRC-Response  - 1,10,F000*8ae4 * 26-11-2024 13:05:23.890
+Command * DOOR STATUS - #2,9*dd0c
+ * 26-11-2024 13:05:35.182
+Response  - 2,9,F000,11*a877 * 26-11-2024 13:05:35.353
+Command * HEATER ON - #3,12,1*39e6
+ * 26-11-2024 13:05:36.848
+Response  - 3,12,F000*08fc * 26-11-2024 13:05:37.16
+Command * HEATER OFF - #4,12,0*4e26
+ * 26-11-2024 13:05:37.637
+Response  - 4,12,F000*38da * 26-11-2024 13:05:37.806
+Device Intialization started * 26-11-2024 13:07:44.188
+Command * HEATER ON - #0,12,1*0ae6
+ * 26-11-2024 13:07:44.306
+CRC-Response  - 0,12,F000*f8e8 * 26-11-2024 13:07:44.456
+Command * SET TEMPERATURE - #1,10,37*44da
+ * 26-11-2024 13:07:45.565
+CRC-Response  - 1,10,F000*8ae4 * 26-11-2024 13:08:06.969
+Command * DOOR STATUS - #2,9*dd0c
+ * 26-11-2024 13:09:40.74
+Response  - 2,9,F000,11*a877 * 26-11-2024 13:09:40.323
+Command * HEATER ON - #3,12,1*39e6
+ * 26-11-2024 13:09:41.801
+Response  - 3,12,F000*08fc * 26-11-2024 13:09:41.964
+Command * HEATER OFF - #4,12,0*4e26
+ * 26-11-2024 13:09:42.415
+Response  - 4,12,F000*38da * 26-11-2024 13:09:42.583
+Device Intialization started * 26-11-2024 13:10:16.762
+Command * HEATER ON - #5,12,1*5fe6
+ * 26-11-2024 13:10:17.497
+CRC-Response  - 5,12,F000*a8d7 * 26-11-2024 13:10:17.688
+Command * SET TEMPERATURE - #6,10,37*84ac
+ * 26-11-2024 13:10:18.563
+CRC-Response  - 6,10,F000*bac2 * 26-11-2024 13:10:18.669
+Device Intialization started * 26-11-2024 13:12:55.217
+Command * HEATER ON - #0,12,1*0ae6
+ * 26-11-2024 13:12:55.335
+CRC-Response  - 0,12,F000*f8e8 * 26-11-2024 13:12:55.465
+Command * SET TEMPERATURE - #1,10,37*44da
+ * 26-11-2024 13:13:00.108
+CRC-Response  - 1,10,F000*8ae4 * 26-11-2024 13:13:10.158
+Command * DOOR STATUS - #2,9*dd0c
+ * 26-11-2024 13:14:10.145
+Response  - 2,9,F000,11*a877 * 26-11-2024 13:14:10.406
+Command * HEATER ON - #3,12,1*39e6
+ * 26-11-2024 13:14:11.154
+Response  - 3,12,F000*08fc * 26-11-2024 13:14:11.315
+Command * HEATER OFF - #4,12,0*4e26
+ * 26-11-2024 13:14:11.780
+Response  - 4,12,F000*38da * 26-11-2024 13:14:11.951
