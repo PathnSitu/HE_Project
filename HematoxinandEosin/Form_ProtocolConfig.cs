@@ -284,8 +284,7 @@ namespace HematoxinandEosin
             btnDelete.Enabled = false;
             btnModify.Enabled = false;
             btnSave.Enabled = true;
-        }
-           
+        }           
         private void Clear()
         {
             cmbProtocol.Text = String.Empty;

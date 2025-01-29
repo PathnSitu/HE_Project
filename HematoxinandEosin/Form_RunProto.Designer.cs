@@ -136,6 +136,7 @@ namespace HematoxinandEosin
             this.htr2_tmpincub = new System.Windows.Forms.Timer(this.components);
             this.htr3_tmpincub = new System.Windows.Forms.Timer(this.components);
             this.tmr_next_rack = new System.Windows.Forms.Timer(this.components);
+            this.tmr_opencmd_toload_Nxtrack = new System.Windows.Forms.Timer(this.components);
             this.panel_Jarscalibration.SuspendLayout();
             this.pnl_Jars.SuspendLayout();
             this.SuspendLayout();
@@ -389,7 +390,7 @@ namespace HematoxinandEosin
             // 
             this.pnl_Jars.Controls.Add(this.btn_Home);
             this.pnl_Jars.Controls.Add(this.jar_Large);
-            this.pnl_Jars.Location = new System.Drawing.Point(704, 95);
+            this.pnl_Jars.Location = new System.Drawing.Point(339, 89);
             this.pnl_Jars.Name = "pnl_Jars";
             this.pnl_Jars.Size = new System.Drawing.Size(203, 420);
             this.pnl_Jars.TabIndex = 78;
@@ -567,7 +568,7 @@ namespace HematoxinandEosin
             this.J26.ProcessName = "";
             this.J26.RackColor = System.Drawing.Color.Red;
             this.J26.RackNumber = "J26";
-            this.J26.ReagentName = "XYLENE-3";
+            this.J26.ReagentName = "";
             this.J26.Size = new System.Drawing.Size(70, 140);
             this.J26.TabIndex = 46;
             this.J26.TaskCompletionTime = "";
@@ -648,7 +649,7 @@ namespace HematoxinandEosin
             this.J25.ProcessName = "";
             this.J25.RackColor = System.Drawing.Color.Red;
             this.J25.RackNumber = "J25";
-            this.J25.ReagentName = "XYLENE-2";
+            this.J25.ReagentName = "";
             this.J25.Size = new System.Drawing.Size(70, 140);
             this.J25.TabIndex = 43;
             this.J25.TaskCompletionTime = "";
@@ -729,7 +730,7 @@ namespace HematoxinandEosin
             this.J24.ProcessName = "";
             this.J24.RackColor = System.Drawing.Color.Red;
             this.J24.RackNumber = "J24";
-            this.J24.ReagentName = "XYLENE-1";
+            this.J24.ReagentName = "";
             this.J24.Size = new System.Drawing.Size(70, 140);
             this.J24.TabIndex = 40;
             this.J24.TaskCompletionTime = "";
@@ -783,7 +784,7 @@ namespace HematoxinandEosin
             this.J27.ProcessName = "";
             this.J27.RackColor = System.Drawing.Color.Red;
             this.J27.RackNumber = "J27";
-            this.J27.ReagentName = "RNJ";
+            this.J27.ReagentName = "";
             this.J27.Size = new System.Drawing.Size(70, 140);
             this.J27.TabIndex = 38;
             this.J27.TaskCompletionTime = "";
@@ -810,7 +811,7 @@ namespace HematoxinandEosin
             this.J23.ProcessName = "";
             this.J23.RackColor = System.Drawing.Color.Red;
             this.J23.RackNumber = "J23";
-            this.J23.ReagentName = "100% Alcohol";
+            this.J23.ReagentName = "";
             this.J23.Size = new System.Drawing.Size(70, 140);
             this.J23.TabIndex = 37;
             this.J23.TaskCompletionTime = "";
@@ -864,7 +865,7 @@ namespace HematoxinandEosin
             this.J28.ProcessName = "";
             this.J28.RackColor = System.Drawing.Color.Red;
             this.J28.RackNumber = "J28";
-            this.J28.ReagentName = "RNJ";
+            this.J28.ReagentName = "";
             this.J28.Size = new System.Drawing.Size(70, 140);
             this.J28.TabIndex = 35;
             this.J28.TaskCompletionTime = "";
@@ -891,7 +892,7 @@ namespace HematoxinandEosin
             this.J22.ProcessName = "";
             this.J22.RackColor = System.Drawing.Color.Red;
             this.J22.RackNumber = "J22";
-            this.J22.ReagentName = "100% Alcohol";
+            this.J22.ReagentName = "";
             this.J22.Size = new System.Drawing.Size(70, 140);
             this.J22.TabIndex = 34;
             this.J22.TaskCompletionTime = "";
@@ -945,7 +946,7 @@ namespace HematoxinandEosin
             this.J29.ProcessName = "";
             this.J29.RackColor = System.Drawing.Color.Red;
             this.J29.RackNumber = "J29";
-            this.J29.ReagentName = "RNJ";
+            this.J29.ReagentName = "";
             this.J29.Size = new System.Drawing.Size(70, 140);
             this.J29.TabIndex = 32;
             this.J29.TaskCompletionTime = "";
@@ -972,7 +973,7 @@ namespace HematoxinandEosin
             this.J21.ProcessName = "";
             this.J21.RackColor = System.Drawing.Color.Red;
             this.J21.RackNumber = "J21";
-            this.J21.ReagentName = "95% Alcohol";
+            this.J21.ReagentName = "";
             this.J21.Size = new System.Drawing.Size(70, 140);
             this.J21.TabIndex = 31;
             this.J21.TaskCompletionTime = "";
@@ -1026,7 +1027,7 @@ namespace HematoxinandEosin
             this.J30.ProcessName = "";
             this.J30.RackColor = System.Drawing.Color.Red;
             this.J30.RackNumber = "J30";
-            this.J30.ReagentName = "XYLENE 2\'";
+            this.J30.ReagentName = "";
             this.J30.Size = new System.Drawing.Size(70, 140);
             this.J30.TabIndex = 29;
             this.J30.TaskCompletionTime = "";
@@ -1053,7 +1054,7 @@ namespace HematoxinandEosin
             this.J20.ProcessName = "";
             this.J20.RackColor = System.Drawing.Color.Red;
             this.J20.RackNumber = "J20";
-            this.J20.ReagentName = "Eosin";
+            this.J20.ReagentName = "";
             this.J20.Size = new System.Drawing.Size(70, 140);
             this.J20.TabIndex = 28;
             this.J20.TaskCompletionTime = "";
@@ -1107,7 +1108,7 @@ namespace HematoxinandEosin
             this.J31.ProcessName = "";
             this.J31.RackColor = System.Drawing.Color.Red;
             this.J31.RackNumber = "J31";
-            this.J31.ReagentName = "XYLENE 2\'";
+            this.J31.ReagentName = "";
             this.J31.Size = new System.Drawing.Size(70, 140);
             this.J31.TabIndex = 26;
             this.J31.TaskCompletionTime = "";
@@ -1134,7 +1135,7 @@ namespace HematoxinandEosin
             this.J19.ProcessName = "";
             this.J19.RackColor = System.Drawing.Color.Red;
             this.J19.RackNumber = "J19";
-            this.J19.ReagentName = "LI2CO3";
+            this.J19.ReagentName = "";
             this.J19.Size = new System.Drawing.Size(70, 140);
             this.J19.TabIndex = 25;
             this.J19.TaskCompletionTime = "";
@@ -1188,7 +1189,7 @@ namespace HematoxinandEosin
             this.J32.ProcessName = "";
             this.J32.RackColor = System.Drawing.Color.Red;
             this.J32.RackNumber = "J32";
-            this.J32.ReagentName = "100% Ethanol 1\'";
+            this.J32.ReagentName = "";
             this.J32.Size = new System.Drawing.Size(70, 140);
             this.J32.TabIndex = 23;
             this.J32.TaskCompletionTime = "";
@@ -1215,7 +1216,7 @@ namespace HematoxinandEosin
             this.J18.ProcessName = "";
             this.J18.RackColor = System.Drawing.Color.Red;
             this.J18.RackNumber = "J18";
-            this.J18.ReagentName = "1% Acid Alcohol";
+            this.J18.ReagentName = "";
             this.J18.Size = new System.Drawing.Size(70, 140);
             this.J18.TabIndex = 22;
             this.J18.TaskCompletionTime = "";
@@ -1269,7 +1270,7 @@ namespace HematoxinandEosin
             this.U1.ProcessName = "";
             this.U1.RackColor = System.Drawing.Color.Red;
             this.U1.RackNumber = "U1";
-            this.U1.ReagentName = "95% Ethanol";
+            this.U1.ReagentName = "O/P";
             this.U1.Size = new System.Drawing.Size(70, 140);
             this.U1.TabIndex = 20;
             this.U1.TaskCompletionTime = "";
@@ -1539,7 +1540,7 @@ namespace HematoxinandEosin
             this.J17.ProcessName = "";
             this.J17.RackColor = System.Drawing.Color.Red;
             this.J17.RackNumber = "J17";
-            this.J17.ReagentName = "95% Ethanol";
+            this.J17.ReagentName = "";
             this.J17.Size = new System.Drawing.Size(70, 140);
             this.J17.TabIndex = 10;
             this.J17.TaskCompletionTime = "";
@@ -1566,7 +1567,7 @@ namespace HematoxinandEosin
             this.J10.ProcessName = "";
             this.J10.RackColor = System.Drawing.Color.PaleVioletRed;
             this.J10.RackNumber = "J10";
-            this.J10.ReagentName = "Hematoxylin8\'";
+            this.J10.ReagentName = "";
             this.J10.Size = new System.Drawing.Size(70, 140);
             this.J10.TabIndex = 9;
             this.J10.TaskCompletionTime = "";
@@ -1620,7 +1621,7 @@ namespace HematoxinandEosin
             this.J16.ProcessName = "";
             this.J16.RackColor = System.Drawing.Color.Red;
             this.J16.RackNumber = "J16";
-            this.J16.ReagentName = "EA-65 Stain";
+            this.J16.ReagentName = "";
             this.J16.Size = new System.Drawing.Size(70, 140);
             this.J16.TabIndex = 7;
             this.J16.TaskCompletionTime = "05:31";
@@ -1647,7 +1648,7 @@ namespace HematoxinandEosin
             this.J11.ProcessName = "";
             this.J11.RackColor = System.Drawing.Color.PaleVioletRed;
             this.J11.RackNumber = "J11";
-            this.J11.ReagentName = "Acid Alcohol 1%";
+            this.J11.ReagentName = "";
             this.J11.Size = new System.Drawing.Size(70, 140);
             this.J11.TabIndex = 6;
             this.J11.TaskCompletionTime = "";
@@ -1701,7 +1702,7 @@ namespace HematoxinandEosin
             this.J15.ProcessName = "";
             this.J15.RackColor = System.Drawing.Color.Red;
             this.J15.RackNumber = "J15";
-            this.J15.ReagentName = "Ethanol95%";
+            this.J15.ReagentName = "";
             this.J15.Size = new System.Drawing.Size(70, 140);
             this.J15.TabIndex = 4;
             this.J15.TaskCompletionTime = "";
@@ -1728,7 +1729,7 @@ namespace HematoxinandEosin
             this.J12.ProcessName = "";
             this.J12.RackColor = System.Drawing.Color.PaleVioletRed;
             this.J12.RackNumber = "J12";
-            this.J12.ReagentName = "LI2CO3";
+            this.J12.ReagentName = "";
             this.J12.Size = new System.Drawing.Size(70, 140);
             this.J12.TabIndex = 3;
             this.J12.TaskCompletionTime = "";
@@ -1755,7 +1756,7 @@ namespace HematoxinandEosin
             this.J33.ProcessName = "";
             this.J33.RackColor = System.Drawing.Color.Red;
             this.J33.RackNumber = "J33";
-            this.J33.ReagentName = "O/P";
+            this.J33.ReagentName = "";
             this.J33.Size = new System.Drawing.Size(70, 140);
             this.J33.TabIndex = 2;
             this.J33.TaskCompletionTime = "";
@@ -1782,7 +1783,7 @@ namespace HematoxinandEosin
             this.J14.ProcessName = "";
             this.J14.RackColor = System.Drawing.Color.Red;
             this.J14.RackNumber = "J14";
-            this.J14.ReagentName = "OG_6 Stain";
+            this.J14.ReagentName = "";
             this.J14.Size = new System.Drawing.Size(70, 140);
             this.J14.TabIndex = 1;
             this.J14.TaskCompletionTime = "";
@@ -1809,7 +1810,7 @@ namespace HematoxinandEosin
             this.J13.ProcessName = "";
             this.J13.RackColor = System.Drawing.Color.PaleVioletRed;
             this.J13.RackNumber = "J13";
-            this.J13.ReagentName = "Ethanol95%";
+            this.J13.ReagentName = "";
             this.J13.Size = new System.Drawing.Size(70, 140);
             this.J13.TabIndex = 0;
             this.J13.TaskCompletionTime = "";
@@ -1986,12 +1987,16 @@ namespace HematoxinandEosin
             // 
             this.tmr_next_rack.Interval = 500;
             // 
+            // tmr_opencmd_toload_Nxtrack
+            // 
+            this.tmr_opencmd_toload_Nxtrack.Tick += new System.EventHandler(this.tmr_opencmd_toload_Nxtrack_Tick);
+            // 
             // Form_RunProto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1350, 571);
+            this.ClientSize = new System.Drawing.Size(1351, 571);
             this.Controls.Add(this.panel_Jarscalibration);
             this.MaximizeBox = false;
             this.Name = "Form_RunProto";
@@ -2113,5 +2118,6 @@ namespace HematoxinandEosin
         private System.Windows.Forms.Timer htr2_tmpincub;
         private System.Windows.Forms.Timer htr3_tmpincub;
         private System.Windows.Forms.Timer tmr_next_rack;
+        private System.Windows.Forms.Timer tmr_opencmd_toload_Nxtrack;
     }
 }

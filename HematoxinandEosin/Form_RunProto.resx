@@ -283,66 +283,69 @@
     <value>721, 48</value>
   </metadata>
   <metadata name="tmr_r4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 87</value>
+    <value>353, 91</value>
   </metadata>
   <metadata name="tmr_temp_incub.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>104, 87</value>
+    <value>440, 91</value>
   </metadata>
   <metadata name="tmr_temp.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>243, 87</value>
+    <value>579, 91</value>
   </metadata>
   <metadata name="tmr_r6_incub.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>347, 87</value>
+    <value>683, 91</value>
   </metadata>
   <metadata name="tmr_refresh.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>471, 82</value>
+    <value>805, 91</value>
   </metadata>
   <metadata name="tmr_portstatus.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>593, 81</value>
+    <value>918, 91</value>
   </metadata>
   <metadata name="tmr_update.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>728, 8</value>
   </metadata>
   <metadata name="tmr_r7.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>724, 81</value>
+    <value>17, 130</value>
   </metadata>
   <metadata name="tmr_r8.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>811, 81</value>
+    <value>104, 130</value>
   </metadata>
   <metadata name="tmr_r9.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>898, 81</value>
+    <value>191, 130</value>
   </metadata>
   <metadata name="tmr_r7_incub.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>801, 52</value>
   </metadata>
   <metadata name="tmr_r8_incub.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>909, 56</value>
+    <value>231, 91</value>
   </metadata>
   <metadata name="tmr_r9_incub.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>838, 11</value>
   </metadata>
   <metadata name="tmr_RespFail.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>14, 117</value>
+    <value>278, 130</value>
   </metadata>
   <metadata name="tmr_Racks_Loaded.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>119, 117</value>
+    <value>398, 130</value>
   </metadata>
   <metadata name="tmr_move_RA.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>263, 117</value>
+    <value>550, 130</value>
   </metadata>
   <metadata name="htr1_tmpincub.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>381, 120</value>
+    <value>677, 130</value>
   </metadata>
   <metadata name="htr2_tmpincub.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>503, 118</value>
+    <value>808, 130</value>
   </metadata>
   <metadata name="htr3_tmpincub.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>620, 119</value>
+    <value>939, 130</value>
   </metadata>
   <metadata name="tmr_next_rack.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>741, 118</value>
+    <value>17, 169</value>
+  </metadata>
+  <metadata name="tmr_opencmd_toload_Nxtrack.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 91</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>153</value>
+    <value>88</value>
   </metadata>
 </root>

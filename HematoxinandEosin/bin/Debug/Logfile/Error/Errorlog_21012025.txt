@@ -1,0 +1,522 @@
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 12:40
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 12:40
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 12:40
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 12:40
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 12:40
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 12:40
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : While inserting data to protoruntable 
+System.InvalidOperationException: ExecuteNonQuery requires an open and available Connection. The connection's current state is open.
+   at System.Data.SqlClient.SqlConnection.GetOpenConnection(String method)
+   at System.Data.SqlClient.SqlConnection.ValidateConnectionForExecute(String method, SqlCommand command)
+   at System.Data.SqlClient.SqlCommand.ValidateCommand(String method, Boolean async)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at HematoxinandEosin.Form_RunProto.saveDataTable(String tableName) in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 21708
+Method : In function saveDataTable of Form_RunProto
+Logged Date & time : 21 January 2025 12:49
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 13:59
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 13:59
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 13:59
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 13:59
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 13:59
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 13:59
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 13:59
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 13:59
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 14:00
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 14:00
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 14:01
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 14:01
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 14:01
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 14:01
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 14:01
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 14:29
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 14:29
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 14:29
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 14:29
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 14:29
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 14:29
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 14:29
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 14:29
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 14:29
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 14:29
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 14:29
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 14:30
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 14:30
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 14:30
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 14:32
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 14:32
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 14:32
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 15:25
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 16:02
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 16:02
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 16:03
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 17:04
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 17:04
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 17:04
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 17:04
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 17:04
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 17:04
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 17:14
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 17:14
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1008 Communication Failure With Device While intializing & opening communication port 
+System.UnauthorizedAccessException: Access to the port 'COM3' is denied.
+   at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at HematoxinandEosin.Form_MainMenu.init_port() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_MainMenu.cs:line 2617
+Method : In init_port functio in mainmenu form
+Logged Date & time : 21 January 2025 17:14
+--------------------------------------------------------------------------
