@@ -109,7 +109,7 @@ namespace HematoxinandEosin
             getavailableportnames();
 
 
-            System.Threading.Thread.Sleep(5000);
+            System.Threading.Thread.Sleep(1000);
             if (portopendflg == true)
             {
                 if (mport.IsOpen == true)
@@ -1533,7 +1533,6 @@ namespace HematoxinandEosin
                 OpenChildForm(new Form_ProtocolConfig());
                 //OpenChildForm(new Form5());
             }
-
         }
 
         private void reagentsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1546,8 +1545,7 @@ namespace HematoxinandEosin
             else if ((RequiredVariables.RunProto_Started == false) && (RequiredVariables.EngineeringMode_Started == false))
             {
                 OpenChildForm(new Reagent_Configuration());
-            }
-            
+            }            
         }
 
         private void btn_Configuration_Click(object sender, EventArgs e)
@@ -1605,7 +1603,6 @@ namespace HematoxinandEosin
         }
         private void btn_Reports_Click(object sender, EventArgs e)
         {
-
             btn_Configuration.BackColor = Color.FromArgb(30, 80, 150);
             btn_Calibration.BackColor = Color.FromArgb(30, 80, 150);
             btn_RunProtocol.BackColor = Color.FromArgb(30, 80, 150);
@@ -1650,8 +1647,7 @@ namespace HematoxinandEosin
             else if ((RequiredVariables.RunProto_Started == false) && (RequiredVariables.EngineeringMode_Started == false))
             {
                 OpenChildForm(new LabDetails_Configuration());
-            }
-            
+            }            
         }
         private void pB_signout_Click(object sender, EventArgs e)
         {

@@ -12,7 +12,7 @@ namespace HematoxinandEosin
     class RequiredVariables
     {
         public static string Msgtext = "Hematoxin and Eosin";
-        public static string VerNoRevNo = "PnS H&&E Automation Ver. 0 && Rev. 2-T21";
+        public static string VerNoRevNo = "PnS H&&E Automation Ver. 0 && Rev. 2-T22-a";
         public static string UserName = "";
         public static string decryptpassword = "";
         public static string HintQuestion = "";
@@ -46,7 +46,6 @@ namespace HematoxinandEosin
 
         //Report Type Variable
         public static string Reptype = "";
-
         public static string Configuration = "";
         public static string JarPositionCalibration = "";
         public static string EngParameters = "";
@@ -61,11 +60,8 @@ namespace HematoxinandEosin
         public static void writeerrorlogfile(string exceptionstring, string functionname)
         {
             string source = Application.StartupPath + "\\Logfile\\Error";
-
             string dt = System.DateTime.Now.ToShortDateString();
-
             dt = dt.Replace("-", "");
-
             //Creating directory                
             if (Directory.Exists(source))
             {
@@ -77,7 +73,6 @@ namespace HematoxinandEosin
             }
             source = string.Empty;
             source = Application.StartupPath + "\\Logfile\\Error\\Errorlog_" + dt + ".txt";
-
             System.IO.FileStream fs = default(System.IO.FileStream);
             if (File.Exists(source))
             {
