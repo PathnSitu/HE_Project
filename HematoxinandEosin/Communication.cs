@@ -73,7 +73,7 @@ namespace HematoxinandEosin
         //DEVICE ID
         int device_id = 0;
         public static int devid = 1;
-        public static int RA_No = 1;
+        public static int RA_No = 0;  //Previously 1
         //Data related flags
         public static Boolean pGotByteFlag, pCancelFlag, datastartreceivingflag = true;
         public static byte[] Device_Data = new byte[8];
@@ -168,7 +168,7 @@ namespace HematoxinandEosin
                 crcstr = crcstr.Replace("F", "f");
 
                 cmdstr = "#" + cmdstr + crcstr + "\n";
-                commandQueue.Enqueue(cmdstr); //Added for testing on 18-11-2024 1247
+                ////commandQueue.Enqueue(cmdstr); //Added for testing on 18-11-2024 1247
             }
             else
             {

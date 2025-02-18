@@ -531,7 +531,7 @@ namespace HematoxinandEosin
             this.L3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.L3.BorderRadius = 20;
             this.L3.BorderSize = 3;
-            this.L3.ElaspedTime = "00:19";
+            this.L3.ElaspedTime = "";
             this.L3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.L3.JarRack = false;
             this.L3.Location = new System.Drawing.Point(1184, 378);
@@ -541,7 +541,7 @@ namespace HematoxinandEosin
             this.L3.ProcessName = "";
             this.L3.RackColor = System.Drawing.Color.Red;
             this.L3.RackNumber = "L3";
-            this.L3.ReagentName = "I/P";
+            this.L3.ReagentName = "";
             this.L3.Size = new System.Drawing.Size(70, 140);
             this.L3.TabIndex = 47;
             this.L3.TaskCompletionTime = "";
@@ -612,7 +612,7 @@ namespace HematoxinandEosin
             this.L2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.L2.BorderRadius = 20;
             this.L2.BorderSize = 3;
-            this.L2.ElaspedTime = "00:19";
+            this.L2.ElaspedTime = "";
             this.L2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.L2.JarRack = false;
             this.L2.Location = new System.Drawing.Point(1106, 378);
@@ -622,10 +622,10 @@ namespace HematoxinandEosin
             this.L2.ProcessName = "";
             this.L2.RackColor = System.Drawing.Color.Red;
             this.L2.RackNumber = "L2";
-            this.L2.ReagentName = "I/P";
+            this.L2.ReagentName = "";
             this.L2.Size = new System.Drawing.Size(70, 140);
             this.L2.TabIndex = 44;
-            this.L2.TaskCompletionTime = "05:31";
+            this.L2.TaskCompletionTime = "";
             this.L2.TaskProcess = "";
             this.L2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.L2.Click += new System.EventHandler(this.jar34_Click);
@@ -703,10 +703,10 @@ namespace HematoxinandEosin
             this.L1.ProcessName = "";
             this.L1.RackColor = System.Drawing.Color.Red;
             this.L1.RackNumber = "L1";
-            this.L1.ReagentName = "I/P";
+            this.L1.ReagentName = "";
             this.L1.Size = new System.Drawing.Size(70, 140);
             this.L1.TabIndex = 41;
-            this.L1.TaskCompletionTime = "05:31";
+            this.L1.TaskCompletionTime = "";
             this.L1.TaskProcess = "";
             this.L1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.L1.Click += new System.EventHandler(this.jar35_Click);

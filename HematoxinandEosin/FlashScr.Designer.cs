@@ -70,7 +70,7 @@ namespace HematoxinandEosin
             this.lbl_Ver.AutoSize = true;
             this.lbl_Ver.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Ver.ForeColor = System.Drawing.Color.Maroon;
-            this.lbl_Ver.Location = new System.Drawing.Point(76, 187);
+            this.lbl_Ver.Location = new System.Drawing.Point(55, 187);
             this.lbl_Ver.Name = "lbl_Ver";
             this.lbl_Ver.Size = new System.Drawing.Size(224, 16);
             this.lbl_Ver.TabIndex = 37;

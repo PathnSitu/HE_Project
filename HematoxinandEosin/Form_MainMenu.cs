@@ -2904,7 +2904,7 @@ namespace HematoxinandEosin
 
         private void movezaxishome()
         {
-            Communication.RA_No = 0;
+            ////Communication.RA_No = 0; //commented on 17-02-2024
             functioncode = Communication.RA_HOME;
             string sndcmdstr = "";
             sndcmdstr = "00100100";

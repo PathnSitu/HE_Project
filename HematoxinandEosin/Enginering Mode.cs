@@ -1968,8 +1968,8 @@ namespace HematoxinandEosin
                 string st1 = "", st2 = "";
                 //Response Variables
 
-                if (Communication.commandQueue.Count > 0)
-                    m_Cmdstr = Communication.commandQueue.Dequeue();// Get the next command
+                ////if (Communication.commandQueue.Count > 0)
+                ////    m_Cmdstr = Communication.commandQueue.Dequeue();// Get the next command
 
                 if (!mport.IsOpen)
                     init_port(); //Intializing the port
