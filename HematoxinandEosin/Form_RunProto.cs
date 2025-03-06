@@ -487,7 +487,7 @@ namespace HematoxinandEosin
             //{
 
             //}
-            RequiredVariables.alljarlvlsensed = true;  //kept as true for testing
+            ////RequiredVariables.alljarlvlsensed = true;  //kept as true for testing
             if (RequiredVariables.alljarlvlsensed == false)
             {
                 RequiredVariables.alljarlvlsensed = true;
@@ -15038,7 +15038,7 @@ namespace HematoxinandEosin
                                 cmdres = "";
                                 cmdres = displayScrData;
                                 lvlval = (float)Convert.ToDouble(lvl[0].ToString());
-                                lvlval = 500; //This value has to delete kept for testing
+                                ////lvlval = 500; //This value has to delete kept for testing
                                 checkrackval(lvlval);
                                 sensed = true;
                                 rareached = true;
