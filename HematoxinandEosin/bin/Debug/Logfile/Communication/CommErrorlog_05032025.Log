@@ -1,0 +1,4 @@
+--------------------------------------------------------------------------
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at HematoxinandEosin.Form_RunProto.tmr_r1_Tick(Object sender, EventArgs e) in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 7004,05-03-2025 18:10:15
+--------------------------------------------------------------------------

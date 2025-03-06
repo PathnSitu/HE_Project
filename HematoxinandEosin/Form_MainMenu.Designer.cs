@@ -570,6 +570,7 @@ namespace HematoxinandEosin
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1350, 701);
+            this.ControlBox = false;
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.pnl_Status);
             this.Controls.Add(this.panel1);
@@ -580,6 +581,8 @@ namespace HematoxinandEosin
             this.Name = "Form_MainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Haematoxylin and Eosin Application";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_MainMenu_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form_MainMenu_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

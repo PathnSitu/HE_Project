@@ -1574,11 +1574,15 @@ namespace HematoxinandEosin
         private void btn_Exit_Click(object sender, EventArgs e)
         {
             // btnBackground();
+            closeapp();
+        }
+        private void closeapp()
+        {
             if (MessageBox.Show("Are you sure to close the Application", RequiredVariables.Msgtext, MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
             {
                 sqlstr = "";
                 sqlstr = "Insert into UserDetails(UserName,Status,Loggedon,LoggedTime,Month) values('";
-                sqlstr = sqlstr +RequiredVariables.UserName + "','";
+                sqlstr = sqlstr + RequiredVariables.UserName + "','";
                 String s1 = DateTime.Now.ToString("dd-MM-yyyy");
                 String s2 = DateTime.Now.ToString("HH:mm:ss");
                 string s3 = "sign out";
@@ -1595,11 +1599,10 @@ namespace HematoxinandEosin
                 //Application.Exit();
                 Environment.Exit(0);
             }
-            else
-            {
-                return;
-            }
-
+            ////else
+            ////{
+            ////    return;
+            ////}
         }
         private void btn_Reports_Click(object sender, EventArgs e)
         {
@@ -2888,6 +2891,16 @@ namespace HematoxinandEosin
             {
 
             }
+        }
+
+        private void Form_MainMenu_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            closeapp();
+        }
+
+        private void Form_MainMenu_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            //closeapp();
         }
 
         private string GetDeviceName(IntPtr lParam)

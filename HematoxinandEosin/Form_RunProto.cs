@@ -12,11 +12,13 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Collections.Generic;
 
 namespace HematoxinandEosin
-{
+{    
     public partial class Form_RunProto : Form
     {
+
         string Constr = "";//"Data Source=SYSPSENG006;User ID=sa;Password=sree@pns2013;Initial Catalog=PNSHE;Pooling=false;Max Pool Size=400;workstation id =SYSPSENG006";
         SqlConnection con = new SqlConnection();
         SqlCommand cmd = new SqlCommand();
@@ -262,6 +264,10 @@ namespace HematoxinandEosin
         Boolean Rackin_H1 = false, Rackin_H2 = false, Rackin_H3 = false;
         Boolean H1_incub_complete = false, H2_incub_complete = false, H3_incub_complete = false;
         Boolean DB_Updation = false;
+
+        //New variables declared on 20022023_1428
+        string Actual_WashJar_R1 = "", Actual_WashJar_R2 = "", Actual_WashJar_R3 = "", Actual_WashJar_R4 = "", Actual_WashJar_R5 = "", Actual_WashJar_R6 = "", Actual_WashJar_R7 = "", Actual_WashJar_R8 = "", Actual_WashJar_R9 = "";
+        string Assigned_WashJar_R1 = "", Assigned_WashJar_R2 = "", Assigned_WashJar_R3 = "", Assigned_WashJar_R4 = "", Assigned_WashJar_R5 = "", Assigned_WashJar_R6 = "", Assigned_WashJar_R7 = "", Assigned_WashJar_R8 = "", Assigned_WashJar_R9 = "";
         #endregion
 
         SpeechSynthesizer sp = new SpeechSynthesizer();
@@ -451,6 +457,12 @@ namespace HematoxinandEosin
 
             //Jars();
 
+            //Adding details to dictionoary
+            for (int i = 0; i <= 9; i++)
+            {
+                Racks[i] = new Rack { RackNo = i, IncubationTime = DateTime.Now.AddMinutes((i) * 1), Priority = 0, IsProcessing = false };
+            }
+
             btn_start.Enabled = false;
 
             loadPositiondetails();
@@ -475,7 +487,7 @@ namespace HematoxinandEosin
             //{
 
             //}
-            ////RequiredVariables.alljarlvlsensed = true;  //kept as true for testing
+            RequiredVariables.alljarlvlsensed = true;  //kept as true for testing
             if (RequiredVariables.alljarlvlsensed == false)
             {
                 RequiredVariables.alljarlvlsensed = true;
@@ -504,6 +516,7 @@ namespace HematoxinandEosin
             RequiredVariables.alljarlvlsensed = false;
             if (mport.IsOpen)
                 mport.Close();
+            //Application.Exit();
         }
         private void Form_RunProto_FormClosed(object sender, FormClosedEventArgs e)
         {
@@ -511,6 +524,7 @@ namespace HematoxinandEosin
             RequiredVariables.alljarlvlsensed = false;
             if (mport.IsOpen)
                 mport.Close();
+            //Application.Exit();
         }
         private void jar9_Load(object sender, EventArgs e)
         {
@@ -732,27 +746,22 @@ namespace HematoxinandEosin
         {
             load_detailstoZoomPanel(W6);
         }
-
         private void jar21_Click(object sender, EventArgs e)
         {
             load_detailstoZoomPanel(W4);
         }
-
         private void jar22_Click(object sender, EventArgs e)
         {
             load_detailstoZoomPanel(W5);
         }
-
         private void jar35_Click(object sender, EventArgs e)
         {
             load_detailstoZoomPanel(L1);
         }
-
         private void jar34_Click(object sender, EventArgs e)
         {
             load_detailstoZoomPanel(L2);
         }
-
         private void jar33_Click(object sender, EventArgs e)
         {
             load_detailstoZoomPanel(L3);
@@ -1020,12 +1029,19 @@ namespace HematoxinandEosin
                     if (k < 3)
                     {
                         rackinheater[k] = 0;    //Heater Jars
+                        UpdateRackLocation("H" + (k + 1).ToString(), 0);
+                        UpdateRackLocation("L" + (k + 1).ToString(), 0);
                     }
                     if (k < 6)
                     {
                         rackinwaterjars[k] = 0;   //Washing Jars
                         rackinunloading[k] = 0;   //Unloading Jars
+                        UpdateRackLocation("W" + (k + 1).ToString(), 0);
+                        UpdateRackLocation("U" + (k + 1).ToString(), 0);
                     }
+                    if(k<33)
+                        UpdateRackLocation("J" + (k + 1).ToString(), 0);  //Normal Jars Updating to Dictionary
+                    
                     rackinjars[k] = 0;  //Normal Jars   
                 }
                 //Added on 20-12-2023 1628 Ensuring no racks in Normal Jars and Washing Jars
@@ -1423,7 +1439,7 @@ namespace HematoxinandEosin
 
             Process_Continued = true;
             continuetest = System.DateTime.Now;
-            continuetest = continuetest.AddSeconds(5); //Has to check with machine and run
+            continuetest = continuetest.AddSeconds(2); //Has to check with machine and run
             tmr_Continue.Enabled = true;
             tmr_Continue.Interval = 1000;
             btn_Continue.Enabled = false;
@@ -1538,14 +1554,15 @@ namespace HematoxinandEosin
 
         #region Incub Timers
         static SemaphoreSlim semaphore = new SemaphoreSlim(1);
-        int Wash_delaytime = (18);  //11 seconds 
+        int Wash_delaytime = (18); //18 seconds 
         private Boolean check_washjar_collision(int timno)
         {
             //Below code added on 30-08-2024 1140
             TimeSpan ts1 = new TimeSpan(); TimeSpan ts2 = new TimeSpan(); TimeSpan ts3 = new TimeSpan();
             TimeSpan ts4 = new TimeSpan(); TimeSpan ts5 = new TimeSpan(); TimeSpan ts6 = new TimeSpan();
             TimeSpan ts7 = new TimeSpan(); TimeSpan ts8 = new TimeSpan();
-            
+            ts1 = TimeSpan.Zero; ts2 = TimeSpan.Zero; ts3 = TimeSpan.Zero; ts4 = TimeSpan.Zero;
+            ts5 = TimeSpan.Zero; ts6 = TimeSpan.Zero; ts7 = TimeSpan.Zero; ts8 = TimeSpan.Zero;
             Boolean respflg = false;
             try
             {
@@ -1553,114 +1570,361 @@ namespace HematoxinandEosin
                 {
                     case 1:
                         {
-                            if (R2_protostart == true) ts1 = r2_incub.Subtract(r1_incub); 
-                            if (R3_protostart == true) ts2 = r3_incub.Subtract(r1_incub);
-                            if (R4_protostart == true) ts3 = r4_incub.Subtract(r1_incub);
-                            if (R5_protostart == true) ts4 = r5_incub.Subtract(r1_incub);
-                            if (R6_protostart == true) ts5 = r6_incub.Subtract(r1_incub);
-                            if (R7_protostart == true) ts6 = r7_incub.Subtract(r1_incub);
-                            if (R8_protostart == true) ts7 = r8_incub.Subtract(r1_incub);
-                            if (R9_protostart == true) ts8 = r9_incub.Subtract(r1_incub);
+                            if(r2_incub>r1_incub)
+                                ts1 = r2_incub.Subtract(r1_incub); 
+                            else if (r1_incub > r2_incub)
+                                ts1 = r1_incub.Subtract(r2_incub);
+
+                            if (r3_incub > r1_incub)
+                                ts2 = r3_incub.Subtract(r1_incub);
+                            else if (r1_incub > r3_incub)
+                                ts2 = r1_incub.Subtract(r3_incub);
+                            
+                            if (r4_incub > r1_incub)
+                                ts3 = r4_incub.Subtract(r1_incub);
+                            else if (r1_incub > r4_incub)
+                                ts3 = r1_incub.Subtract(r4_incub);
+
+                            if (r5_incub > r1_incub)
+                                ts4 = r5_incub.Subtract(r1_incub);
+                            else if (r1_incub > r5_incub)
+                                ts4 = r1_incub.Subtract(r5_incub);
+                            if (r6_incub > r1_incub)
+                                ts5 = r6_incub.Subtract(r1_incub);
+                            else if (r1_incub > r6_incub)
+                                ts5 = r1_incub.Subtract(r6_incub);
+                            if (r7_incub > r1_incub)
+                                ts6 = r7_incub.Subtract(r1_incub);
+                            else if (r1_incub > r7_incub)
+                                ts6 = r1_incub.Subtract(r7_incub);
+                            if (r8_incub > r1_incub)
+                                ts7 = r8_incub.Subtract(r1_incub);
+                            else if (r1_incub > r8_incub)
+                                ts7 = r1_incub.Subtract(r8_incub);
+                            if (r9_incub > r1_incub)
+                                ts8 = r9_incub.Subtract(r1_incub);
+                            else if (r1_incub > r9_incub)
+                                ts8 = r1_incub.Subtract(r9_incub);
+
                             break;
                         }
                     case 2:
                         {
-                            if (R1_protostart == true) ts1 = r1_incub.Subtract(r2_incub);
-                            if (R3_protostart == true) ts2 = r3_incub.Subtract(r2_incub);
-                            if (R4_protostart == true) ts3 = r4_incub.Subtract(r2_incub);
-                            if (R5_protostart == true) ts4 = r5_incub.Subtract(r2_incub);
-                            if (R6_protostart == true) ts5 = r6_incub.Subtract(r2_incub);
-                            if (R7_protostart == true) ts6 = r7_incub.Subtract(r2_incub);
-                            if (R8_protostart == true) ts7 = r8_incub.Subtract(r2_incub);
-                            if (R9_protostart == true) ts8 = r9_incub.Subtract(r2_incub);
+                            if (r1_incub > r2_incub)
+                                ts1 = r1_incub.Subtract(r2_incub);
+                            else if (r2_incub > r1_incub)
+                                ts1 = r2_incub.Subtract(r1_incub);
+
+                            if (r3_incub > r2_incub)
+                                ts2 = r3_incub.Subtract(r2_incub);
+                            else if (r2_incub > r3_incub)
+                                ts2 = r2_incub.Subtract(r3_incub);
+
+                            if (r4_incub > r2_incub)
+                                ts3 = r4_incub.Subtract(r2_incub);
+                            else if (r2_incub > r4_incub)
+                                ts3 = r2_incub.Subtract(r4_incub);
+
+                            if (r5_incub > r2_incub)
+                                ts4 = r5_incub.Subtract(r2_incub);
+                            else if (r2_incub > r5_incub)
+                                ts4 = r2_incub.Subtract(r5_incub);
+                            if (r6_incub > r2_incub)
+                                ts5 = r6_incub.Subtract(r2_incub);
+                            else if (r2_incub > r6_incub)
+                                ts5 = r2_incub.Subtract(r6_incub);
+                            if (r7_incub > r2_incub)
+                                ts6 = r7_incub.Subtract(r2_incub);
+                            else if (r2_incub > r7_incub)
+                                ts6 = r2_incub.Subtract(r7_incub);
+                            if (r8_incub > r2_incub)
+                                ts7 = r8_incub.Subtract(r2_incub);
+                            else if (r2_incub > r8_incub)
+                                ts7 = r2_incub.Subtract(r8_incub);
+                            if (r9_incub > r2_incub)
+                                ts8 = r9_incub.Subtract(r2_incub);
+                            else if (r2_incub > r9_incub)
+                                ts8 = r2_incub.Subtract(r9_incub);
                             break;
                         }
                     case 3:
                         {
-                            if (R1_protostart == true) ts1 = r1_incub.Subtract(r3_incub);
-                            if (R2_protostart == true) ts2 = r2_incub.Subtract(r3_incub);
-                            if (R4_protostart == true) ts3 = r4_incub.Subtract(r3_incub);
-                            if (R5_protostart == true) ts4 = r5_incub.Subtract(r3_incub);
-                            if (R6_protostart == true) ts5 = r6_incub.Subtract(r3_incub);
-                            if (R7_protostart == true) ts6 = r7_incub.Subtract(r3_incub);
-                            if (R8_protostart == true) ts7 = r8_incub.Subtract(r3_incub);
-                            if (R9_protostart == true) ts8 = r9_incub.Subtract(r3_incub);
+                            if (r2_incub > r3_incub)
+                                ts1 = r2_incub.Subtract(r3_incub);
+                            else if (r3_incub > r2_incub)
+                                ts1 = r3_incub.Subtract(r2_incub);
+
+                            if (r1_incub > r3_incub)
+                                ts2 = r1_incub.Subtract(r3_incub);
+                            else if (r3_incub > r1_incub)
+                                ts2 = r3_incub.Subtract(r1_incub);
+
+                            if (r4_incub > r3_incub)
+                                ts3 = r4_incub.Subtract(r3_incub);
+                            else if (r3_incub > r4_incub)
+                                ts3 = r3_incub.Subtract(r4_incub);
+
+                            if (r5_incub > r3_incub)
+                                ts4 = r5_incub.Subtract(r3_incub);
+                            else if (r3_incub > r5_incub)
+                                ts4 = r3_incub.Subtract(r5_incub);
+                            if (r6_incub > r3_incub)
+                                ts5 = r6_incub.Subtract(r3_incub);
+                            else if (r3_incub > r6_incub)
+                                ts5 = r3_incub.Subtract(r6_incub);
+                            if (r7_incub > r3_incub)
+                                ts6 = r7_incub.Subtract(r3_incub);
+                            else if (r3_incub > r7_incub)
+                                ts6 = r3_incub.Subtract(r7_incub);
+                            if (r8_incub > r3_incub)
+                                ts7 = r8_incub.Subtract(r3_incub);
+                            else if (r3_incub > r8_incub)
+                                ts7 = r3_incub.Subtract(r8_incub);
+                            if (r9_incub > r3_incub)
+                                ts8 = r9_incub.Subtract(r3_incub);
+                            else if (r3_incub > r9_incub)
+                                ts8 = r3_incub.Subtract(r9_incub);
                             break;
                         }
                     case 4:
                         {
-                            if (R1_protostart == true) ts1 = r1_incub.Subtract(r4_incub);
-                            if (R3_protostart == true) ts2 = r3_incub.Subtract(r4_incub);
-                            if (R2_protostart == true) ts3 = r2_incub.Subtract(r4_incub);
-                            if (R5_protostart == true) ts4 = r5_incub.Subtract(r4_incub);
-                            if (R6_protostart == true) ts5 = r6_incub.Subtract(r4_incub);
-                            if (R7_protostart == true) ts6 = r7_incub.Subtract(r4_incub);
-                            if (R8_protostart == true) ts7 = r8_incub.Subtract(r4_incub);
-                            if (R9_protostart == true) ts8 = r9_incub.Subtract(r4_incub);
+                            if (r2_incub > r4_incub)
+                                ts1 = r2_incub.Subtract(r4_incub);
+                            else if (r4_incub > r2_incub)
+                                ts1 = r4_incub.Subtract(r2_incub);
+
+                            if (r3_incub > r4_incub)
+                                ts2 = r3_incub.Subtract(r4_incub);
+                            else if (r4_incub > r3_incub)
+                                ts2 = r4_incub.Subtract(r3_incub);
+
+                            if (r1_incub > r4_incub)
+                                ts3 = r1_incub.Subtract(r4_incub);
+                            else if (r4_incub > r1_incub)
+                                ts3 = r4_incub.Subtract(r1_incub);
+
+                            if (r5_incub > r4_incub)
+                                ts4 = r5_incub.Subtract(r4_incub);
+                            else if (r4_incub > r5_incub)
+                                ts4 = r4_incub.Subtract(r5_incub);
+                            if (r6_incub > r4_incub)
+                                ts5 = r6_incub.Subtract(r4_incub);
+                            else if (r4_incub > r6_incub)
+                                ts5 = r4_incub.Subtract(r6_incub);
+                            if (r7_incub > r4_incub)
+                                ts6 = r7_incub.Subtract(r4_incub);
+                            else if (r4_incub > r7_incub)
+                                ts6 = r4_incub.Subtract(r7_incub);
+                            if (r8_incub > r4_incub)
+                                ts7 = r8_incub.Subtract(r4_incub);
+                            else if (r4_incub > r8_incub)
+                                ts7 = r4_incub.Subtract(r8_incub);
+                            if (r9_incub > r4_incub)
+                                ts8 = r9_incub.Subtract(r4_incub);
+                            else if (r4_incub > r9_incub)
+                                ts8 = r4_incub.Subtract(r9_incub);
                             break;
                         }
                     case 5:
                         {
-                            if (R1_protostart == true) ts1 = r1_incub.Subtract(r5_incub);
-                            if (R3_protostart == true) ts2 = r3_incub.Subtract(r5_incub);
-                            if (R4_protostart == true) ts3 = r4_incub.Subtract(r5_incub);
-                            if (R2_protostart == true) ts4 = r2_incub.Subtract(r5_incub);
-                            if (R6_protostart == true) ts5 = r6_incub.Subtract(r5_incub);
-                            if (R7_protostart == true) ts6 = r7_incub.Subtract(r5_incub);
-                            if (R8_protostart == true) ts7 = r8_incub.Subtract(r5_incub);
-                            if (R9_protostart == true) ts8 = r9_incub.Subtract(r5_incub);
+                            if (r2_incub > r5_incub)
+                                ts1 = r2_incub.Subtract(r5_incub);
+                            else if (r5_incub > r2_incub)
+                                ts1 = r5_incub.Subtract(r2_incub);
+
+                            if (r3_incub > r5_incub)
+                                ts2 = r3_incub.Subtract(r5_incub);
+                            else if (r5_incub > r3_incub)
+                                ts2 = r5_incub.Subtract(r3_incub);
+
+                            if (r4_incub > r5_incub)
+                                ts3 = r4_incub.Subtract(r5_incub);
+                            else if (r5_incub > r4_incub)
+                                ts3 = r5_incub.Subtract(r4_incub);
+
+                            if (r1_incub > r5_incub)
+                                ts4 = r1_incub.Subtract(r5_incub);
+                            else if (r5_incub > r1_incub)
+                                ts4 = r5_incub.Subtract(r1_incub);
+                            if (r6_incub > r5_incub)
+                                ts5 = r6_incub.Subtract(r5_incub);
+                            else if (r5_incub > r6_incub)
+                                ts5 = r5_incub.Subtract(r6_incub);
+                            if (r7_incub > r5_incub)
+                                ts6 = r7_incub.Subtract(r5_incub);
+                            else if (r5_incub > r7_incub)
+                                ts6 = r5_incub.Subtract(r7_incub);
+                            if (r8_incub > r5_incub)
+                                ts7 = r8_incub.Subtract(r5_incub);
+                            else if (r5_incub > r8_incub)
+                                ts7 = r5_incub.Subtract(r8_incub);
+                            if (r9_incub > r5_incub)
+                                ts8 = r9_incub.Subtract(r5_incub);
+                            else if (r5_incub > r9_incub)
+                                ts8 = r5_incub.Subtract(r9_incub);
                             break;
                         }
                     case 6:
                         {
-                            if (R1_protostart == true) ts1 = r1_incub.Subtract(r6_incub);
-                            if (R3_protostart == true) ts2 = r3_incub.Subtract(r6_incub);
-                            if (R4_protostart == true) ts3 = r4_incub.Subtract(r6_incub);
-                            if (R5_protostart == true) ts4 = r5_incub.Subtract(r6_incub);
-                            if (R2_protostart == true) ts5 = r2_incub.Subtract(r6_incub);
-                            if (R7_protostart == true) ts6 = r7_incub.Subtract(r6_incub);
-                            if (R8_protostart == true) ts7 = r8_incub.Subtract(r6_incub);
-                            if (R9_protostart == true) ts8 = r9_incub.Subtract(r6_incub);
+                            if (r2_incub > r6_incub)
+                                ts1 = r2_incub.Subtract(r6_incub);
+                            else if (r6_incub > r2_incub)
+                                ts1 = r6_incub.Subtract(r2_incub);
+
+                            if (r3_incub > r6_incub)
+                                ts2 = r3_incub.Subtract(r6_incub);
+                            else if (r6_incub > r3_incub)
+                                ts2 = r6_incub.Subtract(r3_incub);
+
+                            if (r4_incub > r6_incub)
+                                ts3 = r4_incub.Subtract(r6_incub);
+                            else if (r6_incub > r4_incub)
+                                ts3 = r6_incub.Subtract(r4_incub);
+
+                            if (r5_incub > r6_incub)
+                                ts4 = r5_incub.Subtract(r6_incub);
+                            else if (r6_incub > r5_incub)
+                                ts4 = r6_incub.Subtract(r5_incub);
+                            if (r1_incub > r6_incub)
+                                ts5 = r1_incub.Subtract(r6_incub);
+                            else if (r6_incub > r1_incub)
+                                ts5 = r6_incub.Subtract(r1_incub);
+                            if (r7_incub > r6_incub)
+                                ts6 = r7_incub.Subtract(r6_incub);
+                            else if (r6_incub > r7_incub)
+                                ts6 = r6_incub.Subtract(r7_incub);
+                            if (r8_incub > r6_incub)
+                                ts7 = r8_incub.Subtract(r6_incub);
+                            else if (r6_incub > r8_incub)
+                                ts7 = r6_incub.Subtract(r8_incub);
+                            if (r9_incub > r6_incub)
+                                ts8 = r9_incub.Subtract(r6_incub);
+                            else if (r6_incub > r9_incub)
+                                ts8 = r6_incub.Subtract(r9_incub);
                             break;
                         }
                     case 7:
                         {
-                            if (R1_protostart == true) ts1 = r1_incub.Subtract(r7_incub);
-                            if (R3_protostart == true) ts2 = r3_incub.Subtract(r7_incub);
-                            if (R4_protostart == true) ts3 = r4_incub.Subtract(r7_incub);
-                            if (R5_protostart == true) ts4 = r5_incub.Subtract(r7_incub);
-                            if (R6_protostart == true) ts5 = r6_incub.Subtract(r7_incub);
-                            if (R2_protostart == true) ts6 = r2_incub.Subtract(r7_incub);
-                            if (R8_protostart == true) ts7 = r8_incub.Subtract(r7_incub);
-                            if (R9_protostart == true) ts8 = r9_incub.Subtract(r7_incub);
+                            if (r2_incub > r7_incub)
+                                ts1 = r2_incub.Subtract(r7_incub);
+                            else if (r7_incub > r2_incub)
+                                ts1 = r7_incub.Subtract(r2_incub);
+
+                            if (r3_incub > r7_incub)
+                                ts2 = r3_incub.Subtract(r7_incub);
+                            else if (r7_incub > r3_incub)
+                                ts2 = r7_incub.Subtract(r3_incub);
+
+                            if (r4_incub > r7_incub)
+                                ts3 = r4_incub.Subtract(r7_incub);
+                            else if (r7_incub > r4_incub)
+                                ts3 = r7_incub.Subtract(r4_incub);
+
+                            if (r5_incub > r7_incub)
+                                ts4 = r5_incub.Subtract(r7_incub);
+                            else if (r7_incub > r5_incub)
+                                ts4 = r7_incub.Subtract(r5_incub);
+                            if (r6_incub > r7_incub)
+                                ts5 = r6_incub.Subtract(r7_incub);
+                            else if (r7_incub > r6_incub)
+                                ts5 = r7_incub.Subtract(r6_incub);
+                            if (r1_incub > r7_incub)
+                                ts6 = r1_incub.Subtract(r7_incub);
+                            else if (r7_incub > r1_incub)
+                                ts6 = r7_incub.Subtract(r1_incub);
+                            if (r8_incub > r7_incub)
+                                ts7 = r8_incub.Subtract(r7_incub);
+                            else if (r7_incub > r8_incub)
+                                ts7 = r7_incub.Subtract(r8_incub);
+                            if (r9_incub > r7_incub)
+                                ts8 = r9_incub.Subtract(r7_incub);
+                            else if (r7_incub > r9_incub)
+                                ts8 = r7_incub.Subtract(r9_incub);
                             break;
                         }
                     case 8:
                         {
-                            if (R1_protostart == true) ts1 = r1_incub.Subtract(r8_incub);
-                            if (R3_protostart == true) ts2 = r3_incub.Subtract(r8_incub);
-                            if (R4_protostart == true) ts3 = r4_incub.Subtract(r8_incub);
-                            if (R5_protostart == true) ts4 = r5_incub.Subtract(r8_incub);
-                            if (R6_protostart == true) ts5 = r6_incub.Subtract(r8_incub);
-                            if (R7_protostart == true) ts6 = r7_incub.Subtract(r8_incub);
-                            if (R2_protostart == true) ts7 = r2_incub.Subtract(r8_incub);
-                            if (R9_protostart == true) ts8 = r9_incub.Subtract(r8_incub);
+                            if (r2_incub > r8_incub)
+                                ts1 = r2_incub.Subtract(r8_incub);
+                            else if (r8_incub > r2_incub)
+                                ts1 = r8_incub.Subtract(r2_incub);
+
+                            if (r3_incub > r8_incub)
+                                ts2 = r3_incub.Subtract(r8_incub);
+                            else if (r8_incub > r3_incub)
+                                ts2 = r8_incub.Subtract(r3_incub);
+
+                            if (r4_incub > r8_incub)
+                                ts3 = r4_incub.Subtract(r8_incub);
+                            else if (r8_incub > r4_incub)
+                                ts3 = r8_incub.Subtract(r4_incub);
+
+                            if (r5_incub > r8_incub)
+                                ts4 = r5_incub.Subtract(r8_incub);
+                            else if (r8_incub > r5_incub)
+                                ts4 = r8_incub.Subtract(r5_incub);
+                            if (r6_incub > r8_incub)
+                                ts5 = r6_incub.Subtract(r8_incub);
+                            else if (r8_incub > r6_incub)
+                                ts5 = r8_incub.Subtract(r6_incub);
+                            if (r7_incub > r8_incub)
+                                ts6 = r7_incub.Subtract(r8_incub);
+                            else if (r8_incub > r7_incub)
+                                ts6 = r8_incub.Subtract(r7_incub);
+                            if (r1_incub > r8_incub)
+                                ts7 = r1_incub.Subtract(r8_incub);
+                            else if (r8_incub > r1_incub)
+                                ts7 = r8_incub.Subtract(r1_incub);
+                            if (r9_incub > r8_incub)
+                                ts8 = r9_incub.Subtract(r8_incub);
+                            else if (r8_incub > r9_incub)
+                                ts8 = r8_incub.Subtract(r9_incub);
                             break;
                         }
                     case 9:
                         {
-                            if (R1_protostart == true) ts1 = r1_incub.Subtract(r9_incub);
-                            if (R3_protostart == true) ts2 = r3_incub.Subtract(r9_incub);
-                            if (R4_protostart == true) ts3 = r4_incub.Subtract(r9_incub);
-                            if (R5_protostart == true) ts4 = r5_incub.Subtract(r9_incub);
-                            if (R6_protostart == true) ts5 = r6_incub.Subtract(r9_incub);
-                            if (R7_protostart == true) ts6 = r7_incub.Subtract(r9_incub);
-                            if (R8_protostart == true) ts7 = r8_incub.Subtract(r9_incub);
-                            if (R2_protostart == true) ts8 = r2_incub.Subtract(r9_incub);
+                            if (r2_incub > r9_incub)
+                                ts1 = r2_incub.Subtract(r9_incub);
+                            else if (r9_incub > r2_incub)
+                                ts1 = r9_incub.Subtract(r2_incub);
+
+                            if (r3_incub > r9_incub)
+                                ts2 = r3_incub.Subtract(r9_incub);
+                            else if (r9_incub > r3_incub)
+                                ts2 = r9_incub.Subtract(r3_incub);
+
+                            if (r4_incub > r9_incub)
+                                ts3 = r4_incub.Subtract(r9_incub);
+                            else if (r9_incub > r4_incub)
+                                ts3 = r9_incub.Subtract(r4_incub);
+
+                            if (r5_incub > r9_incub)
+                                ts4 = r5_incub.Subtract(r9_incub);
+                            else if (r9_incub > r5_incub)
+                                ts4 = r9_incub.Subtract(r5_incub);
+                            if (r6_incub > r9_incub)
+                                ts5 = r6_incub.Subtract(r9_incub);
+                            else if (r9_incub > r6_incub)
+                                ts5 = r9_incub.Subtract(r6_incub);
+                            if (r7_incub > r9_incub)
+                                ts6 = r7_incub.Subtract(r9_incub);
+                            else if (r9_incub > r7_incub)
+                                ts6 = r9_incub.Subtract(r7_incub);
+                            if (r8_incub > r9_incub)
+                                ts7 = r8_incub.Subtract(r9_incub);
+                            else if (r9_incub > r8_incub)
+                                ts7 = r9_incub.Subtract(r8_incub);
+                            if (r1_incub > r9_incub)
+                                ts8 = r1_incub.Subtract(r9_incub);
+                            else if (r9_incub > r1_incub)
+                                ts8 = r9_incub.Subtract(r1_incub);
                             break;
                         }
 
                 }
+                //
+                //if ((ts1.TotalMilliseconds > 0 && ts1.TotalMilliseconds <= 5000) || (ts2.TotalMilliseconds > 0 && ts2.TotalMilliseconds <= 5000) || (ts3.TotalMilliseconds > 0 && ts3.TotalMilliseconds <= 5000) || (ts4.TotalMilliseconds > 0 && ts4.TotalMilliseconds <= 5000) || (ts5.TotalMilliseconds > 0 && ts5.TotalMilliseconds <= 5000) || (ts6.TotalMilliseconds > 0 && ts6.TotalMilliseconds <= 5000) || (ts7.TotalMilliseconds > 0 && ts7.TotalMilliseconds <= 5000) || (ts8.TotalMilliseconds > 0 && ts8.TotalMilliseconds <= 5000))
+                //if ((ts1.Seconds > 0 && ts1.Seconds <= 9) || (ts2.Seconds > 0 && ts2.Seconds <= 9) || (ts3.Seconds > 0 && ts3.Seconds <= 9) || (ts4.Seconds > 0 && ts4.Seconds <= 9) || (ts5.Seconds > 0 && ts5.Seconds <= 9) || (ts6.Seconds > 0 && ts6.Seconds <= 9) || (ts7.Seconds > 0 && ts7.Seconds <= 9) || (ts8.Seconds > 0 && ts8.Seconds <= 9))
                 if ((ts1.TotalSeconds > 0 && ts1.TotalSeconds <= 9) || (ts2.TotalSeconds > 0 && ts2.TotalSeconds <= 9) || (ts3.TotalSeconds > 0 && ts3.TotalSeconds <= 9) || (ts4.TotalSeconds > 0 && ts4.TotalSeconds <= 9) || (ts5.TotalSeconds > 0 && ts5.TotalSeconds <= 9) || (ts6.TotalSeconds > 0 && ts6.TotalSeconds <= 9) || (ts7.TotalSeconds > 0 && ts7.TotalSeconds <= 9) || (ts8.TotalSeconds > 0 && ts8.TotalSeconds <= 9))
                 {
                     respflg = true;
@@ -1677,25 +1941,754 @@ namespace HematoxinandEosin
                 return false;
             }            
         }
+        ////private void tmr_r1_incub_Tick(object sender, EventArgs e)
+        ////{
+        ////    DateTime d1 = System.DateTime.Now;
+        ////    TimeSpan ts11 = new TimeSpan();
+
+        ////    int jno = 0; Boolean rackin = false;
+        ////    DateTime d2 = System.DateTime.Now; //Added on 01-03-2024 to On the water pump
+        ////    d2 = r1_incub.AddSeconds(-18); // Added on 01-03-2024 to open the water wall;
+        ////    //This has to check with device
+        ////    DateTime d3 = System.DateTime.Now;
+        ////    //d3 = r1_incub.AddSeconds(-15);
+        ////    //if (d1 >= d3)
+        ////    //{
+        ////    //    if ((R2_pickcmdissue == false) && (R3_pickcmdissue == false) && (R6_pickcmdissue == false) && (R4_pickcmdissue == false) && (R5_pickcmdissue == false) && (cmd_Exec_Comp == true) && (RA_Move_issued == false) && (RA_Move_Intiate == false) && ((JarName_R1.Contains("J")) || (JarName_R1.Contains("W"))))
+        ////    //    {
+        ////    //        move_ra_tolocation(1);
+        ////    //    }
+        ////    //}
+        ////    //This has to check with device
+        ////    if (d1 >= r1_incub)
+        ////    {
+        ////        tmr_r1_incub.Enabled = false;
+        ////        if (TempReadingStarted == true)
+        ////        {
+        ////            tmr_temp.Enabled = false;
+        ////            tmr_temp_incub.Enabled = false;
+        ////            tmr_tempstart.Enabled = true;
+        ////            temp_restartincub = System.DateTime.Now;
+        ////            temp_restartincub = temp_restartincub.AddSeconds(10);
+        ////            ////System.Threading.Thread.Sleep(500);
+        ////        }
+
+        ////        //below code updated on 08-05-2024 in order avoid clash of racks
+        ////        if ((R2_pickcmdissue == true) || (R3_pickcmdissue == true) || (R4_pickcmdissue == true) || (R5_pickcmdissue == true) || (R6_pickcmdissue == true) || (R7_pickcmdissue == true) || (R8_pickcmdissue == true) || (R9_pickcmdissue == true) || (loadingjar_racksensed == true) || (RA_Move_issued == true) ||(loading_racks == true))
+        ////        {
+        ////            r1_incub = r1_incub.AddSeconds(11);
+        ////            tmr_r1_incub.Enabled = true;
+        ////            tmr_r1_incub.Interval = 1000;
+        ////            r1_taskcomp = r1_taskcomp.AddSeconds(11);
+        ////            r1_incub_Woff = r1_incub_Woff.AddSeconds(11);
+        ////            r1_WaitCnt++;
+        ////            Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R1 + " for " + "R" + R1_cnt.ToString() + " as other racks picking by RA in tmr_r1_incub()");
+        ////            return;
+        ////        }
+        ////        //Above code updated on 08-05-2024  in order avoid clash of racks
+        ////        //Below code updated on 01-04-2024 to give priority to previous updated count
+        ////        if (((r1_WaitCnt < r2_WaitCnt) || (r1_WaitCnt < r3_WaitCnt) || (r1_WaitCnt < r4_WaitCnt) || (r1_WaitCnt < r5_WaitCnt) || (r1_WaitCnt < r6_WaitCnt) || (r1_WaitCnt < r7_WaitCnt) || (r1_WaitCnt < r8_WaitCnt) || (r1_WaitCnt < r9_WaitCnt)) && (r1priority == 0))
+        ////        {
+        ////            r1_incub = r1_incub.AddSeconds(11);
+        ////            tmr_r1_incub.Enabled = true;
+        ////            tmr_r1_incub.Interval = 1000;
+        ////            r1_taskcomp = r1_taskcomp.AddSeconds(11);
+        ////            r1_incub_Woff = r1_incub_Woff.AddSeconds(11);
+        ////            r1_WaitCnt++;
+        ////            Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R1 + " for " + "R" + R1_cnt.ToString() + " as previous racks are in Waiting in tmr_r1_incub()");
+        ////            //Next rack calculation
+        ////            ////if (nxtrackloading > r1_incub)
+        ////            ////    ts11 = nxtrackloading.Subtract(r1_incub);
+        ////            ////else
+        ////            ////    ts11 = r1_incub.Subtract(nxtrackloading);
+
+        ////            ////if ((ts11.TotalSeconds >= 0) && (ts11.TotalSeconds <= 11))
+        ////            ////{
+        ////            ////    nxtrackloading = nxtrackloading.AddSeconds(11);
+        ////            ////}
+        ////            return;
+        ////        }
+
+        ////        //Below code added on 05-12-2023 1055 in order to avoid clash
+        ////        if (((r2priority == 1) || (r3priority == 1) || (r4priority == 1) || (r5priority == 1) || (r6priority == 1) || (r7priority == 1) || (r8priority == 1) || (r9priority == 1)) && (r1priority == 0))
+        ////        {
+        ////            r1_incub = r1_incub.AddSeconds(11);
+        ////            r1_taskcomp = r1_taskcomp.AddSeconds(11);
+        ////            tmr_r1_incub.Enabled = true;
+        ////            tmr_r1_incub.Interval = 1000;
+        ////            r1_WaitCnt++;
+        ////            Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R1 + " for " + "R" + R1_cnt.ToString() + " as other racks are in high priority in tmr_r1_incub()");
+        ////            ////if (nxtrackloading > r1_incub)
+        ////            ////    ts11 = nxtrackloading.Subtract(r1_incub);
+        ////            ////else
+        ////            ////    ts11 = r1_incub.Subtract(nxtrackloading);
+
+        ////            ////if ((ts11.TotalSeconds >= 0) && (ts11.TotalSeconds <= 11))
+        ////            ////{
+        ////            ////    nxtrackloading = nxtrackloading.AddSeconds(11);
+        ////            ////}
+        ////            return;
+        ////        }
+        ////        //Below code added on 20-12-2023 1644 to avoid clash 
+
+        ////        if ((JarName_R1 == "W1") || (JarName_R1 == "W2") || (JarName_R1 == "W3") || (JarName_R1 == "W4") || (JarName_R1 == "W5") || (JarName_R1 == "W6"))
+        ////        {
+        ////            if ((check_washjar_collision(1) == true) && (r1_WshWaitCnt<2))
+        ////            {
+        ////                r1_incub = r1_incub.AddSeconds(Wash_delaytime);
+        ////                tmr_r1_incub.Enabled = true;
+        ////                tmr_r1_incub.Interval = 1000;
+        ////                r1_taskcomp = r1_taskcomp.AddSeconds(Wash_delaytime);
+        ////                Communication.writeCommunicationCommands(Wash_delaytime.ToString() + " Secconds Timer incrementes in Jar " + JarName_R1 + " for " + "R" + R1_cnt.ToString() + " as this rack in water station and other rack is elasping time in tmr_r1_incub()");
+        ////                r1_WshWaitCnt++;
+        ////                return;
+        ////            }
+        ////        }
+        ////        //Above code added on 30-08-2024 1140
+        ////        jno = Convert.ToInt32(Next_JarName_R1.Substring(1));
+        ////        if (Next_JarName_R1.Contains("J"))
+        ////        {
+        ////            if (rackinjars[jno - 1] == 1)
+        ////                rackin = true;
+        ////        }
+        ////        else if (Next_JarName_R1.Contains("W"))
+        ////        {
+        ////            if (rackinwaterjars[jno - 1] == 1)
+        ////                rackin = true;
+        ////        }
+        ////        if (rackin == true)
+        ////        {
+        ////            r1_incub = r1_incub.AddSeconds(11);
+        ////            r1_taskcomp = r1_taskcomp.AddSeconds(11);
+        ////            tmr_r1_incub.Enabled = true;
+        ////            tmr_r1_incub.Interval = 1000;
+        ////            Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R1 + " for " + "R" + R1_cnt.ToString() + " as other racks are in high priority in tmr_r1_incub()");
+        ////            ////if (nxtrackloading > r1_incub)
+        ////            ////    ts11 = nxtrackloading.Subtract(r1_incub);
+        ////            ////else
+        ////            ////    ts11 = r1_incub.Subtract(nxtrackloading);
+
+        ////            ////if ((ts11.TotalSeconds >= 0) && (ts11.TotalSeconds <= 11))
+        ////            ////{
+        ////            ////    nxtrackloading = nxtrackloading.AddSeconds(11);
+        ////            ////}
+        ////            return;
+        ////        }
+        ////        //Above code added on 20-12-2023 1644 to avoid clash 
+
+        ////        if ((cmd_Exec_Comp == false))
+        ////        {
+        ////            r1_incub = r1_incub.AddSeconds(11);
+        ////            r1_taskcomp = r1_taskcomp.AddSeconds(11);
+        ////            tmr_r1_incub.Enabled = true;
+        ////            tmr_r1_incub.Interval = 1000;
+        ////            r1_WaitCnt++;
+        ////            Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R1 + " for " + "R" + R1_cnt.ToString() + " as previously excuted command is in process in tmr_r1_incub()");
+        ////            ////if (nxtrackloading > r1_incub)
+        ////            ////    ts11 = nxtrackloading.Subtract(r1_incub);
+        ////            ////else
+        ////            ////    ts11 = r1_incub.Subtract(nxtrackloading);
+
+        ////            ////if ((ts11.TotalSeconds >= 0) && (ts11.TotalSeconds <= 11))
+        ////            ////{
+        ////            ////    nxtrackloading = nxtrackloading.AddSeconds(11);
+        ////            ////}
+        ////            return;
+        ////        }
+        ////        //Above code added on 05-12-2023 1055 in order to avoid clash
+
+        ////        if ((Process_Continued == true) && (protocolinitiateflg_R1 == false))
+        ////            protocolinitiateflg_R1 = true;
+        ////        //Continue Mode rack calculation
+        ////        if (continuetest > r1_incub)
+        ////            ts11 = continuetest.Subtract(r1_incub);
+        ////        else
+        ////            ts11 = r1_incub.Subtract(continuetest);
+        ////        if ((ts11.TotalSeconds >= 0) && (ts11.TotalSeconds <= 11))
+        ////        {
+        ////            continuetest = continuetest.AddSeconds(11);
+        ////        }
+        ////        //Next rack calculation
+        ////        if (nxtrackloading > r1_incub)
+        ////            ts11 = nxtrackloading.Subtract(r1_incub);
+        ////        else
+        ////            ts11 = r1_incub.Subtract(nxtrackloading);
+
+        ////        if ((ts11.TotalSeconds >= 0) && (ts11.TotalSeconds <= 11))
+        ////        {
+        ////            nxtrackloading = nxtrackloading.AddSeconds(11);
+        ////        }
+
+        ////        //New code added on 15-11-2023 as checked for priority
+        ////        racks.Clear();
+        ////        racks.Add(new Rack { RackNo = 1, IncubationTime = r1_incub, Priority = r1priority });
+        ////        racks.Add(new Rack { RackNo = 2, IncubationTime = r2_incub, Priority = r2priority });
+        ////        racks.Add(new Rack { RackNo = 3, IncubationTime = r3_incub, Priority = r3priority });
+        ////        racks.Add(new Rack { RackNo = 4, IncubationTime = r4_incub, Priority = r4priority });
+        ////        racks.Add(new Rack { RackNo = 5, IncubationTime = r5_incub, Priority = r5priority });
+        ////        racks.Add(new Rack { RackNo = 6, IncubationTime = r6_incub, Priority = r6priority });
+        ////        racks.Add(new Rack { RackNo = 7, IncubationTime = r7_incub, Priority = r7priority });
+        ////        racks.Add(new Rack { RackNo = 8, IncubationTime = r8_incub, Priority = r8priority });
+        ////        racks.Add(new Rack { RackNo = 9, IncubationTime = r9_incub, Priority = r9priority });
+
+        ////        ////check_priority_times(1);
+        ////        CheckPriorityTimes(1);
+        ////        if (p1protorun_flg == false)
+        ////        {
+        ////            r1_incub = r1_incub.AddSeconds(5);
+        ////            r1_taskcomp = r1_taskcomp.AddSeconds(5);
+        ////            tmr_r1_incub.Enabled = true;
+        ////            tmr_r1_incub.Interval = 1000;
+        ////            r1_WaitCnt++;
+        ////            Communication.writeCommunicationCommands("5 Secconds Timer incrementes in Jar " + JarName_R1 + " for " + "R" + R1_cnt.ToString() + " as priority given to other rack in tmr_r1_incub()");
+        ////            ////if (nxtrackloading > r1_incub)
+        ////            ////    ts11 = nxtrackloading.Subtract(r1_incub);
+        ////            ////else
+        ////            ////    ts11 = r1_incub.Subtract(nxtrackloading);
+
+        ////            ////if ((ts11.TotalSeconds >= 0) && (ts11.TotalSeconds <= 5))
+        ////            ////{
+        ////            ////    nxtrackloading = nxtrackloading.AddSeconds(5);
+        ////            ////}
+        ////            return;
+        ////        }
+        ////        //Below code added on 13-12-2023 to check the washing time completed
+        ////        ////watervalveonpff(JarName_R1, 0);
+        ////        ////System.Threading.Thread.Sleep(750);
+
+        ////        //Above code added on 13-12-2023 to check the washing time completed
+        ////        if ((JarName_R1 == "W1") || (JarName_R1 == "W2") || (JarName_R1 == "W3") || (JarName_R1 == "W4") || (JarName_R1 == "W5") || (JarName_R1 == "W6"))
+        ////        {
+        ////            if (JarName_R1 == "W1")
+        ////                W1_On_State = false;
+        ////            else if (JarName_R1 == "W2")
+        ////                W2_On_State = false;
+        ////            else if (JarName_R1 == "W3")
+        ////                W3_On_State = false;
+        ////            else if (JarName_R1 == "W4")
+        ////                W4_On_State = false;
+        ////            else if (JarName_R1 == "W5")
+        ////                W5_On_State = false;
+        ////            else if (JarName_R1 == "W6")
+        ////                W6_On_State = false;
+
+        ////            Intialize_Wash_Jars = false; wtr_valoffflg = false;
+        ////            watervalveonpff(JarName_R1, 0);
+        ////            r1_WshWaitCnt = 0;
+        ////            //System.Threading.Thread.Sleep(750);
+        ////            while(wtr_valoffflg==true) //Added on 18-02-2025 1033 in order run the next rack
+        ////            {
+        ////                wtr_valoffflg = false;
+        ////                break;
+        ////            }
+        ////        }
+        ////        if ((JarName_R1 == "H1") || (JarName_R1 == "H2") || (JarName_R1 == "H3"))
+        ////        {
+        ////            if (JarName_R1 == "H1") { H1_incub_complete = true; }
+        ////            else if (JarName_R1 == "H2") { H2_incub_complete = true; }
+        ////            else if (JarName_R1 == "H3") { H3_incub_complete = true; }
+        ////            r1priority = 1;
+        ////            open_htrdoor();
+        ////        }
+        ////        else
+        ////        {
+        ////            RA_Move_issued = false;
+        ////            if (protocolinitiateflg_R1 == true)
+        ////                protocolrun_R1();
+        ////        }
+        ////    }
+        ////    else
+        ////    {
+        ////        ////////Below code added on 04-12-2023 1220
+        ////        //////if ((d1 >= r1_priorChk) && (r1_priorChk_flg == false))
+        ////        //////{
+        ////        //////    r1_priorChk_flg = true;
+        ////        //////    check_priority_times(1);
+        ////        //////}
+
+        ////        //////code written on 28-11-2023 1526 to read the temperature                
+        ////        ////if ((heatingreqflg == true) && (Readtmpintiated_reinitiate == false) && (TempReadingStarted == false))
+        ////        ////{
+        ////        ////    Readtmpintiated_reinitiate = true;
+        ////        ////    readtemperature();
+        ////        ////    //tmr_temp.Enabled = true;
+        ////        ////    //tmr_temp.Interval = 5000;
+        ////        ////}
+
+        ////        //Write code to On / Off water Value written on 11-11-2023_1540
+        ////        //Code modified on 12-12-2023 to start & stop the water values
+        ////        washrackno = R1_cnt;
+        ////        DateTime doff = r1_incub_Woff.AddSeconds(10); // Added 15-12-2023 to to stop unnecessary command sending                
+        ////        //////New code updated on 21-12-2023 to insert the loaded data to database
+        ////        ////DateTime doff1 = r1_incub_Woff.AddSeconds(10); // Added 21-12-2023 to update data to database
+        ////        ////if ((d1 >= r1_incub_Woff) && (d1 <= doff1) && tmr_update_flg==false)   //Modified on 21-12-2023 to update data to database
+        ////        ////{
+        ////        ////    tmr_update_flg = true;
+        ////        ////    tmr_update.Enabled = true;
+        ////        ////    tmr_update.Interval = 2000;
+        ////        ////}
+        ////        //////New code updated on 21-12-2023 to insert the loaded data to database
+        ////        if (Next_JarName_R1.Contains("W"))
+        ////        {                    
+        ////            if ((R1_pickcmdissue == false) && (R2_pickcmdissue == false) && (R3_pickcmdissue == false) && (R4_pickcmdissue == false) && (R5_pickcmdissue == false) && (R6_pickcmdissue == false) && (R7_pickcmdissue == false) && (R8_pickcmdissue == false) && (R9_pickcmdissue == false))
+        ////            {
+        ////                //On Condition
+        ////                if (((r2priority == 1) || (r3priority == 1) || (r4priority == 1) || (r5priority == 1) || (r6priority == 1) || (r6priority == 7) || (r6priority == 8) || (r6priority == 9)) && (r1priority == 0))
+        ////                {
+        ////                    r1_incub_WOn = r1_incub_WOn.AddSeconds(10);
+        ////                    d2 = d2.AddSeconds(10);
+        ////                }
+        ////                else
+        ////                {
+        ////                    if ((d1 >= r1_incub_WOn) && r1_incub_WOn_flg == false && (cmd_Exec_Comp == true))
+        ////                    {
+        ////                        jno = Convert.ToInt32(Next_JarName_R1.Substring(1));
+        ////                        if (rackinwaterjars[jno - 1] == 1)
+        ////                        {
+        ////                            int wt1 = 0;
+        ////                            if (jno == 6) wt1 = 1;
+        ////                            else wt1 = (jno + 1);
+        ////                            for (int wt = wt1; wt <= 6; wt++)
+        ////                            {
+        ////                                if (rackinwaterjars[wt - 1] == 0)
+        ////                                {
+        ////                                    Actual_WashJar_R1 = Next_JarName_R1;
+        ////                                    Next_JarName_R1 = "W" + wt.ToString();
+        ////                                    R1Protorun.Rows[r1inx + 1]["JarNo"] = Next_JarName_R1;
+        ////                                    break;
+        ////                                }
+        ////                            }
+        ////                        }
+
+        ////                        r1_incub_WOn_flg = true;
+        ////                        Intialize_Wash_Jars = false;
+        ////                        Intialize_Wash_Jars = false;
+        ////                        watervalveonpff(Next_JarName_R1, 1);
+        ////                    }
+        ////                }
+        ////            }
+        ////        }
+        ////        if (JarName_R1.Contains("J"))   ////if (Prev_JarName_R1.Contains("W"))
+        ////        {
+        ////            if (cmd_Exec_Comp == true)
+        ////            {
+        ////                if (((r2priority == 1) || (r3priority == 1) || (r4priority == 1) || (r5priority == 1) || (r6priority == 1)) && (r1priority == 0))
+        ////                {
+        ////                    r1_incub_Woff = r1_incub_Woff.AddSeconds(18);
+        ////                }
+        ////                else
+        ////                {
+        ////                    //Off condition
+        ////                    if ((d1 >= r1_incub_Woff) && (d1 <= doff))   //Modified on 15-12-2023 to send the Valve shut command between the time  ////if ((d1 >= r1_incub_Woff) && (r1_incub_Woff_flg == false))
+        ////                    {
+        ////                        for (int woff = 0; woff < water_valves_on_off_state.Length; woff++)
+        ////                        {
+        ////                            if (water_valves_on_off_state[woff] == 1)
+        ////                            {
+        ////                                if ((woff == 0) && (W1_On_State == false)) watervalveonpff("W1", 0);
+        ////                                else if ((woff == 1) && (W2_On_State == false)) watervalveonpff("W2", 0);
+        ////                                else if ((woff == 2) && (W3_On_State == false)) watervalveonpff("W3", 0);
+        ////                                else if ((woff == 3) && (W4_On_State == false)) watervalveonpff("W4", 0);
+        ////                                else if ((woff == 4) && (W5_On_State == false)) watervalveonpff("W5", 0);
+        ////                                else if ((woff == 5) && (W6_On_State == false)) watervalveonpff("W6", 0);
+        ////                                System.Threading.Thread.Sleep(500);
+        ////                            }
+        ////                        }
+        ////                    }
+        ////                }
+        ////            }
+        ////        }
+        ////        //lbl_tmr1.Text = "RNo. R" + R1_cnt.ToString() + ", JNo." + JarName_R1 + " Elasped-" + d1.ToString().Substring(10) + " Incub-" + r1_incub.ToString().Substring(10) + " Task Complete By-" + r1_taskcomp.ToString().Substring(10);
+        ////        if (JarName_R1.Contains("H"))
+        ////            updateheatertimings(JarName_R1, "R" + R1_cnt.ToString(), true, 1);
+        ////        else
+        ////            updatetiming(JarName_R1, "R" + R1_cnt.ToString(), 1);
+
+        ////    }
+        ////}
+        #region NewConcept
+        private static readonly object _lock = new object();
+        class Rack
+        {
+            public int RackNo { get; set; }
+            public DateTime IncubationTime { get; set; }
+            public int Priority { get; set; }
+            public bool IsProcessing { get; set; }
+            public int Count { get; set; }
+        }
+        private static Dictionary<int, Rack> Racks = new Dictionary<int, Rack>(); // Store rack details
+
+        static List<Rack> racks = new List<Rack>(); // Stores racks with timings
+        
+        private static readonly int DefaultDelay = 11; // Configurable delay time in seconds
+        private static readonly int DefaultWashDelay = 18; // Configurable delay time in seconds
+        private static readonly int DefaultWaitCnt = 3; // Configurable delay time in seconds
+
+        private void HandleCollisionAndPriority(Rack currentRack)
+        {
+            foreach (var rack in Racks.Values)
+            {
+                if (rack.RackNo == currentRack.RackNo) continue; // Skip self-comparison
+                               
+                if (Math.Abs((currentRack.IncubationTime - rack.IncubationTime).TotalSeconds) <= DefaultDelay)
+                {   //Checking the incubation timer and incrementing the value                 
+                    if (rack.Priority > currentRack.Priority)
+                    {
+                        DelayRack(currentRack, DefaultDelay, "Higher priority rack detected");
+                    }
+                    else if (rack.Priority < currentRack.Priority)
+                    {
+                        DelayRack(rack, DefaultDelay, "Lower priority rack adjusted");
+                    }
+                    else if (currentRack.Count > rack.Count) //While processing any rack incubation timer completed and count is greater than other rack
+                    {
+                        DelayRack(rack, DefaultDelay, "As other rack is ready for pickup");
+                    }
+                    else if (currentRack.Count < rack.Count) //While processing any rack incubation timer completed and count is less than other rack
+                    {
+                        DelayRack(currentRack, DefaultDelay, "As other rack is ready for pickup");
+                    }
+                }
+            }
+        }
+        private void ProcessCompletedIncubation(Rack currentRack)
+        {
+            lock (_lock)
+            {
+                if (TempReadingStarted == true)
+                {
+                    tmr_temp.Enabled = false;
+                    tmr_temp_incub.Enabled = false;
+                    tmr_tempstart.Enabled = true;
+                    temp_restartincub = System.DateTime.Now;
+                    temp_restartincub = temp_restartincub.AddSeconds(10);
+                    ////System.Threading.Thread.Sleep(500);
+                }
+                switch (currentRack.RackNo)
+                {
+                    case 1:
+                        {
+                            tmr_r1_incub.Enabled = false;                            
+                            if ((Process_Continued == true) && (protocolinitiateflg_R1 == false))
+                                protocolinitiateflg_R1 = true;
+                            if (JarName_R1.Contains("H"))
+                                openhtrdoor_rack(1, JarName_R1);
+                            else if (JarName_R1.Contains("W"))
+                                stop_watervalve(1, JarName_R1);
+                            else
+                                continous_protorun(1);
+                            break;
+                        }
+                    case 2:
+                        {
+                            tmr_r2_incub.Enabled = false;                            
+                            if ((Process_Continued == true) && (protocolinitiateflg_R2 == false))
+                                protocolinitiateflg_R2 = true;
+                            if (JarName_R2.Contains("H"))
+                                openhtrdoor_rack(2, JarName_R2);
+                            else if (JarName_R2.Contains("W"))
+                                stop_watervalve(2, JarName_R2);
+                            else
+                                continous_protorun(2);
+                            break;
+                        }
+                    case 3:
+                        {
+                            tmr_r3_incub.Enabled = false;                            
+                            if ((Process_Continued == true) && (protocolinitiateflg_R3 == false))
+                                protocolinitiateflg_R3 = true;
+                            if (JarName_R3.Contains("H"))
+                                openhtrdoor_rack(3, JarName_R3);
+                            else if (JarName_R3.Contains("W"))
+                                stop_watervalve(3, JarName_R3);
+                            else
+                                continous_protorun(3);
+                            break;
+                        }
+                    case 4:
+                        {
+                            tmr_r4_incub.Enabled = false;                            
+                            if ((Process_Continued == true) && (protocolinitiateflg_R4 == false))
+                                protocolinitiateflg_R4 = true;
+                            if (JarName_R4.Contains("H"))
+                                openhtrdoor_rack(4, JarName_R4);
+                            else if (JarName_R5.Contains("W"))
+                                stop_watervalve(4, JarName_R4);
+                            else
+                                continous_protorun(4);
+                            break;
+                        }
+                    case 5:
+                        {
+                            tmr_r5_incub.Enabled = false;                            
+                            if ((Process_Continued == true) && (protocolinitiateflg_R5 == false))
+                                protocolinitiateflg_R5 = true;
+                            if (JarName_R5.Contains("H"))
+                                openhtrdoor_rack(5, JarName_R5);
+                            else if (JarName_R5.Contains("W"))
+                                stop_watervalve(5, JarName_R5);
+                            else
+                                continous_protorun(5);
+                            break;
+                        }
+                    case 6:
+                        {
+                            tmr_r6_incub.Enabled = false;                            
+                            if ((Process_Continued == true) && (protocolinitiateflg_R6 == false))
+                                protocolinitiateflg_R6 = true;
+                            if (JarName_R6.Contains("H"))
+                                openhtrdoor_rack(6, JarName_R6);
+                            else if (JarName_R6.Contains("W"))
+                                stop_watervalve(6, JarName_R6);
+                            else
+                                continous_protorun(6);
+                            break;
+                        }
+                    case 7:
+                        {
+                            tmr_r7_incub.Enabled = false;                            
+                            if ((Process_Continued == true) && (protocolinitiateflg_R7 == false))
+                                protocolinitiateflg_R7 = true;
+                            if (JarName_R7.Contains("H"))
+                                openhtrdoor_rack(7, JarName_R7);
+                            else if (JarName_R7.Contains("W"))
+                                stop_watervalve(7, JarName_R7);
+                            else
+                                continous_protorun(7);
+                            break;
+                        }
+                    case 8:
+                        {
+                            tmr_r8_incub.Enabled = false;                            
+                            if ((Process_Continued == true) && (protocolinitiateflg_R8 == false))
+                                protocolinitiateflg_R8 = true;
+                            if (JarName_R8.Contains("H"))
+                                openhtrdoor_rack(8, JarName_R8);
+                            else if (JarName_R8.Contains("W"))
+                                stop_watervalve(8, JarName_R8);
+                            else
+                                continous_protorun(8);
+                            break;
+                        }
+                    case 9:
+                        {
+                            tmr_r9_incub.Enabled = false;                            
+                            if ((Process_Continued == true) && (protocolinitiateflg_R5 == false))
+                                protocolinitiateflg_R9 = true;
+                            if (JarName_R5.Contains("H"))
+                                openhtrdoor_rack(9, JarName_R9);
+                            else if (JarName_R5.Contains("W"))
+                                stop_watervalve(9, JarName_R9);
+                            else
+                                continous_protorun(9);
+                            break;
+                        }
+                }
+            }           
+        }
+
+        private Boolean HandleWashCollisionAndPriority(Rack currentRack)
+        {
+            bool retval = false;
+            foreach (var rack in Racks.Values)
+            {
+                if (rack.RackNo == currentRack.RackNo) continue; // Skip self-comparison
+
+                if (Math.Abs((currentRack.IncubationTime - rack.IncubationTime).TotalSeconds) <= 9)
+                {   //Checking the incubation timer and incrementing the value                 
+                    //if (rack.Priority > currentRack.Priority)
+                    //{
+                        DelayRack(currentRack, DefaultWashDelay, "Higher priority rack detected");
+                        retval = true;
+                    //}                    
+                }
+            }
+            return retval;
+        }
+
+        private void openhtrdoor_rack(int rkno,string jname)
+        {
+            if (jname == "H1") { H1_incub_complete = true; }
+            else if (jname == "H2") { H2_incub_complete = true; }
+            else if (jname == "H3") { H3_incub_complete = true; }
+            if(rkno==1)
+                r1priority = 1;
+            else if (rkno == 2)
+                r2priority = 1;
+            else if (rkno == 3)
+                r3priority = 1;
+            else if (rkno == 4)
+                r4priority = 1;
+            else if (rkno == 5)
+                r5priority = 1;
+            else if (rkno == 6)
+                r6priority = 1;
+            else if (rkno == 7)
+                r7priority = 1;
+            else if (rkno == 8)
+                r8priority = 1;
+            else if (rkno == 9)
+                r9priority = 1;
+            open_htrdoor();
+        }
+        private void stop_watervalve(int rkno, string jname)
+        {
+            if (jname == "W1") W1_On_State = false;
+            else if (jname == "W2") W2_On_State = false;
+            else if (jname == "W3") W3_On_State = false;
+            else if (jname == "W4") W4_On_State = false;
+            else if (jname == "W5") W5_On_State = false;
+            else if (jname == "W6") W6_On_State = false;
+
+            Intialize_Wash_Jars = false; wtr_valoffflg = false;
+            watervalveonpff(jname, 0);
+            while (wtr_valoffflg == true) //Added on 18-02-2025 1033 in order run the next rack
+            {
+                wtr_valoffflg = false;
+                break;
+            }
+            RA_Move_issued = false;
+            if(rkno==1)
+            {               
+                if (protocolinitiateflg_R1 == true) protocolrun_R1();
+            }
+            else if (rkno == 2)
+            {                
+                if (protocolinitiateflg_R2 == true) protocolrun_R2();
+            }
+            else if (rkno == 3)
+            {
+                if (protocolinitiateflg_R3 == true) protocolrun_R3();
+            }
+            else if (rkno == 4)
+            {
+                if (protocolinitiateflg_R4 == true) protocolrun_R4();
+            }
+            else if (rkno == 5)
+            {
+                if (protocolinitiateflg_R5 == true) protocolrun_R5();
+            }
+            else if (rkno == 6)
+            {
+                if (protocolinitiateflg_R6 == true) protocolrun_R6();
+            }
+            else if (rkno == 7)
+            {
+                if (protocolinitiateflg_R7 == true) protocolrun_R7();
+            }
+            else if (rkno == 8)
+            {
+                if (protocolinitiateflg_R8 == true) protocolrun_R8();
+            }
+            else if (rkno == 9)
+            {
+                if (protocolinitiateflg_R9 == true) protocolrun_R9();
+            }
+        }
+        private void continous_protorun(int rkno)
+        {
+            RA_Move_issued = false;
+            if (rkno == 1)
+            {
+                if (protocolinitiateflg_R1 == true) protocolrun_R1();
+            }
+            else if (rkno == 2)
+            {
+                if (protocolinitiateflg_R2 == true) protocolrun_R2();
+            }
+            else if (rkno == 3)
+            {
+                if (protocolinitiateflg_R3 == true) protocolrun_R3();
+            }
+            else if (rkno == 4)
+            {
+                if (protocolinitiateflg_R4 == true) protocolrun_R4();
+            }
+            else if (rkno == 5)
+            {
+                if (protocolinitiateflg_R5 == true) protocolrun_R5();
+            }
+            else if (rkno == 6)
+            {
+                if (protocolinitiateflg_R6 == true) protocolrun_R6();
+            }
+            else if (rkno == 7)
+            {
+                if (protocolinitiateflg_R7 == true) protocolrun_R7();
+            }
+            else if (rkno == 8)
+            {
+                if (protocolinitiateflg_R8 == true) protocolrun_R8();
+            }
+            else if (rkno == 9)
+            {
+                if (protocolinitiateflg_R9 == true) protocolrun_R9();
+            }
+        }
+        
+        private void DelayRack(Rack rack, int delaySeconds, string reason)
+        {
+            rack.IncubationTime = rack.IncubationTime.AddSeconds(delaySeconds);
+            if (rack.RackNo == 1)
+            {
+                r1_taskcomp = r1_taskcomp.AddSeconds(delaySeconds);
+                Communication.writeCommunicationCommands("Rack R" + R1_cnt.ToString() + "delayed by " + delaySeconds.ToString() + " seconds due to " + reason + " in Jar " + JarName_R1 + " in tmr_r1_incub() function");
+            }
+            else if (rack.RackNo == 2)
+            {
+                r2_taskcomp = r2_taskcomp.AddSeconds(delaySeconds);
+                Communication.writeCommunicationCommands("Rack R" + R2_cnt.ToString() + "delayed by " + delaySeconds.ToString() + " seconds due to " + reason + " in Jar " + JarName_R2 + " in tmr_r2_incub() function");
+            }
+            else if (rack.RackNo == 3)
+            {
+                r3_taskcomp = r3_taskcomp.AddSeconds(delaySeconds);
+                Communication.writeCommunicationCommands("Rack R" + R3_cnt.ToString() + "delayed by " + delaySeconds.ToString() + " seconds due to " + reason + " in Jar " + JarName_R3 + " in tmr_r3_incub() function");
+            }
+            else if (rack.RackNo == 4)
+            {
+                r4_taskcomp = r4_taskcomp.AddSeconds(delaySeconds);
+                Communication.writeCommunicationCommands("Rack R" + R4_cnt.ToString() + "delayed by " + delaySeconds.ToString() + " seconds due to " + reason + " in Jar " + JarName_R4 + " in tmr_r4_incub() function");
+            }
+            else if (rack.RackNo == 5)
+            {
+                r5_taskcomp = r5_taskcomp.AddSeconds(delaySeconds);
+                Communication.writeCommunicationCommands("Rack R" + R5_cnt.ToString() + "delayed by " + delaySeconds.ToString() + " seconds due to " + reason + " in Jar " + JarName_R5 + " in tmr_r5_incub() function");
+            }
+            else if (rack.RackNo == 6)
+            {
+                r6_taskcomp = r6_taskcomp.AddSeconds(delaySeconds);
+                Communication.writeCommunicationCommands("Rack R" + R6_cnt.ToString() + "delayed by " + delaySeconds.ToString() + " seconds due to " + reason + " in Jar " + JarName_R6 + " in tmr_r6_incub() function");
+            }
+            else if (rack.RackNo == 7)
+            {
+                r7_taskcomp = r7_taskcomp.AddSeconds(delaySeconds);
+                Communication.writeCommunicationCommands("Rack R" + R7_cnt.ToString() + "delayed by " + delaySeconds.ToString() + " seconds due to " + reason + " in Jar " + JarName_R7 + " in tmr_r7_incub() function");
+            }
+            else if (rack.RackNo == 8)
+            {
+                r8_taskcomp = r8_taskcomp.AddSeconds(delaySeconds);
+                Communication.writeCommunicationCommands("Rack R" + R8_cnt.ToString() + "delayed by " + delaySeconds.ToString() + " seconds due to " + reason + " in Jar " + JarName_R8 + " in tmr_r8_incub() function");
+            }
+            else if (rack.RackNo == 9)
+            {
+                r9_taskcomp = r9_taskcomp.AddSeconds(delaySeconds);
+                Communication.writeCommunicationCommands("Rack R" + R9_cnt.ToString() + "delayed by " + delaySeconds.ToString() + " seconds due to " + reason + " in Jar " + JarName_R9 + " in tmr_r9_incub() function");
+            }
+        }
+        #endregion
         private void tmr_r1_incub_Tick(object sender, EventArgs e)
         {
             DateTime d1 = System.DateTime.Now;
             TimeSpan ts11 = new TimeSpan();
-
             int jno = 0; Boolean rackin = false;
             DateTime d2 = System.DateTime.Now; //Added on 01-03-2024 to On the water pump
             d2 = r1_incub.AddSeconds(-18); // Added on 01-03-2024 to open the water wall;
             //This has to check with device
             DateTime d3 = System.DateTime.Now;
-            //d3 = r1_incub.AddSeconds(-15);
-            //if (d1 >= d3)
-            //{
-            //    if ((R2_pickcmdissue == false) && (R3_pickcmdissue == false) && (R6_pickcmdissue == false) && (R4_pickcmdissue == false) && (R5_pickcmdissue == false) && (cmd_Exec_Comp == true) && (RA_Move_issued == false) && (RA_Move_Intiate == false) && ((JarName_R1.Contains("J")) || (JarName_R1.Contains("W"))))
-            //    {
-            //        move_ra_tolocation(1);
-            //    }
-            //}
-            //This has to check with device
+            if (R1_protostart == false) { tmr_r1_incub.Enabled = false; return; }
+            int rackNo = 1;
+            if (!Racks.ContainsKey(rackNo)) return;
+            Rack currentRack = Racks[rackNo];            
             if (d1 >= r1_incub)
             {
                 tmr_r1_incub.Enabled = false;
@@ -1708,9 +2701,22 @@ namespace HematoxinandEosin
                     temp_restartincub = temp_restartincub.AddSeconds(10);
                     ////System.Threading.Thread.Sleep(500);
                 }
-
+                if (JarName_R1.Contains("W"))
+                {
+                    if ((check_washjar_collision(1) == true) && (r1_WshWaitCnt <= 2))
+                    {
+                        r1_incub = r1_incub.AddSeconds(18);
+                        r1_taskcomp = r1_taskcomp.AddSeconds(18);
+                        r1_incub_Woff = r1_incub_Woff.AddSeconds(18);
+                        tmr_r1_incub.Enabled = true;
+                        tmr_r1_incub.Interval = 1000;
+                        r1_WshWaitCnt++;
+                        Communication.writeCommunicationCommands("18 Secconds Timer incrementes in Jar " + JarName_R1 + " for " + "R" + R1_cnt.ToString() + " as previous racks are in Waiting in tmr_r1_incub()");
+                        return;
+                    }
+                }                
                 //below code updated on 08-05-2024 in order avoid clash of racks
-                if ((R2_pickcmdissue == true) || (R3_pickcmdissue == true) || (R4_pickcmdissue == true) || (R5_pickcmdissue == true) || (R6_pickcmdissue == true) || (R7_pickcmdissue == true) || (R8_pickcmdissue == true) || (R9_pickcmdissue == true) || (rackloadingtoJar == true) || (RA_Move_issued == true))
+                if ((R2_pickcmdissue == true) || (R3_pickcmdissue == true) || (R4_pickcmdissue == true) || (R5_pickcmdissue == true) || (R6_pickcmdissue == true) || (R7_pickcmdissue == true) || (R8_pickcmdissue == true) || (R9_pickcmdissue == true) || (loadingjar_racksensed == true) || (RA_Move_issued == true) || (loading_racks == true))
                 {
                     r1_incub = r1_incub.AddSeconds(11);
                     tmr_r1_incub.Enabled = true;
@@ -1721,24 +2727,20 @@ namespace HematoxinandEosin
                     Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R1 + " for " + "R" + R1_cnt.ToString() + " as other racks picking by RA in tmr_r1_incub()");
                     return;
                 }
-                //Above code updated on 08-05-2024  in order avoid clash of racks
-
-                if ((JarName_R1 == "W1") || (JarName_R1 == "W2") || (JarName_R1 == "W3") || (JarName_R1 == "W4") || (JarName_R1 == "W5") || (JarName_R1 == "W6"))
+                //////Below code added on 05-12-2023 1055 in order to avoid clash
+                else if (((r2priority == 1) || (r3priority == 1) || (r4priority == 1) || (r5priority == 1) || (r6priority == 1) || (r7priority == 1) || (r8priority == 1) || (r9priority == 1)) && (r1priority == 0))
                 {
-                    if ((check_washjar_collision(1)==true) && (r1_WshWaitCnt<=2))
-                    {
-                        r1_incub = r1_incub.AddSeconds(Wash_delaytime);
-                        tmr_r1_incub.Enabled = true;
-                        tmr_r1_incub.Interval = 1000;
-                        r1_taskcomp = r1_taskcomp.AddSeconds(Wash_delaytime);
-                        Communication.writeCommunicationCommands(Wash_delaytime.ToString() + " Secconds Timer incrementes in Jar " + JarName_R1 + " for " + "R" + R1_cnt.ToString() + " as this rack in water station and other rack is elasping time in tmr_r1_incub()");
-                        r1_WshWaitCnt++;
-                        return;
-                    }
+                    r1_incub = r1_incub.AddSeconds(11);
+                    r1_taskcomp = r1_taskcomp.AddSeconds(11);
+                    tmr_r1_incub.Enabled = true;
+                    tmr_r1_incub.Interval = 1000;
+                    r1_WaitCnt++;
+                    Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R1 + " for " + "R" + R1_cnt.ToString() + " as other racks are in high priority in tmr_r1_incub()");
+                    return;
                 }
-                //Above code added on 30-08-2024 1140
+                //////Below code added on 20-12-2023 1644 to avoid clash 
                 //Below code updated on 01-04-2024 to give priority to previous updated count
-                if (((r1_WaitCnt < r2_WaitCnt) || (r1_WaitCnt < r3_WaitCnt) || (r1_WaitCnt < r4_WaitCnt) || (r1_WaitCnt < r5_WaitCnt) || (r1_WaitCnt < r6_WaitCnt) || (r1_WaitCnt < r7_WaitCnt) || (r1_WaitCnt < r8_WaitCnt) || (r1_WaitCnt < r9_WaitCnt)) && (r1priority == 0))
+                else if (((r1_WaitCnt < r2_WaitCnt) || (r1_WaitCnt < r3_WaitCnt) || (r1_WaitCnt < r4_WaitCnt) || (r1_WaitCnt < r5_WaitCnt) || (r1_WaitCnt < r6_WaitCnt) || (r1_WaitCnt < r7_WaitCnt) || (r1_WaitCnt < r8_WaitCnt) || (r1_WaitCnt < r9_WaitCnt)) && (r1priority == 0) && (r1_WaitCnt < DefaultWaitCnt))
                 {
                     r1_incub = r1_incub.AddSeconds(11);
                     tmr_r1_incub.Enabled = true;
@@ -1746,137 +2748,68 @@ namespace HematoxinandEosin
                     r1_taskcomp = r1_taskcomp.AddSeconds(11);
                     r1_incub_Woff = r1_incub_Woff.AddSeconds(11);
                     r1_WaitCnt++;
-                    Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R1 + " for " + "R" + R1_cnt.ToString() + " as previous racks are in Waiting in tmr_r1_incub()");
-                    //Next rack calculation
-                    ////if (nxtrackloading > r1_incub)
-                    ////    ts11 = nxtrackloading.Subtract(r1_incub);
-                    ////else
-                    ////    ts11 = r1_incub.Subtract(nxtrackloading);
-
-                    ////if ((ts11.TotalSeconds >= 0) && (ts11.TotalSeconds <= 11))
-                    ////{
-                    ////    nxtrackloading = nxtrackloading.AddSeconds(11);
-                    ////}
+                    Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R1 + " for " + "R" + R1_cnt.ToString() + " as previous racks are in Waiting in tmr_r1_incub()");                    
                     return;
-                }
+                }                
 
-                //Below code added on 05-12-2023 1055 in order to avoid clash
-                if (((r2priority == 1) || (r3priority == 1) || (r4priority == 1) || (r5priority == 1) || (r6priority == 1) || (r7priority == 1) || (r8priority == 1) || (r9priority == 1)) && (r1priority == 0))
+                
+                //Above code added on 30-08-2024 1140
+                if(!string.IsNullOrEmpty(Next_JarName_R1))
                 {
-                    r1_incub = r1_incub.AddSeconds(11);
-                    r1_taskcomp = r1_taskcomp.AddSeconds(11);
-                    tmr_r1_incub.Enabled = true;
-                    tmr_r1_incub.Interval = 1000;
-                    r1_WaitCnt++;
-                    Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R1 + " for " + "R" + R1_cnt.ToString() + " as other racks are in high priority in tmr_r1_incub()");
-                    ////if (nxtrackloading > r1_incub)
-                    ////    ts11 = nxtrackloading.Subtract(r1_incub);
-                    ////else
-                    ////    ts11 = r1_incub.Subtract(nxtrackloading);
-
-                    ////if ((ts11.TotalSeconds >= 0) && (ts11.TotalSeconds <= 11))
-                    ////{
-                    ////    nxtrackloading = nxtrackloading.AddSeconds(11);
-                    ////}
-                    return;
+                    jno = Convert.ToInt32(Next_JarName_R1.Substring(1));
+                    if (Next_JarName_R1.Contains("J"))
+                    {
+                        if (rackinjars[jno - 1] == 1)
+                            rackin = true;
+                    }
+                    else if (Next_JarName_R1.Contains("W"))
+                    {
+                        if (rackinwaterjars[jno - 1] == 1)
+                            rackin = true;
+                    }
+                    if (rackin == true)
+                    {
+                        r1_incub = r1_incub.AddSeconds(11);
+                        r1_taskcomp = r1_taskcomp.AddSeconds(11);
+                        tmr_r1_incub.Enabled = true;
+                        tmr_r1_incub.Interval = 1000;
+                        Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R1 + " for " + "R" + R1_cnt.ToString() + " as other racks are in high priority in tmr_r1_incub()");
+                        return;
+                    }
+                    //Above code added on 20-12-2023 1644 to avoid clash 
                 }
-                //Below code added on 20-12-2023 1644 to avoid clash 
-
-                jno = Convert.ToInt32(Next_JarName_R1.Substring(1));
-                if (Next_JarName_R1.Contains("J"))
-                {
-                    if (rackinjars[jno - 1] == 1)
-                        rackin = true;
-                }
-                else if (Next_JarName_R1.Contains("W"))
-                {
-                    if (rackinwaterjars[jno - 1] == 1)
-                        rackin = true;
-                }
-                if (rackin == true)
-                {
-                    r1_incub = r1_incub.AddSeconds(11);
-                    r1_taskcomp = r1_taskcomp.AddSeconds(11);
-                    tmr_r1_incub.Enabled = true;
-                    tmr_r1_incub.Interval = 1000;
-
-                    Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R1 + " for " + "R" + R1_cnt.ToString() + " as other racks are in high priority in tmr_r1_incub()");
-                    ////if (nxtrackloading > r1_incub)
-                    ////    ts11 = nxtrackloading.Subtract(r1_incub);
-                    ////else
-                    ////    ts11 = r1_incub.Subtract(nxtrackloading);
-
-                    ////if ((ts11.TotalSeconds >= 0) && (ts11.TotalSeconds <= 11))
-                    ////{
-                    ////    nxtrackloading = nxtrackloading.AddSeconds(11);
-                    ////}
-                    return;
-                }
-                //Above code added on 20-12-2023 1644 to avoid clash 
-
-                if ((cmd_Exec_Comp == false))
-                {
-                    r1_incub = r1_incub.AddSeconds(11);
-                    r1_taskcomp = r1_taskcomp.AddSeconds(11);
-                    tmr_r1_incub.Enabled = true;
-                    tmr_r1_incub.Interval = 1000;
-                    r1_WaitCnt++;
-                    Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R1 + " for " + "R" + R1_cnt.ToString() + " as previously excuted command is in process in tmr_r1_incub()");
-                    ////if (nxtrackloading > r1_incub)
-                    ////    ts11 = nxtrackloading.Subtract(r1_incub);
-                    ////else
-                    ////    ts11 = r1_incub.Subtract(nxtrackloading);
-
-                    ////if ((ts11.TotalSeconds >= 0) && (ts11.TotalSeconds <= 11))
-                    ////{
-                    ////    nxtrackloading = nxtrackloading.AddSeconds(11);
-                    ////}
-                    return;
-                }
+                ////if ((cmd_Exec_Comp == false))
+                ////{
+                ////    r1_incub = r1_incub.AddSeconds(11);
+                ////    r1_taskcomp = r1_taskcomp.AddSeconds(11);
+                ////    tmr_r1_incub.Enabled = true;
+                ////    tmr_r1_incub.Interval = 1000;
+                ////    r1_WaitCnt++;
+                ////    Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R1 + " for " + "R" + R1_cnt.ToString() + " as previously excuted command is in process in tmr_r1_incub()");                    
+                ////    return;
+                ////}
                 //Above code added on 05-12-2023 1055 in order to avoid clash
 
                 if ((Process_Continued == true) && (protocolinitiateflg_R1 == false))
                     protocolinitiateflg_R1 = true;
                 //Continue Mode rack calculation
-                if (continuetest > r1_incub)
-                    ts11 = continuetest.Subtract(r1_incub);
-                else
-                    ts11 = r1_incub.Subtract(continuetest);
-                if ((ts11.TotalSeconds >= 0) && (ts11.TotalSeconds <= 11))
-                {
-                    continuetest = continuetest.AddSeconds(11);
-                }
-                //Next rack calculation
-                if (nxtrackloading > r1_incub)
-                    ts11 = nxtrackloading.Subtract(r1_incub);
-                else
-                    ts11 = r1_incub.Subtract(nxtrackloading);
-
-                if ((ts11.TotalSeconds >= 0) && (ts11.TotalSeconds <= 11))
-                {
-                    nxtrackloading = nxtrackloading.AddSeconds(11);
-                }
+                if (Math.Abs((r1_incub - continuetest).TotalSeconds) <= DefaultDelay)
+                    continuetest = continuetest.AddSeconds(DefaultDelay);
+                if (Math.Abs((r1_incub - nxtrackloading).TotalSeconds) <= DefaultDelay)
+                    nxtrackloading = nxtrackloading.AddSeconds(DefaultDelay);
 
                 //New code added on 15-11-2023 as checked for priority
-                check_priority_times(1);
-                if (p1protorun_flg == false)
+                if (r1_WaitCnt < DefaultWaitCnt)
                 {
-                    r1_incub = r1_incub.AddSeconds(5);
-                    r1_taskcomp = r1_taskcomp.AddSeconds(5);
-                    tmr_r1_incub.Enabled = true;
-                    tmr_r1_incub.Interval = 1000;
-                    r1_WaitCnt++;
-                    Communication.writeCommunicationCommands("5 Secconds Timer incrementes in Jar " + JarName_R1 + " for " + "R" + R1_cnt.ToString() + " as priority given to other rack in tmr_r1_incub()");
-                    ////if (nxtrackloading > r1_incub)
-                    ////    ts11 = nxtrackloading.Subtract(r1_incub);
-                    ////else
-                    ////    ts11 = r1_incub.Subtract(nxtrackloading);
-
-                    ////if ((ts11.TotalSeconds >= 0) && (ts11.TotalSeconds <= 5))
-                    ////{
-                    ////    nxtrackloading = nxtrackloading.AddSeconds(5);
-                    ////}
-                    return;
+                    check_priority_times(1);
+                    if (p1protorun_flg == false)
+                    {
+                        tmr_r1_incub.Enabled = true;
+                        tmr_r1_incub.Interval = 1000;
+                        r1_WaitCnt++;
+                        Communication.writeCommunicationCommands("3 Secconds Timer incrementes in Jar " + JarName_R1 + " for " + "R" + R1_cnt.ToString() + " as priority given to other rack in tmr_r1_incub()");
+                        return;
+                    }
                 }
                 //Below code added on 13-12-2023 to check the washing time completed
                 ////watervalveonpff(JarName_R1, 0);
@@ -1902,17 +2835,21 @@ namespace HematoxinandEosin
                     watervalveonpff(JarName_R1, 0);
                     r1_WshWaitCnt = 0;
                     //System.Threading.Thread.Sleep(750);
-                    while(wtr_valoffflg==true) //Added on 18-02-2025 1033 in order run the next rack
+                    while (wtr_valoffflg == true) //Added on 18-02-2025 1033 in order run the next rack
                     {
                         wtr_valoffflg = false;
                         break;
                     }
+                    RA_Move_issued = false;
+                    if (protocolinitiateflg_R1 == true)
+                        protocolrun_R1();
                 }
-                if ((JarName_R1 == "H1") || (JarName_R1 == "H2") || (JarName_R1 == "H3"))
+                else if ((JarName_R1 == "H1") || (JarName_R1 == "H2") || (JarName_R1 == "H3"))
                 {
                     if (JarName_R1 == "H1") { H1_incub_complete = true; }
                     else if (JarName_R1 == "H2") { H2_incub_complete = true; }
                     else if (JarName_R1 == "H3") { H3_incub_complete = true; }
+                    r1priority = 1;
                     open_htrdoor();
                 }
                 else
@@ -1924,35 +2861,11 @@ namespace HematoxinandEosin
             }
             else
             {
-                ////////Below code added on 04-12-2023 1220
-                //////if ((d1 >= r1_priorChk) && (r1_priorChk_flg == false))
-                //////{
-                //////    r1_priorChk_flg = true;
-                //////    check_priority_times(1);
-                //////}
-
-                //////code written on 28-11-2023 1526 to read the temperature                
-                ////if ((heatingreqflg == true) && (Readtmpintiated_reinitiate == false) && (TempReadingStarted == false))
-                ////{
-                ////    Readtmpintiated_reinitiate = true;
-                ////    readtemperature();
-                ////    //tmr_temp.Enabled = true;
-                ////    //tmr_temp.Interval = 5000;
-                ////}
-
                 //Write code to On / Off water Value written on 11-11-2023_1540
                 //Code modified on 12-12-2023 to start & stop the water values
                 washrackno = R1_cnt;
                 DateTime doff = r1_incub_Woff.AddSeconds(10); // Added 15-12-2023 to to stop unnecessary command sending                
-                //////New code updated on 21-12-2023 to insert the loaded data to database
-                ////DateTime doff1 = r1_incub_Woff.AddSeconds(10); // Added 21-12-2023 to update data to database
-                ////if ((d1 >= r1_incub_Woff) && (d1 <= doff1) && tmr_update_flg==false)   //Modified on 21-12-2023 to update data to database
-                ////{
-                ////    tmr_update_flg = true;
-                ////    tmr_update.Enabled = true;
-                ////    tmr_update.Interval = 2000;
-                ////}
-                //////New code updated on 21-12-2023 to insert the loaded data to database
+                
                 if (Next_JarName_R1.Contains("W"))
                 {
                     if ((R1_pickcmdissue == false) && (R2_pickcmdissue == false) && (R3_pickcmdissue == false) && (R4_pickcmdissue == false) && (R5_pickcmdissue == false) && (R6_pickcmdissue == false) && (R7_pickcmdissue == false) && (R8_pickcmdissue == false) && (R9_pickcmdissue == false))
@@ -1967,6 +2880,24 @@ namespace HematoxinandEosin
                         {
                             if ((d1 >= r1_incub_WOn) && r1_incub_WOn_flg == false && (cmd_Exec_Comp == true))
                             {
+                                jno = Convert.ToInt32(Next_JarName_R1.Substring(1));
+                                if (rackinwaterjars[jno - 1] == 1)
+                                {
+                                    int wt1 = 0;
+                                    if (jno == 6) wt1 = 1;
+                                    else wt1 = (jno + 1);
+                                    for (int wt = wt1; wt <= 6; wt++)
+                                    {
+                                        if (rackinwaterjars[wt - 1] == 0)
+                                        {
+                                            Actual_WashJar_R1 = Next_JarName_R1;
+                                            Next_JarName_R1 = "W" + wt.ToString();
+                                            R1Protorun.Rows[r1inx + 1]["JarNo"] = Next_JarName_R1;
+                                            break;
+                                        }
+                                    }
+                                }
+
                                 r1_incub_WOn_flg = true;
                                 Intialize_Wash_Jars = false;
                                 Intialize_Wash_Jars = false;
@@ -1974,42 +2905,14 @@ namespace HematoxinandEosin
                             }
                         }
                     }
-                }
-                if (JarName_R1.Contains("J"))   ////if (Prev_JarName_R1.Contains("W"))
-                {
-                    if (cmd_Exec_Comp == true)
-                    {
-                        if (((r2priority == 1) || (r3priority == 1) || (r4priority == 1) || (r5priority == 1) || (r6priority == 1)) && (r1priority == 0))
-                        {
-                            r1_incub_Woff = r1_incub_Woff.AddSeconds(18);
-                        }
-                        else
-                        {
-                            //Off condition
-                            if ((d1 >= r1_incub_Woff) && (d1 <= doff))   //Modified on 15-12-2023 to send the Valve shut command between the time  ////if ((d1 >= r1_incub_Woff) && (r1_incub_Woff_flg == false))
-                            {
-                                for (int woff = 0; woff < water_valves_on_off_state.Length; woff++)
-                                {
-                                    if (water_valves_on_off_state[woff] == 1)
-                                    {
-                                        if ((woff == 0) && (W1_On_State == false)) watervalveonpff("W1", 0);
-                                        else if ((woff == 1) && (W2_On_State == false)) watervalveonpff("W2", 0);
-                                        else if ((woff == 2) && (W3_On_State == false)) watervalveonpff("W3", 0);
-                                        else if ((woff == 3) && (W4_On_State == false)) watervalveonpff("W4", 0);
-                                        else if ((woff == 4) && (W5_On_State == false)) watervalveonpff("W5", 0);
-                                        else if ((woff == 5) && (W6_On_State == false)) watervalveonpff("W6", 0);
-                                        System.Threading.Thread.Sleep(500);
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+                }               
                 //lbl_tmr1.Text = "RNo. R" + R1_cnt.ToString() + ", JNo." + JarName_R1 + " Elasped-" + d1.ToString().Substring(10) + " Incub-" + r1_incub.ToString().Substring(10) + " Task Complete By-" + r1_taskcomp.ToString().Substring(10);
                 if (JarName_R1.Contains("H"))
                     updateheatertimings(JarName_R1, "R" + R1_cnt.ToString(), true, 1);
                 else
                     updatetiming(JarName_R1, "R" + R1_cnt.ToString(), 1);
+
+                check_priority_times(1);
 
             }
         }
@@ -2020,14 +2923,10 @@ namespace HematoxinandEosin
             int jno = 0; Boolean rackin = false;
             //This has to check with device
             DateTime d3 = System.DateTime.Now;
-            //d3 = r2_incub.AddSeconds(-15);
-            //if (d1 >= d3)
-            //{
-            //    if ((R1_pickcmdissue == false) && (R3_pickcmdissue == false) && (R6_pickcmdissue == false) && (R4_pickcmdissue == false) && (R5_pickcmdissue == false) && (cmd_Exec_Comp == true) && (RA_Move_issued == false) && (RA_Move_Intiate == false) && ((JarName_R2.Contains("J")) || (JarName_R2.Contains("W"))))
-            //    {
-            //        move_ra_tolocation(2);
-            //    }
-            //}
+            if (R2_protostart == false) { tmr_r2_incub.Enabled = false; return; }
+            int rackNo = 2;
+            if (!Racks.ContainsKey(rackNo)) return;
+            Rack currentRack = Racks[rackNo];            
             //This has to check with device
             if (d1 >= r2_incub)
             {
@@ -2041,9 +2940,22 @@ namespace HematoxinandEosin
                     temp_restartincub = temp_restartincub.AddSeconds(10);
                     //System.Threading.Thread.Sleep(1000);
                 }
-
+                if ((JarName_R2.Contains("W")))
+                {
+                    if ((check_washjar_collision(2) == true) && (r2_WshWaitCnt <= 2))
+                    {
+                        r2_incub = r2_incub.AddSeconds(18);
+                        r2_taskcomp = r2_taskcomp.AddSeconds(18);
+                        r2_incub_Woff = r2_incub_Woff.AddSeconds(18);
+                        tmr_r2_incub.Enabled = true;
+                        tmr_r2_incub.Interval = 1000;
+                        r2_WshWaitCnt++;
+                        Communication.writeCommunicationCommands("18 Secconds Timer incrementes in Jar " + JarName_R2 + " for " + "R" + R2_cnt.ToString() + " as previous racks are in Waiting in tmr_r2_incub()");
+                        return;
+                    }
+                }
                 //below code updated on 08-05-2024 in order avoid clash of racks
-                if ((R1_pickcmdissue == true) || (R3_pickcmdissue == true) || (R4_pickcmdissue == true) || (R5_pickcmdissue == true) || (R6_pickcmdissue == true) || (R7_pickcmdissue == true) || (R8_pickcmdissue == true) || (R9_pickcmdissue == true) || (rackloadingtoJar == true) || (RA_Move_issued == true))
+                if ((R1_pickcmdissue == true) || (R3_pickcmdissue == true) || (R4_pickcmdissue == true) || (R5_pickcmdissue == true) || (R6_pickcmdissue == true) || (R7_pickcmdissue == true) || (R8_pickcmdissue == true) || (R9_pickcmdissue == true) || (loadingjar_racksensed == true) || (RA_Move_issued == true) || (loading_racks == true))
                 {
                     r2_incub = r2_incub.AddSeconds(11);
                     tmr_r2_incub.Enabled = true;
@@ -2052,48 +2964,11 @@ namespace HematoxinandEosin
                     r2_incub_Woff = r2_incub_Woff.AddSeconds(11);
                     r2_WaitCnt++;
                     Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R2 + " for " + "R" + R2_cnt.ToString() + " as other racks picking by RA in tmr_r2_incub()");
-                    //if ((r1inx > 0) && (R1_protostart == true) && (r2inx > 0) && (R2_protostart == true) && (r3inx == 0) && (R3_protostart == false))
-                    //{
-                    //    nxtrackloading = nxtrackloading.AddSeconds(11);
-                    //}
                     return;
                 }
                 //Above code updated on 08-05-2024  in order avoid clash of racks
-
-                if ((JarName_R2 == "W1") || (JarName_R2 == "W2") || (JarName_R2 == "W3") || (JarName_R2 == "W4") || (JarName_R2 == "W5") || (JarName_R2 == "W6"))
-                {
-                    if ((check_washjar_collision(2) == true) && (r2_WshWaitCnt <= 2))
-                    {
-                        r2_incub = r2_incub.AddSeconds(Wash_delaytime);
-                        tmr_r2_incub.Enabled = true;
-                        tmr_r2_incub.Interval = 1000;
-                        r2_taskcomp = r2_taskcomp.AddSeconds(Wash_delaytime);
-                        Communication.writeCommunicationCommands(Wash_delaytime.ToString() + " Secconds Timer incrementes in Jar " + JarName_R2 + " for " + "R" + R2_cnt.ToString() + " as this rack in water station and other rack is elasping time in tmr_r2_incub()");
-                        r2_WshWaitCnt++;
-                        return;
-                    }
-                }
-                //Above code added on 30-08-2024 1140
-
-                //below code updated on 01-04-2024 to take the latest count value first
-                if (((r2_WaitCnt < r1_WaitCnt) || (r2_WaitCnt < r3_WaitCnt) || (r2_WaitCnt < r4_WaitCnt) || (r2_WaitCnt < r5_WaitCnt) || (r2_WaitCnt < r6_WaitCnt) || (r2_WaitCnt < r7_WaitCnt) || (r2_WaitCnt < r8_WaitCnt) || (r2_WaitCnt < r9_WaitCnt)) && (r2priority == 0))
-                {
-                    r2_incub = r2_incub.AddSeconds(11);
-                    tmr_r2_incub.Enabled = true;
-                    tmr_r2_incub.Interval = 1000;
-                    r2_taskcomp = r2_taskcomp.AddSeconds(11);
-                    r2_incub_Woff = r2_incub_Woff.AddSeconds(11);
-                    r2_WaitCnt++;
-                    Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R2 + " for " + "R" + R2_cnt.ToString() + " as previous racks are in Waiting in tmr_r2_incub()");
-                    ////if ((r1inx > 0) && (R1_protostart == true) && (r2inx > 0) && (R2_protostart == true) && (r3inx == 0) && (R3_protostart == false))
-                    ////{
-                    ////    nxtrackloading = nxtrackloading.AddSeconds(11);
-                    ////}
-                    return;
-                }
-
                 //Below code added on 05-12-2023 1055 in order to avoid clash
-                if (((r1priority == 1) || (r3priority == 1) || (r4priority == 1) || (r5priority == 1) || (r6priority == 1) || (r7priority == 1) || (r8priority == 1) || (r9priority == 1)) && (r2priority == 0))
+                else if (((r1priority == 1) || (r3priority == 1) || (r4priority == 1) || (r5priority == 1) || (r6priority == 1) || (r7priority == 1) || (r8priority == 1) || (r9priority == 1)) && (r2priority == 0))
                 {
                     r2_incub = r2_incub.AddSeconds(11);
                     r2_taskcomp = r2_taskcomp.AddSeconds(11);
@@ -2101,14 +2976,24 @@ namespace HematoxinandEosin
                     tmr_r2_incub.Interval = 1000;
                     r2_WaitCnt++;
                     Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R2 + " for " + "R" + R2_cnt.ToString() + " as other racks are in high priority in tmr_r2_incub()");
-                    ////if ((r1inx > 0) && (R1_protostart == true) && (r2inx > 0) && (R2_protostart == true) && (r3inx == 0) && (R3_protostart == false))
-                    ////{
-                    ////    nxtrackloading = nxtrackloading.AddSeconds(11);
-                    ////}
                     return;
                 }
                 //Below code added on 20-12-2023 1644 to avoid clash
-                if (r2priority == 0)
+
+                //below code updated on 01-04-2024 to take the latest count value first
+                else if (((r2_WaitCnt < r1_WaitCnt) || (r2_WaitCnt < r3_WaitCnt) || (r2_WaitCnt < r4_WaitCnt) || (r2_WaitCnt < r5_WaitCnt) || (r2_WaitCnt < r6_WaitCnt) || (r2_WaitCnt < r7_WaitCnt) || (r2_WaitCnt < r8_WaitCnt) || (r2_WaitCnt < r9_WaitCnt)) && (r2priority == 0) && (r2_WaitCnt<DefaultWaitCnt))
+                {
+                    r2_incub = r2_incub.AddSeconds(11);
+                    tmr_r2_incub.Enabled = true;
+                    tmr_r2_incub.Interval = 1000;
+                    r2_taskcomp = r2_taskcomp.AddSeconds(11);
+                    r2_incub_Woff = r2_incub_Woff.AddSeconds(11);
+                    r2_WaitCnt++;
+                    Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R2 + " for " + "R" + R2_cnt.ToString() + " as previous racks are in Waiting in tmr_r2_incub()");                   
+                    return;
+                }
+
+                if (!string.IsNullOrEmpty(Next_JarName_R2))
                 {
                     jno = Convert.ToInt32(Next_JarName_R2.Substring(1));
                     if (Next_JarName_R2.Contains("J"))
@@ -2127,82 +3012,46 @@ namespace HematoxinandEosin
                         r2_taskcomp = r2_taskcomp.AddSeconds(11);
                         tmr_r2_incub.Enabled = true;
                         tmr_r2_incub.Interval = 1000;
+                        Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R2 + " for " + "R" + R2_cnt.ToString() + " as other racks are in high priority in tmr_r2_incub()");
                         return;
                     }
                 }
                 //Above code added on 20-12-2023 1644 to avoid clash 
-                if ((cmd_Exec_Comp == false) && (r2priority == 0))
-                {
-                    r2_incub = r2_incub.AddSeconds(11);
-                    r2_taskcomp = r2_taskcomp.AddSeconds(11);
-                    tmr_r2_incub.Enabled = true;
-                    tmr_r2_incub.Interval = 1000;
-                    return;
-                }
+                
+                //////Above code added on 30-08-2024 1140
+                ////if ((cmd_Exec_Comp == false) && (r2priority == 0))
+                ////{
+                ////    r2_incub = r2_incub.AddSeconds(11);
+                ////    r2_taskcomp = r2_taskcomp.AddSeconds(11);
+                ////    tmr_r2_incub.Enabled = true;
+                ////    tmr_r2_incub.Interval = 1000;
+                ////    return;
+                ////}
                 //Above code added on 05-12-2023 1055 in order to avoid clash
 
                 if ((Process_Continued == true) && (protocolinitiateflg_R2 == false))
                     protocolinitiateflg_R2 = true;
 
-                if (continuetest > r2_incub)
-                    ts11 = continuetest.Subtract(r2_incub);
-                else
-                    ts11 = r2_incub.Subtract(continuetest);
+                //Continue Mode rack calculation
+                if (Math.Abs((r2_incub - continuetest).TotalSeconds) <= DefaultDelay)
+                    continuetest = continuetest.AddSeconds(DefaultDelay);
+                if (Math.Abs((r2_incub - nxtrackloading).TotalSeconds) <= DefaultDelay)
+                    nxtrackloading = nxtrackloading.AddSeconds(DefaultDelay);
 
-                if ((ts11.TotalSeconds >= 0) && (ts11.TotalSeconds <= 11))
+                //////Modified code added on 22-11-2023 22:59
+                if(r2_WaitCnt<DefaultWaitCnt)
                 {
-                    continuetest = continuetest.AddSeconds(11);
-                }
-                //Next rack calculation
-                if (nxtrackloading > r2_incub)
-                    ts11 = nxtrackloading.Subtract(r2_incub);
-                else
-                    ts11 = r2_incub.Subtract(nxtrackloading);
-
-                if ((ts11.TotalSeconds >= 0) && (ts11.TotalSeconds <= 11))
-                {
-                    nxtrackloading = nxtrackloading.AddSeconds(11);
-                }
-
-
-                //checking next rack timings and updating the value by 10 seconds 
-                //Added on 16-08-2023
-                ////if (r2_incub > r1_incub)
-                ////{
-                ////    ts2 = r2_incub.Subtract(r1_incub);
-                ////}
-                ////else
-                ////{
-                ////    ts2 = r1_incub.Subtract(r2_incub);
-                ////}
-
-                ////if (r2_incub > r3_incub)
-                ////{
-                ////    ts3 = r2_incub.Subtract(r3_incub);
-                ////}
-                ////else
-                ////{
-                ////    ts3 = r3_incub.Subtract(r2_incub);
-                ////}
-
-                ////if (ts2.TotalSeconds <= 11)
-                ////{
-                ////    r1_incub = r1_incub.AddSeconds(11);
-                ////}
-                ////if (ts3.TotalSeconds <= 11)
-                ////{
-                ////    r3_incub = r3_incub.AddSeconds(11);
-                ////}
-
-                //Modified code added on 22-11-2023 22:59
-                check_priority_times(2);
-                //Added on 16-08-2023                
-                if (p2protorun_flg == false)
-                {
-                    tmr_r2_incub.Enabled = true;
-                    tmr_r2_incub.Interval = 1000;
-                    return;
-                }
+                    check_priority_times(2);
+                    //Added on 16-08-2023                
+                    if (p2protorun_flg == false)
+                    {
+                        tmr_r2_incub.Enabled = true;
+                        tmr_r2_incub.Interval = 1000;
+                        r2_WaitCnt++;
+                        Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R1 + " for " + "R" + R1_cnt.ToString() + " as priority given to other rack in tmr_r2_incub()");
+                        return;
+                    }
+                }                
                 //Below code added on 13-12-2023 to check the washing time completed
                 if (JarName_R2 == "W1")
                     W1_On_State = false;
@@ -2228,12 +3077,16 @@ namespace HematoxinandEosin
                         wtr_valoffflg = false;
                         break;
                     }
+                    RA_Move_issued = false;
+                    if (protocolinitiateflg_R2 == true)
+                        protocolrun_R2();
                 }
-                if ((JarName_R2 == "H1") || (JarName_R2 == "H2") || (JarName_R2 == "H3"))
+                else if ((JarName_R2 == "H1") || (JarName_R2 == "H2") || (JarName_R2 == "H3"))
                 {
                     if (JarName_R2 == "H1") { H1_incub_complete = true; }
                     else if (JarName_R2 == "H2") { H2_incub_complete = true; }
                     else if (JarName_R2 == "H3") { H3_incub_complete = true; }
+                    r2priority = 1;
                     open_htrdoor();
                 }
                 else
@@ -2245,28 +3098,6 @@ namespace HematoxinandEosin
             }
             else
             {
-                ////////if ((d1 >= r2_priorChk) && (r2_priorChk_flg == false))
-                ////////{
-                ////////    r2_priorChk_flg = true;
-                ////////    check_priority_times(2);                    
-                ////////}
-
-                //////code written on 28-11-2023 1526 to read the temperature
-                ////if ((heatingreqflg == true) && (Readtmpintiated_reinitiate == false) && (TempReadingStarted == false))
-                ////{
-                ////    readtemperature();
-                ////}
-
-                //////New code updated on 21-12-2023 to insert the loaded data to database
-                ////DateTime doff1 = r2_incub_Woff.AddSeconds(10); // Added 21-12-2023 to update data to database
-                ////if ((d1 >= r2_incub_Woff) && (d1 <= doff1) && tmr_update_flg == false)   //Modified on 21-12-2023 to update data to database
-                ////{
-                ////    tmr_update_flg = true;
-                ////    tmr_update.Enabled = true;
-                ////    tmr_update.Interval = 2000;
-                ////}
-                //////New code updated on 21-12-2023 to insert the loaded data to database
-
                 //Write code to On / Off water Value written on 11112023_1540
                 //code modified on 12-12-2023 to On & off the water pump as per condition
                 if (Next_JarName_R2.Contains("W"))
@@ -2282,48 +3113,36 @@ namespace HematoxinandEosin
                         {
                             if ((d1 >= r2_incub_WOn) && (r2_incub_WOn_flg == false) && (cmd_Exec_Comp == true))
                             {
+                                jno = Convert.ToInt32(Next_JarName_R2.Substring(1));
+                                if (rackinwaterjars[jno - 1] == 1)
+                                {
+                                    int wt1 = 0;
+                                    if (jno == 6) wt1 = 1;
+                                    else wt1 = (jno + 1);
+                                    for (int wt = wt1; wt <= 6; wt++)
+                                    {
+                                        if (rackinwaterjars[wt - 1] == 0)
+                                        {
+                                            Actual_WashJar_R2 = Next_JarName_R2;
+                                            Next_JarName_R2 = "W" + wt.ToString();
+                                            R2Protorun.Rows[r2inx + 1]["JarNo"] = Next_JarName_R2;
+                                            break;
+                                        }
+                                    }
+                                }
                                 r2_incub_WOn_flg = true;
                                 Intialize_Wash_Jars = false;
                                 watervalveonpff(Next_JarName_R2, 1);
                             }
                         }
                     }
-                }
-                if (JarName_R2.Contains("J")) ////if (Prev_JarName_R2.Contains("W"))
-                {
-                    if (cmd_Exec_Comp == true)
-                    {
-                        DateTime doff = r2_incub_Woff.AddSeconds(20); // Added 15-12-2023 to to stop unnecessary command sending
-                        if (((r2priority == 1) || (r3priority == 1) || (r4priority == 1) || (r5priority == 1) || (r6priority == 1)) || (r1priority == 1))
-                        {
-                            r2_incub_Woff = r2_incub_Woff.AddSeconds(18);
-                        }
-                        else
-                        {
-                            //Off condition
-                            if ((d1 >= r2_incub_Woff) && (d1 <= doff))   //Modified on 15-12-2023 to send the Valve shut command between the time  ////if ((d2 >= r2_incub_Woff) && (r2_incub_Woff_flg == false))
-                            {
-                                for (int woff = 0; woff < water_valves_on_off_state.Length; woff++)
-                                {
-                                    if (water_valves_on_off_state[woff] == 1)
-                                    {
-                                        if ((woff == 0) && (W1_On_State == false)) watervalveonpff("W1", 0);
-                                        else if ((woff == 1) && (W2_On_State == false)) watervalveonpff("W2", 0);
-                                        else if ((woff == 2) && (W3_On_State == false)) watervalveonpff("W3", 0);
-                                        else if ((woff == 3) && (W4_On_State == false)) watervalveonpff("W4", 0);
-                                        else if ((woff == 4) && (W5_On_State == false)) watervalveonpff("W5", 0);
-                                        else if ((woff == 5) && (W6_On_State == false)) watervalveonpff("W6", 0);
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+                }                
                 //lbl_tmr2.Text = "RNo. R" + R2_cnt.ToString() + ",JNo." + JarName_R2 + " Elasped-" + d1.ToString().Substring(10) + " Incub-" + r2_incub.ToString().Substring(10) + " Task Complete By-" + r2_taskcomp.ToString().Substring(10);
                 if (JarName_R2.Contains("H"))
                     updateheatertimings(JarName_R2, "R" + R2_cnt.ToString(), true, 2);
                 else
                     updatetiming(JarName_R2, "R" + R2_cnt.ToString(), 2);
+                check_priority_times(2);
             }
         }
         private void tmr_r3_incub_Tick(object sender, EventArgs e)
@@ -2333,14 +3152,10 @@ namespace HematoxinandEosin
             int jno = 0; Boolean rackin = false;
             //This has to check with device
             DateTime d3 = System.DateTime.Now;
-            //d3 = r3_incub.AddSeconds(-15);
-            //if (d1 >= d3)
-            //{
-            //    if ((R2_pickcmdissue == false) && (R3_pickcmdissue == false) && (R6_pickcmdissue == false) && (R4_pickcmdissue == false) && (R5_pickcmdissue == false) && (cmd_Exec_Comp == true) && (RA_Move_issued == false) && (RA_Move_Intiate == false) && ((JarName_R3.Contains("J")) || (JarName_R3.Contains("W"))))
-            //    {
-            //        move_ra_tolocation(3);
-            //    }
-            //}
+            if (R3_protostart == false) { tmr_r3_incub.Enabled = false; return; }
+            int rackNo = 3;
+            if (!Racks.ContainsKey(rackNo)) return;
+            Rack currentRack = Racks[rackNo];
             //This has to check with device
             if (d1 >= r3_incub)
             {
@@ -2355,10 +3170,25 @@ namespace HematoxinandEosin
                     ////System.Threading.Thread.Sleep(1000);
                 }
 
-                //below code updated on 08-05-2024 in order avoid clash of racks
-                if ((R2_pickcmdissue == true) || (R1_pickcmdissue == true) || (R4_pickcmdissue == true) || (R5_pickcmdissue == true) || (R6_pickcmdissue == true) || (R7_pickcmdissue == true) || (R8_pickcmdissue == true) || (R9_pickcmdissue == true) || (rackloadingtoJar == true) || (RA_Move_issued == true))
+                if ((JarName_R3.Contains("W")))
                 {
-                    r3_incub = r3_incub.AddSeconds(11);                   
+                    if ((check_washjar_collision(3) == true) && (r3_WshWaitCnt <= 2))
+                    {
+                        r3_incub = r3_incub.AddSeconds(18);
+                        r3_taskcomp = r3_taskcomp.AddSeconds(18);
+                        r3_incub_Woff = r3_incub_Woff.AddSeconds(18);
+                        tmr_r3_incub.Enabled = true;
+                        tmr_r3_incub.Interval = 1000;
+                        r3_WshWaitCnt++;
+                        Communication.writeCommunicationCommands("18 Secconds Timer incrementes in Jar " + JarName_R3 + " for " + "R" + R3_cnt.ToString() + " as previous racks are in Waiting in tmr_r3_incub()");
+                        return;
+                    }
+                }
+                //Above code added on 30-08-2024 1140
+                //below code updated on 08-05-2024 in order avoid clash of racks
+                if ((R2_pickcmdissue == true) || (R1_pickcmdissue == true) || (R4_pickcmdissue == true) || (R5_pickcmdissue == true) || (R6_pickcmdissue == true) || (R7_pickcmdissue == true) || (R8_pickcmdissue == true) || (R9_pickcmdissue == true) || (loadingjar_racksensed == true) || (RA_Move_issued == true) || (loading_racks == true))
+                {
+                    r3_incub = r3_incub.AddSeconds(11);
                     r3_taskcomp = r3_taskcomp.AddSeconds(11);
                     tmr_r3_incub.Enabled = true;
                     tmr_r3_incub.Interval = 1000;
@@ -2367,23 +3197,19 @@ namespace HematoxinandEosin
                     Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R3 + " for " + "R" + R3_cnt.ToString() + " as other racks picking by RA in tmr_r3_incub()");
                     return;
                 }
-                //Above code updated on 08-05-2024  in order avoid clash of racks
-                                
-                if ((JarName_R3 == "W1") || (JarName_R3 == "W2") || (JarName_R3 == "W3") || (JarName_R3 == "W4") || (JarName_R3 == "W5") || (JarName_R3 == "W6"))
+                //////Below code added on 05-12-2023 1055 in order to avoid clash
+                else if (((r1priority == 1) || (r2priority == 1) || (r4priority == 1) || (r5priority == 1) || (r6priority == 1) || (r8priority == 1) || (r7priority == 1) || (r9priority == 1)) && (r3priority == 0))
                 {
-                    if ((check_washjar_collision(3) == true) && (r3_WshWaitCnt <= 2))
-                    {
-                        r3_incub = r3_incub.AddSeconds(Wash_delaytime);
-                        tmr_r3_incub.Enabled = true;
-                        tmr_r3_incub.Interval = 1000;
-                        r3_taskcomp = r3_taskcomp.AddSeconds(Wash_delaytime);
-                        Communication.writeCommunicationCommands(Wash_delaytime.ToString() + "  Secconds Timer incrementes in Jar " + JarName_R3 + " for " + "R" + R3_cnt.ToString() + " as this rack in water station and other rack is elasping time in tmr_r3_incub()");
-                        r3_WshWaitCnt++;
-                        return;
-                    }
+                    r3_incub = r3_incub.AddSeconds(11);
+                    r3_taskcomp = r3_taskcomp.AddSeconds(11);
+                    tmr_r3_incub.Enabled = true;
+                    tmr_r3_incub.Interval = 1000;
+                    r3_WaitCnt++;
+                    Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R3 + " for " + "R" + R3_cnt.ToString() + " as other racks are in high priority in tmr_r3_incub()");
+                    return;
                 }
-                //Above code added on 30-08-2024 1140
-                if (((r3_WaitCnt < r2_WaitCnt) || (r3_WaitCnt < r1_WaitCnt) || (r3_WaitCnt < r4_WaitCnt) || (r3_WaitCnt < r5_WaitCnt) || (r3_WaitCnt < r6_WaitCnt) || (r3_WaitCnt < r7_WaitCnt) || (r3_WaitCnt < r8_WaitCnt) || (r3_WaitCnt < r9_WaitCnt)) && (r3priority == 0))
+                //Above code updated on 08-05-2024  in order avoid clash of racks
+                else if (((r3_WaitCnt < r2_WaitCnt) || (r3_WaitCnt < r1_WaitCnt) || (r3_WaitCnt < r4_WaitCnt) || (r3_WaitCnt < r5_WaitCnt) || (r3_WaitCnt < r6_WaitCnt) || (r3_WaitCnt < r7_WaitCnt) || (r3_WaitCnt < r8_WaitCnt) || (r3_WaitCnt < r9_WaitCnt)) && (r3_WaitCnt <= DefaultWaitCnt))
                 {
                     r3_incub = r3_incub.AddSeconds(11);
                     tmr_r3_incub.Enabled = true;
@@ -2394,21 +3220,9 @@ namespace HematoxinandEosin
                     Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R3 + " for " + "R" + R3_cnt.ToString() + " as previous racks are in Waiting in tmr_r3_incub()");
                     return;
                 }
-
-                //Below code added on 05-12-2023 1055 in order to avoid clash
-                if (((r1priority == 1) || (r2priority == 1) || (r4priority == 1) || (r5priority == 1) || (r6priority == 1) || (r8priority == 1) || (r7priority == 1) || (r9priority == 1)) && (r3priority == 0))
+                if(!string.IsNullOrEmpty(Next_JarName_R3))
                 {
-                    r3_incub = r3_incub.AddSeconds(11);
-                    r3_taskcomp = r3_taskcomp.AddSeconds(11);
-                    tmr_r3_incub.Enabled = true;
-                    tmr_r3_incub.Interval = 1000;
-                    r3_WaitCnt++;
-                    Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R3 + " for " + "R" + R3_cnt.ToString() + " as other racks are in high priority in tmr_r3_incub()");
-                    return;
-                }
-                //Below code added on 20-12-2023 1644 to avoid clash 
-                if (r3priority == 0)
-                {
+                    //Below code added on 20-12-2023 1644 to avoid clash                 
                     jno = Convert.ToInt32(Next_JarName_R3.Substring(1));
                     if (Next_JarName_R3.Contains("J"))
                     {
@@ -2426,79 +3240,42 @@ namespace HematoxinandEosin
                         r3_taskcomp = r3_taskcomp.AddSeconds(11);
                         tmr_r3_incub.Enabled = true;
                         tmr_r3_incub.Interval = 1000;
+                        Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R1 + " for " + "R" + R1_cnt.ToString() + " as other racks are in next jar in tmr_r3_incub()");
                         return;
                     }
                 }
                 //Above code added on 20-12-2023 1644 to avoid clash 
-                if (cmd_Exec_Comp == false)
-                {
-                    r3_incub = r3_incub.AddSeconds(11);
-                    r3_taskcomp = r3_taskcomp.AddSeconds(11);
-                    tmr_r3_incub.Enabled = true;
-                    tmr_r3_incub.Interval = 1000;
-                    r3_WaitCnt++;
-                    Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R3 + " for " + "R" + R3_cnt.ToString() + " as previously excuted command is in process in tmr_r3_incub()");
-                    return;
-                }
+                
+                ////if (cmd_Exec_Comp == false)
+                ////{
+                ////    r3_incub = r3_incub.AddSeconds(11);
+                ////    r3_taskcomp = r3_taskcomp.AddSeconds(11);
+                ////    tmr_r3_incub.Enabled = true;
+                ////    tmr_r3_incub.Interval = 1000;
+                ////    r3_WaitCnt++;
+                ////    Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R3 + " for " + "R" + R3_cnt.ToString() + " as previously excuted command is in process in tmr_r3_incub()");
+                ////    return;
+                ////}
                 //Above code added on 05-12-2023 1055 in order to avoid clash
 
                 if ((Process_Continued == true) && (protocolinitiateflg_R3 == false))
                     protocolinitiateflg_R3 = true;
 
-                if (continuetest > r3_incub)
-                    ts11 = continuetest.Subtract(r3_incub);
-                else
-                    ts11 = r3_incub.Subtract(continuetest);
-                if ((ts11.TotalSeconds >= 0) && (ts11.TotalSeconds <= 11))
+                if (Math.Abs((r3_incub - continuetest).TotalSeconds) <= DefaultDelay)
+                    continuetest = continuetest.AddSeconds(DefaultDelay);
+                if (Math.Abs((r3_incub - nxtrackloading).TotalSeconds) <= DefaultDelay)
+                    nxtrackloading = nxtrackloading.AddSeconds(DefaultDelay);
+                if (r3_WaitCnt < DefaultWaitCnt)
                 {
-                    continuetest = continuetest.AddSeconds(11);
-                }
-                //Next rack calculation
-                if (nxtrackloading > r3_incub)
-                    ts11 = nxtrackloading.Subtract(r3_incub);
-                else
-                    ts11 = r3_incub.Subtract(nxtrackloading);
-                if ((ts11.TotalSeconds >= 0) && (ts11.TotalSeconds <= 11))
-                {
-                    nxtrackloading = nxtrackloading.AddSeconds(11);
-                }
-
-                //checking next rack timings and updating the value by 10 seconds 
-                //Added on 16-08-2023
-                ////if (r3_incub > r1_incub)
-                ////{
-                ////    ts2 = r3_incub.Subtract(r1_incub);
-                ////}
-                ////else
-                ////{
-                ////    ts2 = r1_incub.Subtract(r3_incub);
-                ////}
-
-                ////if (r2_incub > r3_incub)
-                ////{
-                ////    ts3 = r2_incub.Subtract(r3_incub);
-                ////}
-                ////else
-                ////{
-                ////    ts3 = r3_incub.Subtract(r2_incub);
-                ////}
-
-                ////if (ts2.TotalSeconds <= 11)
-                ////{
-                ////    r1_incub = r1_incub.AddSeconds(11);
-                ////}
-                ////if (ts3.TotalSeconds <= 11)
-                ////{
-                ////    r2_incub = r2_incub.AddSeconds(11);
-                ////}
-                //|New function added on 22-11-2023 2301
-                check_priority_times(3);
-                if (p3protorun_flg == false)
-                {
-                    tmr_r3_incub.Enabled = true;
-                    tmr_r3_incub.Interval = 1000;
-                    return;
-                }
+                    check_priority_times(3);
+                    if (p3protorun_flg == false)
+                    {
+                        tmr_r3_incub.Enabled = true;
+                        tmr_r3_incub.Interval = 1000;
+                        r3_WaitCnt++;
+                        return;
+                    }
+                }                    
 
                 //Below code added on 13-12-2023 to check the washing time completed
                 if (JarName_R3 == "W1")
@@ -2525,12 +3302,16 @@ namespace HematoxinandEosin
                         wtr_valoffflg = false;
                         break;
                     }
+                    RA_Move_issued = false;                                    
+                    if (protocolinitiateflg_R3 == true)
+                        protocolrun_R3();
                 }
-                if ((JarName_R3 == "H1") || (JarName_R3 == "H2") || (JarName_R3 == "H3"))
+                else if ((JarName_R3 == "H1") || (JarName_R3 == "H2") || (JarName_R3 == "H3"))
                 {
                     if (JarName_R3 == "H1") { H1_incub_complete = true; }
                     else if (JarName_R3 == "H2") { H2_incub_complete = true; }
                     else if (JarName_R3 == "H3") { H3_incub_complete = true; }
+                    r3priority = 1;
                     open_htrdoor();
                 }
                 else
@@ -2543,30 +3324,7 @@ namespace HematoxinandEosin
             }
             else
             {
-                //////////code added on 04-12-2023 1159
-                ////////if ((d1 >= r3_priorChk) && (r3_priorChk_flg == false))
-                ////////{
-                ////////    r3_priorChk_flg = true;
-                ////////    check_priority_times(3);                    
-                ////////}
-                //////code written on 28-11-2023 1526 to read the temperature                
-                ////if ((heatingreqflg == true) && (Readtmpintiated_reinitiate == false) && (TempReadingStarted == false))
-                ////{
-                ////    Readtmpintiated_reinitiate = true;
-                ////    readtemperature();
-                ////    //tmr_temp.Enabled = true;
-                ////    //tmr_temp.Interval = 5000;
-                ////}
-                ////////New code updated on 21-12-2023 to insert the loaded data to database
-                //////DateTime doff1 = r2_incub_Woff.AddSeconds(10); // Added 21-12-2023 to update data to database
-                //////if ((d1 >= r2_incub_Woff) && (d1 <= doff1) && tmr_update_flg == false)   //Modified on 21-12-2023 to update data to database
-                //////{
-                //////    tmr_update_flg = true;
-                //////    tmr_update.Enabled = true;
-                //////    tmr_update.Interval = 2000;
-                //////}
-                ////////New code updated on 21-12-2023 to insert the loaded data to database
-
+                
                 //Write code to On / Off water Value written on 11112023_1540
                 ///code modified on 12-12-2023 to On & off the water pump as per condition
                 if (Next_JarName_R3.Contains("W"))
@@ -2582,48 +3340,37 @@ namespace HematoxinandEosin
                         {
                             if ((d1 >= r3_incub_WOn) && (r3_incub_WOn_flg == false) && (cmd_Exec_Comp == true))
                             {
+                                jno = Convert.ToInt32(Next_JarName_R3.Substring(1));
+                                if (rackinwaterjars[jno - 1] == 1)
+                                {
+                                    int wt1 = 0;
+                                    if (jno == 6) wt1 = 1;
+                                    else wt1 = (jno + 1);
+                                    for (int wt = wt1; wt <= 6; wt++)
+                                    {
+                                        if (rackinwaterjars[wt - 1] == 0)
+                                        {
+                                            Actual_WashJar_R3 = Next_JarName_R3;
+                                            Next_JarName_R3 = "W" + wt.ToString();
+                                            R3Protorun.Rows[r3inx + 1]["JarNo"] = Next_JarName_R3;
+                                            break;
+                                        }
+                                    }
+                                }
                                 r3_incub_WOn_flg = true;
                                 Intialize_Wash_Jars = false;
                                 watervalveonpff(Next_JarName_R3, 1);
                             }
                         }
                     }
-                }
-                if (JarName_R3.Contains("J"))////if (Prev_JarName_R3.Contains("W"))
-                {
-                    if (cmd_Exec_Comp == true)
-                    {
-                        DateTime doff = r3_incub_Woff.AddSeconds(20); // Added 15-12-2023 to to stop unnecessary command sending
-                        if (((r2priority == 1) || (r3priority == 1) || (r4priority == 1) || (r5priority == 1) || (r6priority == 1)) || (r1priority == 1))
-                        {
-                            r3_incub_Woff = r3_incub_Woff.AddSeconds(18);
-                        }
-                        else
-                        {
-                            //Off condition
-                            if ((d1 >= r3_incub_Woff) && (d1 <= doff))   //Modified on 15-12-2023 to send the Valve shut command between the time  ////if ((d2 >= r2_incub_Woff) && (r2_incub_Woff_flg == false))
-                            {
-                                for (int woff = 0; woff < water_valves_on_off_state.Length; woff++)
-                                {
-                                    if (water_valves_on_off_state[woff] == 1)
-                                    {
-                                        if ((woff == 0) && (W1_On_State == false)) watervalveonpff("W1", 0);
-                                        else if ((woff == 1) && (W2_On_State == false)) watervalveonpff("W2", 0);
-                                        else if ((woff == 2) && (W3_On_State == false)) watervalveonpff("W3", 0);
-                                        else if ((woff == 3) && (W4_On_State == false)) watervalveonpff("W4", 0);
-                                        else if ((woff == 4) && (W5_On_State == false)) watervalveonpff("W5", 0);
-                                        else if ((woff == 5) && (W6_On_State == false)) watervalveonpff("W6", 0);
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+                }                
                 //lbl_tmr3.Text = "RNo. R" + R3_cnt.ToString() + ",JNo." + JarName_R3 + " Elasped-" + d1.ToString().Substring(10) + " Incub-" + r3_incub.ToString().Substring(10) + " Task Complete By-" + r3_taskcomp.ToString().Substring(10);
                 if (JarName_R3.Contains("H"))
                     updateheatertimings(JarName_R3, "R" + R3_cnt.ToString(), true, 3);
                 else
                     updatetiming(JarName_R3, "R" + R3_cnt.ToString(), 3);
+
+                check_priority_times(3);
             }
         }
         private void tmr_r4_incub_Tick(object sender, EventArgs e)
@@ -2633,15 +3380,10 @@ namespace HematoxinandEosin
             int jno = 0; Boolean rackin = false;
             //This has to check with device
             DateTime d3 = System.DateTime.Now;
-            //d3 = r4_incub.AddSeconds(-15);
-            //if (d1 >= d3)
-            //{
-            //    if ((R2_pickcmdissue == false) && (R3_pickcmdissue == false) && (R1_pickcmdissue == false) && (R5_pickcmdissue == false) && (R6_pickcmdissue == false) && (cmd_Exec_Comp == true) && (RA_Move_issued == false) && (RA_Move_Intiate == false) && ((JarName_R4.Contains("J")) || (JarName_R4.Contains("W"))))
-            //    {
-            //        move_ra_tolocation(4);
-            //    }
-            //}
-            //This has to check with device
+            if (R4_protostart == false) { tmr_r4_incub.Enabled = false; return; }
+            int rackNo = 4;
+            if (!Racks.ContainsKey(rackNo)) return;
+            Rack currentRack = Racks[rackNo];            
             if (d1 >= r4_incub)
             {
                 tmr_r4_incub.Enabled = false;
@@ -2654,9 +3396,24 @@ namespace HematoxinandEosin
                     temp_restartincub = temp_restartincub.AddSeconds(10);
                     ////System.Threading.Thread.Sleep(1000);
                 }
-
+                //Below code added on 30-08-2024 1140
+                if ((JarName_R4.Contains("W")))
+                {
+                    if ((check_washjar_collision(4) == true) && (r4_WshWaitCnt <= 2))
+                    {
+                        r4_incub = r4_incub.AddSeconds(18);
+                        r4_taskcomp = r4_taskcomp.AddSeconds(18);
+                        r4_incub_Woff = r4_incub_Woff.AddSeconds(18);
+                        tmr_r4_incub.Enabled = true;
+                        tmr_r4_incub.Interval = 1000;
+                        r4_WshWaitCnt++;
+                        Communication.writeCommunicationCommands("18 Secconds Timer incrementes in Jar " + JarName_R4 + " for " + "R" + R4_cnt.ToString() + " as previous racks are in Waiting in tmr_r4_incub()");
+                        return;
+                    }
+                }
+                //Above code added on 30-08-2024 1140
                 //below code updated on 08-05-2024 in order avoid clash of racks
-                if ((R2_pickcmdissue == true) || (R1_pickcmdissue == true) || (R3_pickcmdissue == true) || (R5_pickcmdissue == true) || (R6_pickcmdissue == true) || (R7_pickcmdissue == true) || (R8_pickcmdissue == true) || (R9_pickcmdissue == true) || (rackloadingtoJar == true) || (RA_Move_issued == true))
+                if ((R2_pickcmdissue == true) || (R1_pickcmdissue == true) || (R3_pickcmdissue == true) || (R5_pickcmdissue == true) || (R6_pickcmdissue == true) || (R7_pickcmdissue == true) || (R8_pickcmdissue == true) || (R9_pickcmdissue == true) || (loadingjar_racksensed == true) || (RA_Move_issued == true) || (loading_racks == true))
                 {
                     r4_incub = r4_incub.AddSeconds(11);
                     tmr_r4_incub.Enabled = true;
@@ -2668,24 +3425,19 @@ namespace HematoxinandEosin
                     return;
                 }
                 //Above code updated on 08-05-2024  in order avoid clash of racks
-
-                //Below code added on 30-08-2024 1140
-                if ((JarName_R4 == "W1") || (JarName_R4 == "W2") || (JarName_R4 == "W3") || (JarName_R4 == "W4") || (JarName_R4 == "W5") || (JarName_R4 == "W6"))
+                //Below code added on 05-12-2023 1055 in order to avoid clash
+                else if (((r1priority == 1) || (r2priority == 1) || (r3priority == 1) || (r5priority == 1) || (r6priority == 1) || (r7priority == 1) || (r8priority == 1) || (r9priority == 1)) && (r4priority == 0))
                 {
-                    if ((check_washjar_collision(4) == true) && (r4_WshWaitCnt <= 2))
-                    {
-                        r4_incub = r4_incub.AddSeconds(Wash_delaytime);
-                        tmr_r4_incub.Enabled = true;
-                        tmr_r4_incub.Interval = 1000;
-                        r4_taskcomp = r4_taskcomp.AddSeconds(Wash_delaytime);
-                        Communication.writeCommunicationCommands(Wash_delaytime.ToString() + "Secconds Timer incrementes in Jar " + JarName_R4 + " for " + "R" + R4_cnt.ToString() + " as this rack in water station and other rack is elasping time in tmr_r4_incub()");
-                        r4_WshWaitCnt++;
-                        return;
-                    }
+                    r4_incub = r4_incub.AddSeconds(11);
+                    r4_taskcomp = r4_taskcomp.AddSeconds(11);
+                    tmr_r4_incub.Enabled = true;
+                    tmr_r4_incub.Interval = 1000;
+                    r4_WaitCnt++;
+                    Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R4 + " for " + "R" + R4_cnt.ToString() + " as previously excuted command is in process in tmr_r4_incub()");
+                    return;
                 }
-                //Above code added on 30-08-2024 1140
                 //Below code updated on 01-04-2024 to give priority to previous updated count
-                if (((r4_WaitCnt < r2_WaitCnt) || (r4_WaitCnt < r1_WaitCnt) || (r3_WaitCnt > r4_WaitCnt) || (r4_WaitCnt < r5_WaitCnt) || (r4_WaitCnt < r6_WaitCnt) || (r4_WaitCnt < r7_WaitCnt) || (r4_WaitCnt < r8_WaitCnt) || (r4_WaitCnt < r9_WaitCnt)) && (r4priority == 0))
+                else if (((r4_WaitCnt < r2_WaitCnt) || (r4_WaitCnt < r1_WaitCnt) || (r3_WaitCnt > r4_WaitCnt) || (r4_WaitCnt < r5_WaitCnt) || (r4_WaitCnt < r6_WaitCnt) || (r4_WaitCnt < r7_WaitCnt) || (r4_WaitCnt < r8_WaitCnt) || (r4_WaitCnt < r9_WaitCnt)) && (r4_WaitCnt <= DefaultWaitCnt) && (r4priority == 0))
                 {
                     r4_incub = r4_incub.AddSeconds(11);
                     tmr_r4_incub.Enabled = true;
@@ -2697,21 +3449,9 @@ namespace HematoxinandEosin
                     return;
                 }
 
-
-                //Below code added on 05-12-2023 1055 in order to avoid clash
-                if (((r1priority == 1) || (r2priority == 1) || (r3priority == 1) || (r5priority == 1) || (r6priority == 1) || (r7priority == 1) || (r8priority == 1) || (r9priority == 1)) && (r4priority == 0))
+                if(!string.IsNullOrEmpty(Next_JarName_R4))
                 {
-                    r4_incub = r4_incub.AddSeconds(11);
-                    r4_taskcomp = r4_taskcomp.AddSeconds(11);
-                    tmr_r4_incub.Enabled = true;
-                    tmr_r4_incub.Interval = 1000;
-                    r4_WaitCnt++;
-                    Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R4 + " for " + "R" + R4_cnt.ToString() + " as previously excuted command is in process in tmr_r4_incub()");
-                    return;
-                }
-                //Below code added on 20-12-2023 1644 to avoid clash 
-                if (r4priority == 0)
-                {
+                    //Below code added on 20-12-2023 1644 to avoid clash                 
                     jno = Convert.ToInt32(Next_JarName_R4.Substring(1));
                     if (Next_JarName_R4.Contains("J"))
                     {
@@ -2732,50 +3472,39 @@ namespace HematoxinandEosin
                         ////r4_WaitCnt++;
                         Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R4 + " for " + "R" + R4_cnt.ToString() + " as previously excuted command is in process in tmr_r4_incub()");
                         return;
-                    }
+                    }//Above code added on 20-12-2023 1644 to avoid clash 
                 }
-                //Above code added on 20-12-2023 1644 to avoid clash 
-                if (cmd_Exec_Comp == false)
-                {
-                    r4_incub = r4_incub.AddSeconds(11);
-                    r4_taskcomp = r4_taskcomp.AddSeconds(11);
-                    tmr_r4_incub.Enabled = true;
-                    tmr_r4_incub.Interval = 1000;
-                    r4_WaitCnt++;
-                    Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R4 + " for " + "R" + R4_cnt.ToString() + " as previously excuted command is in process in tmr_r4_incub()");
-                    return;
-                }
+               
+                ////if (cmd_Exec_Comp == false)
+                ////{
+                ////    r4_incub = r4_incub.AddSeconds(11);
+                ////    r4_taskcomp = r4_taskcomp.AddSeconds(11);
+                ////    tmr_r4_incub.Enabled = true;
+                ////    tmr_r4_incub.Interval = 1000;
+                ////    r4_WaitCnt++;
+                ////    Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R4 + " for " + "R" + R4_cnt.ToString() + " as previously excuted command is in process in tmr_r4_incub()");
+                ////    return;
+                ////}
                 //Above code added on 05-12-2023 1055 in order to avoid clash
 
                 if ((Process_Continued == true) && (protocolinitiateflg_R4 == false))
                     protocolinitiateflg_R4 = true;
-                if (continuetest > r4_incub)
-                    ts11 = continuetest.Subtract(r4_incub);
-                else
-                    ts11 = r4_incub.Subtract(continuetest);
-                if ((ts11.TotalSeconds >= 0) && (ts11.TotalSeconds <= 11))
-                {
-                    continuetest = continuetest.AddSeconds(11);
-                }
-                //Next rack calculation
-                if (nxtrackloading > r4_incub)
-                    ts11 = nxtrackloading.Subtract(r4_incub);
-                else
-                    ts11 = r4_incub.Subtract(nxtrackloading);
-
-                if ((ts11.TotalSeconds >= 0) && (ts11.TotalSeconds <= 11))
-                {
-                    nxtrackloading = nxtrackloading.AddSeconds(11);
-                }
+                if (Math.Abs((r4_incub - continuetest).TotalSeconds) <= DefaultDelay)
+                    continuetest = continuetest.AddSeconds(DefaultDelay);
+                if (Math.Abs((r4_incub - nxtrackloading).TotalSeconds) <= DefaultDelay)
+                    nxtrackloading = nxtrackloading.AddSeconds(DefaultDelay);
                 tmr_r4_incub.Enabled = false;
-
-                check_priority_times(4);
-                if (p4protorun_flg == false)
+                if(r4_WaitCnt<DefaultWaitCnt)
                 {
-                    tmr_r4_incub.Enabled = true;
-                    tmr_r4_incub.Interval = 1000;
-                    return;
-                }
+                    check_priority_times(4);
+                    if (p4protorun_flg == false)
+                    {
+                        tmr_r4_incub.Enabled = true;
+                        tmr_r4_incub.Interval = 1000;
+                        r4_WaitCnt++;
+                        return;
+                    }
+                }                
                 //Below code added on 13-12-2023 to check the washing time completed
                 if (JarName_R4 == "W1")
                     W1_On_State = false;
@@ -2801,12 +3530,16 @@ namespace HematoxinandEosin
                         wtr_valoffflg = false;
                         break;
                     }
+                    RA_Move_issued = false;
+                    if (protocolinitiateflg_R4 == true)
+                        protocolrun_R4();
                 }
-                if ((JarName_R4 == "H1") || (JarName_R4 == "H2") || (JarName_R4 == "H3"))
+                else if ((JarName_R4 == "H1") || (JarName_R4 == "H2") || (JarName_R4 == "H3"))
                 {
                     if (JarName_R4 == "H1") { H1_incub_complete = true; }
                     else if (JarName_R4 == "H2") { H2_incub_complete = true; }
                     else if (JarName_R4 == "H3") { H3_incub_complete = true; }
+                    r4priority = 1;
                     open_htrdoor();
                 }
                 else
@@ -2818,31 +3551,7 @@ namespace HematoxinandEosin
             }
             else
             {
-                ////////code added on 04-12-2023 1159
-                //////if ((d1 >= r4_priorChk) && (r4_priorChk_flg == false))
-                //////{
-                //////    r4_priorChk_flg = true;
-                //////    check_priority_times(4);
-                //////}
-
-                //////code written on 28-11-2023 1526 to read the temperature                
-                ////if ((heatingreqflg == true) && (Readtmpintiated_reinitiate == false) && (TempReadingStarted == false))
-                ////{
-                ////    Readtmpintiated_reinitiate = true;
-                ////    tmr_temp.Enabled = true;
-                ////    tmr_temp.Interval = 5000;
-                ////}
-                //////New code updated on 21-12-2023 to insert the loaded data to database
-                ////DateTime doff1 = r4_incub_Woff.AddSeconds(10); // Added 21-12-2023 to update data to database
-                ////if ((d1 >= r4_incub_Woff) && (d1 <= doff1) && tmr_update_flg == false)   //Modified on 21-12-2023 to update data to database
-                ////{
-                ////    tmr_update_flg = true;
-                ////    tmr_update.Enabled = true;
-                ////    tmr_update.Interval = 2000;
-                ////}
-                //////New code updated on 21-12-2023 to insert the loaded data to database
-                //Write code to On / Off water Value written on 11112023_1540
-                //code modified on 12122023 1131 to swithc on & off the water valves
+                
                 if (Next_JarName_R4.Contains("W"))
                 {
                     washrackno = R4_cnt;
@@ -2856,6 +3565,23 @@ namespace HematoxinandEosin
                         {
                             if ((d1 >= r4_incub_WOn) && (r4_incub_WOn_flg == false) && (cmd_Exec_Comp == true))
                             {
+                                jno = Convert.ToInt32(Next_JarName_R4.Substring(1));
+                                if (rackinwaterjars[jno - 1] == 1)
+                                {
+                                    int wt1 = 0;
+                                    if (jno == 6) wt1 = 1;
+                                    else wt1 = (jno + 1);
+                                    for (int wt = wt1; wt <= 6; wt++)
+                                    {
+                                        if (rackinwaterjars[wt - 1] == 0)
+                                        {
+                                            Actual_WashJar_R4 = Next_JarName_R4;
+                                            Next_JarName_R4 = "W" + wt.ToString();
+                                            R4Protorun.Rows[r4inx + 1]["JarNo"] = Next_JarName_R4;
+                                            break;
+                                        }
+                                    }
+                                }
                                 r4_incub_WOn_flg = true;
                                 Intialize_Wash_Jars = false;
                                 watervalveonpff(Next_JarName_R4, 1);
@@ -2863,47 +3589,13 @@ namespace HematoxinandEosin
                         }
                     }
                 }
-                if (JarName_R4.Contains("J"))////if (Prev_JarName_R4.Contains("W"))
-                {
-                    if (cmd_Exec_Comp == true)
-                    {
-                        DateTime doff = r4_incub_Woff.AddSeconds(20); // Added 15-12-2023 to to stop unnecessary command sending
-                        if (((r2priority == 1) || (r3priority == 1) || (r4priority == 1) || (r5priority == 1) || (r6priority == 1)) || (r1priority == 1))
-                        {
-                            r4_incub_Woff = r4_incub_Woff.AddSeconds(18);
-                        }
-                        else
-                        {
-                            //Off condition
-                            if ((d1 >= r4_incub_Woff) && (d1 <= doff))   //Modified on 15-12-2023 to send the Valve shut command between the time  ////if ((d2 >= r2_incub_Woff) && (r2_incub_Woff_flg == false))
-                            {
-                                for (int woff = 0; woff < water_valves_on_off_state.Length; woff++)
-                                {
-                                    if (water_valves_on_off_state[woff] == 1)
-                                    {
-                                        if ((woff == 0) && (W1_On_State == false)) watervalveonpff("W1", 0);
-                                        else if ((woff == 1) && (W2_On_State == false)) watervalveonpff("W2", 0);
-                                        else if ((woff == 2) && (W3_On_State == false)) watervalveonpff("W3", 0);
-                                        else if ((woff == 3) && (W4_On_State == false)) watervalveonpff("W4", 0);
-                                        else if ((woff == 4) && (W5_On_State == false)) watervalveonpff("W5", 0);
-                                        else if ((woff == 5) && (W6_On_State == false)) watervalveonpff("W6", 0);
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    //////Off condition
-                    ////if ((d1 >= r4_incub_Woff) && (r4_incub_Woff_flg == false))
-                    ////{
-                    ////    r4_incub_Woff_flg = true;
-                    ////    watervalveonpff(Prev_JarName_R4, 0);
-                    ////}
-                }
+               
                 //lbl_tmr4.Text = "RNo. R" + R4_cnt.ToString() + ",JNo." + JarName_R4 + " Elasped-" + d1.ToString().Substring(10) + " Incub-" + r4_incub.ToString().Substring(10) + " Task Complete By-" + r4_taskcomp.ToString().Substring(10);
                 if (JarName_R4.Contains("H"))
                     updateheatertimings(JarName_R4, "R" + R4_cnt.ToString(), true, 4);
                 else
                     updatetiming(JarName_R4, "R" + R4_cnt.ToString(), 4);
+                check_priority_times(4);
             }
         }
         private void tmr_r5_incub_Tick(object sender, EventArgs e)
@@ -2913,14 +3605,10 @@ namespace HematoxinandEosin
             int jno = 0; Boolean rackin = false;
             //This has to check with device
             DateTime d3 = System.DateTime.Now;
-            //d3 = r5_incub.AddSeconds(-15);
-            //if (d1 >= d3)
-            //{
-            //    if ((R2_pickcmdissue == false) && (R3_pickcmdissue == false) && (R1_pickcmdissue == false) && (R4_pickcmdissue == false) && (R6_pickcmdissue == false) && (cmd_Exec_Comp == true) && (RA_Move_issued == false) && (RA_Move_Intiate == false) && ((JarName_R5.Contains("J")) || (JarName_R5.Contains("W"))))
-            //    {
-            //        move_ra_tolocation(5);
-            //    }
-            //}
+            if (R5_protostart == false) { tmr_r5_incub.Enabled = false; return; }
+            int rackNo = 2;
+            if (!Racks.ContainsKey(rackNo)) return;
+            Rack currentRack = Racks[rackNo];            
             //This has to check with device
             if (d1 >= r5_incub)
             {
@@ -2934,9 +3622,24 @@ namespace HematoxinandEosin
                     temp_restartincub = temp_restartincub.AddSeconds(10);
                     //System.Threading.Thread.Sleep(1000);
                 }
-
+                //Below code added on 30-08-2024 1140
+                if ((JarName_R5.Contains("W")))
+                {
+                    if ((check_washjar_collision(5) == true) && (r5_WshWaitCnt <= 2))
+                    {
+                        r5_incub = r5_incub.AddSeconds(18);
+                        r5_taskcomp = r5_taskcomp.AddSeconds(18);
+                        r5_incub_Woff = r5_incub_Woff.AddSeconds(18);
+                        tmr_r5_incub.Enabled = true;
+                        tmr_r5_incub.Interval = 1000;
+                        r5_WshWaitCnt++;
+                        Communication.writeCommunicationCommands("18 Secconds Timer incrementes in Jar " + JarName_R5 + " for " + "R" + R5_cnt.ToString() + " as previous racks are in Waiting in tmr_r5_incub()");
+                        return;
+                    }
+                }
+                //Above code added on 30-08-2024 1140
                 //below code updated on 08-05-2024 in order avoid clash of racks
-                if ((R2_pickcmdissue == true) || (R1_pickcmdissue == true) || (R3_pickcmdissue == true) || (R4_pickcmdissue == true) || (R6_pickcmdissue == true) || (R7_pickcmdissue == true) || (R8_pickcmdissue == true) || (R9_pickcmdissue == true) || (rackloadingtoJar == true) || (RA_Move_issued == true))
+                if ((R2_pickcmdissue == true) || (R1_pickcmdissue == true) || (R3_pickcmdissue == true) || (R4_pickcmdissue == true) || (R6_pickcmdissue == true) || (R7_pickcmdissue == true) || (R8_pickcmdissue == true) || (R9_pickcmdissue == true) || (loadingjar_racksensed == true) || (RA_Move_issued == true) || (loading_racks == true))
                 {
                     r5_incub = r5_incub.AddSeconds(11);
                     tmr_r5_incub.Enabled = true;
@@ -2948,24 +3651,19 @@ namespace HematoxinandEosin
                     return;
                 }
                 //Above code updated on 08-05-2024  in order avoid clash of racks
-
-                //Below code added on 30-08-2024 1140
-                if ((JarName_R5 == "W1") || (JarName_R5 == "W2") || (JarName_R5 == "W3") || (JarName_R5 == "W4") || (JarName_R5 == "W5") || (JarName_R5 == "W6"))
+                //////Below code added on 05-12-2023 1055 in order to avoid clash
+                else if (((r1priority == 1) || (r2priority == 1) || (r3priority == 1) || (r4priority == 1) || (r6priority == 1) || (r7priority == 1) || (r8priority == 1) || (r9priority == 1)) && (r5priority == 0))
                 {
-                    if ((check_washjar_collision(5) == true) && (r5_WshWaitCnt <= 2))
-                    {
-                        r5_incub = r5_incub.AddSeconds(Wash_delaytime);
-                        tmr_r5_incub.Enabled = true;
-                        tmr_r5_incub.Interval = 1000;
-                        r5_taskcomp = r5_taskcomp.AddSeconds(Wash_delaytime);
-                        Communication.writeCommunicationCommands(Wash_delaytime.ToString() + " Secconds Timer incrementes in Jar " + JarName_R5 + " for " + "R" + R5_cnt.ToString() + " as this rack in water station and other rack is elasping time in tmr_r5_incub()");
-                        r5_WshWaitCnt++;
-                        return;
-                    }
+                    r5_incub = r5_incub.AddSeconds(11);
+                    r5_taskcomp = r5_taskcomp.AddSeconds(11);
+                    tmr_r5_incub.Enabled = true;
+                    tmr_r5_incub.Interval = 1000;
+                    r5_WaitCnt++;
+                    Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R5 + " for " + "R" + R5_cnt.ToString() + " as previously excuted command is in process in tmr_r5_incub()");
+                    return;
                 }
-                //Above code added on 30-08-2024 1140
                 //Below code updated on 01-04-2024 to give priority to previous updated count
-                if (((r5_WaitCnt < r2_WaitCnt) || (r5_WaitCnt < r1_WaitCnt) || (r5_WaitCnt < r3_WaitCnt) || (r5_WaitCnt < r4_WaitCnt) || (r5_WaitCnt < r6_WaitCnt) || (r5_WaitCnt < r7_WaitCnt) || (r5_WaitCnt < r8_WaitCnt) || (r5_WaitCnt < r9_WaitCnt)) && (r5priority == 0))
+                else if (((r5_WaitCnt < r2_WaitCnt) || (r5_WaitCnt < r1_WaitCnt) || (r5_WaitCnt < r3_WaitCnt) || (r5_WaitCnt < r4_WaitCnt) || (r5_WaitCnt < r6_WaitCnt) || (r5_WaitCnt < r7_WaitCnt) || (r5_WaitCnt < r8_WaitCnt) || (r5_WaitCnt < r9_WaitCnt)) && (r5priority == 0) && (r5_WaitCnt <= DefaultWaitCnt))
                 {
                     r5_incub = r5_incub.AddSeconds(11);
                     tmr_r5_incub.Enabled = true;
@@ -2976,20 +3674,10 @@ namespace HematoxinandEosin
                     Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R5 + " for " + "R" + R5_cnt.ToString() + " as previously excuted command is in process in tmr_r5_incub()");
                     return;
                 }
-                //Below code added on 05-12-2023 1055 in order to avoid clash
-                if (((r1priority == 1) || (r2priority == 1) || (r3priority == 1) || (r4priority == 1) || (r6priority == 1) || (r7priority == 1) || (r8priority == 1) || (r9priority == 1)) && (r5priority == 0))
+                
+                if(!string.IsNullOrEmpty(Next_JarName_R5))
                 {
-                    r5_incub = r5_incub.AddSeconds(11);
-                    r5_taskcomp = r5_taskcomp.AddSeconds(11);
-                    tmr_r5_incub.Enabled = true;
-                    tmr_r5_incub.Interval = 1000;
-                    r5_WaitCnt++;
-                    Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R5 + " for " + "R" + R5_cnt.ToString() + " as previously excuted command is in process in tmr_r5_incub()");
-                    return;
-                }
-                //Below code added on 20-12-2023 1644 to avoid clash 
-                if (r5priority == 0)
-                {
+                    //Below code added on 20-12-2023 1644 to avoid clash                
                     jno = Convert.ToInt32(Next_JarName_R5.Substring(1));
                     if (Next_JarName_R5.Contains("J"))
                     {
@@ -3011,49 +3699,34 @@ namespace HematoxinandEosin
                         Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R5 + " for " + "R" + R5_cnt.ToString() + " as previously excuted command is in process in tmr_r5_incub()");
                         return;
                     }
-                }
-                //Above code added on 20-12-2023 1644 to avoid clash 
+                }//Above code added on 20-12-2023 1644 to avoid clash 
                 //if ((cmd_Exec_Comp == false) && (r5priority == 0))
-                if (cmd_Exec_Comp == false)
-                {
-                    r5_incub = r5_incub.AddSeconds(11);
-                    r5_taskcomp = r5_taskcomp.AddSeconds(11);
-                    tmr_r5_incub.Enabled = true;
-                    tmr_r5_incub.Interval = 1000;
-                    r5_WaitCnt++;
-                    Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R5 + " for " + "R" + R5_cnt.ToString() + " as previously excuted command is in process in tmr_r5_incub()");
-                    return;
-                }
-
-
+                ////if (cmd_Exec_Comp == false)
+                ////{
+                ////    r5_incub = r5_incub.AddSeconds(11);
+                ////    r5_taskcomp = r5_taskcomp.AddSeconds(11);
+                ////    tmr_r5_incub.Enabled = true;
+                ////    tmr_r5_incub.Interval = 1000;
+                ////    r5_WaitCnt++;
+                ////    Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R5 + " for " + "R" + R5_cnt.ToString() + " as previously excuted command is in process in tmr_r5_incub()");
+                ////    return;
+                ////}
 
                 if ((Process_Continued == true) && (protocolinitiateflg_R5 == false))
                     protocolinitiateflg_R5 = true;
-                if (continuetest > r5_incub)
-                    ts11 = continuetest.Subtract(r5_incub);
-                else
-                    ts11 = r5_incub.Subtract(continuetest);
-                if ((ts11.TotalSeconds >= 0) && (ts11.TotalSeconds <= 11))
+                if (Math.Abs((r5_incub - continuetest).TotalSeconds) <= DefaultDelay)
+                    continuetest = continuetest.AddSeconds(DefaultDelay);
+                if (Math.Abs((r5_incub - nxtrackloading).TotalSeconds) <= DefaultDelay)
+                    nxtrackloading = nxtrackloading.AddSeconds(DefaultDelay);
+                if (r5_WaitCnt < DefaultWaitCnt)
                 {
-                    continuetest = continuetest.AddSeconds(11);
-                }
-                //Next rack calculation
-                if (nxtrackloading > r5_incub)
-                    ts11 = nxtrackloading.Subtract(r5_incub);
-                else
-                    ts11 = r5_incub.Subtract(nxtrackloading);
-
-                if ((ts11.TotalSeconds >= 0) && (ts11.TotalSeconds <= 11))
-                {
-                    nxtrackloading = nxtrackloading.AddSeconds(11);
-                }
-
-                check_priority_times(5);
-                if (p5protorun_flg == false)
-                {
-                    tmr_r5_incub.Enabled = true;
-                    tmr_r5_incub.Interval = 1000;
-                    return;
+                    check_priority_times(5);
+                    if (p5protorun_flg == false)
+                    {
+                        tmr_r5_incub.Enabled = true;
+                        tmr_r5_incub.Interval = 1000;
+                        return;
+                    }
                 }
                 //Below code added on 13-12-2023 to check the washing time completed
                 if (JarName_R5 == "W1")
@@ -3080,12 +3753,16 @@ namespace HematoxinandEosin
                         wtr_valoffflg = false;
                         break;
                     }
+                    RA_Move_issued = false;
+                    if (protocolinitiateflg_R5 == true)
+                        protocolrun_R5();
                 }
-                if ((JarName_R5 == "H1") || (JarName_R5 == "H2") || (JarName_R5 == "H3"))
+                else if ((JarName_R5 == "H1") || (JarName_R5 == "H2") || (JarName_R5 == "H3"))
                 {
                     if (JarName_R5 == "H1") { H1_incub_complete = true; }
                     else if (JarName_R5 == "H2") { H2_incub_complete = true; }
                     else if (JarName_R5 == "H3") { H3_incub_complete = true; }
+                    r5priority = 1;
                     open_htrdoor();
                 }
                 else
@@ -3096,31 +3773,7 @@ namespace HematoxinandEosin
                 }
             }
             else
-            {
-                //////////code added on 04-12-2023 1159
-                ////////if ((d1 >= r5_priorChk) && (r5_priorChk_flg == false))
-                ////////{
-                ////////    r5_priorChk_flg = true;
-                ////////    check_priority_times(5);
-                ////////}
-
-                //////code written on 28-11-2023 1526 to read the temperature                
-                ////if ((heatingreqflg == true) && (Readtmpintiated_reinitiate == false) && (TempReadingStarted == false))
-                ////{
-                ////    Readtmpintiated_reinitiate = true;
-                ////    tmr_temp.Enabled = true;
-                ////    tmr_temp.Interval = 5000;
-                ////}
-                //////New code updated on 21-12-2023 to insert the loaded data to database
-                ////DateTime doff1 = r5_incub_Woff.AddSeconds(10); // Added 21-12-2023 to update data to database
-                ////if ((d1 >= r5_incub_Woff) && (d1 <= doff1) && tmr_update_flg == false)   //Modified on 21-12-2023 to update data to database
-                ////{
-                ////    tmr_update_flg = true;
-                ////    tmr_update.Enabled = true;
-                ////    tmr_update.Interval = 2000;
-                ////}
-                //////New code updated on 21-12-2023 to insert the loaded data to database
-                //Write code to On / Off water Value written on 11112023_1540                
+            {                             
                 if (Next_JarName_R5.Contains("W"))
                 {
                     washrackno = R5_cnt;
@@ -3135,6 +3788,23 @@ namespace HematoxinandEosin
 
                             if ((d1 >= r5_incub_WOn) && (r5_incub_WOn_flg == false) && (cmd_Exec_Comp == true))
                             {
+                                jno = Convert.ToInt32(Next_JarName_R5.Substring(1));
+                                if (rackinwaterjars[jno - 1] == 1)
+                                {
+                                    int wt1 = 0;
+                                    if (jno == 6) wt1 = 1;
+                                    else wt1 = (jno + 1);
+                                    for (int wt = wt1; wt <= 6; wt++)
+                                    {
+                                        if (rackinwaterjars[wt - 1] == 0)
+                                        {
+                                            Actual_WashJar_R5 = Next_JarName_R5;
+                                            Next_JarName_R5 = "W" + wt.ToString();
+                                            R5Protorun.Rows[r5inx + 1]["JarNo"] = Next_JarName_R5;
+                                            break;
+                                        }
+                                    }
+                                }
                                 r5_incub_WOn_flg = true;
                                 Intialize_Wash_Jars = false;
                                 watervalveonpff(Next_JarName_R5, 1);
@@ -3142,48 +3812,13 @@ namespace HematoxinandEosin
                         }
                     }
                 }
-                if (JarName_R5.Contains("J"))////if (Prev_JarName_R5.Contains("W"))
-                {
-                    //Off condition
-                    if (cmd_Exec_Comp == true)
-                    {
-                        DateTime doff = r5_incub_Woff.AddSeconds(20); // Added 15-12-2023 to to stop unnecessary command sending
-                        if (((r2priority == 1) || (r3priority == 1) || (r4priority == 1) || (r5priority == 1) || (r6priority == 1)) || (r1priority == 1))
-                        {
-                            r5_incub_Woff = r5_incub_Woff.AddSeconds(18);
-                        }
-                        else
-                        {
-                            //Off condition
-                            if ((d1 >= r5_incub_Woff) && (d1 <= doff))   //Modified on 15-12-2023 to send the Valve shut command between the time
-                            {
-                                for (int woff = 0; woff < water_valves_on_off_state.Length; woff++)
-                                {
-                                    if (water_valves_on_off_state[woff] == 1)
-                                    {
-                                        if ((woff == 0) && (W1_On_State == false)) watervalveonpff("W1", 0);
-                                        else if ((woff == 1) && (W2_On_State == false)) watervalveonpff("W2", 0);
-                                        else if ((woff == 2) && (W3_On_State == false)) watervalveonpff("W3", 0);
-                                        else if ((woff == 3) && (W4_On_State == false)) watervalveonpff("W4", 0);
-                                        else if ((woff == 4) && (W5_On_State == false)) watervalveonpff("W5", 0);
-                                        else if ((woff == 5) && (W6_On_State == false)) watervalveonpff("W6", 0);
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    //////Off condition
-                    ////if ((d1 >= r5_incub_Woff) && (r5_incub_Woff_flg == false))
-                    ////{
-                    ////    r5_incub_Woff_flg = true;
-                    ////    watervalveonpff(Prev_JarName_R5, 0);
-                    ////}
-                }
+               
                 //lbl_tmr5.Text = "RNo. R" + R5_cnt.ToString() + ",JNo." + JarName_R5 + " Elasped-" + d1.ToString().Substring(10) + " Incub-" + r5_incub.ToString().Substring(10) + " Task Complete By-" + r5_taskcomp.ToString().Substring(10);
                 if (JarName_R5.Contains("H"))
                     updateheatertimings(JarName_R5, "R" + R5_cnt.ToString(), true, 5);
                 else
                     updatetiming(JarName_R5, "R" + R5_cnt.ToString(), 5);
+                check_priority_times(5);
             }
         }
         private void tmr_r6_incub_Tick(object sender, EventArgs e)
@@ -3193,14 +3828,10 @@ namespace HematoxinandEosin
             int jno = 0; Boolean rackin = false;
             //This has to check with device
             DateTime d3 = System.DateTime.Now;
-            //d3 = r6_incub.AddSeconds(-15);
-            //if (d1 >= d3)
-            //{
-            //    if ((R2_pickcmdissue == false) && (R3_pickcmdissue == false) && (R1_pickcmdissue == false) && (R4_pickcmdissue == false) && (R5_pickcmdissue == false) && (cmd_Exec_Comp == true) && (RA_Move_issued == false) && (RA_Move_Intiate == false) && ((JarName_R6.Contains("J")) || (JarName_R6.Contains("W"))))
-            //    {
-            //        move_ra_tolocation(6);
-            //    }
-            //}
+            if (R6_protostart == false) { tmr_r6_incub.Enabled = false; return; }
+            int rackNo = 2;
+            if (!Racks.ContainsKey(rackNo)) return;
+            Rack currentRack = Racks[rackNo];            
             //This has to check with device
             if (d1 >= r6_incub)
             {
@@ -3214,8 +3845,24 @@ namespace HematoxinandEosin
                     temp_restartincub = temp_restartincub.AddSeconds(10);
                     ////System.Threading.Thread.Sleep(1000);
                 }
+                //Below code added on 30-08-2024 1140
+                if ((JarName_R6.Contains("W")))
+                {
+                    if ((check_washjar_collision(6) == true) && (r6_WshWaitCnt <= 2))
+                    {
+                        r6_incub = r6_incub.AddSeconds(18);
+                        r6_taskcomp = r6_taskcomp.AddSeconds(18);
+                        r6_incub_Woff = r6_incub_Woff.AddSeconds(18);
+                        tmr_r6_incub.Enabled = true;
+                        tmr_r6_incub.Interval = 1000;
+                        r6_WshWaitCnt++;
+                        Communication.writeCommunicationCommands("18 Secconds Timer incrementes in Jar " + JarName_R6 + " for " + "R" + R6_cnt.ToString() + " as previous racks are in Waiting in tmr_r6_incub()");
+                        return;
+                    }
+                }
+                //Above code added on 30-08-2024 1140
                 //below code updated on 08-05-2024 in order avoid clash of racks
-                if ((R2_pickcmdissue == true) || (R1_pickcmdissue == true) || (R3_pickcmdissue == true) || (R4_pickcmdissue == true) || (R5_pickcmdissue == true) || (R7_pickcmdissue == true) || (R8_pickcmdissue == true) || (R9_pickcmdissue == true) || (rackloadingtoJar == true) || (RA_Move_issued == true))
+                if ((R2_pickcmdissue == true) || (R1_pickcmdissue == true) || (R3_pickcmdissue == true) || (R4_pickcmdissue == true) || (R5_pickcmdissue == true) || (R7_pickcmdissue == true) || (R8_pickcmdissue == true) || (R9_pickcmdissue == true) || (loadingjar_racksensed == true) || (RA_Move_issued == true) || (loading_racks == true))
                 {
                     r6_incub = r6_incub.AddSeconds(11);
                     tmr_r6_incub.Enabled = true;
@@ -3227,23 +3874,19 @@ namespace HematoxinandEosin
                     return;
                 }
                 //Above code updated on 08-05-2024  in order avoid clash of racks
-                //Below code added on 30-08-2024 1140
-                if ((JarName_R6 == "W1") || (JarName_R6 == "W2") || (JarName_R6 == "W3") || (JarName_R6 == "W4") || (JarName_R6 == "W5") || (JarName_R6 == "W6"))
+                //////Below code added on 05-12-2023 1055 in order to avoid clash
+                else if (((r1priority == 1) || (r2priority == 1) || (r3priority == 1) || (r4priority == 1) || (r5priority == 1) || (r7priority == 1) || (r8priority == 1) || (r9priority == 1)) && (r6priority == 0))
                 {
-                    if ((check_washjar_collision(6) == true) && (r6_WshWaitCnt <= 2))
-                    {
-                        r6_incub = r6_incub.AddSeconds(Wash_delaytime);
-                        tmr_r6_incub.Enabled = true;
-                        tmr_r6_incub.Interval = 1000;
-                        r6_taskcomp = r6_taskcomp.AddSeconds(Wash_delaytime);
-                        Communication.writeCommunicationCommands(Wash_delaytime.ToString() + " Secconds Timer incrementes in Jar " + JarName_R6 + " for " + "R" + R6_cnt.ToString() + " as this rack in water station and other rack is elasping time in tmr_r6_incub()");
-                        r6_WshWaitCnt++;
-                        return;
-                    }
+                    r6_incub = r6_incub.AddSeconds(11);
+                    r6_taskcomp = r6_taskcomp.AddSeconds(11);
+                    tmr_r6_incub.Enabled = true;
+                    tmr_r6_incub.Interval = 1000;
+                    r6_WaitCnt++;
+                    Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R6 + " for " + "R" + R6_cnt.ToString() + " as other racks are in high priority in tmr_r6_incub()");
+                    return;
                 }
-                //Above code added on 30-08-2024 1140
                 //Below code updated on 01-04-2024 to give priority to previous updated count
-                if (((r6_WaitCnt < r2_WaitCnt) || (r6_WaitCnt < r1_WaitCnt) || (r6_WaitCnt < r3_WaitCnt) || (r6_WaitCnt < r4_WaitCnt) || (r5_WaitCnt > r6_WaitCnt) || (r7_WaitCnt > r6_WaitCnt) || (r8_WaitCnt > r6_WaitCnt) || (r9_WaitCnt > r6_WaitCnt)) && (r6priority == 0))
+                else if (((r6_WaitCnt < r2_WaitCnt) || (r6_WaitCnt < r1_WaitCnt) || (r6_WaitCnt < r3_WaitCnt) || (r6_WaitCnt < r4_WaitCnt) || (r5_WaitCnt > r6_WaitCnt) || (r7_WaitCnt > r6_WaitCnt) || (r8_WaitCnt > r6_WaitCnt) || (r9_WaitCnt > r6_WaitCnt)) && (r6_WaitCnt <= DefaultWaitCnt) && (r6priority == 0))
                 {
                     r6_incub = r6_incub.AddSeconds(11);
                     tmr_r6_incub.Enabled = true;
@@ -3254,22 +3897,9 @@ namespace HematoxinandEosin
                     Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R6 + " for " + "R" + R6_cnt.ToString() + " as previous racks are in Waiting in tmr_r6_incub()");
                     return;
                 }
-
-
-                //Below code added on 05-12-2023 1055 in order to avoid clash
-                if (((r1priority == 1) || (r2priority == 1) || (r3priority == 1) || (r4priority == 1) || (r5priority == 1) || (r7priority == 1) || (r8priority == 1) || (r9priority == 1)) && (r6priority == 0))
+                if(!string.IsNullOrEmpty(Next_JarName_R6))
                 {
-                    r6_incub = r6_incub.AddSeconds(11);
-                    r6_taskcomp = r6_taskcomp.AddSeconds(11);
-                    tmr_r6_incub.Enabled = true;
-                    tmr_r6_incub.Interval = 1000;
-                    r6_WaitCnt++;
-                    Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R6 + " for " + "R" + R6_cnt.ToString() + " as other racks are in high priority in tmr_r6_incub()");
-                    return;
-                }
-                //Below code added on 20-12-2023 1644 to avoid clash 
-                if (r6priority == 0)
-                {
+                    //Below code added on 20-12-2023 1644 to avoid clash                 
                     jno = Convert.ToInt32(Next_JarName_R6.Substring(1));
                     if (Next_JarName_R6.Contains("J"))
                     {
@@ -3290,48 +3920,39 @@ namespace HematoxinandEosin
                         ////r6_WaitCnt++;
                         Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R6 + " for " + "R" + R6_cnt.ToString() + " as rack is there in next placing Jarin tmr_r6_incub()");
                         return;
-                    }
+                    } //Above code added on 20-12-2023 1644 to avoid clash 
                 }
-                //Above code added on 20-12-2023 1644 to avoid clash 
+                
                 //if ((cmd_Exec_Comp == false) && (r6priority == 0))
-                if (cmd_Exec_Comp == false)
-                {
-                    r6_incub = r6_incub.AddSeconds(11);
-                    r6_taskcomp = r6_taskcomp.AddSeconds(11);
-                    tmr_r6_incub.Enabled = true;
-                    tmr_r6_incub.Interval = 1000;
-                    r6_WaitCnt++;
-                    Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R6 + " for " + "R" + R6_cnt.ToString() + " as previously excuted command is in processin tmr_r6_incub()");
-                    return;
-                }
+                ////if (cmd_Exec_Comp == false)
+                ////{
+                ////    r6_incub = r6_incub.AddSeconds(11);
+                ////    r6_taskcomp = r6_taskcomp.AddSeconds(11);
+                ////    tmr_r6_incub.Enabled = true;
+                ////    tmr_r6_incub.Interval = 1000;
+                ////    r6_WaitCnt++;
+                ////    Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R6 + " for " + "R" + R6_cnt.ToString() + " as previously excuted command is in processin tmr_r6_incub()");
+                ////    return;
+                ////}
 
                 if ((Process_Continued == true) && (protocolinitiateflg_R6 == false))
                     protocolinitiateflg_R6 = true;
-                if (continuetest > r6_incub)
-                    ts11 = continuetest.Subtract(r6_incub);
-                else
-                    ts11 = r6_incub.Subtract(continuetest);
-                if ((ts11.TotalSeconds >= 0) && (ts11.TotalSeconds <= 11))
-                {
-                    continuetest = continuetest.AddSeconds(11);
-                }
-                //Next rack calculation
-                if (nxtrackloading > r6_incub)
-                    ts11 = nxtrackloading.Subtract(r6_incub);
-                else
-                    ts11 = r6_incub.Subtract(nxtrackloading);
-                if ((ts11.TotalSeconds >= 0) && (ts11.TotalSeconds <= 11))
-                {
-                    nxtrackloading = nxtrackloading.AddSeconds(11);
-                }
+                if (Math.Abs((r6_incub - continuetest).TotalSeconds) <= DefaultDelay)
+                    continuetest = continuetest.AddSeconds(DefaultDelay);
+                if (Math.Abs((r6_incub - nxtrackloading).TotalSeconds) <= DefaultDelay)
+                    nxtrackloading = nxtrackloading.AddSeconds(DefaultDelay);
+                
                 tmr_r6_incub.Enabled = false;
-
-                check_priority_times(6);
-                if (p6protorun_flg == false)
+                if(r6_WaitCnt<DefaultWaitCnt)
                 {
-                    tmr_r6_incub.Enabled = true;
-                    tmr_r6_incub.Interval = 1000;
-                    return;
+                    check_priority_times(6);
+                    if (p6protorun_flg == false)
+                    {
+                        tmr_r6_incub.Enabled = true;
+                        tmr_r6_incub.Interval = 1000;
+                        r6_WaitCnt++;
+                        return;
+                    }
                 }
 
                 //Below code added on 13-12-2023 to check the washing time completed
@@ -3360,12 +3981,16 @@ namespace HematoxinandEosin
                         wtr_valoffflg = false;
                         break;
                     }
+                    RA_Move_issued = false;
+                    if (protocolinitiateflg_R6 == true)
+                        protocolrun_R6();
                 }
-                if ((JarName_R6 == "H1") || (JarName_R6 == "H2") || (JarName_R6 == "H3"))
+                else if ((JarName_R6 == "H1") || (JarName_R6 == "H2") || (JarName_R6 == "H3"))
                 {
                     if (JarName_R6 == "H1") { H1_incub_complete = true; }
                     else if (JarName_R6 == "H2") { H2_incub_complete = true; }
                     else if (JarName_R6 == "H3") { H3_incub_complete = true; }
+                    r6priority = 1;
                     open_htrdoor();
                 }
                 else
@@ -3377,32 +4002,6 @@ namespace HematoxinandEosin
             }
             else
             {
-
-                //////////code added on 04-12-2023 1159
-                ////////if((d1>= r6_priorChk) && (r6_priorChk_flg==false))
-                ////////{
-                ////////    r6_priorChk_flg = true;
-                ////////    check_priority_times(6);
-                ////////}
-
-                //code written on 28-11-2023 1526 to read the temperature                
-                ////if ((heatingreqflg == true) && (Readtmpintiated_reinitiate == false) && (TempReadingStarted == false))
-                ////{
-                ////    Readtmpintiated_reinitiate = true;
-                ////    tmr_temp.Enabled = true;
-                ////    tmr_temp.Interval = 5000;
-                ////}
-
-                //////New code updated on 21-12-2023 to insert the loaded data to database
-                ////DateTime doff1 = r6_incub_Woff.AddSeconds(10); // Added 21-12-2023 to update data to database
-                ////if ((d1 >= r6_incub_Woff) && (d1 <= doff1) && tmr_update_flg == false)   //Modified on 21-12-2023 to update data to database
-                ////{
-                ////    tmr_update_flg = true;
-                ////    tmr_update.Enabled = true;
-                ////    tmr_update.Interval = 2000;
-                ////}
-                //////New code updated on 21-12-2023 to insert the loaded data to database
-
                 //Write code to On / Off water Value written on 11112023_1540
                 //code modified on 12-12-2023 for switch on & off water valves
                 if (Next_JarName_R6.Contains("W"))
@@ -3418,62 +4017,48 @@ namespace HematoxinandEosin
                         {
                             if ((d1 >= r6_incub_WOn) && (r6_incub_WOn_flg == false) && (cmd_Exec_Comp == true))
                             {
+                                jno = Convert.ToInt32(Next_JarName_R6.Substring(1));
+                                if (rackinwaterjars[jno - 1] == 1)
+                                {
+                                    int wt1 = 0;
+                                    if (jno == 6) wt1 = 1;
+                                    else wt1 = (jno + 1);
+                                    for (int wt = wt1; wt <= 6; wt++)
+                                    {
+                                        if (rackinwaterjars[wt - 1] == 0)
+                                        {
+                                            Actual_WashJar_R6 = Next_JarName_R6;
+                                            Next_JarName_R6 = "W" + wt.ToString();
+                                            R6Protorun.Rows[r6inx + 1]["JarNo"] = Next_JarName_R6;
+                                            break;
+                                        }
+                                    }
+                                }
                                 r6_incub_WOn_flg = true;
                                 Intialize_Wash_Jars = false;
                                 watervalveonpff(Next_JarName_R6, 1);
                             }
                         }
                     }
-                }
-                if (JarName_R6.Contains("J")) ////if (Prev_JarName_R6.Contains("W"))
-                {
-                    if (cmd_Exec_Comp == true)
-                    {
-                        DateTime doff = r6_incub_Woff.AddSeconds(20); // Added 15-12-2023 to to stop unnecessary command sending
-                        if (((r2priority == 1) || (r3priority == 1) || (r4priority == 1) || (r5priority == 1) || (r6priority == 1)) || (r1priority == 1) || (r7priority == 1) || (r8priority == 1) || (r9priority == 1))
-                        {
-                            r6_incub_Woff = r6_incub_Woff.AddSeconds(18);
-                        }
-                        else
-                        {
-                            //Off condition
-                            if ((d1 >= r6_incub_Woff) && (d1 <= doff))   //Modified on 15-12-2023 to send the Valve shut command between the time
-                            {
-                                for (int woff = 0; woff < water_valves_on_off_state.Length; woff++)
-                                {
-                                    if (water_valves_on_off_state[woff] == 1)
-                                    {
-                                        if ((woff == 0) && (W1_On_State == false)) watervalveonpff("W1", 0);
-                                        else if ((woff == 1) && (W2_On_State == false)) watervalveonpff("W2", 0);
-                                        else if ((woff == 2) && (W3_On_State == false)) watervalveonpff("W3", 0);
-                                        else if ((woff == 3) && (W4_On_State == false)) watervalveonpff("W4", 0);
-                                        else if ((woff == 4) && (W5_On_State == false)) watervalveonpff("W5", 0);
-                                        else if ((woff == 5) && (W6_On_State == false)) watervalveonpff("W6", 0);
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    //////Off condition
-                    ////if ((d1 >= r6_incub_Woff) && (r6_incub_Woff_flg == false))
-                    ////{
-                    ////    r6_incub_Woff_flg = true;
-                    ////    watervalveonpff(Prev_JarName_R6, 0);
-                    ////}
-                }
+                }               
                 //lbl_tmr6.Text = "RNo. R" + R6_cnt.ToString() + ",JNo." + JarName_R6 + " Elasped-" + d1.ToString().Substring(10) + " Incub-" + r6_incub.ToString().Substring(10) + " Task Complete By-" + r6_taskcomp.ToString().Substring(10);
                 if (JarName_R6.Contains("H"))
                     updateheatertimings(JarName_R6, "R" + R6_cnt.ToString(), true, 6);
                 else
                     updatetiming(JarName_R6, "R" + R6_cnt.ToString(), 6);
+                check_priority_times(6);
             }
         }
         private void tmr_r7_incub_Tick(object sender, EventArgs e)
         {
             Application.DoEvents();
-            DateTime d1 = System.DateTime.Now;
+            DateTime d1 = System.DateTime.Now;                                          
             TimeSpan ts11 = new TimeSpan();
             int jno = 0; Boolean rackin = false;
+            if (R7_protostart == false) { tmr_r7_incub.Enabled = false; return; }
+            int rackNo = 7;
+            if (!Racks.ContainsKey(rackNo)) return;
+            Rack currentRack = Racks[rackNo];
             if (d1 >= r7_incub)
             {
                 tmr_r7_incub.Enabled = false;
@@ -3486,9 +4071,24 @@ namespace HematoxinandEosin
                     temp_restartincub = temp_restartincub.AddSeconds(10);
                     ////System.Threading.Thread.Sleep(1000);
                 }
-
+                //Below code added on 30-08-2024 1140
+                if ((JarName_R7.Contains("W")))
+                {
+                    if ((check_washjar_collision(7) == true) && (r7_WshWaitCnt <= 2))
+                    {
+                        r7_incub = r7_incub.AddSeconds(18);
+                        r7_taskcomp = r7_taskcomp.AddSeconds(18);
+                        r7_incub_Woff = r7_incub_Woff.AddSeconds(18);
+                        tmr_r7_incub.Enabled = true;
+                        tmr_r7_incub.Interval = 1000;
+                        r7_WshWaitCnt++;
+                        Communication.writeCommunicationCommands("18 Secconds Timer incrementes in Jar " + JarName_R7 + " for " + "R" + R7_cnt.ToString() + " as previous racks are in Waiting in tmr_r7_incub()");
+                        return;
+                    }
+                }
+                //Above code added on 30-08-2024 1140
                 //below code updated on 08-05-2024 in order avoid clash of racks
-                if ((R2_pickcmdissue == true) || (R1_pickcmdissue == true) || (R3_pickcmdissue == true) || (R4_pickcmdissue == true) || (R5_pickcmdissue == true) || (R6_pickcmdissue == true) || (R8_pickcmdissue == true) || (R9_pickcmdissue == true) || (rackloadingtoJar == true) || (RA_Move_issued == true))
+                if ((R2_pickcmdissue == true) || (R1_pickcmdissue == true) || (R3_pickcmdissue == true) || (R4_pickcmdissue == true) || (R5_pickcmdissue == true) || (R6_pickcmdissue == true) || (R8_pickcmdissue == true) || (R9_pickcmdissue == true) || (loadingjar_racksensed == true) || (RA_Move_issued == true) || (loading_racks == true))
                 {
                     r7_incub = r7_incub.AddSeconds(11);
                     tmr_r7_incub.Enabled = true;
@@ -3496,31 +4096,24 @@ namespace HematoxinandEosin
                     r7_taskcomp = r7_taskcomp.AddSeconds(11);
                     r7_incub_Woff = r7_incub_Woff.AddSeconds(11);
                     r7_WaitCnt++;
-                    Communication.writeCommunicationCommands("15 Secconds Timer incrementes in Jar " + JarName_R7 + " for " + "R" + R7_cnt.ToString() + " as other racks picking by RA in tmr_r7_incub()");
+                    Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R7 + " for " + "R" + R7_cnt.ToString() + " as other racks picking by RA in tmr_r7_incub()");
                     return;
                 }
                 //Above code updated on 08-05-2024  in order avoid clash of racks
-
-                //Below code added on 30-08-2024 1140
-                if ((JarName_R7 == "W1") || (JarName_R7 == "W2") || (JarName_R7 == "W3") || (JarName_R7 == "W4") || (JarName_R7 == "W5") || (JarName_R7 == "W6"))
+                //Below code added on 05-12-2023 1055 in order to avoid clash
+                else if (((r1priority == 1) || (r2priority == 1) || (r3priority == 1) || (r4priority == 1) || (r5priority == 1) || (r6priority == 1) || (r8priority == 1) || (r9priority == 1)) && (r7priority == 0))
                 {
-                    if ((check_washjar_collision(7) == true) && (r7_WshWaitCnt <= 2))
-                    {
-                        r7_incub = r7_incub.AddSeconds(Wash_delaytime);
-                        tmr_r7_incub.Enabled = true;
-                        tmr_r7_incub.Interval = 1000;
-                        r7_taskcomp = r7_taskcomp.AddSeconds(Wash_delaytime);
-                        Communication.writeCommunicationCommands(Wash_delaytime.ToString() + " Secconds Timer incrementes in Jar " + JarName_R7+ " for " + "R" + R7_cnt.ToString() + " as this rack in water station and other rack is elasping time in tmr_r7_incub()");
-                        r7_WshWaitCnt++;
-                        return;
-                    }
+                    r7_incub = r7_incub.AddSeconds(11);
+                    tmr_r7_incub.Enabled = true;
+                    tmr_r7_incub.Interval = 1000;
+                    r7_taskcomp = r7_taskcomp.AddSeconds(11);
+                    r7_incub_Woff = r7_incub_Woff.AddSeconds(11);
+                    r7_WaitCnt++;
+                    Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R7 + " for " + "R" + R7_cnt.ToString() + " as other racks are in high priority in tmr_r7_incub()");
+                    return;
                 }
-                //Above code added on 30-08-2024 1140
-
                 //Below code updated on 01-04-2024 to give priority to previous updated count
-
-                //Below code updated on 01-04-2024 to give priority to previous updated count
-                if (((r7_WaitCnt < r2_WaitCnt) || (r7_WaitCnt < r1_WaitCnt) || (r7_WaitCnt < r3_WaitCnt) || (r7_WaitCnt < r4_WaitCnt) || (r7_WaitCnt < r5_WaitCnt) || (r7_WaitCnt < r6_WaitCnt) || (r7_WaitCnt < r8_WaitCnt) || (r7_WaitCnt < r9_WaitCnt)) && (r7priority == 0))
+                else if (((r7_WaitCnt < r2_WaitCnt) || (r7_WaitCnt < r1_WaitCnt) || (r7_WaitCnt < r3_WaitCnt) || (r7_WaitCnt < r4_WaitCnt) || (r7_WaitCnt < r5_WaitCnt) || (r7_WaitCnt < r6_WaitCnt) || (r7_WaitCnt < r8_WaitCnt) || (r7_WaitCnt < r9_WaitCnt)) && (r7_WaitCnt <= DefaultWaitCnt))
                 {
                     r7_incub = r7_incub.AddSeconds(Wash_delaytime);
                     tmr_r7_incub.Enabled = true;
@@ -3532,24 +4125,11 @@ namespace HematoxinandEosin
                     return;
                 }
 
-
-                //Below code added on 05-12-2023 1055 in order to avoid clash
-                if (((r1priority == 1) || (r2priority == 1) || (r3priority == 1) || (r4priority == 1) || (r5priority == 1) || (r6priority == 1) || (r8priority == 1) || (r9priority == 1)) && (r7priority == 0))
+                if(!string.IsNullOrEmpty(Next_JarName_R7))
                 {
-                    r7_incub = r7_incub.AddSeconds(11);
-                    tmr_r7_incub.Enabled = true;
-                    tmr_r7_incub.Interval = 1000;
-                    r7_taskcomp = r7_taskcomp.AddSeconds(11);
-                    r7_incub_Woff = r7_incub_Woff.AddSeconds(11);
-                    r7_WaitCnt++;
-                    Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R7 + " for " + "R" + R7_cnt.ToString() + " as other racks are in high priority in tmr_r7_incub()");
-                    return;
-                }
-                //Below code added on 20-12-2023 1644 to avoid clash 
-                if (r7priority == 0)
-                {
+                    //Below code added on 20-12-2023 1644 to avoid clash 
                     jno = Convert.ToInt32(Next_JarName_R7.Substring(1));
-                    if (Next_JarName_R5.Contains("J"))
+                    if (Next_JarName_R7.Contains("J"))
                     {
                         if (rackinjars[jno - 1] == 1)
                             rackin = true;
@@ -3565,58 +4145,37 @@ namespace HematoxinandEosin
                         r7_taskcomp = r7_taskcomp.AddSeconds(11);
                         tmr_r7_incub.Enabled = true;
                         tmr_r7_incub.Interval = 1000;
+                        Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R7 + " for " + "R" + R7_cnt.ToString() + " as rack is there in next placing Jarin tmr_r7_incub()");
                         return;
                     }
                 }
-                //Above code added on 20-12-2023 1644 to avoid clash 
-                if ((cmd_Exec_Comp == false) && (r7priority == 0))
-                {
-                    r7_incub = r7_incub.AddSeconds(11);
-                    r7_taskcomp = r7_taskcomp.AddSeconds(11);
-                    tmr_r7_incub.Enabled = true;
-                    tmr_r7_incub.Interval = 1000;
-                    return;
-                }
+                //////Above code added on 20-12-2023 1644 to avoid clash 
+                ////if ((cmd_Exec_Comp == false) && (r7priority == 0))
+                ////{
+                ////    r7_incub = r7_incub.AddSeconds(11);
+                ////    r7_taskcomp = r7_taskcomp.AddSeconds(11);
+                ////    tmr_r7_incub.Enabled = true;
+                ////    tmr_r7_incub.Interval = 1000;
+                ////    return;
+                ////}
                 //Above code added on 05-12-2023 1055 in order to avoid clash
-
-                if (TempReadingStarted == true)
-                {
-                    tmr_temp.Enabled = false;
-                    tmr_temp_incub.Enabled = false;
-                    tmr_tempstart.Enabled = true;
-                    temp_restartincub = System.DateTime.Now;
-                    temp_restartincub = temp_restartincub.AddSeconds(10);
-                    System.Threading.Thread.Sleep(1000);
-                }
-
                 if ((Process_Continued == true) && (protocolinitiateflg_R7 == false))
                     protocolinitiateflg_R7 = true;
-                if (continuetest > r7_incub)
-                    ts11 = continuetest.Subtract(r7_incub);
-                else
-                    ts11 = r7_incub.Subtract(continuetest);
-                if ((ts11.TotalSeconds >= 0) && (ts11.TotalSeconds <= 11))
+                if (Math.Abs((r7_incub - continuetest).TotalSeconds) <= DefaultDelay)
+                    continuetest = continuetest.AddSeconds(DefaultDelay);
+                if (Math.Abs((r7_incub - nxtrackloading).TotalSeconds) <= DefaultDelay)
+                    nxtrackloading = nxtrackloading.AddSeconds(DefaultDelay);
+                if(r7_WaitCnt<DefaultWaitCnt)
                 {
-                    continuetest = continuetest.AddSeconds(11);
-                }
-                //Next rack calculation
-                if (nxtrackloading > r7_incub)
-                    ts11 = nxtrackloading.Subtract(r7_incub);
-                else
-                    ts11 = r7_incub.Subtract(nxtrackloading);
-
-                if ((ts11.TotalSeconds >= 0) && (ts11.TotalSeconds <= 11))
-                {
-                    nxtrackloading = nxtrackloading.AddSeconds(11);
-                }
-
-                check_priority_times(7);
-                if (p7protorun_flg == false)
-                {
-                    tmr_r7_incub.Enabled = true;
-                    tmr_r7_incub.Interval = 1000;
-                    return;
-                }
+                    check_priority_times(7);
+                    if (p7protorun_flg == false)
+                    {
+                        tmr_r7_incub.Enabled = true;
+                        tmr_r7_incub.Interval = 1000;
+                        r7_WaitCnt++;
+                        return;
+                    }
+                }                
                 //Below code added on 13-12-2023 to check the washing time completed
                 if (JarName_R7 == "W1")
                     W1_On_State = false;
@@ -3642,45 +4201,27 @@ namespace HematoxinandEosin
                         wtr_valoffflg = false;
                         break;
                     }
+                    RA_Move_issued = false;
+                    if (protocolinitiateflg_R7 == true)
+                        protocolrun_R7();
                 }
-                if ((JarName_R7 == "H1") || (JarName_R7 == "H2") || (JarName_R7 == "H3"))
+                else if ((JarName_R7 == "H1") || (JarName_R7 == "H2") || (JarName_R7 == "H3"))
                 {
                     if (JarName_R7 == "H1") { H1_incub_complete = true; }
                     else if (JarName_R7 == "H2") { H2_incub_complete = true; }
                     else if (JarName_R7 == "H3") { H3_incub_complete = true; }
+                    r7priority = 1;
                     open_htrdoor();
                 }
                 else
                 {
+                    RA_Move_issued = false;
                     if (protocolinitiateflg_R7 == true)
                         protocolrun_R7();
                 }
             }
             else
-            {
-                //////////code added on 04-12-2023 1159
-                ////////if ((d1 >= r5_priorChk) && (r5_priorChk_flg == false))
-                ////////{
-                ////////    r5_priorChk_flg = true;
-                ////////    check_priority_times(5);
-                ////////}
-
-                //////code written on 28-11-2023 1526 to read the temperature                
-                ////if ((heatingreqflg == true) && (Readtmpintiated_reinitiate == false) && (TempReadingStarted == false))
-                ////{
-                ////    Readtmpintiated_reinitiate = true;
-                ////    tmr_temp.Enabled = true;
-                ////    tmr_temp.Interval = 5000;
-                ////}
-                //////New code updated on 21-12-2023 to insert the loaded data to database
-                ////DateTime doff1 = r5_incub_Woff.AddSeconds(10); // Added 21-12-2023 to update data to database
-                ////if ((d1 >= r5_incub_Woff) && (d1 <= doff1) && tmr_update_flg == false)   //Modified on 21-12-2023 to update data to database
-                ////{
-                ////    tmr_update_flg = true;
-                ////    tmr_update.Enabled = true;
-                ////    tmr_update.Interval = 2000;
-                ////}
-                //////New code updated on 21-12-2023 to insert the loaded data to database
+            {                
                 //Write code to On / Off water Value written on 11112023_1540                
                 if (Next_JarName_R7.Contains("W"))
                 {
@@ -3695,55 +4236,36 @@ namespace HematoxinandEosin
                         {
                             if ((d1 >= r7_incub_WOn) && (r7_incub_WOn_flg == false) && (cmd_Exec_Comp == true))
                             {
+                                jno = Convert.ToInt32(Next_JarName_R7.Substring(1));
+                                if (rackinwaterjars[jno - 1] == 1)
+                                {
+                                    int wt1 = 0;
+                                    if (jno == 6) wt1 = 1;
+                                    else wt1 = (jno + 1);
+                                    for (int wt = wt1; wt <= 6; wt++)
+                                    {
+                                        if (rackinwaterjars[wt - 1] == 0)
+                                        {
+                                            Actual_WashJar_R7 = Next_JarName_R7;
+                                            Next_JarName_R7 = "W" + wt.ToString();
+                                            R7Protorun.Rows[r7inx + 1]["JarNo"] = Next_JarName_R7;
+                                            break;
+                                        }
+                                    }
+                                }
                                 r7_incub_WOn_flg = true;
                                 Intialize_Wash_Jars = false;
                                 watervalveonpff(Next_JarName_R7, 1);
                             }
                         }
                     }
-                }
-                if (JarName_R7.Contains("J"))////if (Prev_JarName_R5.Contains("W"))
-                {
-                    //Off condition
-                    if (cmd_Exec_Comp == true)
-                    {
-                        DateTime doff = r7_incub_Woff.AddSeconds(20); // Added 15-12-2023 to to stop unnecessary command sending
-                        if ((r1priority == 1) || (r2priority == 1) || (r3priority == 1) || (r4priority == 1) || (r5priority == 1) || (r6priority == 1) || (r8priority == 1) || (r9priority == 1) || (r7priority == 1))
-                        {
-                            r7_incub_Woff = r7_incub_Woff.AddSeconds(18);
-                        }
-                        else
-                        {
-                            //Off condition
-                            if ((d1 >= r7_incub_Woff) && (d1 <= doff))   //Modified on 15-12-2023 to send the Valve shut command between the time
-                            {
-                                for (int woff = 0; woff < water_valves_on_off_state.Length; woff++)
-                                {
-                                    if (water_valves_on_off_state[woff] == 1)
-                                    {
-                                        if ((woff == 0) && (W1_On_State == false)) watervalveonpff("W1", 0);
-                                        else if ((woff == 1) && (W2_On_State == false)) watervalveonpff("W2", 0);
-                                        else if ((woff == 2) && (W3_On_State == false)) watervalveonpff("W3", 0);
-                                        else if ((woff == 3) && (W4_On_State == false)) watervalveonpff("W4", 0);
-                                        else if ((woff == 4) && (W5_On_State == false)) watervalveonpff("W5", 0);
-                                        else if ((woff == 5) && (W6_On_State == false)) watervalveonpff("W6", 0);
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    //////Off condition
-                    ////if ((d1 >= r5_incub_Woff) && (r5_incub_Woff_flg == false))
-                    ////{
-                    ////    r5_incub_Woff_flg = true;
-                    ////    watervalveonpff(Prev_JarName_R5, 0);
-                    ////}
-                }
+                }                
                 //lbl_tmr5.Text = "RNo. R" + R5_cnt.ToString() + ",JNo." + JarName_R5 + " Elasped-" + d1.ToString().Substring(10) + " Incub-" + r5_incub.ToString().Substring(10) + " Task Complete By-" + r5_taskcomp.ToString().Substring(10);
                 if (JarName_R7.Contains("H"))
                     updateheatertimings(JarName_R7, "R" + R7_cnt.ToString(), true, 7);
                 else
                     updatetiming(JarName_R7, "R" + R7_cnt.ToString(), 7);
+                check_priority_times(7);
             }
         }
         private void tmr_r8_incub_Tick(object sender, EventArgs e)
@@ -3752,6 +4274,10 @@ namespace HematoxinandEosin
             DateTime d1 = System.DateTime.Now;
             TimeSpan ts11 = new TimeSpan();
             int jno = 0; Boolean rackin = false;
+            if (R8_protostart == false) { tmr_r8_incub.Enabled = false; return; }
+            int rackNo = 8;
+            if (!Racks.ContainsKey(rackNo)) return;
+            Rack currentRack = Racks[rackNo];
             if (d1 >= r8_incub)
             {
                 tmr_r8_incub.Enabled = false;
@@ -3764,8 +4290,24 @@ namespace HematoxinandEosin
                     temp_restartincub = temp_restartincub.AddSeconds(10);
                     ////System.Threading.Thread.Sleep(1000);
                 }
+                //Below code added on 30-08-2024 1140
+                if ((JarName_R8.Contains("W")))
+                {
+                    if ((check_washjar_collision(8) == true) && (r8_WshWaitCnt <= 2))
+                    {
+                        r8_incub = r8_incub.AddSeconds(18);
+                        r8_taskcomp = r8_taskcomp.AddSeconds(18);
+                        r8_incub_Woff = r8_incub_Woff.AddSeconds(18);
+                        tmr_r8_incub.Enabled = true;
+                        tmr_r8_incub.Interval = 1000;
+                        r8_WshWaitCnt++;
+                        Communication.writeCommunicationCommands("18 Secconds Timer incrementes in Jar " + JarName_R8 + " for " + "R" + R8_cnt.ToString() + " as previous racks are in Waiting in tmr_r8_incub()");
+                        return;
+                    }
+                }
+                //Above code added on 30-08-2024 1140
                 //below code updated on 08-05-2024 in order avoid clash of racks
-                if ((R2_pickcmdissue == true) || (R1_pickcmdissue == true) || (R3_pickcmdissue == true) || (R4_pickcmdissue == true) || (R5_pickcmdissue == true) || (R6_pickcmdissue == true) || (R7_pickcmdissue == true) || (R9_pickcmdissue == true) || (rackloadingtoJar == true) || (RA_Move_issued == true))
+                if ((R2_pickcmdissue == true) || (R1_pickcmdissue == true) || (R3_pickcmdissue == true) || (R4_pickcmdissue == true) || (R5_pickcmdissue == true) || (R6_pickcmdissue == true) || (R7_pickcmdissue == true) || (R9_pickcmdissue == true) || (loadingjar_racksensed == true) || (RA_Move_issued == true) || (loading_racks == true))
                 {
                     r8_incub = r8_incub.AddSeconds(11);
                     tmr_r8_incub.Enabled = true;
@@ -3777,39 +4319,8 @@ namespace HematoxinandEosin
                     return;
                 }
                 //Above code updated on 08-05-2024  in order avoid clash of racks
-
-                //Below code added on 30-08-2024 1140
-                if ((JarName_R8 == "W1") || (JarName_R8 == "W2") || (JarName_R8 == "W3") || (JarName_R8 == "W4") || (JarName_R8 == "W5") || (JarName_R8 == "W6"))
-                {
-                    if ((check_washjar_collision(8) == true) && (r8_WshWaitCnt <= 2))
-                    {
-                        r8_incub = r8_incub.AddSeconds(Wash_delaytime);
-                        tmr_r8_incub.Enabled = true;
-                        tmr_r8_incub.Interval = 1000;
-                        r8_taskcomp = r8_taskcomp.AddSeconds(Wash_delaytime);
-                        Communication.writeCommunicationCommands(Wash_delaytime.ToString() + " Secconds Timer incrementes in Jar " + JarName_R8 + " for " + "R" + R8_cnt.ToString() + " as this rack in water station and other rack is elasping time in tmr_r8_incub()");
-                        r8_WshWaitCnt++;
-                        return;
-                    }
-                }
-                //Above code added on 30-08-2024 1140
-
-
-                //Below code updated on 01-04-2024 to give priority to previous updated count
-                if (((r8_WaitCnt < r2_WaitCnt) || (r8_WaitCnt < r1_WaitCnt) || (r8_WaitCnt < r3_WaitCnt) || (r8_WaitCnt < r4_WaitCnt) || (r8_WaitCnt < r5_WaitCnt) || (r8_WaitCnt < r6_WaitCnt) || (r8_WaitCnt < r7_WaitCnt) || (r8_WaitCnt < r9_WaitCnt)) && (r8priority == 0))
-                {
-                    r8_incub = r8_incub.AddSeconds(11);
-                    tmr_r8_incub.Enabled = true;
-                    tmr_r8_incub.Interval = 1000;
-                    r8_taskcomp = r8_taskcomp.AddSeconds(11);
-                    r8_incub_Woff = r8_incub_Woff.AddSeconds(11);
-                    r8_WaitCnt++;
-                    Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R8 + " for " + "R" + R8_cnt.ToString() + " as previous racks are in Waiting in tmr_r8_incub()");
-                    return;
-                }
-
                 //Below code added on 05-12-2023 1055 in order to avoid clash
-                if (((r1priority == 1) || (r2priority == 1) || (r3priority == 1) || (r4priority == 1) || (r5priority == 1) || (r6priority == 1) || (r7priority == 1) || (r9priority == 1)) && (r8priority == 0))
+                else if (((r1priority == 1) || (r2priority == 1) || (r3priority == 1) || (r4priority == 1) || (r5priority == 1) || (r6priority == 1) || (r7priority == 1) || (r9priority == 1)) && (r8priority == 0))
                 {
                     r8_incub = r8_incub.AddSeconds(11);
                     tmr_r8_incub.Enabled = true;
@@ -3820,9 +4331,21 @@ namespace HematoxinandEosin
                     Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R8 + " for " + "R" + R8_cnt.ToString() + " as other racks are in high priority in tmr_r8_incub()");
                     return;
                 }
-                //Below code added on 20-12-2023 1644 to avoid clash 
-                if (r8priority == 0)
+                //Below code updated on 01-04-2024 to give priority to previous updated count
+                else if (((r8_WaitCnt < r2_WaitCnt) || (r8_WaitCnt < r1_WaitCnt) || (r8_WaitCnt < r3_WaitCnt) || (r8_WaitCnt < r4_WaitCnt) || (r8_WaitCnt < r5_WaitCnt) || (r8_WaitCnt < r6_WaitCnt) || (r8_WaitCnt < r7_WaitCnt) || (r8_WaitCnt < r9_WaitCnt)) && (r8_WaitCnt <= DefaultWaitCnt))
                 {
+                    r8_incub = r8_incub.AddSeconds(11);
+                    tmr_r8_incub.Enabled = true;
+                    tmr_r8_incub.Interval = 1000;
+                    r8_taskcomp = r8_taskcomp.AddSeconds(11);
+                    r8_incub_Woff = r8_incub_Woff.AddSeconds(11);
+                    r8_WaitCnt++;
+                    Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R8 + " for " + "R" + R8_cnt.ToString() + " as previous racks are in Waiting in tmr_r8_incub()");
+                    return;
+                }
+                if(!string.IsNullOrEmpty(Next_JarName_R8))
+                {
+                    //Below code added on 20-12-2023 1644 to avoid clash 
                     jno = Convert.ToInt32(Next_JarName_R8.Substring(1));
                     if (Next_JarName_R8.Contains("J"))
                     {
@@ -3840,46 +4363,38 @@ namespace HematoxinandEosin
                         r8_taskcomp = r8_taskcomp.AddSeconds(11);
                         tmr_r8_incub.Enabled = true;
                         tmr_r8_incub.Interval = 1000;
+                        Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R8 + " for " + "R" + R8_cnt.ToString() + " as other racks are in high priority in tmr_r8_incub()");
+                        return;
+                    }//////Above code added on 20-12-2023 1644 to avoid clash 
+                }
+
+                ////if ((cmd_Exec_Comp == false))
+                ////{
+                ////    r8_incub = r8_incub.AddSeconds(11);
+                ////    r8_taskcomp = r8_taskcomp.AddSeconds(11);
+                ////    tmr_r8_incub.Enabled = true;
+                ////    tmr_r8_incub.Interval = 1000;
+                ////    return;
+                ////}
+                
+                if ((Process_Continued == true) && (protocolinitiateflg_R8 == false))
+                    protocolinitiateflg_R8 = true;
+                if (Math.Abs((r8_incub - continuetest).TotalSeconds) <= DefaultDelay)
+                    continuetest = continuetest.AddSeconds(DefaultDelay);
+                if (Math.Abs((r8_incub - nxtrackloading).TotalSeconds) <= DefaultDelay)
+                    nxtrackloading = nxtrackloading.AddSeconds(DefaultDelay);
+                if(r8_WaitCnt<DefaultWaitCnt)
+                {
+                    check_priority_times(8);
+                    if (p8protorun_flg == false)
+                    {
+                        tmr_r8_incub.Enabled = true;
+                        tmr_r8_incub.Interval = 1000;
+                        r8_WaitCnt++;
                         return;
                     }
                 }
-                //Above code added on 20-12-2023 1644 to avoid clash 
-                if ((cmd_Exec_Comp == false))
-                {
-                    r8_incub = r8_incub.AddSeconds(11);
-                    r8_taskcomp = r8_taskcomp.AddSeconds(11);
-                    tmr_r8_incub.Enabled = true;
-                    tmr_r8_incub.Interval = 1000;
-                    return;
-                }
-                if ((Process_Continued == true) && (protocolinitiateflg_R8 == false))
-                    protocolinitiateflg_R8 = true;
-                if (continuetest > r8_incub)
-                    ts11 = continuetest.Subtract(r8_incub);
-                else
-                    ts11 = r8_incub.Subtract(continuetest);
-                if ((ts11.TotalSeconds >= 0) && (ts11.TotalSeconds <= 11))
-                {
-                    continuetest = continuetest.AddSeconds(11);
-                }
-                //Next rack calculation
-                if (nxtrackloading > r8_incub)
-                    ts11 = nxtrackloading.Subtract(r8_incub);
-                else
-                    ts11 = r8_incub.Subtract(nxtrackloading);
-
-                if ((ts11.TotalSeconds >= 0) && (ts11.TotalSeconds <= 11))
-                {
-                    nxtrackloading = nxtrackloading.AddSeconds(11);
-                }
-
-                check_priority_times(8);
-                if (p8protorun_flg == false)
-                {
-                    tmr_r8_incub.Enabled = true;
-                    tmr_r8_incub.Interval = 1000;
-                    return;
-                }
+                
                 //Below code added on 13-12-2023 to check the washing time completed
                 if (JarName_R8 == "W1")
                     W1_On_State = false;
@@ -3905,12 +4420,16 @@ namespace HematoxinandEosin
                         wtr_valoffflg = false;
                         break;
                     }
+                    RA_Move_issued = false;
+                    if (protocolinitiateflg_R8 == true)
+                        protocolrun_R8();
                 }
-                if ((JarName_R8 == "H1") || (JarName_R8 == "H2") || (JarName_R8 == "H3"))
+                else if ((JarName_R8 == "H1") || (JarName_R8 == "H2") || (JarName_R8 == "H3"))
                 {
                     if (JarName_R8 == "H1") { H1_incub_complete = true; }
                     else if (JarName_R8 == "H2") { H2_incub_complete = true; }
                     else if (JarName_R8 == "H3") { H3_incub_complete = true; }
+                    r8priority = 1;
                     open_htrdoor();
                 }
                 else
@@ -3920,30 +4439,7 @@ namespace HematoxinandEosin
                 }
             }
             else
-            {
-                //////////code added on 04-12-2023 1159
-                ////////if ((d1 >= r5_priorChk) && (r5_priorChk_flg == false))
-                ////////{
-                ////////    r5_priorChk_flg = true;
-                ////////    check_priority_times(5);
-                ////////}
-
-                //////code written on 28-11-2023 1526 to read the temperature                
-                ////if ((heatingreqflg == true) && (Readtmpintiated_reinitiate == false) && (TempReadingStarted == false))
-                ////{
-                ////    Readtmpintiated_reinitiate = true;
-                ////    tmr_temp.Enabled = true;
-                ////    tmr_temp.Interval = 5000;
-                ////}
-                //////New code updated on 21-12-2023 to insert the loaded data to database
-                ////DateTime doff1 = r5_incub_Woff.AddSeconds(10); // Added 21-12-2023 to update data to database
-                ////if ((d1 >= r5_incub_Woff) && (d1 <= doff1) && tmr_update_flg == false)   //Modified on 21-12-2023 to update data to database
-                ////{
-                ////    tmr_update_flg = true;
-                ////    tmr_update.Enabled = true;
-                ////    tmr_update.Interval = 2000;
-                ////}
-                //////New code updated on 21-12-2023 to insert the loaded data to database
+            {                
                 //Write code to On / Off water Value written on 11112023_1540                
                 if (Next_JarName_R8.Contains("W"))
                 {
@@ -3956,58 +4452,38 @@ namespace HematoxinandEosin
                         }
                         else
                         {
-
                             if ((d1 >= r8_incub_WOn) && (r8_incub_WOn_flg == false) && (cmd_Exec_Comp == true))
                             {
+                                jno = Convert.ToInt32(Next_JarName_R8.Substring(1));
+                                if (rackinwaterjars[jno - 1] == 1)
+                                {
+                                    int wt1 = 0;
+                                    if (jno == 6) wt1 = 1;
+                                    else wt1 = (jno + 1);
+                                    for (int wt = wt1; wt <= 6; wt++)
+                                    {
+                                        if (rackinwaterjars[wt - 1] == 0)
+                                        {
+                                            Actual_WashJar_R8 = Next_JarName_R8;
+                                            Next_JarName_R8 = "W" + wt.ToString();
+                                            R8Protorun.Rows[r8inx + 1]["JarNo"] = Next_JarName_R8;
+                                            break;
+                                        }
+                                    }
+                                }
                                 r8_incub_WOn_flg = true;
                                 Intialize_Wash_Jars = false;
                                 watervalveonpff(Next_JarName_R8, 1);
                             }
                         }
                     }
-                }
-                if (JarName_R8.Contains("J"))////if (Prev_JarName_R5.Contains("W"))
-                {
-                    //Off condition
-                    if (cmd_Exec_Comp == true)
-                    {
-                        DateTime doff = r8_incub_Woff.AddSeconds(20); // Added 15-12-2023 to to stop unnecessary command sending
-                        if ((r1priority == 1) || (r2priority == 1) || (r3priority == 1) || (r4priority == 1) || (r5priority == 1) || (r6priority == 1) || (r8priority == 1) || (r9priority == 1) || (r7priority == 1))
-                        {
-                            r8_incub_Woff = r8_incub_Woff.AddSeconds(18);
-                        }
-                        else
-                        {
-                            //Off condition
-                            if ((d1 >= r8_incub_Woff) && (d1 <= doff))   //Modified on 15-12-2023 to send the Valve shut command between the time
-                            {
-                                for (int woff = 0; woff < water_valves_on_off_state.Length; woff++)
-                                {
-                                    if (water_valves_on_off_state[woff] == 1)
-                                    {
-                                        if ((woff == 0) && (W1_On_State == false)) watervalveonpff("W1", 0);
-                                        else if ((woff == 1) && (W2_On_State == false)) watervalveonpff("W2", 0);
-                                        else if ((woff == 2) && (W3_On_State == false)) watervalveonpff("W3", 0);
-                                        else if ((woff == 3) && (W4_On_State == false)) watervalveonpff("W4", 0);
-                                        else if ((woff == 4) && (W5_On_State == false)) watervalveonpff("W5", 0);
-                                        else if ((woff == 5) && (W6_On_State == false)) watervalveonpff("W6", 0);
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    //////Off condition
-                    ////if ((d1 >= r5_incub_Woff) && (r5_incub_Woff_flg == false))
-                    ////{
-                    ////    r5_incub_Woff_flg = true;
-                    ////    watervalveonpff(Prev_JarName_R5, 0);
-                    ////}
-                }
+                }               
                 //lbl_tmr5.Text = "RNo. R" + R5_cnt.ToString() + ",JNo." + JarName_R5 + " Elasped-" + d1.ToString().Substring(10) + " Incub-" + r5_incub.ToString().Substring(10) + " Task Complete By-" + r5_taskcomp.ToString().Substring(10);
                 if (JarName_R8.Contains("H"))
                     updateheatertimings(JarName_R8, "R" + R8_cnt.ToString(), true, 8);
                 else
                     updatetiming(JarName_R8, "R" + R8_cnt.ToString(), 8);
+                check_priority_times(8);
             }
         }
         private void tmr_r9_incub_Tick(object sender, EventArgs e)
@@ -4016,6 +4492,10 @@ namespace HematoxinandEosin
             DateTime d1 = System.DateTime.Now;
             TimeSpan ts11 = new TimeSpan();
             int jno = 0; Boolean rackin = false;
+            if (R9_protostart == false) { tmr_r9_incub.Enabled = false; return; }
+            int rackNo = 9;
+            if (!Racks.ContainsKey(rackNo)) return;
+            Rack currentRack = Racks[rackNo];
             if (d1 >= r9_incub)
             {
                 tmr_r9_incub.Enabled = false;
@@ -4028,8 +4508,24 @@ namespace HematoxinandEosin
                     temp_restartincub = temp_restartincub.AddSeconds(10);
                     ////System.Threading.Thread.Sleep(1000);
                 }
+                //Below code added on 30-08-2024 1140
+                if ((JarName_R9.Contains("W")))
+                {
+                    if ((check_washjar_collision(9) == true) && (r9_WshWaitCnt <= 2))
+                    {
+                        r9_incub = r9_incub.AddSeconds(18);
+                        r9_taskcomp = r9_taskcomp.AddSeconds(18);
+                        r9_incub_Woff = r9_incub_Woff.AddSeconds(18);
+                        tmr_r9_incub.Enabled = true;
+                        tmr_r9_incub.Interval = 1000;
+                        r9_WshWaitCnt++;
+                        Communication.writeCommunicationCommands("18 Secconds Timer incrementes in Jar " + JarName_R9 + " for " + "R" + R9_cnt.ToString() + " as previous racks are in Waiting in tmr_r9_incub()");
+                        return;
+                    }
+                }
+                //Above code added on 30-08-2024 1140
                 //below code updated on 08-05-2024 in order avoid clash of racks
-                if ((R2_pickcmdissue == true) || (R1_pickcmdissue == true) || (R3_pickcmdissue == true) || (R4_pickcmdissue == true) || (R5_pickcmdissue == true) || (R6_pickcmdissue == true) || (R7_pickcmdissue == true) || (R8_pickcmdissue == true) || (rackloadingtoJar == true) || (RA_Move_issued == true))
+                if ((R2_pickcmdissue == true) || (R1_pickcmdissue == true) || (R3_pickcmdissue == true) || (R4_pickcmdissue == true) || (R5_pickcmdissue == true) || (R6_pickcmdissue == true) || (R7_pickcmdissue == true) || (R8_pickcmdissue == true) || (loadingjar_racksensed == true) || (RA_Move_issued == true) || (loading_racks == true))
                 {
                     r9_incub = r9_incub.AddSeconds(11);
                     tmr_r9_incub.Enabled = true;
@@ -4041,38 +4537,8 @@ namespace HematoxinandEosin
                     return;
                 }
                 //Above code updated on 08-05-2024  in order avoid clash of racks
-
-                //Below code added on 30-08-2024 1140
-                if ((JarName_R9 == "W1") || (JarName_R9 == "W2") || (JarName_R9 == "W3") || (JarName_R9 == "W4") || (JarName_R9 == "W5") || (JarName_R9 == "W6"))
-                {
-                    if ((check_washjar_collision(9) == true) && (r9_WshWaitCnt <= 2))
-                    {
-                        r9_incub = r9_incub.AddSeconds(Wash_delaytime);
-                        tmr_r9_incub.Enabled = true;
-                        tmr_r9_incub.Interval = 1000;
-                        r9_taskcomp = r9_taskcomp.AddSeconds(Wash_delaytime);
-                        Communication.writeCommunicationCommands(Wash_delaytime.ToString() + " Secconds Timer incrementes in Jar " + JarName_R9 + " for " + "R" + R8_cnt.ToString() + " as this rack in water station and other rack is elasping time in tmr_r9_incub()");
-                        r9_WshWaitCnt++;
-                        return;
-                    }
-                }
-                //Above code added on 30-08-2024 1140
-
-                //Below code updated on 01-04-2024 to give priority to previous updated count
-                if (((r9_WaitCnt < r2_WaitCnt) || (r9_WaitCnt < r1_WaitCnt) || (r9_WaitCnt < r3_WaitCnt) || (r9_WaitCnt < r4_WaitCnt) || (r9_WaitCnt < r5_WaitCnt) || (r9_WaitCnt < r6_WaitCnt) || (r9_WaitCnt < r7_WaitCnt) || (r9_WaitCnt < r8_WaitCnt)) && (r9priority == 0))
-                {
-                    r9_incub = r9_incub.AddSeconds(11);
-                    tmr_r9_incub.Enabled = true;
-                    tmr_r9_incub.Interval = 1000;
-                    r9_taskcomp = r9_taskcomp.AddSeconds(11);
-                    r9_incub_Woff = r9_incub_Woff.AddSeconds(11);
-                    r9_WaitCnt++;
-                    Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R9 + " for " + "R" + R9_cnt.ToString() + " as previous racks are in Waiting in tmr_r9_incub()");
-                    return;
-                }
-
                 //Below code added on 05-12-2023 1055 in order to avoid clash
-                if (((r1priority == 1) || (r2priority == 1) || (r3priority == 1) || (r4priority == 1) || (r5priority == 1) || (r6priority == 1) || (r7priority == 1) || (r8priority == 1)) && (r9priority == 0))
+                else if (((r1priority == 1) || (r2priority == 1) || (r3priority == 1) || (r4priority == 1) || (r5priority == 1) || (r6priority == 1) || (r7priority == 1) || (r8priority == 1)) && (r9priority == 0))
                 {
                     r9_incub = r9_incub.AddSeconds(11);
                     tmr_r9_incub.Enabled = true;
@@ -4083,9 +4549,21 @@ namespace HematoxinandEosin
                     Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R9 + " for " + "R" + R9_cnt.ToString() + " as other racks are in high priority in tmr_r9_incub()");
                     return;
                 }
-                //Below code added on 20-12-2023 1644 to avoid clash 
-                if (r9priority == 0)
+                //Below code updated on 01-04-2024 to give priority to previous updated count
+                else if (((r9_WaitCnt < r2_WaitCnt) || (r9_WaitCnt < r1_WaitCnt) || (r9_WaitCnt < r3_WaitCnt) || (r9_WaitCnt < r4_WaitCnt) || (r9_WaitCnt < r5_WaitCnt) || (r9_WaitCnt < r6_WaitCnt) || (r9_WaitCnt < r7_WaitCnt) || (r9_WaitCnt < r8_WaitCnt)) && (r9_WaitCnt <= DefaultWaitCnt))
                 {
+                    r9_incub = r9_incub.AddSeconds(11);
+                    tmr_r9_incub.Enabled = true;
+                    tmr_r9_incub.Interval = 1000;
+                    r9_taskcomp = r9_taskcomp.AddSeconds(11);
+                    r9_incub_Woff = r9_incub_Woff.AddSeconds(11);
+                    r9_WaitCnt++;
+                    Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R9 + " for " + "R" + R9_cnt.ToString() + " as previous racks are in Waiting in tmr_r9_incub()");
+                    return;
+                }            
+                if(!string.IsNullOrEmpty(Next_JarName_R9))
+                {
+                    //Below code added on 20-12-2023 1644 to avoid clash 
                     jno = Convert.ToInt32(Next_JarName_R9.Substring(1));
                     if (Next_JarName_R9.Contains("J"))
                     {
@@ -4103,18 +4581,18 @@ namespace HematoxinandEosin
                         r9_taskcomp = r9_taskcomp.AddSeconds(11);
                         tmr_r9_incub.Enabled = true;
                         tmr_r9_incub.Interval = 1000;
+                        Communication.writeCommunicationCommands("11 Secconds Timer incrementes in Jar " + JarName_R9 + " for " + "R" + R9_cnt.ToString() + " as other racks are in high priority in tmr_r9_incub()");
                         return;
-                    }
+                    }//Above code added on 20-12-2023 1644 to avoid clash 
                 }
-                //Above code added on 20-12-2023 1644 to avoid clash 
-                if ((cmd_Exec_Comp == false) && (r9priority == 0))
-                {
-                    r9_incub = r9_incub.AddSeconds(11);
-                    r9_taskcomp = r9_taskcomp.AddSeconds(11);
-                    tmr_r9_incub.Enabled = true;
-                    tmr_r9_incub.Interval = 1000;
-                    return;
-                }
+                ////if ((cmd_Exec_Comp == false) && (r9priority == 0))
+                ////{
+                ////    r9_incub = r9_incub.AddSeconds(11);
+                ////    r9_taskcomp = r9_taskcomp.AddSeconds(11);
+                ////    tmr_r9_incub.Enabled = true;
+                ////    tmr_r9_incub.Interval = 1000;
+                ////    return;
+                ////}
                 //Above code added on 05-12-2023 1055 in order to avoid clash
 
                 if (TempReadingStarted == true)
@@ -4129,32 +4607,20 @@ namespace HematoxinandEosin
 
                 if ((Process_Continued == true) && (protocolinitiateflg_R9 == false))
                     protocolinitiateflg_R9 = true;
-                if (continuetest > r9_incub)
-                    ts11 = continuetest.Subtract(r9_incub);
-                else
-                    ts11 = r9_incub.Subtract(continuetest);
-                if ((ts11.TotalSeconds >= 0) && (ts11.TotalSeconds <= (11)))
+                if (Math.Abs((r9_incub - continuetest).TotalSeconds) <= DefaultDelay)
+                    continuetest = continuetest.AddSeconds(DefaultDelay);
+                if (Math.Abs((r9_incub - nxtrackloading).TotalSeconds) <= DefaultDelay)
+                    nxtrackloading = nxtrackloading.AddSeconds(DefaultDelay);
+                if(r9_WaitCnt<DefaultWaitCnt)
                 {
-                    continuetest = continuetest.AddSeconds(11);
-                }
-                //Next rack calculation
-                if (nxtrackloading > r9_incub)
-                    ts11 = nxtrackloading.Subtract(r9_incub);
-                else
-                    ts11 = r9_incub.Subtract(nxtrackloading);
-
-                if ((ts11.TotalSeconds >= 0) && (ts11.TotalSeconds <= 11))
-                {
-                    nxtrackloading = nxtrackloading.AddSeconds(11);
-                }
-
-                check_priority_times(9);
-                if (p9protorun_flg == false)
-                {
-                    tmr_r9_incub.Enabled = true;
-                    tmr_r9_incub.Interval = 1000;
-                    return;
-                }
+                    check_priority_times(9);
+                    if (p9protorun_flg == false)
+                    {
+                        tmr_r9_incub.Enabled = true;
+                        tmr_r9_incub.Interval = 1000;
+                        return;
+                    }
+                }                
                 //Below code added on 13-12-2023 to check the washing time completed
                 if (JarName_R9 == "W1")
                     W1_On_State = false;
@@ -4180,12 +4646,15 @@ namespace HematoxinandEosin
                         wtr_valoffflg = false;
                         break;
                     }
+                    if (protocolinitiateflg_R9 == true)
+                        protocolrun_R9();
                 }
-                if ((JarName_R9 == "H1") || (JarName_R9 == "H2") || (JarName_R9 == "H3"))
+               else if ((JarName_R9 == "H1") || (JarName_R9 == "H2") || (JarName_R9 == "H3"))
                 {
                     if (JarName_R9 == "H1") { H1_incub_complete = true; }
                     else if (JarName_R9 == "H2") { H2_incub_complete = true; }
                     else if (JarName_R9 == "H3") { H3_incub_complete = true; }
+                    r9priority = 1;
                     open_htrdoor();
                 }
                 else
@@ -4195,30 +4664,7 @@ namespace HematoxinandEosin
                 }
             }
             else
-            {
-                //////////code added on 04-12-2023 1159
-                ////////if ((d1 >= r5_priorChk) && (r5_priorChk_flg == false))
-                ////////{
-                ////////    r5_priorChk_flg = true;
-                ////////    check_priority_times(5);
-                ////////}
-
-                //////code written on 28-11-2023 1526 to read the temperature                
-                ////if ((heatingreqflg == true) && (Readtmpintiated_reinitiate == false) && (TempReadingStarted == false))
-                ////{
-                ////    Readtmpintiated_reinitiate = true;
-                ////    tmr_temp.Enabled = true;
-                ////    tmr_temp.Interval = 5000;
-                ////}
-                //////New code updated on 21-12-2023 to insert the loaded data to database
-                ////DateTime doff1 = r5_incub_Woff.AddSeconds(10); // Added 21-12-2023 to update data to database
-                ////if ((d1 >= r5_incub_Woff) && (d1 <= doff1) && tmr_update_flg == false)   //Modified on 21-12-2023 to update data to database
-                ////{
-                ////    tmr_update_flg = true;
-                ////    tmr_update.Enabled = true;
-                ////    tmr_update.Interval = 2000;
-                ////}
-                //////New code updated on 21-12-2023 to insert the loaded data to database
+            {                
                 //Write code to On / Off water Value written on 11112023_1540                
                 if (Next_JarName_R9.Contains("W"))
                 {
@@ -4234,55 +4680,36 @@ namespace HematoxinandEosin
 
                             if ((d1 >= r9_incub_WOn) && (r9_incub_WOn_flg == false) && (cmd_Exec_Comp == true))
                             {
+                                jno = Convert.ToInt32(Next_JarName_R9.Substring(1));
+                                if (rackinwaterjars[jno - 1] == 1)
+                                {
+                                    int wt1 = 0;
+                                    if (jno == 6) wt1 = 1;
+                                    else wt1 = (jno + 1);
+                                    for (int wt = wt1; wt <= 6; wt++)
+                                    {
+                                        if (rackinwaterjars[wt - 1] == 0)
+                                        {
+                                            Actual_WashJar_R9 = Next_JarName_R9;
+                                            Next_JarName_R9 = "W" + wt.ToString();
+                                            R9Protorun.Rows[r9inx + 1]["JarNo"] = Next_JarName_R9;
+                                            break;
+                                        }
+                                    }
+                                }
                                 r9_incub_WOn_flg = true;
                                 Intialize_Wash_Jars = false;
                                 watervalveonpff(Next_JarName_R9, 1);
                             }
                         }
                     }
-                }
-                if (JarName_R9.Contains("J"))////if (Prev_JarName_R5.Contains("W"))
-                {
-                    //Off condition
-                    if (cmd_Exec_Comp == true)
-                    {
-                        DateTime doff = r8_incub_Woff.AddSeconds(20); // Added 15-12-2023 to to stop unnecessary command sending
-                        if ((r1priority == 1) || (r2priority == 1) || (r3priority == 1) || (r4priority == 1) || (r5priority == 1) || (r6priority == 1) || (r8priority == 1) || (r9priority == 1) || (r7priority == 1))
-                        {
-                            r9_incub_Woff = r9_incub_Woff.AddSeconds(18);
-                        }
-                        else
-                        {
-                            //Off condition
-                            if ((d1 >= r8_incub_Woff) && (d1 <= doff))   //Modified on 15-12-2023 to send the Valve shut command between the time
-                            {
-                                for (int woff = 0; woff < water_valves_on_off_state.Length; woff++)
-                                {
-                                    if (water_valves_on_off_state[woff] == 1)
-                                    {
-                                        if ((woff == 0) && (W1_On_State == false)) watervalveonpff("W1", 0);
-                                        else if ((woff == 1) && (W2_On_State == false)) watervalveonpff("W2", 0);
-                                        else if ((woff == 2) && (W3_On_State == false)) watervalveonpff("W3", 0);
-                                        else if ((woff == 3) && (W4_On_State == false)) watervalveonpff("W4", 0);
-                                        else if ((woff == 4) && (W5_On_State == false)) watervalveonpff("W5", 0);
-                                        else if ((woff == 5) && (W6_On_State == false)) watervalveonpff("W6", 0);
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    //////Off condition
-                    ////if ((d1 >= r5_incub_Woff) && (r5_incub_Woff_flg == false))
-                    ////{
-                    ////    r5_incub_Woff_flg = true;
-                    ////    watervalveonpff(Prev_JarName_R5, 0);
-                    ////}
-                }
+                }                
                 //lbl_tmr5.Text = "RNo. R" + R5_cnt.ToString() + ",JNo." + JarName_R5 + " Elasped-" + d1.ToString().Substring(10) + " Incub-" + r5_incub.ToString().Substring(10) + " Task Complete By-" + r5_taskcomp.ToString().Substring(10);
                 if (JarName_R9.Contains("H"))
                     updateheatertimings(JarName_R9, "R" + R9_cnt.ToString(), true, 9);
                 else
                     updatetiming(JarName_R9, "R" + R9_cnt.ToString(), 9);
+                check_priority_times(9);
             }
         }
         private int checkdipstat_Delay()
@@ -4328,1909 +4755,122 @@ namespace HematoxinandEosin
         }
 
         Boolean p1protorun_flg = false, p2protorun_flg = false, p3protorun_flg = false, p4protorun_flg = false, p5protorun_flg = false, p6protorun_flg = false, p7protorun_flg = false, p8protorun_flg = false, p9protorun_flg = false;
+        #region checking priorities
         private void check_priority_times(int prtno)
         {
-            TimeSpan ts1 = new TimeSpan();
-            TimeSpan ts2 = new TimeSpan();
-            TimeSpan ts3 = new TimeSpan();
-            TimeSpan ts4 = new TimeSpan();
-            TimeSpan ts5 = new TimeSpan();
-            TimeSpan ts6 = new TimeSpan();
-            TimeSpan ts7 = new TimeSpan();
-            TimeSpan ts8 = new TimeSpan();
+            TimeSpan[] ts = new TimeSpan[8];
+            TimeSpan[] tsReverse = new TimeSpan[8];
 
-            TimeSpan ts1_1 = new TimeSpan();
-            TimeSpan ts2_1 = new TimeSpan();
-            TimeSpan ts3_1 = new TimeSpan();
-            TimeSpan ts4_1 = new TimeSpan();
-            TimeSpan ts5_1 = new TimeSpan();
-            TimeSpan ts6_1 = new TimeSpan();
-            TimeSpan ts7_1 = new TimeSpan();
-            TimeSpan ts8_1 = new TimeSpan();
+            int dipdly = checkdipstat_Delay() * 1000; // Convert to milliseconds
 
-            int dipdly = 0;
-            dipdly = checkdipstat_Delay();
-            //dipdly = dipdly * 1000; //Converting to milli seconds 
-            if (TempReadingStarted == true)
+            if (TempReadingStarted)
             {
                 tmr_temp.Enabled = false;
                 tmr_temp_incub.Enabled = false;
                 tmr_tempstart.Enabled = true;
-                temp_restartincub = System.DateTime.Now;
-                temp_restartincub = temp_restartincub.AddSeconds(10);
-                System.Threading.Thread.Sleep(200);
+                temp_restartincub = DateTime.Now.AddSeconds(10);
             }
+
+            int[] priorities = { r1priority, r2priority, r3priority, r4priority, r5priority, r6priority, r7priority, r8priority, r9priority };
+            DateTime[] incubTimes = { r1_incub, r2_incub, r3_incub, r4_incub, r5_incub, r6_incub, r7_incub, r8_incub, r9_incub };
+            DateTime[] taskCompletion = { r1_taskcomp, r2_taskcomp, r3_taskcomp, r4_taskcomp, r5_taskcomp, r6_taskcomp, r7_taskcomp, r8_taskcomp, r9_taskcomp };
+            DateTime[] incubWoff = { r1_incub_Woff, r2_incub_Woff, r3_incub_Woff, r4_incub_Woff, r5_incub_Woff, r6_incub_Woff, r7_incub_Woff, r8_incub_Woff, r9_incub_Woff };
+            System.Windows.Forms.Timer[] timers = { tmr_r1_incub, tmr_r2_incub, tmr_r3_incub, tmr_r4_incub, tmr_r5_incub, tmr_r6_incub, tmr_r7_incub, tmr_r8_incub, tmr_r9_incub };
+
+            if (priorities.All(p => p == 0))
+            {
+                SetProtoRunFlag(prtno, true);
+                return;
+            }
+
+            try
+            {
+                for (int i = 0; i < 8; i++)
+                {
+                    if (i + 1 == prtno - 1) continue; // Skip self-comparison
+                    ts[i] = incubTimes[prtno - 1].Subtract(incubTimes[i]);
+                    tsReverse[i] = incubTimes[i].Subtract(incubTimes[prtno - 1]);
+
+                    if ((ts[i].TotalMilliseconds > 0 && ts[i].TotalMilliseconds <= dipdly) ||
+                        (tsReverse[i].TotalMilliseconds > 0 && tsReverse[i].TotalMilliseconds <= dipdly))
+                    {
+                        if (priorities[i + 1] == 0)
+                        {
+                            AdjustTiming(i + 1, dipdly, timers, incubTimes, taskCompletion, incubWoff);
+                            SetProtoRunFlag(prtno, true);
+                        }
+                        else if (priorities[i + 1] == 1 && priorities[prtno - 1] == 0)
+                        {
+                            AdjustTiming(prtno - 1, dipdly, timers, incubTimes, taskCompletion, incubWoff);
+                            SetProtoRunFlag(prtno, false);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                RequiredVariables.writeerrorlogfile($"Error in check_priority_times for protocol {prtno}", "In Check_priority_times in Form_RunProto");
+            }
+        }
+
+        // Adjust the incubation timing to resolve conflicts
+        private void AdjustTiming(int index, int dipdly, System.Windows.Forms.Timer[] timers, DateTime[] incubTimes, DateTime[] taskCompletion, DateTime[] incubWoff)
+        {
+            incubTimes[index] = incubTimes[index].AddMilliseconds(dipdly);
+            timers[index].Enabled = true;
+            timers[index].Interval = 1000;
+            taskCompletion[index] = taskCompletion[index].AddMilliseconds(dipdly);
+            incubWoff[index] = incubWoff[index].AddMilliseconds(dipdly);
+        }
+
+        // Set the protocol run flag
+        private void SetProtoRunFlag(int prtno, bool status)
+        {
             switch (prtno)
             {
-                case 1:
-                    {
-                        try
-                        {
-                            if ((r2priority == 0) && (r3priority == 0) && (r4priority == 0) && (r5priority == 0) && (r6priority == 0) && (r7priority == 0) && (r8priority == 0) && (r9priority == 0))
-                                p1protorun_flg = true;
-                            else
-                            {
-                                //New code added on 15-11-2023 as checked for priority
-                                ts1 = r1_incub.Subtract(r2_incub);
-                                ts2 = r1_incub.Subtract(r3_incub);
-                                ts3 = r1_incub.Subtract(r4_incub);
-                                ts4 = r1_incub.Subtract(r5_incub);
-                                ts5 = r1_incub.Subtract(r6_incub);
-                                ts6 = r1_incub.Subtract(r7_incub);
-                                ts7 = r1_incub.Subtract(r8_incub);
-                                ts8 = r1_incub.Subtract(r9_incub);
-
-                                ts1_1 = r2_incub.Subtract(r1_incub);
-                                ts2_1 = r3_incub.Subtract(r1_incub);
-                                ts3_1 = r4_incub.Subtract(r1_incub);
-                                ts4_1 = r5_incub.Subtract(r1_incub);
-                                ts5_1 = r6_incub.Subtract(r1_incub);
-                                ts6_1 = r7_incub.Subtract(r1_incub);
-                                ts7_1 = r8_incub.Subtract(r1_incub);
-                                ts8_1 = r9_incub.Subtract(r1_incub);
-
-                                #region 1st & 2nd Rack Priority checking
-                                if (((ts1.TotalSeconds > 0) && (ts1.TotalSeconds <= dipdly)) || ((ts1_1.TotalSeconds > 0) && (ts1_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r2priority == 0)
-                                    {
-                                        r2_incub = r2_incub.AddSeconds(dipdly);
-                                        tmr_r2_incub.Enabled = true;
-                                        tmr_r2_incub.Interval = 1000;
-                                        r2_taskcomp = r2_taskcomp.AddSeconds(dipdly);
-                                        r2_incub_Woff = r2_incub_Woff.AddSeconds(dipdly);
-                                        p1protorun_flg = true;
-                                    }
-                                    else if ((r2priority == 1) && (r1priority == 0))
-                                    {
-                                        r1_incub = r1_incub.AddSeconds(dipdly);
-                                        tmr_r1_incub.Enabled = true;
-                                        tmr_r1_incub.Interval = 1000;
-                                        r1_taskcomp = r1_taskcomp.AddSeconds(dipdly);
-                                        r1_incub_Woff = r1_incub_Woff.AddSeconds(dipdly);
-                                        p1protorun_flg = false;
-                                    }
-                                }
-                                #endregion
-
-                                #region 1st & 3rd Rack Priority checking
-                                if (((ts2.TotalSeconds > 0) && (ts2.TotalSeconds <= dipdly)) || ((ts2_1.TotalSeconds > 0) && (ts2_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r3priority == 0)
-                                    {
-                                        r3_incub = r3_incub.AddSeconds(dipdly);
-                                        tmr_r3_incub.Enabled = true;
-                                        tmr_r3_incub.Interval = 1000;
-                                        r3_taskcomp = r3_taskcomp.AddSeconds(dipdly);
-                                        r3_incub_Woff = r3_incub_Woff.AddSeconds(dipdly);
-                                        p1protorun_flg = true;
-                                    }
-                                    else if ((r3priority == 1) && (r1priority == 0))
-                                    {
-                                        r1_incub = r1_incub.AddSeconds(dipdly);
-                                        tmr_r1_incub.Enabled = true;
-                                        tmr_r1_incub.Interval = 1000;
-                                        r1_taskcomp = r1_taskcomp.AddSeconds(dipdly);
-                                        r1_incub_Woff = r1_incub_Woff.AddSeconds(dipdly);
-                                        p1protorun_flg = false;
-                                    }
-                                }
-                                #endregion
-
-                                #region 1st & 4th Rack Priority checking
-                                if (((ts3.TotalSeconds > 0) && (ts3.TotalSeconds <= dipdly)) || ((ts3_1.TotalSeconds > 0) && (ts3_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r4priority == 0)
-                                    {
-                                        r4_incub = r4_incub.AddSeconds(dipdly);
-                                        tmr_r4_incub.Enabled = true;
-                                        tmr_r4_incub.Interval = 1000;
-                                        r4_taskcomp = r4_taskcomp.AddSeconds(dipdly);
-                                        r4_incub_Woff = r4_incub_Woff.AddSeconds(dipdly);
-                                        p1protorun_flg = true;
-                                    }
-                                    else if ((r4priority == 1) && (r1priority == 0))
-                                    {
-                                        r1_incub = r1_incub.AddSeconds(dipdly);
-                                        tmr_r1_incub.Enabled = true;
-                                        tmr_r1_incub.Interval = 1000;
-                                        r1_taskcomp = r1_taskcomp.AddSeconds(dipdly);
-                                        r1_incub_Woff = r1_incub_Woff.AddSeconds(dipdly);
-                                        p1protorun_flg = false;
-                                    }
-                                }
-                                #endregion
-
-                                #region 1st & 5th Rack Priority checking
-                                if (((ts4.TotalSeconds > 0) && (ts4.TotalSeconds <= dipdly)) || ((ts4_1.TotalSeconds > 0) && (ts4_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r5priority == 0)
-                                    {
-                                        r5_incub = r5_incub.AddSeconds(dipdly);
-                                        tmr_r5_incub.Enabled = true;
-                                        tmr_r5_incub.Interval = 1000;
-                                        r5_taskcomp = r5_taskcomp.AddSeconds(dipdly);
-                                        r5_incub_Woff = r5_incub_Woff.AddSeconds(dipdly);
-                                        p1protorun_flg = true;
-                                    }
-                                    else if ((r5priority == 1) && (r1priority == 0))
-                                    {
-                                        r1_incub = r1_incub.AddSeconds(dipdly);
-                                        tmr_r1_incub.Enabled = true;
-                                        tmr_r1_incub.Interval = 1000;
-                                        r1_taskcomp = r1_taskcomp.AddSeconds(dipdly);
-                                        r1_incub_Woff = r1_incub_Woff.AddSeconds(dipdly);
-                                        p1protorun_flg = false;
-                                    }
-                                }
-                                #endregion
-
-                                #region 1st & 6th Rack priority checking
-                                if (((ts5.TotalSeconds > 0) && (ts5.TotalSeconds <= dipdly)) || ((ts5_1.TotalSeconds > 0) && (ts5_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r6priority == 0)
-                                    {
-                                        r6_incub = r6_incub.AddSeconds(dipdly);
-                                        tmr_r6_incub.Enabled = true;
-                                        tmr_r6_incub.Interval = 1000;
-                                        r6_taskcomp = r6_taskcomp.AddSeconds(dipdly);
-                                        r6_incub_Woff = r6_incub_Woff.AddSeconds(dipdly);
-                                        p1protorun_flg = true;
-                                    }
-                                    else if ((r6priority == 1) && (r1priority == 0))
-                                    {
-                                        r1_incub = r1_incub.AddSeconds(dipdly);
-                                        tmr_r1_incub.Enabled = true;
-                                        tmr_r1_incub.Interval = 1000;
-                                        r1_taskcomp = r1_taskcomp.AddSeconds(dipdly);
-                                        r1_incub_Woff = r1_incub_Woff.AddSeconds(dipdly);
-                                        p1protorun_flg = false;
-                                    }
-                                }
-                                #endregion
-
-                                #region 1st & 7th Rack priority checking
-                                if (((ts6.TotalSeconds > 0) && (ts6.TotalSeconds <= dipdly)) || ((ts6_1.TotalSeconds > 0) && (ts6_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r7priority == 0)
-                                    {
-                                        r7_incub = r7_incub.AddSeconds(dipdly);
-                                        tmr_r7_incub.Enabled = true;
-                                        tmr_r7_incub.Interval = 1000;
-                                        r7_taskcomp = r7_taskcomp.AddSeconds(dipdly);
-                                        r7_incub_Woff = r7_incub_Woff.AddSeconds(dipdly);
-                                        p1protorun_flg = true;
-                                    }
-                                    else if ((r7priority == 1) && (r1priority == 0))
-                                    {
-                                        r1_incub = r1_incub.AddSeconds(dipdly);
-                                        tmr_r1_incub.Enabled = true;
-                                        tmr_r1_incub.Interval = 1000;
-                                        r1_taskcomp = r1_taskcomp.AddSeconds(dipdly);
-                                        r1_incub_Woff = r1_incub_Woff.AddSeconds(dipdly);
-                                        p1protorun_flg = false;
-                                    }
-                                }
-                                #endregion
-                                #region 1st & 8th Rack priority checking
-                                if (((ts7.TotalSeconds > 0) && (ts7.TotalSeconds <= dipdly)) || ((ts7_1.TotalSeconds > 0) && (ts7_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r8priority == 0)
-                                    {
-                                        r8_incub = r8_incub.AddSeconds(dipdly);
-                                        tmr_r8_incub.Enabled = true;
-                                        tmr_r8_incub.Interval = 1000;
-                                        r8_taskcomp = r8_taskcomp.AddSeconds(dipdly);
-                                        r8_incub_Woff = r8_incub_Woff.AddSeconds(dipdly);
-                                        p1protorun_flg = true;
-                                    }
-                                    else if ((r8priority == 1) && (r1priority == 0))
-                                    {
-                                        r1_incub = r1_incub.AddSeconds(dipdly);
-                                        tmr_r1_incub.Enabled = true;
-                                        tmr_r1_incub.Interval = 1000;
-                                        r1_taskcomp = r1_taskcomp.AddSeconds(dipdly);
-                                        r1_incub_Woff = r1_incub_Woff.AddSeconds(dipdly);
-                                        p1protorun_flg = false;
-                                    }
-                                }
-                                #endregion
-                                #region 1st & 9th Rack priority checking
-                                if (((ts8.TotalSeconds > 0) && (ts8.TotalSeconds <= dipdly)) || ((ts8_1.TotalSeconds > 0) && (ts8_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r9priority == 0)
-                                    {
-                                        r9_incub = r9_incub.AddSeconds(dipdly);
-                                        tmr_r9_incub.Enabled = true;
-                                        tmr_r9_incub.Interval = 1000;
-                                        r9_taskcomp = r9_taskcomp.AddSeconds(dipdly);
-                                        r9_incub_Woff = r9_incub_Woff.AddSeconds(dipdly);
-                                        p1protorun_flg = true;
-                                    }
-                                    else if ((r9priority == 1) && (r1priority == 0))
-                                    {
-                                        r1_incub = r1_incub.AddSeconds(dipdly);
-                                        tmr_r1_incub.Enabled = true;
-                                        tmr_r1_incub.Interval = 1000;
-                                        r1_taskcomp = r1_taskcomp.AddSeconds(dipdly);
-                                        r1_incub_Woff = r1_incub_Woff.AddSeconds(dipdly);
-                                        p1protorun_flg = false;
-                                    }
-                                }
-                                #endregion
-                                //Updating timing values
-                            }
-                        }
-                        catch (Exception d3)
-                        {
-                            RequiredVariables.writeerrorlogfile("While checking priority tasks scheduling in p1proto check rack", "In Check_priority_times in Form_RunProto");
-                        }
-                        break;
-                    }
-                case 2:
-                    {
-                        try
-                        {
-                            if ((r1priority == 0) && (r3priority == 0) && (r4priority == 0) && (r5priority == 0) && (r6priority == 0) && (r7priority == 0) && (r8priority == 0) && (r9priority == 0))
-                                p2protorun_flg = true;
-                            else
-                            {
-                                //Updating timing values
-                                //New code added on 15-11-2023 as checked for priority
-                                ts1 = r2_incub.Subtract(r1_incub);
-                                ts2 = r2_incub.Subtract(r3_incub);
-                                ts3 = r2_incub.Subtract(r4_incub);
-                                ts4 = r2_incub.Subtract(r5_incub);
-                                ts5 = r2_incub.Subtract(r6_incub);
-                                ts6 = r2_incub.Subtract(r7_incub);
-                                ts7 = r2_incub.Subtract(r8_incub);
-                                ts8 = r2_incub.Subtract(r9_incub);
-
-                                ts1_1 = r1_incub.Subtract(r2_incub);
-                                ts2_1 = r3_incub.Subtract(r2_incub);
-                                ts3_1 = r4_incub.Subtract(r2_incub);
-                                ts4_1 = r5_incub.Subtract(r2_incub);
-                                ts5_1 = r6_incub.Subtract(r2_incub);
-                                ts6_1 = r7_incub.Subtract(r2_incub);
-                                ts7_1 = r8_incub.Subtract(r2_incub);
-                                ts8_1 = r9_incub.Subtract(r2_incub);
-
-                                #region 2nd & 1st Rack Priority checking
-                                if (((ts1.TotalSeconds > 0) && (ts1.TotalSeconds <= dipdly)) || ((ts1_1.TotalSeconds > 0) && (ts1_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r1priority == 0)
-                                    {
-                                        r1_incub = r1_incub.AddSeconds(dipdly);
-                                        tmr_r1_incub.Enabled = true;
-                                        tmr_r1_incub.Interval = 1000;
-                                        r1_taskcomp = r1_taskcomp.AddSeconds(dipdly);
-                                        r1_incub_Woff = r1_incub_Woff.AddSeconds(dipdly);
-                                        p2protorun_flg = true;
-                                    }
-                                    else if ((r1priority == 1) && (r2priority == 0))
-                                    {
-                                        r2_incub = r2_incub.AddSeconds(dipdly);
-                                        tmr_r2_incub.Enabled = true;
-                                        tmr_r2_incub.Interval = 1000;
-                                        r2_taskcomp = r2_taskcomp.AddSeconds(dipdly);
-                                        r2_incub_Woff = r2_incub_Woff.AddSeconds(dipdly);
-                                        p2protorun_flg = false;
-                                    }
-                                }
-                                #endregion
-                                #region 2nd & 3rd Rack Priority checking
-                                if (((ts2.TotalSeconds > 0) && (ts2.TotalSeconds <= dipdly)) || ((ts2_1.TotalSeconds > 0) && (ts2_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r3priority == 0)
-                                    {
-                                        r3_incub = r3_incub.AddSeconds(dipdly);
-                                        tmr_r3_incub.Enabled = true;
-                                        tmr_r3_incub.Interval = 1000;
-                                        r3_taskcomp = r3_taskcomp.AddSeconds(dipdly);
-                                        r3_incub_Woff = r3_incub_Woff.AddSeconds(dipdly);
-                                        p2protorun_flg = true;
-                                    }
-                                    else if ((r3priority == 1) && (r2priority == 0))
-                                    {
-                                        r2_incub = r2_incub.AddSeconds(dipdly);
-                                        tmr_r2_incub.Enabled = true;
-                                        tmr_r2_incub.Interval = 1000;
-                                        r2_taskcomp = r2_taskcomp.AddSeconds(dipdly);
-                                        r2_incub_Woff = r2_incub_Woff.AddSeconds(dipdly);
-                                        p2protorun_flg = false;
-                                    }
-                                }
-                                #endregion
-                                #region 2ndt & 4th Rack Priority checking
-                                if (((ts3.TotalSeconds > 0) && (ts3.TotalSeconds <= dipdly)) || ((ts3_1.TotalSeconds > 0) && (ts3_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r4priority == 0)
-                                    {
-                                        r4_incub = r4_incub.AddSeconds(dipdly);
-                                        tmr_r4_incub.Enabled = true;
-                                        tmr_r4_incub.Interval = 1000;
-                                        r4_taskcomp = r4_taskcomp.AddSeconds(dipdly);
-                                        r4_incub_Woff = r4_incub_Woff.AddSeconds(dipdly);
-                                        p2protorun_flg = true;
-                                    }
-                                    else if ((r4priority == 1) && (r2priority == 0))
-                                    {
-                                        r2_incub = r2_incub.AddSeconds(dipdly);
-                                        tmr_r2_incub.Enabled = true;
-                                        tmr_r2_incub.Interval = 1000;
-                                        r2_taskcomp = r2_taskcomp.AddSeconds(dipdly);
-                                        r2_incub_Woff = r2_incub_Woff.AddSeconds(dipdly);
-                                        p2protorun_flg = false;
-                                    }
-                                }
-                                #endregion
-                                #region 2nd & 5th Rack Priority checking
-                                if (((ts4.TotalSeconds > 0) && (ts4.TotalSeconds <= dipdly)) || ((ts4_1.TotalSeconds > 0) && (ts4_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r5priority == 0)
-                                    {
-                                        r5_incub = r5_incub.AddSeconds(dipdly);
-                                        tmr_r5_incub.Enabled = true;
-                                        tmr_r5_incub.Interval = 1000;
-                                        r5_taskcomp = r5_taskcomp.AddSeconds(dipdly);
-                                        r5_incub_Woff = r5_incub_Woff.AddSeconds(dipdly);
-                                        p2protorun_flg = true;
-                                    }
-                                    else if ((r5priority == 1) && (r2priority == 0))
-                                    {
-                                        r2_incub = r2_incub.AddSeconds(dipdly);
-                                        tmr_r2_incub.Enabled = true;
-                                        tmr_r2_incub.Interval = 1000;
-                                        r2_taskcomp = r2_taskcomp.AddSeconds(dipdly);
-                                        r2_incub_Woff = r2_incub_Woff.AddSeconds(dipdly);
-                                        p2protorun_flg = false;
-                                    }
-                                }
-                                #endregion
-                                #region 2nd & 6th Rack priority checking
-                                if (((ts5.TotalSeconds > 0) && (ts5.TotalSeconds <= dipdly)) || ((ts5_1.TotalSeconds > 0) && (ts5_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r6priority == 0)
-                                    {
-                                        r6_incub = r6_incub.AddSeconds(dipdly);
-                                        tmr_r6_incub.Enabled = true;
-                                        tmr_r6_incub.Interval = 1000;
-                                        r6_taskcomp = r6_taskcomp.AddSeconds(dipdly);
-                                        r6_incub_Woff = r6_incub_Woff.AddSeconds(dipdly);
-                                        p2protorun_flg = true;
-                                    }
-                                    else if ((r6priority == 1) && (r2priority == 0))
-                                    {
-                                        r2_incub = r2_incub.AddSeconds(dipdly);
-                                        tmr_r2_incub.Enabled = true;
-                                        tmr_r2_incub.Interval = 1000;
-                                        r2_taskcomp = r2_taskcomp.AddSeconds(dipdly);
-                                        r2_incub_Woff = r2_incub_Woff.AddSeconds(dipdly);
-                                        p2protorun_flg = false;
-                                    }
-                                }
-                                #endregion
-                                #region 2nd & 7th Rack priority checking
-                                if (((ts6.TotalSeconds > 0) && (ts6.TotalSeconds <= dipdly)) || ((ts6_1.TotalSeconds > 0) && (ts6_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r7priority == 0)
-                                    {
-                                        r7_incub = r7_incub.AddSeconds(dipdly);
-                                        tmr_r7_incub.Enabled = true;
-                                        tmr_r7_incub.Interval = 1000;
-                                        r7_taskcomp = r7_taskcomp.AddSeconds(dipdly);
-                                        r7_incub_Woff = r7_incub_Woff.AddSeconds(dipdly);
-                                        p2protorun_flg = true;
-                                    }
-                                    else if ((r7priority == 1) && (r2priority == 0))
-                                    {
-                                        r2_incub = r2_incub.AddSeconds(dipdly);
-                                        tmr_r2_incub.Enabled = true;
-                                        tmr_r2_incub.Interval = 1000;
-                                        r2_taskcomp = r2_taskcomp.AddSeconds(dipdly);
-                                        r2_incub_Woff = r2_incub_Woff.AddSeconds(dipdly);
-                                        p2protorun_flg = false;
-                                    }
-                                }
-                                #endregion
-                                #region 2nd & 8th Rack priority checking
-                                if (((ts7.TotalSeconds > 0) && (ts7.TotalSeconds <= dipdly)) || ((ts7_1.TotalSeconds > 0) && (ts7_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r8priority == 0)
-                                    {
-                                        r8_incub = r8_incub.AddSeconds(dipdly);
-                                        tmr_r8_incub.Enabled = true;
-                                        tmr_r8_incub.Interval = 1000;
-                                        r8_taskcomp = r8_taskcomp.AddSeconds(dipdly);
-                                        r8_incub_Woff = r8_incub_Woff.AddSeconds(dipdly);
-                                        p2protorun_flg = true;
-                                    }
-                                    else if ((r8priority == 1) && (r2priority == 0))
-                                    {
-                                        r2_incub = r2_incub.AddSeconds(dipdly);
-                                        tmr_r2_incub.Enabled = true;
-                                        tmr_r2_incub.Interval = 1000;
-                                        r2_taskcomp = r2_taskcomp.AddSeconds(dipdly);
-                                        r2_incub_Woff = r2_incub_Woff.AddSeconds(dipdly);
-                                        p2protorun_flg = false;
-                                    }
-                                }
-                                #endregion
-                                #region 2nd & 9th Rack priority checking
-                                if (((ts8.TotalSeconds > 0) && (ts8.TotalSeconds <= dipdly)) || ((ts8_1.TotalSeconds > 0) && (ts8_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r9priority == 0)
-                                    {
-                                        r9_incub = r9_incub.AddSeconds(dipdly);
-                                        tmr_r9_incub.Enabled = true;
-                                        tmr_r9_incub.Interval = 1000;
-                                        r9_taskcomp = r9_taskcomp.AddSeconds(dipdly);
-                                        r9_incub_Woff = r9_incub_Woff.AddSeconds(dipdly);
-                                        p2protorun_flg = true;
-                                    }
-                                    else if ((r9priority == 1) && (r2priority == 0))
-                                    {
-                                        r2_incub = r2_incub.AddSeconds(dipdly);
-                                        tmr_r2_incub.Enabled = true;
-                                        tmr_r2_incub.Interval = 1000;
-                                        r2_taskcomp = r2_taskcomp.AddSeconds(dipdly);
-                                        r2_incub_Woff = r2_incub_Woff.AddSeconds(dipdly);
-                                        p2protorun_flg = false;
-                                    }
-                                }
-                                #endregion
-                            }
-                        }
-                        catch (Exception d3)
-                        {
-                            RequiredVariables.writeerrorlogfile("While checking priority tasks scheduling in p2proto check rack", "In Check_priority_times in Form_RunProto");
-                        }
-                        break;
-                    }
-                case 3:
-                    {
-                        try
-                        {
-                            if ((r2priority == 0) && (r1priority == 0) && (r4priority == 0) && (r5priority == 0) && (r6priority == 0) && (r7priority == 0) && (r8priority == 0) && (r9priority == 0))
-                                p3protorun_flg = true;
-                            else
-                            {
-                                //New code added on 15-11-2023 as checked for priority
-                                ts1 = r3_incub.Subtract(r1_incub);
-                                ts2 = r3_incub.Subtract(r2_incub);
-                                ts3 = r3_incub.Subtract(r4_incub);
-                                ts4 = r3_incub.Subtract(r5_incub);
-                                ts5 = r3_incub.Subtract(r6_incub);
-                                ts6 = r3_incub.Subtract(r7_incub);
-                                ts7 = r3_incub.Subtract(r8_incub);
-                                ts8 = r3_incub.Subtract(r9_incub);
-
-                                ts1_1 = r1_incub.Subtract(r3_incub);
-                                ts2_1 = r2_incub.Subtract(r3_incub);
-                                ts3_1 = r4_incub.Subtract(r3_incub);
-                                ts4_1 = r5_incub.Subtract(r3_incub);
-                                ts5_1 = r6_incub.Subtract(r3_incub);
-                                ts6_1 = r7_incub.Subtract(r3_incub);
-                                ts7_1 = r8_incub.Subtract(r3_incub);
-                                ts8_1 = r9_incub.Subtract(r3_incub);
-
-                                if (((ts1.TotalSeconds > 0) && (ts1.TotalSeconds <= dipdly)) || ((ts1_1.TotalSeconds > 0) && (ts1_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r1priority == 0)
-                                    {
-                                        r1_incub = r1_incub.AddSeconds(dipdly);
-                                        tmr_r1_incub.Enabled = true;
-                                        tmr_r1_incub.Interval = 1000;
-                                        r1_taskcomp = r1_taskcomp.AddSeconds(dipdly);
-                                        r1_incub_Woff = r1_incub_Woff.AddSeconds(dipdly);
-                                        p3protorun_flg = true;
-                                    }
-                                    else if ((r3priority == 0) && (r1priority == 1))
-                                    {
-                                        r3_incub = r3_incub.AddSeconds(dipdly);
-                                        tmr_r3_incub.Enabled = true;
-                                        tmr_r3_incub.Interval = 1000;
-                                        r3_taskcomp = r3_taskcomp.AddSeconds(dipdly);
-                                        r3_incub_Woff = r3_incub_Woff.AddSeconds(dipdly);
-                                        p3protorun_flg = false;
-                                    }
-                                }
-                                if (((ts2.TotalSeconds > 0) && (ts2.TotalSeconds <= dipdly)) || ((ts2_1.TotalSeconds > 0) && (ts2_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r2priority == 0)
-                                    {
-                                        r2_incub = r2_incub.AddSeconds(dipdly);
-                                        tmr_r2_incub.Enabled = true;
-                                        tmr_r2_incub.Interval = 1000;
-                                        r2_taskcomp = r2_taskcomp.AddSeconds(dipdly);
-                                        r2_incub_Woff = r2_incub_Woff.AddSeconds(dipdly);
-                                        p3protorun_flg = true;
-                                    }
-                                    else if ((r3priority == 0) && (r2priority == 1))
-                                    {
-                                        r3_incub = r3_incub.AddSeconds(dipdly);
-                                        tmr_r3_incub.Enabled = true;
-                                        tmr_r3_incub.Interval = 1000;
-                                        r3_taskcomp = r3_taskcomp.AddSeconds(dipdly);
-                                        r3_incub_Woff = r3_incub_Woff.AddSeconds(dipdly);
-                                        p3protorun_flg = false;
-                                    }
-                                }
-                                if (((ts3.TotalSeconds > 0) && (ts3.TotalSeconds <= dipdly)) || ((ts3_1.TotalSeconds > 0) && (ts3_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r4priority == 0)
-                                    {
-                                        r4_incub = r4_incub.AddSeconds(dipdly);
-                                        tmr_r4_incub.Enabled = true;
-                                        tmr_r4_incub.Interval = 1000;
-                                        r4_taskcomp = r4_taskcomp.AddSeconds(dipdly);
-                                        r4_incub_Woff = r4_incub_Woff.AddSeconds(dipdly);
-                                        p3protorun_flg = true;
-                                    }
-                                    else if ((r3priority == 0) && (r4priority == 1))
-                                    {
-                                        r3_incub = r3_incub.AddSeconds(dipdly);
-                                        tmr_r3_incub.Enabled = true;
-                                        tmr_r3_incub.Interval = 1000;
-                                        r3_taskcomp = r3_taskcomp.AddSeconds(dipdly);
-                                        r3_incub_Woff = r3_incub_Woff.AddSeconds(dipdly);
-                                        p3protorun_flg = false;
-                                    }
-                                }
-                                if (((ts4.TotalSeconds > 0) && (ts4.TotalSeconds <= dipdly)) || ((ts4_1.TotalSeconds > 0) && (ts4_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r5priority == 0)
-                                    {
-                                        r5_incub = r5_incub.AddSeconds(dipdly);
-                                        tmr_r5_incub.Enabled = true;
-                                        tmr_r5_incub.Interval = 1000;
-                                        r5_taskcomp = r5_taskcomp.AddSeconds(dipdly);
-                                        r5_incub_Woff = r5_incub_Woff.AddSeconds(dipdly);
-                                        p3protorun_flg = true;
-                                    }
-                                    else if ((r3priority == 0) && (r5priority == 1))
-                                    {
-                                        r3_incub = r3_incub.AddSeconds(dipdly);
-                                        tmr_r3_incub.Enabled = true;
-                                        tmr_r3_incub.Interval = 1000;
-                                        r3_taskcomp = r3_taskcomp.AddSeconds(dipdly);
-                                        r3_incub_Woff = r3_incub_Woff.AddSeconds(dipdly);
-                                        p3protorun_flg = false;
-                                    }
-                                }
-                                if (((ts5.TotalSeconds > 0) && (ts5.TotalSeconds <= dipdly)) || ((ts5_1.TotalSeconds > 0) && (ts5_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r6priority == 0)
-                                    {
-                                        r6_incub = r6_incub.AddSeconds(dipdly);
-                                        tmr_r6_incub.Enabled = true;
-                                        tmr_r6_incub.Interval = 1000;
-                                        r6_taskcomp = r6_taskcomp.AddSeconds(dipdly);
-                                        r6_incub_Woff = r6_incub_Woff.AddSeconds(dipdly);
-                                        p3protorun_flg = true;
-                                    }
-                                    else if ((r3priority == 0) && (r6priority == 1))
-                                    {
-                                        r3_incub = r3_incub.AddSeconds(dipdly);
-                                        tmr_r3_incub.Enabled = true;
-                                        tmr_r3_incub.Interval = 1000;
-                                        r3_taskcomp = r3_taskcomp.AddSeconds(dipdly);
-                                        r3_incub_Woff = r3_incub_Woff.AddSeconds(dipdly);
-                                        p3protorun_flg = false;
-                                    }
-                                }
-                                if (((ts6.TotalSeconds > 0) && (ts6.TotalSeconds <= dipdly)) || ((ts6_1.TotalSeconds > 0) && (ts6_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r7priority == 0)
-                                    {
-                                        r7_incub = r7_incub.AddSeconds(dipdly);
-                                        tmr_r7_incub.Enabled = true;
-                                        tmr_r7_incub.Interval = 1000;
-                                        r7_taskcomp = r7_taskcomp.AddSeconds(dipdly);
-                                        r7_incub_Woff = r7_incub_Woff.AddSeconds(dipdly);
-                                        p3protorun_flg = true;
-                                    }
-                                    else if ((r3priority == 0) && (r7priority == 1))
-                                    {
-                                        r3_incub = r3_incub.AddSeconds(dipdly);
-                                        tmr_r3_incub.Enabled = true;
-                                        tmr_r3_incub.Interval = 1000;
-                                        r3_taskcomp = r3_taskcomp.AddSeconds(dipdly);
-                                        r3_incub_Woff = r3_incub_Woff.AddSeconds(dipdly);
-                                        p3protorun_flg = false;
-                                    }
-                                }
-                                if (((ts7.TotalSeconds > 0) && (ts7.TotalSeconds <= dipdly)) || ((ts7_1.TotalSeconds > 0) && (ts7_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r8priority == 0)
-                                    {
-                                        r8_incub = r8_incub.AddSeconds(dipdly);
-                                        tmr_r8_incub.Enabled = true;
-                                        tmr_r8_incub.Interval = 1000;
-                                        r8_taskcomp = r8_taskcomp.AddSeconds(dipdly);
-                                        r8_incub_Woff = r8_incub_Woff.AddSeconds(dipdly);
-                                        p3protorun_flg = true;
-                                    }
-                                    else if ((r3priority == 0) && (r8priority == 1))
-                                    {
-                                        r3_incub = r3_incub.AddSeconds(dipdly);
-                                        tmr_r3_incub.Enabled = true;
-                                        tmr_r3_incub.Interval = 1000;
-                                        r3_taskcomp = r3_taskcomp.AddSeconds(dipdly);
-                                        r3_incub_Woff = r3_incub_Woff.AddSeconds(dipdly);
-                                        p3protorun_flg = false;
-                                    }
-                                }
-                                if (((ts8.TotalSeconds > 0) && (ts8.TotalSeconds <= dipdly)) || ((ts8_1.TotalSeconds > 0) && (ts8_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r9priority == 0)
-                                    {
-                                        r9_incub = r9_incub.AddSeconds(dipdly);
-                                        tmr_r9_incub.Enabled = true;
-                                        tmr_r9_incub.Interval = 1000;
-                                        r9_taskcomp = r9_taskcomp.AddSeconds(dipdly);
-                                        r9_incub_Woff = r9_incub_Woff.AddSeconds(dipdly);
-                                        p3protorun_flg = true;
-                                    }
-                                    else if ((r3priority == 0) && (r9priority == 1))
-                                    {
-                                        r3_incub = r3_incub.AddSeconds(dipdly);
-                                        tmr_r3_incub.Enabled = true;
-                                        tmr_r3_incub.Interval = 1000;
-                                        r3_taskcomp = r3_taskcomp.AddSeconds(dipdly);
-                                        r3_incub_Woff = r3_incub_Woff.AddSeconds(dipdly);
-                                        p3protorun_flg = false;
-                                    }
-                                }
-                            }
-                        }
-                        catch (Exception d3)
-                        {
-                            RequiredVariables.writeerrorlogfile("While checking priority tasks scheduling in p3proto check rack", "In Check_priority_times in Form_RunProto");
-                        }
-                        break;
-                    }
-                case 4:
-                    {
-                        try
-                        {
-                            if ((r2priority == 0) && (r3priority == 0) && (r1priority == 0) && (r5priority == 0) && (r6priority == 0) && (r7priority == 0) && (r8priority == 0) && (r9priority == 0))
-                                p4protorun_flg = true;
-                            else
-                            {
-                                //New code added on 15-11-2023 as checked for priority
-                                ts1 = r4_incub.Subtract(r1_incub);
-                                ts2 = r4_incub.Subtract(r2_incub);
-                                ts3 = r4_incub.Subtract(r3_incub);
-                                ts4 = r4_incub.Subtract(r5_incub);
-                                ts5 = r4_incub.Subtract(r6_incub);
-                                ts6 = r4_incub.Subtract(r7_incub);
-                                ts7 = r4_incub.Subtract(r8_incub);
-                                ts8 = r4_incub.Subtract(r9_incub);
-
-                                ts1_1 = r1_incub.Subtract(r4_incub);
-                                ts2_1 = r2_incub.Subtract(r4_incub);
-                                ts3_1 = r3_incub.Subtract(r4_incub);
-                                ts4_1 = r5_incub.Subtract(r4_incub);
-                                ts5_1 = r6_incub.Subtract(r4_incub);
-                                ts6_1 = r7_incub.Subtract(r4_incub);
-                                ts7_1 = r8_incub.Subtract(r4_incub);
-                                ts8_1 = r9_incub.Subtract(r4_incub);
-
-                                if (((ts1.TotalSeconds > 0) && (ts1.TotalSeconds <= dipdly)) || ((ts1_1.TotalSeconds > 0) && (ts1_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r1priority == 0)
-                                    {
-                                        r1_incub = r1_incub.AddSeconds(dipdly);
-                                        tmr_r1_incub.Enabled = true;
-                                        tmr_r1_incub.Interval = 1000;
-                                        r1_taskcomp = r1_taskcomp.AddSeconds(dipdly);
-                                        r1_incub_Woff = r1_incub_Woff.AddSeconds(dipdly);
-                                        p4protorun_flg = true;
-                                    }
-                                    else if ((r4priority == 0) && (r1priority == 1))
-                                    {
-                                        r4_incub = r4_incub.AddSeconds(dipdly);
-                                        tmr_r4_incub.Enabled = true;
-                                        tmr_r4_incub.Interval = 1000;
-                                        r4_taskcomp = r4_taskcomp.AddSeconds(dipdly);
-                                        r4_incub_Woff = r4_incub_Woff.AddSeconds(dipdly);
-                                        p4protorun_flg = false;
-                                    }
-                                }
-                                if (((ts2.TotalSeconds > 0) && (ts2.TotalSeconds <= dipdly)) || ((ts2_1.TotalSeconds > 0) && (ts2_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r2priority == 0)
-                                    {
-                                        r2_incub = r2_incub.AddSeconds(dipdly);
-                                        tmr_r2_incub.Enabled = true;
-                                        tmr_r2_incub.Interval = 1000;
-                                        r2_taskcomp = r2_taskcomp.AddSeconds(dipdly);
-                                        r2_incub_Woff = r2_incub_Woff.AddSeconds(dipdly);
-                                        p4protorun_flg = true;
-                                    }
-                                    else if ((r4priority == 0) && (r2priority == 1))
-                                    {
-                                        r4_incub = r4_incub.AddSeconds(dipdly);
-                                        tmr_r4_incub.Enabled = true;
-                                        tmr_r4_incub.Interval = 1000;
-                                        r4_taskcomp = r4_taskcomp.AddSeconds(dipdly);
-                                        r4_incub_Woff = r4_incub_Woff.AddSeconds(dipdly);
-                                        p4protorun_flg = false;
-                                    }
-                                }
-                                if (((ts3.TotalSeconds > 0) && (ts3.TotalSeconds <= dipdly)) || ((ts3_1.TotalSeconds > 0) && (ts3_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r3priority == 0)
-                                    {
-                                        r3_incub = r3_incub.AddSeconds(dipdly);
-                                        tmr_r3_incub.Enabled = true;
-                                        tmr_r3_incub.Interval = 1000;
-                                        r3_taskcomp = r3_taskcomp.AddSeconds(dipdly);
-                                        r3_incub_Woff = r3_incub_Woff.AddSeconds(dipdly);
-                                        p4protorun_flg = true;
-                                    }
-                                    else if ((r3priority == 1) && (r4priority == 0))
-                                    {
-                                        r4_incub = r4_incub.AddSeconds(dipdly);
-                                        tmr_r4_incub.Enabled = true;
-                                        tmr_r4_incub.Interval = 1000;
-                                        r4_taskcomp = r4_taskcomp.AddSeconds(dipdly);
-                                        r4_incub_Woff = r4_incub_Woff.AddSeconds(dipdly);
-                                        p4protorun_flg = false;
-                                    }
-                                }
-                                if (((ts4.TotalSeconds > 0) && (ts4.TotalSeconds <= dipdly)) || ((ts4_1.TotalSeconds > 0) && (ts4_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r5priority == 0)
-                                    {
-                                        r5_incub = r5_incub.AddSeconds(dipdly);
-                                        tmr_r5_incub.Enabled = true;
-                                        tmr_r5_incub.Interval = 1000;
-                                        r5_taskcomp = r5_taskcomp.AddSeconds(dipdly);
-                                        r5_incub_Woff = r5_incub_Woff.AddSeconds(dipdly);
-                                        p4protorun_flg = true;
-                                    }
-                                    else if ((r4priority == 0) && (r5priority == 1))
-                                    {
-                                        r4_incub = r4_incub.AddSeconds(dipdly);
-                                        tmr_r4_incub.Enabled = true;
-                                        tmr_r4_incub.Interval = 1000;
-                                        r4_taskcomp = r4_taskcomp.AddSeconds(dipdly);
-                                        r4_incub_Woff = r4_incub_Woff.AddSeconds(dipdly);
-                                        p4protorun_flg = false;
-                                    }
-                                }
-                                if (((ts5.TotalSeconds > 0) && (ts5.TotalSeconds <= dipdly)) || ((ts5_1.TotalSeconds > 0) && (ts5_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r6priority == 0)
-                                    {
-                                        r6_incub = r6_incub.AddSeconds(dipdly);
-                                        tmr_r6_incub.Enabled = true;
-                                        tmr_r6_incub.Interval = 1000;
-                                        r6_taskcomp = r6_taskcomp.AddSeconds(dipdly);
-                                        r6_incub_Woff = r6_incub_Woff.AddSeconds(dipdly);
-                                        p4protorun_flg = true;
-                                    }
-                                    else if ((r4priority == 0) && (r6priority == 1))
-                                    {
-                                        r4_incub = r4_incub.AddSeconds(dipdly);
-                                        tmr_r4_incub.Enabled = true;
-                                        tmr_r4_incub.Interval = 1000;
-                                        r4_taskcomp = r4_taskcomp.AddSeconds(dipdly);
-                                        r4_incub_Woff = r4_incub_Woff.AddSeconds(dipdly);
-                                        p4protorun_flg = false;
-                                    }
-                                }
-                                if (((ts6.TotalSeconds > 0) && (ts6.TotalSeconds <= dipdly)) || ((ts6_1.TotalSeconds > 0) && (ts6_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r7priority == 0)
-                                    {
-                                        r7_incub = r7_incub.AddSeconds(dipdly);
-                                        tmr_r7_incub.Enabled = true;
-                                        tmr_r7_incub.Interval = 1000;
-                                        r7_taskcomp = r7_taskcomp.AddSeconds(dipdly);
-                                        r7_incub_Woff = r7_incub_Woff.AddSeconds(dipdly);
-                                        p4protorun_flg = true;
-                                    }
-                                    else if ((r4priority == 0) && (r7priority == 1))
-                                    {
-                                        r4_incub = r4_incub.AddSeconds(dipdly);
-                                        tmr_r4_incub.Enabled = true;
-                                        tmr_r4_incub.Interval = 1000;
-                                        r4_taskcomp = r4_taskcomp.AddSeconds(dipdly);
-                                        r4_incub_Woff = r4_incub_Woff.AddSeconds(dipdly);
-                                        p4protorun_flg = false;
-                                    }
-                                }
-                                if (((ts7.TotalSeconds > 0) && (ts7.TotalSeconds <= dipdly)) || ((ts7_1.TotalSeconds > 0) && (ts7_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r8priority == 0)
-                                    {
-                                        r8_incub = r8_incub.AddSeconds(dipdly);
-                                        tmr_r8_incub.Enabled = true;
-                                        tmr_r8_incub.Interval = 1000;
-                                        r8_taskcomp = r8_taskcomp.AddSeconds(dipdly);
-                                        r8_incub_Woff = r8_incub_Woff.AddSeconds(dipdly);
-                                        p4protorun_flg = true;
-                                    }
-                                    else if ((r4priority == 0) && (r8priority == 1))
-                                    {
-                                        r4_incub = r4_incub.AddSeconds(dipdly);
-                                        tmr_r4_incub.Enabled = true;
-                                        tmr_r4_incub.Interval = 1000;
-                                        r4_taskcomp = r4_taskcomp.AddSeconds(dipdly);
-                                        r4_incub_Woff = r4_incub_Woff.AddSeconds(dipdly);
-                                        p4protorun_flg = false;
-                                    }
-                                }
-                                if (((ts8.TotalSeconds > 0) && (ts8.TotalSeconds <= dipdly)) || ((ts8_1.TotalSeconds > 0) && (ts8_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r9priority == 0)
-                                    {
-                                        r9_incub = r9_incub.AddSeconds(dipdly);
-                                        tmr_r9_incub.Enabled = true;
-                                        tmr_r9_incub.Interval = 1000;
-                                        r9_taskcomp = r9_taskcomp.AddSeconds(dipdly);
-                                        r9_incub_Woff = r9_incub_Woff.AddSeconds(dipdly);
-                                        p4protorun_flg = true;
-                                    }
-                                    else if ((r4priority == 0) && (r9priority == 1))
-                                    {
-                                        r4_incub = r4_incub.AddSeconds(dipdly);
-                                        tmr_r4_incub.Enabled = true;
-                                        tmr_r4_incub.Interval = 1000;
-                                        r4_taskcomp = r4_taskcomp.AddSeconds(dipdly);
-                                        r4_incub_Woff = r4_incub_Woff.AddSeconds(dipdly);
-                                        p4protorun_flg = false;
-                                    }
-                                }
-                            }
-                        }
-                        catch (Exception d3)
-                        {
-                            RequiredVariables.writeerrorlogfile("While checking priority tasks scheduling in p4proto check rack", "In Check_priority_times in Form_RunProto");
-                        }
-                        break;
-                    }
-                case 5:
-                    {
-                        try
-                        {
-                            if ((r2priority == 0) && (r3priority == 0) && (r4priority == 0) && (r1priority == 0) && (r6priority == 0) && (r7priority == 0) && (r8priority == 0) && (r9priority == 0))
-                                p5protorun_flg = true;
-                            else
-                            {
-                                //New code added on 15-11-2023 as checked for priority
-                                ts1 = r5_incub.Subtract(r1_incub);
-                                ts2 = r5_incub.Subtract(r2_incub);
-                                ts3 = r5_incub.Subtract(r3_incub);
-                                ts4 = r5_incub.Subtract(r4_incub);
-                                ts5 = r5_incub.Subtract(r6_incub);
-                                ts6 = r5_incub.Subtract(r7_incub);
-                                ts7 = r5_incub.Subtract(r8_incub);
-                                ts8 = r5_incub.Subtract(r9_incub);
-
-                                ts1_1 = r1_incub.Subtract(r5_incub);
-                                ts2_1 = r2_incub.Subtract(r5_incub);
-                                ts3_1 = r3_incub.Subtract(r5_incub);
-                                ts4_1 = r4_incub.Subtract(r5_incub);
-                                ts5_1 = r6_incub.Subtract(r5_incub);
-                                ts6_1 = r7_incub.Subtract(r5_incub);
-                                ts7_1 = r8_incub.Subtract(r5_incub);
-                                ts8_1 = r9_incub.Subtract(r5_incub);
-
-                                if (((ts1.TotalSeconds > 0) && (ts1.TotalSeconds <= dipdly)) || ((ts1_1.TotalSeconds > 0) && (ts1_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r1priority == 0)
-                                    {
-                                        r1_incub = r1_incub.AddSeconds(dipdly);
-                                        tmr_r1_incub.Enabled = true;
-                                        tmr_r1_incub.Interval = 1000;
-                                        r1_taskcomp = r1_taskcomp.AddSeconds(dipdly);
-                                        r1_incub_Woff = r1_incub_Woff.AddSeconds(dipdly);
-                                        p5protorun_flg = true;
-                                    }
-                                    else if ((r5priority == 0) && (r1priority == 1))
-                                    {
-                                        r5_incub = r5_incub.AddSeconds(dipdly);
-                                        tmr_r5_incub.Enabled = true;
-                                        tmr_r5_incub.Interval = 1000;
-                                        r5_taskcomp = r5_taskcomp.AddSeconds(dipdly);
-                                        r5_incub_Woff = r5_incub_Woff.AddSeconds(dipdly);
-                                        p5protorun_flg = false;
-                                    }
-                                }
-                                if (((ts2.TotalSeconds > 0) && (ts2.TotalSeconds <= dipdly)) || ((ts2_1.TotalSeconds > 0) && (ts2_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r2priority == 0)
-                                    {
-                                        r2_incub = r2_incub.AddSeconds(dipdly);
-                                        tmr_r2_incub.Enabled = true;
-                                        tmr_r2_incub.Interval = 1000;
-                                        r2_taskcomp = r2_taskcomp.AddSeconds(dipdly);
-                                        r2_incub_Woff = r2_incub_Woff.AddSeconds(dipdly);
-                                        p5protorun_flg = true;
-                                    }
-                                    else if ((r5priority == 0) && (r2priority == 1))
-                                    {
-                                        r5_incub = r5_incub.AddSeconds(dipdly);
-                                        tmr_r5_incub.Enabled = true;
-                                        tmr_r5_incub.Interval = 1000;
-                                        r5_taskcomp = r5_taskcomp.AddSeconds(dipdly);
-                                        r5_incub_Woff = r5_incub_Woff.AddSeconds(dipdly);
-                                        p5protorun_flg = false;
-                                    }
-                                }
-                                if (((ts3.TotalSeconds > 0) && (ts3.TotalSeconds <= dipdly)) || ((ts3_1.TotalSeconds > 0) && (ts3_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r3priority == 0)
-                                    {
-                                        r3_incub = r3_incub.AddSeconds(dipdly);
-                                        tmr_r3_incub.Enabled = true;
-                                        tmr_r3_incub.Interval = 1000;
-                                        r3_taskcomp = r3_taskcomp.AddSeconds(dipdly);
-                                        r3_incub_Woff = r3_incub_Woff.AddSeconds(dipdly);
-                                        p5protorun_flg = true;
-                                    }
-                                    else if ((r5priority == 0) && (r3priority == 1))
-                                    {
-                                        r5_incub = r5_incub.AddSeconds(dipdly);
-                                        tmr_r5_incub.Enabled = true;
-                                        tmr_r5_incub.Interval = 1000;
-                                        r5_taskcomp = r5_taskcomp.AddSeconds(dipdly);
-                                        r5_incub_Woff = r5_incub_Woff.AddSeconds(dipdly);
-                                        p5protorun_flg = false;
-                                    }
-                                }
-                                if (((ts4.TotalSeconds > 0) && (ts4.TotalSeconds <= dipdly)) || ((ts4_1.TotalSeconds > 0) && (ts4_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r4priority == 0)
-                                    {
-                                        r4_incub = r4_incub.AddSeconds(dipdly);
-                                        tmr_r4_incub.Enabled = true;
-                                        tmr_r4_incub.Interval = 1000;
-                                        r4_taskcomp = r4_taskcomp.AddSeconds(dipdly);
-                                        r4_incub_Woff = r4_incub_Woff.AddSeconds(dipdly);
-                                        p5protorun_flg = true;
-                                    }
-                                    else if ((r5priority == 0) && (r4priority == 1))
-                                    {
-                                        r5_incub = r5_incub.AddSeconds(dipdly);
-                                        tmr_r5_incub.Enabled = true;
-                                        tmr_r5_incub.Interval = 1000;
-                                        r5_taskcomp = r5_taskcomp.AddSeconds(dipdly);
-                                        r5_incub_Woff = r5_incub_Woff.AddSeconds(dipdly);
-                                        p5protorun_flg = false;
-                                    }
-                                }
-                                if (((ts5.TotalSeconds > 0) && (ts5.TotalSeconds <= dipdly)) || ((ts5_1.TotalSeconds > 0) && (ts5_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r6priority == 0)
-                                    {
-                                        r6_incub = r6_incub.AddSeconds(dipdly);
-                                        tmr_r6_incub.Enabled = true;
-                                        tmr_r6_incub.Interval = 1000;
-                                        r6_taskcomp = r6_taskcomp.AddSeconds(dipdly);
-                                        r6_incub_Woff = r6_incub_Woff.AddSeconds(dipdly);
-                                        p5protorun_flg = true;
-                                    }
-                                    else if ((r5priority == 0) && (r6priority == 1))
-                                    {
-                                        r5_incub = r5_incub.AddSeconds(dipdly);
-                                        tmr_r5_incub.Enabled = true;
-                                        tmr_r5_incub.Interval = 1000;
-                                        r5_taskcomp = r5_taskcomp.AddSeconds(dipdly);
-                                        r5_incub_Woff = r5_incub_Woff.AddSeconds(dipdly);
-                                        p5protorun_flg = false;
-                                    }
-                                }
-                                if (((ts6.TotalSeconds > 0) && (ts6.TotalSeconds <= dipdly)) || ((ts6_1.TotalSeconds > 0) && (ts6_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r7priority == 0)
-                                    {
-                                        r7_incub = r7_incub.AddSeconds(dipdly);
-                                        tmr_r7_incub.Enabled = true;
-                                        tmr_r7_incub.Interval = 1000;
-                                        r7_taskcomp = r7_taskcomp.AddSeconds(dipdly);
-                                        r7_incub_Woff = r7_incub_Woff.AddSeconds(dipdly);
-                                        p5protorun_flg = true;
-                                    }
-                                    else if ((r5priority == 0) && (r7priority == 1))
-                                    {
-                                        r5_incub = r5_incub.AddSeconds(dipdly);
-                                        tmr_r5_incub.Enabled = true;
-                                        tmr_r5_incub.Interval = 1000;
-                                        r5_taskcomp = r5_taskcomp.AddSeconds(dipdly);
-                                        r5_incub_Woff = r5_incub_Woff.AddSeconds(dipdly);
-                                        p5protorun_flg = false;
-                                    }
-                                }
-                                if (((ts7.TotalSeconds > 0) && (ts7.TotalSeconds <= dipdly)) || ((ts7_1.TotalSeconds > 0) && (ts7_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r8priority == 0)
-                                    {
-                                        r8_incub = r8_incub.AddSeconds(dipdly);
-                                        tmr_r8_incub.Enabled = true;
-                                        tmr_r8_incub.Interval = 1000;
-                                        r8_taskcomp = r8_taskcomp.AddSeconds(dipdly);
-                                        r8_incub_Woff = r8_incub_Woff.AddSeconds(dipdly);
-                                        p5protorun_flg = true;
-                                    }
-                                    else if ((r5priority == 0) && (r8priority == 1))
-                                    {
-                                        r5_incub = r5_incub.AddSeconds(dipdly);
-                                        tmr_r5_incub.Enabled = true;
-                                        tmr_r5_incub.Interval = 1000;
-                                        r5_taskcomp = r5_taskcomp.AddSeconds(dipdly);
-                                        r5_incub_Woff = r5_incub_Woff.AddSeconds(dipdly);
-                                        p5protorun_flg = false;
-                                    }
-                                }
-                                if (((ts8.TotalSeconds > 0) && (ts8.TotalSeconds <= dipdly)) || ((ts8_1.TotalSeconds > 0) && (ts8_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r9priority == 0)
-                                    {
-                                        r9_incub = r9_incub.AddSeconds(dipdly);
-                                        tmr_r9_incub.Enabled = true;
-                                        tmr_r9_incub.Interval = 1000;
-                                        r9_taskcomp = r9_taskcomp.AddSeconds(dipdly);
-                                        r9_incub_Woff = r9_incub_Woff.AddSeconds(dipdly);
-                                        p5protorun_flg = true;
-                                    }
-                                    else if ((r5priority == 0) && (r9priority == 1))
-                                    {
-                                        r5_incub = r5_incub.AddSeconds(dipdly);
-                                        tmr_r5_incub.Enabled = true;
-                                        tmr_r5_incub.Interval = 1000;
-                                        r5_taskcomp = r5_taskcomp.AddSeconds(dipdly);
-                                        r5_incub_Woff = r5_incub_Woff.AddSeconds(dipdly);
-                                        p5protorun_flg = false;
-                                    }
-                                }
-                            }
-                        }
-                        catch (Exception d3)
-                        {
-                            RequiredVariables.writeerrorlogfile("While checking priority tasks scheduling in p5proto check rack", "In Check_priority_times in Form_RunProto");
-                        }
-                        break;
-                    }
-                case 6:
-                    {
-                        try
-                        {
-                            if ((r2priority == 0) && (r3priority == 0) && (r4priority == 0) && (r5priority == 0) && (r1priority == 0) && (r7priority == 0) && (r8priority == 0) && (r9priority == 0))
-                                p6protorun_flg = true;
-                            else
-                            {
-                                //New code added on 15-11-2023 as checked for priority
-                                ts1 = r6_incub.Subtract(r1_incub);
-                                ts2 = r6_incub.Subtract(r2_incub);
-                                ts3 = r6_incub.Subtract(r3_incub);
-                                ts4 = r6_incub.Subtract(r4_incub);
-                                ts5 = r6_incub.Subtract(r5_incub);
-                                ts6 = r6_incub.Subtract(r7_incub);
-                                ts7 = r6_incub.Subtract(r8_incub);
-                                ts8 = r6_incub.Subtract(r9_incub);
-
-                                ts1_1 = r1_incub.Subtract(r6_incub);
-                                ts2_1 = r2_incub.Subtract(r6_incub);
-                                ts3_1 = r3_incub.Subtract(r6_incub);
-                                ts4_1 = r4_incub.Subtract(r6_incub);
-                                ts5_1 = r5_incub.Subtract(r6_incub);
-                                ts6_1 = r7_incub.Subtract(r6_incub);
-                                ts7_1 = r8_incub.Subtract(r6_incub);
-                                ts8_1 = r9_incub.Subtract(r6_incub);
-
-                                if (((ts1.TotalSeconds > 0) && (ts1.TotalSeconds <= dipdly)) || ((ts1_1.TotalSeconds > 0) && (ts1_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r1priority == 0)
-                                    {
-                                        r1_incub = r1_incub.AddSeconds(dipdly);
-                                        tmr_r1_incub.Enabled = true;
-                                        tmr_r1_incub.Interval = 1000;
-                                        r1_taskcomp = r1_taskcomp.AddSeconds(dipdly);
-                                        r1_incub_Woff = r1_incub_Woff.AddSeconds(dipdly);
-                                        p6protorun_flg = true;
-                                    }
-                                    else if ((r6priority == 0) && (r1priority == 1))
-                                    {
-                                        r6_incub = r6_incub.AddSeconds(dipdly);
-                                        tmr_r6_incub.Enabled = true;
-                                        tmr_r6_incub.Interval = 1000;
-                                        r6_taskcomp = r6_taskcomp.AddSeconds(dipdly);
-                                        r6_incub_Woff = r6_incub_Woff.AddSeconds(dipdly);
-                                        p6protorun_flg = false;
-                                    }
-                                }
-                                if (((ts2.TotalSeconds > 0) && (ts2.TotalSeconds <= dipdly)) || ((ts2_1.TotalSeconds > 0) && (ts2_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r2priority == 0)
-                                    {
-                                        r2_incub = r2_incub.AddSeconds(dipdly);
-                                        tmr_r2_incub.Enabled = true;
-                                        tmr_r2_incub.Interval = 1000;
-                                        r2_taskcomp = r2_taskcomp.AddSeconds(dipdly);
-                                        r2_incub_Woff = r2_incub_Woff.AddSeconds(dipdly);
-                                        p6protorun_flg = true;
-                                    }
-                                    else if ((r6priority == 0) && (r2priority == 1))
-                                    {
-                                        r6_incub = r6_incub.AddSeconds(dipdly);
-                                        tmr_r6_incub.Enabled = true;
-                                        tmr_r6_incub.Interval = 1000;
-                                        r6_taskcomp = r6_taskcomp.AddSeconds(dipdly);
-                                        r6_incub_Woff = r6_incub_Woff.AddSeconds(dipdly);
-                                        p6protorun_flg = false;
-                                    }
-                                }
-                                if (((ts3.TotalSeconds > 0) && (ts3.TotalSeconds <= dipdly)) || ((ts3_1.TotalSeconds > 0) && (ts3_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r3priority == 0)
-                                    {
-                                        r3_incub = r3_incub.AddSeconds(dipdly);
-                                        tmr_r3_incub.Enabled = true;
-                                        tmr_r3_incub.Interval = 1000;
-                                        r3_taskcomp = r3_taskcomp.AddSeconds(dipdly);
-                                        r3_incub_Woff = r3_incub_Woff.AddSeconds(dipdly);
-                                        p6protorun_flg = true;
-                                    }
-                                    else if ((r3priority == 1) && (r6priority == 0))
-                                    {
-                                        r6_incub = r6_incub.AddSeconds(dipdly);
-                                        tmr_r6_incub.Enabled = true;
-                                        tmr_r6_incub.Interval = 1000;
-                                        r6_taskcomp = r6_taskcomp.AddSeconds(dipdly);
-                                        r6_incub_Woff = r6_incub_Woff.AddSeconds(dipdly);
-                                        p6protorun_flg = false;
-                                    }
-                                }
-                                if (((ts4.TotalSeconds > 0) && (ts4.TotalSeconds <= dipdly)) || ((ts4_1.TotalSeconds > 0) && (ts4_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r4priority == 0)
-                                    {
-                                        r4_incub = r4_incub.AddSeconds(dipdly);
-                                        tmr_r4_incub.Enabled = true;
-                                        tmr_r4_incub.Interval = 1000;
-                                        r4_taskcomp = r4_taskcomp.AddSeconds(dipdly);
-                                        r4_incub_Woff = r4_incub_Woff.AddSeconds(dipdly);
-                                        p6protorun_flg = true;
-                                    }
-                                    else if ((r6priority == 0) && (r4priority == 1))
-                                    {
-                                        r6_incub = r6_incub.AddSeconds(dipdly);
-                                        tmr_r6_incub.Enabled = true;
-                                        tmr_r6_incub.Interval = 1000;
-                                        r6_taskcomp = r6_taskcomp.AddSeconds(dipdly);
-                                        r6_incub_Woff = r6_incub_Woff.AddSeconds(dipdly);
-                                        p6protorun_flg = false;
-                                    }
-                                }
-                                if (((ts5.TotalSeconds > 0) && (ts5.TotalSeconds <= dipdly)) || ((ts5_1.TotalSeconds > 0) && (ts5_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r5priority == 0)
-                                    {
-                                        r5_incub = r5_incub.AddSeconds(dipdly);
-                                        tmr_r5_incub.Enabled = true;
-                                        tmr_r5_incub.Interval = 1000;
-                                        r5_taskcomp = r5_taskcomp.AddSeconds(dipdly);
-                                        r5_incub_Woff = r5_incub_Woff.AddSeconds(dipdly);
-                                        p6protorun_flg = true;
-                                    }
-                                    else if ((r6priority == 0) && (r5priority == 1))
-                                    {
-                                        r6_incub = r6_incub.AddSeconds(dipdly);
-                                        tmr_r6_incub.Enabled = true;
-                                        tmr_r6_incub.Interval = 1000;
-                                        r6_taskcomp = r6_taskcomp.AddSeconds(dipdly);
-                                        r6_incub_Woff = r6_incub_Woff.AddSeconds(dipdly);
-                                        p6protorun_flg = false;
-                                    }
-                                }
-                                if (((ts6.TotalSeconds > 0) && (ts6.TotalSeconds <= dipdly)) || ((ts6_1.TotalSeconds > 0) && (ts6_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r7priority == 0)
-                                    {
-                                        r7_incub = r7_incub.AddSeconds(dipdly);
-                                        tmr_r7_incub.Enabled = true;
-                                        tmr_r7_incub.Interval = 1000;
-                                        r7_taskcomp = r7_taskcomp.AddSeconds(dipdly);
-                                        r7_incub_Woff = r7_incub_Woff.AddSeconds(dipdly);
-                                        p6protorun_flg = true;
-                                    }
-                                    else if ((r6priority == 0) && (r7priority == 1))
-                                    {
-                                        r6_incub = r6_incub.AddSeconds(dipdly);
-                                        tmr_r6_incub.Enabled = true;
-                                        tmr_r6_incub.Interval = 1000;
-                                        r6_taskcomp = r6_taskcomp.AddSeconds(dipdly);
-                                        r6_incub_Woff = r6_incub_Woff.AddSeconds(dipdly);
-                                        p6protorun_flg = false;
-                                    }
-                                }
-                                if (((ts7.TotalSeconds > 0) && (ts7.TotalSeconds <= dipdly)) || ((ts7_1.TotalSeconds > 0) && (ts7_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r8priority == 0)
-                                    {
-                                        r8_incub = r8_incub.AddSeconds(dipdly);
-                                        tmr_r8_incub.Enabled = true;
-                                        tmr_r8_incub.Interval = 1000;
-                                        r8_taskcomp = r8_taskcomp.AddSeconds(dipdly);
-                                        r8_incub_Woff = r8_incub_Woff.AddSeconds(dipdly);
-                                        p6protorun_flg = true;
-                                    }
-                                    else if ((r6priority == 0) && (r8priority == 1))
-                                    {
-                                        r6_incub = r6_incub.AddSeconds(dipdly);
-                                        tmr_r6_incub.Enabled = true;
-                                        tmr_r6_incub.Interval = 1000;
-                                        r6_taskcomp = r6_taskcomp.AddSeconds(dipdly);
-                                        r6_incub_Woff = r6_incub_Woff.AddSeconds(dipdly);
-                                        p6protorun_flg = false;
-                                    }
-                                }
-                                if (((ts8.TotalSeconds > 0) && (ts8.TotalSeconds <= dipdly)) || ((ts8_1.TotalSeconds > 0) && (ts8_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r9priority == 0)
-                                    {
-                                        r9_incub = r9_incub.AddSeconds(dipdly);
-                                        tmr_r9_incub.Enabled = true;
-                                        tmr_r9_incub.Interval = 1000;
-                                        r9_taskcomp = r9_taskcomp.AddSeconds(dipdly);
-                                        r9_incub_Woff = r9_incub_Woff.AddSeconds(dipdly);
-                                        p6protorun_flg = true;
-                                    }
-                                    else if ((r6priority == 0) && (r9priority == 1))
-                                    {
-                                        r6_incub = r6_incub.AddSeconds(dipdly);
-                                        tmr_r6_incub.Enabled = true;
-                                        tmr_r6_incub.Interval = 1000;
-                                        r6_taskcomp = r6_taskcomp.AddSeconds(dipdly);
-                                        r6_incub_Woff = r6_incub_Woff.AddSeconds(dipdly);
-                                        p6protorun_flg = false;
-                                    }
-                                }
-                            }
-                        }
-                        catch (Exception d3)
-                        {
-                            RequiredVariables.writeerrorlogfile("While checking priority tasks scheduling in p6proto check rack", "In Check_priority_times in Form_RunProto");
-                        }
-                        break;
-                    }
-                case 7:   //All three cases has to implement tommorow and check
-                    {
-                        try
-                        {
-                            if ((r2priority == 0) && (r3priority == 0) && (r4priority == 0) && (r5priority == 0) && (r1priority == 0) && (r6priority == 0) && (r8priority == 0) && (r9priority == 0))
-                                p7protorun_flg = true;
-                            else
-                            {
-                                //New code added on 15-11-2023 as checked for priority
-                                ts1 = r7_incub.Subtract(r1_incub);
-                                ts2 = r7_incub.Subtract(r2_incub);
-                                ts3 = r7_incub.Subtract(r3_incub);
-                                ts4 = r7_incub.Subtract(r4_incub);
-                                ts5 = r7_incub.Subtract(r5_incub);
-                                ts6 = r7_incub.Subtract(r6_incub);
-                                ts7 = r7_incub.Subtract(r8_incub);
-                                ts8 = r7_incub.Subtract(r9_incub);
-
-                                ts1_1 = r1_incub.Subtract(r7_incub);
-                                ts2_1 = r2_incub.Subtract(r7_incub);
-                                ts3_1 = r3_incub.Subtract(r7_incub);
-                                ts4_1 = r4_incub.Subtract(r7_incub);
-                                ts5_1 = r5_incub.Subtract(r7_incub);
-                                ts6_1 = r6_incub.Subtract(r7_incub);
-                                ts7_1 = r8_incub.Subtract(r7_incub);
-                                ts8_1 = r9_incub.Subtract(r7_incub);
-
-                                if (((ts1.TotalSeconds > 0) && (ts1.TotalSeconds <= dipdly)) || ((ts1_1.TotalSeconds > 0) && (ts1_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r1priority == 0)
-                                    {
-                                        r1_incub = r1_incub.AddSeconds(dipdly);
-                                        tmr_r1_incub.Enabled = true;
-                                        tmr_r1_incub.Interval = 1000;
-                                        r1_taskcomp = r1_taskcomp.AddSeconds(dipdly);
-                                        r1_incub_Woff = r1_incub_Woff.AddSeconds(dipdly);
-                                        p7protorun_flg = true;
-                                    }
-                                    else if ((r7priority == 0) && (r1priority == 1))
-                                    {
-                                        r7_incub = r7_incub.AddSeconds(dipdly);
-                                        tmr_r7_incub.Enabled = true;
-                                        tmr_r7_incub.Interval = 1000;
-                                        r7_taskcomp = r7_taskcomp.AddSeconds(dipdly);
-                                        r7_incub_Woff = r7_incub_Woff.AddSeconds(dipdly);
-                                        p7protorun_flg = false;
-                                    }
-                                }
-                                if (((ts2.TotalSeconds > 0) && (ts2.TotalSeconds <= dipdly)) || ((ts2_1.TotalSeconds > 0) && (ts2_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r2priority == 0)
-                                    {
-                                        r2_incub = r2_incub.AddSeconds(dipdly);
-                                        tmr_r2_incub.Enabled = true;
-                                        tmr_r2_incub.Interval = 1000;
-                                        r2_taskcomp = r2_taskcomp.AddSeconds(dipdly);
-                                        r2_incub_Woff = r2_incub_Woff.AddSeconds(dipdly);
-                                        p7protorun_flg = true;
-                                    }
-                                    else if ((r7priority == 0) && (r2priority == 1))
-                                    {
-                                        r7_incub = r7_incub.AddSeconds(dipdly);
-                                        tmr_r7_incub.Enabled = true;
-                                        tmr_r7_incub.Interval = 1000;
-                                        r7_taskcomp = r7_taskcomp.AddSeconds(dipdly);
-                                        r7_incub_Woff = r7_incub_Woff.AddSeconds(dipdly);
-                                        p7protorun_flg = false;
-                                    }
-                                }
-                                if (((ts3.TotalSeconds > 0) && (ts3.TotalSeconds <= dipdly)) || ((ts3_1.TotalSeconds > 0) && (ts3_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r3priority == 0)
-                                    {
-                                        r3_incub = r3_incub.AddSeconds(dipdly);
-                                        tmr_r3_incub.Enabled = true;
-                                        tmr_r3_incub.Interval = 1000;
-                                        r3_taskcomp = r3_taskcomp.AddSeconds(dipdly);
-                                        r3_incub_Woff = r3_incub_Woff.AddSeconds(dipdly);
-                                        p7protorun_flg = true;
-                                    }
-                                    else if ((r3priority == 1) && (r7priority == 0))
-                                    {
-                                        r7_incub = r7_incub.AddSeconds(dipdly);
-                                        tmr_r7_incub.Enabled = true;
-                                        tmr_r7_incub.Interval = 1000;
-                                        r7_taskcomp = r7_taskcomp.AddSeconds(dipdly);
-                                        r7_incub_Woff = r7_incub_Woff.AddSeconds(dipdly);
-                                        p7protorun_flg = false;
-                                    }
-                                }
-                                if (((ts4.TotalSeconds > 0) && (ts4.TotalSeconds <= dipdly)) || ((ts4_1.TotalSeconds > 0) && (ts4_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r4priority == 0)
-                                    {
-                                        r4_incub = r4_incub.AddSeconds(dipdly);
-                                        tmr_r4_incub.Enabled = true;
-                                        tmr_r4_incub.Interval = 1000;
-                                        r4_taskcomp = r4_taskcomp.AddSeconds(dipdly);
-                                        r4_incub_Woff = r4_incub_Woff.AddSeconds(dipdly);
-                                        p7protorun_flg = true;
-                                    }
-                                    else if ((r7priority == 0) && (r4priority == 1))
-                                    {
-                                        r7_incub = r7_incub.AddSeconds(dipdly);
-                                        tmr_r7_incub.Enabled = true;
-                                        tmr_r7_incub.Interval = 1000;
-                                        r7_taskcomp = r7_taskcomp.AddSeconds(dipdly);
-                                        r7_incub_Woff = r7_incub_Woff.AddSeconds(dipdly);
-                                        p7protorun_flg = false;
-                                    }
-                                }
-                                if (((ts5.TotalSeconds > 0) && (ts5.TotalSeconds <= dipdly)) || ((ts5_1.TotalSeconds > 0) && (ts5_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r5priority == 0)
-                                    {
-                                        r5_incub = r5_incub.AddSeconds(dipdly);
-                                        tmr_r5_incub.Enabled = true;
-                                        tmr_r5_incub.Interval = 1000;
-                                        r5_taskcomp = r5_taskcomp.AddSeconds(dipdly);
-                                        r5_incub_Woff = r5_incub_Woff.AddSeconds(dipdly);
-                                        p7protorun_flg = true;
-                                    }
-                                    else if ((r7priority == 0) && (r5priority == 1))
-                                    {
-                                        r7_incub = r7_incub.AddSeconds(dipdly);
-                                        tmr_r7_incub.Enabled = true;
-                                        tmr_r7_incub.Interval = 1000;
-                                        r7_taskcomp = r7_taskcomp.AddSeconds(dipdly);
-                                        r7_incub_Woff = r7_incub_Woff.AddSeconds(dipdly);
-                                        p7protorun_flg = false;
-                                    }
-                                }
-                                if (((ts6.TotalSeconds > 0) && (ts6.TotalSeconds <= dipdly)) || ((ts6_1.TotalSeconds > 0) && (ts6_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r6priority == 0)
-                                    {
-                                        r6_incub = r6_incub.AddSeconds(dipdly);
-                                        tmr_r6_incub.Enabled = true;
-                                        tmr_r6_incub.Interval = 1000;
-                                        r6_taskcomp = r6_taskcomp.AddSeconds(dipdly);
-                                        r6_incub_Woff = r6_incub_Woff.AddSeconds(dipdly);
-                                        p7protorun_flg = true;
-                                    }
-                                    else if ((r6priority == 1) && (r7priority == 0))
-                                    {
-                                        r7_incub = r7_incub.AddSeconds(dipdly);
-                                        tmr_r7_incub.Enabled = true;
-                                        tmr_r7_incub.Interval = 1000;
-                                        r7_taskcomp = r7_taskcomp.AddSeconds(dipdly);
-                                        r7_incub_Woff = r7_incub_Woff.AddSeconds(dipdly);
-                                        p7protorun_flg = false;
-                                    }
-                                }
-                                if (((ts7.TotalSeconds > 0) && (ts7.TotalSeconds <= dipdly)) || ((ts7_1.TotalSeconds > 0) && (ts7_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r8priority == 0)
-                                    {
-                                        r8_incub = r8_incub.AddSeconds(dipdly);
-                                        tmr_r8_incub.Enabled = true;
-                                        tmr_r8_incub.Interval = 1000;
-                                        r8_taskcomp = r8_taskcomp.AddSeconds(dipdly);
-                                        r8_incub_Woff = r8_incub_Woff.AddSeconds(dipdly);
-                                        p6protorun_flg = true;
-                                    }
-                                    else if ((r7priority == 0) && (r8priority == 1))
-                                    {
-                                        r7_incub = r7_incub.AddSeconds(dipdly);
-                                        tmr_r7_incub.Enabled = true;
-                                        tmr_r7_incub.Interval = 1000;
-                                        r7_taskcomp = r7_taskcomp.AddSeconds(dipdly);
-                                        r7_incub_Woff = r7_incub_Woff.AddSeconds(dipdly);
-                                        p7protorun_flg = false;
-                                    }
-                                }
-                                if (((ts8.TotalSeconds > 0) && (ts8.TotalSeconds <= dipdly)) || ((ts8_1.TotalSeconds > 0) && (ts8_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r9priority == 0)
-                                    {
-                                        r9_incub = r9_incub.AddSeconds(dipdly);
-                                        tmr_r9_incub.Enabled = true;
-                                        tmr_r9_incub.Interval = 1000;
-                                        r9_taskcomp = r9_taskcomp.AddSeconds(dipdly);
-                                        r9_incub_Woff = r9_incub_Woff.AddSeconds(dipdly);
-                                        p7protorun_flg = true;
-                                    }
-                                    else if ((r7priority == 0) && (r9priority == 1))
-                                    {
-                                        r7_incub = r7_incub.AddSeconds(dipdly);
-                                        tmr_r7_incub.Enabled = true;
-                                        tmr_r7_incub.Interval = 1000;
-                                        r7_taskcomp = r7_taskcomp.AddSeconds(dipdly);
-                                        r7_incub_Woff = r7_incub_Woff.AddSeconds(dipdly);
-                                        p7protorun_flg = false;
-                                    }
-                                }
-                            }
-                        }
-                        catch (Exception d3)
-                        {
-                            RequiredVariables.writeerrorlogfile("While checking priority tasks scheduling in p6proto check rack", "In Check_priority_times in Form_RunProto");
-                        }
-                        break;
-                    }
-                case 8:
-                    {
-                        try
-                        {
-                            if ((r2priority == 0) && (r3priority == 0) && (r4priority == 0) && (r5priority == 0) && (r1priority == 0) && (r7priority == 0) && (r6priority == 0) && (r9priority == 0))
-                                p8protorun_flg = true;
-                            else
-                            {
-                                //New code added on 27-11-2023 as checked for priority
-                                ts1 = r8_incub.Subtract(r1_incub);
-                                ts2 = r8_incub.Subtract(r2_incub);
-                                ts3 = r8_incub.Subtract(r3_incub);
-                                ts4 = r8_incub.Subtract(r4_incub);
-                                ts5 = r8_incub.Subtract(r5_incub);
-                                ts6 = r8_incub.Subtract(r6_incub);
-                                ts7 = r8_incub.Subtract(r7_incub);
-                                ts8 = r8_incub.Subtract(r9_incub);
-
-                                ts1_1 = r1_incub.Subtract(r8_incub);
-                                ts2_1 = r2_incub.Subtract(r8_incub);
-                                ts3_1 = r3_incub.Subtract(r8_incub);
-                                ts4_1 = r4_incub.Subtract(r8_incub);
-                                ts5_1 = r5_incub.Subtract(r8_incub);
-                                ts6_1 = r6_incub.Subtract(r8_incub);
-                                ts7_1 = r7_incub.Subtract(r8_incub);
-                                ts8_1 = r9_incub.Subtract(r8_incub);
-
-                                if (((ts1.TotalSeconds > 0) && (ts1.TotalSeconds <= dipdly)) || ((ts1_1.TotalSeconds > 0) && (ts1_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r1priority == 0)
-                                    {
-                                        r1_incub = r1_incub.AddSeconds(dipdly);
-                                        tmr_r1_incub.Enabled = true;
-                                        tmr_r1_incub.Interval = 1000;
-                                        r1_taskcomp = r1_taskcomp.AddSeconds(dipdly);
-                                        r1_incub_Woff = r1_incub_Woff.AddSeconds(dipdly);
-                                        p8protorun_flg = true;
-                                    }
-                                    else if ((r8priority == 0) && (r1priority == 1))
-                                    {
-                                        r8_incub = r8_incub.AddSeconds(dipdly);
-                                        tmr_r8_incub.Enabled = true;
-                                        tmr_r8_incub.Interval = 1000;
-                                        r8_taskcomp = r8_taskcomp.AddSeconds(dipdly);
-                                        r8_incub_Woff = r8_incub_Woff.AddSeconds(dipdly);
-                                        p8protorun_flg = false;
-                                    }
-                                }
-                                if (((ts2.TotalSeconds > 0) && (ts2.TotalSeconds <= dipdly)) || ((ts2_1.TotalSeconds > 0) && (ts2_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r2priority == 0)
-                                    {
-                                        r2_incub = r2_incub.AddSeconds(dipdly);
-                                        tmr_r2_incub.Enabled = true;
-                                        tmr_r2_incub.Interval = 1000;
-                                        r2_taskcomp = r2_taskcomp.AddSeconds(dipdly);
-                                        r2_incub_Woff = r2_incub_Woff.AddSeconds(dipdly);
-                                        p8protorun_flg = true;
-                                    }
-                                    else if ((r8priority == 0) && (r2priority == 1))
-                                    {
-                                        r8_incub = r8_incub.AddSeconds(dipdly);
-                                        tmr_r8_incub.Enabled = true;
-                                        tmr_r8_incub.Interval = 1000;
-                                        r8_taskcomp = r8_taskcomp.AddSeconds(dipdly);
-                                        r8_incub_Woff = r8_incub_Woff.AddSeconds(dipdly);
-                                        p8protorun_flg = false;
-                                    }
-                                }
-                                if (((ts3.TotalSeconds > 0) && (ts3.TotalSeconds <= dipdly)) || ((ts3_1.TotalSeconds > 0) && (ts3_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r3priority == 0)
-                                    {
-                                        r3_incub = r3_incub.AddSeconds(dipdly);
-                                        tmr_r3_incub.Enabled = true;
-                                        tmr_r3_incub.Interval = 1000;
-                                        r3_taskcomp = r3_taskcomp.AddSeconds(dipdly);
-                                        r3_incub_Woff = r3_incub_Woff.AddSeconds(dipdly);
-                                        p8protorun_flg = true;
-                                    }
-                                    else if ((r3priority == 1) && (r8priority == 0))
-                                    {
-                                        r8_incub = r8_incub.AddSeconds(dipdly);
-                                        tmr_r8_incub.Enabled = true;
-                                        tmr_r8_incub.Interval = 1000;
-                                        r8_taskcomp = r8_taskcomp.AddSeconds(dipdly);
-                                        r8_incub_Woff = r8_incub_Woff.AddSeconds(dipdly);
-                                        p8protorun_flg = false;
-                                    }
-                                }
-                                if (((ts4.TotalSeconds > 0) && (ts4.TotalSeconds <= dipdly)) || ((ts4_1.TotalSeconds > 0) && (ts4_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r4priority == 0)
-                                    {
-                                        r4_incub = r4_incub.AddSeconds(dipdly);
-                                        tmr_r4_incub.Enabled = true;
-                                        tmr_r4_incub.Interval = 1000;
-                                        r4_taskcomp = r4_taskcomp.AddSeconds(dipdly);
-                                        r4_incub_Woff = r4_incub_Woff.AddSeconds(dipdly);
-                                        p8protorun_flg = true;
-                                    }
-                                    else if ((r8priority == 0) && (r4priority == 1))
-                                    {
-                                        r8_incub = r8_incub.AddSeconds(dipdly);
-                                        tmr_r8_incub.Enabled = true;
-                                        tmr_r8_incub.Interval = 1000;
-                                        r8_taskcomp = r8_taskcomp.AddSeconds(dipdly);
-                                        r8_incub_Woff = r8_incub_Woff.AddSeconds(dipdly);
-                                        p8protorun_flg = false;
-                                    }
-                                }
-                                if (((ts5.TotalSeconds > 0) && (ts5.TotalSeconds <= dipdly)) || ((ts5_1.TotalSeconds > 0) && (ts5_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r5priority == 0)
-                                    {
-                                        r5_incub = r5_incub.AddSeconds(dipdly);
-                                        tmr_r5_incub.Enabled = true;
-                                        tmr_r5_incub.Interval = 1000;
-                                        r5_taskcomp = r5_taskcomp.AddSeconds(dipdly);
-                                        r5_incub_Woff = r5_incub_Woff.AddSeconds(dipdly);
-                                        p8protorun_flg = true;
-                                    }
-                                    else if ((r8priority == 0) && (r5priority == 1))
-                                    {
-                                        r8_incub = r8_incub.AddSeconds(dipdly);
-                                        tmr_r8_incub.Enabled = true;
-                                        tmr_r8_incub.Interval = 1000;
-                                        r8_taskcomp = r8_taskcomp.AddSeconds(dipdly);
-                                        r8_incub_Woff = r8_incub_Woff.AddSeconds(dipdly);
-                                        p8protorun_flg = false;
-                                    }
-                                }
-                                if (((ts6.TotalSeconds > 0) && (ts6.TotalSeconds <= dipdly)) || ((ts6_1.TotalSeconds > 0) && (ts6_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r6priority == 0)
-                                    {
-                                        r6_incub = r6_incub.AddSeconds(dipdly);
-                                        tmr_r6_incub.Enabled = true;
-                                        tmr_r6_incub.Interval = 1000;
-                                        r6_taskcomp = r6_taskcomp.AddSeconds(dipdly);
-                                        r6_incub_Woff = r6_incub_Woff.AddSeconds(dipdly);
-                                        p8protorun_flg = true;
-                                    }
-                                    else if ((r6priority == 1) && (r7priority == 0))
-                                    {
-                                        r8_incub = r8_incub.AddSeconds(dipdly);
-                                        tmr_r8_incub.Enabled = true;
-                                        tmr_r8_incub.Interval = 1000;
-                                        r8_taskcomp = r8_taskcomp.AddSeconds(dipdly);
-                                        r8_incub_Woff = r8_incub_Woff.AddSeconds(dipdly);
-                                        p8protorun_flg = false;
-                                    }
-                                }
-                                if (((ts7.TotalSeconds > 0) && (ts7.TotalSeconds <= dipdly)) || ((ts7_1.TotalSeconds > 0) && (ts7_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r7priority == 0)
-                                    {
-                                        r7_incub = r7_incub.AddSeconds(dipdly);
-                                        tmr_r7_incub.Enabled = true;
-                                        tmr_r7_incub.Interval = 1000;
-                                        r7_taskcomp = r7_taskcomp.AddSeconds(dipdly);
-                                        r7_incub_Woff = r7_incub_Woff.AddSeconds(dipdly);
-                                        p8protorun_flg = true;
-                                    }
-                                    else if ((r8priority == 0) && (r7priority == 1))
-                                    {
-                                        r8_incub = r8_incub.AddSeconds(dipdly);
-                                        tmr_r8_incub.Enabled = true;
-                                        tmr_r8_incub.Interval = 1000;
-                                        r8_taskcomp = r8_taskcomp.AddSeconds(dipdly);
-                                        r8_incub_Woff = r8_incub_Woff.AddSeconds(dipdly);
-                                        p8protorun_flg = false;
-                                    }
-                                }
-                                if (((ts8.TotalSeconds > 0) && (ts8.TotalSeconds <= dipdly)) || ((ts8_1.TotalSeconds > 0) && (ts8_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r9priority == 0)
-                                    {
-                                        r9_incub = r9_incub.AddSeconds(dipdly);
-                                        tmr_r9_incub.Enabled = true;
-                                        tmr_r9_incub.Interval = 1000;
-                                        r9_taskcomp = r9_taskcomp.AddSeconds(dipdly);
-                                        r9_incub_Woff = r9_incub_Woff.AddSeconds(dipdly);
-                                        p8protorun_flg = true;
-                                    }
-                                    else if ((r8priority == 0) && (r9priority == 1))
-                                    {
-                                        r8_incub = r8_incub.AddSeconds(dipdly);
-                                        tmr_r8_incub.Enabled = true;
-                                        tmr_r8_incub.Interval = 1000;
-                                        r8_taskcomp = r8_taskcomp.AddSeconds(dipdly);
-                                        r8_incub_Woff = r8_incub_Woff.AddSeconds(dipdly);
-                                        p8protorun_flg = false;
-                                    }
-                                }
-                            }
-                        }
-                        catch (Exception d3)
-                        {
-                            RequiredVariables.writeerrorlogfile("While checking priority tasks scheduling in p6proto check rack", "In Check_priority_times in Form_RunProto");
-                        }
-                        break;
-                    }
-                case 9:
-                    {
-                        try
-                        {
-                            if ((r2priority == 0) && (r3priority == 0) && (r4priority == 0) && (r5priority == 0) && (r1priority == 0) && (r7priority == 0) && (r8priority == 0) && (r6priority == 0))
-                                p9protorun_flg = true;
-                            else
-                            {
-                                //New code added on 27-11-2023 as checked for priority
-                                ts1 = r9_incub.Subtract(r1_incub);
-                                ts2 = r9_incub.Subtract(r2_incub);
-                                ts3 = r9_incub.Subtract(r3_incub);
-                                ts4 = r9_incub.Subtract(r4_incub);
-                                ts5 = r9_incub.Subtract(r5_incub);
-                                ts6 = r9_incub.Subtract(r6_incub);
-                                ts7 = r9_incub.Subtract(r7_incub);
-                                ts8 = r9_incub.Subtract(r8_incub);
-
-                                ts1_1 = r1_incub.Subtract(r9_incub);
-                                ts2_1 = r2_incub.Subtract(r9_incub);
-                                ts3_1 = r3_incub.Subtract(r9_incub);
-                                ts4_1 = r4_incub.Subtract(r9_incub);
-                                ts5_1 = r5_incub.Subtract(r9_incub);
-                                ts6_1 = r6_incub.Subtract(r9_incub);
-                                ts7_1 = r7_incub.Subtract(r9_incub);
-                                ts8_1 = r8_incub.Subtract(r9_incub);
-
-                                if (((ts1.TotalSeconds > 0) && (ts1.TotalSeconds <= dipdly)) || ((ts1_1.TotalSeconds > 0) && (ts1_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r1priority == 0)
-                                    {
-                                        r1_incub = r1_incub.AddSeconds(dipdly);
-                                        tmr_r1_incub.Enabled = true;
-                                        tmr_r1_incub.Interval = 1000;
-                                        r1_taskcomp = r1_taskcomp.AddSeconds(dipdly);
-                                        r1_incub_Woff = r1_incub_Woff.AddSeconds(dipdly);
-                                        p9protorun_flg = true;
-                                    }
-                                    else if ((r9priority == 0) && (r1priority == 1))
-                                    {
-                                        r9_incub = r9_incub.AddSeconds(dipdly);
-                                        tmr_r9_incub.Enabled = true;
-                                        tmr_r9_incub.Interval = 1000;
-                                        r9_taskcomp = r9_taskcomp.AddSeconds(dipdly);
-                                        r9_incub_Woff = r9_incub_Woff.AddSeconds(dipdly);
-                                        p9protorun_flg = false;
-                                    }
-                                }
-                                if (((ts2.TotalSeconds > 0) && (ts2.TotalSeconds <= dipdly)) || ((ts2_1.TotalSeconds > 0) && (ts2_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r2priority == 0)
-                                    {
-                                        r2_incub = r2_incub.AddSeconds(dipdly);
-                                        tmr_r2_incub.Enabled = true;
-                                        tmr_r2_incub.Interval = 1000;
-                                        r2_taskcomp = r2_taskcomp.AddSeconds(dipdly);
-                                        r2_incub_Woff = r2_incub_Woff.AddSeconds(dipdly);
-                                        p9protorun_flg = true;
-                                    }
-                                    else if ((r9priority == 0) && (r2priority == 1))
-                                    {
-                                        r9_incub = r9_incub.AddSeconds(dipdly);
-                                        tmr_r9_incub.Enabled = true;
-                                        tmr_r9_incub.Interval = 1000;
-                                        r9_taskcomp = r9_taskcomp.AddSeconds(dipdly);
-                                        r9_incub_Woff = r9_incub_Woff.AddSeconds(dipdly);
-                                        p9protorun_flg = false;
-                                    }
-                                }
-                                if (((ts3.TotalSeconds > 0) && (ts3.TotalSeconds <= dipdly)) || ((ts3_1.TotalSeconds > 0) && (ts3_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r3priority == 0)
-                                    {
-                                        r3_incub = r3_incub.AddSeconds(dipdly);
-                                        tmr_r3_incub.Enabled = true;
-                                        tmr_r3_incub.Interval = 1000;
-                                        r3_taskcomp = r3_taskcomp.AddSeconds(dipdly);
-                                        r3_incub_Woff = r3_incub_Woff.AddSeconds(dipdly);
-                                        p9protorun_flg = true;
-                                    }
-                                    else if ((r3priority == 1) && (r9priority == 0))
-                                    {
-                                        r9_incub = r9_incub.AddSeconds(dipdly);
-                                        tmr_r9_incub.Enabled = true;
-                                        tmr_r9_incub.Interval = 1000;
-                                        r9_taskcomp = r9_taskcomp.AddSeconds(dipdly);
-                                        r9_incub_Woff = r9_incub_Woff.AddSeconds(dipdly);
-                                        p9protorun_flg = false;
-                                    }
-                                }
-                                if (((ts4.TotalSeconds > 0) && (ts4.TotalSeconds <= dipdly)) || ((ts4_1.TotalSeconds > 0) && (ts4_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r4priority == 0)
-                                    {
-                                        r4_incub = r4_incub.AddSeconds(dipdly);
-                                        tmr_r4_incub.Enabled = true;
-                                        tmr_r4_incub.Interval = 1000;
-                                        r4_taskcomp = r4_taskcomp.AddSeconds(dipdly);
-                                        r4_incub_Woff = r4_incub_Woff.AddSeconds(dipdly);
-                                        p9protorun_flg = true;
-                                    }
-                                    else if ((r9priority == 0) && (r4priority == 1))
-                                    {
-                                        r9_incub = r9_incub.AddSeconds(dipdly);
-                                        tmr_r9_incub.Enabled = true;
-                                        tmr_r9_incub.Interval = 1000;
-                                        r9_taskcomp = r9_taskcomp.AddSeconds(dipdly);
-                                        r9_incub_Woff = r9_incub_Woff.AddSeconds(dipdly);
-                                        p9protorun_flg = false;
-                                    }
-                                }
-                                if (((ts5.TotalSeconds > 0) && (ts5.TotalSeconds <= dipdly)) || ((ts5_1.TotalSeconds > 0) && (ts5_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r5priority == 0)
-                                    {
-                                        r5_incub = r5_incub.AddSeconds(dipdly);
-                                        tmr_r5_incub.Enabled = true;
-                                        tmr_r5_incub.Interval = 1000;
-                                        r5_taskcomp = r5_taskcomp.AddSeconds(dipdly);
-                                        r5_incub_Woff = r5_incub_Woff.AddSeconds(dipdly);
-                                        p9protorun_flg = true;
-                                    }
-                                    else if ((r9priority == 0) && (r5priority == 1))
-                                    {
-                                        r9_incub = r9_incub.AddSeconds(dipdly);
-                                        tmr_r9_incub.Enabled = true;
-                                        tmr_r9_incub.Interval = 1000;
-                                        r9_taskcomp = r9_taskcomp.AddSeconds(dipdly);
-                                        r9_incub_Woff = r9_incub_Woff.AddSeconds(dipdly);
-                                        p9protorun_flg = false;
-                                    }
-                                }
-                                if (((ts6.TotalSeconds > 0) && (ts6.TotalSeconds <= dipdly)) || ((ts6_1.TotalSeconds > 0) && (ts6_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r6priority == 0)
-                                    {
-                                        r6_incub = r6_incub.AddSeconds(dipdly);
-                                        tmr_r6_incub.Enabled = true;
-                                        tmr_r6_incub.Interval = 1000;
-                                        r6_taskcomp = r6_taskcomp.AddSeconds(dipdly);
-                                        r6_incub_Woff = r6_incub_Woff.AddSeconds(dipdly);
-                                        p9protorun_flg = true;
-                                    }
-                                    else if ((r6priority == 1) && (r9priority == 0))
-                                    {
-                                        r9_incub = r9_incub.AddSeconds(dipdly);
-                                        tmr_r9_incub.Enabled = true;
-                                        tmr_r9_incub.Interval = 1000;
-                                        r9_taskcomp = r9_taskcomp.AddSeconds(dipdly);
-                                        r9_incub_Woff = r9_incub_Woff.AddSeconds(dipdly);
-                                        p9protorun_flg = false;
-                                    }
-                                }
-                                if (((ts7.TotalSeconds > 0) && (ts7.TotalSeconds <= dipdly)) || ((ts7_1.TotalSeconds > 0) && (ts7_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r7priority == 0)
-                                    {
-                                        r7_incub = r7_incub.AddSeconds(dipdly);
-                                        tmr_r7_incub.Enabled = true;
-                                        tmr_r7_incub.Interval = 1000;
-                                        r7_taskcomp = r7_taskcomp.AddSeconds(dipdly);
-                                        r7_incub_Woff = r7_incub_Woff.AddSeconds(dipdly);
-                                        p9protorun_flg = true;
-                                    }
-                                    else if ((r8priority == 0) && (r7priority == 1))
-                                    {
-                                        r9_incub = r9_incub.AddSeconds(dipdly);
-                                        tmr_r9_incub.Enabled = true;
-                                        tmr_r9_incub.Interval = 1000;
-                                        r9_taskcomp = r9_taskcomp.AddSeconds(dipdly);
-                                        r9_incub_Woff = r9_incub_Woff.AddSeconds(dipdly);
-                                        p9protorun_flg = false;
-                                    }
-                                }
-                                if (((ts8.TotalSeconds > 0) && (ts8.TotalSeconds <= dipdly)) || ((ts8_1.TotalSeconds > 0) && (ts8_1.TotalSeconds <= dipdly)))
-                                {
-                                    if (r8priority == 0)
-                                    {
-                                        r8_incub = r8_incub.AddSeconds(dipdly);
-                                        tmr_r8_incub.Enabled = true;
-                                        tmr_r8_incub.Interval = 1000;
-                                        r8_taskcomp = r8_taskcomp.AddSeconds(dipdly);
-                                        r8_incub_Woff = r8_incub_Woff.AddSeconds(dipdly);
-                                        p9protorun_flg = true;
-                                    }
-                                    else if ((r8priority == 0) && (r9priority == 1))
-                                    {
-                                        r9_incub = r9_incub.AddSeconds(dipdly);
-                                        tmr_r9_incub.Enabled = true;
-                                        tmr_r9_incub.Interval = 1000;
-                                        r9_taskcomp = r9_taskcomp.AddSeconds(dipdly);
-                                        r9_incub_Woff = r9_incub_Woff.AddSeconds(dipdly);
-                                        p9protorun_flg = false;
-                                    }
-                                }
-                            }
-                        }
-                        catch (Exception d3)
-                        {
-                            RequiredVariables.writeerrorlogfile("While checking priority tasks scheduling in p6proto check rack", "In Check_priority_times in Form_RunProto");
-                        }
-                        break;
-                    }
+                case 1: p1protorun_flg = status; break;
+                case 2: p2protorun_flg = status; break;
+                case 3: p3protorun_flg = status; break;
+                case 4: p4protorun_flg = status; break;
+                case 5: p5protorun_flg = status; break;
+                case 6: p6protorun_flg = status; break;
+                case 7: p7protorun_flg = status; break;
+                case 8: p8protorun_flg = status; break;
+                case 9: p9protorun_flg = status; break;
             }
-
         }
+        #endregion
+        private static int GetDipDelay()
+        {
+            return 11000; // Taking 11 seconds in milli seconds
+        }
+        public static void CheckPriorityTimes(int prtno)
+        {
+            lock (_lock) // Ensure thread safety
+            {
+                Rack currentRack = racks.FirstOrDefault(r => r.RackNo == prtno);
+                if (currentRack == null) return;
+
+                int dipDelay = GetDipDelay(); // Dynamic delay in milliseconds
+
+                foreach (Rack otherRack in racks.Where(r => r.RackNo != prtno))
+                {
+                    double timeDiff = Math.Abs((currentRack.IncubationTime - otherRack.IncubationTime).TotalMilliseconds);
+                    if (timeDiff <= dipDelay) // Check collision
+                    {
+                        if (otherRack.Priority > currentRack.Priority) // Other rack has higher priority
+                        {                            
+                            currentRack.IncubationTime = currentRack.IncubationTime.AddMilliseconds(dipDelay);
+                        }
+                        else if (otherRack.Priority < currentRack.Priority) // Current rack has higher priority
+                        {                            
+                            otherRack.IncubationTime = otherRack.IncubationTime.AddMilliseconds(dipDelay);
+                        }
+                    }
+                }                
+            }
+        }
+
         #endregion
         #region othertimers
         private void tmr_move_RA_Tick(object sender, EventArgs e)
@@ -6405,263 +5045,138 @@ namespace HematoxinandEosin
         }
         private void tmr_nextrack_Tick(object sender, EventArgs e)
         {
-            DateTime d1 = System.DateTime.Now;
-            int delaytimeval = 0;
-            TimeSpan ts1 = new TimeSpan(); TimeSpan ts2 = new TimeSpan(); TimeSpan ts3 = new TimeSpan();
-            TimeSpan ts4 = new TimeSpan(); TimeSpan ts5 = new TimeSpan(); TimeSpan ts6 = new TimeSpan();
-            TimeSpan ts7 = new TimeSpan(); TimeSpan ts8 = new TimeSpan(); TimeSpan ts9 = new TimeSpan();
-            if (d1 >= nxtrackloading)
+            DateTime currentTime = DateTime.Now;
+            int delayTime = DetermineDelayTime();
+
+            if (currentTime < nxtrackloading)
             {
-                tmr_nextrack.Enabled = false;
+                lbl_NxtRack.Text = $"Next Rack Loading Elapsed Time: {currentTime:HH:mm:ss} | Waiting Time: {nxtrackloading:HH:mm:ss}";
+                return;
+            }
 
-                if (TempReadingStarted == true)
+            tmr_nextrack.Enabled = false;
+            HandleTempReading();
+
+            TimeSpan[] timeSpans = CalculateTimeSpanDifferences(nxtrackloading, new DateTime[] {
+        r1_incub, r2_incub, r3_incub, r4_incub, r5_incub, r6_incub, r7_incub, r8_incub, r9_incub
+    });
+
+            if (rackinheater[0] == 1 && rackinheater[1] == 1 && rackinheater[2] == 1)
+            {
+                SetTimer(delayTime * 2);
+                return;
+            }
+
+            foreach (var ts in timeSpans)
+            {
+                if (ts.TotalSeconds > 0 && ts.TotalSeconds < delayTime)
                 {
-                    tmr_temp.Enabled = false;
-                    tmr_temp_incub.Enabled = false;
-                    tmr_tempstart.Enabled = true;
-                    temp_restartincub = System.DateTime.Now;
-                    temp_restartincub = temp_restartincub.AddSeconds(18);
-                    System.Threading.Thread.Sleep(200);
-                }
-
-                if (nxtrackloading > r1_incub)
-                    ts1 = nxtrackloading.Subtract(r1_incub);
-                else
-                    ts1 = r1_incub.Subtract(nxtrackloading);
-
-                if (nxtrackloading > r2_incub)
-                    ts2 = nxtrackloading.Subtract(r2_incub);
-                else
-                    ts2 = r2_incub.Subtract(nxtrackloading);
-
-                if (nxtrackloading > r3_incub)
-                    ts3 = nxtrackloading.Subtract(r3_incub);
-                else
-                    ts3 = r3_incub.Subtract(nxtrackloading);
-
-                if (nxtrackloading > r4_incub)
-                    ts4 = nxtrackloading.Subtract(r4_incub);
-                else
-                    ts4 = r4_incub.Subtract(nxtrackloading);
-
-                if (nxtrackloading > r5_incub)
-                    ts5 = nxtrackloading.Subtract(r5_incub);
-                else
-                    ts5 = r5_incub.Subtract(nxtrackloading);
-
-                if (nxtrackloading > r6_incub)
-                    ts6 = nxtrackloading.Subtract(r6_incub);
-                else
-                    ts6 = r6_incub.Subtract(nxtrackloading);
-
-                if (nxtrackloading > r7_incub)
-                    ts7 = nxtrackloading.Subtract(r7_incub);
-                else
-                    ts7 = r7_incub.Subtract(nxtrackloading);
-
-                if (nxtrackloading > r8_incub)
-                    ts8 = nxtrackloading.Subtract(r8_incub);
-                else
-                    ts8 = r8_incub.Subtract(nxtrackloading);
-
-                if (nxtrackloading > r9_incub)
-                    ts9 = nxtrackloading.Subtract(r9_incub);
-                else
-                    ts9 = r9_incub.Subtract(nxtrackloading);
-
-                if (heatingreqflg == true)
-                    delaytimeval = 18;  //27 seconds as on 270120251845//Previously 45  before  //previously 63
-                else if (heatingreqflg == false)
-                {
-                    ////delaytimeval = 27;
-                    if (maxevttime >= 300)  //This statement added on 26-04-2024 after testing h & e app continously with device
-                        delaytimeval = 27;    //Previously 45
-                    else
-                        delaytimeval = 18; //Working fine 45 Seconds   //27 Seconds
-                }
-                //// Below statement commented on 17-10-2024 in order to load next 3 racks to machine as we are getting more delay to load 7,8,9 racks
-                ////if ((R1_protostart == true) && (R2_protostart == true) && (R3_protostart == true) && (R4_protostart == true) && (R5_protostart == true) && (R6_protostart == true))
-                ////{
-                ////    nxtrackloading = nxtrackloading.AddSeconds(delaytimeval);
-                ////    tmr_nextrack.Enabled = true;
-                ////    tmr_nextrack.Interval = 1000;
-                ////    return;
-                ////}
-                //// Above statement commented on 17-10-2024 in order to load next 3 racks to machine
-
-                if((rackinheater[0]==1) && (rackinheater[1] == 1) && (rackinheater[2] == 1))
-                {
-                    nxtrackloading = nxtrackloading.AddSeconds(delaytimeval * 2);
-                    tmr_nextrack.Enabled = true;
-                    tmr_nextrack.Interval = 1000;
+                    SetTimer(delayTime);
                     return;
                 }
+            }
 
-                //if (((ts1.TotalSeconds > 0) && (ts1.TotalSeconds < delaytimeval)) || ((ts2.TotalSeconds > 0) && (ts2.TotalSeconds < delaytimeval)) || ((ts3.TotalSeconds > 0) && (ts3.TotalSeconds < delaytimeval)))
-                if (((ts1.TotalSeconds > 0) && (ts1.TotalSeconds < delaytimeval)) || ((ts2.TotalSeconds > 0) && (ts2.TotalSeconds < delaytimeval)) || ((ts3.TotalSeconds > 0) && (ts3.TotalSeconds < delaytimeval)) || ((ts4.TotalSeconds > 0) && (ts4.TotalSeconds < delaytimeval)) || ((ts5.TotalSeconds > 0) && (ts5.TotalSeconds < delaytimeval)) || ((ts6.TotalSeconds > 0) && (ts6.TotalSeconds < delaytimeval)) || ((ts7.TotalSeconds > 0) && (ts7.TotalSeconds < delaytimeval)) || ((ts8.TotalSeconds > 0) && (ts8.TotalSeconds < delaytimeval)) || ((ts9.TotalSeconds > 0) && (ts9.TotalSeconds < delaytimeval)))
-                {
-                    nxtrackloading = nxtrackloading.AddSeconds(delaytimeval);
-                    tmr_nextrack.Enabled = true;
-                    tmr_nextrack.Interval = 1000;
-                    return;
-                }
-
-                ////if ((ts1.TotalSeconds < 27) || (ts2.TotalSeconds < 27) || (ts3.TotalSeconds < 27))
-                ////{
-                ////    nxtrackloading = nxtrackloading.AddSeconds(27);
-                ////    tmr_nextrack.Enabled = true;
-                ////    tmr_nextrack.Interval = 1000;
-                ////    return;
-                ////}
-
-                if (heatingreqflg == false)
-                {
-                    //if (rackinloading[0] == 1)
-                    //{
-                    //    if (continuetestflg == false)
-                    //    {
-                    //        r1inx = 0;
-                    //        protocolinitiateflg_R1 = true;
-                    //        protocolrun_R1();
-                    //    }
-                    //    else if (continuetestflg == true)
-                    //    {
-                    //        r4inx = 0;
-                    //        protocolinitiateflg_R4 = true;
-                    //        protocolrun_R4();
-                    //    }
-                    //}
-                    //else if (rackinloading[1] == 1)
-                    //{
-                    //    if (continuetestflg == false)
-                    //    {
-                    //        r2inx = 0;
-                    //        protocolinitiateflg_R2 = true;
-                    //        protocolrun_R2();
-                    //    }
-                    //    else if (continuetestflg == true)
-                    //    {
-                    //        r5inx = 0;
-                    //        protocolinitiateflg_R5 = true;
-                    //        protocolrun_R5();
-                    //    }
-                    //}
-                    //else if (rackinloading[2] == 1)
-                    //{
-                    //    if (continuetestflg == false)
-                    //    {
-                    //        r3inx = 0;
-                    //        protocolinitiateflg_R3 = true;
-                    //        protocolrun_R3();
-                    //    }
-                    //    else if (continuetestflg == true)
-                    //    {
-                    //        r6inx = 0;
-                    //        protocolinitiateflg_R6 = true;
-                    //        protocolrun_R6();
-                    //    }
-                    //}
-                    if ((rackinloading[0] == 1) || (rackinloading[1] == 1) || (rackinloading[2] == 1))
-                    { 
-                        if (rackinloading[0] == 1)
-                        {
-                            if ((R1_protostart == false) && (r1inx == 0) && (protocolinitiateflg_R1 == false))
-                            {
-                                r1inx = 0;
-                                protocolinitiateflg_R1 = true;
-                                protocolStartedflg_R1 = false;
-                                protocolrun_R1();
-                            }
-                            else if ((R4_protostart == false) && (r4inx == 0) && (protocolinitiateflg_R4 == false))
-                            {
-                                r4inx = 0;
-                                protocolinitiateflg_R4 = true; protocolStartedflg_R4 = false;
-                                protocolrun_R4();
-                            }
-                            else if ((R7_protostart == false) && (r7inx == 0) && (protocolinitiateflg_R7 == false))
-                            {
-                                r7inx = 0;
-                                protocolinitiateflg_R7 = true; protocolStartedflg_R7 = false;
-                                protocolrun_R7();
-                            }
-                        }
-                        else if (rackinloading[1] == 1)
-                        {
-                            if ((R2_protostart == false) && (r2inx == 0) && (protocolinitiateflg_R2 == false))
-                            {
-                                r2inx = 0;
-                                protocolinitiateflg_R2 = true; protocolStartedflg_R2 = false;
-                                protocolrun_R2();
-                            }
-                            else if ((R5_protostart == false) && (r5inx == 0) && (protocolinitiateflg_R5 == false))
-                            {
-                                r5inx = 0;
-                                protocolinitiateflg_R5 = true; protocolStartedflg_R5 = false;
-                                protocolrun_R5();
-                            }
-                            else if ((R8_protostart == false) && (r8inx == 0) && (protocolinitiateflg_R8 == false))
-                            {
-                                r8inx = 0;
-                                protocolinitiateflg_R8 = true; protocolStartedflg_R8 = false;
-                                protocolrun_R8();
-                            }
-                        }
-                        else if (rackinloading[2] == 1)
-                        {
-                            if ((R3_protostart == false) && (r3inx == 0) && (protocolinitiateflg_R3 == false))
-                            {
-                                r3inx = 0;
-                                protocolinitiateflg_R3 = true; protocolStartedflg_R3 = false;
-                                protocolrun_R3();
-                            }
-                            else if ((R6_protostart == false) && (r6inx == 0) && (protocolinitiateflg_R6 == false))
-                            {
-                                r6inx = 0;
-                                protocolinitiateflg_R6 = true; protocolStartedflg_R6 = false;
-                                protocolrun_R6();
-                            }
-                            else if ((R9_protostart == false) && (r9inx == 0) && (protocolinitiateflg_R9 == false))
-                            {
-                                r9inx = 0;
-                                protocolinitiateflg_R9 = true; protocolStartedflg_R9 = false;
-                                protocolrun_R9();
-                            }
-                        }
-                    }
-                    else if ((rackinloading[0] == 0) && (rackinloading[1] == 0) && (rackinloading[2] == 0))
-                    {
-                        /*Commented to test continuty 12112024_1832*/
-                        btn_Continue.Enabled = true;
-                        continuetask();  /*Added on 24112023 1821*/
-                        /*Commented to test continuty 12112024_1832*/
-
-                        ////continue_Home = true;
-                        ////movetohome();
-                    }
-                }
-                else if (heatingreqflg == true)
-                {
-                    if ((rackinloading[0] == 1) || (rackinloading[1] == 1) || (rackinloading[2] == 1))
-                    {
-                        open_htrdoor_toload_Nxtrack();
-                    }
-                    else if ((rackinloading[0] == 0) && (rackinloading[1] == 0) && (rackinloading[2] == 0))
-                    {
-                        ////continue_Home = true;  //Added for testing on 12112024_1831
-                        ////movetohome();   //Added for testing on 12112024_1831
-
-                        /*Commented to test continuty 12112024_1832*/
-                        btn_Continue.Enabled = true;
-                        continuetask();  /*Added on 24112023 1821*/
-                        /*Commented to test continuty 12112024_1832*/
-                    }
-                    ////else if ((rackinheater[0] == 1) || (rackinheater[1] == 1) || (rackinheater[2] == 1))
-                    ////    open_htrdoor();
-                }
+            if (!heatingreqflg)
+            {
+                CheckAndRunProtocol();
             }
             else
             {
-                lbl_NxtRack.Text = "Next Rack Loading Elsptime-" + d1.ToString().Substring(10) + " Waiting Time-" + nxtrackloading.ToString().Substring(10);
+                ContinueOrHeat();
+            }
+        }
+
+        // Determine the delay time based on heating requirements
+        private int DetermineDelayTime()
+        {
+            if (heatingreqflg) return 18; // Adjusted on 27012025
+            return maxevttime >= 300 ? 27 : 18;
+        }
+
+        // Stop temp reading if necessary
+        private void HandleTempReading()
+        {
+            if (!TempReadingStarted) return;
+
+            tmr_temp.Enabled = false;
+            tmr_temp_incub.Enabled = false;
+            tmr_tempstart.Enabled = true;
+            temp_restartincub = DateTime.Now.AddSeconds(18);
+            Thread.Sleep(200);
+        }
+
+        // Calculate time span differences for all racks
+        private TimeSpan[] CalculateTimeSpanDifferences(DateTime referenceTime, DateTime[] incubTimes)
+        {
+            TimeSpan[] differences = new TimeSpan[incubTimes.Length];
+            for (int i = 0; i < incubTimes.Length; i++)
+            {
+                differences[i] = referenceTime > incubTimes[i] ? referenceTime.Subtract(incubTimes[i]) : incubTimes[i].Subtract(referenceTime);
+            }
+            return differences;
+        }
+
+        // Start the timer with the given delay
+        private void SetTimer(int delay)
+        {
+            nxtrackloading = nxtrackloading.AddSeconds(delay);
+            tmr_nextrack.Enabled = true;
+            tmr_nextrack.Interval = 1000;
+        }
+
+        // Check rack status and initiate protocols
+        private void CheckAndRunProtocol()
+        {
+            if (rackinloading[0] == 1 || rackinloading[1] == 1 || rackinloading[2] == 1)
+            {
+                if (rackinloading[0] == 1) RunProtocol(ref r1inx, ref protocolinitiateflg_R1, ref protocolStartedflg_R1, R1_protostart, protocolrun_R1, R4_protostart, ref r4inx, ref protocolinitiateflg_R4, ref protocolStartedflg_R4, protocolrun_R4, R7_protostart, ref r7inx, ref protocolinitiateflg_R7, ref protocolStartedflg_R7, protocolrun_R7);
+                else if (rackinloading[1] == 1) RunProtocol(ref r2inx, ref protocolinitiateflg_R2, ref protocolStartedflg_R2, R2_protostart, protocolrun_R2, R5_protostart, ref r5inx, ref protocolinitiateflg_R5, ref protocolStartedflg_R5, protocolrun_R5, R8_protostart, ref r8inx, ref protocolinitiateflg_R8, ref protocolStartedflg_R8, protocolrun_R8);
+                else if (rackinloading[2] == 1) RunProtocol(ref r3inx, ref protocolinitiateflg_R3, ref protocolStartedflg_R3, R3_protostart, protocolrun_R3, R6_protostart, ref r6inx, ref protocolinitiateflg_R6, ref protocolStartedflg_R6, protocolrun_R6, R9_protostart, ref r9inx, ref protocolinitiateflg_R9, ref protocolStartedflg_R9, protocolrun_R9);
+            }
+            else
+            {
+                btn_Continue.Enabled = true;
+                continuetask();
+            }
+        }
+
+        // Helper function to run protocols
+        private void RunProtocol(ref int rackIndex, ref bool initFlag, ref bool startedFlag, bool protoStart1, Action protoRun1, bool protoStart2, ref int rackIndex2, ref bool initFlag2, ref bool startedFlag2, Action protoRun2, bool protoStart3, ref int rackIndex3, ref bool initFlag3, ref bool startedFlag3, Action protoRun3)
+        {
+            if (!protoStart1 && rackIndex == 0 && !initFlag)
+            {
+                rackIndex = 0;
+                initFlag = true;
+                startedFlag = false;
+                protoRun1();
+            }
+            else if (!protoStart2 && rackIndex2 == 0 && !initFlag2)
+            {
+                rackIndex2 = 0;
+                initFlag2 = true;
+                startedFlag2 = false;
+                protoRun2();
+            }
+            else if (!protoStart3 && rackIndex3 == 0 && !initFlag3)
+            {
+                rackIndex3 = 0;
+                initFlag3 = true;
+                startedFlag3 = false;
+                protoRun3();
+            }
+        }
+
+        // Continue processing or open heater door for loading
+        private void ContinueOrHeat()
+        {
+            if (rackinloading[0] == 1 || rackinloading[1] == 1 || rackinloading[2] == 1)
+            {
+                open_htrdoor_toload_Nxtrack();
+            }
+            else
+            {
+                btn_Continue.Enabled = true;
+                continuetask();
             }
         }
         private void tmr_temp_Tick(object sender, EventArgs e)
@@ -6981,13 +5496,13 @@ namespace HematoxinandEosin
                     ts9 = r9_incub.Subtract(continuetest);
 
                 if (heatingreqflg == true)
-                    delaytimeval = 30; //36 seconds as on 27012025_1848 //Actually given 63 seconds, Modified to 60 seconds, again modified to 45 seconds to reduce the next racks picking time
+                    delaytimeval = 36; //27 Seconds as on 20022025_1128 36 seconds as on 27012025_1848 //Actually given 63 seconds, Modified to 60 seconds, again modified to 45 seconds to reduce the next racks picking time
                 else if (heatingreqflg == false)
-                    delaytimeval = 27;
+                    delaytimeval = 36; //27 Seconds as on 20022025_1128
 
                 if (((ts1.TotalSeconds > 0) && (ts1.TotalSeconds < delaytimeval)) || ((ts2.TotalSeconds > 0) && (ts2.TotalSeconds < delaytimeval)) || ((ts3.TotalSeconds > 0) && (ts3.TotalSeconds < delaytimeval)) || ((ts4.TotalSeconds > 0) && (ts4.TotalSeconds < delaytimeval)) || ((ts5.TotalSeconds > 0) && (ts5.TotalSeconds < delaytimeval)) || ((ts6.TotalSeconds > 0) && (ts6.TotalSeconds < delaytimeval)) || ((ts7.TotalSeconds > 0) && (ts7.TotalSeconds < delaytimeval)) || ((ts8.TotalSeconds > 0) && (ts8.TotalSeconds < delaytimeval)) || ((ts9.TotalSeconds > 0) && (ts9.TotalSeconds < delaytimeval)))
                 {
-                    continuetest = continuetest.AddSeconds(delaytimeval);
+                    continuetest = continuetest.AddSeconds(27);
                     tmr_Continue.Enabled = true;
                     tmr_Continue.Interval = 1000;
                     return;
@@ -7004,6 +5519,7 @@ namespace HematoxinandEosin
                 normaljar_lvlintiated = false;
                 normaljar_racksensed = false;
                 lbl_disp2.Text = "";
+                loading_racks = true;
                 if (heatingreqflg == false)
                     check_racks_using_lvlsence("L");
                 else
@@ -7617,253 +6133,125 @@ namespace HematoxinandEosin
                 if (homecnt < 2)
                 {
                     Ready_to_Issue_2nd_HomeCmd = true;
-                    System.Threading.Thread.Sleep(2000);
+                    System.Threading.Thread.Sleep(1000);
                     move_to_home(0); //movetohome();
                 }
                 if (homecnt == 2)
                 {
-                    System.Threading.Thread.Sleep(1000);
+                    System.Threading.Thread.Sleep(750);
                     if (Process_Continued == false)
                         disable_allflags();
                     homecnt = 0;
                     Ready_to_Issue_2nd_HomeCmd = false;
                     ulcnt = 0;
                     loadingjar_lvlintiated = false;
-                    loadingjar_racksensed = false;
+                    
                     sensed = false;
                     HtrRacks_ULJars = false;
                     inxSlno = 0;
-                    loading_racks = true;
+                    //loading_racks = true;
                     Jarloaddetails = false;
-                    rackloadingtoJar = false;
-                    /*
-                    if (heatingreqflg == true)
-                        LoadRackstoHeaterJars();
-                    else if (heatingreqflg == false)
+                    rackloadingtoJar = false;                    
+                    if ((rackinloading[0] == 1)|| (rackinloading[1] == 1)|| (rackinloading[2] == 1))
                     {
-                        if (rackinloading[0] == 1)
+                        string htrname = "",ldjarname="";
+                        if (loading_racks == true) loading_racks = false;
+                        if (loadingjar_racksensed == true) loadingjar_racksensed = false;
+                        if (heatingreqflg == true)
                         {
-                            if (continuetestflg == false)
+                            if ((rackinheater[0] == 1) && (rackinheater[1] == 1) && (rackinheater[2] == 1))
                             {
-                                if (R1_protostart == false)
-                                {
-                                    r1inx = 0;
-                                    protocolinitiateflg_R1 = true;
-                                    protocolrun_R1();
-                                }
-                                else if (R1_protostart == true) ///*below code Added on 27-12-2023 not enableing to take another rack from Loading Jar
-                                {                                    
-                                    r7inx = 0;
-                                    protocolinitiateflg_R7 = true;
-                                    protocolrun_R7();
-
-                                }
+                                nxtrackloading = nxtrackloading.AddMinutes(2);
+                                tmr_nextrack.Enabled = true;
+                                tmr_nextrack.Interval = 1000;
                             }
-                            else if (continuetestflg == true)
+                            else //checking for heater free jar and assigning to that Jar
                             {
-                                r4inx = 0;
-                                protocolinitiateflg_R4 = true;
-                                protocolrun_R4();
+                                for (int i = 0; i < 3; i++)
+                                {
+                                    if (rackinheater[i] == 0) { htrname = "H" + (i + 1).ToString(); break; }
+                                }
                             }
                         }
-                        else if (rackinloading[1] == 1)
+                        for (int ld = 0; ld < 3; ld++)
                         {
-                            if (continuetestflg == false)
-                            {
-                                if (R2_protostart == false)
-                                {
-                                    r2inx = 0;
-                                    protocolinitiateflg_R2 = true;
-                                    protocolrun_R2();
-                                }
-                                else if (R2_protostart == true) //*below code Added on 27-12-2023 not enableing to take another rack from Loading Jar
-                                {                                    
-                                    r8inx = 0;
-                                    protocolinitiateflg_R8 = true;
-                                    protocolrun_R8();
-                                }
-                            }
-                            else if (continuetestflg == true)
-                            {
-                                r5inx = 0;
-                                protocolinitiateflg_R5 = true;
-                                protocolrun_R5();
-                            }
+                            if (rackinloading[ld] == 1) { ldjarname = "L" + (ld + 1).ToString(); break; }
                         }
-                        else if (rackinloading[2] == 1)
-                        {
-                            if (continuetestflg == false)
-                            {
-                                if (R3_protostart == false)
-                                {
-                                    r3inx = 0;
-                                    protocolinitiateflg_R3 = true;
-                                    protocolrun_R3();
-                                }
-                                else if (R3_protostart == true) //*below code Added on 27-12-2023 not enableing to take another rack from Loading Jar
-                                {                                   
-                                    r9inx = 0;
-                                    protocolinitiateflg_R9 = true;
-                                    protocolrun_R9();
-                                }
-                            }
-                            else if (continuetestflg == true)
-                            {
-                                r6inx = 0;
-                                protocolinitiateflg_R6 = true;
-                                protocolrun_R6();
-                            }
-                        }
-                    }*/
-                    if (rackinloading[0] == 1)
-                    {
-                        if ((R1_protostart == false))
-                        {
-                            //R1Protorun.Rows[R1Protorun.Rows.Count - 1]["JarNo"] = "H1";  //Jar No 
-                            if(heatingreqflg==true)
-                            {
-                                if(rackinheater[0]==1)
-                                {
-                                    if (rackinheater[1] == 0)
-                                        R1Protorun.Rows[1]["JarNo"] = "H2";
-                                    else if ((rackinheater[1] == 1) && (rackinheater[2] == 0))
-                                        R1Protorun.Rows[1]["JarNo"] = "H3";
-                                }
-                            }
+                        if ((R1_protostart == false) && (r1inx == 0) && (protocolinitiateflg_R1 == false)) //if ((R1_protostart == false))
+                        {                            
+                            if(heatingreqflg==true)                                                            
+                                R1Protorun.Rows[1]["JarNo"] = htrname;
+                            R1Protorun.Rows[0]["JarNo"] = ldjarname;
                             r1inx = 0;
                             protocolinitiateflg_R1 = true;
                             protocolrun_R1();
                         }
-                        else if ((R4_protostart == false))
+                        else if ((R2_protostart == false) && (r2inx == 0) && (protocolinitiateflg_R2 == false)) //if ((R2_protostart == false))
                         {
                             if (heatingreqflg == true)
-                            {
-                                if (rackinheater[0] == 1)
-                                {
-                                    if (rackinheater[1] == 0)
-                                        R4Protorun.Rows[1]["JarNo"] = "H2";
-                                    else if ((rackinheater[1] == 1) && (rackinheater[2] == 0))
-                                        R4Protorun.Rows[1]["JarNo"] = "H3";
-                                }
-                            }
-                            r4inx = 0;
-                            protocolinitiateflg_R4 = true;
-                            protocolrun_R4();
-                        }
-                        else if ((R7_protostart == false))
-                        {
-                            if (heatingreqflg == true)
-                            {
-                                if (rackinheater[0] == 1)
-                                {
-                                    if (rackinheater[1] == 0)
-                                        R7Protorun.Rows[1]["JarNo"] = "H2";
-                                    else if ((rackinheater[1] == 1) && (rackinheater[2] == 0))
-                                        R7Protorun.Rows[1]["JarNo"] = "H3";
-                                }
-                            }
-                            r7inx = 0;
-                            protocolinitiateflg_R7 = true;
-                            protocolrun_R7();
-                        }
-                    }
-                    else if (rackinloading[1] == 1)
-                    {
-                        if ((R2_protostart == false))
-                        {
-                            if (heatingreqflg == true)
-                            {
-                                if (rackinheater[1] == 1)
-                                {
-                                    if (rackinheater[0] == 0)
-                                        R2Protorun.Rows[1]["JarNo"] = "H1";
-                                    else if ((rackinheater[0] == 1) && (rackinheater[2] == 0))
-                                        R2Protorun.Rows[1]["JarNo"] = "H3";
-                                }
-                            }
+                                R2Protorun.Rows[1]["JarNo"] = htrname;
+                            R2Protorun.Rows[0]["JarNo"] = ldjarname;
                             r2inx = 0;
                             protocolinitiateflg_R2 = true;
                             protocolrun_R2();
                         }
-                        else if ((R5_protostart == false))
+                        else if ((R3_protostart == false) && (r3inx == 0) && (protocolinitiateflg_R3 == false)) //if ((R3_protostart == false))
                         {
                             if (heatingreqflg == true)
-                            {
-                                if (rackinheater[1] == 1)
-                                {
-                                    if (rackinheater[0] == 0)
-                                        R5Protorun.Rows[1]["JarNo"] = "H1";
-                                    else if ((rackinheater[0] == 1) && (rackinheater[2] == 0))
-                                        R5Protorun.Rows[1]["JarNo"] = "H3";
-                                }
-                            }
-                            r5inx = 0;
-                            protocolinitiateflg_R5 = true;
-                            protocolrun_R5();
-                        }
-                        else if ((R8_protostart == false))
-                        {
-                            if (heatingreqflg == true)
-                            {
-                                if (rackinheater[1] == 1)
-                                {
-                                    if (rackinheater[0] == 0)
-                                        R8Protorun.Rows[1]["JarNo"] = "H1";
-                                    else if ((rackinheater[0] == 1) && (rackinheater[2] == 0))
-                                        R8Protorun.Rows[1]["JarNo"] = "H3";
-                                }
-                            }
-                            r8inx = 0;
-                            protocolinitiateflg_R8 = true;
-                            protocolrun_R8();
-                        }
-                    }
-                    else if (rackinloading[2] == 1)
-                    {
-                        if ((R3_protostart == false))
-                        {
-                            if (heatingreqflg == true)
-                            {
-                                if (rackinheater[2] == 1)
-                                {
-                                    if (rackinheater[0] == 0)
-                                        R3Protorun.Rows[1]["JarNo"] = "H1";
-                                    else if ((rackinheater[0] == 1) && (rackinheater[1] == 0))
-                                        R3Protorun.Rows[1]["JarNo"] = "H2";
-                                }
-                            }
+                                R3Protorun.Rows[1]["JarNo"] = htrname;
+                            R3Protorun.Rows[0]["JarNo"] = ldjarname;
                             r3inx = 0;
                             protocolinitiateflg_R3 = true;
                             protocolrun_R3();
                         }
-                        else if ((R6_protostart == false))
+                        else if ((R4_protostart == false) && (r4inx == 0) && (protocolinitiateflg_R4 == false)) //if ((R4_protostart == false))
+                        {
+                            if (heatingreqflg == true)                               
+                                R4Protorun.Rows[1]["JarNo"] = htrname;
+                            R4Protorun.Rows[0]["JarNo"] = ldjarname;
+                            r4inx = 0;
+                            protocolinitiateflg_R4 = true;
+                            protocolrun_R4();
+                        }
+                        else if ((R5_protostart == false) && (r5inx == 0) && (protocolinitiateflg_R5 == false)) if ((R5_protostart == false))
                         {
                             if (heatingreqflg == true)
-                            {
-                                if (rackinheater[2] == 1)
-                                {
-                                    if (rackinheater[0] == 0)
-                                        R6Protorun.Rows[1]["JarNo"] = "H1";
-                                    else if ((rackinheater[0] == 1) && (rackinheater[1] == 0))
-                                        R6Protorun.Rows[1]["JarNo"] = "H2";
-                                }
-                            }
+                                R5Protorun.Rows[1]["JarNo"] = htrname;
+                            R5Protorun.Rows[0]["JarNo"] = ldjarname;
+                            r5inx = 0;
+                            protocolinitiateflg_R5 = true;
+                            protocolrun_R5();
+                        }
+                        else if ((R6_protostart == false) && (r6inx == 0) && (protocolinitiateflg_R6 == false)) // if ((R6_protostart == false))
+                        {
+                            if (heatingreqflg == true)
+                                R6Protorun.Rows[1]["JarNo"] = htrname;
+                            R6Protorun.Rows[0]["JarNo"] = ldjarname;
                             r6inx = 0;
                             protocolinitiateflg_R6 = true;
                             protocolrun_R6();
                         }
-                        else if ((R9_protostart == false))
+                        else if ((R7_protostart == false) && (r7inx == 0) && (protocolinitiateflg_R7 == false)) //if ((R7_protostart == false))
                         {
-                            if (heatingreqflg == true)
-                            {
-                                if (rackinheater[2] == 1)
-                                {
-                                    if (rackinheater[0] == 0)
-                                        R9Protorun.Rows[1]["JarNo"] = "H1";
-                                    else if ((rackinheater[0] == 1) && (rackinheater[1] == 0))
-                                        R9Protorun.Rows[1]["JarNo"] = "H2";
-                                }
-                            }
+                            if (heatingreqflg == true) R7Protorun.Rows[1]["JarNo"] = htrname;                                
+                            R7Protorun.Rows[0]["JarNo"] = ldjarname;
+                            r7inx = 0;
+                            protocolinitiateflg_R7 = true;
+                            protocolrun_R7();
+                        }
+                        else if ((R8_protostart == false) && (r8inx == 0) && (protocolinitiateflg_R8 == false)) //if ((R8_protostart == false))
+                        {
+                            if (heatingreqflg == true) R8Protorun.Rows[1]["JarNo"] = htrname;
+                            R8Protorun.Rows[0]["JarNo"] = ldjarname;
+                            r8inx = 0;
+                            protocolinitiateflg_R8 = true;
+                            protocolrun_R8();
+                        }
+                        else if ((R9_protostart == false) && (r9inx == 0) && (protocolinitiateflg_R9 == false)) //if ((R9_protostart == false))
+                        {
+                            if (heatingreqflg == true)                            
+                                R9Protorun.Rows[1]["JarNo"] = htrname;
+                            R9Protorun.Rows[0]["JarNo"] = ldjarname;
                             r9inx = 0;
                             protocolinitiateflg_R9 = true;
                             protocolrun_R9();
@@ -8257,160 +6645,274 @@ namespace HematoxinandEosin
                     tmr_opencmd_toload_Nxtrack.Enabled = false;
                     htr_door_opencmd_toload_Nxtrack = false;
                     htr_door_open = false;
-                    if (rackinloading[0] == 1)
+                    if ((rackinloading[0] == 1) || (rackinloading[1] == 1) || (rackinloading[2] == 1))
                     {
-                        if ((R1_protostart == false) && (r1inx == 0) && (protocolinitiateflg_R1 == false))
+                        string htrname = "", ldjarname = "";
+                        if (loading_racks == true) loading_racks = false;
+                        if (loadingjar_racksensed == true) loadingjar_racksensed = false;
+                        if (heatingreqflg == true)
                         {
-                            if (heatingreqflg == true)
+                            if ((rackinheater[0] == 1) && (rackinheater[1] == 1) && (rackinheater[2] == 1))
                             {
-                                if (rackinheater[0] == 1)
+                                nxtrackloading = nxtrackloading.AddMinutes(2);
+                                tmr_nextrack.Enabled = true;
+                                tmr_nextrack.Interval = 1000;
+                            }
+                            else //checking for heater free jar and assigning to that Jar
+                            {
+                                for (int i = 0; i < 3; i++)
                                 {
-                                    if (rackinheater[1] == 0)
-                                        R1Protorun.Rows[1]["JarNo"] = "H2";
-                                    else if ((rackinheater[1] == 1) && (rackinheater[2] == 0))
-                                        R1Protorun.Rows[1]["JarNo"] = "H3";
+                                    if (rackinheater[i] == 0) { htrname = "H" + (i + 1).ToString(); break; }
                                 }
                             }
+                        }
+                        for (int ld = 0; ld < 3; ld++)
+                        {
+                            if (rackinloading[ld] == 1) { ldjarname = "L" + (ld + 1).ToString(); break; }
+                        }
+                        if ((R1_protostart == false) && (r1inx == 0) && (protocolinitiateflg_R1 == false)) //if ((R1_protostart == false))
+                        {
+                            if (heatingreqflg == true)
+                                R1Protorun.Rows[1]["JarNo"] = htrname;
+                            R1Protorun.Rows[0]["JarNo"] = ldjarname;
                             r1inx = 0;
                             protocolinitiateflg_R1 = true;
                             protocolStartedflg_R1 = false;
                             protocolrun_R1();
-                        }                        
-                        else if ((R4_protostart == false) && (r4inx == 0) && (protocolinitiateflg_R4 == false))
-                        {
-                            if (heatingreqflg == true)
-                            {
-                                if (rackinheater[0] == 1)
-                                {
-                                    if (rackinheater[1] == 0)
-                                        R4Protorun.Rows[1]["JarNo"] = "H2";
-                                    else if ((rackinheater[1] == 1) && (rackinheater[2] == 0))
-                                        R4Protorun.Rows[1]["JarNo"] = "H3";
-                                }
-                            }
-                            r4inx = 0;
-                            protocolinitiateflg_R4 = true; protocolStartedflg_R4 = false;
-                            protocolrun_R4();
-                        }                        
-                        else if ((R7_protostart == false) && (r7inx == 0) && (protocolinitiateflg_R7 == false))
-                        {
-                            if (heatingreqflg == true)
-                            {
-                                if (rackinheater[0] == 1)
-                                {
-                                    if (rackinheater[1] == 0)
-                                        R7Protorun.Rows[1]["JarNo"] = "H2";
-                                    else if ((rackinheater[1] == 1) && (rackinheater[2] == 0))
-                                        R7Protorun.Rows[1]["JarNo"] = "H3";
-                                }
-                            }
-                            r7inx = 0;
-                            protocolinitiateflg_R7 = true; protocolStartedflg_R7 = false;
-                            protocolrun_R7();
                         }
-                    }
-                    else if (rackinloading[1] == 1)
-                    {
-                        if ((R2_protostart == false) && (r2inx == 0) && (protocolinitiateflg_R2 == false))
+                        else if ((R2_protostart == false) && (r2inx == 0) && (protocolinitiateflg_R2 == false)) //if ((R2_protostart == false))
                         {
                             if (heatingreqflg == true)
-                            {
-                                if (rackinheater[1] == 1)
-                                {
-                                    if (rackinheater[0] == 0)
-                                        R2Protorun.Rows[1]["JarNo"] = "H1";
-                                    else if ((rackinheater[0] == 1) && (rackinheater[2] == 0))
-                                        R2Protorun.Rows[1]["JarNo"] = "H3";
-                                }
-                            }
+                                R2Protorun.Rows[1]["JarNo"] = htrname;
+                            R2Protorun.Rows[0]["JarNo"] = ldjarname;
                             r2inx = 0;
-                            protocolinitiateflg_R2 = true; protocolStartedflg_R2 = false;
+                            protocolinitiateflg_R2 = true;
+                            protocolStartedflg_R2 = false;
                             protocolrun_R2();
-                        }                        
-                        else if ((R5_protostart == false) && (r5inx == 0) && (protocolinitiateflg_R5 == false))
-                        {
-                            if (heatingreqflg == true)
-                            {
-                                if (rackinheater[1] == 1)
-                                {
-                                    if (rackinheater[0] == 0)
-                                        R5Protorun.Rows[1]["JarNo"] = "H1";
-                                    else if ((rackinheater[0] == 1) && (rackinheater[2] == 0))
-                                        R5Protorun.Rows[1]["JarNo"] = "H3";
-                                }
-                            }
-                            r5inx = 0;
-                            protocolinitiateflg_R5 = true; protocolStartedflg_R5 = false;
-                            protocolrun_R5();
-                        }                        
-                        else if ((R8_protostart == false) && (r8inx == 0) && (protocolinitiateflg_R8 == false))
-                        {
-                            if (heatingreqflg == true)
-                            {
-                                if (rackinheater[1] == 1)
-                                {
-                                    if (rackinheater[0] == 0)
-                                        R8Protorun.Rows[1]["JarNo"] = "H1";
-                                    else if ((rackinheater[0] == 1) && (rackinheater[2] == 0))
-                                        R8Protorun.Rows[1]["JarNo"] = "H3";
-                                }
-                            }
-                            r8inx = 0;
-                            protocolinitiateflg_R8 = true; protocolStartedflg_R8 = false;
-                            protocolrun_R8();
-                        }                        
-                    }
-                    else if (rackinloading[2] == 1)
-                    {
-                        if ((R3_protostart == false) && (r3inx == 0) && (protocolinitiateflg_R3 == false))
-                        {
-                            if (heatingreqflg == true)
-                            {
-                                if (rackinheater[2] == 1)
-                                {
-                                    if (rackinheater[0] == 0)
-                                        R2Protorun.Rows[1]["JarNo"] = "H1";
-                                    else if ((rackinheater[0] == 1) && (rackinheater[1] == 0))
-                                        R2Protorun.Rows[1]["JarNo"] = "H2";
-                                }
-                            }
-                            r3inx = 0;
-                            protocolinitiateflg_R3 = true; protocolStartedflg_R3 = false;
-                            protocolrun_R3();
-                        }                        
-                        else if ((R6_protostart == false) && (r6inx == 0) && (protocolinitiateflg_R6 == false))
-                        {
-                            if (heatingreqflg == true)
-                            {
-                                if (rackinheater[2] == 1)
-                                {
-                                    if (rackinheater[0] == 0)
-                                        R6Protorun.Rows[1]["JarNo"] = "H1";
-                                    else if ((rackinheater[0] == 1) && (rackinheater[1] == 0))
-                                        R6Protorun.Rows[1]["JarNo"] = "H2";
-                                }
-                            }
-                            r6inx = 0;
-                            protocolinitiateflg_R6 = true; protocolStartedflg_R6 = false;
-                            protocolrun_R6();
-                        }                                                
-                        else if ((R9_protostart == false) && (r9inx == 0) && (protocolinitiateflg_R9 == false))
-                        {
-                            if (heatingreqflg == true)
-                            {
-                                if (rackinheater[2] == 1)
-                                {
-                                    if (rackinheater[0] == 0)
-                                        R9Protorun.Rows[1]["JarNo"] = "H1";
-                                    else if ((rackinheater[0] == 1) && (rackinheater[1] == 0))
-                                        R9Protorun.Rows[1]["JarNo"] = "H2";
-                                }
-                            }
-                            r9inx = 0;
-                            protocolinitiateflg_R9 = true; protocolStartedflg_R9 = false;
-                            protocolrun_R9();
                         }
-                    }                    
+                        else if ((R3_protostart == false) && (r3inx == 0) && (protocolinitiateflg_R3 == false)) //if ((R3_protostart == false))
+                        {
+                            if (heatingreqflg == true)
+                                R3Protorun.Rows[1]["JarNo"] = htrname;
+                            R3Protorun.Rows[0]["JarNo"] = ldjarname;
+                            r3inx = 0;
+                            protocolinitiateflg_R3 = true;
+                            protocolStartedflg_R3 = false;
+                            protocolrun_R3();
+                        }
+                        else if ((R4_protostart == false) && (r4inx == 0) && (protocolinitiateflg_R4 == false)) //if ((R4_protostart == false))
+                        {
+                            if (heatingreqflg == true)
+                                R4Protorun.Rows[1]["JarNo"] = htrname;
+                            R4Protorun.Rows[0]["JarNo"] = ldjarname;
+                            r4inx = 0;
+                            protocolinitiateflg_R4 = true;
+                            protocolStartedflg_R4 = false;
+                            protocolrun_R4();
+                        }
+                        else if ((R5_protostart == false) && (r5inx == 0) && (protocolinitiateflg_R5 == false)) if ((R5_protostart == false))
+                        {
+                            if (heatingreqflg == true)
+                                R5Protorun.Rows[1]["JarNo"] = htrname;
+                            R5Protorun.Rows[0]["JarNo"] = ldjarname;
+                            r5inx = 0;
+                            protocolinitiateflg_R5 = true;
+                            protocolStartedflg_R5 = false;
+                            protocolrun_R5();
+                        }
+                        else if ((R6_protostart == false) && (r6inx == 0) && (protocolinitiateflg_R6 == false)) // if ((R6_protostart == false))
+                        {
+                            if (heatingreqflg == true)
+                                R6Protorun.Rows[1]["JarNo"] = htrname;
+                            R6Protorun.Rows[0]["JarNo"] = ldjarname;
+                            r6inx = 0;
+                            protocolinitiateflg_R6 = true;
+                            protocolStartedflg_R6 = false;
+                            protocolrun_R6();
+                        }
+                        else if ((R7_protostart == false) && (r7inx == 0) && (protocolinitiateflg_R7 == false)) //if ((R7_protostart == false))
+                        {
+                            if (heatingreqflg == true) R7Protorun.Rows[1]["JarNo"] = htrname;
+                            R7Protorun.Rows[0]["JarNo"] = ldjarname;
+                            r7inx = 0;
+                            protocolinitiateflg_R7 = true;
+                                protocolStartedflg_R7 = false;
+                                protocolrun_R7();
+                        }
+                        else if ((R8_protostart == false) && (r8inx == 0) && (protocolinitiateflg_R8 == false)) //if ((R8_protostart == false))
+                        {
+                            if (heatingreqflg == true) R8Protorun.Rows[1]["JarNo"] = htrname;
+                            R8Protorun.Rows[0]["JarNo"] = ldjarname;
+                            r8inx = 0;
+                            protocolinitiateflg_R8 = true;
+                                protocolStartedflg_R8 = false;
+                                protocolrun_R8();
+                        }
+                        else if ((R9_protostart == false) && (r9inx == 0) && (protocolinitiateflg_R9 == false)) //if ((R9_protostart == false))
+                        {
+                            if (heatingreqflg == true)
+                                R9Protorun.Rows[1]["JarNo"] = htrname;
+                            R9Protorun.Rows[0]["JarNo"] = ldjarname;
+                            r9inx = 0;
+                            protocolinitiateflg_R9 = true;
+                                protocolStartedflg_R9 = false;
+                                protocolrun_R9();
+                        }
+                    }
+                    ////if (rackinloading[0] == 1)
+                    ////{
+                    ////    if ((R1_protostart == false) && (r1inx == 0) && (protocolinitiateflg_R1 == false))
+                    ////    {
+                    ////        if (heatingreqflg == true)
+                    ////        {
+                    ////            if (rackinheater[0] == 1)
+                    ////            {
+                    ////                if (rackinheater[1] == 0)
+                    ////                    R1Protorun.Rows[1]["JarNo"] = "H2";
+                    ////                else if ((rackinheater[1] == 1) && (rackinheater[2] == 0))
+                    ////                    R1Protorun.Rows[1]["JarNo"] = "H3";
+                    ////            }
+                    ////        }
+                    ////        r1inx = 0;
+                    ////        protocolinitiateflg_R1 = true;
+                    ////        protocolStartedflg_R1 = false;
+                    ////        protocolrun_R1();
+                    ////    }                        
+                    ////    else if ((R4_protostart == false) && (r4inx == 0) && (protocolinitiateflg_R4 == false))
+                    ////    {
+                    ////        if (heatingreqflg == true)
+                    ////        {
+                    ////            if (rackinheater[0] == 1)
+                    ////            {
+                    ////                if (rackinheater[1] == 0)
+                    ////                    R4Protorun.Rows[1]["JarNo"] = "H2";
+                    ////                else if ((rackinheater[1] == 1) && (rackinheater[2] == 0))
+                    ////                    R4Protorun.Rows[1]["JarNo"] = "H3";
+                    ////            }
+                    ////        }
+                    ////        r4inx = 0;
+                    ////        protocolinitiateflg_R4 = true; protocolStartedflg_R4 = false;
+                    ////        protocolrun_R4();
+                    ////    }                        
+                    ////    else if ((R7_protostart == false) && (r7inx == 0) && (protocolinitiateflg_R7 == false))
+                    ////    {
+                    ////        if (heatingreqflg == true)
+                    ////        {
+                    ////            if (rackinheater[0] == 1)
+                    ////            {
+                    ////                if (rackinheater[1] == 0)
+                    ////                    R7Protorun.Rows[1]["JarNo"] = "H2";
+                    ////                else if ((rackinheater[1] == 1) && (rackinheater[2] == 0))
+                    ////                    R7Protorun.Rows[1]["JarNo"] = "H3";
+                    ////            }
+                    ////        }
+                    ////        r7inx = 0;
+                    ////        protocolinitiateflg_R7 = true; protocolStartedflg_R7 = false;
+                    ////        protocolrun_R7();
+                    ////    }
+                    ////}
+                    ////else if (rackinloading[1] == 1)
+                    ////{
+                    ////    if ((R2_protostart == false) && (r2inx == 0) && (protocolinitiateflg_R2 == false))
+                    ////    {
+                    ////        if (heatingreqflg == true)
+                    ////        {
+                    ////            if (rackinheater[1] == 1)
+                    ////            {
+                    ////                if (rackinheater[0] == 0)
+                    ////                    R2Protorun.Rows[1]["JarNo"] = "H1";
+                    ////                else if ((rackinheater[0] == 1) && (rackinheater[2] == 0))
+                    ////                    R2Protorun.Rows[1]["JarNo"] = "H3";
+                    ////            }
+                    ////        }
+                    ////        r2inx = 0;
+                    ////        protocolinitiateflg_R2 = true; protocolStartedflg_R2 = false;
+                    ////        protocolrun_R2();
+                    ////    }                        
+                    ////    else if ((R5_protostart == false) && (r5inx == 0) && (protocolinitiateflg_R5 == false))
+                    ////    {
+                    ////        if (heatingreqflg == true)
+                    ////        {
+                    ////            if (rackinheater[1] == 1)
+                    ////            {
+                    ////                if (rackinheater[0] == 0)
+                    ////                    R5Protorun.Rows[1]["JarNo"] = "H1";
+                    ////                else if ((rackinheater[0] == 1) && (rackinheater[2] == 0))
+                    ////                    R5Protorun.Rows[1]["JarNo"] = "H3";
+                    ////            }
+                    ////        }
+                    ////        r5inx = 0;
+                    ////        protocolinitiateflg_R5 = true; protocolStartedflg_R5 = false;
+                    ////        protocolrun_R5();
+                    ////    }                        
+                    ////    else if ((R8_protostart == false) && (r8inx == 0) && (protocolinitiateflg_R8 == false))
+                    ////    {
+                    ////        if (heatingreqflg == true)
+                    ////        {
+                    ////            if (rackinheater[1] == 1)
+                    ////            {
+                    ////                if (rackinheater[0] == 0)
+                    ////                    R8Protorun.Rows[1]["JarNo"] = "H1";
+                    ////                else if ((rackinheater[0] == 1) && (rackinheater[2] == 0))
+                    ////                    R8Protorun.Rows[1]["JarNo"] = "H3";
+                    ////            }
+                    ////        }
+                    ////        r8inx = 0;
+                    ////        protocolinitiateflg_R8 = true; protocolStartedflg_R8 = false;
+                    ////        protocolrun_R8();
+                    ////    }                        
+                    ////}
+                    ////else if (rackinloading[2] == 1)
+                    ////{
+                    ////    if ((R3_protostart == false) && (r3inx == 0) && (protocolinitiateflg_R3 == false))
+                    ////    {
+                    ////        if (heatingreqflg == true)
+                    ////        {
+                    ////            if (rackinheater[2] == 1)
+                    ////            {
+                    ////                if (rackinheater[0] == 0)
+                    ////                    R2Protorun.Rows[1]["JarNo"] = "H1";
+                    ////                else if ((rackinheater[0] == 1) && (rackinheater[1] == 0))
+                    ////                    R2Protorun.Rows[1]["JarNo"] = "H2";
+                    ////            }
+                    ////        }
+                    ////        r3inx = 0;
+                    ////        protocolinitiateflg_R3 = true; protocolStartedflg_R3 = false;
+                    ////        protocolrun_R3();
+                    ////    }                        
+                    ////    else if ((R6_protostart == false) && (r6inx == 0) && (protocolinitiateflg_R6 == false))
+                    ////    {
+                    ////        if (heatingreqflg == true)
+                    ////        {
+                    ////            if (rackinheater[2] == 1)
+                    ////            {
+                    ////                if (rackinheater[0] == 0)
+                    ////                    R6Protorun.Rows[1]["JarNo"] = "H1";
+                    ////                else if ((rackinheater[0] == 1) && (rackinheater[1] == 0))
+                    ////                    R6Protorun.Rows[1]["JarNo"] = "H2";
+                    ////            }
+                    ////        }
+                    ////        r6inx = 0;
+                    ////        protocolinitiateflg_R6 = true; protocolStartedflg_R6 = false;
+                    ////        protocolrun_R6();
+                    ////    }                                                
+                    ////    else if ((R9_protostart == false) && (r9inx == 0) && (protocolinitiateflg_R9 == false))
+                    ////    {
+                    ////        if (heatingreqflg == true)
+                    ////        {
+                    ////            if (rackinheater[2] == 1)
+                    ////            {
+                    ////                if (rackinheater[0] == 0)
+                    ////                    R9Protorun.Rows[1]["JarNo"] = "H1";
+                    ////                else if ((rackinheater[0] == 1) && (rackinheater[1] == 0))
+                    ////                    R9Protorun.Rows[1]["JarNo"] = "H2";
+                    ////            }
+                    ////        }
+                    ////        r9inx = 0;
+                    ////        protocolinitiateflg_R9 = true; protocolStartedflg_R9 = false;
+                    ////        protocolrun_R9();
+                    ////    }
+                    ////}                    
                 }
             }
             catch (Exception d3)
@@ -8423,6 +6925,22 @@ namespace HematoxinandEosin
         #region Prototimers
         int Overlaptime = 0; //declared on 26-11-2024 1728
         int washontime = 18; //declared on 11022025_1604
+        private Dictionary<string, int[]> rackLocations = new Dictionary<string, int[]>
+        {
+            { "J", new int[33] },  // 33 slots for jars
+            { "W", new int[6] },   // 6 slots for water jars
+            { "H", new int[3] },   // 3 heater slots
+            { "L", new int[3] }    // 3 loading slots
+        };
+        private void UpdateRackLocation(string jarName, int status)
+        {
+            string key = jarName.Substring(0, 1);
+            int index = Convert.ToInt32(jarName.Substring(1)) - 1;
+            if (rackLocations.ContainsKey(key))
+            {
+                rackLocations[key][index] = status;
+            }
+        }
         private void tmr_r1_Tick(object sender, EventArgs e)
         {
             try
@@ -8472,10 +6990,12 @@ namespace HematoxinandEosin
                         pickedflg_R1 = true;
                         R1_pickcmdissue = true;
                         r1priority = 1;
+                        Racks[1] = new Rack { RackNo = 1, IncubationTime = r1_incub, Priority = r1priority };
                         //SetText("RA Picked the Rack from" + inxSlno.ToString() +" Jar");
                         SetText("RA Picked the Rack " + R1_cnt.ToString() + " from Jar " + JarName_R1);
                         updateprotorun(protoshortname, RequiredVariables.UserName, DateTime.Now.ToShortDateString(), RegName_R1, JarName_R1, "R" + R1_cnt.ToString(), DateTime.Now.ToString() + "." + System.DateTime.Now.Millisecond.ToString().PadLeft(3, '0'), monVal, "Picked From", 0f, m_Runid);
                         update_jardetails_runtime(JarName_R1, "R" + R1_cnt.ToString(), true, false, r1_taskcomp.ToString().Substring(11));
+                        UpdateRackLocation(JarName_R1, 0);
                         jno = Convert.ToInt32(JarName_R1.Substring(1));
                         if (JarName_R1.Contains("J"))
                             rackinjars[jno - 1] = 0;
@@ -8488,13 +7008,13 @@ namespace HematoxinandEosin
                         if (JarName_R1 == "H1") { H1.TaskProcess = ""; Rackin_H1 = false; }
                         else if (JarName_R1 == "H2") { H2.TaskProcess = ""; Rackin_H2 = false; }
                         else if (JarName_R1 == "H3") { H3.TaskProcess = ""; Rackin_H3 = false; }
-
+                        
                         if (protocolinitiateflg_R1 == true)
                             protocolrun_R1();
                     }
                     else if (toplaceflg_R1 == true)
                     {
-                        //SetText("RA Placed the Rack in" + inxSlno.ToString() + " Jar");
+                        //SetText("RA Placed the Rack in" + inxSlno.ToString() + " Jar");                        
                         SetText("RA Placed the Rack " + R1_cnt.ToString() + " in Jar " + JarName_R1);
                         toplaceflg_R1 = false;
                         placedflg_R1 = true;
@@ -8502,22 +7022,28 @@ namespace HematoxinandEosin
                         if (incubtime_R1 > 30)
                             r1priority = 0;
                         else
-                            r1priority = 1;
+                            r1priority = 1;                       
 
                         update_jardetails_runtime(JarName_R1, "R" + R1_cnt.ToString(), false, true, r1_taskcomp.ToString().Substring(11));
                         updateprotorun(protoshortname, RequiredVariables.UserName, DateTime.Now.ToShortDateString(), RegName_R1, JarName_R1, "R" + R1_cnt.ToString(), DateTime.Now.ToString() + "." + System.DateTime.Now.Millisecond.ToString().PadLeft(3, '0'), monVal, "Placed In", 0f, m_Runid);
+                        UpdateRackLocation(JarName_R1, 1);
                         jno = Convert.ToInt32(JarName_R1.Substring(1));
                         if (JarName_R1.Contains("J"))
                             rackinjars[jno - 1] = 1;
-                        else if (JarName_R1.Contains("W"))
+                        else if (JarName_R3.Contains("W"))
                             rackinwaterjars[jno - 1] = 1;
-                        else if (JarName_R1.Contains("H"))
+                        if (JarName_R1.Contains("U"))
                         {
-                            rackinheater[jno - 1] = 1;
+                            if (protocolinitiateflg_R1 == true)
+                                protocolrun_R1();
+                            return;
+                        }
+                        else if (JarName_R1.Contains("H"))
+                        {                            
                             //Below code updated on 08-01-2025
-                            if (JarName_R1 == "H1") { Rackin_H1 = true; H1_incub_complete = false; }
-                            else if (JarName_R1 == "H2") { Rackin_H2 = true; H2_incub_complete = false; }
-                            else if (JarName_R1 == "H3") { Rackin_H3 = true; H3_incub_complete = false; }
+                            if (JarName_R1 == "H1") { Rackin_H1 = true; H1_incub_complete = false;rackinheater[0] = 1; }
+                            else if (JarName_R1 == "H2") { Rackin_H2 = true; H2_incub_complete = false; rackinheater[1] = 1; }
+                            else if (JarName_R1 == "H3") { Rackin_H3 = true; H3_incub_complete = false; rackinheater[2] = 1; }
                         }
 
                         //////code added on 17-11-2023 for Robotic arm status
@@ -8532,9 +7058,12 @@ namespace HematoxinandEosin
                         ////incubationdelay_R1(d1);  Temporarly disable for testing
                         r1_incub = System.DateTime.Now;
                         r1_incub = r1_incub.AddSeconds(incubtime_R1);
-                        tmr_r1_incub.Enabled = true;
-                        tmr_r1_incub.Interval = 1000;
-
+                        Racks[1] = new Rack { RackNo = 1, IncubationTime = r1_incub, Priority = r1priority, IsProcessing = false };
+                        if((JarName_R1.Contains("J"))|| (JarName_R1.Contains("H"))|| (JarName_R1.Contains("W")))
+                        {
+                            tmr_r1_incub.Enabled = true;
+                            tmr_r1_incub.Interval = 1000;
+                        }
                         /////*Added to check both arms usage*/
                         ////placedJar = JarName_R1;  Rno = R1_RNo;
                         ////move_RA_Time = System.DateTime.Now;
@@ -8681,6 +7210,7 @@ namespace HematoxinandEosin
                         pickedflg_R2 = true;
                         R2_pickcmdissue = true;
                         r2priority = 1;
+                        Racks[2] = new Rack { RackNo = 2, IncubationTime = r2_incub, Priority = r2priority };
                         //SetText("RA Picked the Rack from" + inxSlno.ToString() +" Jar");
                         SetText("RA Picked the Rack " + R2_cnt.ToString() + " from Jar " + JarName_R2);
                         updateprotorun(protoshortname, RequiredVariables.UserName, DateTime.Now.ToShortDateString(), RegName_R2, JarName_R2, "R" + R2_cnt.ToString(), DateTime.Now.ToString() + "." + System.DateTime.Now.Millisecond.ToString().PadLeft(3, '0'), monVal, "Picked From", 0f, m_Runid);
@@ -8697,7 +7227,7 @@ namespace HematoxinandEosin
                         if (JarName_R2 == "H1") { H1.TaskProcess = ""; Rackin_H1 = false; }
                         else if (JarName_R2 == "H2") { H2.TaskProcess = ""; Rackin_H2 = false; }
                         else if (JarName_R2 == "H3") { H3.TaskProcess = ""; Rackin_H3 = false; }
-                        /*Added on 20-12-2023 1621*/
+                        /*Added on 20-12-2023 1621*/                        
                         update_jardetails_runtime(JarName_R2, "R" + R2_cnt.ToString(), true, false, r2_taskcomp.ToString().Substring(11));
                         if (protocolinitiateflg_R2 == true)
                             protocolrun_R2();
@@ -8724,31 +7254,42 @@ namespace HematoxinandEosin
                         else if (JarName_R2.Contains("W"))
                             rackinwaterjars[jno - 1] = 1;
                         else if (JarName_R2.Contains("H"))
-                        {
-                            rackinheater[jno - 1] = 1;
+                        {                            
                             //Below code updated on 08-01-2025
-                            if (JarName_R2 == "H1") { Rackin_H1 = true; H1_incub_complete = false; }
-                            else if (JarName_R2 == "H2") { Rackin_H2 = true; H2_incub_complete = false; }
-                            else if (JarName_R2 == "H3") { Rackin_H3 = true; H3_incub_complete = false; }
+                            if (JarName_R2 == "H1") { Rackin_H1 = true; H1_incub_complete = false; rackinheater[0] = 1; }
+                            else if (JarName_R2 == "H2") { Rackin_H2 = true; H2_incub_complete = false; rackinheater[1] = 1; }
+                            else if (JarName_R2 == "H3") { Rackin_H3 = true; H3_incub_complete = false; rackinheater[2] = 1; }
                         }
+                        else if(JarName_R2.Contains("U"))
+                        {
+                            if (protocolinitiateflg_R2 == true)
+                                protocolrun_R2();
+                            return;
+                        }
+                        
+                            /*Added on 20-12-2023 1621*/
 
-                        /*Added on 20-12-2023 1621*/
+                            ////TimeSpan d1 = new TimeSpan();
+                            ////d1 = System.DateTime.Now.TimeOfDay;
+                            ////d1 = d1.Add(TimeSpan.FromSeconds(incubtime_R2));
+                            ////incubationdelay_R1(d1);  Temporarly disable for testing
 
-                        ////TimeSpan d1 = new TimeSpan();
-                        ////d1 = System.DateTime.Now.TimeOfDay;
-                        ////d1 = d1.Add(TimeSpan.FromSeconds(incubtime_R2));
-                        ////incubationdelay_R1(d1);  Temporarly disable for testing
-
-                        //////code added on 17-11-2023 for Robotic arm status
-                        ////if (RA1_Busystate == true)
-                        ////    RA1_Busystate = false;
-                        ////if (RA2_Busystate == true)
-                        ////    RA2_Busystate = false;
+                            //////code added on 17-11-2023 for Robotic arm status
+                            ////if (RA1_Busystate == true)
+                            ////    RA1_Busystate = false;
+                            ////if (RA2_Busystate == true)
+                            ////    RA2_Busystate = false;
 
                         r2_incub = System.DateTime.Now;
                         r2_incub = r2_incub.AddSeconds(incubtime_R2);
-                        tmr_r2_incub.Enabled = true;
-                        tmr_r2_incub.Interval = 1000;
+                        Racks[2] = new Rack { RackNo = 2, IncubationTime = r2_incub, Priority = r2priority, IsProcessing = false };
+                        if ((JarName_R2.Contains("J")) || (JarName_R2.Contains("H")) || (JarName_R2.Contains("W")))
+                        {
+                            tmr_r2_incub.Enabled = true;
+                            tmr_r2_incub.Interval = 1000;
+                        }
+                            
+                        
                         /////*Added to check both arms usage*/
                         ////placedJar = JarName_R2; Rno = R2_RNo;
                         ////move_RA_Time = System.DateTime.Now;
@@ -8890,6 +7431,7 @@ namespace HematoxinandEosin
                         pickedflg_R3 = true;
                         R3_pickcmdissue = true;
                         r3priority = 1;
+                        Racks[3] = new Rack { RackNo = 3, IncubationTime = r3_incub, Priority = r3priority };
                         //SetText("RA Picked the Rack from" + inxSlno.ToString() +" Jar");
                         SetText("RA Picked the Rack " + R3_cnt.ToString() + " from Jar " + JarName_R3);
                         updateprotorun(protoshortname, RequiredVariables.UserName, DateTime.Now.ToShortDateString(), RegName_R3, JarName_R3, "R" + R3_cnt.ToString(), DateTime.Now.ToString() + "." + System.DateTime.Now.Millisecond.ToString().PadLeft(3, '0'), monVal, "Picked From", 0f, m_Runid);
@@ -8906,7 +7448,7 @@ namespace HematoxinandEosin
                         if (JarName_R3 == "H1") { H1.TaskProcess = ""; Rackin_H1 = false; }
                         else if (JarName_R3 == "H2") { H2.TaskProcess = ""; Rackin_H2 = false; }
                         else if (JarName_R3 == "H3") { H3.TaskProcess = ""; Rackin_H3 = false; }
-                        update_jardetails_runtime(JarName_R3, "R" + R3_cnt.ToString(), true, false, r3_taskcomp.ToString().Substring(11));
+                        update_jardetails_runtime(JarName_R3, "R" + R3_cnt.ToString(), true, false, r3_taskcomp.ToString().Substring(11));                        
                         /*Added on 20-12-2023 1621*/
                         if (protocolinitiateflg_R3 == true)
                             protocolrun_R3();
@@ -8937,12 +7479,17 @@ namespace HematoxinandEosin
                         else if (JarName_R3.Contains("W"))
                             rackinwaterjars[jno - 1] = 1;
                         else if (JarName_R3.Contains("H"))
-                        {
-                            rackinheater[jno - 1] = 1;
+                        {                            
                             //Below code updated on 08-01-2025
-                            if (JarName_R3 == "H1") { Rackin_H1 = true; H1_incub_complete = false; }
-                            else if (JarName_R3 == "H2") { Rackin_H2 = true; H2_incub_complete = false; }
-                            else if (JarName_R3 == "H3") { Rackin_H3 = true; H3_incub_complete = false; }
+                            if (JarName_R3 == "H1") { Rackin_H1 = true; H1_incub_complete = false; rackinheater[0] = 1; }
+                            else if (JarName_R3 == "H2") { Rackin_H2 = true; H2_incub_complete = false; rackinheater[1] = 1; }
+                            else if (JarName_R3 == "H3") { Rackin_H3 = true; H3_incub_complete = false; rackinheater[2] = 1; }
+                        }
+                        else if (JarName_R3.Contains("U"))
+                        {
+                            if (protocolinitiateflg_R3 == true)
+                                protocolrun_R3();
+                            return;
                         }
                         /*Added on 20-12-2023 1621*/
 
@@ -8952,8 +7499,12 @@ namespace HematoxinandEosin
                         ////incubationdelay_R1(d1);  Temporarly disable for testing
                         r3_incub = System.DateTime.Now;
                         r3_incub = r3_incub.AddSeconds(incubtime_R3);
-                        tmr_r3_incub.Enabled = true;
-                        tmr_r3_incub.Interval = 1000;
+                        Racks[3] = new Rack { RackNo = 3, IncubationTime = r3_incub, Priority = r3priority, IsProcessing = false };
+                        if ((JarName_R3.Contains("J")) || (JarName_R3.Contains("H")) || (JarName_R3.Contains("W")))
+                        {
+                            tmr_r3_incub.Enabled = true;
+                            tmr_r3_incub.Interval = 1000;
+                        }
                         /////*Added to check both arms usage*/
                         ////placedJar = JarName_R3; Rno = R3_RNo;
                         ////move_RA_Time = System.DateTime.Now;
@@ -9073,6 +7624,7 @@ namespace HematoxinandEosin
                         pickedflg_R4 = true;
                         R4_pickcmdissue = true;
                         r4priority = 1;
+                        Racks[4] = new Rack { RackNo = 4, IncubationTime = r4_incub, Priority = r4priority };
                         //SetText("RA Picked the Rack from" + inxSlno.ToString() +" Jar");
                         SetText("RA Picked the Rack " + R4_cnt.ToString() + " from Jar " + JarName_R4);
                         updateprotorun(protoshortname, RequiredVariables.UserName, DateTime.Now.ToShortDateString(), RegName_R4, JarName_R4, "R" + R4_cnt.ToString(), DateTime.Now.ToString() + "." + System.DateTime.Now.Millisecond.ToString().PadLeft(3, '0'), monVal, "Picked From", 0f, m_Runid);
@@ -9089,6 +7641,7 @@ namespace HematoxinandEosin
                         if (JarName_R4 == "H1") { H1.TaskProcess = ""; Rackin_H1 = false; }
                         else if (JarName_R4 == "H2") { H2.TaskProcess = ""; Rackin_H2 = false; }
                         else if (JarName_R4 == "H3") { H3.TaskProcess = ""; Rackin_H3 = false; }
+                        
                         update_jardetails_runtime(JarName_R4, "R" + R4_cnt.ToString(), true, false, r4_taskcomp.ToString().Substring(11));
                         /*Added on 20-12-2023 1621*/
                         if (protocolinitiateflg_R4 == true)
@@ -9114,12 +7667,17 @@ namespace HematoxinandEosin
                         else if (JarName_R4.Contains("W"))
                             rackinwaterjars[jno - 1] = 0;
                         else if (JarName_R4.Contains("H"))
-                        {
-                            rackinheater[jno - 1] = 1;
+                        {                            
                             //Below code updated on 08-01-2025
-                            if (JarName_R4 == "H1") { Rackin_H1 = true; H1_incub_complete = false; }
-                            if (JarName_R4 == "H2") { Rackin_H2 = true; H2_incub_complete = false; }
-                            if (JarName_R4 == "H3") { Rackin_H3 = true; H3_incub_complete = false; }
+                            if (JarName_R4 == "H1") { Rackin_H1 = true; H1_incub_complete = false; rackinheater[0] = 1; }
+                            else if (JarName_R4 == "H2") { Rackin_H2 = true; H2_incub_complete = false; rackinheater[1] = 1; }
+                            else if (JarName_R4 == "H3") { Rackin_H3 = true; H3_incub_complete = false; rackinheater[2] = 1; }
+                        }
+                        else if (JarName_R4.Contains("U"))
+                        {
+                            if (protocolinitiateflg_R4 == true)
+                                protocolrun_R4();
+                            return;
                         }
                         /*Added on 20-12-2023 1621*/
                         //////code added on 17-11-2023 for Robotic arm status
@@ -9129,9 +7687,13 @@ namespace HematoxinandEosin
                         ////    RA2_Busystate = false;
 
                         r4_incub = System.DateTime.Now;
-                        r4_incub = r4_incub.AddSeconds(incubtime_R4);
-                        tmr_r4_incub.Enabled = true;
-                        tmr_r4_incub.Interval = 1000;
+                        r4_incub = r4_incub.AddSeconds(incubtime_R4);                        
+                        Racks[4] = new Rack { RackNo = 4, IncubationTime = r4_incub, Priority = r4priority, IsProcessing = false };
+                        if ((JarName_R4.Contains("J")) || (JarName_R4.Contains("H")) || (JarName_R4.Contains("W")))
+                        {
+                            tmr_r4_incub.Enabled = true;
+                            tmr_r4_incub.Interval = 1000;
+                        }
                         /////*Added to check both arms usage*/
                         ////placedJar = JarName_R4; Rno = R4_RNo;
                         ////move_RA_Time = System.DateTime.Now;
@@ -9278,6 +7840,7 @@ namespace HematoxinandEosin
                         pickedflg_R5 = true;
                         R5_pickcmdissue = true;
                         r5priority = 1;
+                        Racks[5] = new Rack { RackNo = 5, IncubationTime = r5_incub, Priority = r5priority };
                         //SetText("RA Picked the Rack from" + inxSlno.ToString() +" Jar");
                         SetText("RA Picked the Rack " + R5_cnt.ToString() + " from Jar " + JarName_R5);
                         updateprotorun(protoshortname, RequiredVariables.UserName, DateTime.Now.ToShortDateString(), RegName_R5, JarName_R5, "R" + R5_cnt.ToString(), DateTime.Now.ToString() + "." + System.DateTime.Now.Millisecond.ToString().PadLeft(3, '0'), monVal, "Picked From", 0f, m_Runid);
@@ -9319,12 +7882,17 @@ namespace HematoxinandEosin
                         else if (JarName_R5.Contains("W"))
                             rackinwaterjars[jno - 1] = 1;
                         else if (JarName_R5.Contains("H"))
-                        {
-                            rackinheater[jno - 1] = 1;
+                        {                            
                             //Below code updated on 08-01-2025
-                            if (JarName_R5 == "H1") { Rackin_H1 = true; H1_incub_complete = false; }
-                            if (JarName_R5 == "H2") { Rackin_H2 = true; H2_incub_complete = false; }
-                            if (JarName_R5 == "H3") { Rackin_H3 = true; H3_incub_complete = false; }
+                            if (JarName_R5 == "H1") { Rackin_H1 = true; H1_incub_complete = false; rackinheater[0] = 1; }
+                            else if (JarName_R5 == "H2") { Rackin_H2 = true; H2_incub_complete = false; rackinheater[1] = 1; }
+                            else if (JarName_R5 == "H3") { Rackin_H3 = true; H3_incub_complete = false; rackinheater[2] = 1; }
+                        }
+                        else if (JarName_R5.Contains("U"))
+                        {                            
+                            if (protocolinitiateflg_R5 == true)
+                                protocolrun_R5();
+                            return;
                         }
                         /*Added on 20-12-2023 1621*/
 
@@ -9336,8 +7904,12 @@ namespace HematoxinandEosin
 
                         r5_incub = System.DateTime.Now;
                         r5_incub = r5_incub.AddSeconds(incubtime_R5);
-                        tmr_r5_incub.Enabled = true;
-                        tmr_r5_incub.Interval = 1000;
+                        Racks[5] = new Rack { RackNo = 5, IncubationTime = r5_incub, Priority = r5priority, IsProcessing = false };
+                        if ((JarName_R5.Contains("J")) || (JarName_R5.Contains("H")) || (JarName_R5.Contains("W")))
+                        {
+                            tmr_r5_incub.Enabled = true;
+                            tmr_r5_incub.Interval = 1000;
+                        }
                         /////*Added to check both arms usage*/
                         ////placedJar = JarName_R5; Rno = R5_RNo;
                         ////move_RA_Time = System.DateTime.Now;
@@ -9486,6 +8058,7 @@ namespace HematoxinandEosin
                         pickedflg_R6 = true;
                         R6_pickcmdissue = true;
                         r6priority = 1;
+                        Racks[6] = new Rack { RackNo = 6, IncubationTime = r6_incub, Priority = r6priority };
                         //SetText("RA Picked the Rack from" + inxSlno.ToString() +" Jar");
                         SetText("RA Picked the Rack " + R6_cnt.ToString() + " from Jar " + JarName_R6);
                         updateprotorun(protoshortname, RequiredVariables.UserName, DateTime.Now.ToShortDateString(), RegName_R6, JarName_R6, "R" + R6_cnt.ToString(), DateTime.Now.ToString() + "." + System.DateTime.Now.Millisecond.ToString().PadLeft(3, '0'), monVal, "Picked From", 0f, m_Runid);
@@ -9527,12 +8100,17 @@ namespace HematoxinandEosin
                         else if (JarName_R6.Contains("W"))
                             rackinwaterjars[jno - 1] = 1;
                         else if (JarName_R6.Contains("H"))
-                        {
-                            rackinheater[jno - 1] = 1;
+                        {                            
                             //Below code updated on 08-01-2025
-                            if (JarName_R6 == "H1") { Rackin_H1 = true; H1_incub_complete = false; }
-                            if (JarName_R6 == "H2") { Rackin_H2 = true; H2_incub_complete = false; }
-                            if (JarName_R6 == "H3") { Rackin_H3 = true; H3_incub_complete = false; }
+                            if (JarName_R6 == "H1") { Rackin_H1 = true; H1_incub_complete = false; rackinheater[0] = 1; }
+                            else if (JarName_R6 == "H2") { Rackin_H2 = true; H2_incub_complete = false; rackinheater[1] = 1; }
+                            else if (JarName_R6 == "H3") { Rackin_H3 = true; H3_incub_complete = false; rackinheater[2] = 1; }
+                        }
+                        else if (JarName_R6.Contains("U"))
+                        {
+                            if (protocolinitiateflg_R6 == true)
+                                protocolrun_R6();
+                            return;
                         }
                         /*Added on 20-12-2023 1621*/
 
@@ -9543,9 +8121,13 @@ namespace HematoxinandEosin
                         ////    RA2_Busystate = false;
 
                         r6_incub = System.DateTime.Now;
-                        r6_incub = r6_incub.AddSeconds(incubtime_R6);
-                        tmr_r6_incub.Enabled = true;
-                        tmr_r6_incub.Interval = 1000;
+                        r6_incub = r6_incub.AddSeconds(incubtime_R6);                        
+                        Racks[6] = new Rack { RackNo = 6, IncubationTime = r6_incub, Priority = r6priority, IsProcessing = false };
+                        if ((JarName_R6.Contains("J")) || (JarName_R6.Contains("H")) || (JarName_R6.Contains("W")))
+                        {
+                            tmr_r6_incub.Enabled = true;
+                            tmr_r6_incub.Interval = 1000;
+                        }
                         /////*Added to check both arms usage*/
                         ////placedJar = JarName_R6; Rno = R6_RNo;
                         ////move_RA_Time = System.DateTime.Now;
@@ -9665,6 +8247,7 @@ namespace HematoxinandEosin
                         pickedflg_R7 = true;
                         R7_pickcmdissue = true;
                         r7priority = 1;
+                        Racks[7] = new Rack { RackNo = 7, IncubationTime = r7_incub, Priority = r7priority };
                         //SetText("RA Picked the Rack from" + inxSlno.ToString() +" Jar");
                         SetText("RA Picked the Rack " + R7_cnt.ToString() + " from Jar " + JarName_R7);
                         updateprotorun(protoshortname, RequiredVariables.UserName, DateTime.Now.ToShortDateString(), RegName_R7, JarName_R7, "R" + R7_cnt.ToString(), DateTime.Now.ToString() + "." + System.DateTime.Now.Millisecond.ToString().PadLeft(3, '0'), monVal, "Picked From", 0f, m_Runid);
@@ -9705,12 +8288,17 @@ namespace HematoxinandEosin
                         else if (JarName_R7.Contains("W"))
                             rackinwaterjars[jno - 1] = 1;
                         else if (JarName_R7.Contains("H"))
-                        {
-                            rackinheater[jno - 1] = 1;
+                        {                            
                             //Below code updated on 08-01-2025
-                            if (JarName_R7 == "H1") { Rackin_H1 = true; H1_incub_complete = false; }
-                            if (JarName_R7 == "H2") { Rackin_H2 = true; H2_incub_complete = false; }
-                            if (JarName_R7 == "H3") { Rackin_H3 = true; H3_incub_complete = false; }
+                            if (JarName_R7 == "H1") { Rackin_H1 = true; H1_incub_complete = false; rackinheater[0] = 1; }
+                            else if (JarName_R7 == "H2") { Rackin_H2 = true; H2_incub_complete = false; rackinheater[1] = 1; }
+                            else if (JarName_R7 == "H3") { Rackin_H3 = true; H3_incub_complete = false; rackinheater[2] = 1; }
+                        }
+                        else if (JarName_R7.Contains("U"))
+                        {
+                            if (protocolinitiateflg_R7 == true)
+                                protocolrun_R7();
+                            return;
                         }
                         /*Added on 20-12-2023 1621*/
 
@@ -9722,9 +8310,12 @@ namespace HematoxinandEosin
 
                         r7_incub = System.DateTime.Now;
                         r7_incub = r7_incub.AddSeconds(incubtime_R7);
-                        tmr_r7_incub.Enabled = true;
-                        tmr_r7_incub.Interval = 1000;
-
+                        Racks[7] = new Rack { RackNo = 7, IncubationTime = r7_incub, Priority = r7priority, IsProcessing = false };
+                        if ((JarName_R7.Contains("J")) || (JarName_R7.Contains("H")) || (JarName_R7.Contains("W")))
+                        {
+                            tmr_r7_incub.Enabled = true;
+                            tmr_r7_incub.Interval = 1000;
+                        }
                         /////*Added to check both arms usage*/
                         ////placedJar = JarName_R7; Rno = R7_RNo;
                         ////move_RA_Time = System.DateTime.Now;
@@ -9870,6 +8461,7 @@ namespace HematoxinandEosin
                         pickedflg_R8 = true;
                         R8_pickcmdissue = true;
                         r8priority = 1;
+                        Racks[8] = new Rack { RackNo = 8, IncubationTime = r8_incub, Priority = r8priority };
                         //SetText("RA Picked the Rack from" + inxSlno.ToString() +" Jar");
                         SetText("RA Picked the Rack " + R8_cnt.ToString() + " from Jar " + JarName_R8);
                         updateprotorun(protoshortname, RequiredVariables.UserName, DateTime.Now.ToShortDateString(), RegName_R8, JarName_R8, "R" + R8_cnt.ToString(), DateTime.Now.ToString() + "." + System.DateTime.Now.Millisecond.ToString().PadLeft(3, '0'), monVal, "Picked From", 0f, m_Runid);                        
@@ -9910,12 +8502,17 @@ namespace HematoxinandEosin
                         else if (JarName_R8.Contains("W"))
                             rackinwaterjars[jno - 1] = 1;
                         else if (JarName_R8.Contains("H"))
-                        {
-                            rackinheater[jno - 1] = 1;
+                        {                          
                             //Below code updated on 08-01-2025
-                            if (JarName_R8 == "H1") { Rackin_H1 = true; H1_incub_complete = false; }
-                            if (JarName_R8 == "H2") { Rackin_H2 = true; H2_incub_complete = false; }
-                            if (JarName_R8 == "H3") { Rackin_H3 = true; H3_incub_complete = false; }
+                            if (JarName_R8 == "H1") { Rackin_H1 = true; H1_incub_complete = false; rackinheater[0] = 1; }
+                            else if (JarName_R8 == "H2") { Rackin_H2 = true; H2_incub_complete = false; rackinheater[1] = 1; }
+                            else if (JarName_R8 == "H3") { Rackin_H3 = true; H3_incub_complete = false; rackinheater[2] = 1; }
+                        }
+                        else if (JarName_R8.Contains("U"))
+                        {
+                            if (protocolinitiateflg_R8 == true)
+                                protocolrun_R8();
+                            return;
                         }
                         /*Added on 20-12-2023 1621*/
 
@@ -9927,9 +8524,12 @@ namespace HematoxinandEosin
 
                         r8_incub = System.DateTime.Now;
                         r8_incub = r8_incub.AddSeconds(incubtime_R8);
-                        tmr_r8_incub.Enabled = true;
-                        tmr_r8_incub.Interval = 1000;
-
+                        Racks[8] = new Rack { RackNo = 8, IncubationTime = r8_incub, Priority = r8priority, IsProcessing = false };
+                        if ((JarName_R8.Contains("J")) || (JarName_R8.Contains("H")) || (JarName_R8.Contains("W")))
+                        {
+                            tmr_r8_incub.Enabled = true;
+                            tmr_r8_incub.Interval = 1000;
+                        }
                         /////*Added to check both arms usage*/
                         ////placedJar = JarName_R8; Rno = R8_RNo;
                         ////move_RA_Time = System.DateTime.Now;
@@ -10075,6 +8675,7 @@ namespace HematoxinandEosin
                         pickedflg_R9 = true;
                         R9_pickcmdissue = true;
                         r9priority = 1;
+                        Racks[9] = new Rack { RackNo = 9, IncubationTime = r9_incub, Priority = r9priority };
                         //SetText("RA Picked the Rack from" + inxSlno.ToString() +" Jar");
                         SetText("RA Picked the Rack " + R9_cnt.ToString() + " from Jar " + JarName_R9);
                         updateprotorun(protoshortname, RequiredVariables.UserName, DateTime.Now.ToShortDateString(), RegName_R9, JarName_R9, "R" + R9_cnt.ToString(), DateTime.Now.ToString() + "." + System.DateTime.Now.Millisecond.ToString().PadLeft(3, '0'), monVal, "Picked From", 0f, m_Runid);
@@ -10115,12 +8716,17 @@ namespace HematoxinandEosin
                         else if (JarName_R9.Contains("W"))
                             rackinwaterjars[jno - 1] = 1;
                         else if (JarName_R9.Contains("H"))
-                        {
-                            rackinheater[jno - 1] = 1;
+                        {                            
                             //Below code updated on 08-01-2025
-                            if (JarName_R9 == "H1") { Rackin_H1 = true; H1_incub_complete = false; }
-                            if (JarName_R9 == "H2") { Rackin_H2 = true; H2_incub_complete = false; }
-                            if (JarName_R9 == "H3") { Rackin_H3 = true; H3_incub_complete = false; }
+                            if (JarName_R9 == "H1") { Rackin_H1 = true; H1_incub_complete = false; rackinheater[0] = 1; }
+                            else if (JarName_R9 == "H2") { Rackin_H2 = true; H2_incub_complete = false; rackinheater[1] = 1; }
+                            else if (JarName_R9 == "H3") { Rackin_H3 = true; H3_incub_complete = false; rackinheater[2] = 1; }
+                        }
+                        else if (JarName_R9.Contains("U"))
+                        {
+                            if (protocolinitiateflg_R9 == true)
+                                protocolrun_R9();
+                            return;
                         }
                         /*Added on 20-12-2023 1621*/
 
@@ -10132,9 +8738,12 @@ namespace HematoxinandEosin
 
                         r9_incub = System.DateTime.Now;
                         r9_incub = r9_incub.AddSeconds(incubtime_R9);
-                        tmr_r9_incub.Enabled = true;
-                        tmr_r9_incub.Interval = 1000;
-
+                        Racks[9] = new Rack { RackNo = 9, IncubationTime = r9_incub, Priority = r9priority, IsProcessing = false };
+                        if ((JarName_R9.Contains("J")) || (JarName_R9.Contains("H")) || (JarName_R9.Contains("W")))
+                        {
+                            tmr_r9_incub.Enabled = true;
+                            tmr_r9_incub.Interval = 1000;
+                        }
                         /////*Added to check both arms usage*/
                         ////placedJar = JarName_R9; Rno = R9_RNo;
                         ////move_RA_Time = System.DateTime.Now;
@@ -11137,7 +9746,7 @@ namespace HematoxinandEosin
                         {
                             r1priority = 0;
                         }
-                    }
+                    }                    
                 }
                 else
                 {
@@ -11209,7 +9818,7 @@ namespace HematoxinandEosin
                         {
                             r2priority = 0;
                         }
-                    }
+                    }                    
                 }
                 else
                 {
@@ -11712,7 +10321,7 @@ namespace HematoxinandEosin
                         r9priority = 0;
                     else
                     {
-                        if (((incubtime_R9 > 0) && (incubtime_R9 < 30)) || (noofdips_R9 > 0))
+                        if (((incubtime_R9 > 0) && (incubtime_R9 <= 30)) || (noofdips_R9 > 0))
                         {
                             r9priority = 1;
                         }
@@ -12089,8 +10698,7 @@ namespace HematoxinandEosin
                     protocolinitiateflg_R1 = false;
                     protocolStartedflg_R1 = false;
                     R1_protostart = false;
-                    U1.Enabled = true;
-                    rackinunloading[0] = 1;
+                    enable_unloadJar(JarName_R1);
                     //////R1_cnt = R1_cnt + 6;  /*Temporarly commented on 24112023 1554 for testing */
                     //call Unload racks function
                     return;
@@ -12128,6 +10736,8 @@ namespace HematoxinandEosin
                             }
                             else if (r1inx > 0)
                             {
+                                if ((!string.IsNullOrEmpty(Actual_WashJar_R1)) && (JarName_R1.Contains("W")) && (JarName_R1 != Actual_WashJar_R1))
+                                    R1Protorun.Rows[r1inx]["JarNo"] = Actual_WashJar_R1;
                                 r1inx++;
                                 rackvalinc = true;
                             }
@@ -12200,8 +10810,7 @@ namespace HematoxinandEosin
                                 protocolinitiateflg_R1 = false;
                                 protocolStartedflg_R1 = false;
                                 R1_protostart = false;
-                                rackinunloading[0] = 1;
-                                U1.Enabled = true;
+                                enable_unloadJar(JarName_R1);
                                 //// R1_cnt = R1_cnt + 6;    /*Temporarly commented on 24112023 1602*/
                                 //call Unload racks function
                                 return;
@@ -12352,7 +10961,7 @@ namespace HematoxinandEosin
                     tmr_temp.Enabled = false;
                     tmr_temp_incub.Enabled = false;
                 }
-                if (functioncode == Communication.RA_PICK) R1_pickcmdissue = true;  // Added on 19122023 1138
+                if (functioncode == Communication.RA_PICK){ R1_pickcmdissue = true;  Racks[1] = new Rack { RackNo = 1, IsProcessing = true };r1priority = 1; } // Added on 19122023 1138
                 //if (functioncode == Communication.RA_PLACE) R1_pickcmdissue = false;  // Added on 31012025_1706
                 snd_rcvCmd(functioncode, cmdtosend);  //Picking rack from Jar & Placing rack in Jar
                 r1_WaitCnt = 0;
@@ -12420,8 +11029,7 @@ namespace HematoxinandEosin
                     protocolStartedflg_R2 = false;
                     R2_protostart = false;
                     ////R2_cnt = R2_cnt + 6;  /*Temporarly commented on 24112023 1604*/
-                    rackinunloading[1] = 1;
-                    U2.Enabled = true;
+                    enable_unloadJar(JarName_R2);
                     //call Unload racks function
                     return;
                 }
@@ -12466,6 +11074,8 @@ namespace HematoxinandEosin
                             }
                             else if (r2inx > 0)
                             {
+                                if ((!string.IsNullOrEmpty(Actual_WashJar_R2)) && (JarName_R2.Contains("W")) && (JarName_R2 != Actual_WashJar_R2))
+                                    R2Protorun.Rows[r2inx]["JarNo"] = Actual_WashJar_R2;  //Assigning actual wasj jar to datatable
                                 r2inx++;
                                 rackvalinc = true;
                             }
@@ -12538,8 +11148,7 @@ namespace HematoxinandEosin
                                 protocolStartedflg_R2 = false;
                                 R2_protostart = false;
                                 //////R2_cnt = R2_cnt + 6;   /*Commented on 24112023 1607*/
-                                rackinunloading[1] = 1;
-                                U2.Enabled = true;
+                                enable_unloadJar(JarName_R2);
                                 //call Unload racks function
                                 return;
                             }
@@ -12690,7 +11299,7 @@ namespace HematoxinandEosin
                     tmr_temp.Enabled = false;
                     tmr_temp_incub.Enabled = false;
                 }
-                if (functioncode == Communication.RA_PICK) R2_pickcmdissue = true;  // Added on 19122023 1138
+                if (functioncode == Communication.RA_PICK) {R2_pickcmdissue = true; r2priority = 1; Racks[2] = new Rack { RackNo = 2,  IsProcessing = true }; } // Added on 19122023 1138
                 //if (functioncode == Communication.RA_PLACE) R2_pickcmdissue = false;  // Added on 31012025_1706
                 snd_rcvCmd(functioncode, cmdtosend);  //Picking rack from Jar & Placing rack in Jar
                 r2_WaitCnt = 0;
@@ -12757,8 +11366,7 @@ namespace HematoxinandEosin
                     R3_protostart = false;
                     RegName_R3 = ""; JarName_R3 = "";
                     //////R3_cnt = R3_cnt + 6;  /*Commented on 241120231608*/
-                    rackinunloading[2] = 1;
-                    U3.Enabled = true;
+                    enable_unloadJar(JarName_R3);
                     //call Unload racks function
                     return;
                 }
@@ -12813,6 +11421,8 @@ namespace HematoxinandEosin
                             }
                             else if (r3inx > 0)
                             {
+                                if ((!string.IsNullOrEmpty(Actual_WashJar_R3)) && (JarName_R3.Contains("W")) && (JarName_R3 != Actual_WashJar_R3))
+                                    R3Protorun.Rows[r3inx]["JarNo"] = Actual_WashJar_R3;  //Assigning actual wasj jar to datatable
                                 r3inx++;
                                 rackvalinc = true;
                             }
@@ -12881,10 +11491,9 @@ namespace HematoxinandEosin
                                 r3inx = 0;
                                 protocolinitiateflg_R3 = false;
                                 protocolStartedflg_R3 = false;
-                                R3_protostart = false;
-                                RegName_R3 = ""; JarName_R3 = "";
-                                rackinunloading[2] = 1;
-                                U3.Enabled = true;
+                                R3_protostart = false;                                
+                                enable_unloadJar(JarName_R3);
+                                //RegName_R3 = ""; JarName_R3 = "";
                                 //////R3_cnt = R3_cnt + 6;Console.Beep(5000, 2000); //Added on 081220231711
                                 //call Unload racks function
                                 return;
@@ -13076,7 +11685,7 @@ namespace HematoxinandEosin
                     tmr_temp.Enabled = false;
                     tmr_temp_incub.Enabled = false;
                 }
-                if (functioncode == Communication.RA_PICK) R3_pickcmdissue = true;  // Added on 19122023 1138
+                if (functioncode == Communication.RA_PICK) {R3_pickcmdissue = true; r3priority = 1; Racks[3] = new Rack { RackNo = 3,  IsProcessing = true }; } // Added on 19122023 1138
                 //if (functioncode == Communication.RA_PLACE) R3_pickcmdissue = false;  // Added on 31012025_1706
                 snd_rcvCmd(functioncode, cmdtosend);  //Picking rack from Jar & Placing rack in Jar
                 r3_WaitCnt = 0;
@@ -13141,8 +11750,7 @@ namespace HematoxinandEosin
                     protocolinitiateflg_R4 = false;
                     protocolStartedflg_R4 = false;
                     R4_protostart = false;
-                    rackinunloading[3] = 1;
-                    U4.Enabled = true;
+                    enable_unloadJar(JarName_R4);
                     ///////R4_cnt = R4_cnt + 6;     /*Commented on 24112023 1616*/
                     //call Unload racks function
                     return;
@@ -13196,6 +11804,8 @@ namespace HematoxinandEosin
                             }
                             else if (r4inx > 0)
                             {
+                                if ((!string.IsNullOrEmpty(Actual_WashJar_R4)) && (JarName_R4.Contains("W")) && (JarName_R4 != Actual_WashJar_R4))
+                                    R4Protorun.Rows[r4inx]["JarNo"] = Actual_WashJar_R4;  //Assigning actual wasj jar to datatable
                                 r4inx++;
                                 rackvalinc = true;
                             }
@@ -13268,8 +11878,7 @@ namespace HematoxinandEosin
                                 protocolinitiateflg_R4 = false;
                                 protocolStartedflg_R4 = false;
                                 R4_protostart = false;
-                                rackinunloading[3] = 1;
-                                U4.Enabled = true;
+                                enable_unloadJar(JarName_R4);
                                 //////R4_cnt = R4_cnt + 6;  /*Commented on 24112023 1620*/
                                 //call Unload racks function
                                 return;
@@ -13467,7 +12076,7 @@ namespace HematoxinandEosin
                     tmr_temp.Enabled = false;
                     tmr_temp_incub.Enabled = false;
                 }
-                if (functioncode == Communication.RA_PICK) R4_pickcmdissue = true;  // Added on 19122023 1138
+                if (functioncode == Communication.RA_PICK) {R4_pickcmdissue = true; r4priority = 1; Racks[4] = new Rack { RackNo = 4,  IsProcessing = true }; } // Added on 19122023 1138
                 //if (functioncode == Communication.RA_PLACE) R4_pickcmdissue = false;  // Added on 31012025_1706
                 snd_rcvCmd(functioncode, cmdtosend);  //Picking rack from Jar or Placing rack in Jar or & Dipping rack in Jar
                 r4_WaitCnt = 0;
@@ -13533,8 +12142,7 @@ namespace HematoxinandEosin
                     protocolinitiateflg_R5 = false;
                     protocolStartedflg_R5 = false;
                     R5_protostart = false;
-                    rackinunloading[4] = 1;
-                    U5.Enabled = true;
+                    enable_unloadJar(JarName_R5);
                     //////R5_cnt = R5_cnt + 6;  /*Commented on 24112023 1622*/
                     //call Unload racks function
                     return;
@@ -13589,6 +12197,8 @@ namespace HematoxinandEosin
                             }
                             else if (r5inx > 0)
                             {
+                                if ((!string.IsNullOrEmpty(Actual_WashJar_R5)) && (JarName_R5.Contains("W")) && (JarName_R5 != Actual_WashJar_R5))
+                                    R5Protorun.Rows[r5inx]["JarNo"] = Actual_WashJar_R5;  //Assigning actual wasj jar to datatable
                                 r5inx++;
                                 rackvalinc = true;
                             }
@@ -13660,8 +12270,7 @@ namespace HematoxinandEosin
                                 protocolinitiateflg_R5 = false;
                                 protocolStartedflg_R5 = false;
                                 R5_protostart = false;
-                                rackinunloading[4] = 1;
-                                U5.Enabled = true;
+                                enable_unloadJar(JarName_R5);
                                 /////R5_cnt = R5_cnt + 6;   /*Commented on 24112023 1625*/
                                 //call Unload racks function
                                 return;
@@ -13854,7 +12463,7 @@ namespace HematoxinandEosin
                     tmr_temp.Enabled = false;
                     tmr_temp_incub.Enabled = false;
                 }
-                if (functioncode == Communication.RA_PICK) R5_pickcmdissue = true;  // Added on 19122023 1138
+                if (functioncode == Communication.RA_PICK) {R5_pickcmdissue = true; r5priority = 1; Racks[5] = new Rack { RackNo = 5,  IsProcessing = true }; } // Added on 19122023 1138
                 //if (functioncode == Communication.RA_PLACE) R5_pickcmdissue = false;  // Added on 31012025_1706
                 snd_rcvCmd(functioncode, cmdtosend);  //Picking rack from Jar or Placing rack in Jar or & Dipping rack in Jar
                 r5_WaitCnt = 0;
@@ -13919,8 +12528,7 @@ namespace HematoxinandEosin
                     protocolinitiateflg_R6 = false;
                     protocolStartedflg_R6 = false;
                     R6_protostart = false;
-                    rackinunloading[5] = 1;
-                    U6.Enabled = true;
+                    enable_unloadJar(JarName_R6);
                     ////////R6_cnt = R6_cnt + 6;   /*Commented on 24112023 1626*/
                     //call Unload racks function
                     return;
@@ -13975,6 +12583,8 @@ namespace HematoxinandEosin
                             }
                             else if (r6inx > 0)
                             {
+                                if ((!string.IsNullOrEmpty(Actual_WashJar_R6)) && (JarName_R6.Contains("W")) && (JarName_R6 != Actual_WashJar_R6))
+                                    R6Protorun.Rows[r6inx]["JarNo"] = Actual_WashJar_R6;  //Assigning actual wasj jar to datatable
                                 r6inx++;
                                 rackvalinc = true;
                             }
@@ -14045,8 +12655,7 @@ namespace HematoxinandEosin
                                 protocolinitiateflg_R6 = false;
                                 protocolStartedflg_R6 = false;
                                 R6_protostart = false;
-                                rackinunloading[5] = 1;
-                                U6.Enabled = true;
+                                enable_unloadJar(JarName_R6);
                                 //////R6_cnt = R6_cnt + 6;   /*Commented on 24112023 1627*/
                                 //call Unload racks function
                                 return;
@@ -14241,7 +12850,7 @@ namespace HematoxinandEosin
                     tmr_temp.Enabled = false;
                     tmr_temp_incub.Enabled = false;
                 }
-                if (functioncode == Communication.RA_PICK) R6_pickcmdissue = true;  // Added on 19122023 1138
+                if (functioncode == Communication.RA_PICK) {R6_pickcmdissue = true; r6priority = 1; Racks[6] = new Rack { RackNo = 6,  IsProcessing = true }; } // Added on 19122023 1138
                 //if (functioncode == Communication.RA_PLACE) R6_pickcmdissue = false;  // Added on 31012025_1706
                 snd_rcvCmd(functioncode, cmdtosend);  //Picking rack from Jar or Placing rack in Jar or & Dipping rack in Jar
                 r6_WaitCnt = 0;
@@ -14306,8 +12915,7 @@ namespace HematoxinandEosin
                     protocolinitiateflg_R7 = false;
                     protocolStartedflg_R7 = false;
                     R7_protostart = false;
-                    rackinunloading[0] = 1;
-                    J33.Enabled = true;
+                    enable_unloadJar(JarName_R7);
                     ////////R7_cnt = R7_cnt + 6;   /*Commented on 24112023 1626*/
                     //call Unload racks function
                     return;
@@ -14355,6 +12963,8 @@ namespace HematoxinandEosin
                             }
                             else if (r7inx > 0)
                             {
+                                if ((!string.IsNullOrEmpty(Actual_WashJar_R7)) && (JarName_R7.Contains("W")) && (JarName_R7 != Actual_WashJar_R7))
+                                    R7Protorun.Rows[r7inx]["JarNo"] = Actual_WashJar_R7;  //Assigning actual wasj jar to datatable
                                 r7inx++;
                                 rackvalinc = true;
                             }
@@ -14425,8 +13035,7 @@ namespace HematoxinandEosin
                                 protocolinitiateflg_R7 = false;
                                 protocolStartedflg_R7 = false;
                                 R7_protostart = false;
-                                rackinunloading[0] = 1;
-                                J33.Enabled = true;
+                                enable_unloadJar(JarName_R7);
                                 //////R7_cnt = R7_cnt + 6;   /*Commented on 24112023 1627*/
                                 //call Unload racks function
                                 return;
@@ -14584,7 +13193,7 @@ namespace HematoxinandEosin
                     tmr_temp.Enabled = false;
                     tmr_temp_incub.Enabled = false;
                 }
-                if (functioncode == Communication.RA_PICK) R7_pickcmdissue = true;  // Added on 19122023 1138
+                if (functioncode == Communication.RA_PICK) {R7_pickcmdissue = true; r7priority = 1; Racks[7] = new Rack { RackNo = 7, IsProcessing = true }; }  // Added on 19122023 1138
                 //if (functioncode == Communication.RA_PLACE) R7_pickcmdissue = false;  // Added on 31012025_1706
                 snd_rcvCmd(functioncode, cmdtosend);  //Picking rack from Jar or Placing rack in Jar or & Dipping rack in Jar
                 r7_WaitCnt = 0;
@@ -14650,8 +13259,7 @@ namespace HematoxinandEosin
                     protocolinitiateflg_R8 = false;
                     protocolStartedflg_R8 = false;
                     R8_protostart = false;
-                    rackinunloading[1] = 1;
-                    U2.Enabled = true;
+                    enable_unloadJar(JarName_R8);
                     //////R8_cnt = R8_cnt + 6;  /*Commented on 24112023 1622*/
                     //call Unload racks function
                     return;
@@ -14691,6 +13299,8 @@ namespace HematoxinandEosin
                             }
                             else if (r8inx > 0)
                             {
+                                if ((!string.IsNullOrEmpty(Actual_WashJar_R8)) && (JarName_R8.Contains("W")) && (JarName_R8 != Actual_WashJar_R8))
+                                    R8Protorun.Rows[r8inx]["JarNo"] = Actual_WashJar_R8;  //Assigning actual wasj jar to datatable
                                 r8inx++;
                                 rackvalinc = true;
                             }
@@ -14762,8 +13372,7 @@ namespace HematoxinandEosin
                                 protocolinitiateflg_R8 = false;
                                 protocolStartedflg_R8 = false;
                                 R8_protostart = false;
-                                rackinunloading[1] = 1;
-                                U2.Enabled = true;
+                                enable_unloadJar(JarName_R8);
                                 /////R8_cnt = R8_cnt + 6;   /*Commented on 24112023 1625*/
                                 //call Unload racks function
                                 return;
@@ -14956,7 +13565,7 @@ namespace HematoxinandEosin
                     tmr_temp.Enabled = false;
                     tmr_temp_incub.Enabled = false;
                 }
-                if (functioncode == Communication.RA_PICK) R8_pickcmdissue = true;  // Added on 19122023 1138
+                if (functioncode == Communication.RA_PICK) {R8_pickcmdissue = true; r8priority = 1; Racks[8] = new Rack { RackNo = 8, IsProcessing = true }; } // Added on 19122023 1138
                 //if (functioncode == Communication.RA_PLACE) R8_pickcmdissue = false;  // Added on 31012025_1706
                 snd_rcvCmd(functioncode, cmdtosend);  //Picking rack from Jar or Placing rack in Jar or & Dipping rack in Jar
                 r8_WaitCnt = 0;
@@ -15020,9 +13629,8 @@ namespace HematoxinandEosin
                     r9inx = 0;
                     protocolinitiateflg_R9 = false;
                     protocolStartedflg_R9 = false;
-                    R9_protostart = false;
-                    rackinunloading[2] = 1;
-                    U3.Enabled = true;
+                    R9_protostart = false;                    
+                    enable_unloadJar(JarName_R9);
                     ////////R9_cnt = R9_cnt + 6;   /*Commented on 24112023 1626*/
                     //call Unload racks function
                     return;
@@ -15065,6 +13673,8 @@ namespace HematoxinandEosin
                             }
                             else if (r9inx > 0)
                             {
+                                if ((!string.IsNullOrEmpty(Actual_WashJar_R9)) && (JarName_R9.Contains("W")) && (JarName_R9 != Actual_WashJar_R9))
+                                    R9Protorun.Rows[r9inx]["JarNo"] = Actual_WashJar_R9;  //Assigning actual wasj jar to datatable
                                 r9inx++;
                                 rackvalinc = true;
                             }
@@ -15135,8 +13745,7 @@ namespace HematoxinandEosin
                                 protocolinitiateflg_R9 = false;
                                 protocolStartedflg_R9 = false;
                                 R9_protostart = false;
-                                rackinunloading[2] = 1;
-                                U3.Enabled = true;
+                                enable_unloadJar(JarName_R9);
                                 //////R9_cnt = R9_cnt + 6;   /*Commented on 24112023 1627*/
                                 //call Unload racks function
                                 return;
@@ -15331,7 +13940,7 @@ namespace HematoxinandEosin
                     tmr_temp.Enabled = false;
                     tmr_temp_incub.Enabled = false;
                 }
-                if (functioncode == Communication.RA_PICK) R9_pickcmdissue = true;  // Added on 19122023 1138
+                if (functioncode == Communication.RA_PICK) { R9_pickcmdissue = true; r9priority = 1; Racks[9] = new Rack { RackNo = 9, IsProcessing=true }; } // Added on 19122023 1138
                 //if (functioncode == Communication.RA_PLACE) R9_pickcmdissue = false;  // Added on 31012025_1706
                 snd_rcvCmd(functioncode, cmdtosend);  //Picking rack from Jar or Placing rack in Jar or & Dipping rack in Jar
                 r9_WaitCnt = 0;
@@ -15346,6 +13955,41 @@ namespace HematoxinandEosin
                 MessageBox.Show(d3.ToString());
             }
         }
+       
+        private void enable_unloadJar(string jarname)
+        {
+            if (jarname == "U1")
+            {
+                U1.Enabled = true;
+                rackinunloading[0] = 1;
+            }                
+            else if (jarname == "U2")
+            {
+                U2.Enabled = true;
+                rackinunloading[1] = 1;
+            }
+            else if (jarname == "U3")
+            {
+                U3.Enabled = true;
+                rackinunloading[2] = 1;
+            }
+            else if (jarname == "U4")
+            {
+                U4.Enabled = true;
+                rackinunloading[3] = 1;
+            }
+            else if (jarname == "U5")
+            {
+                U5.Enabled = true;
+                rackinunloading[4] = 1;
+            }
+            else if (jarname == "U6")
+            {
+                U6.Enabled = true;
+                rackinunloading[5] = 1;
+            }
+        }
+        
         //New function written on 18072024 1805
         Boolean RA_Move_Intiate = false, RA_Move_issued = false;
         //New function written on 18072024 1805
@@ -16393,7 +15037,8 @@ namespace HematoxinandEosin
                                 displayScrData = "Level Sense Value : " + lvl[0].ToString();
                                 cmdres = "";
                                 cmdres = displayScrData;
-                                lvlval = (float)Convert.ToDouble(lvl[0].ToString());                                 
+                                lvlval = (float)Convert.ToDouble(lvl[0].ToString());
+                                lvlval = 500; //This value has to delete kept for testing
                                 checkrackval(lvlval);
                                 sensed = true;
                                 rareached = true;
@@ -17314,9 +15959,10 @@ namespace HematoxinandEosin
                                                 }
                                                 else
                                                 {
-                                                    if (((rtype == "F") || (rtype == "I")) && ((respval == "000") || (respval == "001")))
+                                                    if (((rtype == "F") || (rtype == "I")) && ((respval == "000") || (respval == "001")))                                                        
+                                                        checkandupdatedatatoscreen(btntst);
+                                                    if (((rtype == "F") || (rtype == "I")) && (respval == "000"))
                                                         Communication.isComandInProgress = false;// Set flag to avoid overlap
-                                                    checkandupdatedatatoscreen(btntst);
                                                 }
                                                 
                                             }

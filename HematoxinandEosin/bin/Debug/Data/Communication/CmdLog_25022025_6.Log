@@ -1,0 +1,177 @@
+Command * WATER VALVE - 1 CONTROL OFF - #0,13,1,0*73eb
+ * 25-02-2025 17:20:21.616
+CRC-Response  - 0,13,F000*29e9 * 25-02-2025 17:20:21.829
+Command * WATER VALVE - 2 CONTROL OFF - #1,13,2,0*bfda
+ * 25-02-2025 17:20:22.427
+CRC-Response  - 1,13,F000*b9e4 * 25-02-2025 17:20:22.611
+Command * WATER VALVE - 3 CONTROL OFF - #2,13,3,0*6acb
+ * 25-02-2025 17:20:23.164
+CRC-Response  - 2,13,F000*49f0 * 25-02-2025 17:20:23.372
+Command * WATER VALVE - 4 CONTROL OFF - #3,13,4,0*67bb
+ * 25-02-2025 17:20:23.940
+CRC-Response  - 3,13,F000*d9fd * 25-02-2025 17:20:24.146
+Command * WATER VALVE - 5 CONTROL OFF - #4,13,5,0*41ab
+ * 25-02-2025 17:20:24.701
+CRC-Response  - 4,13,F000*e9db * 25-02-2025 17:20:24.918
+Command * WATER VALVE - 6 CONTROL OFF - #5,13,6,0*8d9a
+ * 25-02-2025 17:20:25.471
+CRC-Response  - 5,13,F000*79d6 * 25-02-2025 17:20:25.678
+Command * Home Command - #6,5,01111111*b1b5
+ * 25-02-2025 17:20:26.233
+CRC-Response  - 6,5,I001,01111111*0f53 * 25-02-2025 17:20:26.452
+CRC-Response  - 6,5,F000*c7bb * 25-02-2025 17:20:39.725
+Command * Home Command - #7,5,01111111*7248
+ * 25-02-2025 17:20:42.49
+CRC-Response  - 7,5,I001,01111111*9f02 * 25-02-2025 17:20:42.268
+CRC-Response  - 7,5,F000*0b7a * 25-02-2025 17:20:55.531
+Command * Level Sensing For L1 - #8,4,17564,16380,0,0*ab6b
+ * 25-02-2025 17:20:56.838
+CRC-Response  - 8,4,I001*4ef9 * 25-02-2025 17:20:57.58
+CRC-Response  - 8,4,F000,714*1280 * 25-02-2025 17:21:01.134
+L1 Value - 600 * 25-02-2025 17:21:01.160
+Command * Level Sensing For L2 - #9,4,13934,16380,0,0*534e
+ * 25-02-2025 17:21:01.607
+CRC-Response  - 9,4,I001*8238 * 25-02-2025 17:21:01.814
+CRC-Response  - 9,4,F000,745*41bf * 25-02-2025 17:21:04.111
+L2 Value - 600 * 25-02-2025 17:21:04.127
+Command * Level Sensing For L3 - #10,4,10304,16380,0,0*d9f6
+ * 25-02-2025 17:21:04.369
+CRC-Response  - 10,4,I001*82eb * 25-02-2025 17:21:04.590
+CRC-Response  - 10,4,F000,741*0686 * 25-02-2025 17:21:06.878
+L3 Value - 600 * 25-02-2025 17:21:06.894
+Command * Home Command - #11,5,01111111*e264
+ * 25-02-2025 17:21:07.149
+CRC-Response  - 11,5,I001,01111111*59be * 25-02-2025 17:21:07.362
+CRC-Response  - 11,5,F000*4be9 * 25-02-2025 17:21:20.626
+Command * Home Command - #12,5,01111111*e660
+ * 25-02-2025 17:21:22.924
+CRC-Response  - 12,5,I001,01111111*a94e * 25-02-2025 17:21:23.161
+CRC-Response  - 12,5,F000*5ea9 * 25-02-2025 17:21:36.402
+Rack - 1Protocol Started * 25-02-2025 17:21:38.185
+Command * Rack-1 Picked from L1 - #13,2,1,17564,16380,0,0*bdee
+ * 25-02-2025 17:21:38.295
+CRC-Response  - 13,2,I001,1*a063 * 25-02-2025 17:21:38.515
+CRC-Response  - 13,2,F000,1*9f32 * 25-02-2025 17:21:44.530
+Command * Rack-1 Placed in J1 - #14,3,1,10304,800,0,0*3371
+ * 25-02-2025 17:21:45.104
+CRC-Response  - 14,3,I001,1*b613 * 25-02-2025 17:21:45.321
+CRC-Response  - 14,3,F000,1*8942 * 25-02-2025 17:21:51.744
+Command * Rack-1 Picked from J1 - #15,2,1,10304,800,0,0*5f1d
+ * 25-02-2025 17:23:51.916
+CRC-Response  - 15,2,I001,1*bf83 * 25-02-2025 17:23:52.223
+CRC-Response  - 15,2,F000,1*80d2 * 25-02-2025 17:23:57.218
+Command * Rack-1 Placed in J2 - #16,3,1,13934,800 ,0,0*da46
+ * 25-02-2025 17:23:57.801
+CRC-Response  - 16,3,I001,1*7cb2 * 25-02-2025 17:23:58.21
+CRC-Response  - 16,3,F000,1*43e3 * 25-02-2025 17:24:03.622
+Rack - 2Protocol Started * 25-02-2025 17:25:06.585
+Rack R1delayed by 11 seconds due to Higher priority rack detected in Jar J2 in tmr_r1_incub() function * 25-02-2025 17:25:06.610
+Command * Rack-2 Picked from L2 - #17,2,1,13934,16380,0,0*3db3
+ * 25-02-2025 17:25:06.671
+CRC-Response  - 17,2,I001,1*7522 * 25-02-2025 17:25:06.990
+Rack R1delayed by 11 seconds due to Higher priority rack detected in Jar J2 in tmr_r1_incub() function * 25-02-2025 17:25:07.36
+Rack R1delayed by 11 seconds due to Higher priority rack detected in Jar J2 in tmr_r1_incub() function * 25-02-2025 17:25:08.38
+Rack R1delayed by 11 seconds due to Higher priority rack detected in Jar J2 in tmr_r1_incub() function * 25-02-2025 17:25:09.45
+Rack R1delayed by 11 seconds due to Higher priority rack detected in Jar J2 in tmr_r1_incub() function * 25-02-2025 17:25:10.36
+Rack R1delayed by 11 seconds due to Higher priority rack detected in Jar J2 in tmr_r1_incub() function * 25-02-2025 17:25:11.42
+Rack R1delayed by 11 seconds due to Higher priority rack detected in Jar J2 in tmr_r1_incub() function * 25-02-2025 17:25:12.30
+Rack R1delayed by 11 seconds due to Higher priority rack detected in Jar J2 in tmr_r1_incub() function * 25-02-2025 17:25:13.35
+CRC-Response  - 17,2,F000,1*4a73 * 25-02-2025 17:25:13.306
+Command * Rack-2 Placed in J1 - #18,3,1,10304,800,0,0*6262
+ * 25-02-2025 17:25:13.580
+CRC-Response  - 18,3,I001,1*89d3 * 25-02-2025 17:25:13.787
+CRC-Response  - 18,3,F000,1*b682 * 25-02-2025 17:25:20.211
+Command * Rack-2 Picked from J1 - #19,2,1,10304,800,0,0*0e0e
+ * 25-02-2025 17:27:21.361
+CRC-Response  - 19,2,I001,1*8043 * 25-02-2025 17:27:21.614
+Rack R1delayed by 11 seconds due to Higher priority rack detected in Jar J2 in tmr_r1_incub() function * 25-02-2025 17:27:22.29
+Rack R1delayed by 11 seconds due to Higher priority rack detected in Jar J2 in tmr_r1_incub() function * 25-02-2025 17:27:23.42
+Rack R1delayed by 11 seconds due to Higher priority rack detected in Jar J2 in tmr_r1_incub() function * 25-02-2025 17:27:24.43
+Rack R1delayed by 11 seconds due to Higher priority rack detected in Jar J2 in tmr_r1_incub() function * 25-02-2025 17:27:25.34
+Rack R1delayed by 11 seconds due to Higher priority rack detected in Jar J2 in tmr_r1_incub() function * 25-02-2025 17:27:26.42
+CRC-Response  - 19,2,F000,1*bf12 * 25-02-2025 17:27:26.662
+Rack R1delayed by 11 seconds due to Higher priority rack detected in Jar J2 in tmr_r1_incub() function * 25-02-2025 17:27:27.37
+Command * Rack-2 Placed in J2 - #20,3,1,13934,800 ,0,0*8ffd
+ * 25-02-2025 17:27:27.186
+CRC-Response  - 20,3,I001,1*275d * 25-02-2025 17:27:27.405
+CRC-Response  - 20,3,F000,1*180c * 25-02-2025 17:27:33.8
+Rack - R3Protocol Started * 25-02-2025 17:28:36.30
+Rack R2delayed by 11 seconds due to Higher priority rack detected in Jar J2 in tmr_r2_incub() function * 25-02-2025 17:28:36.53
+Rack R1delayed by 11 seconds due to Higher priority rack detected in Jar J2 in tmr_r1_incub() function * 25-02-2025 17:28:36.62
+Command * Rack-3 Picked from L3 - #21,2,1,10304,16380,0,0*43b9
+ * 25-02-2025 17:28:36.122
+CRC-Response  - 21,2,I001,1*2ecd * 25-02-2025 17:28:36.347
+Rack R2delayed by 11 seconds due to Higher priority rack detected in Jar J2 in tmr_r2_incub() function * 25-02-2025 17:28:36.420
+Rack R1delayed by 11 seconds due to Higher priority rack detected in Jar J2 in tmr_r1_incub() function * 25-02-2025 17:28:37.32
+Rack R2delayed by 11 seconds due to Higher priority rack detected in Jar J2 in tmr_r2_incub() function * 25-02-2025 17:28:37.424
+Rack R1delayed by 11 seconds due to Higher priority rack detected in Jar J2 in tmr_r1_incub() function * 25-02-2025 17:28:38.31
+Rack R2delayed by 11 seconds due to Higher priority rack detected in Jar J2 in tmr_r2_incub() function * 25-02-2025 17:28:38.434
+Rack R1delayed by 11 seconds due to Higher priority rack detected in Jar J2 in tmr_r1_incub() function * 25-02-2025 17:28:39.37
+Rack R2delayed by 11 seconds due to Higher priority rack detected in Jar J2 in tmr_r2_incub() function * 25-02-2025 17:28:39.423
+Rack R1delayed by 11 seconds due to Higher priority rack detected in Jar J2 in tmr_r1_incub() function * 25-02-2025 17:28:40.41
+Rack R2delayed by 11 seconds due to Higher priority rack detected in Jar J2 in tmr_r2_incub() function * 25-02-2025 17:28:40.431
+Rack R1delayed by 11 seconds due to Higher priority rack detected in Jar J2 in tmr_r1_incub() function * 25-02-2025 17:28:41.35
+Rack R2delayed by 11 seconds due to Higher priority rack detected in Jar J2 in tmr_r2_incub() function * 25-02-2025 17:28:41.422
+Rack R1delayed by 11 seconds due to Higher priority rack detected in Jar J2 in tmr_r1_incub() function * 25-02-2025 17:28:42.37
+Rack R2delayed by 11 seconds due to Higher priority rack detected in Jar J2 in tmr_r2_incub() function * 25-02-2025 17:28:42.421
+CRC-Response  - 21,2,F000,1*119c * 25-02-2025 17:28:42.749
+Command * Rack-3 Placed in J1 - #22,3,1,10304,800,0,0*88bd
+ * 25-02-2025 17:28:42.930
+CRC-Response  - 22,3,I001,1*edfc * 25-02-2025 17:28:43.137
+CRC-Response  - 22,3,F000,1*d2ad * 25-02-2025 17:28:49.563
+Command * Rack-1 Picked from J2 - #23,2,1,13934,800 ,0,0*40e8
+ * 25-02-2025 17:29:56.101
+CRC-Response  - 23,2,I001,1*e46c * 25-02-2025 17:29:56.389
+Rack R2delayed by 11 seconds due to Higher priority rack detected in Jar J2 in tmr_r2_incub() function * 25-02-2025 17:29:56.446
+Rack R3delayed by 11 seconds due to Higher priority rack detected in Jar J1 in tmr_r3_incub() function * 25-02-2025 17:29:56.695
+Rack R2delayed by 11 seconds due to Higher priority rack detected in Jar J2 in tmr_r2_incub() function * 25-02-2025 17:29:57.447
+Rack R3delayed by 11 seconds due to Higher priority rack detected in Jar J1 in tmr_r3_incub() function * 25-02-2025 17:29:57.695
+Rack R2delayed by 11 seconds due to Higher priority rack detected in Jar J2 in tmr_r2_incub() function * 25-02-2025 17:29:58.440
+Rack R3delayed by 11 seconds due to Higher priority rack detected in Jar J1 in tmr_r3_incub() function * 25-02-2025 17:29:58.687
+Rack R2delayed by 11 seconds due to Higher priority rack detected in Jar J2 in tmr_r2_incub() function * 25-02-2025 17:29:59.445
+Rack R3delayed by 11 seconds due to Higher priority rack detected in Jar J1 in tmr_r3_incub() function * 25-02-2025 17:29:59.691
+Rack R2delayed by 11 seconds due to Higher priority rack detected in Jar J2 in tmr_r2_incub() function * 25-02-2025 17:30:00.442
+Rack R3delayed by 11 seconds due to Higher priority rack detected in Jar J1 in tmr_r3_incub() function * 25-02-2025 17:30:00.699
+Rack R2delayed by 11 seconds due to Higher priority rack detected in Jar J2 in tmr_r2_incub() function * 25-02-2025 17:30:01.436
+Rack R3delayed by 11 seconds due to Higher priority rack detected in Jar J1 in tmr_r3_incub() function * 25-02-2025 17:30:01.692
+CRC-Response  - 23,2,F000,1*db3d * 25-02-2025 17:30:01.935
+Command * Rack-1 Placed in J3 - #24,3,1,17564,800 ,0,0*5303
+ * 25-02-2025 17:30:02.467
+CRC-Response  - 24,3,I001,1*f21c * 25-02-2025 17:30:02.680
+CRC-Response  - 24,3,F000,1*cd4d * 25-02-2025 17:30:08.290
+Command * Rack-3 Picked from J1 - #25,2,1,10304,800,0,0*6c59
+ * 25-02-2025 17:31:55.803
+CRC-Response  - 25,2,I001,1*fb8c * 25-02-2025 17:31:56.49
+Rack R2delayed by 11 seconds due to Higher priority rack detected in Jar J2 in tmr_r2_incub() function * 25-02-2025 17:31:56.451
+Rack R1delayed by 11 seconds due to Higher priority rack detected in Jar J3 in tmr_r1_incub() function * 25-02-2025 17:31:56.733
+Rack R2delayed by 11 seconds due to Higher priority rack detected in Jar J2 in tmr_r2_incub() function * 25-02-2025 17:31:57.438
+Rack R1delayed by 11 seconds due to Higher priority rack detected in Jar J3 in tmr_r1_incub() function * 25-02-2025 17:31:57.734
+Rack R2delayed by 11 seconds due to Higher priority rack detected in Jar J2 in tmr_r2_incub() function * 25-02-2025 17:31:58.446
+Rack R1delayed by 11 seconds due to Higher priority rack detected in Jar J3 in tmr_r1_incub() function * 25-02-2025 17:31:58.741
+Rack R2delayed by 11 seconds due to Higher priority rack detected in Jar J2 in tmr_r2_incub() function * 25-02-2025 17:31:59.438
+Rack R1delayed by 11 seconds due to Higher priority rack detected in Jar J3 in tmr_r1_incub() function * 25-02-2025 17:31:59.748
+Rack R2delayed by 11 seconds due to Higher priority rack detected in Jar J2 in tmr_r2_incub() function * 25-02-2025 17:32:00.443
+Rack R1delayed by 11 seconds due to Higher priority rack detected in Jar J3 in tmr_r1_incub() function * 25-02-2025 17:32:00.734
+Rack R2delayed by 11 seconds due to Higher priority rack detected in Jar J2 in tmr_r2_incub() function * 25-02-2025 17:32:01.449
+Rack R1delayed by 11 seconds due to Higher priority rack detected in Jar J3 in tmr_r1_incub() function * 25-02-2025 17:32:01.745
+CRC-Response  - 25,2,F000,1*c4dd * 25-02-2025 17:32:02.38
+Command * Rack-3 Placed in J2 - #26,3,1,13934,800 ,0,0*e975
+ * 25-02-2025 17:32:02.133
+CRC-Response  - 26,3,I001,1*38bd * 25-02-2025 17:32:02.347
+CRC-Response  - 26,3,F000,1*07ec * 25-02-2025 17:32:07.952
+User Aborted / Stopped the application forcefully  * 25-02-2025 17:32:34.232
+Command * WATER VALVE - 1 CONTROL OFF - #27,13,1,0*0fad
+ * 25-02-2025 17:32:37.326
+CRC-Response  - 27,13,F000*db14 * 25-02-2025 17:32:37.542
+Command * WATER VALVE - 2 CONTROL OFF - #28,13,2,0*4f1d
+ * 25-02-2025 17:32:38.88
+CRC-Response  - 28,13,F000*2b55 * 25-02-2025 17:32:38.300
+Command * WATER VALVE - 3 CONTROL OFF - #29,13,3,0*438d
+ * 25-02-2025 17:32:38.852
+CRC-Response  - 29,13,F000*bb58 * 25-02-2025 17:32:39.63
+Command * WATER VALVE - 4 CONTROL OFF - #30,13,4,0*78f1
+ * 25-02-2025 17:32:39.629
+CRC-Response  - 30,13,F000*2e63 * 25-02-2025 17:32:39.839
+Command * WATER VALVE - 5 CONTROL OFF - #31,13,5,0*7461
+ * 25-02-2025 17:32:40.390
+CRC-Response  - 31,13,F000*be6e * 25-02-2025 17:32:40.596
