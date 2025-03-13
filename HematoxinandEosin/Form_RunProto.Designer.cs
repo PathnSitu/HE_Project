@@ -137,6 +137,7 @@ namespace HematoxinandEosin
             this.htr3_tmpincub = new System.Windows.Forms.Timer(this.components);
             this.tmr_next_rack = new System.Windows.Forms.Timer(this.components);
             this.tmr_opencmd_toload_Nxtrack = new System.Windows.Forms.Timer(this.components);
+            this.tmr_next_Lar_lvl_sense = new System.Windows.Forms.Timer(this.components);
             this.panel_Jarscalibration.SuspendLayout();
             this.pnl_Jars.SuspendLayout();
             this.SuspendLayout();
@@ -1991,6 +1992,11 @@ namespace HematoxinandEosin
             // 
             this.tmr_opencmd_toload_Nxtrack.Tick += new System.EventHandler(this.tmr_opencmd_toload_Nxtrack_Tick);
             // 
+            // tmr_next_Lar_lvl_sense
+            // 
+            this.tmr_next_Lar_lvl_sense.Interval = 500;
+            this.tmr_next_Lar_lvl_sense.Tick += new System.EventHandler(this.tmr_next_Lar_lvl_sense_Tick);
+            // 
             // Form_RunProto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2119,5 +2125,6 @@ namespace HematoxinandEosin
         private System.Windows.Forms.Timer htr3_tmpincub;
         private System.Windows.Forms.Timer tmr_next_rack;
         private System.Windows.Forms.Timer tmr_opencmd_toload_Nxtrack;
+        private System.Windows.Forms.Timer tmr_next_Lar_lvl_sense;
     }
 }

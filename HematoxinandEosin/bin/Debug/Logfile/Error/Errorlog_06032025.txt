@@ -1,0 +1,24 @@
+--------------------------------------------------------------------------
+Source : ER-1027 Command Sending to Device Failed Check Communication cable with device 
+System.InvalidOperationException: The port is closed.
+   at System.IO.Ports.SerialPort.ReadExisting()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__964.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 14737
+Method : In snd_rcvCmd() function in Form_Live form
+Logged Date & time : 06 March 2025 10:50
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1027 Command Sending to Device Failed Check Communication cable with device 
+System.InvalidOperationException: The port is closed.
+   at System.IO.Ports.SerialPort.ReadExisting()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__964.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 14737
+Method : In snd_rcvCmd() function in Form_Live form
+Logged Date & time : 06 March 2025 10:52
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Source : ER-1027 Command Sending to Device Failed Check Communication cable with device 
+System.InvalidOperationException: The port is closed.
+   at System.IO.Ports.SerialPort.ReadExisting()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__964.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 14214
+Method : In snd_rcvCmd() function in Form_Live form
+Logged Date & time : 06 March 2025 15:01
+--------------------------------------------------------------------------

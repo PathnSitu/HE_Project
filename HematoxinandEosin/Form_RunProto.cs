@@ -59,7 +59,7 @@ namespace HematoxinandEosin
         DateTime[] r4times_arr; DateTime[] r5times_arr; DateTime[] r6times_arr;
         Decimal parttime = 0, totalprototime = 0;
         int[] r1tim_arr = new int[200];
-        DateTime r1_incub, r2_incub, r3_incub, r4_incub, r5_incub, r6_incub, temp_incub, nxtrackloading, continuetest, temp_restartincub;
+        DateTime r1_incub, r2_incub, r3_incub, r4_incub, r5_incub, r6_incub, temp_incub, nxtrackloading, continuetest, temp_restartincub,htrdooropenfailure;
         DateTime r1_taskcomp, r2_taskcomp, r3_taskcomp, r4_taskcomp, r5_taskcomp, r6_taskcomp; //Added on 23-08-2023
         DateTime r1_incub_WOn, r2_incub_WOn, r3_incub_WOn, r4_incub_WOn, r5_incub_WOn, r6_incub_WOn;
         DateTime r1_incub_Woff, r2_incub_Woff, r3_incub_Woff, r4_incub_Woff, r5_incub_Woff, r6_incub_Woff;
@@ -96,6 +96,7 @@ namespace HematoxinandEosin
         //Protorun status flags of each racks
 
         string x1Pos, y1Pos, z1Pos, z2Pos, Assigned_RANo;
+        Boolean RA_pickedflg = false, RA_placedflg = false ;
         Boolean pickedflg = false, placedflg = false, topickupflg = false, toplaceflg = false, StartHesitateflg = false, StopHesitateflg = false;
         Boolean tosense = false, sensed = false, lowlevel = false, no_jar = false, abvnormallvl = false, normallvl = false, blwnormallvl = false, blw_adglvl = false, abovednglvl = false;
         Boolean rackloadingtoJar = false; // Added on 19082024 1054
@@ -487,7 +488,7 @@ namespace HematoxinandEosin
             //{
 
             //}
-            ////RequiredVariables.alljarlvlsensed = true;  //kept as true for testing
+            //////RequiredVariables.alljarlvlsensed = true;  //kept as true for testing
             if (RequiredVariables.alljarlvlsensed == false)
             {
                 RequiredVariables.alljarlvlsensed = true;
@@ -1142,12 +1143,12 @@ namespace HematoxinandEosin
                 r7priority = 0;
                 r8priority = 0;
                 r9priority = 0;
-                U1.RackNumber = "";
-                U2.RackNumber = "";
-                U3.RackNumber = "";
-                U4.RackNumber = "";
-                U5.RackNumber = "";
-                U6.RackNumber = "";
+                U1.RackNumber = "U1";
+                U2.RackNumber = "U2";
+                U3.RackNumber = "U3";
+                U4.RackNumber = "U4";
+                U5.RackNumber = "U5";
+                U6.RackNumber = "U6";
                 tmr_Racks_Loaded.Enabled = false;
                 tmr_tempstart.Enabled = false;
 
@@ -1168,7 +1169,7 @@ namespace HematoxinandEosin
                 }
                 if (Process_Continued == false)
                     disable_allflags();
-
+                RA_pickedflg = false; RA_placedflg = false;
                 pickedflg_R1 = false; placedflg_R1 = false; topickupflg_R1 = false; toplaceflg_R1 = false;
                 pickedflg_R2 = false; placedflg_R2 = false; topickupflg_R2 = false; toplaceflg_R2 = false;
                 pickedflg_R3 = false; placedflg_R3 = false; topickupflg_R3 = false; toplaceflg_R3 = false;
@@ -1556,383 +1557,73 @@ namespace HematoxinandEosin
         static SemaphoreSlim semaphore = new SemaphoreSlim(1);
         int Wash_delaytime = (18); //18 seconds 
         private Boolean check_washjar_collision(int timno)
-        {
-            //Below code added on 30-08-2024 1140
-            TimeSpan ts1 = new TimeSpan(); TimeSpan ts2 = new TimeSpan(); TimeSpan ts3 = new TimeSpan();
-            TimeSpan ts4 = new TimeSpan(); TimeSpan ts5 = new TimeSpan(); TimeSpan ts6 = new TimeSpan();
-            TimeSpan ts7 = new TimeSpan(); TimeSpan ts8 = new TimeSpan();
-            ts1 = TimeSpan.Zero; ts2 = TimeSpan.Zero; ts3 = TimeSpan.Zero; ts4 = TimeSpan.Zero;
-            ts5 = TimeSpan.Zero; ts6 = TimeSpan.Zero; ts7 = TimeSpan.Zero; ts8 = TimeSpan.Zero;
+        {            
             Boolean respflg = false;
+            DateTime comparetime = System.DateTime.Now;
+
             try
             {
                 switch (timno)
                 {
                     case 1:
                         {
-                            if(r2_incub>r1_incub)
-                                ts1 = r2_incub.Subtract(r1_incub); 
-                            else if (r1_incub > r2_incub)
-                                ts1 = r1_incub.Subtract(r2_incub);
-
-                            if (r3_incub > r1_incub)
-                                ts2 = r3_incub.Subtract(r1_incub);
-                            else if (r1_incub > r3_incub)
-                                ts2 = r1_incub.Subtract(r3_incub);
-                            
-                            if (r4_incub > r1_incub)
-                                ts3 = r4_incub.Subtract(r1_incub);
-                            else if (r1_incub > r4_incub)
-                                ts3 = r1_incub.Subtract(r4_incub);
-
-                            if (r5_incub > r1_incub)
-                                ts4 = r5_incub.Subtract(r1_incub);
-                            else if (r1_incub > r5_incub)
-                                ts4 = r1_incub.Subtract(r5_incub);
-                            if (r6_incub > r1_incub)
-                                ts5 = r6_incub.Subtract(r1_incub);
-                            else if (r1_incub > r6_incub)
-                                ts5 = r1_incub.Subtract(r6_incub);
-                            if (r7_incub > r1_incub)
-                                ts6 = r7_incub.Subtract(r1_incub);
-                            else if (r1_incub > r7_incub)
-                                ts6 = r1_incub.Subtract(r7_incub);
-                            if (r8_incub > r1_incub)
-                                ts7 = r8_incub.Subtract(r1_incub);
-                            else if (r1_incub > r8_incub)
-                                ts7 = r1_incub.Subtract(r8_incub);
-                            if (r9_incub > r1_incub)
-                                ts8 = r9_incub.Subtract(r1_incub);
-                            else if (r1_incub > r9_incub)
-                                ts8 = r1_incub.Subtract(r9_incub);
-
+                            comparetime = r1_incub;
                             break;
                         }
                     case 2:
                         {
-                            if (r1_incub > r2_incub)
-                                ts1 = r1_incub.Subtract(r2_incub);
-                            else if (r2_incub > r1_incub)
-                                ts1 = r2_incub.Subtract(r1_incub);
-
-                            if (r3_incub > r2_incub)
-                                ts2 = r3_incub.Subtract(r2_incub);
-                            else if (r2_incub > r3_incub)
-                                ts2 = r2_incub.Subtract(r3_incub);
-
-                            if (r4_incub > r2_incub)
-                                ts3 = r4_incub.Subtract(r2_incub);
-                            else if (r2_incub > r4_incub)
-                                ts3 = r2_incub.Subtract(r4_incub);
-
-                            if (r5_incub > r2_incub)
-                                ts4 = r5_incub.Subtract(r2_incub);
-                            else if (r2_incub > r5_incub)
-                                ts4 = r2_incub.Subtract(r5_incub);
-                            if (r6_incub > r2_incub)
-                                ts5 = r6_incub.Subtract(r2_incub);
-                            else if (r2_incub > r6_incub)
-                                ts5 = r2_incub.Subtract(r6_incub);
-                            if (r7_incub > r2_incub)
-                                ts6 = r7_incub.Subtract(r2_incub);
-                            else if (r2_incub > r7_incub)
-                                ts6 = r2_incub.Subtract(r7_incub);
-                            if (r8_incub > r2_incub)
-                                ts7 = r8_incub.Subtract(r2_incub);
-                            else if (r2_incub > r8_incub)
-                                ts7 = r2_incub.Subtract(r8_incub);
-                            if (r9_incub > r2_incub)
-                                ts8 = r9_incub.Subtract(r2_incub);
-                            else if (r2_incub > r9_incub)
-                                ts8 = r2_incub.Subtract(r9_incub);
+                            comparetime = r2_incub;
                             break;
                         }
                     case 3:
                         {
-                            if (r2_incub > r3_incub)
-                                ts1 = r2_incub.Subtract(r3_incub);
-                            else if (r3_incub > r2_incub)
-                                ts1 = r3_incub.Subtract(r2_incub);
-
-                            if (r1_incub > r3_incub)
-                                ts2 = r1_incub.Subtract(r3_incub);
-                            else if (r3_incub > r1_incub)
-                                ts2 = r3_incub.Subtract(r1_incub);
-
-                            if (r4_incub > r3_incub)
-                                ts3 = r4_incub.Subtract(r3_incub);
-                            else if (r3_incub > r4_incub)
-                                ts3 = r3_incub.Subtract(r4_incub);
-
-                            if (r5_incub > r3_incub)
-                                ts4 = r5_incub.Subtract(r3_incub);
-                            else if (r3_incub > r5_incub)
-                                ts4 = r3_incub.Subtract(r5_incub);
-                            if (r6_incub > r3_incub)
-                                ts5 = r6_incub.Subtract(r3_incub);
-                            else if (r3_incub > r6_incub)
-                                ts5 = r3_incub.Subtract(r6_incub);
-                            if (r7_incub > r3_incub)
-                                ts6 = r7_incub.Subtract(r3_incub);
-                            else if (r3_incub > r7_incub)
-                                ts6 = r3_incub.Subtract(r7_incub);
-                            if (r8_incub > r3_incub)
-                                ts7 = r8_incub.Subtract(r3_incub);
-                            else if (r3_incub > r8_incub)
-                                ts7 = r3_incub.Subtract(r8_incub);
-                            if (r9_incub > r3_incub)
-                                ts8 = r9_incub.Subtract(r3_incub);
-                            else if (r3_incub > r9_incub)
-                                ts8 = r3_incub.Subtract(r9_incub);
+                            comparetime = r3_incub;
                             break;
                         }
                     case 4:
                         {
-                            if (r2_incub > r4_incub)
-                                ts1 = r2_incub.Subtract(r4_incub);
-                            else if (r4_incub > r2_incub)
-                                ts1 = r4_incub.Subtract(r2_incub);
-
-                            if (r3_incub > r4_incub)
-                                ts2 = r3_incub.Subtract(r4_incub);
-                            else if (r4_incub > r3_incub)
-                                ts2 = r4_incub.Subtract(r3_incub);
-
-                            if (r1_incub > r4_incub)
-                                ts3 = r1_incub.Subtract(r4_incub);
-                            else if (r4_incub > r1_incub)
-                                ts3 = r4_incub.Subtract(r1_incub);
-
-                            if (r5_incub > r4_incub)
-                                ts4 = r5_incub.Subtract(r4_incub);
-                            else if (r4_incub > r5_incub)
-                                ts4 = r4_incub.Subtract(r5_incub);
-                            if (r6_incub > r4_incub)
-                                ts5 = r6_incub.Subtract(r4_incub);
-                            else if (r4_incub > r6_incub)
-                                ts5 = r4_incub.Subtract(r6_incub);
-                            if (r7_incub > r4_incub)
-                                ts6 = r7_incub.Subtract(r4_incub);
-                            else if (r4_incub > r7_incub)
-                                ts6 = r4_incub.Subtract(r7_incub);
-                            if (r8_incub > r4_incub)
-                                ts7 = r8_incub.Subtract(r4_incub);
-                            else if (r4_incub > r8_incub)
-                                ts7 = r4_incub.Subtract(r8_incub);
-                            if (r9_incub > r4_incub)
-                                ts8 = r9_incub.Subtract(r4_incub);
-                            else if (r4_incub > r9_incub)
-                                ts8 = r4_incub.Subtract(r9_incub);
+                            comparetime = r4_incub;
                             break;
                         }
                     case 5:
                         {
-                            if (r2_incub > r5_incub)
-                                ts1 = r2_incub.Subtract(r5_incub);
-                            else if (r5_incub > r2_incub)
-                                ts1 = r5_incub.Subtract(r2_incub);
-
-                            if (r3_incub > r5_incub)
-                                ts2 = r3_incub.Subtract(r5_incub);
-                            else if (r5_incub > r3_incub)
-                                ts2 = r5_incub.Subtract(r3_incub);
-
-                            if (r4_incub > r5_incub)
-                                ts3 = r4_incub.Subtract(r5_incub);
-                            else if (r5_incub > r4_incub)
-                                ts3 = r5_incub.Subtract(r4_incub);
-
-                            if (r1_incub > r5_incub)
-                                ts4 = r1_incub.Subtract(r5_incub);
-                            else if (r5_incub > r1_incub)
-                                ts4 = r5_incub.Subtract(r1_incub);
-                            if (r6_incub > r5_incub)
-                                ts5 = r6_incub.Subtract(r5_incub);
-                            else if (r5_incub > r6_incub)
-                                ts5 = r5_incub.Subtract(r6_incub);
-                            if (r7_incub > r5_incub)
-                                ts6 = r7_incub.Subtract(r5_incub);
-                            else if (r5_incub > r7_incub)
-                                ts6 = r5_incub.Subtract(r7_incub);
-                            if (r8_incub > r5_incub)
-                                ts7 = r8_incub.Subtract(r5_incub);
-                            else if (r5_incub > r8_incub)
-                                ts7 = r5_incub.Subtract(r8_incub);
-                            if (r9_incub > r5_incub)
-                                ts8 = r9_incub.Subtract(r5_incub);
-                            else if (r5_incub > r9_incub)
-                                ts8 = r5_incub.Subtract(r9_incub);
+                            comparetime = r5_incub;
                             break;
                         }
                     case 6:
                         {
-                            if (r2_incub > r6_incub)
-                                ts1 = r2_incub.Subtract(r6_incub);
-                            else if (r6_incub > r2_incub)
-                                ts1 = r6_incub.Subtract(r2_incub);
-
-                            if (r3_incub > r6_incub)
-                                ts2 = r3_incub.Subtract(r6_incub);
-                            else if (r6_incub > r3_incub)
-                                ts2 = r6_incub.Subtract(r3_incub);
-
-                            if (r4_incub > r6_incub)
-                                ts3 = r4_incub.Subtract(r6_incub);
-                            else if (r6_incub > r4_incub)
-                                ts3 = r6_incub.Subtract(r4_incub);
-
-                            if (r5_incub > r6_incub)
-                                ts4 = r5_incub.Subtract(r6_incub);
-                            else if (r6_incub > r5_incub)
-                                ts4 = r6_incub.Subtract(r5_incub);
-                            if (r1_incub > r6_incub)
-                                ts5 = r1_incub.Subtract(r6_incub);
-                            else if (r6_incub > r1_incub)
-                                ts5 = r6_incub.Subtract(r1_incub);
-                            if (r7_incub > r6_incub)
-                                ts6 = r7_incub.Subtract(r6_incub);
-                            else if (r6_incub > r7_incub)
-                                ts6 = r6_incub.Subtract(r7_incub);
-                            if (r8_incub > r6_incub)
-                                ts7 = r8_incub.Subtract(r6_incub);
-                            else if (r6_incub > r8_incub)
-                                ts7 = r6_incub.Subtract(r8_incub);
-                            if (r9_incub > r6_incub)
-                                ts8 = r9_incub.Subtract(r6_incub);
-                            else if (r6_incub > r9_incub)
-                                ts8 = r6_incub.Subtract(r9_incub);
+                            comparetime = r6_incub;
                             break;
                         }
                     case 7:
                         {
-                            if (r2_incub > r7_incub)
-                                ts1 = r2_incub.Subtract(r7_incub);
-                            else if (r7_incub > r2_incub)
-                                ts1 = r7_incub.Subtract(r2_incub);
-
-                            if (r3_incub > r7_incub)
-                                ts2 = r3_incub.Subtract(r7_incub);
-                            else if (r7_incub > r3_incub)
-                                ts2 = r7_incub.Subtract(r3_incub);
-
-                            if (r4_incub > r7_incub)
-                                ts3 = r4_incub.Subtract(r7_incub);
-                            else if (r7_incub > r4_incub)
-                                ts3 = r7_incub.Subtract(r4_incub);
-
-                            if (r5_incub > r7_incub)
-                                ts4 = r5_incub.Subtract(r7_incub);
-                            else if (r7_incub > r5_incub)
-                                ts4 = r7_incub.Subtract(r5_incub);
-                            if (r6_incub > r7_incub)
-                                ts5 = r6_incub.Subtract(r7_incub);
-                            else if (r7_incub > r6_incub)
-                                ts5 = r7_incub.Subtract(r6_incub);
-                            if (r1_incub > r7_incub)
-                                ts6 = r1_incub.Subtract(r7_incub);
-                            else if (r7_incub > r1_incub)
-                                ts6 = r7_incub.Subtract(r1_incub);
-                            if (r8_incub > r7_incub)
-                                ts7 = r8_incub.Subtract(r7_incub);
-                            else if (r7_incub > r8_incub)
-                                ts7 = r7_incub.Subtract(r8_incub);
-                            if (r9_incub > r7_incub)
-                                ts8 = r9_incub.Subtract(r7_incub);
-                            else if (r7_incub > r9_incub)
-                                ts8 = r7_incub.Subtract(r9_incub);
+                            comparetime = r7_incub;
                             break;
                         }
                     case 8:
                         {
-                            if (r2_incub > r8_incub)
-                                ts1 = r2_incub.Subtract(r8_incub);
-                            else if (r8_incub > r2_incub)
-                                ts1 = r8_incub.Subtract(r2_incub);
-
-                            if (r3_incub > r8_incub)
-                                ts2 = r3_incub.Subtract(r8_incub);
-                            else if (r8_incub > r3_incub)
-                                ts2 = r8_incub.Subtract(r3_incub);
-
-                            if (r4_incub > r8_incub)
-                                ts3 = r4_incub.Subtract(r8_incub);
-                            else if (r8_incub > r4_incub)
-                                ts3 = r8_incub.Subtract(r4_incub);
-
-                            if (r5_incub > r8_incub)
-                                ts4 = r5_incub.Subtract(r8_incub);
-                            else if (r8_incub > r5_incub)
-                                ts4 = r8_incub.Subtract(r5_incub);
-                            if (r6_incub > r8_incub)
-                                ts5 = r6_incub.Subtract(r8_incub);
-                            else if (r8_incub > r6_incub)
-                                ts5 = r8_incub.Subtract(r6_incub);
-                            if (r7_incub > r8_incub)
-                                ts6 = r7_incub.Subtract(r8_incub);
-                            else if (r8_incub > r7_incub)
-                                ts6 = r8_incub.Subtract(r7_incub);
-                            if (r1_incub > r8_incub)
-                                ts7 = r1_incub.Subtract(r8_incub);
-                            else if (r8_incub > r1_incub)
-                                ts7 = r8_incub.Subtract(r1_incub);
-                            if (r9_incub > r8_incub)
-                                ts8 = r9_incub.Subtract(r8_incub);
-                            else if (r8_incub > r9_incub)
-                                ts8 = r8_incub.Subtract(r9_incub);
+                            comparetime = r8_incub;
                             break;
                         }
                     case 9:
                         {
-                            if (r2_incub > r9_incub)
-                                ts1 = r2_incub.Subtract(r9_incub);
-                            else if (r9_incub > r2_incub)
-                                ts1 = r9_incub.Subtract(r2_incub);
-
-                            if (r3_incub > r9_incub)
-                                ts2 = r3_incub.Subtract(r9_incub);
-                            else if (r9_incub > r3_incub)
-                                ts2 = r9_incub.Subtract(r3_incub);
-
-                            if (r4_incub > r9_incub)
-                                ts3 = r4_incub.Subtract(r9_incub);
-                            else if (r9_incub > r4_incub)
-                                ts3 = r9_incub.Subtract(r4_incub);
-
-                            if (r5_incub > r9_incub)
-                                ts4 = r5_incub.Subtract(r9_incub);
-                            else if (r9_incub > r5_incub)
-                                ts4 = r9_incub.Subtract(r5_incub);
-                            if (r6_incub > r9_incub)
-                                ts5 = r6_incub.Subtract(r9_incub);
-                            else if (r9_incub > r6_incub)
-                                ts5 = r9_incub.Subtract(r6_incub);
-                            if (r7_incub > r9_incub)
-                                ts6 = r7_incub.Subtract(r9_incub);
-                            else if (r9_incub > r7_incub)
-                                ts6 = r9_incub.Subtract(r7_incub);
-                            if (r8_incub > r9_incub)
-                                ts7 = r8_incub.Subtract(r9_incub);
-                            else if (r9_incub > r8_incub)
-                                ts7 = r9_incub.Subtract(r8_incub);
-                            if (r1_incub > r9_incub)
-                                ts8 = r1_incub.Subtract(r9_incub);
-                            else if (r9_incub > r1_incub)
-                                ts8 = r9_incub.Subtract(r1_incub);
+                            comparetime = r9_incub;
                             break;
                         }
 
                 }
-                //
-                //if ((ts1.TotalMilliseconds > 0 && ts1.TotalMilliseconds <= 5000) || (ts2.TotalMilliseconds > 0 && ts2.TotalMilliseconds <= 5000) || (ts3.TotalMilliseconds > 0 && ts3.TotalMilliseconds <= 5000) || (ts4.TotalMilliseconds > 0 && ts4.TotalMilliseconds <= 5000) || (ts5.TotalMilliseconds > 0 && ts5.TotalMilliseconds <= 5000) || (ts6.TotalMilliseconds > 0 && ts6.TotalMilliseconds <= 5000) || (ts7.TotalMilliseconds > 0 && ts7.TotalMilliseconds <= 5000) || (ts8.TotalMilliseconds > 0 && ts8.TotalMilliseconds <= 5000))
-                //if ((ts1.Seconds > 0 && ts1.Seconds <= 9) || (ts2.Seconds > 0 && ts2.Seconds <= 9) || (ts3.Seconds > 0 && ts3.Seconds <= 9) || (ts4.Seconds > 0 && ts4.Seconds <= 9) || (ts5.Seconds > 0 && ts5.Seconds <= 9) || (ts6.Seconds > 0 && ts6.Seconds <= 9) || (ts7.Seconds > 0 && ts7.Seconds <= 9) || (ts8.Seconds > 0 && ts8.Seconds <= 9))
-                if ((ts1.TotalSeconds > 0 && ts1.TotalSeconds <= 9) || (ts2.TotalSeconds > 0 && ts2.TotalSeconds <= 9) || (ts3.TotalSeconds > 0 && ts3.TotalSeconds <= 9) || (ts4.TotalSeconds > 0 && ts4.TotalSeconds <= 9) || (ts5.TotalSeconds > 0 && ts5.TotalSeconds <= 9) || (ts6.TotalSeconds > 0 && ts6.TotalSeconds <= 9) || (ts7.TotalSeconds > 0 && ts7.TotalSeconds <= 9) || (ts8.TotalSeconds > 0 && ts8.TotalSeconds <= 9))
+                //Comapring timing
+                TimeSpan[] timeSpans = CalculateTimeSpanDifferences(comparetime, new DateTime[] {
+                r1_incub, r2_incub, r3_incub, r4_incub, r5_incub, r6_incub, r7_incub, r8_incub, r9_incub});
+                foreach (var ts in timeSpans)
                 {
-                    respflg = true;
+                    if (ts.TotalSeconds > 0 && ts.TotalSeconds <= 9)
+                    {
+                        respflg = true;
+                        break;
+                    }
                 }
-                else
-                {
-                    respflg = false;
-                }
+
                 return respflg;
             }
             catch(Exception d3)
@@ -2678,8 +2369,7 @@ namespace HematoxinandEosin
         #endregion
         private void tmr_r1_incub_Tick(object sender, EventArgs e)
         {
-            DateTime d1 = System.DateTime.Now;
-            TimeSpan ts11 = new TimeSpan();
+            DateTime d1 = System.DateTime.Now;           
             int jno = 0; Boolean rackin = false;
             DateTime d2 = System.DateTime.Now; //Added on 01-03-2024 to On the water pump
             d2 = r1_incub.AddSeconds(-18); // Added on 01-03-2024 to open the water wall;
@@ -2882,13 +2572,11 @@ namespace HematoxinandEosin
                             {
                                 jno = Convert.ToInt32(Next_JarName_R1.Substring(1));
                                 if (rackinwaterjars[jno - 1] == 1)
-                                {
-                                    int wt1 = 0;
-                                    if (jno == 6) wt1 = 1;
-                                    else wt1 = (jno + 1);
-                                    for (int wt = wt1; wt <= 6; wt++)
+                                {                                    
+                                    for (int wt = 1; wt <= 6; wt++)
                                     {
-                                        if (rackinwaterjars[wt - 1] == 0)
+                                        if (wt == jno) continue;
+                                        if (rackinwaterjars[wt-1] == 0)
                                         {
                                             Actual_WashJar_R1 = Next_JarName_R1;
                                             Next_JarName_R1 = "W" + wt.ToString();
@@ -2897,7 +2585,6 @@ namespace HematoxinandEosin
                                         }
                                     }
                                 }
-
                                 r1_incub_WOn_flg = true;
                                 Intialize_Wash_Jars = false;
                                 Intialize_Wash_Jars = false;
@@ -2919,7 +2606,6 @@ namespace HematoxinandEosin
         private void tmr_r2_incub_Tick(object sender, EventArgs e)
         {
             DateTime d1 = System.DateTime.Now;
-            TimeSpan ts11 = new TimeSpan();
             int jno = 0; Boolean rackin = false;
             //This has to check with device
             DateTime d3 = System.DateTime.Now;
@@ -3115,12 +2801,10 @@ namespace HematoxinandEosin
                             {
                                 jno = Convert.ToInt32(Next_JarName_R2.Substring(1));
                                 if (rackinwaterjars[jno - 1] == 1)
-                                {
-                                    int wt1 = 0;
-                                    if (jno == 6) wt1 = 1;
-                                    else wt1 = (jno + 1);
-                                    for (int wt = wt1; wt <= 6; wt++)
+                                {                                    
+                                    for (int wt = 1; wt <= 6; wt++)
                                     {
+                                        if (wt == jno) continue;
                                         if (rackinwaterjars[wt - 1] == 0)
                                         {
                                             Actual_WashJar_R2 = Next_JarName_R2;
@@ -3148,7 +2832,6 @@ namespace HematoxinandEosin
         private void tmr_r3_incub_Tick(object sender, EventArgs e)
         {
             DateTime d1 = System.DateTime.Now;
-            TimeSpan ts11 = new TimeSpan();
             int jno = 0; Boolean rackin = false;
             //This has to check with device
             DateTime d3 = System.DateTime.Now;
@@ -3343,11 +3026,9 @@ namespace HematoxinandEosin
                                 jno = Convert.ToInt32(Next_JarName_R3.Substring(1));
                                 if (rackinwaterjars[jno - 1] == 1)
                                 {
-                                    int wt1 = 0;
-                                    if (jno == 6) wt1 = 1;
-                                    else wt1 = (jno + 1);
-                                    for (int wt = wt1; wt <= 6; wt++)
+                                    for (int wt = 1; wt <= 6; wt++)
                                     {
+                                        if (wt == jno) continue;
                                         if (rackinwaterjars[wt - 1] == 0)
                                         {
                                             Actual_WashJar_R3 = Next_JarName_R3;
@@ -3376,7 +3057,6 @@ namespace HematoxinandEosin
         private void tmr_r4_incub_Tick(object sender, EventArgs e)
         {
             DateTime d1 = System.DateTime.Now;
-            TimeSpan ts11 = new TimeSpan();
             int jno = 0; Boolean rackin = false;
             //This has to check with device
             DateTime d3 = System.DateTime.Now;
@@ -3568,11 +3248,9 @@ namespace HematoxinandEosin
                                 jno = Convert.ToInt32(Next_JarName_R4.Substring(1));
                                 if (rackinwaterjars[jno - 1] == 1)
                                 {
-                                    int wt1 = 0;
-                                    if (jno == 6) wt1 = 1;
-                                    else wt1 = (jno + 1);
-                                    for (int wt = wt1; wt <= 6; wt++)
+                                    for (int wt = 1; wt <= 6; wt++)
                                     {
+                                        if (wt == jno) continue;
                                         if (rackinwaterjars[wt - 1] == 0)
                                         {
                                             Actual_WashJar_R4 = Next_JarName_R4;
@@ -3601,7 +3279,6 @@ namespace HematoxinandEosin
         private void tmr_r5_incub_Tick(object sender, EventArgs e)
         {
             DateTime d1 = System.DateTime.Now;
-            TimeSpan ts11 = new TimeSpan();
             int jno = 0; Boolean rackin = false;
             //This has to check with device
             DateTime d3 = System.DateTime.Now;
@@ -3791,11 +3468,9 @@ namespace HematoxinandEosin
                                 jno = Convert.ToInt32(Next_JarName_R5.Substring(1));
                                 if (rackinwaterjars[jno - 1] == 1)
                                 {
-                                    int wt1 = 0;
-                                    if (jno == 6) wt1 = 1;
-                                    else wt1 = (jno + 1);
-                                    for (int wt = wt1; wt <= 6; wt++)
+                                    for (int wt = 1; wt <= 6; wt++)
                                     {
+                                        if (wt == jno) continue;
                                         if (rackinwaterjars[wt - 1] == 0)
                                         {
                                             Actual_WashJar_R5 = Next_JarName_R5;
@@ -3824,7 +3499,6 @@ namespace HematoxinandEosin
         private void tmr_r6_incub_Tick(object sender, EventArgs e)
         {
             DateTime d1 = System.DateTime.Now;
-            TimeSpan ts11 = new TimeSpan();
             int jno = 0; Boolean rackin = false;
             //This has to check with device
             DateTime d3 = System.DateTime.Now;
@@ -4020,11 +3694,9 @@ namespace HematoxinandEosin
                                 jno = Convert.ToInt32(Next_JarName_R6.Substring(1));
                                 if (rackinwaterjars[jno - 1] == 1)
                                 {
-                                    int wt1 = 0;
-                                    if (jno == 6) wt1 = 1;
-                                    else wt1 = (jno + 1);
-                                    for (int wt = wt1; wt <= 6; wt++)
+                                    for (int wt = 1; wt <= 6; wt++)
                                     {
+                                        if (wt == jno) continue;
                                         if (rackinwaterjars[wt - 1] == 0)
                                         {
                                             Actual_WashJar_R6 = Next_JarName_R6;
@@ -4053,7 +3725,6 @@ namespace HematoxinandEosin
         {
             Application.DoEvents();
             DateTime d1 = System.DateTime.Now;                                          
-            TimeSpan ts11 = new TimeSpan();
             int jno = 0; Boolean rackin = false;
             if (R7_protostart == false) { tmr_r7_incub.Enabled = false; return; }
             int rackNo = 7;
@@ -4239,11 +3910,9 @@ namespace HematoxinandEosin
                                 jno = Convert.ToInt32(Next_JarName_R7.Substring(1));
                                 if (rackinwaterjars[jno - 1] == 1)
                                 {
-                                    int wt1 = 0;
-                                    if (jno == 6) wt1 = 1;
-                                    else wt1 = (jno + 1);
-                                    for (int wt = wt1; wt <= 6; wt++)
+                                    for (int wt = 1; wt <= 6; wt++)
                                     {
+                                        if (wt == jno) continue;
                                         if (rackinwaterjars[wt - 1] == 0)
                                         {
                                             Actual_WashJar_R7 = Next_JarName_R7;
@@ -4272,7 +3941,6 @@ namespace HematoxinandEosin
         {
             Application.DoEvents();
             DateTime d1 = System.DateTime.Now;
-            TimeSpan ts11 = new TimeSpan();
             int jno = 0; Boolean rackin = false;
             if (R8_protostart == false) { tmr_r8_incub.Enabled = false; return; }
             int rackNo = 8;
@@ -4457,11 +4125,9 @@ namespace HematoxinandEosin
                                 jno = Convert.ToInt32(Next_JarName_R8.Substring(1));
                                 if (rackinwaterjars[jno - 1] == 1)
                                 {
-                                    int wt1 = 0;
-                                    if (jno == 6) wt1 = 1;
-                                    else wt1 = (jno + 1);
-                                    for (int wt = wt1; wt <= 6; wt++)
+                                    for (int wt = 1; wt <= 6; wt++)
                                     {
+                                        if (wt == jno) continue;
                                         if (rackinwaterjars[wt - 1] == 0)
                                         {
                                             Actual_WashJar_R8 = Next_JarName_R8;
@@ -4490,7 +4156,6 @@ namespace HematoxinandEosin
         {
             Application.DoEvents();
             DateTime d1 = System.DateTime.Now;
-            TimeSpan ts11 = new TimeSpan();
             int jno = 0; Boolean rackin = false;
             if (R9_protostart == false) { tmr_r9_incub.Enabled = false; return; }
             int rackNo = 9;
@@ -4683,11 +4348,9 @@ namespace HematoxinandEosin
                                 jno = Convert.ToInt32(Next_JarName_R9.Substring(1));
                                 if (rackinwaterjars[jno - 1] == 1)
                                 {
-                                    int wt1 = 0;
-                                    if (jno == 6) wt1 = 1;
-                                    else wt1 = (jno + 1);
-                                    for (int wt = wt1; wt <= 6; wt++)
+                                    for (int wt = 1; wt <= 6; wt++)
                                     {
+                                        if (wt == jno) continue;
                                         if (rackinwaterjars[wt - 1] == 0)
                                         {
                                             Actual_WashJar_R9 = Next_JarName_R9;
@@ -5045,51 +4708,85 @@ namespace HematoxinandEosin
         }
         private void tmr_nextrack_Tick(object sender, EventArgs e)
         {
-            DateTime currentTime = DateTime.Now;
-            int delayTime = DetermineDelayTime();
-
-            if (currentTime < nxtrackloading)
+            try 
             {
-                lbl_NxtRack.Text = $"Next Rack Loading Elapsed Time: {currentTime:HH:mm:ss} | Waiting Time: {nxtrackloading:HH:mm:ss}";
-                return;
-            }
+                DateTime currentTime = DateTime.Now;
+                int delayTime = DetermineDelayTime();
 
-            tmr_nextrack.Enabled = false;
-            HandleTempReading();
+                if (currentTime < nxtrackloading)
+                {
+                    lbl_NxtRack.Text = $"Next Rack Loading Elapsed Time: {currentTime:HH:mm:ss} | Waiting Time: {nxtrackloading:HH:mm:ss}";
+                    return;
+                }                
+                HandleTempReading();
 
-            TimeSpan[] timeSpans = CalculateTimeSpanDifferences(nxtrackloading, new DateTime[] {
+                TimeSpan[] timeSpans = CalculateTimeSpanDifferences(nxtrackloading, new DateTime[] {
         r1_incub, r2_incub, r3_incub, r4_incub, r5_incub, r6_incub, r7_incub, r8_incub, r9_incub
     });
 
-            if (rackinheater[0] == 1 && rackinheater[1] == 1 && rackinheater[2] == 1)
-            {
-                SetTimer(delayTime * 2);
-                return;
-            }
-
-            foreach (var ts in timeSpans)
-            {
-                if (ts.TotalSeconds > 0 && ts.TotalSeconds < delayTime)
+                if (rackinheater[0] == 1 && rackinheater[1] == 1 && rackinheater[2] == 1)
                 {
-                    SetTimer(delayTime);
+                    SetTimer(delayTime * 2);
                     return;
                 }
-            }
 
-            if (!heatingreqflg)
-            {
-                CheckAndRunProtocol();
+                foreach (var ts in timeSpans)
+                {
+                    if (ts.TotalSeconds > 0 && ts.TotalSeconds < delayTime)
+                    {
+                        SetTimer(delayTime);
+                        return;
+                    }
+                }
+
+                if (!heatingreqflg)
+                {
+                    tmr_nextrack.Enabled = false;
+                    CheckAndRunProtocol();
+                }
+                else
+                {
+                    if ((rackinloading[0] == 1) || (rackinloading[1] == 1) || (rackinloading[2] == 1))
+                    {
+                        tmr_nextrack.Enabled = false;
+                        open_htrdoor_toload_Nxtrack();
+                    }
+                    else if ((rackinloading[0] == 0) && (rackinloading[1] == 0) && (rackinloading[2] == 0))
+                    {
+                        tmr_nextrack.Enabled = false;
+                        btn_Continue.Enabled = true;
+                        continuetask();  /*Added on 24112023 1821*/
+                    }
+                }
             }
-            else
+            catch(Exception d3)
             {
-                ContinueOrHeat();
-            }
+                nxtrackloading = nxtrackloading.AddSeconds(11);
+                tmr_nextrack.Enabled = true;
+                tmr_nextrack.Interval = 1000;
+                Communication.writeCommunicationErrorlog(d3.ToString() + " in tmr_nextrack_tick() timer function in Form_Protorun");
+            }            
+        }
+        private void tmr_next_Lar_lvl_sense_Tick(object sender, EventArgs e)
+        {
+            ulcnt = 0;
+            btn_Continue.Enabled = false;
+            unloadJars_lvlintiated = false;
+            unloadjar_racksensed = false;
+            heaterjar_racksensed = false;
+            heaterjar_lvlintiated = false;
+            loadingjar_lvlintiated = true;
+            loadingjar_racksensed = false;
+            normaljar_lvlintiated = false;
+            normaljar_racksensed = false;
+            check_racks_using_lvlsence("L");
         }
 
+        Boolean tmr_nxtlvlsense = false;
         // Determine the delay time based on heating requirements
         private int DetermineDelayTime()
         {
-            if (heatingreqflg) return 18; // Adjusted on 27012025
+            if (heatingreqflg) return 11; //18 seconds modified to 11 inorder to reduce time between racks // Adjusted on 27012025
             return maxevttime >= 300 ? 27 : 18;
         }
 
@@ -5169,7 +4866,7 @@ namespace HematoxinandEosin
         // Continue processing or open heater door for loading
         private void ContinueOrHeat()
         {
-            if (rackinloading[0] == 1 || rackinloading[1] == 1 || rackinloading[2] == 1)
+            if ((rackinloading[0] == 1) || (rackinloading[1] == 1) || (rackinloading[2] == 1))
             {
                 open_htrdoor_toload_Nxtrack();
             }
@@ -6213,7 +5910,7 @@ namespace HematoxinandEosin
                             protocolinitiateflg_R4 = true;
                             protocolrun_R4();
                         }
-                        else if ((R5_protostart == false) && (r5inx == 0) && (protocolinitiateflg_R5 == false)) if ((R5_protostart == false))
+                        else if ((R5_protostart == false) && (r5inx == 0) && (protocolinitiateflg_R5 == false))
                         {
                             if (heatingreqflg == true)
                                 R5Protorun.Rows[1]["JarNo"] = htrname;
@@ -6710,7 +6407,7 @@ namespace HematoxinandEosin
                             protocolStartedflg_R4 = false;
                             protocolrun_R4();
                         }
-                        else if ((R5_protostart == false) && (r5inx == 0) && (protocolinitiateflg_R5 == false)) if ((R5_protostart == false))
+                        else if ((R5_protostart == false) && (r5inx == 0) && (protocolinitiateflg_R5 == false)) //if ((R5_protostart == false))
                         {
                             if (heatingreqflg == true)
                                 R5Protorun.Rows[1]["JarNo"] = htrname;
@@ -6745,8 +6442,8 @@ namespace HematoxinandEosin
                             R8Protorun.Rows[0]["JarNo"] = ldjarname;
                             r8inx = 0;
                             protocolinitiateflg_R8 = true;
-                                protocolStartedflg_R8 = false;
-                                protocolrun_R8();
+                            protocolStartedflg_R8 = false;
+                            protocolrun_R8();
                         }
                         else if ((R9_protostart == false) && (r9inx == 0) && (protocolinitiateflg_R9 == false)) //if ((R9_protostart == false))
                         {
@@ -6758,6 +6455,12 @@ namespace HematoxinandEosin
                                 protocolStartedflg_R9 = false;
                                 protocolrun_R9();
                         }
+                    }
+                    else // This else statement added on 08032025 1250 as feedback given by abid while testing
+                    {
+                        nxtrackloading = nxtrackloading.AddMinutes(1);
+                        tmr_nextrack.Enabled = true;
+                        tmr_nextrack.Interval = 1000;
                     }
                     ////if (rackinloading[0] == 1)
                     ////{
@@ -6914,6 +6617,20 @@ namespace HematoxinandEosin
                     ////    }
                     ////}                    
                 }
+                else
+                {
+                    if ((htr_door_open == false) && (htr_door_opencmd_toload_Nxtrack == true))
+                    {
+                        if(System.DateTime.Now >= htrdooropenfailure)
+                        {
+                            tmr_opencmd_toload_Nxtrack.Enabled = false;
+                            htr_door_opencmd_toload_Nxtrack = false;
+                            htr_door_open = false;
+                            open_htrdoor_toload_Nxtrack();
+                        }
+
+                    }
+                }
             }
             catch (Exception d3)
             {
@@ -6941,6 +6658,15 @@ namespace HematoxinandEosin
                 rackLocations[key][index] = status;
             }
         }
+        private bool fecthrackstatus(string jname)
+        {
+            string key = jname.Substring(0, 1);
+            int index = Convert.ToInt32(jname.Substring(1)) - 1;
+            if (rackLocations[key][index] == 1)
+                return true;
+            else
+                return false;
+        }
         private void tmr_r1_Tick(object sender, EventArgs e)
         {
             try
@@ -6957,7 +6683,7 @@ namespace HematoxinandEosin
                         protocolrun_R1();
                     }
                 }
-                if (rareached == true)
+                if ((rareached == true)||(rack_dip==true)||(RA_pickedflg==true)||(RA_placedflg==true))
                 {
                     rareached = false;
                     tmr_r1.Enabled = false;
@@ -6987,7 +6713,7 @@ namespace HematoxinandEosin
                     else if (topickupflg_R1 == true)
                     {
                         topickupflg_R1 = false;
-                        pickedflg_R1 = true;
+                        pickedflg_R1 = true;RA_pickedflg = false;
                         R1_pickcmdissue = true;
                         r1priority = 1;
                         Racks[1] = new Rack { RackNo = 1, IncubationTime = r1_incub, Priority = r1priority };
@@ -7004,11 +6730,11 @@ namespace HematoxinandEosin
                         else if (JarName_R1.Contains("L"))
                             rackinloading[jno - 1] = 0;
                         else if (JarName_R1.Contains("H"))
-                            rackinheater[jno - 1] = 0;
-                        if (JarName_R1 == "H1") { H1.TaskProcess = ""; Rackin_H1 = false; }
-                        else if (JarName_R1 == "H2") { H2.TaskProcess = ""; Rackin_H2 = false; }
-                        else if (JarName_R1 == "H3") { H3.TaskProcess = ""; Rackin_H3 = false; }
-                        
+                        {                         
+                            if (JarName_R1 == "H1") { H1.TaskProcess = ""; Rackin_H1 = false; rackinheater[0] = 0; H1.OnlyJar = true; }
+                            else if (JarName_R1 == "H2") { H2.TaskProcess = ""; Rackin_H2 = false; rackinheater[1] = 0; H2.OnlyJar = true; }
+                            else if (JarName_R1 == "H3") { H3.TaskProcess = ""; Rackin_H3 = false; rackinheater[2] = 0; H3.OnlyJar = true; }
+                        }
                         if (protocolinitiateflg_R1 == true)
                             protocolrun_R1();
                     }
@@ -7017,7 +6743,7 @@ namespace HematoxinandEosin
                         //SetText("RA Placed the Rack in" + inxSlno.ToString() + " Jar");                        
                         SetText("RA Placed the Rack " + R1_cnt.ToString() + " in Jar " + JarName_R1);
                         toplaceflg_R1 = false;
-                        placedflg_R1 = true;
+                        placedflg_R1 = true;RA_placedflg = false;
                         R1_pickcmdissue = false;
                         if (incubtime_R1 > 30)
                             r1priority = 0;
@@ -7030,7 +6756,7 @@ namespace HematoxinandEosin
                         jno = Convert.ToInt32(JarName_R1.Substring(1));
                         if (JarName_R1.Contains("J"))
                             rackinjars[jno - 1] = 1;
-                        else if (JarName_R3.Contains("W"))
+                        else if (JarName_R1.Contains("W"))
                             rackinwaterjars[jno - 1] = 1;
                         if (JarName_R1.Contains("U"))
                         {
@@ -7041,9 +6767,9 @@ namespace HematoxinandEosin
                         else if (JarName_R1.Contains("H"))
                         {                            
                             //Below code updated on 08-01-2025
-                            if (JarName_R1 == "H1") { Rackin_H1 = true; H1_incub_complete = false;rackinheater[0] = 1; }
-                            else if (JarName_R1 == "H2") { Rackin_H2 = true; H2_incub_complete = false; rackinheater[1] = 1; }
-                            else if (JarName_R1 == "H3") { Rackin_H3 = true; H3_incub_complete = false; rackinheater[2] = 1; }
+                            if (JarName_R1 == "H1") { Rackin_H1 = true; H1_incub_complete = false;rackinheater[0] = 1; H1.JarRack = true; }
+                            else if (JarName_R1 == "H2") { Rackin_H2 = true; H2_incub_complete = false; rackinheater[1] = 1; H2.JarRack = true; }
+                            else if (JarName_R1 == "H3") { Rackin_H3 = true; H3_incub_complete = false; rackinheater[2] = 1; H3.JarRack = true; }
                         }
 
                         //////code added on 17-11-2023 for Robotic arm status
@@ -7100,52 +6826,25 @@ namespace HematoxinandEosin
 
                         if (r1inx == 1)
                         {
-                            if ((rackinloading[1] == 1) || (rackinloading[2] == 1))   //Temporarly commented on 24112023 1557
+                            if (heatingreqflg == true)
                             {
-                                if (heatingreqflg == true)
-                                {
-                                    htrdoorintiate = false;
-                                    proto_htrclose_intiate = false;
-                                    close_htrdoor();
-                                    temp_incub = System.DateTime.Now.AddSeconds(incubtime_R1);
-                                    if (incubtime_R1 > nxtracktime)
-                                        Overlaptime = incubtime_R1 - nxtracktime;
-                                    else if (incubtime_R1 < nxtracktime)
-                                        Overlaptime = nxtracktime - incubtime_R1;
-                                    nxtrackloading = System.DateTime.Now;
-                                    nxtrackloading = nxtrackloading.AddSeconds(Overlaptime);
-                                }
-                                else
-                                {
-                                    nxtrackloading = System.DateTime.Now;
-                                    nxtrackloading = nxtrackloading.AddSeconds(nxtracktime + 18);
-                                }
-                                tmr_nextrack.Enabled = true;
-                                tmr_nextrack.Interval = 1000;
-                            }
-                            else if ((rackinloading[1] == 0) && (rackinloading[2] == 0))   //Temporarly commented on 24112023 1557
-                            {
-                                tmr_nextrack.Enabled = true;
-                                nxtrackloading = System.DateTime.Now;
-                                if (heatingreqflg == true)
-                                {
-                                    //nxtrackloading = nxtrackloading.AddSeconds(63);
-                                    if (incubtime_R1 > nxtracktime)
-                                        Overlaptime = incubtime_R1 - nxtracktime;
-                                    else if (incubtime_R1 < nxtracktime)
-                                        Overlaptime = nxtracktime - incubtime_R1;
-                                    Overlaptime = Overlaptime;
-                                    nxtrackloading = nxtrackloading.AddSeconds(Overlaptime);
-                                }
-                                else
-                                {
-                                    nxtrackloading = nxtrackloading.AddSeconds(nxtracktime + 18);
-                                }
-                                tmr_nextrack.Interval = 1000;
+                                htrdoorintiate = false;
+                                proto_htrclose_intiate = false;
+                                close_htrdoor();
+                                Overlaptime = Math.Abs(incubtime_R1 - nxtracktime);
+                                if (Overlaptime < nxtracktime) Overlaptime = (nxtracktime+(nxtracktime/4));
                             }
                             else
                             {
-                                tmr_nextrack.Enabled = false;
+                                Overlaptime = nxtracktime + 18;
+                            }
+                            nxtrackloading = System.DateTime.Now;
+                            nxtrackloading = nxtrackloading.AddSeconds(Overlaptime);
+                            tmr_nextrack.Enabled = true;
+                            tmr_nextrack.Interval = 1000;
+                            if((rackinloading[0]==0) && (rackinloading[1] == 0)&& (rackinloading[2] == 0))
+                            {
+
                             }
                         }
                     }
@@ -7177,7 +6876,7 @@ namespace HematoxinandEosin
                         protocolrun_R2();
                     }
                 }
-                if (rareached == true)
+                if ((rareached == true) || (rack_dip == true) || (RA_pickedflg == true) || (RA_placedflg == true))
                 {
                     rareached = false;
                     tmr_r2.Enabled = false;
@@ -7207,7 +6906,7 @@ namespace HematoxinandEosin
                     else if (topickupflg_R2 == true)
                     {
                         topickupflg_R2 = false;
-                        pickedflg_R2 = true;
+                        pickedflg_R2 = true;RA_pickedflg = false;
                         R2_pickcmdissue = true;
                         r2priority = 1;
                         Racks[2] = new Rack { RackNo = 2, IncubationTime = r2_incub, Priority = r2priority };
@@ -7223,11 +6922,12 @@ namespace HematoxinandEosin
                         else if (JarName_R2.Contains("L"))
                             rackinloading[jno - 1] = 0;
                         else if (JarName_R2.Contains("H"))
-                            rackinheater[jno - 1] = 0;
-                        if (JarName_R2 == "H1") { H1.TaskProcess = ""; Rackin_H1 = false; }
-                        else if (JarName_R2 == "H2") { H2.TaskProcess = ""; Rackin_H2 = false; }
-                        else if (JarName_R2 == "H3") { H3.TaskProcess = ""; Rackin_H3 = false; }
-                        /*Added on 20-12-2023 1621*/                        
+                        {
+                            if (JarName_R2 == "H1") { H1.TaskProcess = ""; Rackin_H1 = false; ; rackinheater[0] = 0; H1.OnlyJar = true; }
+                            else if (JarName_R2 == "H2") { H2.TaskProcess = ""; Rackin_H2 = false; ; rackinheater[1] = 0; H2.OnlyJar = true; }
+                            else if (JarName_R2 == "H3") { H3.TaskProcess = ""; Rackin_H3 = false; ; rackinheater[2] = 0; H3.OnlyJar = true; }
+                        }
+                        /*Added on 20-12-2023 1621*/
                         update_jardetails_runtime(JarName_R2, "R" + R2_cnt.ToString(), true, false, r2_taskcomp.ToString().Substring(11));
                         if (protocolinitiateflg_R2 == true)
                             protocolrun_R2();
@@ -7238,7 +6938,7 @@ namespace HematoxinandEosin
                         SetText("RA Placed the Rack " + R2_cnt.ToString() + " in Jar " + JarName_R2);
                         updateprotorun(protoshortname, RequiredVariables.UserName, DateTime.Now.ToShortDateString(), RegName_R2, JarName_R2, "R" + R2_cnt.ToString(), DateTime.Now.ToString() + "." + System.DateTime.Now.Millisecond.ToString().PadLeft(3, '0'), monVal, "Placed In", 0f, m_Runid);
                         toplaceflg_R2 = false;
-                        placedflg_R2 = true;
+                        placedflg_R2 = true;RA_placedflg = false;
                         R2_pickcmdissue = false;  //Added on 19-12-2023 1231 to operate water valves
                         if (incubtime_R2 > 30)
                             r2priority = 0;
@@ -7256,9 +6956,9 @@ namespace HematoxinandEosin
                         else if (JarName_R2.Contains("H"))
                         {                            
                             //Below code updated on 08-01-2025
-                            if (JarName_R2 == "H1") { Rackin_H1 = true; H1_incub_complete = false; rackinheater[0] = 1; }
-                            else if (JarName_R2 == "H2") { Rackin_H2 = true; H2_incub_complete = false; rackinheater[1] = 1; }
-                            else if (JarName_R2 == "H3") { Rackin_H3 = true; H3_incub_complete = false; rackinheater[2] = 1; }
+                            if (JarName_R2 == "H1") { Rackin_H1 = true; H1_incub_complete = false; rackinheater[0] = 1; H1.JarRack = true; }
+                            else if (JarName_R2 == "H2") { Rackin_H2 = true; H2_incub_complete = false; rackinheater[1] = 1; H2.JarRack = true; }
+                            else if (JarName_R2 == "H3") { Rackin_H3 = true; H3_incub_complete = false; rackinheater[2] = 1; H3.JarRack = true; }
                         }
                         else if(JarName_R2.Contains("U"))
                         {
@@ -7326,54 +7026,22 @@ namespace HematoxinandEosin
 
                         if (r2inx == 1)
                         {
-                            if ((rackinloading[2] == 1))   //Temporarly commented on 24112023 1557
+                            if (heatingreqflg == true)
                             {
-                                if (heatingreqflg == true)
-                                {
-                                    htrdoorintiate = false;
-                                    proto_htrclose_intiate = false;
-                                    close_htrdoor();
-                                    if (incubtime_R2 > nxtracktime)
-                                        Overlaptime = incubtime_R2 - nxtracktime;
-                                    else if (incubtime_R2 < nxtracktime)
-                                        Overlaptime = nxtracktime - incubtime_R2;
-                                    ////Overlaptime = Overlaptime + 120 ;//Adding 2minites to pick 3rd rack from loading Jar
-                                    nxtrackloading = System.DateTime.Now;
-                                    nxtrackloading = nxtrackloading.AddSeconds(Overlaptime);
-                                }
-                                else
-                                {
-                                    nxtrackloading = System.DateTime.Now;
-                                    nxtrackloading = nxtrackloading.AddSeconds(nxtracktime + 18);
-                                }
-                                tmr_nextrack.Enabled = true;
-                                tmr_nextrack.Interval = 1000;
-                            }
-                            else if ((rackinloading[2] == 0))   //Temporarly commented on 24112023 1557
-                            {
-                                tmr_nextrack.Enabled = true;
-                                nxtrackloading = System.DateTime.Now;
-                                if (heatingreqflg == false)
-                                {
-                                    //nxtrackloading = nxtrackloading.AddSeconds(63);
-                                    nxtrackloading = nxtrackloading.AddSeconds(nxtracktime + 18);
-                                }
-                                else
-                                {
-                                    if (incubtime_R2 > nxtracktime)
-                                        Overlaptime = incubtime_R2 - nxtracktime;
-                                    else if (incubtime_R2 < nxtracktime)
-                                        Overlaptime = nxtracktime - incubtime_R2;
-                                    //Overlaptime = Overlaptime + 120;
-                                    nxtrackloading = nxtrackloading.AddSeconds(Overlaptime);
-                                }
-
-                                tmr_nextrack.Interval = 1000;
+                                htrdoorintiate = false;
+                                proto_htrclose_intiate = false;
+                                close_htrdoor();
+                                Overlaptime = Math.Abs(incubtime_R2 - nxtracktime);
+                                if (Overlaptime < nxtracktime) Overlaptime = (nxtracktime + (nxtracktime / 4));
                             }
                             else
                             {
-                                tmr_nextrack.Enabled = false;
+                                Overlaptime = nxtracktime + 18;
                             }
+                            nxtrackloading = System.DateTime.Now;
+                            nxtrackloading = nxtrackloading.AddSeconds(Overlaptime);
+                            tmr_nextrack.Enabled = true;
+                            tmr_nextrack.Interval = 1000;
                         }
 
                     }
@@ -7405,7 +7073,7 @@ namespace HematoxinandEosin
                         protocolrun_R3();
                     }
                 }
-                if (rareached == true)
+                if ((rareached == true) || (rack_dip == true) || (RA_pickedflg == true) || (RA_placedflg == true))
                 {
                     rareached = false;
                     tmr_r3.Enabled = false;
@@ -7428,7 +7096,7 @@ namespace HematoxinandEosin
                     else if (topickupflg_R3 == true)
                     {
                         topickupflg_R3 = false;
-                        pickedflg_R3 = true;
+                        pickedflg_R3 = true;RA_pickedflg = false;
                         R3_pickcmdissue = true;
                         r3priority = 1;
                         Racks[3] = new Rack { RackNo = 3, IncubationTime = r3_incub, Priority = r3priority };
@@ -7444,10 +7112,11 @@ namespace HematoxinandEosin
                         else if (JarName_R3.Contains("L"))
                             rackinloading[jno - 1] = 0;
                         else if (JarName_R3.Contains("H"))
-                            rackinheater[jno - 1] = 0;
-                        if (JarName_R3 == "H1") { H1.TaskProcess = ""; Rackin_H1 = false; }
-                        else if (JarName_R3 == "H2") { H2.TaskProcess = ""; Rackin_H2 = false; }
-                        else if (JarName_R3 == "H3") { H3.TaskProcess = ""; Rackin_H3 = false; }
+                        {                         
+                            if (JarName_R3 == "H1") { H1.TaskProcess = ""; Rackin_H1 = false; rackinheater[0] = 0; H1.OnlyJar = true; }
+                            else if (JarName_R3 == "H2") { H2.TaskProcess = ""; Rackin_H2 = false; rackinheater[1] = 0; H2.OnlyJar = true; }
+                            else if (JarName_R3 == "H3") { H3.TaskProcess = ""; Rackin_H3 = false; rackinheater[2] = 0; H3.OnlyJar = true; }
+                        }
                         update_jardetails_runtime(JarName_R3, "R" + R3_cnt.ToString(), true, false, r3_taskcomp.ToString().Substring(11));                        
                         /*Added on 20-12-2023 1621*/
                         if (protocolinitiateflg_R3 == true)
@@ -7459,7 +7128,7 @@ namespace HematoxinandEosin
                         SetText("RA Placed the Rack " + R3_cnt.ToString() + " in Jar " + JarName_R3);
                         updateprotorun(protoshortname, RequiredVariables.UserName, DateTime.Now.ToShortDateString(), RegName_R3, JarName_R3, "R" + R3_cnt.ToString(), DateTime.Now.ToString() + "." + System.DateTime.Now.Millisecond.ToString().PadLeft(3, '0'), monVal, "Placed In", 0f, m_Runid);
                         toplaceflg_R3 = false;
-                        placedflg_R3 = true;
+                        placedflg_R3 = true;RA_placedflg = false;
                         R3_pickcmdissue = false;  //Added on 19-12-2023 1231 to operate water valves
                         if (incubtime_R3 > 30)
                             r3priority = 0;
@@ -7481,9 +7150,9 @@ namespace HematoxinandEosin
                         else if (JarName_R3.Contains("H"))
                         {                            
                             //Below code updated on 08-01-2025
-                            if (JarName_R3 == "H1") { Rackin_H1 = true; H1_incub_complete = false; rackinheater[0] = 1; }
-                            else if (JarName_R3 == "H2") { Rackin_H2 = true; H2_incub_complete = false; rackinheater[1] = 1; }
-                            else if (JarName_R3 == "H3") { Rackin_H3 = true; H3_incub_complete = false; rackinheater[2] = 1; }
+                            if (JarName_R3 == "H1") { Rackin_H1 = true; H1_incub_complete = false; rackinheater[0] = 1; H1.JarRack = true; }
+                            else if (JarName_R3 == "H2") { Rackin_H2 = true; H2_incub_complete = false; rackinheater[1] = 1; H2.JarRack = true; }
+                            else if (JarName_R3 == "H3") { Rackin_H3 = true; H3_incub_complete = false; rackinheater[2] = 1; H3.JarRack = true; }
                         }
                         else if (JarName_R3.Contains("U"))
                         {
@@ -7541,25 +7210,21 @@ namespace HematoxinandEosin
 
                         if (r3inx == 1)
                         {
-                            tmr_nextrack.Enabled = true;
-                            nxtrackloading = System.DateTime.Now;
-                            if (heatingreqflg == false)
+                            if (heatingreqflg == true)
                             {
-                                nxtrackloading = nxtrackloading.AddSeconds(nxtracktime + 18);
-                            }
-                            else
-                            {
-                                //nxtrackloading = nxtrackloading.AddSeconds(63);
                                 htrdoorintiate = false;
                                 proto_htrclose_intiate = false;
                                 close_htrdoor();
-                                if (incubtime_R3 > nxtracktime)
-                                    Overlaptime = incubtime_R3 - nxtracktime;
-                                else if (incubtime_R3 < nxtracktime)
-                                    Overlaptime = nxtracktime - incubtime_R3;
-                                //Overlaptime = Overlaptime + 120;
-                                nxtrackloading = nxtrackloading.AddSeconds(Overlaptime);
+                                Overlaptime = Math.Abs(incubtime_R3 - nxtracktime);
+                                if (Overlaptime < nxtracktime) Overlaptime = (nxtracktime + (nxtracktime / 4));
                             }
+                            else
+                            {
+                                Overlaptime = nxtracktime + 18;
+                            }
+                            nxtrackloading = System.DateTime.Now;
+                            nxtrackloading = nxtrackloading.AddSeconds(Overlaptime);
+                            tmr_nextrack.Enabled = true;
                             tmr_nextrack.Interval = 1000;
                         }
                     }
@@ -7591,7 +7256,7 @@ namespace HematoxinandEosin
                         protocolrun_R4();
                     }
                 }
-                if (rareached == true)
+                if ((rareached == true) || (rack_dip == true) || (RA_pickedflg == true) || (RA_placedflg == true))
                 {
                     rareached = false;
                     tmr_r4.Enabled = false;
@@ -7621,7 +7286,7 @@ namespace HematoxinandEosin
                     else if (topickupflg_R4 == true)
                     {
                         topickupflg_R4 = false;
-                        pickedflg_R4 = true;
+                        pickedflg_R4 = true;RA_pickedflg = false;
                         R4_pickcmdissue = true;
                         r4priority = 1;
                         Racks[4] = new Rack { RackNo = 4, IncubationTime = r4_incub, Priority = r4priority };
@@ -7637,11 +7302,12 @@ namespace HematoxinandEosin
                         else if (JarName_R4.Contains("L"))
                             rackinloading[jno - 1] = 0;
                         else if (JarName_R4.Contains("H"))
-                            rackinheater[jno - 1] = 0;
-                        if (JarName_R4 == "H1") { H1.TaskProcess = ""; Rackin_H1 = false; }
-                        else if (JarName_R4 == "H2") { H2.TaskProcess = ""; Rackin_H2 = false; }
-                        else if (JarName_R4 == "H3") { H3.TaskProcess = ""; Rackin_H3 = false; }
-                        
+                        {                         
+                            if (JarName_R4 == "H1") { H1.TaskProcess = ""; Rackin_H1 = false; rackinheater[0] = 0; H1.OnlyJar = true; }
+                            else if (JarName_R4 == "H2") { H2.TaskProcess = ""; Rackin_H2 = false; rackinheater[1] = 0; H2.OnlyJar = true; }
+                            else if (JarName_R4 == "H3") { H3.TaskProcess = ""; Rackin_H3 = false; rackinheater[2] = 0; H3.OnlyJar = true; }
+                        }
+
                         update_jardetails_runtime(JarName_R4, "R" + R4_cnt.ToString(), true, false, r4_taskcomp.ToString().Substring(11));
                         /*Added on 20-12-2023 1621*/
                         if (protocolinitiateflg_R4 == true)
@@ -7653,7 +7319,7 @@ namespace HematoxinandEosin
                         SetText("RA Placed the Rack " + R4_cnt.ToString() + " in Jar " + JarName_R4);
                         updateprotorun(protoshortname, RequiredVariables.UserName, DateTime.Now.ToShortDateString(), RegName_R4, JarName_R4, "R" + R4_cnt.ToString(), DateTime.Now.ToString() + "." + System.DateTime.Now.Millisecond.ToString().PadLeft(3, '0'), monVal, "Placed In", 0f, m_Runid);
                         toplaceflg_R4 = false;
-                        placedflg_R4 = true;
+                        placedflg_R4 = true;RA_placedflg = false;
                         R4_pickcmdissue = false;  //Added on 19-12-2023 1231 to operate water valves                        
                         if (incubtime_R4 > 30)
                             r4priority = 0;
@@ -7669,9 +7335,9 @@ namespace HematoxinandEosin
                         else if (JarName_R4.Contains("H"))
                         {                            
                             //Below code updated on 08-01-2025
-                            if (JarName_R4 == "H1") { Rackin_H1 = true; H1_incub_complete = false; rackinheater[0] = 1; }
-                            else if (JarName_R4 == "H2") { Rackin_H2 = true; H2_incub_complete = false; rackinheater[1] = 1; }
-                            else if (JarName_R4 == "H3") { Rackin_H3 = true; H3_incub_complete = false; rackinheater[2] = 1; }
+                            if (JarName_R4 == "H1") { Rackin_H1 = true; H1_incub_complete = false; rackinheater[0] = 1; H1.JarRack = true; }
+                            else if (JarName_R4 == "H2") { Rackin_H2 = true; H2_incub_complete = false; rackinheater[1] = 1; H2.JarRack = true; }
+                            else if (JarName_R4 == "H3") { Rackin_H3 = true; H3_incub_complete = false; rackinheater[2] = 1; H3.JarRack = true; }
                         }
                         else if (JarName_R4.Contains("U"))
                         {
@@ -7728,55 +7394,22 @@ namespace HematoxinandEosin
                         //Code Updated on 20122023 1304
                         if (r4inx == 1)
                         {
-                            if ((rackinloading[1] == 1) || (rackinloading[2] == 1))   //Temporarly commented on 24112023 1557
+                            if (heatingreqflg == true)
                             {
-                                if (heatingreqflg == true)
-                                {
-                                    htrdoorintiate = false;
-                                    proto_htrclose_intiate = false;
-                                    close_htrdoor();
-                                    if (incubtime_R4 > nxtracktime)
-                                        Overlaptime = incubtime_R4 - nxtracktime;
-                                    else if (incubtime_R4 < nxtracktime)
-                                        Overlaptime = nxtracktime - incubtime_R4;
-                                    nxtrackloading = System.DateTime.Now;
-                                    nxtrackloading = nxtrackloading.AddSeconds(Overlaptime);
-                                }
-                                else
-                                {
-                                    nxtrackloading = System.DateTime.Now;
-                                    nxtrackloading = nxtrackloading.AddSeconds(nxtracktime + 18);
-                                }
-                                tmr_nextrack.Enabled = true;
-                                tmr_nextrack.Interval = 1000;
-                            }
-                            else if ((rackinloading[1] == 0) && (rackinloading[2] == 0))   //Temporarly commented on 24112023 1557
-                            {
-                                tmr_nextrack.Enabled = true;
-                                nxtrackloading = System.DateTime.Now;
-                                if (heatingreqflg == false)
-                                {
-                                    //nxtrackloading = nxtrackloading.AddSeconds(63);
-                                    nxtrackloading = nxtrackloading.AddSeconds(nxtracktime + 18);
-                                }
-                                else
-                                {
-                                    htrdoorintiate = false;
-                                    proto_htrclose_intiate = false;
-                                    close_htrdoor();
-                                    if (incubtime_R4 > nxtracktime)
-                                        Overlaptime = incubtime_R4 - nxtracktime;
-                                    else if (incubtime_R4 < nxtracktime)
-                                        Overlaptime = nxtracktime - incubtime_R4;
-                                    //Overlaptime = Overlaptime + 120;
-                                    nxtrackloading = nxtrackloading.AddSeconds(Overlaptime);
-                                }
-                                tmr_nextrack.Interval = 1000;
+                                htrdoorintiate = false;
+                                proto_htrclose_intiate = false;
+                                close_htrdoor();
+                                Overlaptime = Math.Abs(incubtime_R4 - nxtracktime);
+                                if (Overlaptime < nxtracktime) Overlaptime = (nxtracktime + (nxtracktime / 4));
                             }
                             else
                             {
-                                tmr_nextrack.Enabled = false;
+                                Overlaptime = nxtracktime + 18;
                             }
+                            nxtrackloading = System.DateTime.Now;
+                            nxtrackloading = nxtrackloading.AddSeconds(Overlaptime);
+                            tmr_nextrack.Enabled = true;
+                            tmr_nextrack.Interval = 1000;
                         }
                     }
                     else if ((pickedflg_R4 == true) && (r4inx == 1) && proto_htrclose_intiate == true)
@@ -7807,7 +7440,7 @@ namespace HematoxinandEosin
                         protocolrun_R5();
                     }
                 }
-                if (rareached == true)
+                if ((rareached == true) || (rack_dip == true) || (RA_pickedflg == true) || (RA_placedflg == true))
                 {
                     rareached = false;
                     tmr_r5.Enabled = false;
@@ -7837,7 +7470,7 @@ namespace HematoxinandEosin
                     else if (topickupflg_R5 == true)
                     {
                         topickupflg_R5 = false;
-                        pickedflg_R5 = true;
+                        pickedflg_R5 = true;RA_pickedflg = false;
                         R5_pickcmdissue = true;
                         r5priority = 1;
                         Racks[5] = new Rack { RackNo = 5, IncubationTime = r5_incub, Priority = r5priority };
@@ -7853,10 +7486,11 @@ namespace HematoxinandEosin
                         else if (JarName_R5.Contains("L"))
                             rackinloading[jno - 1] = 0;
                         else if (JarName_R5.Contains("H"))
-                            rackinheater[jno - 1] = 0;
-                        if (JarName_R5 == "H1") { H1.TaskProcess = ""; Rackin_H1 = false; }
-                        else if (JarName_R5 == "H2") { H2.TaskProcess = ""; Rackin_H2 = false; }
-                        else if (JarName_R5 == "H3") { H3.TaskProcess = ""; Rackin_H3 = false; }
+                        {
+                            if (JarName_R5 == "H1") { H1.TaskProcess = ""; Rackin_H1 = false; rackinheater[0] = 0; H1.OnlyJar = true; }
+                            else if (JarName_R5 == "H2") { H2.TaskProcess = ""; Rackin_H2 = false; rackinheater[1] = 0; H2.OnlyJar = true; }
+                            else if (JarName_R5 == "H3") { H3.TaskProcess = ""; Rackin_H3 = false; rackinheater[2] = 0; H3.OnlyJar = true; }
+                        }
                         update_jardetails_runtime(JarName_R5, "R" + R5_cnt.ToString(), true, false, r5_taskcomp.ToString().Substring(11));
                         /*Added on 20-12-2023 1621*/
                         if (protocolinitiateflg_R5 == true)
@@ -7868,7 +7502,7 @@ namespace HematoxinandEosin
                         SetText("RA Placed the Rack " + R5_cnt.ToString() + " in Jar " + JarName_R5);
                         updateprotorun(protoshortname, RequiredVariables.UserName, DateTime.Now.ToShortDateString(), RegName_R5, JarName_R5, "R" + R5_cnt.ToString(), DateTime.Now.ToString() + "." + System.DateTime.Now.Millisecond.ToString().PadLeft(3, '0'), monVal, "Placed In", 0f, m_Runid);
                         toplaceflg_R5 = false;
-                        placedflg_R5 = true;
+                        placedflg_R5 = true;RA_placedflg = false;
                         R5_pickcmdissue = false;  //Added on 19-12-2023 1231 to operate water valves
                         if (incubtime_R5 > 30)
                             r5priority = 0;
@@ -7884,9 +7518,9 @@ namespace HematoxinandEosin
                         else if (JarName_R5.Contains("H"))
                         {                            
                             //Below code updated on 08-01-2025
-                            if (JarName_R5 == "H1") { Rackin_H1 = true; H1_incub_complete = false; rackinheater[0] = 1; }
-                            else if (JarName_R5 == "H2") { Rackin_H2 = true; H2_incub_complete = false; rackinheater[1] = 1; }
-                            else if (JarName_R5 == "H3") { Rackin_H3 = true; H3_incub_complete = false; rackinheater[2] = 1; }
+                            if (JarName_R5 == "H1") { Rackin_H1 = true; H1_incub_complete = false; rackinheater[0] = 1; H1.JarRack = true; }
+                            else if (JarName_R5 == "H2") { Rackin_H2 = true; H2_incub_complete = false; rackinheater[1] = 1; H2.JarRack = true; }
+                            else if (JarName_R5 == "H3") { Rackin_H3 = true; H3_incub_complete = false; rackinheater[2] = 1; H3.JarRack = true; }
                         }
                         else if (JarName_R5.Contains("U"))
                         {                            
@@ -7945,56 +7579,22 @@ namespace HematoxinandEosin
 
                         if (r5inx == 1)
                         {
-                            if ((rackinloading[2] == 1))   //Temporarly commented on 24112023 1557
+                            if (heatingreqflg == true)
                             {
-                                if (heatingreqflg == true)
-                                {
-                                    htrdoorintiate = false;
-                                    proto_htrclose_intiate = false;
-                                    close_htrdoor();
-                                    if (incubtime_R5 > nxtracktime)
-                                        Overlaptime = incubtime_R5 - nxtracktime;
-                                    else if (incubtime_R5 < nxtracktime)
-                                        Overlaptime = nxtracktime - incubtime_R5;
-                                    //Overlaptime = Overlaptime + 120;
-                                    nxtrackloading = System.DateTime.Now;
-                                    nxtrackloading = nxtrackloading.AddSeconds(Overlaptime);
-                                }
-                                else
-                                {
-                                    nxtrackloading = System.DateTime.Now;
-                                    nxtrackloading = nxtrackloading.AddSeconds(nxtracktime + 18);
-                                }
-                                tmr_nextrack.Enabled = true;
-                                tmr_nextrack.Interval = 1000;
-                            }
-                            else if ((rackinloading[2] == 0))   //Temporarly commented on 24112023 1557
-                            {
-                                tmr_nextrack.Enabled = true;
-                                nxtrackloading = System.DateTime.Now;
-                                if (heatingreqflg == false)
-                                {
-                                    //nxtrackloading = nxtrackloading.AddSeconds(63);
-                                    nxtrackloading = nxtrackloading.AddSeconds(nxtracktime + 18);
-                                }
-                                else
-                                {
-                                    htrdoorintiate = false;
-                                    proto_htrclose_intiate = false;
-                                    close_htrdoor();
-                                    if (incubtime_R5 > nxtracktime)
-                                        Overlaptime = incubtime_R5 - nxtracktime;
-                                    else if (incubtime_R5 < nxtracktime)
-                                        Overlaptime = nxtracktime - incubtime_R5;
-                                    ////Overlaptime = Overlaptime + 120;
-                                    nxtrackloading = nxtrackloading.AddSeconds(Overlaptime);
-                                }
-                                tmr_nextrack.Interval = 1000;
+                                htrdoorintiate = false;
+                                proto_htrclose_intiate = false;
+                                close_htrdoor();
+                                Overlaptime = Math.Abs(incubtime_R5 - nxtracktime);
+                                if (Overlaptime < nxtracktime) Overlaptime = (nxtracktime + (nxtracktime / 4));
                             }
                             else
                             {
-                                tmr_nextrack.Enabled = false;
+                                Overlaptime = nxtracktime + 18;
                             }
+                            nxtrackloading = System.DateTime.Now;
+                            nxtrackloading = nxtrackloading.AddSeconds(Overlaptime);
+                            tmr_nextrack.Enabled = true;
+                            tmr_nextrack.Interval = 1000;
                         }
                     }
                     else if ((pickedflg_R5 == true) && (r5inx == 1) && proto_htrclose_intiate == true)
@@ -8025,7 +7625,7 @@ namespace HematoxinandEosin
                         protocolrun_R6();
                     }
                 }
-                if (rareached == true)
+                if ((rareached == true) || (rack_dip == true) || (RA_pickedflg == true) || (RA_placedflg == true))
                 {
                     rareached = false;
                     tmr_r6.Enabled = false;
@@ -8055,7 +7655,7 @@ namespace HematoxinandEosin
                     else if (topickupflg_R6 == true)
                     {
                         topickupflg_R6 = false;
-                        pickedflg_R6 = true;
+                        pickedflg_R6 = true;RA_pickedflg = false;
                         R6_pickcmdissue = true;
                         r6priority = 1;
                         Racks[6] = new Rack { RackNo = 6, IncubationTime = r6_incub, Priority = r6priority };
@@ -8071,10 +7671,11 @@ namespace HematoxinandEosin
                         else if (JarName_R6.Contains("L"))
                             rackinloading[jno - 1] = 0;
                         else if (JarName_R6.Contains("H"))
-                            rackinheater[jno - 1] = 0;
-                        if (JarName_R6 == "H1") { H1.TaskProcess = ""; Rackin_H1 = false; }
-                        else if (JarName_R6 == "H2") { H2.TaskProcess = ""; Rackin_H2 = false; }
-                        else if (JarName_R6 == "H3") { H3.TaskProcess = ""; Rackin_H3 = false; }
+                        {                           
+                            if (JarName_R6 == "H1") { H1.TaskProcess = ""; Rackin_H1 = false; rackinheater[0] = 0; H1.OnlyJar = true; }
+                            else if (JarName_R6 == "H2") { H2.TaskProcess = ""; Rackin_H2 = false; rackinheater[1] = 0; H2.OnlyJar = true; }
+                            else if (JarName_R6 == "H3") { H3.TaskProcess = ""; Rackin_H3 = false; rackinheater[2] = 0; H3.OnlyJar = true; }
+                        }
                         update_jardetails_runtime(JarName_R6, "R" + R6_cnt.ToString(), true, false, r6_taskcomp.ToString().Substring(11));
                         /*Added on 20-12-2023 1621*/
                         if (protocolinitiateflg_R6 == true)
@@ -8086,7 +7687,7 @@ namespace HematoxinandEosin
                         SetText("RA Placed the Rack " + R6_cnt.ToString() + " in Jar " + JarName_R6);
                         updateprotorun(protoshortname, RequiredVariables.UserName, DateTime.Now.ToShortDateString(), RegName_R6, JarName_R6, "R" + R6_cnt.ToString(), DateTime.Now.ToString() + "." + System.DateTime.Now.Millisecond.ToString().PadLeft(3, '0'), monVal, "Placed In", 0f, m_Runid);
                         toplaceflg_R6 = false;
-                        placedflg_R6 = true;
+                        placedflg_R6 = true;RA_placedflg = false;
                         R6_pickcmdissue = false;  //Added on 19-12-2023 1231 to operate water valves
                         if (incubtime_R6 > 30)
                             r6priority = 0;
@@ -8102,9 +7703,9 @@ namespace HematoxinandEosin
                         else if (JarName_R6.Contains("H"))
                         {                            
                             //Below code updated on 08-01-2025
-                            if (JarName_R6 == "H1") { Rackin_H1 = true; H1_incub_complete = false; rackinheater[0] = 1; }
-                            else if (JarName_R6 == "H2") { Rackin_H2 = true; H2_incub_complete = false; rackinheater[1] = 1; }
-                            else if (JarName_R6 == "H3") { Rackin_H3 = true; H3_incub_complete = false; rackinheater[2] = 1; }
+                            if (JarName_R6 == "H1") { Rackin_H1 = true; H1_incub_complete = false; rackinheater[0] = 1; H1.JarRack = true; }
+                            else if (JarName_R6 == "H2") { Rackin_H2 = true; H2_incub_complete = false; rackinheater[1] = 1; H2.JarRack = true; }
+                            else if (JarName_R6 == "H3") { Rackin_H3 = true; H3_incub_complete = false; rackinheater[2] = 1; H3.JarRack = true; }
                         }
                         else if (JarName_R6.Contains("U"))
                         {
@@ -8164,25 +7765,21 @@ namespace HematoxinandEosin
 
                         if (r6inx == 1)
                         {
-                            tmr_nextrack.Enabled = true;
-                            nxtrackloading = System.DateTime.Now;
-                            if (heatingreqflg == false)
-                            {
-                                nxtrackloading = nxtrackloading.AddSeconds(nxtracktime + 18);
-                            }
-                            else
+                            if (heatingreqflg == true)
                             {
                                 htrdoorintiate = false;
                                 proto_htrclose_intiate = false;
                                 close_htrdoor();
-                                //nxtrackloading = nxtrackloading.AddSeconds(63);
-                                if (incubtime_R6 > nxtracktime)
-                                    Overlaptime = incubtime_R6 - nxtracktime;
-                                else if (incubtime_R6 < nxtracktime)
-                                    Overlaptime = nxtracktime - incubtime_R6;
-                                //Overlaptime = Overlaptime + 120;
-                                nxtrackloading = nxtrackloading.AddSeconds(Overlaptime);
+                                Overlaptime = Math.Abs(incubtime_R6 - nxtracktime);
+                                if (Overlaptime < nxtracktime) Overlaptime = (nxtracktime + (nxtracktime / 4));
                             }
+                            else
+                            {
+                                Overlaptime = nxtracktime + 18;
+                            }
+                            nxtrackloading = System.DateTime.Now;
+                            nxtrackloading = nxtrackloading.AddSeconds(Overlaptime);
+                            tmr_nextrack.Enabled = true;
                             tmr_nextrack.Interval = 1000;
                         }
                     }
@@ -8214,7 +7811,7 @@ namespace HematoxinandEosin
                         protocolrun_R7();
                     }
                 }
-                if (rareached == true)
+                if ((rareached == true) || (rack_dip == true) || (RA_pickedflg == true) || (RA_placedflg == true))
                 {
                     rareached = false;
                     tmr_r7.Enabled = false;
@@ -8244,7 +7841,7 @@ namespace HematoxinandEosin
                     else if (topickupflg_R7 == true)
                     {
                         topickupflg_R7 = false;
-                        pickedflg_R7 = true;
+                        pickedflg_R7 = true;RA_pickedflg = false;
                         R7_pickcmdissue = true;
                         r7priority = 1;
                         Racks[7] = new Rack { RackNo = 7, IncubationTime = r7_incub, Priority = r7priority };
@@ -8260,10 +7857,11 @@ namespace HematoxinandEosin
                         else if (JarName_R7.Contains("L"))
                             rackinloading[jno - 1] = 0;
                         else if (JarName_R7.Contains("H"))
-                            rackinheater[jno - 1] = 0;
-                        if (JarName_R7 == "H1") { H1.TaskProcess = ""; Rackin_H1 = false; }
-                        else if (JarName_R7 == "H2") { H2.TaskProcess = ""; Rackin_H2 = false; }
-                        else if (JarName_R7 == "H3") { H3.TaskProcess = ""; Rackin_H3 = false; }
+                        {
+                            if (JarName_R7 == "H1") { H1.TaskProcess = ""; Rackin_H1 = false; rackinheater[0] = 0; H1.OnlyJar = true; }
+                            else if (JarName_R7 == "H2") { H2.TaskProcess = ""; Rackin_H2 = false; rackinheater[1] = 0; H2.OnlyJar = true; }
+                            else if (JarName_R7 == "H3") { H3.TaskProcess = ""; Rackin_H3 = false; rackinheater[2] = 0; H3.OnlyJar = true; }
+                        }
                         /*Added on 20-12-2023 1621*/
                         if (protocolinitiateflg_R7 == true)
                             protocolrun_R7();
@@ -8274,7 +7872,7 @@ namespace HematoxinandEosin
                         SetText("RA Placed the Rack " + R7_cnt.ToString() + " in Jar " + JarName_R7);
                         updateprotorun(protoshortname, RequiredVariables.UserName, DateTime.Now.ToShortDateString(), RegName_R7, JarName_R7, "R" + R7_cnt.ToString(), DateTime.Now.ToString() + "." + System.DateTime.Now.Millisecond.ToString().PadLeft(3, '0'), monVal, "Placed In", 0f, m_Runid);
                         toplaceflg_R7 = false;
-                        placedflg_R7 = true;
+                        placedflg_R7 = true;RA_placedflg = false;
                         R7_pickcmdissue = false;  //Added on 19-12-2023 1231 to operate water valves
                         if (incubtime_R7 > 30)
                             r7priority = 0;
@@ -8290,9 +7888,9 @@ namespace HematoxinandEosin
                         else if (JarName_R7.Contains("H"))
                         {                            
                             //Below code updated on 08-01-2025
-                            if (JarName_R7 == "H1") { Rackin_H1 = true; H1_incub_complete = false; rackinheater[0] = 1; }
-                            else if (JarName_R7 == "H2") { Rackin_H2 = true; H2_incub_complete = false; rackinheater[1] = 1; }
-                            else if (JarName_R7 == "H3") { Rackin_H3 = true; H3_incub_complete = false; rackinheater[2] = 1; }
+                            if (JarName_R7 == "H1") { Rackin_H1 = true; H1_incub_complete = false; rackinheater[0] = 1; H1.JarRack = true; }
+                            else if (JarName_R7 == "H2") { Rackin_H2 = true; H2_incub_complete = false; rackinheater[1] = 1; H2.JarRack = true; }
+                            else if (JarName_R7 == "H3") { Rackin_H3 = true; H3_incub_complete = false; rackinheater[2] = 1; H3.JarRack = true; }
                         }
                         else if (JarName_R7.Contains("U"))
                         {
@@ -8352,52 +7950,22 @@ namespace HematoxinandEosin
 
                         if (r7inx == 1)
                         {
-                            if ((rackinloading[1] == 1) || (rackinloading[2] == 1))   //Temporarly commented on 24112023 1557
+                            if (heatingreqflg == true)
                             {
-                                if (heatingreqflg == true)
-                                {
-                                    htrdoorintiate = false;
-                                    proto_htrclose_intiate = false;
-                                    close_htrdoor();
-                                    if (incubtime_R7 > nxtracktime)
-                                        Overlaptime = incubtime_R7 - nxtracktime;
-                                    else if (incubtime_R7 < nxtracktime)
-                                        Overlaptime = nxtracktime - incubtime_R7;
-                                    nxtrackloading = System.DateTime.Now;
-                                    nxtrackloading = nxtrackloading.AddSeconds(Overlaptime);
-                                }
-                                else
-                                {
-                                    nxtrackloading = System.DateTime.Now;
-                                    nxtrackloading = nxtrackloading.AddSeconds(nxtracktime + 18);
-                                }
-                                tmr_nextrack.Enabled = true;
-                                tmr_nextrack.Interval = 1000;
-                            }
-                            else if ((rackinloading[1] == 0) && (rackinloading[2] == 0))   //Temporarly commented on 24112023 1557
-                            {
-                                tmr_nextrack.Enabled = true;
-                                nxtrackloading = System.DateTime.Now;
-                                if (heatingreqflg == false)
-                                {
-                                    //nxtrackloading = nxtrackloading.AddSeconds(63);
-                                    nxtrackloading = nxtrackloading.AddSeconds(nxtracktime + 18);
-                                }
-                                else
-                                {
-                                    if (incubtime_R7 > nxtracktime)
-                                        Overlaptime = incubtime_R7 - nxtracktime;
-                                    else if (incubtime_R7 < nxtracktime)
-                                        Overlaptime = nxtracktime - incubtime_R7;
-                                    ////Overlaptime = Overlaptime + 120;
-                                    nxtrackloading = nxtrackloading.AddSeconds(Overlaptime);
-                                }
-                                tmr_nextrack.Interval = 1000;
+                                htrdoorintiate = false;
+                                proto_htrclose_intiate = false;
+                                close_htrdoor();
+                                Overlaptime = Math.Abs(incubtime_R7 - nxtracktime);
+                                if (Overlaptime < nxtracktime) Overlaptime = (nxtracktime + (nxtracktime / 4));
                             }
                             else
                             {
-                                tmr_nextrack.Enabled = false;
+                                Overlaptime = nxtracktime + 18;
                             }
+                            nxtrackloading = System.DateTime.Now;
+                            nxtrackloading = nxtrackloading.AddSeconds(Overlaptime);
+                            tmr_nextrack.Enabled = true;
+                            tmr_nextrack.Interval = 1000;
                         }
                     }
                     else if ((pickedflg_R7 == true) && (r7inx == 1) && proto_htrclose_intiate == true)
@@ -8415,8 +7983,7 @@ namespace HematoxinandEosin
         private void tmr_r8_Tick(object sender, EventArgs e)
         {
             try
-            {
-                Application.DoEvents();
+            {                
                 int jno = 0;
                 if ((htr_door_close == true) && (htr_door_closecmd_intiate == true))
                 {
@@ -8428,7 +7995,7 @@ namespace HematoxinandEosin
                         protocolrun_R8();
                     }
                 }
-                if (rareached == true)
+                if ((rareached == true) || (rack_dip == true) || (RA_pickedflg == true) || (RA_placedflg == true))
                 {
                     rareached = false;
                     tmr_r8.Enabled = false;
@@ -8458,7 +8025,7 @@ namespace HematoxinandEosin
                     else if (topickupflg_R8 == true)
                     {
                         topickupflg_R8 = false;
-                        pickedflg_R8 = true;
+                        pickedflg_R8 = true;RA_pickedflg = false;
                         R8_pickcmdissue = true;
                         r8priority = 1;
                         Racks[8] = new Rack { RackNo = 8, IncubationTime = r8_incub, Priority = r8priority };
@@ -8474,10 +8041,11 @@ namespace HematoxinandEosin
                         else if (JarName_R8.Contains("L"))
                             rackinloading[jno - 1] = 0;
                         else if (JarName_R8.Contains("H"))
-                            rackinheater[jno - 1] = 0;
-                        if (JarName_R8 == "H1") { H1.TaskProcess = ""; Rackin_H1 = false; }
-                        else if (JarName_R8 == "H2") { H2.TaskProcess = ""; Rackin_H2 = false; }
-                        else if (JarName_R8 == "H3") { H3.TaskProcess = ""; Rackin_H3 = false; }
+                        {
+                            if (JarName_R8 == "H1") { H1.TaskProcess = ""; Rackin_H1 = false; rackinheater[0] = 0; H1.OnlyJar = true; }
+                            else if (JarName_R8 == "H2") { H2.TaskProcess = ""; Rackin_H2 = false; rackinheater[1] = 0; H2.OnlyJar = true; }
+                            else if (JarName_R8 == "H3") { H3.TaskProcess = ""; Rackin_H3 = false; rackinheater[2] = 0; H3.OnlyJar = true; }
+                        }
                         /*Added on 20-12-2023 1621*/
                         if (protocolinitiateflg_R8 == true)
                             protocolrun_R8();
@@ -8488,7 +8056,7 @@ namespace HematoxinandEosin
                         SetText("RA Placed the Rack " + R8_cnt.ToString() + " in Jar " + JarName_R8);
                         updateprotorun(protoshortname, RequiredVariables.UserName, DateTime.Now.ToShortDateString(), RegName_R8, JarName_R8, "R" + R8_cnt.ToString(), DateTime.Now.ToString() + "." + System.DateTime.Now.Millisecond.ToString().PadLeft(3, '0'), monVal, "Placed In", 0f, m_Runid);
                         toplaceflg_R8 = false;
-                        placedflg_R8 = true;
+                        placedflg_R8 = true;RA_placedflg = false;
                         R8_pickcmdissue = false;  //Added on 19-12-2023 1231 to operate water valves
                         if (incubtime_R8 > 30)
                             r8priority = 0;
@@ -8504,9 +8072,9 @@ namespace HematoxinandEosin
                         else if (JarName_R8.Contains("H"))
                         {                          
                             //Below code updated on 08-01-2025
-                            if (JarName_R8 == "H1") { Rackin_H1 = true; H1_incub_complete = false; rackinheater[0] = 1; }
-                            else if (JarName_R8 == "H2") { Rackin_H2 = true; H2_incub_complete = false; rackinheater[1] = 1; }
-                            else if (JarName_R8 == "H3") { Rackin_H3 = true; H3_incub_complete = false; rackinheater[2] = 1; }
+                            if (JarName_R8 == "H1") { Rackin_H1 = true; H1_incub_complete = false; rackinheater[0] = 1; H1.JarRack = true; }
+                            else if (JarName_R8 == "H2") { Rackin_H2 = true; H2_incub_complete = false; rackinheater[1] = 1; H2.JarRack = true; }
+                            else if (JarName_R8 == "H3") { Rackin_H3 = true; H3_incub_complete = false; rackinheater[2] = 1; H3.JarRack = true; }
                         }
                         else if (JarName_R8.Contains("U"))
                         {
@@ -8565,53 +8133,22 @@ namespace HematoxinandEosin
                         //Code Updated on 20122023 1304
                         if (r8inx == 1)
                         {
-                            if ((rackinloading[2] == 1))   //Temporarly commented on 24112023 1557
+                            if (heatingreqflg == true)
                             {
-                                if (heatingreqflg == true)
-                                {
-                                    htrdoorintiate = false;
-                                    proto_htrclose_intiate = false;
-                                    close_htrdoor();
-                                    if (incubtime_R8 > nxtracktime)
-                                        Overlaptime = incubtime_R8 - nxtracktime;
-                                    else if (incubtime_R8 < nxtracktime)
-                                        Overlaptime = nxtracktime - incubtime_R8;
-                                    ////Overlaptime = Overlaptime + 120;
-                                    nxtrackloading = System.DateTime.Now;
-                                    nxtrackloading = nxtrackloading.AddSeconds(Overlaptime);
-                                }
-                                else
-                                {
-                                    nxtrackloading = System.DateTime.Now;
-                                    nxtrackloading = nxtrackloading.AddSeconds(nxtracktime + 18);
-                                }
-                                tmr_nextrack.Enabled = true;
-                                tmr_nextrack.Interval = 1000;
-                            }
-                            else if ((rackinloading[2] == 0))   //Temporarly commented on 24112023 1557
-                            {
-                                tmr_nextrack.Enabled = true;
-                                nxtrackloading = System.DateTime.Now;
-                                if (heatingreqflg == false)
-                                {
-                                    //nxtrackloading = nxtrackloading.AddSeconds(63);
-                                    nxtrackloading = nxtrackloading.AddSeconds(nxtracktime + 18);
-                                }
-                                else
-                                {
-                                    if (incubtime_R8 > nxtracktime)
-                                        Overlaptime = incubtime_R8 - nxtracktime;
-                                    else if (incubtime_R8 < nxtracktime)
-                                        Overlaptime = nxtracktime - incubtime_R8;
-                                    ////Overlaptime = Overlaptime + 120;
-                                    nxtrackloading = nxtrackloading.AddSeconds(Overlaptime);
-                                }
-                                tmr_nextrack.Interval = 1000;
+                                htrdoorintiate = false;
+                                proto_htrclose_intiate = false;
+                                close_htrdoor();
+                                Overlaptime = Math.Abs(incubtime_R8 - nxtracktime);
+                                if (Overlaptime < nxtracktime) Overlaptime = (nxtracktime + (nxtracktime / 4));
                             }
                             else
                             {
-                                tmr_nextrack.Enabled = false;
+                                Overlaptime = nxtracktime + 18;
                             }
+                            nxtrackloading = System.DateTime.Now;
+                            nxtrackloading = nxtrackloading.AddSeconds(Overlaptime);
+                            tmr_nextrack.Enabled = true;
+                            tmr_nextrack.Interval = 1000;
                         }
                     }
                     else if ((pickedflg_R8 == true) && (r8inx == 1) && proto_htrclose_intiate == true)
@@ -8629,8 +8166,7 @@ namespace HematoxinandEosin
         private void tmr_r9_Tick(object sender, EventArgs e)
         {
             try
-            {
-                Application.DoEvents();
+            {                
                 int jno = 0;
                 if ((htr_door_close == true) && (htr_door_closecmd_intiate == true))
                 {
@@ -8642,7 +8178,7 @@ namespace HematoxinandEosin
                         protocolrun_R9();
                     }
                 }
-                if (rareached == true)
+                if ((rareached == true) || (rack_dip == true) || (RA_pickedflg == true) || (RA_placedflg == true))
                 {
                     rareached = false;
                     tmr_r9.Enabled = false;
@@ -8672,7 +8208,7 @@ namespace HematoxinandEosin
                     else if (topickupflg_R9 == true)
                     {
                         topickupflg_R9 = false;
-                        pickedflg_R9 = true;
+                        pickedflg_R9 = true;RA_pickedflg = false;
                         R9_pickcmdissue = true;
                         r9priority = 1;
                         Racks[9] = new Rack { RackNo = 9, IncubationTime = r9_incub, Priority = r9priority };
@@ -8688,10 +8224,11 @@ namespace HematoxinandEosin
                         else if (JarName_R9.Contains("L"))
                             rackinloading[jno - 1] = 0;
                         else if (JarName_R9.Contains("H"))
-                            rackinheater[jno - 1] = 0;
-                        if (JarName_R9 == "H1") { H1.TaskProcess = ""; Rackin_H1 = false; }
-                        else if (JarName_R9 == "H2") { H2.TaskProcess = ""; Rackin_H2 = false; }
-                        else if (JarName_R9 == "H3") { H3.TaskProcess = ""; Rackin_H3 = false; }
+                        {                         
+                            if (JarName_R9 == "H1") { H1.TaskProcess = ""; Rackin_H1 = false; rackinheater[0] = 0; H1.OnlyJar = true; }
+                            else if (JarName_R9 == "H2") { H2.TaskProcess = ""; Rackin_H2 = false; rackinheater[1] = 0; H2.OnlyJar = true; }
+                            else if (JarName_R9 == "H3") { H3.TaskProcess = ""; Rackin_H3 = false; rackinheater[2] = 0; H3.OnlyJar = true; }
+                        }
                         /*Added on 20-12-2023 1621*/
                         if (protocolinitiateflg_R9 == true)
                             protocolrun_R9();
@@ -8702,7 +8239,7 @@ namespace HematoxinandEosin
                         SetText("RA Placed the Rack " + R9_cnt.ToString() + " in Jar " + JarName_R9);
                         updateprotorun(protoshortname, RequiredVariables.UserName, DateTime.Now.ToShortDateString(), RegName_R9, JarName_R9, "R" + R9_cnt.ToString(), DateTime.Now.ToString() + "." + System.DateTime.Now.Millisecond.ToString().PadLeft(3, '0'), monVal, "Placed In", 0f, m_Runid);
                         toplaceflg_R9 = false;
-                        placedflg_R9 = true;
+                        placedflg_R9 = true;RA_placedflg = false;
                         R9_pickcmdissue = false;  //Added on 19-12-2023 1231 to operate water valves
                         if (incubtime_R9 > 30)
                             r9priority = 0;
@@ -8718,9 +8255,9 @@ namespace HematoxinandEosin
                         else if (JarName_R9.Contains("H"))
                         {                            
                             //Below code updated on 08-01-2025
-                            if (JarName_R9 == "H1") { Rackin_H1 = true; H1_incub_complete = false; rackinheater[0] = 1; }
-                            else if (JarName_R9 == "H2") { Rackin_H2 = true; H2_incub_complete = false; rackinheater[1] = 1; }
-                            else if (JarName_R9 == "H3") { Rackin_H3 = true; H3_incub_complete = false; rackinheater[2] = 1; }
+                            if (JarName_R9 == "H1") { Rackin_H1 = true; H1_incub_complete = false; rackinheater[0] = 1;  H1.JarRack = true; }
+                            else if (JarName_R9 == "H2") { Rackin_H2 = true; H2_incub_complete = false; rackinheater[1] = 1; H2.JarRack = true; }
+                            else if (JarName_R9 == "H3") { Rackin_H3 = true; H3_incub_complete = false; rackinheater[2] = 1; H3.JarRack = true; }
                         }
                         else if (JarName_R9.Contains("U"))
                         {
@@ -8780,26 +8317,21 @@ namespace HematoxinandEosin
 
                         if (r9inx == 1)
                         {
-                            tmr_nextrack.Enabled = true;
-                            nxtrackloading = System.DateTime.Now;
-                            if (heatingreqflg == false)
-                            {
-                                nxtrackloading = nxtrackloading.AddSeconds(nxtracktime + 18);
-                            }
-                            else
+                            if (heatingreqflg == true)
                             {
                                 htrdoorintiate = false;
                                 proto_htrclose_intiate = false;
                                 close_htrdoor();
-                                //nxtrackloading = nxtrackloading.AddSeconds(63);
-                                if (incubtime_R9 > nxtracktime)
-                                    Overlaptime = incubtime_R9 - nxtracktime;
-                                else if (incubtime_R9 < nxtracktime)
-                                    Overlaptime = nxtracktime - incubtime_R9;
-                                ////Overlaptime = Overlaptime + 120;
-                                nxtrackloading = nxtrackloading.AddSeconds(Overlaptime);
+                                Overlaptime = Math.Abs(incubtime_R9 - nxtracktime);
+                                if (Overlaptime < nxtracktime) Overlaptime = (nxtracktime + (nxtracktime / 4));
                             }
-
+                            else
+                            {
+                                Overlaptime = nxtracktime + 18;
+                            }
+                            nxtrackloading = System.DateTime.Now;
+                            nxtrackloading = nxtrackloading.AddSeconds(Overlaptime);
+                            tmr_nextrack.Enabled = true;
                             tmr_nextrack.Interval = 1000;
                         }
                     }
@@ -9105,6 +8637,7 @@ namespace HematoxinandEosin
                             }
                             R3Protorun.Rows[R3Protorun.Rows.Count - 1]["RegName"] = dt1.Rows[i]["Temp_Reagent"].ToString();  //Reagent Name  
                             R3Protorun.Rows[R3Protorun.Rows.Count - 1]["Dips"] = dt1.Rows[i]["No_of_Dips"].ToString();  //Number of Dips                            
+                            update_reagentsnames(dt1.Rows[i]["JarNo"].ToString(), dt1.Rows[i]["Temp_Reagent"].ToString());
                         }
                     }
                     else if (i > 0)
@@ -10711,26 +10244,26 @@ namespace HematoxinandEosin
                         if (pickedflg_R1 == true)
                         {
                             ////updateprotorun(protoshortname, RequiredVariables.UserName, DateTime.Now.ToShortDateString(), JarName_R1, R1_cnt.ToString(), DateTime.Now.ToString(), monVal, "Picked from", 0f);
-                            if ((r1inx == 1) && (JarName_R1 == "H1") && (proto_htrclose_intiate == false))
+                            if ((r1inx == 1) && (JarName_R1.Contains("H")) && (proto_htrclose_intiate == false))
                             {
-                                H1.OnlyJar = true; rackinheater[0] = 0;  //Racked Picked from H1 and to place in J1}                                
+                                ////H1.OnlyJar = true; rackinheater[0] = 0;  //Racked Picked from H1 and to place in J1}                                
                                 htrdoorintiate = false;
                                 proto_htrclose_intiate = true;
                                 RA_Protorun_intiated = true; // Added on 22-08-2023
                                 sndcmdstr = "";
                                 close_htrdoor();
                             }
-                            else if ((r1inx == 1) && (JarName_R1 == "H1") && (proto_htrclose_intiate == true))
+                            else if ((r1inx == 1) && (JarName_R1.Contains("H")) && (proto_htrclose_intiate == true))
                             {
                                 //Enableing timer for nxt rack movement
-                                H1.OnlyJar = true; rackinheater[0] = 0;
+                                ////H1.OnlyJar = true; rackinheater[0] = 0;
                                 proto_htrclose_intiate = false;
                                 r1inx++;
                                 rackvalinc = true;
                             }
-                            else if ((r1inx == 0) && (JarName_R1 == "L1"))
+                            else if ((r1inx == 0) && (JarName_R1.Contains("L")))
                             {
-                                rackinloading[0] = 0; //Racked Picked from L1 (Loading Station) and to place in J1                                
+                                ////rackinloading[0] = 0; //Racked Picked from L1 (Loading Station) and to place in J1                                
                                 r1inx++;
                                 rackvalinc = true;
                             }
@@ -10753,24 +10286,7 @@ namespace HematoxinandEosin
                                     pickplace = 3;   //For Dipping Rack
                                     r1priority = 1; //Added on 04-12-2023 1726
                                     snddipcmdstr = R1_xPos + "," + R1_yPos + "," + noofdips_R1.ToString() + "," + R1_dipdelay.ToString() + "," + R1_drydelay.ToString();
-                                    d1 = d1.AddSeconds((noofdips_R1 * 5) + 31);
-                                    if (continuetest > d1)
-                                        ts1 = continuetest.Subtract(d1);
-                                    else
-                                        ts1 = d1.Subtract(continuetest);
-                                    if (ts1.TotalSeconds < ((noofdips_R1 * 5) + 31))
-                                    {
-                                        continuetest = continuetest.AddSeconds((noofdips_R1 * 5) + 31);
-                                    }
-                                    //Next rack calculation
-                                    if (nxtrackloading > d1)
-                                        ts1 = nxtrackloading.Subtract(d1);
-                                    else
-                                        ts1 = d1.Subtract(nxtrackloading);
-                                    if (ts1.TotalSeconds < ((noofdips_R1 * 5) + 31))
-                                    {
-                                        nxtrackloading = nxtrackloading.AddSeconds((noofdips_R1 * 5) + 31);
-                                    }
+                                    
                                 }
                                 else
                                 {
@@ -11066,9 +10582,9 @@ namespace HematoxinandEosin
                                 r2inx++;
                                 rackvalinc = true;
                             }
-                            else if ((r2inx == 0) && (JarName_R2 == "L2"))
+                            else if ((r2inx == 0) && (JarName_R2.Contains("L")))
                             {
-                                rackinloading[1] = 0; //Racked Picked from L2 (Loading Station) and to place in J1                                
+                                ////rackinloading[1] = 0; //Racked Picked from L2 (Loading Station) and to place in J1                                
                                 r2inx++;
                                 rackvalinc = true;
                             }
@@ -11091,25 +10607,7 @@ namespace HematoxinandEosin
                                     toplaceflg_R2 = false;
                                     pickplace = 3;
                                     snddipcmdstr = R2_xPos + "," + R2_yPos + "," + noofdips_R2.ToString() + "," + R2_dipdelay.ToString() + "," + R2_drydelay.ToString();
-                                    r2priority = 1; //Added on 04-12-2023 1726
-                                    d1 = d1.AddSeconds((noofdips_R2 * 5) + 31);
-                                    if (continuetest > d1)
-                                        ts1 = continuetest.Subtract(d1);
-                                    else
-                                        ts1 = d1.Subtract(continuetest);
-                                    if (ts1.TotalSeconds < ((noofdips_R2 * 5) + 31))
-                                    {
-                                        continuetest = continuetest.AddSeconds((noofdips_R2 * 5) + 31);
-                                    }
-                                    //Next rack calculation
-                                    if (nxtrackloading > d1)
-                                        ts1 = nxtrackloading.Subtract(d1);
-                                    else
-                                        ts1 = d1.Subtract(nxtrackloading);
-                                    if (ts1.TotalSeconds < ((noofdips_R2 * 5) + 31))
-                                    {
-                                        nxtrackloading = nxtrackloading.AddSeconds((noofdips_R2 * 5) + 31);
-                                    }
+                                    r2priority = 1; //Added on 04-12-2023 1726                                    
                                 }
                                 else
                                 {
@@ -11378,23 +10876,23 @@ namespace HematoxinandEosin
                         if (pickedflg_R3 == true)
                         {
                             ////updateprotorun(protoshortname, RequiredVariables.UserName, DateTime.Now.ToShortDateString(), JarName_R3, R3_cnt.ToString(), DateTime.Now.ToString(), monVal, "Picked From", 0f);
-                            if ((r3inx == 1) && (JarName_R3 == "H3") && (proto_htrclose_intiate == false))
+                            if ((r3inx == 1) && (JarName_R3.Contains("H")) && (proto_htrclose_intiate == false))
                             {
-                                rackinheater[2] = 0;    //Racked Picked from H1 and to place in J1
+                                ////rackinheater[2] = 0;    //Racked Picked from H1 and to place in J1
                                 htrdoorintiate = false;
                                 proto_htrclose_intiate = true;
                                 RA_Protorun_intiated = true; // Added on 22-08-2023
-                                H3.OnlyJar = true;
+                                ////H3.OnlyJar = true;
                                 sndcmdstr = "";
                                 close_htrdoor();
                             }
-                            else if ((r3inx == 1) && (JarName_R3 == "H3") && (proto_htrclose_intiate == true))
+                            else if ((r3inx == 1) && (JarName_R3.Contains("H")) && (proto_htrclose_intiate == true))
                             {
                                 //Enableing timer for nxt rack movement
                                 ////tmr_nextrack.Enabled = true;
                                 ////tmr_nextrack.Interval = 120000;  // 1 Minutes after 2 minutes second racks has to lift from Lading Jars and place in heater racks.
                                 proto_htrclose_intiate = false;
-                                H3.OnlyJar = true;
+                                //H3.OnlyJar = true;
                                 sndcmdstr = "";
                                 r3inx++;
                                 rackvalinc = true;
@@ -11406,9 +10904,9 @@ namespace HematoxinandEosin
                                 ////////tmr_nextrack.Interval = 1000;
 
                             }
-                            else if ((r3inx == 0) && (JarName_R3 == "L3"))
+                            else if ((r3inx == 0) && (JarName_R3.Contains("L")))
                             {
-                                rackinloading[2] = 0;
+                                ////rackinloading[2] = 0;
                                 //Enableing timer to continue the process
                                 ////////tmr_nextrack.Enabled = true;
                                 ////////nxtrackloading = System.DateTime.Now;
@@ -11437,25 +10935,7 @@ namespace HematoxinandEosin
                                     toplaceflg_R3 = false;
                                     pickplace = 3;
                                     r3priority = 1; //Added on 04-12-2023 1726
-                                    snddipcmdstr = R3_xPos + "," + R3_yPos + "," + noofdips_R3.ToString() + "," + R3_dipdelay.ToString() + "," + R3_drydelay.ToString();
-                                    d1 = d1.AddSeconds((noofdips_R3 * 5) + 31);
-                                    if (continuetest > d1)
-                                        ts1 = continuetest.Subtract(d1);
-                                    else
-                                        ts1 = d1.Subtract(continuetest);
-                                    if (ts1.TotalSeconds < ((noofdips_R3 * 5) + 31))
-                                    {
-                                        continuetest = continuetest.AddSeconds((noofdips_R3 * 5) + 31);
-                                    }
-                                    //Next rack calculation
-                                    if (nxtrackloading > d1)
-                                        ts1 = nxtrackloading.Subtract(d1);
-                                    else
-                                        ts1 = d1.Subtract(nxtrackloading);
-                                    if (ts1.TotalSeconds < ((noofdips_R3 * 5) + 31))
-                                    {
-                                        nxtrackloading = nxtrackloading.AddSeconds((noofdips_R3 * 5) + 31);
-                                    }
+                                    snddipcmdstr = R3_xPos + "," + R3_yPos + "," + noofdips_R3.ToString() + "," + R3_dipdelay.ToString() + "," + R3_drydelay.ToString();                                    
                                 }
                                 else
                                 {
@@ -11763,17 +11243,17 @@ namespace HematoxinandEosin
                         if (pickedflg_R4 == true)
                         {
                             ////updateprotorun(protoshortname, RequiredVariables.UserName, DateTime.Now.ToShortDateString(), JarName_R4, R4_cnt.ToString(), DateTime.Now.ToString(), monVal, "Picked From", 0f);
-                            if ((r4inx == 1) && (JarName_R4 == "H1") && (proto_htrclose_intiate == false))
+                            if ((r4inx == 1) && (JarName_R4.Contains("H")) && (proto_htrclose_intiate == false))
                             {
-                                rackinheater[0] = 0;    //Racked Picked from H1 and to place in J1
+                                ////rackinheater[0] = 0;    //Racked Picked from H1 and to place in J1
                                 htrdoorintiate = false;
                                 proto_htrclose_intiate = true;
                                 RA_Protorun_intiated = true; // Added on 22-08-2023
-                                H1.OnlyJar = true;
+                                ////H1.OnlyJar = true;
                                 sndcmdstr = "";
                                 close_htrdoor();
                             }
-                            else if ((r4inx == 1) && (JarName_R4 == "H1") && (proto_htrclose_intiate == true))
+                            else if ((r4inx == 1) && (JarName_R4.Contains("H")) && (proto_htrclose_intiate == true))
                             {
                                 //Enableing timer for nxt rack movement
                                 proto_htrclose_intiate = false;
@@ -11791,9 +11271,9 @@ namespace HematoxinandEosin
                                 r4inx++;
                                 rackvalinc = true;
                             }
-                            else if ((r4inx == 0) && (JarName_R4 == "L1"))
+                            else if ((r4inx == 0) && (JarName_R4.Contains("L")))
                             {
-                                rackinloading[0] = 0; //Racked Picked from L1 (Loading Station) and to place in J1
+                                ////rackinloading[0] = 0; //Racked Picked from L1 (Loading Station) and to place in J1
                                 //////////tmr_nextrack.Enabled = true;
                                 //////////nxtrackloading = System.DateTime.Now;
                                 ////////////nxtrackloading = nxtrackloading.AddSeconds(525);
@@ -11820,26 +11300,7 @@ namespace HematoxinandEosin
                                     toplaceflg_R4 = false;
                                     pickplace = 3;
                                     r4priority = 1; //Added on 04-12-2023 1726
-                                    snddipcmdstr = R4_xPos + "," + R4_yPos + "," + noofdips_R4.ToString() + "," + R4_dipdelay.ToString() + "," + R4_drydelay.ToString();
-
-                                    d1 = d1.AddSeconds((noofdips_R4 * 5) + 31);
-                                    if (continuetest > d1)
-                                        ts1 = continuetest.Subtract(d1);
-                                    else
-                                        ts1 = d1.Subtract(continuetest);
-                                    if (ts1.TotalSeconds < ((noofdips_R4 * 5) + 31))
-                                    {
-                                        continuetest = continuetest.AddSeconds((noofdips_R4 * 5) + 31);
-                                    }
-                                    //Next rack calculation
-                                    if (nxtrackloading > d1)
-                                        ts1 = nxtrackloading.Subtract(d1);
-                                    else
-                                        ts1 = d1.Subtract(nxtrackloading);
-                                    if (ts1.TotalSeconds < ((noofdips_R4 * 5) + 31))
-                                    {
-                                        nxtrackloading = nxtrackloading.AddSeconds((noofdips_R4 * 5) + 31);
-                                    }
+                                    snddipcmdstr = R4_xPos + "," + R4_yPos + "," + noofdips_R4.ToString() + "," + R4_dipdelay.ToString() + "," + R4_drydelay.ToString();                                    
                                 }
                                 else
                                 {
@@ -12155,21 +11616,21 @@ namespace HematoxinandEosin
                         if (pickedflg_R5 == true)
                         {
                             ////updateprotorun(protoshortname, RequiredVariables.UserName, DateTime.Now.ToShortDateString(), JarName_R5, R5_cnt.ToString(), DateTime.Now.ToString(), monVal, "Picked From", 0f);
-                            if ((r5inx == 1) && (JarName_R5 == "H2") && (proto_htrclose_intiate == false))
+                            if ((r5inx == 1) && (JarName_R5.Contains("H")) && (proto_htrclose_intiate == false))
                             {
-                                rackinheater[1] = 0;    //Racked Picked from H1 and to place in J1
+                                ////rackinheater[1] = 0;    //Racked Picked from H1 and to place in J1
                                 htrdoorintiate = false;
                                 proto_htrclose_intiate = true;
                                 RA_Protorun_intiated = true; // Added on 22-08-2023
-                                H2.OnlyJar = true;
+                                ////H2.OnlyJar = true;
                                 sndcmdstr = "";
                                 close_htrdoor();
                             }
-                            else if ((r5inx == 1) && (JarName_R5 == "H2") && (proto_htrclose_intiate == true))
+                            else if ((r5inx == 1) && (JarName_R5.Contains("H")) && (proto_htrclose_intiate == true))
                             {
                                 //Enableing timer for nxt rack movement
                                 proto_htrclose_intiate = false;
-                                H2.OnlyJar = true;
+                                ////H2.OnlyJar = true;
                                 sndcmdstr = "";
 
                                 ////int nxttim = 0;
@@ -12184,9 +11645,9 @@ namespace HematoxinandEosin
                                 r5inx++;
                                 rackvalinc = true;
                             }
-                            else if ((r5inx == 0) && (JarName_R5 == "L2"))
+                            else if ((r5inx == 0) && (JarName_R5.Contains("L")))
                             {
-                                rackinloading[1] = 0; //Racked Picked from L1 (Loading Station) and to place in J1                                
+                                ////rackinloading[1] = 0; //Racked Picked from L1 (Loading Station) and to place in J1                                
                                 ////tmr_nextrack.Enabled = true;
                                 ////nxtrackloading = System.DateTime.Now;
                                 //////nxtrackloading = nxtrackloading.AddSeconds(525);
@@ -12213,25 +11674,7 @@ namespace HematoxinandEosin
                                     toplaceflg_R5 = false;
                                     pickplace = 3;
                                     snddipcmdstr = R5_xPos + "," + R5_yPos + "," + noofdips_R5.ToString() + "," + R5_dipdelay.ToString() + "," + R5_drydelay.ToString();
-                                    r5priority = 1; //Added on 04-12-2023 1726
-                                    d1 = d1.AddSeconds((noofdips_R5 * 5) + 31);
-                                    if (continuetest > d1)
-                                        ts1 = continuetest.Subtract(d1);
-                                    else
-                                        ts1 = d1.Subtract(continuetest);
-                                    if (ts1.TotalSeconds < ((noofdips_R5 * 5) + 31))
-                                    {
-                                        continuetest = continuetest.AddSeconds((noofdips_R5 * 5) + 31);
-                                    }
-                                    //Next rack calculation
-                                    if (nxtrackloading > d1)
-                                        ts1 = nxtrackloading.Subtract(d1);
-                                    else
-                                        ts1 = d1.Subtract(nxtrackloading);
-                                    if (ts1.TotalSeconds < ((noofdips_R5 * 5) + 31))
-                                    {
-                                        nxtrackloading = nxtrackloading.AddSeconds((noofdips_R5 * 5) + 31);
-                                    }
+                                    r5priority = 1; //Added on 04-12-2023 1726                                    
                                 }
                                 else
                                 {
@@ -12541,23 +11984,23 @@ namespace HematoxinandEosin
                         if (pickedflg_R6 == true)
                         {
                             ////updateprotorun(protoshortname, RequiredVariables.UserName, DateTime.Now.ToShortDateString(), JarName_R6, R6_cnt.ToString(), DateTime.Now.ToString(), monVal, "Picked From", 0f);
-                            if ((r6inx == 1) && (JarName_R6 == "H3") && (proto_htrclose_intiate == false))
+                            if ((r6inx == 1) && (JarName_R6.Contains("H")) && (proto_htrclose_intiate == false))
                             {
-                                rackinheater[2] = 0;    //Racked Picked from H1 and to place in J1
+                                ////rackinheater[2] = 0;    //Racked Picked from H1 and to place in J1
                                 htrdoorintiate = false;
                                 proto_htrclose_intiate = true;
-                                H3.OnlyJar = true;
+                                ////H3.OnlyJar = true;
                                 sndcmdstr = "";
                                 RA_Protorun_intiated = true; // Added on 22-08-2023
                                 close_htrdoor();
                             }
-                            else if ((r6inx == 1) && (JarName_R6 == "H3") && (proto_htrclose_intiate == true))
+                            else if ((r6inx == 1) && (JarName_R6.Contains("H")) && (proto_htrclose_intiate == true))
                             {
                                 //Enableing timer for nxt rack movement
                                 ////tmr_nextrack.Enabled = true;
                                 ////tmr_nextrack.Interval = 120000;  // 1 Minutes after 2 minutes second racks has to lift from Lading Jars and place in heater racks.
                                 proto_htrclose_intiate = false;
-                                H3.OnlyJar = true;
+                                ////H3.OnlyJar = true;
                                 sndcmdstr = "";
                                 r6inx++;
                                 rackvalinc = true;
@@ -12568,9 +12011,9 @@ namespace HematoxinandEosin
                                 ////////nxtrackloading = nxtrackloading.AddSeconds(60);
                                 ////////tmr_nextrack.Interval = 1000;
                             }
-                            else if ((r6inx == 0) && (JarName_R6 == "L3"))
+                            else if ((r6inx == 0) && (JarName_R6.Contains("L")))
                             {
-                                rackinloading[2] = 0;
+                                ////rackinloading[2] = 0;
                                 //Enableing timer to continue the process
                                 ////////tmr_nextrack.Enabled = true;
                                 ////////nxtrackloading = System.DateTime.Now;
@@ -12599,25 +12042,7 @@ namespace HematoxinandEosin
                                     toplaceflg_R6 = false;
                                     pickplace = 3;
                                     r6priority = 1; //Added on 04-12-2023 1726
-                                    snddipcmdstr = R6_xPos + "," + R6_yPos + "," + noofdips_R6.ToString() + "," + R6_dipdelay.ToString() + "," + R6_drydelay.ToString();
-                                    d1 = d1.AddSeconds((noofdips_R6 * 5) + 31);
-                                    if (continuetest > d1)
-                                        ts1 = continuetest.Subtract(d1);
-                                    else
-                                        ts1 = d1.Subtract(continuetest);
-                                    if (ts1.TotalSeconds < ((noofdips_R6 * 5) + 31))
-                                    {
-                                        continuetest = continuetest.AddSeconds((noofdips_R6 * 5) + 31);
-                                    }
-                                    //Next rack calculation
-                                    if (nxtrackloading > d1)
-                                        ts1 = nxtrackloading.Subtract(d1);
-                                    else
-                                        ts1 = d1.Subtract(nxtrackloading);
-                                    if (ts1.TotalSeconds < ((noofdips_R6 * 5) + 31))
-                                    {
-                                        nxtrackloading = nxtrackloading.AddSeconds((noofdips_R6 * 5) + 31);
-                                    }
+                                    snddipcmdstr = R6_xPos + "," + R6_yPos + "," + noofdips_R6.ToString() + "," + R6_dipdelay.ToString() + "," + R6_drydelay.ToString();                                    
                                 }
                                 else
                                 {
@@ -12928,23 +12353,23 @@ namespace HematoxinandEosin
                         if (pickedflg_R7 == true)
                         {
                             ////updateprotorun(protoshortname, RequiredVariables.UserName, DateTime.Now.ToShortDateString(), JarName_R7, R7_cnt.ToString(), DateTime.Now.ToString(), monVal, "Picked From", 0f);
-                            if ((r7inx == 1) && (JarName_R7 == "H1") && (proto_htrclose_intiate == false))
+                            if ((r7inx == 1) && (JarName_R7.Contains("H")) && (proto_htrclose_intiate == false))
                             {
-                                rackinheater[0] = 0;    //Racked Picked from H1 and to place in J1
+                                ////rackinheater[0] = 0;    //Racked Picked from H1 and to place in J1
                                 htrdoorintiate = false;
                                 proto_htrclose_intiate = true;
-                                H1.OnlyJar = true;
+                                ////H1.OnlyJar = true;
                                 sndcmdstr = "";
                                 RA_Protorun_intiated = true; // Added on 22-08-2023
                                 close_htrdoor();
                             }
-                            else if ((r7inx == 1) && (JarName_R7 == "H1") && (proto_htrclose_intiate == true))
+                            else if ((r7inx == 1) && (JarName_R7.Contains("H")) && (proto_htrclose_intiate == true))
                             {
                                 //Enableing timer for nxt rack movement
                                 ////tmr_nextrack.Enabled = true;
                                 ////tmr_nextrack.Interval = 120000;  // 1 Minutes after 2 minutes second racks has to lift from Lading Jars and place in heater racks.
                                 proto_htrclose_intiate = false;
-                                H1.OnlyJar = true;
+                                ////H1.OnlyJar = true;
                                 sndcmdstr = "";
                                 r7inx++;
                                 rackvalinc = true;
@@ -12955,9 +12380,9 @@ namespace HematoxinandEosin
                                 ////////nxtrackloading = nxtrackloading.AddSeconds(60);
                                 ////////tmr_nextrack.Interval = 1000;
                             }
-                            else if ((r7inx == 0) && (JarName_R7 == "L1"))
+                            else if ((r7inx == 0) && (JarName_R7.Contains("L")))
                             {
-                                rackinloading[0] = 0;
+                                ////rackinloading[0] = 0;
                                 r7inx++;
                                 rackvalinc = true;
                             }
@@ -12980,24 +12405,7 @@ namespace HematoxinandEosin
                                     pickplace = 3;
                                     r7priority = 1; //Added on 04-12-2023 1726
                                     snddipcmdstr = R7_xPos + "," + R7_yPos + "," + noofdips_R7.ToString() + "," + R7_dipdelay.ToString() + "," + R7_drydelay.ToString();
-                                    d1 = d1.AddSeconds((noofdips_R7 * 5) + 31);
-                                    if (continuetest > d1)
-                                        ts1 = continuetest.Subtract(d1);
-                                    else
-                                        ts1 = d1.Subtract(continuetest);
-                                    if (ts1.TotalSeconds < ((noofdips_R7 * 5) + 31))
-                                    {
-                                        continuetest = continuetest.AddSeconds((noofdips_R7 * 5) + 31);
-                                    }
-                                    //Next rack calculation
-                                    if (nxtrackloading > d1)
-                                        ts1 = nxtrackloading.Subtract(d1);
-                                    else
-                                        ts1 = d1.Subtract(nxtrackloading);
-                                    if (ts1.TotalSeconds < ((noofdips_R7 * 5) + 31))
-                                    {
-                                        nxtrackloading = nxtrackloading.AddSeconds((noofdips_R7 * 5) + 31);
-                                    }
+                                   
                                 }
                                 else
                                 {
@@ -13090,7 +12498,7 @@ namespace HematoxinandEosin
                     return;
 
                 //New code added on 22-11-2023 2348
-                check_priority_times(6);
+                ////check_priority_times(6);
 
                 rareached = false;
                 sensed = false;
@@ -13272,28 +12680,28 @@ namespace HematoxinandEosin
                         if (pickedflg_R8 == true)
                         {
                             ////updateprotorun(protoshortname, RequiredVariables.UserName, DateTime.Now.ToShortDateString(), JarName_R8, R8_cnt.ToString(), DateTime.Now.ToString(), monVal, "Picked From", 0f);
-                            if ((r8inx == 1) && (JarName_R8 == "H2") && (proto_htrclose_intiate == false))
+                            if ((r8inx == 1) && (JarName_R8.Contains("H")) && (proto_htrclose_intiate == false))
                             {
-                                rackinheater[1] = 0;    //Racked Picked from H1 and to place in J1
+                                ////rackinheater[1] = 0;    //Racked Picked from H1 and to place in J1
                                 htrdoorintiate = false;
                                 proto_htrclose_intiate = true;
                                 RA_Protorun_intiated = true; // Added on 22-08-2023
-                                H2.OnlyJar = true;
+                                ////H2.OnlyJar = true;
                                 sndcmdstr = "";
                                 close_htrdoor();
                             }
-                            else if ((r8inx == 1) && (JarName_R8 == "H2") && (proto_htrclose_intiate == true))
+                            else if ((r8inx == 1) && (JarName_R8.Contains("H")) && (proto_htrclose_intiate == true))
                             {
                                 //Enableing timer for nxt rack movement
                                 proto_htrclose_intiate = false;
-                                H2.OnlyJar = true;
+                                ////H2.OnlyJar = true;
                                 sndcmdstr = "";
                                 r8inx++;
                                 rackvalinc = true;
                             }
-                            else if ((r8inx == 0) && (JarName_R8 == "L2"))
+                            else if ((r8inx == 0) && (JarName_R8.Contains("L")))
                             {
-                                rackinloading[1] = 0; //Racked Picked from L1 (Loading Station) and to place in J1                                                                
+                                ////rackinloading[1] = 0; //Racked Picked from L1 (Loading Station) and to place in J1                                                                
                                 r8inx++;
                                 rackvalinc = true;
                             }
@@ -13315,25 +12723,7 @@ namespace HematoxinandEosin
                                     toplaceflg_R8 = false;
                                     pickplace = 3;
                                     snddipcmdstr = R8_xPos + "," + R8_yPos + "," + noofdips_R8.ToString() + "," + R8_dipdelay.ToString() + "," + R8_drydelay.ToString();
-                                    r8priority = 1; //Added on 04-12-2023 1726
-                                    d1 = d1.AddSeconds((noofdips_R8 * 5) + 31);
-                                    if (continuetest > d1)
-                                        ts1 = continuetest.Subtract(d1);
-                                    else
-                                        ts1 = d1.Subtract(continuetest);
-                                    if (ts1.TotalSeconds < ((noofdips_R8 * 5) + 31))
-                                    {
-                                        continuetest = continuetest.AddSeconds((noofdips_R8 * 5) + 31);
-                                    }
-                                    //Next rack calculation
-                                    if (nxtrackloading > d1)
-                                        ts1 = nxtrackloading.Subtract(d1);
-                                    else
-                                        ts1 = d1.Subtract(nxtrackloading);
-                                    if (ts1.TotalSeconds < ((noofdips_R8 * 5) + 31))
-                                    {
-                                        nxtrackloading = nxtrackloading.AddSeconds((noofdips_R8 * 5) + 31);
-                                    }
+                                    r8priority = 1; //Added on 04-12-2023 1726                                    
                                 }
                                 else
                                 {
@@ -13643,17 +13033,17 @@ namespace HematoxinandEosin
                         if (pickedflg_R9 == true)
                         {
                             ////updateprotorun(protoshortname, RequiredVariables.UserName, DateTime.Now.ToShortDateString(), JarName_R9, R9_cnt.ToString(), DateTime.Now.ToString(), monVal, "Picked From", 0f);
-                            if ((r9inx == 1) && (JarName_R9 == "H3") && (proto_htrclose_intiate == false))
+                            if ((r9inx == 1) && (JarName_R9.Contains("H")) && (proto_htrclose_intiate == false))
                             {
-                                rackinheater[2] = 0;    //Racked Picked from H1 and to place in J1
+                                //Racked Picked from H1 and to place in J1
                                 htrdoorintiate = false;
                                 proto_htrclose_intiate = true;
-                                H3.OnlyJar = true;
+                                ////if (JarName_R9 == "H3") { H3.OnlyJar = true; rackinheater[2] = 0; }
                                 sndcmdstr = "";
                                 RA_Protorun_intiated = true; // Added on 22-08-2023
                                 close_htrdoor();
                             }
-                            else if ((r9inx == 1) && (JarName_R9 == "H3") && (proto_htrclose_intiate == true))
+                            else if ((r9inx == 1) && (JarName_R9.Contains("H")) && (proto_htrclose_intiate == true))
                             {
                                 //Enableing timer for nxt rack movement
                                 ////tmr_nextrack.Enabled = true;
@@ -13664,9 +13054,9 @@ namespace HematoxinandEosin
                                 r9inx++;
                                 rackvalinc = true;
                             }
-                            else if ((r9inx == 0) && (JarName_R9 == "L3"))
+                            else if ((r9inx == 0) && (JarName_R9.Contains("L")))
                             {
-                                rackinloading[2] = 0;
+                                ////rackinloading[2] = 0;
                                 //Enableing timer to continue the process
                                 r9inx++;
                                 rackvalinc = true;
@@ -13689,25 +13079,7 @@ namespace HematoxinandEosin
                                     toplaceflg_R9 = false;
                                     pickplace = 3;
                                     r9priority = 1; //Added on 04-12-2023 1726
-                                    snddipcmdstr = R9_xPos + "," + R9_yPos + "," + noofdips_R9.ToString() + "," + R9_dipdelay.ToString() + "," + R9_drydelay.ToString();
-                                    d1 = d1.AddSeconds((noofdips_R9 * 5) + 31);
-                                    if (continuetest > d1)
-                                        ts1 = continuetest.Subtract(d1);
-                                    else
-                                        ts1 = d1.Subtract(continuetest);
-                                    if (ts1.TotalSeconds < ((noofdips_R9 * 5) + 31))
-                                    {
-                                        continuetest = continuetest.AddSeconds((noofdips_R9 * 5) + 31);
-                                    }
-                                    //Next rack calculation
-                                    if (nxtrackloading > d1)
-                                        ts1 = nxtrackloading.Subtract(d1);
-                                    else
-                                        ts1 = d1.Subtract(nxtrackloading);
-                                    if (ts1.TotalSeconds < ((noofdips_R9 * 5) + 31))
-                                    {
-                                        nxtrackloading = nxtrackloading.AddSeconds((noofdips_R9 * 5) + 31);
-                                    }
+                                    snddipcmdstr = R9_xPos + "," + R9_yPos + "," + noofdips_R9.ToString() + "," + R9_dipdelay.ToString() + "," + R9_drydelay.ToString();                                    
                                 }
                                 else
                                 {
@@ -13719,7 +13091,6 @@ namespace HematoxinandEosin
                                 topickupflg_R9 = false;
                                 placedflg_R9 = false;
                                 dippedflg_R9 = false;
-
                             }
                         }
                         else if (placedflg_R9 == true)
@@ -14736,6 +14107,11 @@ namespace HematoxinandEosin
                 m_Cmdstr = "";
                 m_Cmdstr = mport.ReadExisting();
 
+                if((func_code==2)|| (func_code == 3))
+                {
+                    RA_pickedflg = false;RA_placedflg = false;
+                }
+
                 pGotByteFlag = false;
                 if (repeatval == 0)
                 {
@@ -14966,27 +14342,8 @@ namespace HematoxinandEosin
                             {
                                 RA_Protorun_intiated = false; // Added on 22-08-2023
                                 rareached = true;
-                                if (Process_Continued == true)
-                                {
-                                    ////if (TempReadingStarted == true)
-                                    ////    readtemperature();
-                                    //if ((Temp_Attained == false) && (incubtime_Temp_start == false))
-                                    //{
-                                    //    if (tmr_temp.Enabled == false)
-                                    //    {
-                                    //        tmr_temp.Enabled = true;
-                                    //        tmr_temp.Interval = 1000;
-                                    //    }
-                                    //}
-                                    //else if ((Temp_Attained == true) && (incubtime_Temp_start == true))
-                                    //{
-                                    //    if (tmr_temp_incub.Enabled == false)
-                                    //    {
-                                    //        tmr_temp_incub.Enabled = true;
-                                    //        tmr_temp_incub.Interval = 1000;
-                                    //    }
-                                    //}
-                                }
+                                RA_pickedflg = true;
+                                Communication.writeCommunicationCommands("RA Picked Rack From "+ JarName);                               
                             }
                             break;
                         }
@@ -15002,27 +14359,9 @@ namespace HematoxinandEosin
                             {
                                 RA_Protorun_intiated = false; // Added on 22-08-2023
                                 rareached = true;
-                                if (Process_Continued == true)
-                                {
-                                    ////if (TempReadingStarted == true)
-                                    ////    readtemperature();
-                                    ////if ((Temp_Attained == false) && (incubtime_Temp_start == false))
-                                    ////{
-                                    ////    if (tmr_temp.Enabled == false)
-                                    ////    {
-                                    ////        tmr_temp.Enabled = true;
-                                    ////        tmr_temp.Interval = 1000;
-                                    ////    }
-                                    ////}
-                                    ////else if ((Temp_Attained == true) && (incubtime_Temp_start == true))
-                                    ////{
-                                    ////    if (tmr_temp_incub.Enabled == false)
-                                    ////    {
-                                    ////        tmr_temp_incub.Enabled = true;
-                                    ////        tmr_temp_incub.Interval = 1000;
-                                    ////    }
-                                    ////}
-                                }
+                                RA_placedflg = true;
+                                Communication.writeCommunicationCommands("RA Placed Rack in " + JarName);
+                                
                             }
                             break;
                         }
@@ -15038,7 +14377,7 @@ namespace HematoxinandEosin
                                 cmdres = "";
                                 cmdres = displayScrData;
                                 lvlval = (float)Convert.ToDouble(lvl[0].ToString());
-                                ////lvlval = 500; //This value has to delete kept for testing
+                                ////lvlval = 200; //This value has to delete kept for testing
                                 checkrackval(lvlval);
                                 sensed = true;
                                 rareached = true;
@@ -15676,13 +15015,12 @@ namespace HematoxinandEosin
                             break;
                         }
                 }
-
                 #endregion
                 return;
             }
             catch (Exception d3)
             {
-
+                RequiredVariables.writeerrorlogfile("Parsing Raw details failed "+ displayScrData + "\r\n" + d3.ToString(), "In CheckandUpdatetoscreen() fucntion in Form_RunProto.cs");
             }
         }
 
@@ -15959,10 +15297,48 @@ namespace HematoxinandEosin
                                                 }
                                                 else
                                                 {
-                                                    if (((rtype == "F") || (rtype == "I")) && ((respval == "000") || (respval == "001")))                                                        
+                                                    if (((rtype == "F") || (rtype == "I")) && ((respval == "000") || (respval == "001")))
+                                                    {                                                                                                              
                                                         checkandupdatedatatoscreen(btntst);
-                                                    if (((rtype == "F") || (rtype == "I")) && (respval == "000"))
-                                                        Communication.isComandInProgress = false;// Set flag to avoid overlap
+                                                        if ((rtype == "F") && (respval == "000"))
+                                                        {
+                                                            switch (Convert.ToInt32(Jarr[1].ToString()))
+                                                            {
+                                                                case 1:  //RA Movement
+                                                                    {
+                                                                        rareached = true;
+                                                                        break;
+                                                                    }
+                                                                case 2:  //RA Picked
+                                                                    {
+                                                                        RA_Protorun_intiated = false;
+                                                                        rareached = true;
+                                                                        RA_pickedflg = true;
+                                                                        break;
+                                                                    }
+                                                                case 3:  //RA Placed
+                                                                    {
+                                                                        RA_Protorun_intiated = false;
+                                                                        rareached = true;
+                                                                        RA_placedflg = true;
+                                                                        break;
+                                                                    }
+                                                                case 4: //Level Sensing With RA
+                                                                    {
+                                                                        sensed = true;
+                                                                        rareached = true;
+                                                                        break;
+                                                                    }
+                                                                case 17:  //RA Dip
+                                                                    {
+                                                                        rack_dip = true;
+                                                                        rareached = true;
+                                                                        break;
+                                                                    }
+                                                            }
+                                                            Communication.isComandInProgress = false;// Set flag to avoid overlap
+                                                        }
+                                                    }   
                                                 }
                                                 
                                             }
@@ -16477,6 +15853,7 @@ namespace HematoxinandEosin
                     toplaceflg = false;
                     pickedflg = false;
                     placedflg = false;
+                    RA_pickedflg = false; RA_placedflg = false;
                     Communication.writeCommunicationCommands("Unloaded Racks from Normal Jars Completed");
 
                     MessageBox.Show("All Racks Loaded to Unloading Jars from Normal Jars \r\n Please remove the racks from unloading Jars", "H&E Communication", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -17938,7 +17315,8 @@ namespace HematoxinandEosin
             snd_rcvCmd(Communication.DOOR_CTRL, "1,1");
             tmr_opencmd_toload_Nxtrack.Enabled = true;
             tmr_opencmd_toload_Nxtrack.Interval = 500;
-
+            htrdooropenfailure = System.DateTime.Now;
+            htrdooropenfailure = htrdooropenfailure.AddSeconds(11);
         }
         private void open_htrdoor_continuemode()
         {
@@ -17952,6 +17330,8 @@ namespace HematoxinandEosin
             //snd_rcvCmd(Communication.RA_HOME, "01000000");
             tmr_Cut.Enabled = true;
             tmr_Cut.Interval = 500;
+            htrdooropenfailure = System.DateTime.Now;
+            htrdooropenfailure = htrdooropenfailure.AddSeconds(11);
         }
         private void open_htrdoor()
         {
@@ -18260,7 +17640,7 @@ namespace HematoxinandEosin
             tosense = false; sensed = false; lowlevel = false; no_jar = false; abvnormallvl = false; normallvl = false; blwnormallvl = false; blw_adglvl = false; abovednglvl = false;
             protocolinitiateflg = false; protocolcmdintiated = false; Jarloaddetails = false;
             moveinitiateflg = false; lvlcmdintiated = false;
-
+            RA_pickedflg = false; RA_placedflg = false;
             r1stat = false; r2stat = false; r3stat = false; unloadjar_racksensed = false; heaterjar_racksensed = false; loadingjar_racksensed = false; normaljar_racksensed = false;
             unloadJars_lvlintiated = false; heaterjar_lvlintiated = false; loadingjar_lvlintiated = false; normaljar_lvlintiated = false; loading_racks = false; HtrRacks_ULJars = false;
             htrstartintiate = false; htrdoorintiate = false;
@@ -18748,7 +18128,7 @@ namespace HematoxinandEosin
             else if (JarName == "U6")
                 U6.JarRack = true;
         }
-        
+        #region check level sensing
         private void checkrackval(float lvlsnsval)
         {
             float[] minval = new float[20]; float[] maxval = new float[20];
@@ -18839,13 +18219,13 @@ namespace HematoxinandEosin
                 else if (JarName.Contains("J"))
                 {
                     normaljar_racksensed = true;
-                    rackinjars[jno - 1] = 1;                    
+                    rackinjars[jno - 1] = 1;
                 }
                 else if (JarName.Contains("W"))
                 {
                     normaljar_racksensed = true;
                     rackinjars[jno - 1] = 1;
-                }                
+                }
             }
             else if ((lvlsnsval > maxval[0]) && (lvlsnsval < minval[1]))  //Between Rack & 300 ml
             {
@@ -18877,13 +18257,13 @@ namespace HematoxinandEosin
                 else if (JarName.Contains("J"))
                 {
                     normaljar_racksensed = true;
-                    rackinjars[jno - 1] = 1;                    
+                    rackinjars[jno - 1] = 1;
                 }
                 else if (JarName.Contains("W"))
                 {
                     normaljar_racksensed = true;
                     rackinjars[jno - 1] = 1;
-                }                
+                }
             }
             else if ((lvlsnsval >= minval[1]) && (lvlsnsval <= maxval[1]))  //Only 300 ml
             {
@@ -18919,7 +18299,7 @@ namespace HematoxinandEosin
                     update_water_Level_Status(JarName, 1);
                 }
             }
-            else if ((lvlsnsval > maxval[2]) && (lvlsnsval < minval[3])) //Between 260ml & 290 ml
+            else if ((lvlsnsval > maxval[2]) && (lvlsnsval <= minval[3])) //Between 260ml & 290 ml
             {
                 SetText(JarName + " Contains Reagent of between 260ml to 290ml in it");
                 JarFillColor = Color.FromArgb(0x00FF99);
@@ -18930,7 +18310,7 @@ namespace HematoxinandEosin
                     update_water_Level_Status(JarName, 0);
                 }
             }
-            else if ((lvlsnsval >= minval[3]) && (lvlsnsval <= maxval[3]))  //Only 260 ml
+            else if ((lvlsnsval > minval[3]) && (lvlsnsval <= maxval[3]))  //Only 260 ml
             {
                 SetText(JarName + " Contains 260ml of Reagent in it");
                 JarFillColor = Color.FromArgb(0xCC0000);
@@ -19182,7 +18562,7 @@ namespace HematoxinandEosin
                         J1.BackColor = BdrColor;
                         J1.TextColor = JartxtforeColor;
                         J1.BorderSize = 3;
-                        if(rackinjars[jno - 1] == 1) J1.JarRack = true;
+                        if (rackinjars[jno - 1] == 1) J1.JarRack = true;
                         else J1.OnlyJar = true;
                         J1.TaskProcess = JarliquidValue;
                         break;
@@ -19563,6 +18943,7 @@ namespace HematoxinandEosin
                     }
             }
         }
+        #endregion
         private void update_water_Level_Status(string jName, int lvlval)
         {
             if (jName.Contains("W"))
@@ -19932,23 +19313,23 @@ namespace HematoxinandEosin
                     }
                 case "J27":
                     {
-                        U1.ElaspedTime = str;
-                        U1.RackNumber = rackNo;
-                        U1.TaskCompletionTime = taskcomptime;
+                        J27.ElaspedTime = str;
+                        J27.RackNumber = rackNo;
+                        J27.TaskCompletionTime = taskcomptime;
                         break;
                     }
                 case "J28":
                     {
-                        J32.ElaspedTime = str;
-                        J32.RackNumber = rackNo;
-                        J32.TaskCompletionTime = taskcomptime;
+                        J28.ElaspedTime = str;
+                        J28.RackNumber = rackNo;
+                        J28.TaskCompletionTime = taskcomptime;
                         break;
                     }
                 case "J29":
                     {
-                        J31.ElaspedTime = str;
-                        J31.RackNumber = rackNo;
-                        J31.TaskCompletionTime = taskcomptime;
+                        J29.ElaspedTime = str;
+                        J29.RackNumber = rackNo;
+                        J29.TaskCompletionTime = taskcomptime;
                         break;
                     }
                 case "J30":
@@ -19960,23 +19341,23 @@ namespace HematoxinandEosin
                     }
                 case "J31":
                     {
-                        J29.ElaspedTime = str;
-                        J29.RackNumber = rackNo;
-                        J29.TaskCompletionTime = taskcomptime;
+                        J31.ElaspedTime = str;
+                        J31.RackNumber = rackNo;
+                        J31.TaskCompletionTime = taskcomptime;
                         break;
                     }
                 case "J32":
                     {
-                        J28.ElaspedTime = str;
-                        J28.RackNumber = rackNo;
-                        J28.TaskCompletionTime = taskcomptime;
+                        J32.ElaspedTime = str;
+                        J32.RackNumber = rackNo;
+                        J32.TaskCompletionTime = taskcomptime;
                         break;
                     }
                 case "J33":
                     {
-                        J27.ElaspedTime = str;
-                        J27.RackNumber = rackNo;
-                        J27.TaskCompletionTime = taskcomptime;
+                        J33.ElaspedTime = str;
+                        J33.RackNumber = rackNo;
+                        J33.TaskCompletionTime = taskcomptime;
                         break;
                     }
                 case "W1":
@@ -20023,9 +19404,9 @@ namespace HematoxinandEosin
                     }
                 case "U1":
                     {
-                        J33.ElaspedTime = str;
-                        J33.RackNumber = rackNo;
-                        J33.TaskCompletionTime = taskcomptime;
+                        U1.ElaspedTime = str;
+                        U1.RackNumber = rackNo;
+                        U1.TaskCompletionTime = taskcomptime;
                         break;
                     }
                 case "U2":
@@ -20163,6 +19544,7 @@ namespace HematoxinandEosin
                 case "H1":
                     {
                         H1.ElaspedTime = str;
+                        H1.JarRack = true;
                         H1.RackNumber = rackNo;
                         H1.TaskProcess = tmpval + "°C";
                         H1.TaskCompletionTime = taskcomptime;
@@ -20171,6 +19553,7 @@ namespace HematoxinandEosin
                 case "H2":
                     {
                         H2.ElaspedTime = str;
+                        H2.JarRack = true;
                         H2.RackNumber = rackNo;
                         H2.TaskProcess = tmpval + "°C";
                         H2.TaskCompletionTime = taskcomptime;
@@ -20179,6 +19562,7 @@ namespace HematoxinandEosin
                 case "H3":
                     {
                         H3.ElaspedTime = str;
+                        H3.JarRack = true;
                         H3.RackNumber = rackNo;
                         H3.TaskProcess = tmpval + "°C";
                         H3.TaskCompletionTime = taskcomptime;
@@ -20378,23 +19762,23 @@ namespace HematoxinandEosin
                     }
                 case "J27":
                     {
-                        U1.ProcessName = protoshortname;
-                        U1.ReagentName = regName;
-                        U1.OnlyJar = true;
+                        J27.ProcessName = protoshortname;
+                        J27.ReagentName = regName;
+                        J27.OnlyJar = true;
                         break;
                     }
                 case "J28":
                     {
-                        J32.ProcessName = protoshortname;
-                        J32.ReagentName = regName;
-                        J32.OnlyJar = true;
+                        J28.ProcessName = protoshortname;
+                        J28.ReagentName = regName;
+                        J28.OnlyJar = true;
                         break;
                     }
                 case "J29":
                     {
-                        J31.ProcessName = protoshortname;
-                        J31.ReagentName = regName;
-                        J31.OnlyJar = true;
+                        J29.ProcessName = protoshortname;
+                        J29.ReagentName = regName;
+                        J29.OnlyJar = true;
                         break;
                     }
                 case "J30":
@@ -20406,23 +19790,23 @@ namespace HematoxinandEosin
                     }
                 case "J31":
                     {
-                        J29.ProcessName = protoshortname;
-                        J29.ReagentName = regName;
-                        J29.OnlyJar = true;
+                        J31.ProcessName = protoshortname;
+                        J31.ReagentName = regName;
+                        J31.OnlyJar = true;
                         break;
                     }
                 case "J32":
                     {
-                        J28.ProcessName = protoshortname;
-                        J28.ReagentName = regName;
-                        J28.OnlyJar = true;
+                        J32.ProcessName = protoshortname;
+                        J32.ReagentName = regName;
+                        J32.OnlyJar = true;
                         break;
                     }
                 case "J33":
                     {
-                        J27.ProcessName = protoshortname;
-                        J27.ReagentName = regName;
-                        J27.OnlyJar = true;
+                        J33.ProcessName = protoshortname;
+                        J33.ReagentName = regName;
+                        J33.OnlyJar = true;
                         break;
                     }
                 case "W1":
@@ -20469,9 +19853,9 @@ namespace HematoxinandEosin
                     }
                 case "U1":
                     {
-                        J33.ProcessName = protoshortname;
-                        J33.ReagentName = regName;
-                        J33.OnlyJar = true;
+                        U1.ProcessName = protoshortname;
+                        U1.ReagentName = regName;
+                        U1.OnlyJar = true;
                         break;
                     }
                 case "U2":
@@ -20726,23 +20110,23 @@ namespace HematoxinandEosin
                     }
                 case "J27":
                     {
-                        U1.ProcessName = prtname;
-                        U1.ReagentName = regName;
-                        U1.OnlyJar = true; U1.BorderSize = 3;
+                        J27.ProcessName = prtname;
+                        J27.ReagentName = regName;
+                        J27.OnlyJar = true; J27.BorderSize = 3;
                         break;
                     }
                 case "J28":
                     {
-                        J32.ProcessName = prtname;
-                        J32.ReagentName = regName;
-                        J32.OnlyJar = true; J32.BorderSize = 3;
+                        J28.ProcessName = prtname;
+                        J28.ReagentName = regName;
+                        J28.OnlyJar = true; J28.BorderSize = 3;
                         break;
                     }
                 case "J29":
                     {
-                        J31.ProcessName = prtname;
-                        J31.ReagentName = regName;
-                        J31.OnlyJar = true; J31.BorderSize = 3;
+                        J29.ProcessName = prtname;
+                        J29.ReagentName = regName;
+                        J29.OnlyJar = true; J29.BorderSize = 3;
                         break;
                     }
                 case "J30":
@@ -20754,23 +20138,23 @@ namespace HematoxinandEosin
                     }
                 case "J31":
                     {
-                        J29.ProcessName = prtname;
-                        J29.ReagentName = regName;
-                        J29.OnlyJar = true; J29.BorderSize = 3;
+                        J31.ProcessName = prtname;
+                        J31.ReagentName = regName;
+                        J31.OnlyJar = true; J31.BorderSize = 3;
                         break;
                     }
                 case "J32":
                     {
-                        J28.ProcessName = prtname;
-                        J28.ReagentName = regName;
-                        J28.OnlyJar = true; J28.BorderSize = 3;
+                        J32.ProcessName = prtname;
+                        J32.ReagentName = regName;
+                        J32.OnlyJar = true; J32.BorderSize = 3;
                         break;
                     }
                 case "J33":
                     {
-                        J27.ProcessName = prtname;
-                        J27.ReagentName = regName;
-                        J27.OnlyJar = true; J27.BorderSize = 3;
+                        J33.ProcessName = prtname;
+                        J33.ReagentName = regName;
+                        J33.OnlyJar = true; J33.BorderSize = 3;
                         break;
                     }
                 case "W1":
@@ -20817,9 +20201,9 @@ namespace HematoxinandEosin
                     }
                 case "U1":
                     {
-                        J33.ProcessName = prtname;
-                        J33.ReagentName = regName;
-                        J33.OnlyJar = true; J33.BorderSize = 3;
+                        U1.ProcessName = prtname;
+                        U1.ReagentName = regName;
+                        U1.OnlyJar = true; J33.BorderSize = 3;
                         break;
                     }
                 case "U2":
