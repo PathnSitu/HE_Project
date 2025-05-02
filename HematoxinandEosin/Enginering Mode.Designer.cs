@@ -138,6 +138,7 @@ namespace HematoxinandEosin
             this.btn_close = new System.Windows.Forms.Button();
             this.lst_resp = new System.Windows.Forms.ListBox();
             this.tmr_portstatus = new System.Windows.Forms.Timer(this.components);
+            this.tmr_RespFail = new System.Windows.Forms.Timer(this.components);
             this.panel_Heater.SuspendLayout();
             this.panel_water.SuspendLayout();
             this.panel_Door.SuspendLayout();
@@ -1699,6 +1700,11 @@ namespace HematoxinandEosin
             this.tmr_portstatus.Interval = 500;
             this.tmr_portstatus.Tick += new System.EventHandler(this.tmr_portstatus_Tick);
             // 
+            // tmr_RespFail
+            // 
+            this.tmr_RespFail.Interval = 1000;
+            this.tmr_RespFail.Tick += new System.EventHandler(this.tmr_RespFail_Tick);
+            // 
             // Enginering_Mode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1842,5 +1848,6 @@ namespace HematoxinandEosin
         private System.Windows.Forms.RadioButton opt_htropen;
         private System.Windows.Forms.ListBox lst_resp;
         private System.Windows.Forms.Timer tmr_portstatus;
+        private System.Windows.Forms.Timer tmr_RespFail;
     }
 }

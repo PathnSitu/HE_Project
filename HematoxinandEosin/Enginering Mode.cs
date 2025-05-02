@@ -81,9 +81,6 @@ namespace HematoxinandEosin
             enggparameter = CommandName;
             snd_rcvCmd(Communication.HTR_CTRL, onoffval);
         }
-
-
-
         private void tg_HeaterFan_Click(object sender, EventArgs e)
         {
             string s = "Heater Fan";
@@ -127,9 +124,6 @@ namespace HematoxinandEosin
                 con.Open();
             cmd.ExecuteNonQuery();
         }
-
-       
-
         private void tg_Inlet_pump_Click(object sender, EventArgs e)
         {
             string onoffval = "0";
@@ -156,7 +150,6 @@ namespace HematoxinandEosin
             enggparameter = CommandName;
             snd_rcvCmd(Communication.VALVE_CTRL, onoffval);
         }
-
         private void tg_OutletPump_Click(object sender, EventArgs e)
         {
             string op = "Outlet Valve Pump";
@@ -200,7 +193,6 @@ namespace HematoxinandEosin
                 con.Open();
             cmd.ExecuteNonQuery();
         }
-
         private void tg_HesitationMotor_Click(object sender, EventArgs e)
         {            
             try
@@ -234,7 +226,6 @@ namespace HematoxinandEosin
 
             }
         }
-
         private void tg_HeaterDoor_Click(object sender, EventArgs e)
         {
             string hd = "Heater Door";
@@ -279,7 +270,6 @@ namespace HematoxinandEosin
             cmd.ExecuteNonQuery();
 
         }
-
         private void tg_JarDoor_Click(object sender, EventArgs e)
         {
             string jd = "Jar Door";
@@ -323,7 +313,6 @@ namespace HematoxinandEosin
                 con.Open();
             cmd.ExecuteNonQuery();
         }
-
         private void tg_MachineDoor_Click(object sender, EventArgs e)
         {
             string md = "Machine Door";
@@ -367,7 +356,6 @@ namespace HematoxinandEosin
                 con.Open();
             cmd.ExecuteNonQuery();
         }
-
         private void btn_close_Click_1(object sender, EventArgs e)
         {
             Form_MainMenu f1 = new Form_MainMenu();
@@ -376,23 +364,18 @@ namespace HematoxinandEosin
             RequiredVariables.btnCalib = true;
 
         }
-
         private void tg_HeaterDoor_Load(object sender, EventArgs e)
         {
 
         }
-
         private void label28_Click(object sender, EventArgs e)
         {
 
         }
-
-        
         private void panel_water_Paint(object sender, PaintEventArgs e)
         {
 
         }
-
         private void Enginering_Mode_Load_1(object sender, EventArgs e)
         {
             Constr = RequiredVariables.DBConnStr;
@@ -415,7 +398,6 @@ namespace HematoxinandEosin
             RequiredVariables.EngineeringMode_Started = true;
             getdoorstatus();
         }
-
         private void btn_Set_Click(object sender, EventArgs e)
         {
             CommandName = "SET TEMPERATURE";
@@ -423,7 +405,6 @@ namespace HematoxinandEosin
             Communication.RA_No = 0;
             snd_rcvCmd(Communication.SET_TEMP, cmb_setTemperature.Text);
         }
-
         private void btn_Read_Click(object sender, EventArgs e)
         {
             CommandName = "GET TEMPERATURE";
@@ -658,7 +639,6 @@ namespace HematoxinandEosin
                 RequiredVariables.writeerrorlogfile("While updating engineering mode parameters of " + engparam, "In Engineering Mode from in engparametersupdation");
             }            
         }
-
         private void btn_MoveRA_Click(object sender, EventArgs e)
         {
             //roboticArmMovement();
@@ -734,7 +714,6 @@ namespace HematoxinandEosin
 
             }
         }
-
         private void btn_checkLiquidLevel_Click(object sender, EventArgs e)
         {
             String ll = "Liquid Level";
@@ -764,7 +743,6 @@ namespace HematoxinandEosin
             //fileStream.Write(bdata, 0, bdata.Length);
             //fileStream.Close();
         }
-
         private void btn_CheckRack_Click(object sender, EventArgs e)
         {
             String r = "Rack";
@@ -794,7 +772,6 @@ namespace HematoxinandEosin
             //fileStream.Write(bdata, 0, bdata.Length);
             //fileStream.Close();
         }
-
         private void btn_CheckJar_Click(object sender, EventArgs e)
         {
             String j = "Jar";
@@ -823,7 +800,6 @@ namespace HematoxinandEosin
             //fileStream.Write(bdata, 0, bdata.Length);
             //fileStream.Close();
         }
-
         private void cmb_setTemperature_Click(object sender, EventArgs e)
         {
             //pnl_Numbers.Visible = true;
@@ -863,7 +839,6 @@ namespace HematoxinandEosin
             //}
            
         }
-
         private void button_2_Click(object sender, EventArgs e)
         {
             //SendKeys.Send("2");
@@ -877,7 +852,6 @@ namespace HematoxinandEosin
             //    cmb_setTemperature.Text = cmb_setTemperature.Text + "";
             //}
         }
-
         private void button_3_Click(object sender, EventArgs e)
         {
             SendKeys.Send("3");
@@ -891,7 +865,6 @@ namespace HematoxinandEosin
             //    cmb_setTemperature.Text = cmb_setTemperature.Text + "";
             //}
         }
-
         private void button_4_Click(object sender, EventArgs e)
         {
             
@@ -906,7 +879,6 @@ namespace HematoxinandEosin
             //    cmb_setTemperature.Text = cmb_setTemperature.Text + "";
             //}
         }
-
         private void button_5_Click(object sender, EventArgs e)
         {
             
@@ -921,7 +893,6 @@ namespace HematoxinandEosin
             //    cmb_setTemperature.Text = cmb_setTemperature.Text + "";
             //}
         }
-
         private void button_6_Click(object sender, EventArgs e)
         {
             
@@ -936,7 +907,6 @@ namespace HematoxinandEosin
             //    cmb_setTemperature.Text = cmb_setTemperature.Text + "";
             //}
         }
-
         private void button_7_Click(object sender, EventArgs e)
         {
             
@@ -952,7 +922,6 @@ namespace HematoxinandEosin
             //    cmb_setTemperature.Text = cmb_setTemperature.Text + "";
             //}
         }
-
         private void button_8_Click(object sender, EventArgs e)
         {
            
@@ -968,7 +937,6 @@ namespace HematoxinandEosin
             //    cmb_setTemperature.Text = cmb_setTemperature.Text + "";
             //}
         }
-
         private void button_9_Click(object sender, EventArgs e)
         {
             
@@ -984,7 +952,6 @@ namespace HematoxinandEosin
             //    cmb_setTemperature.Text = cmb_setTemperature.Text + "";
             //}
         }
-
         private void button_0_Click(object sender, EventArgs e)
         {
             SendKeys.Send("0");
@@ -1001,7 +968,6 @@ namespace HematoxinandEosin
                 //}
             }
         }
-
         private void button_bs_Click(object sender, EventArgs e)
         {
             //SendKeys.Send("{BACKSPACE}");
@@ -1014,14 +980,12 @@ namespace HematoxinandEosin
                 cmb_setTemperature.Text = cmb_setTemperature.Text.Substring(0, cmb_setTemperature.Text.Length - 1);
             }
         }
-
         private void button_dot_Click(object sender, EventArgs e)
         {
             //SendKeys.Send(".");
             //cmb_setTemperature.Text = cmb_setTemperature.Text + button_dot.Text.Trim();
             cmb_setTemperature.Text = cmb_setTemperature.Text + "";
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -1060,21 +1024,18 @@ namespace HematoxinandEosin
             btn_MoveRA.ForeColor = Color.White;
             btn_MoveRA.BackColor = opt_move.ForeColor;
         }
-
         private void opt_pick_CheckedChanged(object sender, EventArgs e)
         {
             btn_MoveRA.Text = "Pick Rack";
             btn_MoveRA.ForeColor = Color.White;
             btn_MoveRA.BackColor = opt_pick.ForeColor;
         }
-
         private void opt_place_CheckedChanged(object sender, EventArgs e)
         {
             btn_MoveRA.Text = "Place Rack";
             btn_MoveRA.ForeColor = Color.White;
             btn_MoveRA.BackColor = opt_place.ForeColor;
         }
-
         private void btn_Intialize_Click(object sender, EventArgs e)
         {
             try
@@ -1143,7 +1104,6 @@ namespace HematoxinandEosin
 
             }
         }
-
         private void btn_getstat_Click(object sender, EventArgs e)
         {
             CommandName = "GET HOME STATUS";
@@ -1171,7 +1131,6 @@ namespace HematoxinandEosin
             Communication.RA_No = 0;
             snd_rcvCmd(Communication.VALVE_STATUS, "");
         }
-
         private void tg_HeaterDoor_Click_1(object sender, EventArgs e)
         {
             try
@@ -1205,7 +1164,6 @@ namespace HematoxinandEosin
 
             }            
         }
-
         private void tg_Valve2_Click(object sender, EventArgs e)
         {
             try
@@ -1239,7 +1197,6 @@ namespace HematoxinandEosin
 
             }            
         }
-
         private void tg_Valve3_Click(object sender, EventArgs e)
         {
             try
@@ -1273,7 +1230,6 @@ namespace HematoxinandEosin
 
             }
         }
-
         private void tg_Valve4_Click(object sender, EventArgs e)
         {
             try
@@ -1307,7 +1263,6 @@ namespace HematoxinandEosin
 
             }
         }
-
         private void tg_Valve5_Click(object sender, EventArgs e)
         {
             try
@@ -1341,7 +1296,6 @@ namespace HematoxinandEosin
 
             }
         }
-
         private void tg_Valve6_Click(object sender, EventArgs e)
         {
             try
@@ -1375,21 +1329,18 @@ namespace HematoxinandEosin
 
             }
         }
-
         private void opt_check_Level_CheckedChanged(object sender, EventArgs e)
         {
             btn_MoveRA.Text = "Check Liquid Level";
             btn_MoveRA.ForeColor = Color.White;
             btn_MoveRA.BackColor = opt_check_Level.ForeColor;
         }
-
         private void btn_poll_Click(object sender, EventArgs e)
         {
             CommandName = "POLL COMMAND ";
             Communication.RA_No = 0;
             snd_rcvCmd(Communication.POLL_VER, "");
         }
-
         private void chk_Allaxis_CheckedChanged(object sender, EventArgs e)
         {
             if (chk_Allaxis.Checked == true)
@@ -1415,37 +1366,30 @@ namespace HematoxinandEosin
                 chk_RA2Zaxis.Checked = false;
             }
         }
-
         private void chk_Agitation_CheckedChanged(object sender, EventArgs e)
         {
             chk_Allaxis.Checked = false;
         }
-
         private void chk_Htr_CheckedChanged(object sender, EventArgs e)
         {
             chk_Allaxis.Checked = false;
         }
-
         private void chk_RA1Xaxis_CheckedChanged(object sender, EventArgs e)
         {
             chk_Allaxis.Checked = false;
         }
-
         private void chk_RA1Yaxis_CheckedChanged(object sender, EventArgs e)
         {
             chk_Allaxis.Checked = false;
         }
-
         private void chk_RA1Zaxis_CheckedChanged(object sender, EventArgs e)
         {
             chk_Allaxis.Checked = false;
         }
-
         private void chk_RA2Xaxis_CheckedChanged(object sender, EventArgs e)
         {
             chk_Allaxis.Checked = false;
         }
-
         private void chk_RA2Yaxis_CheckedChanged(object sender, EventArgs e)
         {
             chk_Allaxis.Checked = false;
@@ -1487,7 +1431,6 @@ namespace HematoxinandEosin
 
             }
         }
-
         private void opt_htropen_Click(object sender, EventArgs e)
         {
             string onoffval = "0";
@@ -1502,7 +1445,6 @@ namespace HematoxinandEosin
             enggparameter = CommandName;
             snd_rcvCmd(Communication.DOOR_CTRL, onoffval);
         }
-
         private void opt_close_Click(object sender, EventArgs e)
         {
             string onoffval = "0";
@@ -1517,7 +1459,6 @@ namespace HematoxinandEosin
             enggparameter = CommandName;
             snd_rcvCmd(Communication.DOOR_CTRL, onoffval);
         }
-
         private void loadPositiondetails()
         {
             try
@@ -1589,6 +1530,38 @@ namespace HematoxinandEosin
         string JarName = "";
 
         Boolean m_ProcessStoped = false, swpause = false, swresume = false, hwresume = false, hwpause = false, cmdprocesscmp = true;
+        DateTime device_resp_Check_time; int prev_Snt_func_code; string prev_Snt_m_CmdData = "";
+        private void tmr_RespFail_Tick(object sender, EventArgs e)
+        {
+            DateTime d1 = System.DateTime.Now;            
+            if (d1 >= device_resp_Check_time)
+            {
+                tmr_RespFail.Enabled = false;
+                if (repeatval <= 3)
+                {
+                    //repeatval = 0;
+                    Communication.SequnceNo--;
+                    snd_rcvCmd(prev_Snt_func_code, prev_Snt_m_CmdData);
+                    repeatval++;
+                    device_resp_Check_time = System.DateTime.Now.AddSeconds(20);
+                    tmr_RespFail.Enabled = true;
+                    tmr_RespFail.Interval = 1000;
+                }
+                else
+                {
+                    tmr_RespFail.Enabled = false; retrycnt = 0;
+                    MessageBox.Show("Please the communication cable & device once and restart the application", RequiredVariables.Msgtext, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else
+            {
+                if ((Communication.isComandInProgress == false)) //if ((pGotByteFlag == true) || (cmd_Exec_Comp==true))
+                {
+                    tmr_RespFail.Enabled = false;
+                }
+            }
+        }
+
         string displayScrData = "";
         string CommandName = "", mslave_Id = "", valno = "";
        
@@ -1818,10 +1791,8 @@ namespace HematoxinandEosin
                                                 snd_rcvCmd(func_code, framed_Data);
                                             }
                                             else
-                                            {
-                                                Communication.isComandInProgress = false;
-                                                Communication.writeCommunicationCommands("Response  - " + btntst);
-                                                
+                                            {                                                
+                                                Communication.writeCommunicationCommands("Response  - " + btntst);                                                
                                                 checkandupdatedatatoscreen(btntst);
                                             }
                                             ////}
@@ -1991,7 +1962,7 @@ namespace HematoxinandEosin
                     Communication.frame_command(func_code, m_CmdData, Communication.RA_No, m_Cmdstr);
                     m_Cmdstr = Communication.framed_cmd;
                     framed_Data = m_CmdData;
-                    sent_func_code = func_code;
+                    sent_func_code = func_code;  prev_Snt_func_code = func_code;  prev_Snt_m_CmdData = m_CmdData;
                 }
                 else if (repeatval > 0)
                 {
@@ -2264,7 +2235,7 @@ namespace HematoxinandEosin
                             break;
                         }
                 }
-
+                if (rtype == "F") Communication.isComandInProgress = false;
                 switch (funccode)
                 {
                     case 1:  //RA Movement
@@ -2490,16 +2461,18 @@ namespace HematoxinandEosin
                                 //New code added on 11112023 1223
                                 if (doorstatusclicked == false)
                                 {
-                                    if (lvl[0].ToString() == "11")
-                                    {
-                                        opt_close.Enabled = true;
-                                        opt_htropen.Enabled = false;
-                                    }
-                                    else if (lvl[0].ToString() == "01")
-                                    {
-                                        opt_close.Enabled = false;
-                                        opt_htropen.Enabled = true;
-                                    }
+                                    opt_close.Enabled = true;
+                                    opt_htropen.Enabled = true;
+                                    ////if (lvl[0].ToString() == "11")
+                                    ////{
+                                    ////    opt_close.Enabled = true;
+                                    ////    opt_htropen.Enabled = false;
+                                    ////}
+                                    ////else if (lvl[0].ToString() == "01")
+                                    ////{
+                                    ////    opt_close.Enabled = false;
+                                    ////    opt_htropen.Enabled = true;
+                                    ////}
                                 }
                                 else if (doorstatusclicked == true)
                                 {
@@ -2738,30 +2711,50 @@ namespace HematoxinandEosin
 
         private void checkrackval(float lvlsnsval)
         {
-            float[] minval = new float[10]; float[] maxval = new float[10];
-            minval[0] = 190;   //Rack Min
-            minval[1] = 792;   //300 ml
-            minval[2] = 1000;  //250 ml
-            minval[3] = 1180;  //200 ml
-            minval[4] = 1393;  //150 ml
-            minval[5] = 1610;  //100 ml
-            minval[6] = 1816;  //50 ml
-            minval[7] = 2063;  //0 ml
-            minval[8] = 2818;  // No-rack
+            float[] minval = new float[20]; float[] maxval = new float[20];
+            minval[0] = 190;    //Rack Min
+            minval[1] = 792;    //300 ml
+            minval[2] = 910;    //290 ml
+            minval[3] = 1026;   //260 ml
+            minval[4] = 1100;   //250 ml
+            minval[5] = 1170;   //230 ml
+            minval[6] = 1270;   //200 ml
+            minval[7] = 1385;   //180 ml
+            minval[8] = 1401;   //170 ml
+            minval[9] = 1509;   //150 ml
+            minval[10] = 1731;  //100 ml
+            minval[11] = 1946;  //50 ml
+            minval[12] = 2117;  //0 ml
+            minval[13] = 3016;  // No-Jar
+            minval[14] = 1860;  // New Rack Values
 
+            maxval[14] = 2100;    //Nex Rack Max
             maxval[0] = 220;    //Rack Max
             maxval[1] = 900;    //300 ml
-            maxval[2] = 1168;   //250 ml
-            maxval[3] = 1328;   //200 ml
-            maxval[4] = 1556;   //150 ml
-            maxval[5] = 1714;   //100 ml
-            maxval[6] = 2028;   //50 ml
-            maxval[7] = 2229;   //0 ml
-            maxval[8] = 3138;   // No-rack
+            maxval[2] = 1025;    //290 ml
+            maxval[3] = 1099;    //260 ml
+            maxval[4] = 1168;   //250 ml
+            maxval[5] = 1265;    //230 ml
+            maxval[6] = 1384;   //200 ml
+            maxval[7] = 1400;    //180 ml
+            maxval[8] = 1508;    //170 ml
+            maxval[9] = 1556;   //150 ml
+            maxval[10] = 1945;  //100 ml
+            maxval[11] = 2116;  //50 ml
+            maxval[12] = 2229;  //0 ml
+            maxval[13] = 3138;  // No-jar75*3
 
             if ((lvlsnsval >= minval[0]) && (lvlsnsval <= maxval[0]))   // Only Rack
             {
                 SetText_lvlsense("Rack is Holding By RA");
+            }
+            else if ((lvlsnsval > maxval[1]) && (lvlsnsval < minval[14]))  //Between Rack & 300 ml
+            {
+                SetText_lvlsense("Sensing Area is above 300ml & Below Rack");
+            }
+            else if ((lvlsnsval > minval[14]) && (lvlsnsval < maxval[14]))  //Between Rack & 300 ml
+            {
+                SetText_lvlsense("Sensing Area is above 300ml & Below Rack");
             }
             else if ((lvlsnsval > maxval[0]) && (lvlsnsval < minval[1]))  //Between Rack & 300 ml
             {

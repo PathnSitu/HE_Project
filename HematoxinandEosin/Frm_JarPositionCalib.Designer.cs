@@ -42,43 +42,43 @@ namespace HematoxinandEosin
             this.L1 = new WindowsFormsControlLibrary1.RoundEdgePanel();
             this.J24 = new WindowsFormsControlLibrary1.RoundEdgePanel();
             this.J3 = new WindowsFormsControlLibrary1.RoundEdgePanel();
-            this.J33 = new WindowsFormsControlLibrary1.RoundEdgePanel();
+            this.J27 = new WindowsFormsControlLibrary1.RoundEdgePanel();
             this.J23 = new WindowsFormsControlLibrary1.RoundEdgePanel();
             this.J4 = new WindowsFormsControlLibrary1.RoundEdgePanel();
-            this.J32 = new WindowsFormsControlLibrary1.RoundEdgePanel();
+            this.J28 = new WindowsFormsControlLibrary1.RoundEdgePanel();
             this.J22 = new WindowsFormsControlLibrary1.RoundEdgePanel();
             this.J5 = new WindowsFormsControlLibrary1.RoundEdgePanel();
-            this.J31 = new WindowsFormsControlLibrary1.RoundEdgePanel();
+            this.J29 = new WindowsFormsControlLibrary1.RoundEdgePanel();
             this.J21 = new WindowsFormsControlLibrary1.RoundEdgePanel();
             this.J6 = new WindowsFormsControlLibrary1.RoundEdgePanel();
             this.J30 = new WindowsFormsControlLibrary1.RoundEdgePanel();
             this.J20 = new WindowsFormsControlLibrary1.RoundEdgePanel();
             this.J7 = new WindowsFormsControlLibrary1.RoundEdgePanel();
-            this.J29 = new WindowsFormsControlLibrary1.RoundEdgePanel();
+            this.J31 = new WindowsFormsControlLibrary1.RoundEdgePanel();
             this.J19 = new WindowsFormsControlLibrary1.RoundEdgePanel();
             this.J8 = new WindowsFormsControlLibrary1.RoundEdgePanel();
-            this.J28 = new WindowsFormsControlLibrary1.RoundEdgePanel();
+            this.J32 = new WindowsFormsControlLibrary1.RoundEdgePanel();
             this.J18 = new WindowsFormsControlLibrary1.RoundEdgePanel();
             this.J9 = new WindowsFormsControlLibrary1.RoundEdgePanel();
-            this.J27 = new WindowsFormsControlLibrary1.RoundEdgePanel();
+            this.U6 = new WindowsFormsControlLibrary1.RoundEdgePanel();
             this.W6 = new WindowsFormsControlLibrary1.RoundEdgePanel();
             this.W1 = new WindowsFormsControlLibrary1.RoundEdgePanel();
-            this.U6 = new WindowsFormsControlLibrary1.RoundEdgePanel();
+            this.U5 = new WindowsFormsControlLibrary1.RoundEdgePanel();
             this.W5 = new WindowsFormsControlLibrary1.RoundEdgePanel();
             this.W2 = new WindowsFormsControlLibrary1.RoundEdgePanel();
-            this.U5 = new WindowsFormsControlLibrary1.RoundEdgePanel();
+            this.U4 = new WindowsFormsControlLibrary1.RoundEdgePanel();
             this.W4 = new WindowsFormsControlLibrary1.RoundEdgePanel();
             this.W3 = new WindowsFormsControlLibrary1.RoundEdgePanel();
-            this.U4 = new WindowsFormsControlLibrary1.RoundEdgePanel();
+            this.U3 = new WindowsFormsControlLibrary1.RoundEdgePanel();
             this.J17 = new WindowsFormsControlLibrary1.RoundEdgePanel();
             this.J10 = new WindowsFormsControlLibrary1.RoundEdgePanel();
-            this.U3 = new WindowsFormsControlLibrary1.RoundEdgePanel();
+            this.U2 = new WindowsFormsControlLibrary1.RoundEdgePanel();
             this.J16 = new WindowsFormsControlLibrary1.RoundEdgePanel();
             this.J11 = new WindowsFormsControlLibrary1.RoundEdgePanel();
-            this.U2 = new WindowsFormsControlLibrary1.RoundEdgePanel();
+            this.U1 = new WindowsFormsControlLibrary1.RoundEdgePanel();
             this.J15 = new WindowsFormsControlLibrary1.RoundEdgePanel();
             this.J12 = new WindowsFormsControlLibrary1.RoundEdgePanel();
-            this.U1 = new WindowsFormsControlLibrary1.RoundEdgePanel();
+            this.J33 = new WindowsFormsControlLibrary1.RoundEdgePanel();
             this.J14 = new WindowsFormsControlLibrary1.RoundEdgePanel();
             this.J13 = new WindowsFormsControlLibrary1.RoundEdgePanel();
             this.panel_Jarscalibration = new System.Windows.Forms.Panel();
@@ -204,14 +204,14 @@ namespace HematoxinandEosin
             this.L3.Name = "L3";
             this.L3.OnlyJar = false;
             this.L3.OnlyRack = false;
-            this.L3.ProcessName = "HE1";
+            this.L3.ProcessName = "";
             this.L3.RackColor = System.Drawing.Color.Red;
-            this.L3.RackNumber = "J33";
+            this.L3.RackNumber = "L3";
             this.L3.ReagentName = "I/P";
             this.L3.Size = new System.Drawing.Size(70, 140);
             this.L3.TabIndex = 47;
             this.L3.TaskCompletionTime = "05:31";
-            this.L3.TaskProcess = "100%";
+            this.L3.TaskProcess = "";
             this.L3.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.L3.Click += new System.EventHandler(this.jar33_Click);
             // 
@@ -231,7 +231,7 @@ namespace HematoxinandEosin
             this.J26.OnlyRack = false;
             this.J26.ProcessName = "HE1";
             this.J26.RackColor = System.Drawing.Color.Red;
-            this.J26.RackNumber = "J32";
+            this.J26.RackNumber = "J26";
             this.J26.ReagentName = "XYLENE-3";
             this.J26.Size = new System.Drawing.Size(70, 140);
             this.J26.TabIndex = 46;
@@ -279,14 +279,14 @@ namespace HematoxinandEosin
             this.L2.Name = "L2";
             this.L2.OnlyJar = false;
             this.L2.OnlyRack = false;
-            this.L2.ProcessName = "HE1";
+            this.L2.ProcessName = "";
             this.L2.RackColor = System.Drawing.Color.Red;
-            this.L2.RackNumber = "J34";
+            this.L2.RackNumber = "L2";
             this.L2.ReagentName = "I/P";
             this.L2.Size = new System.Drawing.Size(70, 140);
             this.L2.TabIndex = 44;
             this.L2.TaskCompletionTime = "05:31";
-            this.L2.TaskProcess = "100%";
+            this.L2.TaskProcess = "";
             this.L2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.L2.Click += new System.EventHandler(this.jar34_Click);
             // 
@@ -306,7 +306,7 @@ namespace HematoxinandEosin
             this.J25.OnlyRack = false;
             this.J25.ProcessName = "HE1";
             this.J25.RackColor = System.Drawing.Color.Red;
-            this.J25.RackNumber = "J31";
+            this.J25.RackNumber = "J26";
             this.J25.ReagentName = "XYLENE-2";
             this.J25.Size = new System.Drawing.Size(70, 140);
             this.J25.TabIndex = 43;
@@ -354,14 +354,14 @@ namespace HematoxinandEosin
             this.L1.Name = "L1";
             this.L1.OnlyJar = false;
             this.L1.OnlyRack = false;
-            this.L1.ProcessName = "HE1";
+            this.L1.ProcessName = "";
             this.L1.RackColor = System.Drawing.Color.Red;
-            this.L1.RackNumber = "J35";
+            this.L1.RackNumber = "L1";
             this.L1.ReagentName = "I/P";
             this.L1.Size = new System.Drawing.Size(70, 140);
             this.L1.TabIndex = 41;
             this.L1.TaskCompletionTime = "05:31";
-            this.L1.TaskProcess = "100%";
+            this.L1.TaskProcess = "";
             this.L1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.L1.Click += new System.EventHandler(this.jar35_Click);
             // 
@@ -381,7 +381,7 @@ namespace HematoxinandEosin
             this.J24.OnlyRack = false;
             this.J24.ProcessName = "HE1";
             this.J24.RackColor = System.Drawing.Color.Red;
-            this.J24.RackNumber = "J30";
+            this.J24.RackNumber = "J24";
             this.J24.ReagentName = "XYLENE-1";
             this.J24.Size = new System.Drawing.Size(70, 140);
             this.J24.TabIndex = 40;
@@ -415,30 +415,30 @@ namespace HematoxinandEosin
             this.J3.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.J3.Click += new System.EventHandler(this.jar3_Click);
             // 
-            // J33
+            // J27
             // 
-            this.J33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(217)))), ((int)(((byte)(207)))));
-            this.J33.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(217)))), ((int)(((byte)(207)))));
-            this.J33.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.J33.BorderRadius = 20;
-            this.J33.BorderSize = 3;
-            this.J33.ElaspedTime = "00:19";
-            this.J33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.J33.JarRack = false;
-            this.J33.Location = new System.Drawing.Point(948, 415);
-            this.J33.Name = "J33";
-            this.J33.OnlyJar = false;
-            this.J33.OnlyRack = false;
-            this.J33.ProcessName = "HE1";
-            this.J33.RackColor = System.Drawing.Color.Red;
-            this.J33.RackNumber = "J36";
-            this.J33.ReagentName = "RNJ";
-            this.J33.Size = new System.Drawing.Size(70, 140);
-            this.J33.TabIndex = 38;
-            this.J33.TaskCompletionTime = "05:31";
-            this.J33.TaskProcess = "0%";
-            this.J33.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.J33.Click += new System.EventHandler(this.jar36_Click);
+            this.J27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(217)))), ((int)(((byte)(207)))));
+            this.J27.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(217)))), ((int)(((byte)(207)))));
+            this.J27.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.J27.BorderRadius = 20;
+            this.J27.BorderSize = 3;
+            this.J27.ElaspedTime = "00:19";
+            this.J27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.J27.JarRack = false;
+            this.J27.Location = new System.Drawing.Point(948, 415);
+            this.J27.Name = "J27";
+            this.J27.OnlyJar = false;
+            this.J27.OnlyRack = false;
+            this.J27.ProcessName = "HE1";
+            this.J27.RackColor = System.Drawing.Color.Red;
+            this.J27.RackNumber = "J27";
+            this.J27.ReagentName = "RNJ";
+            this.J27.Size = new System.Drawing.Size(70, 140);
+            this.J27.TabIndex = 38;
+            this.J27.TaskCompletionTime = "05:31";
+            this.J27.TaskProcess = "0%";
+            this.J27.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.J27.Click += new System.EventHandler(this.jar36_Click);
             // 
             // J23
             // 
@@ -456,7 +456,7 @@ namespace HematoxinandEosin
             this.J23.OnlyRack = false;
             this.J23.ProcessName = "HE1";
             this.J23.RackColor = System.Drawing.Color.Red;
-            this.J23.RackNumber = "J29";
+            this.J23.RackNumber = "J23";
             this.J23.ReagentName = "100% Alcohol";
             this.J23.Size = new System.Drawing.Size(70, 140);
             this.J23.TabIndex = 37;
@@ -490,30 +490,30 @@ namespace HematoxinandEosin
             this.J4.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.J4.Click += new System.EventHandler(this.jar4_Click);
             // 
-            // J32
+            // J28
             // 
-            this.J32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(217)))), ((int)(((byte)(207)))));
-            this.J32.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(217)))), ((int)(((byte)(207)))));
-            this.J32.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.J32.BorderRadius = 20;
-            this.J32.BorderSize = 3;
-            this.J32.ElaspedTime = "00:19";
-            this.J32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.J32.JarRack = false;
-            this.J32.Location = new System.Drawing.Point(870, 415);
-            this.J32.Name = "J32";
-            this.J32.OnlyJar = false;
-            this.J32.OnlyRack = false;
-            this.J32.ProcessName = "HE1";
-            this.J32.RackColor = System.Drawing.Color.Red;
-            this.J32.RackNumber = "J37";
-            this.J32.ReagentName = "RNJ";
-            this.J32.Size = new System.Drawing.Size(70, 140);
-            this.J32.TabIndex = 35;
-            this.J32.TaskCompletionTime = "05:31";
-            this.J32.TaskProcess = "0%";
-            this.J32.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.J32.Click += new System.EventHandler(this.jar37_Click);
+            this.J28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(217)))), ((int)(((byte)(207)))));
+            this.J28.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(217)))), ((int)(((byte)(207)))));
+            this.J28.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.J28.BorderRadius = 20;
+            this.J28.BorderSize = 3;
+            this.J28.ElaspedTime = "00:19";
+            this.J28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.J28.JarRack = false;
+            this.J28.Location = new System.Drawing.Point(870, 415);
+            this.J28.Name = "J28";
+            this.J28.OnlyJar = false;
+            this.J28.OnlyRack = false;
+            this.J28.ProcessName = "HE1";
+            this.J28.RackColor = System.Drawing.Color.Red;
+            this.J28.RackNumber = "J28";
+            this.J28.ReagentName = "RNJ";
+            this.J28.Size = new System.Drawing.Size(70, 140);
+            this.J28.TabIndex = 35;
+            this.J28.TaskCompletionTime = "05:31";
+            this.J28.TaskProcess = "0%";
+            this.J28.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.J28.Click += new System.EventHandler(this.jar37_Click);
             // 
             // J22
             // 
@@ -531,7 +531,7 @@ namespace HematoxinandEosin
             this.J22.OnlyRack = false;
             this.J22.ProcessName = "HE1";
             this.J22.RackColor = System.Drawing.Color.Red;
-            this.J22.RackNumber = "J28";
+            this.J22.RackNumber = "J22";
             this.J22.ReagentName = "100% Alcohol";
             this.J22.Size = new System.Drawing.Size(70, 140);
             this.J22.TabIndex = 34;
@@ -565,30 +565,30 @@ namespace HematoxinandEosin
             this.J5.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.J5.Click += new System.EventHandler(this.jar5_Click);
             // 
-            // J31
+            // J29
             // 
-            this.J31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(217)))), ((int)(((byte)(207)))));
-            this.J31.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(217)))), ((int)(((byte)(207)))));
-            this.J31.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.J31.BorderRadius = 20;
-            this.J31.BorderSize = 3;
-            this.J31.ElaspedTime = "00:19";
-            this.J31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.J31.JarRack = false;
-            this.J31.Location = new System.Drawing.Point(792, 415);
-            this.J31.Name = "J31";
-            this.J31.OnlyJar = false;
-            this.J31.OnlyRack = false;
-            this.J31.ProcessName = "HE1";
-            this.J31.RackColor = System.Drawing.Color.Red;
-            this.J31.RackNumber = "J38";
-            this.J31.ReagentName = "RNJ";
-            this.J31.Size = new System.Drawing.Size(70, 140);
-            this.J31.TabIndex = 32;
-            this.J31.TaskCompletionTime = "05:31";
-            this.J31.TaskProcess = "0%";
-            this.J31.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.J31.Click += new System.EventHandler(this.jar38_Click);
+            this.J29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(217)))), ((int)(((byte)(207)))));
+            this.J29.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(217)))), ((int)(((byte)(207)))));
+            this.J29.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.J29.BorderRadius = 20;
+            this.J29.BorderSize = 3;
+            this.J29.ElaspedTime = "00:19";
+            this.J29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.J29.JarRack = false;
+            this.J29.Location = new System.Drawing.Point(792, 415);
+            this.J29.Name = "J29";
+            this.J29.OnlyJar = false;
+            this.J29.OnlyRack = false;
+            this.J29.ProcessName = "HE1";
+            this.J29.RackColor = System.Drawing.Color.Red;
+            this.J29.RackNumber = "J29";
+            this.J29.ReagentName = "RNJ";
+            this.J29.Size = new System.Drawing.Size(70, 140);
+            this.J29.TabIndex = 32;
+            this.J29.TaskCompletionTime = "05:31";
+            this.J29.TaskProcess = "0%";
+            this.J29.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.J29.Click += new System.EventHandler(this.jar38_Click);
             // 
             // J21
             // 
@@ -606,7 +606,7 @@ namespace HematoxinandEosin
             this.J21.OnlyRack = false;
             this.J21.ProcessName = "HE1";
             this.J21.RackColor = System.Drawing.Color.Red;
-            this.J21.RackNumber = "J27";
+            this.J21.RackNumber = "J21";
             this.J21.ReagentName = "95% Alcohol";
             this.J21.Size = new System.Drawing.Size(70, 140);
             this.J21.TabIndex = 31;
@@ -656,7 +656,7 @@ namespace HematoxinandEosin
             this.J30.OnlyRack = false;
             this.J30.ProcessName = "PAP";
             this.J30.RackColor = System.Drawing.Color.Red;
-            this.J30.RackNumber = "J39";
+            this.J30.RackNumber = "J30";
             this.J30.ReagentName = "XYLENE 2\'";
             this.J30.Size = new System.Drawing.Size(70, 140);
             this.J30.TabIndex = 29;
@@ -681,7 +681,7 @@ namespace HematoxinandEosin
             this.J20.OnlyRack = false;
             this.J20.ProcessName = "HE1";
             this.J20.RackColor = System.Drawing.Color.Red;
-            this.J20.RackNumber = "J26";
+            this.J20.RackNumber = "J20";
             this.J20.ReagentName = "Eosin";
             this.J20.Size = new System.Drawing.Size(70, 140);
             this.J20.TabIndex = 28;
@@ -715,30 +715,30 @@ namespace HematoxinandEosin
             this.J7.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.J7.Click += new System.EventHandler(this.jar7_Click);
             // 
-            // J29
+            // J31
             // 
-            this.J29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(217)))), ((int)(((byte)(207)))));
-            this.J29.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(217)))), ((int)(((byte)(207)))));
-            this.J29.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.J29.BorderRadius = 20;
-            this.J29.BorderSize = 3;
-            this.J29.ElaspedTime = "00:19";
-            this.J29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.J29.JarRack = false;
-            this.J29.Location = new System.Drawing.Point(636, 415);
-            this.J29.Name = "J29";
-            this.J29.OnlyJar = false;
-            this.J29.OnlyRack = false;
-            this.J29.ProcessName = "PAP";
-            this.J29.RackColor = System.Drawing.Color.Red;
-            this.J29.RackNumber = "J40";
-            this.J29.ReagentName = "XYLENE 2\'";
-            this.J29.Size = new System.Drawing.Size(70, 140);
-            this.J29.TabIndex = 26;
-            this.J29.TaskCompletionTime = "05:31";
-            this.J29.TaskProcess = "0%";
-            this.J29.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.J29.Click += new System.EventHandler(this.jar40_Click);
+            this.J31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(217)))), ((int)(((byte)(207)))));
+            this.J31.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(217)))), ((int)(((byte)(207)))));
+            this.J31.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.J31.BorderRadius = 20;
+            this.J31.BorderSize = 3;
+            this.J31.ElaspedTime = "00:19";
+            this.J31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.J31.JarRack = false;
+            this.J31.Location = new System.Drawing.Point(636, 415);
+            this.J31.Name = "J31";
+            this.J31.OnlyJar = false;
+            this.J31.OnlyRack = false;
+            this.J31.ProcessName = "PAP";
+            this.J31.RackColor = System.Drawing.Color.Red;
+            this.J31.RackNumber = "J31";
+            this.J31.ReagentName = "XYLENE 2\'";
+            this.J31.Size = new System.Drawing.Size(70, 140);
+            this.J31.TabIndex = 26;
+            this.J31.TaskCompletionTime = "05:31";
+            this.J31.TaskProcess = "0%";
+            this.J31.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.J31.Click += new System.EventHandler(this.jar40_Click);
             // 
             // J19
             // 
@@ -756,7 +756,7 @@ namespace HematoxinandEosin
             this.J19.OnlyRack = false;
             this.J19.ProcessName = "HE1";
             this.J19.RackColor = System.Drawing.Color.Red;
-            this.J19.RackNumber = "J25";
+            this.J19.RackNumber = "J19";
             this.J19.ReagentName = "LI2CO3";
             this.J19.Size = new System.Drawing.Size(70, 140);
             this.J19.TabIndex = 25;
@@ -790,30 +790,30 @@ namespace HematoxinandEosin
             this.J8.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.J8.Click += new System.EventHandler(this.jar8_Click);
             // 
-            // J28
+            // J32
             // 
-            this.J28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(217)))), ((int)(((byte)(207)))));
-            this.J28.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(217)))), ((int)(((byte)(207)))));
-            this.J28.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.J28.BorderRadius = 20;
-            this.J28.BorderSize = 3;
-            this.J28.ElaspedTime = "00:19";
-            this.J28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.J28.JarRack = false;
-            this.J28.Location = new System.Drawing.Point(558, 415);
-            this.J28.Name = "J28";
-            this.J28.OnlyJar = false;
-            this.J28.OnlyRack = false;
-            this.J28.ProcessName = "PAP";
-            this.J28.RackColor = System.Drawing.Color.Red;
-            this.J28.RackNumber = "J41";
-            this.J28.ReagentName = "100% Ethanol 1\'";
-            this.J28.Size = new System.Drawing.Size(70, 140);
-            this.J28.TabIndex = 23;
-            this.J28.TaskCompletionTime = "05:31";
-            this.J28.TaskProcess = "0%";
-            this.J28.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.J28.Click += new System.EventHandler(this.jar41_Click);
+            this.J32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(217)))), ((int)(((byte)(207)))));
+            this.J32.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(217)))), ((int)(((byte)(207)))));
+            this.J32.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.J32.BorderRadius = 20;
+            this.J32.BorderSize = 3;
+            this.J32.ElaspedTime = "00:19";
+            this.J32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.J32.JarRack = false;
+            this.J32.Location = new System.Drawing.Point(558, 415);
+            this.J32.Name = "J32";
+            this.J32.OnlyJar = false;
+            this.J32.OnlyRack = false;
+            this.J32.ProcessName = "PAP";
+            this.J32.RackColor = System.Drawing.Color.Red;
+            this.J32.RackNumber = "J32";
+            this.J32.ReagentName = "100% Ethanol 1\'";
+            this.J32.Size = new System.Drawing.Size(70, 140);
+            this.J32.TabIndex = 23;
+            this.J32.TaskCompletionTime = "05:31";
+            this.J32.TaskProcess = "0%";
+            this.J32.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.J32.Click += new System.EventHandler(this.jar41_Click);
             // 
             // J18
             // 
@@ -831,7 +831,7 @@ namespace HematoxinandEosin
             this.J18.OnlyRack = false;
             this.J18.ProcessName = "HE1";
             this.J18.RackColor = System.Drawing.Color.Red;
-            this.J18.RackNumber = "J24";
+            this.J18.RackNumber = "J18";
             this.J18.ReagentName = "1% Acid Alcohol";
             this.J18.Size = new System.Drawing.Size(70, 140);
             this.J18.TabIndex = 22;
@@ -865,30 +865,30 @@ namespace HematoxinandEosin
             this.J9.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.J9.Click += new System.EventHandler(this.jar9_Click);
             // 
-            // J27
+            // U6
             // 
-            this.J27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(217)))), ((int)(((byte)(207)))));
-            this.J27.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(217)))), ((int)(((byte)(207)))));
-            this.J27.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.J27.BorderRadius = 20;
-            this.J27.BorderSize = 3;
-            this.J27.ElaspedTime = "00:19";
-            this.J27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.J27.JarRack = false;
-            this.J27.Location = new System.Drawing.Point(480, 415);
-            this.J27.Name = "J27";
-            this.J27.OnlyJar = false;
-            this.J27.OnlyRack = false;
-            this.J27.ProcessName = "PAP";
-            this.J27.RackColor = System.Drawing.Color.Red;
-            this.J27.RackNumber = "J42";
-            this.J27.ReagentName = "95% Ethanol";
-            this.J27.Size = new System.Drawing.Size(70, 140);
-            this.J27.TabIndex = 20;
-            this.J27.TaskCompletionTime = "05:31";
-            this.J27.TaskProcess = "0%";
-            this.J27.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.J27.Click += new System.EventHandler(this.jar42_Click);
+            this.U6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(189)))), ((int)(((byte)(202)))));
+            this.U6.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(189)))), ((int)(((byte)(202)))));
+            this.U6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.U6.BorderRadius = 20;
+            this.U6.BorderSize = 3;
+            this.U6.ElaspedTime = "";
+            this.U6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.U6.JarRack = false;
+            this.U6.Location = new System.Drawing.Point(480, 415);
+            this.U6.Name = "U6";
+            this.U6.OnlyJar = false;
+            this.U6.OnlyRack = false;
+            this.U6.ProcessName = "";
+            this.U6.RackColor = System.Drawing.Color.Red;
+            this.U6.RackNumber = "U6";
+            this.U6.ReagentName = "95% Ethanol";
+            this.U6.Size = new System.Drawing.Size(70, 140);
+            this.U6.TabIndex = 20;
+            this.U6.TaskCompletionTime = "";
+            this.U6.TaskProcess = "";
+            this.U6.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.U6.Click += new System.EventHandler(this.jar42_Click);
             // 
             // W6
             // 
@@ -906,7 +906,7 @@ namespace HematoxinandEosin
             this.W6.OnlyRack = false;
             this.W6.ProcessName = "HE1";
             this.W6.RackColor = System.Drawing.Color.Red;
-            this.W6.RackNumber = "J23";
+            this.W6.RackNumber = "W6";
             this.W6.ReagentName = "H2O";
             this.W6.Size = new System.Drawing.Size(70, 140);
             this.W6.TabIndex = 19;
@@ -931,7 +931,7 @@ namespace HematoxinandEosin
             this.W1.OnlyRack = false;
             this.W1.ProcessName = "HE1";
             this.W1.RackColor = System.Drawing.Color.PaleVioletRed;
-            this.W1.RackNumber = "J10";
+            this.W1.RackNumber = "W1";
             this.W1.ReagentName = "H2O";
             this.W1.Size = new System.Drawing.Size(70, 140);
             this.W1.TabIndex = 18;
@@ -940,30 +940,30 @@ namespace HematoxinandEosin
             this.W1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.W1.Click += new System.EventHandler(this.jar10_Click);
             // 
-            // U6
+            // U5
             // 
-            this.U6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(189)))), ((int)(((byte)(202)))));
-            this.U6.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(189)))), ((int)(((byte)(202)))));
-            this.U6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.U6.BorderRadius = 20;
-            this.U6.BorderSize = 3;
-            this.U6.ElaspedTime = "00:19";
-            this.U6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.U6.JarRack = false;
-            this.U6.Location = new System.Drawing.Point(402, 415);
-            this.U6.Name = "U6";
-            this.U6.OnlyJar = false;
-            this.U6.OnlyRack = false;
-            this.U6.ProcessName = "HE1";
-            this.U6.RackColor = System.Drawing.Color.Red;
-            this.U6.RackNumber = "J43";
-            this.U6.ReagentName = "O/P";
-            this.U6.Size = new System.Drawing.Size(70, 140);
-            this.U6.TabIndex = 17;
-            this.U6.TaskCompletionTime = "05:31";
-            this.U6.TaskProcess = "0%";
-            this.U6.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.U6.Click += new System.EventHandler(this.jar43_Click);
+            this.U5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(189)))), ((int)(((byte)(202)))));
+            this.U5.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(189)))), ((int)(((byte)(202)))));
+            this.U5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.U5.BorderRadius = 20;
+            this.U5.BorderSize = 3;
+            this.U5.ElaspedTime = "00:19";
+            this.U5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.U5.JarRack = false;
+            this.U5.Location = new System.Drawing.Point(402, 415);
+            this.U5.Name = "U5";
+            this.U5.OnlyJar = false;
+            this.U5.OnlyRack = false;
+            this.U5.ProcessName = "HE1";
+            this.U5.RackColor = System.Drawing.Color.Red;
+            this.U5.RackNumber = "U5";
+            this.U5.ReagentName = "O/P";
+            this.U5.Size = new System.Drawing.Size(70, 140);
+            this.U5.TabIndex = 17;
+            this.U5.TaskCompletionTime = "";
+            this.U5.TaskProcess = "";
+            this.U5.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.U5.Click += new System.EventHandler(this.jar43_Click);
             // 
             // W5
             // 
@@ -981,7 +981,7 @@ namespace HematoxinandEosin
             this.W5.OnlyRack = false;
             this.W5.ProcessName = "HE1";
             this.W5.RackColor = System.Drawing.Color.Red;
-            this.W5.RackNumber = "J22";
+            this.W5.RackNumber = "W5";
             this.W5.ReagentName = "H2O";
             this.W5.Size = new System.Drawing.Size(70, 140);
             this.W5.TabIndex = 16;
@@ -1006,7 +1006,7 @@ namespace HematoxinandEosin
             this.W2.OnlyRack = false;
             this.W2.ProcessName = "HE1";
             this.W2.RackColor = System.Drawing.Color.PaleVioletRed;
-            this.W2.RackNumber = "J11";
+            this.W2.RackNumber = "W2";
             this.W2.ReagentName = "H2O";
             this.W2.Size = new System.Drawing.Size(70, 140);
             this.W2.TabIndex = 15;
@@ -1015,30 +1015,30 @@ namespace HematoxinandEosin
             this.W2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.W2.Click += new System.EventHandler(this.jar11_Click);
             // 
-            // U5
+            // U4
             // 
-            this.U5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(189)))), ((int)(((byte)(202)))));
-            this.U5.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(189)))), ((int)(((byte)(202)))));
-            this.U5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.U5.BorderRadius = 20;
-            this.U5.BorderSize = 3;
-            this.U5.ElaspedTime = "00:19";
-            this.U5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.U5.JarRack = false;
-            this.U5.Location = new System.Drawing.Point(324, 415);
-            this.U5.Name = "U5";
-            this.U5.OnlyJar = false;
-            this.U5.OnlyRack = false;
-            this.U5.ProcessName = "HE1";
-            this.U5.RackColor = System.Drawing.Color.Red;
-            this.U5.RackNumber = "J44";
-            this.U5.ReagentName = "O/P";
-            this.U5.Size = new System.Drawing.Size(70, 140);
-            this.U5.TabIndex = 14;
-            this.U5.TaskCompletionTime = "05:31";
-            this.U5.TaskProcess = "0%";
-            this.U5.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.U5.Click += new System.EventHandler(this.jar44_Click);
+            this.U4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(189)))), ((int)(((byte)(202)))));
+            this.U4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(189)))), ((int)(((byte)(202)))));
+            this.U4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.U4.BorderRadius = 20;
+            this.U4.BorderSize = 3;
+            this.U4.ElaspedTime = "";
+            this.U4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.U4.JarRack = false;
+            this.U4.Location = new System.Drawing.Point(324, 415);
+            this.U4.Name = "U4";
+            this.U4.OnlyJar = false;
+            this.U4.OnlyRack = false;
+            this.U4.ProcessName = "";
+            this.U4.RackColor = System.Drawing.Color.Red;
+            this.U4.RackNumber = "U4";
+            this.U4.ReagentName = "O/P";
+            this.U4.Size = new System.Drawing.Size(70, 140);
+            this.U4.TabIndex = 14;
+            this.U4.TaskCompletionTime = "05:31";
+            this.U4.TaskProcess = "0%";
+            this.U4.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.U4.Click += new System.EventHandler(this.jar44_Click);
             // 
             // W4
             // 
@@ -1056,7 +1056,7 @@ namespace HematoxinandEosin
             this.W4.OnlyRack = false;
             this.W4.ProcessName = "HE1";
             this.W4.RackColor = System.Drawing.Color.Red;
-            this.W4.RackNumber = "J21";
+            this.W4.RackNumber = "W4";
             this.W4.ReagentName = "H2O";
             this.W4.Size = new System.Drawing.Size(70, 140);
             this.W4.TabIndex = 13;
@@ -1081,7 +1081,7 @@ namespace HematoxinandEosin
             this.W3.OnlyRack = false;
             this.W3.ProcessName = "HE1";
             this.W3.RackColor = System.Drawing.Color.PaleVioletRed;
-            this.W3.RackNumber = "J12";
+            this.W3.RackNumber = "W3";
             this.W3.ReagentName = "H2O";
             this.W3.Size = new System.Drawing.Size(70, 140);
             this.W3.TabIndex = 12;
@@ -1090,30 +1090,30 @@ namespace HematoxinandEosin
             this.W3.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.W3.Click += new System.EventHandler(this.jar12_Click);
             // 
-            // U4
+            // U3
             // 
-            this.U4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(189)))), ((int)(((byte)(202)))));
-            this.U4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(189)))), ((int)(((byte)(202)))));
-            this.U4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.U4.BorderRadius = 20;
-            this.U4.BorderSize = 3;
-            this.U4.ElaspedTime = "00:19";
-            this.U4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.U4.JarRack = false;
-            this.U4.Location = new System.Drawing.Point(246, 415);
-            this.U4.Name = "U4";
-            this.U4.OnlyJar = false;
-            this.U4.OnlyRack = false;
-            this.U4.ProcessName = "HE1";
-            this.U4.RackColor = System.Drawing.Color.Red;
-            this.U4.RackNumber = "J45";
-            this.U4.ReagentName = "O/P";
-            this.U4.Size = new System.Drawing.Size(70, 140);
-            this.U4.TabIndex = 11;
-            this.U4.TaskCompletionTime = "05:31";
-            this.U4.TaskProcess = "0%";
-            this.U4.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.U4.Click += new System.EventHandler(this.jar45_Click);
+            this.U3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(189)))), ((int)(((byte)(202)))));
+            this.U3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(189)))), ((int)(((byte)(202)))));
+            this.U3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.U3.BorderRadius = 20;
+            this.U3.BorderSize = 3;
+            this.U3.ElaspedTime = "00:19";
+            this.U3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.U3.JarRack = false;
+            this.U3.Location = new System.Drawing.Point(246, 415);
+            this.U3.Name = "U3";
+            this.U3.OnlyJar = false;
+            this.U3.OnlyRack = false;
+            this.U3.ProcessName = "";
+            this.U3.RackColor = System.Drawing.Color.Red;
+            this.U3.RackNumber = "U3";
+            this.U3.ReagentName = "O/P";
+            this.U3.Size = new System.Drawing.Size(70, 140);
+            this.U3.TabIndex = 11;
+            this.U3.TaskCompletionTime = "05:31";
+            this.U3.TaskProcess = "";
+            this.U3.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.U3.Click += new System.EventHandler(this.jar45_Click);
             // 
             // J17
             // 
@@ -1131,7 +1131,7 @@ namespace HematoxinandEosin
             this.J17.OnlyRack = false;
             this.J17.ProcessName = "PAP";
             this.J17.RackColor = System.Drawing.Color.Red;
-            this.J17.RackNumber = "J20";
+            this.J17.RackNumber = "J17";
             this.J17.ReagentName = "95% Ethanol";
             this.J17.Size = new System.Drawing.Size(70, 140);
             this.J17.TabIndex = 10;
@@ -1156,7 +1156,7 @@ namespace HematoxinandEosin
             this.J10.OnlyRack = false;
             this.J10.ProcessName = "PAP";
             this.J10.RackColor = System.Drawing.Color.PaleVioletRed;
-            this.J10.RackNumber = "J13";
+            this.J10.RackNumber = "J10";
             this.J10.ReagentName = "Hematoxylin8\'";
             this.J10.Size = new System.Drawing.Size(70, 140);
             this.J10.TabIndex = 9;
@@ -1165,30 +1165,30 @@ namespace HematoxinandEosin
             this.J10.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.J10.Click += new System.EventHandler(this.jar13_Click);
             // 
-            // U3
+            // U2
             // 
-            this.U3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(189)))), ((int)(((byte)(202)))));
-            this.U3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(189)))), ((int)(((byte)(202)))));
-            this.U3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.U3.BorderRadius = 20;
-            this.U3.BorderSize = 3;
-            this.U3.ElaspedTime = "00:19";
-            this.U3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.U3.JarRack = false;
-            this.U3.Location = new System.Drawing.Point(168, 415);
-            this.U3.Name = "U3";
-            this.U3.OnlyJar = false;
-            this.U3.OnlyRack = false;
-            this.U3.ProcessName = "HE1";
-            this.U3.RackColor = System.Drawing.Color.Red;
-            this.U3.RackNumber = "J46";
-            this.U3.ReagentName = "O/P";
-            this.U3.Size = new System.Drawing.Size(70, 140);
-            this.U3.TabIndex = 8;
-            this.U3.TaskCompletionTime = "05:31";
-            this.U3.TaskProcess = "0%";
-            this.U3.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.U3.Click += new System.EventHandler(this.jar46_Click);
+            this.U2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(189)))), ((int)(((byte)(202)))));
+            this.U2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(189)))), ((int)(((byte)(202)))));
+            this.U2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.U2.BorderRadius = 20;
+            this.U2.BorderSize = 3;
+            this.U2.ElaspedTime = "00:19";
+            this.U2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.U2.JarRack = false;
+            this.U2.Location = new System.Drawing.Point(168, 415);
+            this.U2.Name = "U2";
+            this.U2.OnlyJar = false;
+            this.U2.OnlyRack = false;
+            this.U2.ProcessName = "";
+            this.U2.RackColor = System.Drawing.Color.Red;
+            this.U2.RackNumber = "U2";
+            this.U2.ReagentName = "O/P";
+            this.U2.Size = new System.Drawing.Size(70, 140);
+            this.U2.TabIndex = 8;
+            this.U2.TaskCompletionTime = "05:31";
+            this.U2.TaskProcess = "";
+            this.U2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.U2.Click += new System.EventHandler(this.jar46_Click);
             // 
             // J16
             // 
@@ -1206,7 +1206,7 @@ namespace HematoxinandEosin
             this.J16.OnlyRack = false;
             this.J16.ProcessName = "PAP";
             this.J16.RackColor = System.Drawing.Color.Red;
-            this.J16.RackNumber = "J19";
+            this.J16.RackNumber = "J16";
             this.J16.ReagentName = "EA-65 Stain";
             this.J16.Size = new System.Drawing.Size(70, 140);
             this.J16.TabIndex = 7;
@@ -1231,7 +1231,7 @@ namespace HematoxinandEosin
             this.J11.OnlyRack = false;
             this.J11.ProcessName = "PAP";
             this.J11.RackColor = System.Drawing.Color.PaleVioletRed;
-            this.J11.RackNumber = "J14";
+            this.J11.RackNumber = "J11";
             this.J11.ReagentName = "Acid Alcohol 1% 30\"";
             this.J11.Size = new System.Drawing.Size(70, 140);
             this.J11.TabIndex = 6;
@@ -1240,30 +1240,30 @@ namespace HematoxinandEosin
             this.J11.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.J11.Click += new System.EventHandler(this.jar14_Click);
             // 
-            // U2
+            // U1
             // 
-            this.U2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(189)))), ((int)(((byte)(202)))));
-            this.U2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(189)))), ((int)(((byte)(202)))));
-            this.U2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.U2.BorderRadius = 20;
-            this.U2.BorderSize = 3;
-            this.U2.ElaspedTime = "00:19";
-            this.U2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.U2.JarRack = false;
-            this.U2.Location = new System.Drawing.Point(90, 415);
-            this.U2.Name = "U2";
-            this.U2.OnlyJar = false;
-            this.U2.OnlyRack = false;
-            this.U2.ProcessName = "HE1";
-            this.U2.RackColor = System.Drawing.Color.Red;
-            this.U2.RackNumber = "J47";
-            this.U2.ReagentName = "O/P";
-            this.U2.Size = new System.Drawing.Size(70, 140);
-            this.U2.TabIndex = 5;
-            this.U2.TaskCompletionTime = "05:31";
-            this.U2.TaskProcess = "0%";
-            this.U2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.U2.Click += new System.EventHandler(this.jar47_Click);
+            this.U1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(189)))), ((int)(((byte)(202)))));
+            this.U1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(189)))), ((int)(((byte)(202)))));
+            this.U1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.U1.BorderRadius = 20;
+            this.U1.BorderSize = 3;
+            this.U1.ElaspedTime = "00:19";
+            this.U1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.U1.JarRack = false;
+            this.U1.Location = new System.Drawing.Point(90, 415);
+            this.U1.Name = "U1";
+            this.U1.OnlyJar = false;
+            this.U1.OnlyRack = false;
+            this.U1.ProcessName = "";
+            this.U1.RackColor = System.Drawing.Color.Red;
+            this.U1.RackNumber = "U1";
+            this.U1.ReagentName = "O/P";
+            this.U1.Size = new System.Drawing.Size(70, 140);
+            this.U1.TabIndex = 5;
+            this.U1.TaskCompletionTime = "05:31";
+            this.U1.TaskProcess = "";
+            this.U1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.U1.Click += new System.EventHandler(this.jar47_Click);
             // 
             // J15
             // 
@@ -1281,7 +1281,7 @@ namespace HematoxinandEosin
             this.J15.OnlyRack = false;
             this.J15.ProcessName = "PAP";
             this.J15.RackColor = System.Drawing.Color.Red;
-            this.J15.RackNumber = "J18";
+            this.J15.RackNumber = "J15";
             this.J15.ReagentName = "Ethanol95%";
             this.J15.Size = new System.Drawing.Size(70, 140);
             this.J15.TabIndex = 4;
@@ -1306,7 +1306,7 @@ namespace HematoxinandEosin
             this.J12.OnlyRack = false;
             this.J12.ProcessName = "PAP";
             this.J12.RackColor = System.Drawing.Color.PaleVioletRed;
-            this.J12.RackNumber = "J15";
+            this.J12.RackNumber = "J12";
             this.J12.ReagentName = "LI2CO3";
             this.J12.Size = new System.Drawing.Size(70, 140);
             this.J12.TabIndex = 3;
@@ -1315,30 +1315,30 @@ namespace HematoxinandEosin
             this.J12.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.J12.Click += new System.EventHandler(this.jar15_Click);
             // 
-            // U1
+            // J33
             // 
-            this.U1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(189)))), ((int)(((byte)(202)))));
-            this.U1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(189)))), ((int)(((byte)(202)))));
-            this.U1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.U1.BorderRadius = 20;
-            this.U1.BorderSize = 3;
-            this.U1.ElaspedTime = "00:19";
-            this.U1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.U1.JarRack = false;
-            this.U1.Location = new System.Drawing.Point(12, 415);
-            this.U1.Name = "U1";
-            this.U1.OnlyJar = false;
-            this.U1.OnlyRack = false;
-            this.U1.ProcessName = "HE1";
-            this.U1.RackColor = System.Drawing.Color.Red;
-            this.U1.RackNumber = "J48";
-            this.U1.ReagentName = "O/P";
-            this.U1.Size = new System.Drawing.Size(70, 140);
-            this.U1.TabIndex = 2;
-            this.U1.TaskCompletionTime = "05:31";
-            this.U1.TaskProcess = "0%";
-            this.U1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.U1.Click += new System.EventHandler(this.jar48_Click);
+            this.J33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(217)))), ((int)(((byte)(207)))));
+            this.J33.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(217)))), ((int)(((byte)(207)))));
+            this.J33.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.J33.BorderRadius = 20;
+            this.J33.BorderSize = 3;
+            this.J33.ElaspedTime = "00:19";
+            this.J33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.J33.JarRack = false;
+            this.J33.Location = new System.Drawing.Point(12, 415);
+            this.J33.Name = "J33";
+            this.J33.OnlyJar = false;
+            this.J33.OnlyRack = false;
+            this.J33.ProcessName = "HE1";
+            this.J33.RackColor = System.Drawing.Color.Red;
+            this.J33.RackNumber = "J33";
+            this.J33.ReagentName = "O/P";
+            this.J33.Size = new System.Drawing.Size(70, 140);
+            this.J33.TabIndex = 2;
+            this.J33.TaskCompletionTime = "05:31";
+            this.J33.TaskProcess = "0%";
+            this.J33.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.J33.Click += new System.EventHandler(this.jar48_Click);
             // 
             // J14
             // 
@@ -1356,7 +1356,7 @@ namespace HematoxinandEosin
             this.J14.OnlyRack = false;
             this.J14.ProcessName = "PAP";
             this.J14.RackColor = System.Drawing.Color.Red;
-            this.J14.RackNumber = "J17";
+            this.J14.RackNumber = "J14";
             this.J14.ReagentName = "OG_6 Stain";
             this.J14.Size = new System.Drawing.Size(70, 140);
             this.J14.TabIndex = 1;
@@ -1382,7 +1382,7 @@ namespace HematoxinandEosin
             this.J13.OnlyRack = false;
             this.J13.ProcessName = "PAP";
             this.J13.RackColor = System.Drawing.Color.PaleVioletRed;
-            this.J13.RackNumber = "J16";
+            this.J13.RackNumber = "J13";
             this.J13.ReagentName = "Ethanol95%";
             this.J13.Size = new System.Drawing.Size(70, 140);
             this.J13.TabIndex = 0;
@@ -1428,43 +1428,43 @@ namespace HematoxinandEosin
             this.panel_Jarscalibration.Controls.Add(this.L1);
             this.panel_Jarscalibration.Controls.Add(this.J24);
             this.panel_Jarscalibration.Controls.Add(this.J3);
-            this.panel_Jarscalibration.Controls.Add(this.J33);
+            this.panel_Jarscalibration.Controls.Add(this.J27);
             this.panel_Jarscalibration.Controls.Add(this.J23);
             this.panel_Jarscalibration.Controls.Add(this.J4);
-            this.panel_Jarscalibration.Controls.Add(this.J32);
+            this.panel_Jarscalibration.Controls.Add(this.J28);
             this.panel_Jarscalibration.Controls.Add(this.J22);
             this.panel_Jarscalibration.Controls.Add(this.J5);
-            this.panel_Jarscalibration.Controls.Add(this.J31);
+            this.panel_Jarscalibration.Controls.Add(this.J29);
             this.panel_Jarscalibration.Controls.Add(this.J21);
             this.panel_Jarscalibration.Controls.Add(this.J6);
             this.panel_Jarscalibration.Controls.Add(this.J30);
             this.panel_Jarscalibration.Controls.Add(this.J20);
             this.panel_Jarscalibration.Controls.Add(this.J7);
-            this.panel_Jarscalibration.Controls.Add(this.J29);
+            this.panel_Jarscalibration.Controls.Add(this.J31);
             this.panel_Jarscalibration.Controls.Add(this.J19);
             this.panel_Jarscalibration.Controls.Add(this.J8);
-            this.panel_Jarscalibration.Controls.Add(this.J28);
+            this.panel_Jarscalibration.Controls.Add(this.J32);
             this.panel_Jarscalibration.Controls.Add(this.J18);
             this.panel_Jarscalibration.Controls.Add(this.J9);
-            this.panel_Jarscalibration.Controls.Add(this.J27);
+            this.panel_Jarscalibration.Controls.Add(this.U6);
             this.panel_Jarscalibration.Controls.Add(this.W6);
             this.panel_Jarscalibration.Controls.Add(this.W1);
-            this.panel_Jarscalibration.Controls.Add(this.U6);
+            this.panel_Jarscalibration.Controls.Add(this.U5);
             this.panel_Jarscalibration.Controls.Add(this.W5);
             this.panel_Jarscalibration.Controls.Add(this.W2);
-            this.panel_Jarscalibration.Controls.Add(this.U5);
+            this.panel_Jarscalibration.Controls.Add(this.U4);
             this.panel_Jarscalibration.Controls.Add(this.W4);
             this.panel_Jarscalibration.Controls.Add(this.W3);
-            this.panel_Jarscalibration.Controls.Add(this.U4);
+            this.panel_Jarscalibration.Controls.Add(this.U3);
             this.panel_Jarscalibration.Controls.Add(this.J17);
             this.panel_Jarscalibration.Controls.Add(this.J10);
-            this.panel_Jarscalibration.Controls.Add(this.U3);
+            this.panel_Jarscalibration.Controls.Add(this.U2);
             this.panel_Jarscalibration.Controls.Add(this.J16);
             this.panel_Jarscalibration.Controls.Add(this.J11);
-            this.panel_Jarscalibration.Controls.Add(this.U2);
+            this.panel_Jarscalibration.Controls.Add(this.U1);
             this.panel_Jarscalibration.Controls.Add(this.J15);
             this.panel_Jarscalibration.Controls.Add(this.J12);
-            this.panel_Jarscalibration.Controls.Add(this.U1);
+            this.panel_Jarscalibration.Controls.Add(this.J33);
             this.panel_Jarscalibration.Controls.Add(this.J14);
             this.panel_Jarscalibration.Controls.Add(this.J13);
             this.panel_Jarscalibration.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1601,7 +1601,7 @@ namespace HematoxinandEosin
             // 
             this.pnl_Jars.Controls.Add(this.btn_Home);
             this.pnl_Jars.Controls.Add(this.jar_Large);
-            this.pnl_Jars.Location = new System.Drawing.Point(310, 100);
+            this.pnl_Jars.Location = new System.Drawing.Point(67, 90);
             this.pnl_Jars.Name = "pnl_Jars";
             this.pnl_Jars.Size = new System.Drawing.Size(202, 419);
             this.pnl_Jars.TabIndex = 79;
@@ -1870,43 +1870,43 @@ namespace HematoxinandEosin
         private WindowsFormsControlLibrary1.RoundEdgePanel L1;
         private WindowsFormsControlLibrary1.RoundEdgePanel J24;
         private WindowsFormsControlLibrary1.RoundEdgePanel J3;
-        private WindowsFormsControlLibrary1.RoundEdgePanel J33;
+        private WindowsFormsControlLibrary1.RoundEdgePanel J27;
         private WindowsFormsControlLibrary1.RoundEdgePanel J23;
         private WindowsFormsControlLibrary1.RoundEdgePanel J4;
-        private WindowsFormsControlLibrary1.RoundEdgePanel J32;
+        private WindowsFormsControlLibrary1.RoundEdgePanel J28;
         private WindowsFormsControlLibrary1.RoundEdgePanel J22;
         private WindowsFormsControlLibrary1.RoundEdgePanel J5;
-        private WindowsFormsControlLibrary1.RoundEdgePanel J31;
+        private WindowsFormsControlLibrary1.RoundEdgePanel J29;
         private WindowsFormsControlLibrary1.RoundEdgePanel J21;
         private WindowsFormsControlLibrary1.RoundEdgePanel J6;
         private WindowsFormsControlLibrary1.RoundEdgePanel J30;
         private WindowsFormsControlLibrary1.RoundEdgePanel J20;
         private WindowsFormsControlLibrary1.RoundEdgePanel J7;
-        private WindowsFormsControlLibrary1.RoundEdgePanel J29;
+        private WindowsFormsControlLibrary1.RoundEdgePanel J31;
         private WindowsFormsControlLibrary1.RoundEdgePanel J19;
         private WindowsFormsControlLibrary1.RoundEdgePanel J8;
-        private WindowsFormsControlLibrary1.RoundEdgePanel J28;
+        private WindowsFormsControlLibrary1.RoundEdgePanel J32;
         private WindowsFormsControlLibrary1.RoundEdgePanel J18;
         private WindowsFormsControlLibrary1.RoundEdgePanel J9;
-        private WindowsFormsControlLibrary1.RoundEdgePanel J27;
+        private WindowsFormsControlLibrary1.RoundEdgePanel U6;
         private WindowsFormsControlLibrary1.RoundEdgePanel W6;
         private WindowsFormsControlLibrary1.RoundEdgePanel W1;
-        private WindowsFormsControlLibrary1.RoundEdgePanel U6;
+        private WindowsFormsControlLibrary1.RoundEdgePanel U5;
         private WindowsFormsControlLibrary1.RoundEdgePanel W5;
         private WindowsFormsControlLibrary1.RoundEdgePanel W2;
-        private WindowsFormsControlLibrary1.RoundEdgePanel U5;
+        private WindowsFormsControlLibrary1.RoundEdgePanel U4;
         private WindowsFormsControlLibrary1.RoundEdgePanel W4;
         private WindowsFormsControlLibrary1.RoundEdgePanel W3;
-        private WindowsFormsControlLibrary1.RoundEdgePanel U4;
+        private WindowsFormsControlLibrary1.RoundEdgePanel U3;
         private WindowsFormsControlLibrary1.RoundEdgePanel J17;
         private WindowsFormsControlLibrary1.RoundEdgePanel J10;
-        private WindowsFormsControlLibrary1.RoundEdgePanel U3;
+        private WindowsFormsControlLibrary1.RoundEdgePanel U2;
         private WindowsFormsControlLibrary1.RoundEdgePanel J16;
         private WindowsFormsControlLibrary1.RoundEdgePanel J11;
-        private WindowsFormsControlLibrary1.RoundEdgePanel U2;
+        private WindowsFormsControlLibrary1.RoundEdgePanel U1;
         private WindowsFormsControlLibrary1.RoundEdgePanel J15;
         private WindowsFormsControlLibrary1.RoundEdgePanel J12;
-        private WindowsFormsControlLibrary1.RoundEdgePanel U1;
+        private WindowsFormsControlLibrary1.RoundEdgePanel J33;
         private WindowsFormsControlLibrary1.RoundEdgePanel J14;
         private WindowsFormsControlLibrary1.RoundEdgePanel J13;
         private System.Windows.Forms.Panel panel_Jarscalibration;

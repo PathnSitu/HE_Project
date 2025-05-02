@@ -138,6 +138,7 @@ namespace HematoxinandEosin
             this.tmr_next_rack = new System.Windows.Forms.Timer(this.components);
             this.tmr_opencmd_toload_Nxtrack = new System.Windows.Forms.Timer(this.components);
             this.tmr_next_Lar_lvl_sense = new System.Windows.Forms.Timer(this.components);
+            this.tmr_home = new System.Windows.Forms.Timer(this.components);
             this.panel_Jarscalibration.SuspendLayout();
             this.pnl_Jars.SuspendLayout();
             this.SuspendLayout();
@@ -161,7 +162,7 @@ namespace HematoxinandEosin
             this.cmbProtocoltype.Items.AddRange(new object[] {
             "Single Protocol",
             "Multi Protocol"});
-            this.cmbProtocoltype.Location = new System.Drawing.Point(1211, 529);
+            this.cmbProtocoltype.Location = new System.Drawing.Point(1211, 534);
             this.cmbProtocoltype.Name = "cmbProtocoltype";
             this.cmbProtocoltype.Size = new System.Drawing.Size(121, 21);
             this.cmbProtocoltype.TabIndex = 61;
@@ -171,7 +172,7 @@ namespace HematoxinandEosin
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(1124, 530);
+            this.label6.Location = new System.Drawing.Point(1124, 535);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(85, 15);
             this.label6.TabIndex = 60;
@@ -187,7 +188,7 @@ namespace HematoxinandEosin
             this.label5.Location = new System.Drawing.Point(0, 0);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(1350, 30);
+            this.label5.Size = new System.Drawing.Size(1349, 30);
             this.label5.TabIndex = 59;
             this.label5.Text = "Protocol\'s Staining Tests";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -266,7 +267,7 @@ namespace HematoxinandEosin
             this.panel_Jarscalibration.Controls.Add(this.J13);
             this.panel_Jarscalibration.Location = new System.Drawing.Point(0, 0);
             this.panel_Jarscalibration.Name = "panel_Jarscalibration";
-            this.panel_Jarscalibration.Size = new System.Drawing.Size(1350, 661);
+            this.panel_Jarscalibration.Size = new System.Drawing.Size(1349, 570);
             this.panel_Jarscalibration.TabIndex = 6;
             // 
             // cbo_protocol
@@ -295,7 +296,7 @@ namespace HematoxinandEosin
             this.lbl_NxtRack.BackColor = System.Drawing.Color.DarkGreen;
             this.lbl_NxtRack.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_NxtRack.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_NxtRack.Location = new System.Drawing.Point(12, 531);
+            this.lbl_NxtRack.Location = new System.Drawing.Point(12, 523);
             this.lbl_NxtRack.Name = "lbl_NxtRack";
             this.lbl_NxtRack.Size = new System.Drawing.Size(64, 17);
             this.lbl_NxtRack.TabIndex = 105;
@@ -308,7 +309,7 @@ namespace HematoxinandEosin
             this.lbl_disp2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.lbl_disp2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_disp2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_disp2.Location = new System.Drawing.Point(12, 550);
+            this.lbl_disp2.Location = new System.Drawing.Point(12, 542);
             this.lbl_disp2.Name = "lbl_disp2";
             this.lbl_disp2.Size = new System.Drawing.Size(60, 17);
             this.lbl_disp2.TabIndex = 104;
@@ -354,6 +355,7 @@ namespace HematoxinandEosin
             this.btn_power.TabIndex = 83;
             this.btn_power.UseVisualStyleBackColor = true;
             this.btn_power.Visible = false;
+            this.btn_power.Click += new System.EventHandler(this.btn_power_Click);
             // 
             // btn_Continue
             // 
@@ -391,7 +393,7 @@ namespace HematoxinandEosin
             // 
             this.pnl_Jars.Controls.Add(this.btn_Home);
             this.pnl_Jars.Controls.Add(this.jar_Large);
-            this.pnl_Jars.Location = new System.Drawing.Point(339, 89);
+            this.pnl_Jars.Location = new System.Drawing.Point(913, 92);
             this.pnl_Jars.Name = "pnl_Jars";
             this.pnl_Jars.Size = new System.Drawing.Size(203, 420);
             this.pnl_Jars.TabIndex = 78;
@@ -453,7 +455,7 @@ namespace HematoxinandEosin
             this.H3.ElaspedTime = "00:19";
             this.H3.ForeColor = System.Drawing.Color.White;
             this.H3.JarRack = false;
-            this.H3.Location = new System.Drawing.Point(1262, 378);
+            this.H3.Location = new System.Drawing.Point(1262, 372);
             this.H3.Name = "H3";
             this.H3.OnlyJar = false;
             this.H3.OnlyRack = false;
@@ -481,7 +483,7 @@ namespace HematoxinandEosin
             this.H2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.H2.ForeColor = System.Drawing.Color.White;
             this.H2.JarRack = false;
-            this.H2.Location = new System.Drawing.Point(1262, 229);
+            this.H2.Location = new System.Drawing.Point(1262, 226);
             this.H2.Name = "H2";
             this.H2.OnlyJar = false;
             this.H2.OnlyRack = false;
@@ -508,7 +510,7 @@ namespace HematoxinandEosin
             this.H1.ElaspedTime = "";
             this.H1.ForeColor = System.Drawing.Color.White;
             this.H1.JarRack = false;
-            this.H1.Location = new System.Drawing.Point(1262, 81);
+            this.H1.Location = new System.Drawing.Point(1262, 80);
             this.H1.Name = "H1";
             this.H1.OnlyJar = false;
             this.H1.OnlyRack = false;
@@ -535,7 +537,7 @@ namespace HematoxinandEosin
             this.L3.ElaspedTime = "";
             this.L3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.L3.JarRack = false;
-            this.L3.Location = new System.Drawing.Point(1184, 378);
+            this.L3.Location = new System.Drawing.Point(1184, 372);
             this.L3.Name = "L3";
             this.L3.OnlyJar = false;
             this.L3.OnlyRack = false;
@@ -562,7 +564,7 @@ namespace HematoxinandEosin
             this.J26.ElaspedTime = "";
             this.J26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.J26.JarRack = false;
-            this.J26.Location = new System.Drawing.Point(1184, 229);
+            this.J26.Location = new System.Drawing.Point(1184, 226);
             this.J26.Name = "J26";
             this.J26.OnlyJar = false;
             this.J26.OnlyRack = false;
@@ -589,7 +591,7 @@ namespace HematoxinandEosin
             this.J1.ElaspedTime = "";
             this.J1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.J1.JarRack = false;
-            this.J1.Location = new System.Drawing.Point(1184, 81);
+            this.J1.Location = new System.Drawing.Point(1184, 80);
             this.J1.Name = "J1";
             this.J1.OnlyJar = false;
             this.J1.OnlyRack = false;
@@ -616,7 +618,7 @@ namespace HematoxinandEosin
             this.L2.ElaspedTime = "";
             this.L2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.L2.JarRack = false;
-            this.L2.Location = new System.Drawing.Point(1106, 378);
+            this.L2.Location = new System.Drawing.Point(1106, 372);
             this.L2.Name = "L2";
             this.L2.OnlyJar = false;
             this.L2.OnlyRack = false;
@@ -643,7 +645,7 @@ namespace HematoxinandEosin
             this.J25.ElaspedTime = "";
             this.J25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.J25.JarRack = false;
-            this.J25.Location = new System.Drawing.Point(1106, 229);
+            this.J25.Location = new System.Drawing.Point(1106, 225);
             this.J25.Name = "J25";
             this.J25.OnlyJar = false;
             this.J25.OnlyRack = false;
@@ -670,7 +672,7 @@ namespace HematoxinandEosin
             this.J2.ElaspedTime = "";
             this.J2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.J2.JarRack = false;
-            this.J2.Location = new System.Drawing.Point(1106, 81);
+            this.J2.Location = new System.Drawing.Point(1106, 80);
             this.J2.Name = "J2";
             this.J2.OnlyJar = false;
             this.J2.OnlyRack = false;
@@ -697,7 +699,7 @@ namespace HematoxinandEosin
             this.L1.ElaspedTime = "";
             this.L1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.L1.JarRack = false;
-            this.L1.Location = new System.Drawing.Point(1028, 378);
+            this.L1.Location = new System.Drawing.Point(1028, 372);
             this.L1.Name = "L1";
             this.L1.OnlyJar = false;
             this.L1.OnlyRack = false;
@@ -724,7 +726,7 @@ namespace HematoxinandEosin
             this.J24.ElaspedTime = "";
             this.J24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.J24.JarRack = false;
-            this.J24.Location = new System.Drawing.Point(1028, 229);
+            this.J24.Location = new System.Drawing.Point(1028, 225);
             this.J24.Name = "J24";
             this.J24.OnlyJar = false;
             this.J24.OnlyRack = false;
@@ -751,7 +753,7 @@ namespace HematoxinandEosin
             this.J3.ElaspedTime = "";
             this.J3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.J3.JarRack = false;
-            this.J3.Location = new System.Drawing.Point(1028, 81);
+            this.J3.Location = new System.Drawing.Point(1028, 80);
             this.J3.Name = "J3";
             this.J3.OnlyJar = false;
             this.J3.OnlyRack = false;
@@ -778,7 +780,7 @@ namespace HematoxinandEosin
             this.J27.ElaspedTime = "";
             this.J27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.J27.JarRack = false;
-            this.J27.Location = new System.Drawing.Point(950, 378);
+            this.J27.Location = new System.Drawing.Point(950, 372);
             this.J27.Name = "J27";
             this.J27.OnlyJar = false;
             this.J27.OnlyRack = false;
@@ -805,7 +807,7 @@ namespace HematoxinandEosin
             this.J23.ElaspedTime = "";
             this.J23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.J23.JarRack = false;
-            this.J23.Location = new System.Drawing.Point(952, 229);
+            this.J23.Location = new System.Drawing.Point(950, 225);
             this.J23.Name = "J23";
             this.J23.OnlyJar = false;
             this.J23.OnlyRack = false;
@@ -832,7 +834,7 @@ namespace HematoxinandEosin
             this.J4.ElaspedTime = "";
             this.J4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.J4.JarRack = false;
-            this.J4.Location = new System.Drawing.Point(950, 81);
+            this.J4.Location = new System.Drawing.Point(950, 80);
             this.J4.Name = "J4";
             this.J4.OnlyJar = false;
             this.J4.OnlyRack = false;
@@ -859,7 +861,7 @@ namespace HematoxinandEosin
             this.J28.ElaspedTime = "";
             this.J28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.J28.JarRack = false;
-            this.J28.Location = new System.Drawing.Point(872, 378);
+            this.J28.Location = new System.Drawing.Point(872, 372);
             this.J28.Name = "J28";
             this.J28.OnlyJar = false;
             this.J28.OnlyRack = false;
@@ -886,7 +888,7 @@ namespace HematoxinandEosin
             this.J22.ElaspedTime = "";
             this.J22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.J22.JarRack = false;
-            this.J22.Location = new System.Drawing.Point(872, 229);
+            this.J22.Location = new System.Drawing.Point(872, 225);
             this.J22.Name = "J22";
             this.J22.OnlyJar = false;
             this.J22.OnlyRack = false;
@@ -940,7 +942,7 @@ namespace HematoxinandEosin
             this.J29.ElaspedTime = "";
             this.J29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.J29.JarRack = false;
-            this.J29.Location = new System.Drawing.Point(794, 378);
+            this.J29.Location = new System.Drawing.Point(794, 372);
             this.J29.Name = "J29";
             this.J29.OnlyJar = false;
             this.J29.OnlyRack = false;
@@ -967,7 +969,7 @@ namespace HematoxinandEosin
             this.J21.ElaspedTime = "";
             this.J21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.J21.JarRack = false;
-            this.J21.Location = new System.Drawing.Point(794, 229);
+            this.J21.Location = new System.Drawing.Point(794, 225);
             this.J21.Name = "J21";
             this.J21.OnlyJar = false;
             this.J21.OnlyRack = false;
@@ -1021,7 +1023,7 @@ namespace HematoxinandEosin
             this.J30.ElaspedTime = "";
             this.J30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.J30.JarRack = false;
-            this.J30.Location = new System.Drawing.Point(716, 378);
+            this.J30.Location = new System.Drawing.Point(716, 372);
             this.J30.Name = "J30";
             this.J30.OnlyJar = false;
             this.J30.OnlyRack = false;
@@ -1048,7 +1050,7 @@ namespace HematoxinandEosin
             this.J20.ElaspedTime = "";
             this.J20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.J20.JarRack = false;
-            this.J20.Location = new System.Drawing.Point(716, 229);
+            this.J20.Location = new System.Drawing.Point(716, 225);
             this.J20.Name = "J20";
             this.J20.OnlyJar = false;
             this.J20.OnlyRack = false;
@@ -1075,7 +1077,7 @@ namespace HematoxinandEosin
             this.J7.ElaspedTime = "";
             this.J7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.J7.JarRack = false;
-            this.J7.Location = new System.Drawing.Point(716, 81);
+            this.J7.Location = new System.Drawing.Point(716, 80);
             this.J7.Name = "J7";
             this.J7.OnlyJar = false;
             this.J7.OnlyRack = false;
@@ -1102,7 +1104,7 @@ namespace HematoxinandEosin
             this.J31.ElaspedTime = "";
             this.J31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.J31.JarRack = false;
-            this.J31.Location = new System.Drawing.Point(638, 378);
+            this.J31.Location = new System.Drawing.Point(638, 372);
             this.J31.Name = "J31";
             this.J31.OnlyJar = false;
             this.J31.OnlyRack = false;
@@ -1129,7 +1131,7 @@ namespace HematoxinandEosin
             this.J19.ElaspedTime = "";
             this.J19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.J19.JarRack = false;
-            this.J19.Location = new System.Drawing.Point(638, 229);
+            this.J19.Location = new System.Drawing.Point(638, 226);
             this.J19.Name = "J19";
             this.J19.OnlyJar = false;
             this.J19.OnlyRack = false;
@@ -1156,7 +1158,7 @@ namespace HematoxinandEosin
             this.J8.ElaspedTime = "";
             this.J8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.J8.JarRack = false;
-            this.J8.Location = new System.Drawing.Point(638, 81);
+            this.J8.Location = new System.Drawing.Point(638, 80);
             this.J8.Name = "J8";
             this.J8.OnlyJar = false;
             this.J8.OnlyRack = false;
@@ -1183,7 +1185,7 @@ namespace HematoxinandEosin
             this.J32.ElaspedTime = "";
             this.J32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.J32.JarRack = false;
-            this.J32.Location = new System.Drawing.Point(560, 378);
+            this.J32.Location = new System.Drawing.Point(560, 372);
             this.J32.Name = "J32";
             this.J32.OnlyJar = false;
             this.J32.OnlyRack = false;
@@ -1210,7 +1212,7 @@ namespace HematoxinandEosin
             this.J18.ElaspedTime = "";
             this.J18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.J18.JarRack = false;
-            this.J18.Location = new System.Drawing.Point(560, 229);
+            this.J18.Location = new System.Drawing.Point(560, 226);
             this.J18.Name = "J18";
             this.J18.OnlyJar = false;
             this.J18.OnlyRack = false;
@@ -1237,7 +1239,7 @@ namespace HematoxinandEosin
             this.J9.ElaspedTime = "";
             this.J9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.J9.JarRack = false;
-            this.J9.Location = new System.Drawing.Point(560, 81);
+            this.J9.Location = new System.Drawing.Point(560, 80);
             this.J9.Name = "J9";
             this.J9.OnlyJar = false;
             this.J9.OnlyRack = false;
@@ -1264,7 +1266,7 @@ namespace HematoxinandEosin
             this.U1.ElaspedTime = "";
             this.U1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.U1.JarRack = false;
-            this.U1.Location = new System.Drawing.Point(90, 378);
+            this.U1.Location = new System.Drawing.Point(90, 372);
             this.U1.Name = "U1";
             this.U1.OnlyJar = false;
             this.U1.OnlyRack = false;
@@ -1291,7 +1293,7 @@ namespace HematoxinandEosin
             this.W6.ElaspedTime = "";
             this.W6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.W6.JarRack = false;
-            this.W6.Location = new System.Drawing.Point(482, 229);
+            this.W6.Location = new System.Drawing.Point(482, 226);
             this.W6.Name = "W6";
             this.W6.OnlyJar = false;
             this.W6.OnlyRack = false;
@@ -1345,7 +1347,7 @@ namespace HematoxinandEosin
             this.U6.ElaspedTime = "";
             this.U6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.U6.JarRack = false;
-            this.U6.Location = new System.Drawing.Point(482, 378);
+            this.U6.Location = new System.Drawing.Point(482, 372);
             this.U6.Name = "U6";
             this.U6.OnlyJar = false;
             this.U6.OnlyRack = false;
@@ -1372,7 +1374,7 @@ namespace HematoxinandEosin
             this.W5.ElaspedTime = "";
             this.W5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.W5.JarRack = false;
-            this.W5.Location = new System.Drawing.Point(404, 229);
+            this.W5.Location = new System.Drawing.Point(404, 226);
             this.W5.Name = "W5";
             this.W5.OnlyJar = false;
             this.W5.OnlyRack = false;
@@ -1399,7 +1401,7 @@ namespace HematoxinandEosin
             this.W2.ElaspedTime = "";
             this.W2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.W2.JarRack = false;
-            this.W2.Location = new System.Drawing.Point(404, 81);
+            this.W2.Location = new System.Drawing.Point(404, 80);
             this.W2.Name = "W2";
             this.W2.OnlyJar = false;
             this.W2.OnlyRack = false;
@@ -1426,7 +1428,7 @@ namespace HematoxinandEosin
             this.U5.ElaspedTime = "";
             this.U5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.U5.JarRack = false;
-            this.U5.Location = new System.Drawing.Point(404, 378);
+            this.U5.Location = new System.Drawing.Point(404, 372);
             this.U5.Name = "U5";
             this.U5.OnlyJar = false;
             this.U5.OnlyRack = false;
@@ -1453,7 +1455,7 @@ namespace HematoxinandEosin
             this.W4.ElaspedTime = "";
             this.W4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.W4.JarRack = false;
-            this.W4.Location = new System.Drawing.Point(326, 229);
+            this.W4.Location = new System.Drawing.Point(326, 226);
             this.W4.Name = "W4";
             this.W4.OnlyJar = false;
             this.W4.OnlyRack = false;
@@ -1480,7 +1482,7 @@ namespace HematoxinandEosin
             this.W3.ElaspedTime = "";
             this.W3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.W3.JarRack = false;
-            this.W3.Location = new System.Drawing.Point(326, 81);
+            this.W3.Location = new System.Drawing.Point(326, 80);
             this.W3.Name = "W3";
             this.W3.OnlyJar = false;
             this.W3.OnlyRack = false;
@@ -1507,7 +1509,7 @@ namespace HematoxinandEosin
             this.U4.ElaspedTime = "";
             this.U4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.U4.JarRack = false;
-            this.U4.Location = new System.Drawing.Point(326, 378);
+            this.U4.Location = new System.Drawing.Point(326, 372);
             this.U4.Name = "U4";
             this.U4.OnlyJar = false;
             this.U4.OnlyRack = false;
@@ -1534,7 +1536,7 @@ namespace HematoxinandEosin
             this.J17.ElaspedTime = "";
             this.J17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.J17.JarRack = false;
-            this.J17.Location = new System.Drawing.Point(248, 229);
+            this.J17.Location = new System.Drawing.Point(248, 226);
             this.J17.Name = "J17";
             this.J17.OnlyJar = false;
             this.J17.OnlyRack = false;
@@ -1588,7 +1590,7 @@ namespace HematoxinandEosin
             this.U3.ElaspedTime = "";
             this.U3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.U3.JarRack = false;
-            this.U3.Location = new System.Drawing.Point(248, 378);
+            this.U3.Location = new System.Drawing.Point(248, 372);
             this.U3.Name = "U3";
             this.U3.OnlyJar = false;
             this.U3.OnlyRack = false;
@@ -1615,7 +1617,7 @@ namespace HematoxinandEosin
             this.J16.ElaspedTime = "00:19";
             this.J16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.J16.JarRack = false;
-            this.J16.Location = new System.Drawing.Point(170, 229);
+            this.J16.Location = new System.Drawing.Point(170, 226);
             this.J16.Name = "J16";
             this.J16.OnlyJar = false;
             this.J16.OnlyRack = false;
@@ -1642,7 +1644,7 @@ namespace HematoxinandEosin
             this.J11.ElaspedTime = "";
             this.J11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.J11.JarRack = false;
-            this.J11.Location = new System.Drawing.Point(170, 81);
+            this.J11.Location = new System.Drawing.Point(170, 80);
             this.J11.Name = "J11";
             this.J11.OnlyJar = false;
             this.J11.OnlyRack = false;
@@ -1669,7 +1671,7 @@ namespace HematoxinandEosin
             this.U2.ElaspedTime = "";
             this.U2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.U2.JarRack = false;
-            this.U2.Location = new System.Drawing.Point(170, 378);
+            this.U2.Location = new System.Drawing.Point(170, 372);
             this.U2.Name = "U2";
             this.U2.OnlyJar = false;
             this.U2.OnlyRack = false;
@@ -1696,7 +1698,7 @@ namespace HematoxinandEosin
             this.J15.ElaspedTime = "";
             this.J15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.J15.JarRack = false;
-            this.J15.Location = new System.Drawing.Point(92, 229);
+            this.J15.Location = new System.Drawing.Point(92, 226);
             this.J15.Name = "J15";
             this.J15.OnlyJar = false;
             this.J15.OnlyRack = false;
@@ -1723,7 +1725,7 @@ namespace HematoxinandEosin
             this.J12.ElaspedTime = "";
             this.J12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.J12.JarRack = false;
-            this.J12.Location = new System.Drawing.Point(92, 81);
+            this.J12.Location = new System.Drawing.Point(92, 80);
             this.J12.Name = "J12";
             this.J12.OnlyJar = false;
             this.J12.OnlyRack = false;
@@ -1750,7 +1752,7 @@ namespace HematoxinandEosin
             this.J33.ElaspedTime = "";
             this.J33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.J33.JarRack = false;
-            this.J33.Location = new System.Drawing.Point(14, 378);
+            this.J33.Location = new System.Drawing.Point(14, 372);
             this.J33.Name = "J33";
             this.J33.OnlyJar = false;
             this.J33.OnlyRack = false;
@@ -1777,7 +1779,7 @@ namespace HematoxinandEosin
             this.J14.ElaspedTime = "";
             this.J14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.J14.JarRack = false;
-            this.J14.Location = new System.Drawing.Point(14, 229);
+            this.J14.Location = new System.Drawing.Point(14, 226);
             this.J14.Name = "J14";
             this.J14.OnlyJar = false;
             this.J14.OnlyRack = false;
@@ -1997,12 +1999,17 @@ namespace HematoxinandEosin
             this.tmr_next_Lar_lvl_sense.Interval = 500;
             this.tmr_next_Lar_lvl_sense.Tick += new System.EventHandler(this.tmr_next_Lar_lvl_sense_Tick);
             // 
+            // tmr_home
+            // 
+            this.tmr_home.Interval = 500;
+            this.tmr_home.Tick += new System.EventHandler(this.tmr_home_Tick);
+            // 
             // Form_RunProto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1351, 571);
+            this.ClientSize = new System.Drawing.Size(1351, 563);
             this.Controls.Add(this.panel_Jarscalibration);
             this.MaximizeBox = false;
             this.Name = "Form_RunProto";
@@ -2126,5 +2133,6 @@ namespace HematoxinandEosin
         private System.Windows.Forms.Timer tmr_next_rack;
         private System.Windows.Forms.Timer tmr_opencmd_toload_Nxtrack;
         private System.Windows.Forms.Timer tmr_next_Lar_lvl_sense;
+        private System.Windows.Forms.Timer tmr_home;
     }
 }

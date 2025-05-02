@@ -474,7 +474,7 @@ namespace HematoxinandEosin
             this.pnl_Status.BackColor = System.Drawing.Color.White;
             this.pnl_Status.Controls.Add(this.lbl_disp);
             this.pnl_Status.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnl_Status.Location = new System.Drawing.Point(0, 671);
+            this.pnl_Status.Location = new System.Drawing.Point(0, 666);
             this.pnl_Status.Name = "pnl_Status";
             this.pnl_Status.Size = new System.Drawing.Size(1350, 30);
             this.pnl_Status.TabIndex = 20;
@@ -495,7 +495,7 @@ namespace HematoxinandEosin
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 101);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1350, 570);
+            this.panel3.Size = new System.Drawing.Size(1350, 565);
             this.panel3.TabIndex = 25;
             // 
             // label3
@@ -569,7 +569,7 @@ namespace HematoxinandEosin
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1350, 701);
+            this.ClientSize = new System.Drawing.Size(1350, 696);
             this.ControlBox = false;
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.pnl_Status);

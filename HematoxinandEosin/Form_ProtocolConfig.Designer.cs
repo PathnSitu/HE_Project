@@ -67,6 +67,9 @@ namespace HematoxinandEosin
             this.label15 = new System.Windows.Forms.Label();
             this.chkHeat = new System.Windows.Forms.CheckBox();
             this.panel_protocol = new System.Windows.Forms.Panel();
+            this.lbl_CloneName = new System.Windows.Forms.Label();
+            this.txt_CloneName = new System.Windows.Forms.TextBox();
+            this.chk_Clone = new System.Windows.Forms.CheckBox();
             this.label10 = new System.Windows.Forms.Label();
             this.btn_loadDetails = new System.Windows.Forms.Button();
             this.txt_describe = new System.Windows.Forms.TextBox();
@@ -83,7 +86,9 @@ namespace HematoxinandEosin
             this.protoName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.JarName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RegName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ShortName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IncubTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Priority = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.Noofdips = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_ExportPdf = new System.Windows.Forms.Button();
             this.btn_Print = new System.Windows.Forms.Button();
@@ -94,6 +99,7 @@ namespace HematoxinandEosin
             this.button23 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
             this.chk_vk = new System.Windows.Forms.CheckBox();
+            this.txt_protocolName = new System.Windows.Forms.TextBox();
             this.panel_Buttons.SuspendLayout();
             this.panel_reagent.SuspendLayout();
             this.pnl_Wsh.SuspendLayout();
@@ -270,9 +276,9 @@ namespace HematoxinandEosin
             this.chk_WashRequired.Location = new System.Drawing.Point(38, 70);
             this.chk_WashRequired.Margin = new System.Windows.Forms.Padding(4);
             this.chk_WashRequired.Name = "chk_WashRequired";
-            this.chk_WashRequired.Size = new System.Drawing.Size(119, 21);
+            this.chk_WashRequired.Size = new System.Drawing.Size(107, 21);
             this.chk_WashRequired.TabIndex = 41;
-            this.chk_WashRequired.Text = "Wash Required";
+            this.chk_WashRequired.Text = "Priority High";
             this.chk_WashRequired.UseVisualStyleBackColor = true;
             this.chk_WashRequired.CheckedChanged += new System.EventHandler(this.chk_WashRequired_CheckedChanged);
             // 
@@ -292,7 +298,7 @@ namespace HematoxinandEosin
             this.panel_reagent.Controls.Add(this.label8);
             this.panel_reagent.Controls.Add(this.cmbJarName);
             this.panel_reagent.Controls.Add(this.label11);
-            this.panel_reagent.Location = new System.Drawing.Point(0, 228);
+            this.panel_reagent.Location = new System.Drawing.Point(0, 261);
             this.panel_reagent.Name = "panel_reagent";
             this.panel_reagent.Size = new System.Drawing.Size(674, 105);
             this.panel_reagent.TabIndex = 56;
@@ -361,6 +367,7 @@ namespace HematoxinandEosin
             this.dt_incubationtime.ShowUpDown = true;
             this.dt_incubationtime.Size = new System.Drawing.Size(60, 23);
             this.dt_incubationtime.TabIndex = 36;
+            this.dt_incubationtime.Value = new System.DateTime(2025, 4, 24, 0, 0, 0, 0);
             // 
             // label12
             // 
@@ -506,6 +513,7 @@ namespace HematoxinandEosin
             this.dt_Heatingtime.ShowUpDown = true;
             this.dt_Heatingtime.Size = new System.Drawing.Size(60, 23);
             this.dt_Heatingtime.TabIndex = 34;
+            this.dt_Heatingtime.Value = new System.DateTime(2025, 4, 24, 0, 0, 0, 0);
             // 
             // label15
             // 
@@ -532,6 +540,9 @@ namespace HematoxinandEosin
             // 
             // panel_protocol
             // 
+            this.panel_protocol.Controls.Add(this.lbl_CloneName);
+            this.panel_protocol.Controls.Add(this.txt_CloneName);
+            this.panel_protocol.Controls.Add(this.chk_Clone);
             this.panel_protocol.Controls.Add(this.label10);
             this.panel_protocol.Controls.Add(this.btn_loadDetails);
             this.panel_protocol.Controls.Add(this.chkHeat);
@@ -549,14 +560,47 @@ namespace HematoxinandEosin
             this.panel_protocol.Controls.Add(this.cmbNofJars);
             this.panel_protocol.Location = new System.Drawing.Point(0, 31);
             this.panel_protocol.Name = "panel_protocol";
-            this.panel_protocol.Size = new System.Drawing.Size(674, 196);
+            this.panel_protocol.Size = new System.Drawing.Size(674, 229);
             this.panel_protocol.TabIndex = 54;
+            // 
+            // lbl_CloneName
+            // 
+            this.lbl_CloneName.AutoSize = true;
+            this.lbl_CloneName.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_CloneName.Location = new System.Drawing.Point(130, 142);
+            this.lbl_CloneName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_CloneName.Name = "lbl_CloneName";
+            this.lbl_CloneName.Size = new System.Drawing.Size(136, 20);
+            this.lbl_CloneName.TabIndex = 65;
+            this.lbl_CloneName.Text = "Enter Clone Name :";
+            // 
+            // txt_CloneName
+            // 
+            this.txt_CloneName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_CloneName.Location = new System.Drawing.Point(270, 143);
+            this.txt_CloneName.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_CloneName.Name = "txt_CloneName";
+            this.txt_CloneName.Size = new System.Drawing.Size(392, 23);
+            this.txt_CloneName.TabIndex = 66;
+            // 
+            // chk_Clone
+            // 
+            this.chk_Clone.AutoSize = true;
+            this.chk_Clone.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chk_Clone.Location = new System.Drawing.Point(35, 142);
+            this.chk_Clone.Margin = new System.Windows.Forms.Padding(4);
+            this.chk_Clone.Name = "chk_Clone";
+            this.chk_Clone.Size = new System.Drawing.Size(85, 21);
+            this.chk_Clone.TabIndex = 64;
+            this.chk_Clone.Text = "To Clone ";
+            this.chk_Clone.UseVisualStyleBackColor = true;
+            this.chk_Clone.CheckedChanged += new System.EventHandler(this.chk_Clone_CheckedChanged);
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(31, 147);
+            this.label10.Location = new System.Drawing.Point(31, 182);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(92, 20);
             this.label10.TabIndex = 63;
@@ -566,7 +610,7 @@ namespace HematoxinandEosin
             // 
             this.btn_loadDetails.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_loadDetails.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_loadDetails.Location = new System.Drawing.Point(557, 138);
+            this.btn_loadDetails.Location = new System.Drawing.Point(557, 173);
             this.btn_loadDetails.Name = "btn_loadDetails";
             this.btn_loadDetails.Size = new System.Drawing.Size(104, 48);
             this.btn_loadDetails.TabIndex = 60;
@@ -577,7 +621,7 @@ namespace HematoxinandEosin
             // txt_describe
             // 
             this.txt_describe.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_describe.Location = new System.Drawing.Point(129, 138);
+            this.txt_describe.Location = new System.Drawing.Point(129, 173);
             this.txt_describe.Multiline = true;
             this.txt_describe.Name = "txt_describe";
             this.txt_describe.Size = new System.Drawing.Size(405, 50);
@@ -598,7 +642,7 @@ namespace HematoxinandEosin
             // 
             this.cmbProtocol.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbProtocol.FormattingEnabled = true;
-            this.cmbProtocol.Location = new System.Drawing.Point(251, 9);
+            this.cmbProtocol.Location = new System.Drawing.Point(251, 8);
             this.cmbProtocol.Margin = new System.Windows.Forms.Padding(4);
             this.cmbProtocol.Name = "cmbProtocol";
             this.cmbProtocol.Size = new System.Drawing.Size(410, 23);
@@ -677,13 +721,16 @@ namespace HematoxinandEosin
             this.protoName,
             this.JarName,
             this.RegName,
+            this.ShortName,
             this.IncubTime,
+            this.Priority,
             this.Noofdips});
-            this.dgv_Detail.Location = new System.Drawing.Point(35, 335);
+            this.dgv_Detail.Location = new System.Drawing.Point(4, 367);
             this.dgv_Detail.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_Detail.Name = "dgv_Detail";
-            this.dgv_Detail.Size = new System.Drawing.Size(639, 157);
+            this.dgv_Detail.Size = new System.Drawing.Size(670, 136);
             this.dgv_Detail.TabIndex = 52;
+            this.dgv_Detail.DoubleClick += new System.EventHandler(this.dgv_Detail_DoubleClick);
             // 
             // sln
             // 
@@ -705,10 +752,22 @@ namespace HematoxinandEosin
             this.RegName.HeaderText = "Reagent/ Temperature";
             this.RegName.Name = "RegName";
             // 
+            // ShortName
+            // 
+            this.ShortName.HeaderText = "Short Name";
+            this.ShortName.Name = "ShortName";
+            // 
             // IncubTime
             // 
             this.IncubTime.HeaderText = "Incubation Time";
             this.IncubTime.Name = "IncubTime";
+            // 
+            // Priority
+            // 
+            this.Priority.HeaderText = "Priority";
+            this.Priority.Name = "Priority";
+            this.Priority.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Priority.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // Noofdips
             // 
@@ -856,7 +915,7 @@ namespace HematoxinandEosin
             this.chk_vk.AutoSize = true;
             this.chk_vk.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chk_vk.ForeColor = System.Drawing.Color.Black;
-            this.chk_vk.Location = new System.Drawing.Point(38, 500);
+            this.chk_vk.Location = new System.Drawing.Point(38, 507);
             this.chk_vk.Name = "chk_vk";
             this.chk_vk.Size = new System.Drawing.Size(134, 20);
             this.chk_vk.TabIndex = 66;
@@ -864,12 +923,23 @@ namespace HematoxinandEosin
             this.chk_vk.UseVisualStyleBackColor = true;
             this.chk_vk.CheckedChanged += new System.EventHandler(this.chk_vk_CheckedChanged);
             // 
+            // txt_protocolName
+            // 
+            this.txt_protocolName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_protocolName.Location = new System.Drawing.Point(1009, 322);
+            this.txt_protocolName.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_protocolName.Name = "txt_protocolName";
+            this.txt_protocolName.Size = new System.Drawing.Size(162, 23);
+            this.txt_protocolName.TabIndex = 67;
+            this.txt_protocolName.Visible = false;
+            // 
             // Form_ProtocolConfig
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1268, 531);
+            this.Controls.Add(this.txt_protocolName);
             this.Controls.Add(this.chk_vk);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
@@ -949,12 +1019,6 @@ namespace HematoxinandEosin
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ComboBox cmbNofDips;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sln;
-        private System.Windows.Forms.DataGridViewTextBoxColumn protoName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn JarName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn RegName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IncubTime;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Noofdips;
         private System.Windows.Forms.Button btn_loadDetails;
         private System.Windows.Forms.Panel pnl_Wsh;
         private System.Windows.Forms.DateTimePicker genDate;
@@ -969,5 +1033,17 @@ namespace HematoxinandEosin
         private System.Windows.Forms.Button button23;
         private System.Windows.Forms.Button button24;
         private System.Windows.Forms.CheckBox chk_vk;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sln;
+        private System.Windows.Forms.DataGridViewTextBoxColumn protoName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn JarName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RegName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ShortName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IncubTime;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Priority;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Noofdips;
+        private System.Windows.Forms.TextBox txt_protocolName;
+        private System.Windows.Forms.Label lbl_CloneName;
+        private System.Windows.Forms.TextBox txt_CloneName;
+        private System.Windows.Forms.CheckBox chk_Clone;
     }
 }

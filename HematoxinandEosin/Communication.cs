@@ -74,6 +74,7 @@ namespace HematoxinandEosin
         int device_id = 0;
         public static int devid = 1;
         public static int RA_No = 0;  //Previously 1
+        public static int Movement_RA_No = 0;  //Previously 1
         //Data related flags
         public static Boolean pGotByteFlag, pCancelFlag, datastartreceivingflag = true;
         public static byte[] Device_Data = new byte[8];
@@ -105,6 +106,7 @@ namespace HematoxinandEosin
             if (string.IsNullOrEmpty(cmdData))
             {
                 cmdstr = SequnceNo.ToString() + cmd_sep + func_code.ToString();
+                //Communication.RA_No = 0;
             }
             else
             {
@@ -123,6 +125,7 @@ namespace HematoxinandEosin
                 else
                 {
                     cmdstr = SequnceNo.ToString() + cmd_sep + func_code.ToString() + cmd_sep + cmdData;
+                    //Communication.RA_No = 0;
                 }
             }
 
@@ -359,10 +362,46 @@ namespace HematoxinandEosin
             }
             catch (Exception d3)
             {
-
+                RequiredVariables.writeerrorlogfile("While Command / Response to file", "In function writeCommunicationCommands of communication module");
             }           
         }
+        public static void writejarposdetails(string JarName, string xpos, string ypos, string z1pos, string z2pos, string rano)
+        {
+            try
+            {
+                string source = Application.StartupPath + "\\Configuration", filename = "JarsPos.cfg";
+                //Creating directory                
+                if (Directory.Exists(source))
+                {
 
+                }
+                else
+                {
+                    Directory.CreateDirectory(source);
+                }
+                source = source + "\\" + filename;
+                System.IO.FileStream fs = default(System.IO.FileStream);
+                if (File.Exists(source))
+                {
+                    fs = new System.IO.FileStream(source, System.IO.FileMode.Append, System.IO.FileAccess.Write);
+                }
+                else
+                {
+                    fs = new System.IO.FileStream(source, System.IO.FileMode.Create, System.IO.FileAccess.Write);
+                }
+                System.IO.StreamWriter sw = new System.IO.StreamWriter(fs);
+                string strdata = "";
+                //string , string , string , string , string , int rano
+                strdata = JarName + "," + xpos + "," + ypos + "," + z1pos + "," + z2pos + "," + rano;
+                sw.WriteLine(strdata);
+                sw.Flush();
+                sw.Close();
+            }
+            catch (Exception d3)
+            {
+                RequiredVariables.writeerrorlogfile("While updating Jar position details to file", "In function writejarpositiondetails of communication module");
+            }
+        }
         /* New function written on 18-12-2023 1127 to update the protorundata to datafile */
         public static void writeprotorundata(string protoname, string prefby, string prefon, string jname, string rname, string rackno, string arrv, string month, string status, float tempval, int runid)
         {

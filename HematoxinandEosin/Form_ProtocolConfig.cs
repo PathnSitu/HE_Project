@@ -115,6 +115,11 @@ namespace HematoxinandEosin
                 #region Available Protocols
                 load_Protocols();
                 #endregion
+
+                txt_CloneName.Visible = false;lbl_CloneName.Visible = false;
+                btnAdd.Enabled = true;
+                btnModify.Enabled = false;
+                btnDelete.Enabled = false;
             }
             catch (Exception d3)
             {
@@ -160,103 +165,225 @@ namespace HematoxinandEosin
                 MessageBox.Show(d3.ToString(), "Loading Jar's value details to combobox from database", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
-
-        private void button2_Click(object sender, EventArgs e)//btn_Load
+        private void loadnewprotodetails()
         {
-            //panel_Heat.Visible = true;
-            if (cmbProtocol.Text != "" && txtProtoShortName.Text != "" && cmbNofJars.Text != "")
+            try
             {
-              //  chkHeat.Visible = true;
+                //panel_Heat.Visible = true;
+                if (cmbProtocol.Text != "" && txtProtoShortName.Text != "" && cmbNofJars.Text != "")
+                {
+                    //  chkHeat.Visible = true;
 
-                panel_reagent.Visible = true;
+                    panel_reagent.Visible = true;
 
-            if (rdnFactory.Checked == true)
-            {
-                prototype = "FP";
+                    if (rdnFactory.Checked == true)
+                    {
+                        prototype = "FP";
+                    }
+                    else if (rdnUser.Checked == true)
+                    {
+                        prototype = "UP";
+                    }
+                    sqlstr = "Select * from ProtocolMaster where ProtocolName = '" + cmbProtocol.Text + "' and ProtocolType = '" + prototype + "'";
+                    sda = new SqlDataAdapter(sqlstr, con);
+                    table = new DataTable();
+                    sda.Fill(table);
+                    if (table.Rows.Count > 0)
+                    {
+                        MessageBox.Show("Protocol Already Exist with this Name....\r\n Please Enter Another Name", RequiredVariables.Msgtext, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        cmbProtocol.Text = "";
+                        cmbProtocol.Focus();
+                        return;
+                    }
+                    tot_Jars = 0;
+                    tot_Jars = Convert.ToInt32(cmbNofJars.Text);
+
+                    Jarinx = 0;
+                    sqlstr = "";
+                    sqlstr = "Insert into ProtocolMaster(ProtocolName,ShortName,ProtocolType,CreatedOn,CreatedBy,Agitation,Description) values('";
+                    sqlstr = sqlstr + cmbProtocol.Text + "','" + txtProtoShortName.Text + "','";
+                    prototype = "";
+                    if (rdnFactory.Checked == true)
+                    {
+                        sqlstr = sqlstr + "FP',";
+                        prototype = "Factory";
+                    }
+                    else if (rdnUser.Checked == true)
+                    {
+                        sqlstr = sqlstr + "UP',";
+                        prototype = "User";
+                    }
+                    sqlstr = sqlstr + "'" + genDate.Value.ToString().Substring(0, 10) + "','" + RequiredVariables.UserName + "',";
+                    if (chkAgitation.Checked == true)
+                    {
+                        sqlstr = sqlstr + "'1',";
+                    }
+                    else
+                    {
+                        sqlstr = sqlstr + "'0',";
+                    }
+                    sqlstr = sqlstr + "'" + txt_describe.Text + "')";
+                    cmd = new SqlCommand(sqlstr, con);
+                    if (con.State == ConnectionState.Closed)
+                        con.Open();
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Protocol Master details Updated to database sucessfully", RequiredVariables.Msgtext, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    btn_loadDetails.Enabled = false;
+                }
+                if (cmbProtocol.Text == "" || txtProtoShortName.Text == "" || cmbNofJars.Text == "")
+                {
+                    MessageBox.Show("Please enter the details", RequiredVariables.Msgtext, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    cmbProtocol.Focus();
+                }
+                //Adding details to Grid
+                if (chkHeat.Checked == true)
+                {
+                    DateTime d1;
+                    d1 = System.DateTime.Now.AddSeconds(0);
+                    d1 = System.DateTime.Now.AddMinutes(0);
+                    //dt_Washtime.Enabled = true;
+                    dt_Heatingtime.Value = d1;
+                    Slno = 1;
+                    dgv_Detail.Rows.Clear();
+                    dgv_Detail.Rows.Add();
+                    dgv_Detail.Rows[dgv_Detail.Rows.Count - 2].Cells["sln"].Value = Slno.ToString();
+                    dgv_Detail.Rows[dgv_Detail.Rows.Count - 2].Cells["protoName"].Value = cmbProtocol.Text;
+                    dgv_Detail.Rows[dgv_Detail.Rows.Count - 2].Cells["JarName"].Value = "Heater";
+                    dgv_Detail.Rows[dgv_Detail.Rows.Count - 2].Cells["RegName"].Value = cmbTempature.Text;
+                    dgv_Detail.Rows[dgv_Detail.Rows.Count - 2].Cells["ShortName"].Value = "HTR";
+                    dgv_Detail.Rows[dgv_Detail.Rows.Count - 2].Cells["IncubTime"].Value = dt_Heatingtime.Value.ToString().Substring(14, 5);
+                    dgv_Detail.Rows[dgv_Detail.Rows.Count - 2].Cells["Noofdips"].Value = "0";
+                    dgv_Detail.Rows[dgv_Detail.Rows.Count - 2].Cells["Priority"].Value = "0";
+                    Slno++;
+                }
+                else
+                {
+                    dgv_Detail.Rows.Clear();
+                    Slno = 1;
+                }
             }
-            else if (rdnUser.Checked == true)
+            catch(Exception d3)
+            {
+                MessageBox.Show(d3.ToString()+ "  While adding new procol details details ");
+            }
+        }
+        private void cloneprotodetails()
+        {
+            try
             {
                 prototype = "UP";
-            }
-            sqlstr = "Select * from ProtocolMaster where ProtocolName = '" + cmbProtocol.Text + "' and ProtocolType = '" + prototype + "'";
-            sda = new SqlDataAdapter(sqlstr, con);
-            table = new DataTable();
-            sda.Fill(table);
-            if (table.Rows.Count > 0)
-            {
-                MessageBox.Show("Protocol Already Exist with this Name....\r\n Please Enter Another Name", RequiredVariables.Msgtext, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                cmbProtocol.Text = "";
-                cmbProtocol.Focus();
-                return;
-            }
-            tot_Jars = 0;
-            tot_Jars = Convert.ToInt32(cmbNofJars.Text);
+                //panel_Heat.Visible = true;
+                if (txt_CloneName.Text != "")
+                {
+                    sqlstr = "";
+                    sqlstr = "Select * from ProtocolMaster where ProtocolName = '" + txt_CloneName.Text + "' and ProtocolType = '" + prototype + "'";
+                    sda = new SqlDataAdapter(sqlstr, con);
+                    table = new DataTable();
+                    sda.Fill(table);
+                    if (table.Rows.Count > 0)
+                    {
+                        MessageBox.Show("Protocol Already Exist with this Name....\r\n Please Enter Another Name", RequiredVariables.Msgtext, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        txt_CloneName.Text = "";
+                        txt_CloneName.Focus();
+                        return;
+                    }                   
 
+                    Jarinx = 0;
+                    sqlstr = "";
+                    sqlstr = "Insert into ProtocolMaster(ProtocolName,ShortName,ProtocolType,CreatedOn,CreatedBy,Agitation,Description) values('";
+                    sqlstr = sqlstr + txt_CloneName.Text + "','" + txtProtoShortName.Text + "','";
+                    prototype = "";                    
+                    sqlstr = sqlstr + "UP',";
+                    prototype = "User";
+                    
+                    sqlstr = sqlstr + "'" + DateTime.Now.ToString().Substring(0, 10) + "','" + RequiredVariables.UserName + "',";
+                    if (chkAgitation.Checked == true)
+                    {
+                        sqlstr = sqlstr + "'1',";
+                    }
+                    else
+                    {
+                        sqlstr = sqlstr + "'0',";
+                    }
+                    sqlstr = sqlstr + "'" + txt_describe.Text + "')";
+                    cmd = new SqlCommand(sqlstr, con);
+                    if (con.State == ConnectionState.Closed)
+                        con.Open();
+                    cmd.ExecuteNonQuery();
+                    ////MessageBox.Show("Protocol Master details Updated to database sucessfully", RequiredVariables.Msgtext, MessageBoxButtons.OK, MessageBoxIcon.Information);                    
 
-            Jarinx = 0;
-            sqlstr = "";
-            sqlstr = "Insert into ProtocolMaster(ProtocolName,ShortName,ProtocolType,CreatedOn,CreatedBy,Agitation,Description) values('";
-            sqlstr = sqlstr + cmbProtocol.Text + "','" + txtProtoShortName.Text + "','";
-            prototype = "";
-            if (rdnFactory.Checked == true)
-            {
-                sqlstr = sqlstr + "FP',";
-                prototype = "Factory";
+                    if (prototype == "Factory")
+                        tabName = "FactoryProtocolDetails";
+                    else if (prototype == "User")
+                        tabName = "UserProtocolDetails";
+                    
+                    for (int i = 0; i < dgv_Detail.Rows.Count - 1; i++)
+                    {
+                        sqlstr = "";
+                        //sqlstr = "Insert into " + tabName + "(Slno,ProtocolName,JarNo,Temp_Reagent,WashRequired,IncubationTime,No_of_Dips,WashTime) Values(";
+                        //sqlstr = "Insert into " + tabName + "(Slno,ProtocolName,JarNo,Temp_Reagent,IncubationTime,No_of_Dips) Values(";  //ShortName,Priority
+                        sqlstr = "Insert into " + tabName + "(Slno,ProtocolName,JarNo,Temp_Reagent,ShortName,IncubationTime,Priority,No_of_Dips) Values(";  //
+                        sqlstr = sqlstr + Convert.ToInt32(dgv_Detail.Rows[i].Cells["sln"].Value.ToString()) + ",'";
+                        sqlstr = sqlstr + (txt_CloneName.Text) + "','";
+                        sqlstr = sqlstr + (dgv_Detail.Rows[i].Cells["JarName"].Value.ToString()) + "','";
+                        sqlstr = sqlstr + (dgv_Detail.Rows[i].Cells["RegName"].Value.ToString()) + "','";
+                        sqlstr = sqlstr + (dgv_Detail.Rows[i].Cells["ShortName"].Value.ToString()) + "','";
+                        sqlstr = sqlstr + (dgv_Detail.Rows[i].Cells["IncubTime"].Value.ToString()) + "',";
+                        if (Convert.ToBoolean(dgv_Detail.Rows[i].Cells["Priority"].Value) == true)
+                        {
+                            sqlstr = sqlstr + "1,";
+                        }
+                        else if (Convert.ToBoolean(dgv_Detail.Rows[i].Cells["Priority"].Value) == false)
+                        {
+                            sqlstr = sqlstr + "0,";
+                        }
+
+                        sqlstr = sqlstr + Convert.ToInt32(dgv_Detail.Rows[i].Cells["Noofdips"].Value.ToString()) + ")";
+                        ////sqlstr = sqlstr + ",'" + (dgv_protodetails.Rows[i].Cells["Washtime"].Value.ToString()) + "')";                         
+                        if (con.State == ConnectionState.Closed)
+                            con.Open();
+                        cmd = new SqlCommand(sqlstr, con);
+                        cmd.ExecuteNonQuery();
+                    }
+                    MessageBox.Show("Cloned Protocol details Sucessfully Saved to database", RequiredVariables.Msgtext, MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    cmd.Dispose();
+                    con.Close();
+                    Jarinx = 1;
+                }
+                else if (txt_CloneName.Text == "" )
+                {
+                    MessageBox.Show("Please enter the clone details", RequiredVariables.Msgtext, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txt_CloneName.Focus();
+                    return;
+                }
             }
-            else if (rdnUser.Checked == true)
+            catch (Exception d3)
             {
-                sqlstr = sqlstr + "UP',";
-                prototype = "User";
+                MessageBox.Show(d3.ToString() + "  While adding new procol details details ");
             }
-            sqlstr = sqlstr + "'" + genDate.Value.ToString().Substring(0, 10) + "','" + RequiredVariables.UserName + "',";
-            if (chkAgitation.Checked == true)
-            {
-                sqlstr = sqlstr + "'1',";
-            }
-            else
-            {
-                sqlstr = sqlstr + "'0',";
-            }
-                sqlstr = sqlstr + "'" + txt_describe.Text+"')";
-                cmd = new SqlCommand(sqlstr, con);
-            if (con.State == ConnectionState.Closed)
-                con.Open();
-            cmd.ExecuteNonQuery();
-            MessageBox.Show("Protocol Master details Updated to database sucessfully", RequiredVariables.Msgtext, MessageBoxButtons.OK, MessageBoxIcon.Information);
-                btn_loadDetails.Enabled = false;
         }
-            if(cmbProtocol.Text==""|| txtProtoShortName.Text=="" || cmbNofJars.Text=="" ) {
-                MessageBox.Show("Please enter the details", RequiredVariables.Msgtext, MessageBoxButtons.OK, MessageBoxIcon.Information);
-                cmbProtocol.Focus();
-            }
-            //Adding details to Grid
-            if (chkHeat.Checked == true)
+        private void button2_Click(object sender, EventArgs e)//btn_Load
+        {
+            if(btn_loadDetails.Text== "Load Details")
             {
-                DateTime d1;
-                d1 = System.DateTime.Now.AddSeconds(0);
-                d1 = System.DateTime.Now.AddMinutes(0);
-                //dt_Washtime.Enabled = true;
-                dt_Heatingtime.Value = d1;
-                Slno = 1;
-                dgv_Detail.Rows.Clear();
-                dgv_Detail.Rows.Add();
-                dgv_Detail.Rows[dgv_Detail.Rows.Count - 2].Cells["sln"].Value = Slno.ToString();
-                dgv_Detail.Rows[dgv_Detail.Rows.Count -2].Cells["protoName"].Value = cmbProtocol.Text;
-                dgv_Detail.Rows[dgv_Detail.Rows.Count - 2].Cells["JarName"].Value = "Heater";
-                dgv_Detail.Rows[dgv_Detail.Rows.Count - 2].Cells["RegName"].Value = cmbTempature.Text;
-                dgv_Detail.Rows[dgv_Detail.Rows.Count - 2].Cells["IncubTime"].Value = dt_Heatingtime.Value.ToString().Substring(14, 5);
-                ////dgv_protodetails.Rows[dgv_protodetails.Rows.Count - 2].Cells["Washreq"].Value = false;
-                ////dgv_protodetails.Rows[dgv_protodetails.Rows.Count - 2].Cells["WashTime"].Value = "00:00";
-                dgv_Detail.Rows[dgv_Detail.Rows.Count - 2].Cells["Noofdips"].Value = "0";
-                Slno++;
+                loadnewprotodetails();
             }
-            else
+            else if (btn_loadDetails.Text == "Clone Details")
             {
-                dgv_Detail.Rows.Clear();
+                cloneprotodetails();
+                Clear();
+                btn_loadDetails.Text = "Load Details";
+                btnAdd.Enabled = true;
+                btnModify.Enabled = false;
+                btnDelete.Enabled = false;
+                btn_LoadGrid.Enabled = true;
+                btn_loadDetails.Enabled = true;
+                btnSave.Enabled = false;
+                btnAdd.Focus();
                 Slno = 1;
+                load_Protocols();
             }
         }
-
         private void chkHeat_CheckedChanged(object sender, EventArgs e)
         {
             if (chkHeat.Checked == true)
@@ -270,7 +397,6 @@ namespace HematoxinandEosin
                 panel_Heat.Visible = false;
             }
         }
-
         private void btnModify_Click(object sender, EventArgs e)
         {
             addflg = false;
@@ -278,12 +404,13 @@ namespace HematoxinandEosin
             delflg = false;
             btnSave.Text = "Update";
             //Write code to load user details            
-            cmbProtocol.Focus();
-            cmbProtocol.SelectedIndex = 0;
+            //cmbProtocol.Focus();
+            //cmbProtocol.SelectedIndex = 0;
             btnAdd.Enabled = false;
             btnDelete.Enabled = false;
             btnModify.Enabled = false;
             btnSave.Enabled = true;
+            btnSave.Focus();
         }           
         private void Clear()
         {
@@ -296,17 +423,20 @@ namespace HematoxinandEosin
             cmbReagent.Text = String.Empty;
             cmbTempature.Text = String.Empty;
             txtReagentShortName.Text = String.Empty;
+            chkAgitation.Checked = false;
+            chk_Clone.Checked = false;            
+            dgv_Detail.Rows.Clear();
         }
         private void chk_WashRequired_CheckedChanged(object sender, EventArgs e)
         {
-            if (chk_WashRequired.Checked == true)
-            {
-                pnl_Wsh.Visible = true;
-            }
-            else
-            {
-                pnl_Wsh.Visible =false;
-            }
+            ////if (chk_WashRequired.Checked == true)
+            ////{
+            ////    pnl_Wsh.Visible = true;
+            ////}
+            ////else
+            ////{
+            ////    pnl_Wsh.Visible =false;
+            ////}
         }
         private int numberOfThreads = 1;
         private int iterationsPerThread = 1;
@@ -404,14 +534,12 @@ namespace HematoxinandEosin
                             dgv_Detail.Rows[i].Cells["protoName"].Value = cmbProtocol.Text;
                             dgv_Detail.Rows[i].Cells["JarName"].Value = table.Rows[i]["JarNo"].ToString();
                             dgv_Detail.Rows[i].Cells["RegName"].Value = table.Rows[i]["Temp_Reagent"].ToString();
-                            ////if (Convert.ToBoolean( dt.Rows[i]["WashRequired"].ToString()) == true)
-                            ////{
-                            ////    dgv_protodetails.Rows[i].Cells["Washreq"].Value = true;
-                            ////}
-                            ////else if (Convert.ToBoolean(dt.Rows[i]["WashRequired"].ToString()) == false)
-                            ////{
-                            ////    dgv_protodetails.Rows[i].Cells["Washreq"].Value = false;
-                            ////}
+                            dgv_Detail.Rows[i].Cells["ShortName"].Value = table.Rows[i]["ShortName"].ToString();
+                            if (Convert.ToInt32(table.Rows[i]["Priority"].ToString()) == 1)                            
+                                dgv_Detail.Rows[i].Cells["Priority"].Value = true;                            
+                            else if (Convert.ToInt32(table.Rows[i]["Priority"].ToString()) == 0)                            
+                                dgv_Detail.Rows[i].Cells["Priority"].Value = false;
+                            
                             ////dgv_protodetails.Rows[i].Cells["WashTime"].Value = dt.Rows[i]["WashTime"].ToString();
                             dgv_Detail.Rows[i].Cells["IncubTime"].Value = table.Rows[i]["IncubationTime"].ToString();
                             dgv_Detail.Rows[i].Cells["Noofdips"].Value = table.Rows[i]["No_of_Dips"].ToString();
@@ -427,7 +555,6 @@ namespace HematoxinandEosin
                 {
 
                 }
-
             }
             finally
             {
@@ -449,11 +576,12 @@ namespace HematoxinandEosin
             btnSave.Text = "Remove";
             //Write code to load user details            
            // cmbProtocol.SelectedIndex = 0;
-            cmbProtocol.Focus();
+            //cmbProtocol.Focus();
             btnAdd.Enabled    = false;
             btnDelete.Enabled = false;
             btnModify.Enabled = false;
             btnSave.Enabled   = true;
+            btnSave.Focus();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -470,20 +598,23 @@ namespace HematoxinandEosin
                     {
                         sqlstr = "";
                         //sqlstr = "Insert into " + tabName + "(Slno,ProtocolName,JarNo,Temp_Reagent,WashRequired,IncubationTime,No_of_Dips,WashTime) Values(";
-                        sqlstr = "Insert into " + tabName + "(Slno,ProtocolName,JarNo,Temp_Reagent,IncubationTime,No_of_Dips) Values(";
+                        //sqlstr = "Insert into " + tabName + "(Slno,ProtocolName,JarNo,Temp_Reagent,IncubationTime,No_of_Dips) Values(";  //ShortName,Priority
+                        sqlstr = "Insert into " + tabName + "(Slno,ProtocolName,JarNo,Temp_Reagent,ShortName,IncubationTime,Priority,No_of_Dips) Values(";  //
                         sqlstr = sqlstr + Convert.ToInt32(dgv_Detail.Rows[i].Cells["sln"].Value.ToString()) + ",'";
                         sqlstr = sqlstr + (dgv_Detail.Rows[i].Cells["protoName"].Value.ToString()) + "','";
                         sqlstr = sqlstr + (dgv_Detail.Rows[i].Cells["JarName"].Value.ToString()) + "','";
                         sqlstr = sqlstr + (dgv_Detail.Rows[i].Cells["RegName"].Value.ToString()) + "','";
-                        ////if(Convert.ToBoolean(dgv_protodetails.Rows[i].Cells["Washreq"].Value)==true)
-                        ////{
-                        ////    sqlstr = sqlstr + "1,'";
-                        ////}
-                        ////else if (Convert.ToBoolean(dgv_protodetails.Rows[i].Cells["Washreq"].Value) == false)
-                        ////{
-                        ////    sqlstr = sqlstr + "0,'";
-                        ////}
+                        sqlstr = sqlstr + (dgv_Detail.Rows[i].Cells["ShortName"].Value.ToString()) + "','";                        
                         sqlstr = sqlstr + (dgv_Detail.Rows[i].Cells["IncubTime"].Value.ToString()) + "',";
+                        if (Convert.ToBoolean(dgv_Detail.Rows[i].Cells["Priority"].Value) == true)
+                        {
+                            sqlstr = sqlstr + "1,";
+                        }
+                        else if (Convert.ToBoolean(dgv_Detail.Rows[i].Cells["Priority"].Value) == false)
+                        {
+                            sqlstr = sqlstr + "0,";
+                        }
+
                         sqlstr = sqlstr + Convert.ToInt32(dgv_Detail.Rows[i].Cells["Noofdips"].Value.ToString()) + ")";
                         ////sqlstr = sqlstr + ",'" + (dgv_protodetails.Rows[i].Cells["Washtime"].Value.ToString()) + "')";                         
                         if (con.State == ConnectionState.Closed)
@@ -500,9 +631,13 @@ namespace HematoxinandEosin
                 {
                     //Updating only Selected Record...
                     sqlstr = "";
-                    sqlstr = "Update " + tabName + " set JarNo = '" + cmbJarName.Text + "',Temp_Reagent='" + cmbReagent.Text + "',";
+                    sqlstr = "Update " + tabName + " set JarNo = '" + cmbJarName.Text + "',Temp_Reagent='" + cmbReagent.Text + "',ShortName = '"+ txtReagentShortName.Text +"',";
                     sqlstr = sqlstr + "IncubationTime='" + dt_incubationtime.Value.ToString().Substring(14, 5) + "',No_of_Dips = " + Convert.ToInt32(cmbNofDips.Text);
-                    sqlstr = sqlstr + " where ProtocolName = '" + cmbProtocol.Text + "' and Slno = " + Slno;
+                    if(chk_WashRequired.Checked==true)
+                        sqlstr = sqlstr + ",Priority=1";
+                    else if (chk_WashRequired.Checked == false)
+                        sqlstr = sqlstr + ",Priority=0";
+                    sqlstr = sqlstr + " where ProtocolName = '" + txt_protocolName.Text + "' and Slno = " + Slno;//sqlstr = sqlstr + " where ProtocolName = '" + cmbProtocol.Text + "' and Slno = " + Slno;
                     if (con.State == ConnectionState.Closed)
                         con.Open();
                     cmd = new SqlCommand(sqlstr, con);
@@ -512,47 +647,50 @@ namespace HematoxinandEosin
                     MessageBox.Show("Protocol details Sucessfully Modified and updated to database", RequiredVariables.Msgtext, MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                     Clear();
                     btnAdd.Enabled = true;
-                    btnDelete.Enabled = true;
-                    btnModify.Enabled = true;
+                    btnDelete.Enabled = false;
+                    btnModify.Enabled = false;
                     btnSave.Enabled = true;
-
+                    cmbProtocol.Text = txt_protocolName.Text;
+                    fetchprotodetails(cmbProtocol.Text);
                 }
                 else if (delflg == true)
                 {
-                    if (MessageBox.Show("Are you Sure to delete the Selected Protocol Information", RequiredVariables.Msgtext, MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                    if (MessageBox.Show("Are you Sure to delete the Selected Protocol record Information", RequiredVariables.Msgtext, MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                     {
-                        if (MessageBox.Show("The deleted Protocol details cann't be restored back \r\n Confirm to delete the Selected protocol Information from database ", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                        if (MessageBox.Show("The deleted Protocol record details cann't be restored back \r\n Confirm to delete the Selected protocol record Information from database ", RequiredVariables.Msgtext, MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                         {
                             if (con.State == ConnectionState.Closed)
                                 con.Open();
-                            //Deleting information from protocol Master Table
-                            sqlstr = string.Empty;
-                            sqlstr = "Delete from ProtocolMaster where ProtocolName = '" + cmbProtocol.Text + "'";
-                            cmd = new SqlCommand(sqlstr, con);
-                            cmd.ExecuteNonQuery();
-                            cmd.Dispose();
+                            //////Deleting information from protocol Master Table
+                            ////sqlstr = string.Empty;
+                            ////sqlstr = "Delete from ProtocolMaster where ProtocolName = '" + cmbProtocol.Text + "'";
+                            ////cmd = new SqlCommand(sqlstr, con);
+                            ////cmd.ExecuteNonQuery();
+                            ////cmd.Dispose();
 
-                            if (con.State == ConnectionState.Closed)
-                                con.Open();
+                            ////if (con.State == ConnectionState.Closed)
+                            ////    con.Open();
                             //Deleting information from protocol details from Factory / User protocol
                             sqlstr = string.Empty;
-                            sqlstr = "Delete from " + tabName + "where ProtocolName = '" + cmbProtocol.Text + "'";
+                            sqlstr = "Delete from " + tabName + " where ProtocolName = '" + txt_protocolName.Text + "' and Slno = " + Slno;//sqlstr = sqlstr + " where ProtocolName = '" + cmbProtocol.Text + "' and Slno = " + Slno;" where ProtocolName = '" + cmbProtocol.Text + "'";
                             cmd = new SqlCommand(sqlstr, con);
                             cmd.ExecuteNonQuery();
                             cmd.Dispose();
                             con.Close();
-                            MessageBox.Show("Selected Protocol details Sucessfully Deleted from database", RequiredVariables.Msgtext, MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                            MessageBox.Show("Selected Protocol record details Sucessfully Deleted from database", RequiredVariables.Msgtext, MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                             Clear();
                             btnAdd.Enabled = true;
-                            btnDelete.Enabled = true;
-                            btnModify.Enabled = true;
+                            btnDelete.Enabled = false;
+                            btnModify.Enabled = false;
                             btnSave.Enabled = true;
+                            cmbProtocol.Text = txt_protocolName.Text;
+                            fetchprotodetails(cmbProtocol.Text);
                         }
                     }
                 }
                 btnAdd.Enabled = true;
-                btnModify.Enabled = true;
-                btnDelete.Enabled = true;
+                ////btnModify.Enabled = true;
+                ////btnDelete.Enabled = true;
                 btn_LoadGrid.Enabled = true;
                 btn_loadDetails.Enabled = true;
                 btnSave.Enabled = false;                    
@@ -580,7 +718,6 @@ namespace HematoxinandEosin
             btn_LoadGrid.Enabled = true;
             btn_LoadGrid.Enabled = true;
         }
-
         private void cmbNofJars_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = true;
@@ -921,6 +1058,58 @@ namespace HematoxinandEosin
             }
         }
 
+        private void dgv_Detail_DoubleClick(object sender, EventArgs e)
+        {
+            try
+            {
+                chk_WashRequired.Checked = false;
+                Slno = Convert.ToInt32(dgv_Detail.Rows[dgv_Detail.CurrentRow.Index].Cells["sln"].Value.ToString());
+                txt_protocolName.Text = dgv_Detail.Rows[dgv_Detail.CurrentRow.Index].Cells["protoName"].Value.ToString();
+                cmbReagent.Text = dgv_Detail.Rows[dgv_Detail.CurrentRow.Index].Cells["RegName"].Value.ToString();
+                cmbJarName.Text = dgv_Detail.Rows[dgv_Detail.CurrentRow.Index].Cells["JarName"].Value.ToString();
+                txtReagentShortName.Text = dgv_Detail.Rows[dgv_Detail.CurrentRow.Index].Cells["ShortName"].Value.ToString();
+                cmbNofDips.Text = dgv_Detail.Rows[dgv_Detail.CurrentRow.Index].Cells["Noofdips"].Value.ToString();
+                var inc = DateTime.ParseExact(dgv_Detail.Rows[dgv_Detail.CurrentRow.Index].Cells["IncubTime"].Value.ToString(), "mm:ss", null);
+                dt_incubationtime.Value = inc;
+                DataGridViewCheckBoxCell checkBoxCell = (DataGridViewCheckBoxCell)dgv_Detail.Rows[dgv_Detail.CurrentRow.Index].Cells["Priority"];
+                bool isChecked = Convert.ToBoolean(checkBoxCell.Value);
+                chk_WashRequired.Checked = isChecked;
+                btnAdd.Enabled = false;
+                if(rdnUser.Checked==true)
+                {
+                    btnModify.Enabled = true;
+                    btnDelete.Enabled = true;
+                }
+                else {
+                    btnModify.Enabled = false;
+                    btnDelete.Enabled = false;
+                }
+                
+            }
+            catch(Exception d3)
+            {
+                MessageBox.Show(d3.ToString());
+            }
+            
+        }
+
+        private void chk_Clone_CheckedChanged(object sender, EventArgs e)
+        {
+            if(chk_Clone.Checked==true)
+            {
+                txt_CloneName.Visible = true;
+                lbl_CloneName.Visible = true;
+                txt_CloneName.Focus();
+                btn_loadDetails.Text = "Clone Details";
+            }
+            else
+            {
+                txt_CloneName.Visible = false;
+                lbl_CloneName.Visible = false;                
+                btn_loadDetails.Text = "Load Details";
+            }
+        }
+
         private void button1_Click(object sender, EventArgs e)//btn_loadgrid
         {
           
@@ -972,42 +1161,20 @@ namespace HematoxinandEosin
             dgv_Detail.Rows[dgv_Detail.Rows.Count - 2].Cells["protoName"].Value = cmbProtocol.Text;
             dgv_Detail.Rows[dgv_Detail.Rows.Count - 2].Cells["JarName"].Value = cmbJarName.Text;
             dgv_Detail.Rows[dgv_Detail.Rows.Count - 2].Cells["RegName"].Value = cmbReagent.Text;
-            ////if(chk_Washing.Checked==true)
-            ////{                
-            ////    dgv_protodetails.Rows[dgv_protodetails.Rows.Count - 2].Cells["Washreq"].Value = true;                
-            ////}
-            ////else if (chk_Washing.Checked == false)
-            ////{                
-            ////    dgv_protodetails.Rows[dgv_protodetails.Rows.Count - 2].Cells["Washreq"].Value = false;             
-            ////}
-            ////dgv_protodetails.Rows[dgv_protodetails.Rows.Count - 2].Cells["WashTime"].Value = WashtimeVal.Value.ToString().Substring(14, 5);
+            dgv_Detail.Rows[dgv_Detail.Rows.Count - 2].Cells["ShortName"].Value = txtReagentShortName.Text;  //Added by subbarao
+            if (chk_WashRequired.Checked == true)
+            {
+                dgv_Detail.Rows[dgv_Detail.Rows.Count - 2].Cells["Priority"].Value = true;
+            }
+            else if (chk_WashRequired.Checked == false)
+            {
+                dgv_Detail.Rows[dgv_Detail.Rows.Count - 2].Cells["Priority"].Value = false;
+            }
             dgv_Detail.Rows[dgv_Detail.Rows.Count - 2].Cells["IncubTime"].Value = dt_incubationtime.Value.ToString().Substring(14, 5);
             dgv_Detail.Rows[dgv_Detail.Rows.Count - 2].Cells["Noofdips"].Value = cmbNofDips.Text;
             Slno++;
             Jarinx++;
-            if (chk_WashRequired.Checked == true)
-            {
-                DateTime d1;
-                d1 = System.DateTime.Now.AddSeconds(0);
-                d1 = System.DateTime.Now.AddMinutes(0);
-                dt_Washtime.Value = d1;
-                dgv_Detail.Rows.Add();
-                dgv_Detail.Rows[dgv_Detail.Rows.Count - 2].Cells["sln"].Value = Slno.ToString();
-                dgv_Detail.Rows[dgv_Detail.Rows.Count - 2].Cells["protoName"].Value = cmbProtocol.Text;
-                dgv_Detail.Rows[dgv_Detail.Rows.Count - 2].Cells["JarName"].Value = "Water";
-                dgv_Detail.Rows[dgv_Detail.Rows.Count - 2].Cells["RegName"].Value = "Room Temperature";
-                dgv_Detail.Rows[dgv_Detail.Rows.Count - 2].Cells["IncubTime"].Value = dt_Washtime.Value.ToString().Substring(14, 5);
-                dgv_Detail.Rows[dgv_Detail.Rows.Count - 2].Cells["Noofdips"].Value = "0";
-                Slno++;
-            }
-            else
-            {
-                //dgv_Detail.Rows.Clear();
-                //Slno = 1;
-            }
-
             
-
             if (Jarinx == tot_Jars)
             {
                 btn_LoadGrid.Enabled = false;

@@ -134,20 +134,18 @@ namespace HematoxinandEosin
             L2.BorderSize =3;
             L1.OnlyJar = true;
             L1.BorderSize =3;
-            J33.OnlyJar = true;
-            J33.BorderSize =3;
-            J32.OnlyJar = true;
-            J32.BorderSize =3;
-            J31.OnlyJar = true;
-            J31.BorderSize =3;
-            J30.OnlyJar = true;
-            J30.BorderSize =3;
-            J29.OnlyJar = true;
-            J29.BorderSize =3;
-            J28.OnlyJar = true;
-            J28.BorderSize =3;
             J27.OnlyJar = true;
             J27.BorderSize =3;
+            J28.OnlyJar = true;
+            J28.BorderSize =3;
+            J29.OnlyJar = true;
+            J29.BorderSize =3;
+            J30.OnlyJar = true;
+            J30.BorderSize =3;
+            J31.OnlyJar = true;
+            J31.BorderSize =3;
+            J32.OnlyJar = true;
+            J32.BorderSize =3;
             U6.OnlyJar = true;
             U6.BorderSize =3;
             U5.OnlyJar = true;
@@ -160,6 +158,8 @@ namespace HematoxinandEosin
             U2.BorderSize =3;
             U1.OnlyJar = true;
             U1.BorderSize =3;
+            J33.OnlyJar = true;
+            J33.BorderSize =3;
         }
 
         public void jarsbgColors()
@@ -236,22 +236,20 @@ namespace HematoxinandEosin
             L2.BackgroundColor = Color.FromArgb(164, 190, 123);
             L1.BackColor = Color.FromArgb(164, 190, 123);
             L1.BackgroundColor = Color.FromArgb(164, 190, 123);
-            J33.BackColor = Color.FromArgb(216, 217, 207);
-            J33.BackgroundColor = Color.FromArgb(216, 217, 207);
-            J32.BackColor = Color.FromArgb(216, 217, 207);
-            J32.BackgroundColor = Color.FromArgb(216, 217, 207);
-            J31.BackColor = Color.FromArgb(216, 217, 207);
-            J31.BackgroundColor = Color.FromArgb(216, 217, 207);
-            J30.BackColor = Color.FromArgb(216, 217, 207);
-            J30.BackgroundColor = Color.FromArgb(216, 217, 207);
-            J29.BackColor = Color.FromArgb(216, 217, 207);
-            J29.BackgroundColor = Color.FromArgb(216, 217, 207);
-            J28.BackColor = Color.FromArgb(216, 217, 207);
-            J28.BackgroundColor = Color.FromArgb(216, 217, 207);
             J27.BackColor = Color.FromArgb(216, 217, 207);
             J27.BackgroundColor = Color.FromArgb(216, 217, 207);
-            U6.BackColor = Color.FromArgb(174, 189, 202);
-            U6.BackgroundColor = Color.FromArgb(174, 189, 202);
+            J28.BackColor = Color.FromArgb(216, 217, 207);
+            J28.BackgroundColor = Color.FromArgb(216, 217, 207);
+            J29.BackColor = Color.FromArgb(216, 217, 207);
+            J29.BackgroundColor = Color.FromArgb(216, 217, 207);
+            J30.BackColor = Color.FromArgb(216, 217, 207);
+            J30.BackgroundColor = Color.FromArgb(216, 217, 207);
+            J31.BackColor = Color.FromArgb(216, 217, 207);
+            J31.BackgroundColor = Color.FromArgb(216, 217, 207);
+            J32.BackColor = Color.FromArgb(216, 217, 207);
+            J32.BackgroundColor = Color.FromArgb(216, 217, 207);
+            U6.BackColor = Color.FromArgb(216, 217, 207);
+            U6.BackgroundColor = Color.FromArgb(216, 217, 207);
             U5.BackColor = Color.FromArgb(174, 189, 202);
             U5.BackgroundColor = Color.FromArgb(174, 189, 202);
             U4.BackColor = Color.FromArgb(174, 189, 202);
@@ -262,6 +260,8 @@ namespace HematoxinandEosin
             U2.BackgroundColor = Color.FromArgb(174, 189, 202);
             U1.BackColor = Color.FromArgb(174, 189, 202);
             U1.BackgroundColor = Color.FromArgb(174, 189, 202);
+            J33.BackColor = Color.FromArgb(174, 189, 202);
+            J33.BackgroundColor = Color.FromArgb(174, 189, 202);
             H1.BackColor = Color.FromArgb(220, 0, 0);
             H1.BackgroundColor = Color.FromArgb(220, 0, 0);
             H2.BackColor = Color.FromArgb(220, 0, 0);
@@ -328,7 +328,7 @@ namespace HematoxinandEosin
                     for (int i = 0; i < JPos_DB.Rows.Count; i++)
                     {
                         cmbJarnumber.Items.Add(JPos_DB.Rows[i]["JarName"].ToString());
-                        refresh_UI(JPos_DB.Rows[i]["JarName"].ToString(), "");
+                        refresh_UI(JPos_DB.Rows[i]["JarName"].ToString(), "",false);
                     }
                     cmbJarnumber.SelectedIndex = 0;
                 }
@@ -375,7 +375,7 @@ namespace HematoxinandEosin
                             JPos.Rows[cnt]["Z1-Axis"] = jarposval[3].ToString();  //Arm - Z axis for Up/Down to Move RA Punch                             
                             JPos.Rows[cnt]["Z2-Axis"] = jarposval[4].ToString();  //Arm - Z axis for Up/Down to Move RA Punch                             
                             cmbJarnumber.Items.Add(jarposval[0].ToString());
-                            refresh_UI(jarposval[0].ToString(), "");
+                            refresh_UI(jarposval[0].ToString(), "",false);
                         }
                     }
                     cmbJarnumber.SelectedIndex = 0;
@@ -946,7 +946,7 @@ namespace HematoxinandEosin
             jar_Large.RackNumber = "J36";
             jar_Large.TaskProcess = "0%";
             jar_Large.ForeColor = Color.FromArgb(30, 80, 150);
-            if (J33.JarRack == true)
+            if (J27.JarRack == true)
             {
                 jar_Large.JarRack = true;
             }
@@ -964,7 +964,7 @@ namespace HematoxinandEosin
             jar_Large.RackNumber = "J37";
             jar_Large.TaskProcess = "0%";
             jar_Large.ForeColor = Color.FromArgb(30, 80, 150);
-            if (J32.JarRack == true)
+            if (J28.JarRack == true)
             {
                 jar_Large.JarRack = true;
             }
@@ -982,7 +982,7 @@ namespace HematoxinandEosin
             jar_Large.RackNumber = "J38";
             jar_Large.TaskProcess = "0%";
             jar_Large.ForeColor = Color.FromArgb(30, 80, 150);
-            if (J31.JarRack == true)
+            if (J29.JarRack == true)
             {
                 jar_Large.JarRack = true;
             }
@@ -1018,7 +1018,7 @@ namespace HematoxinandEosin
             jar_Large.RackNumber = "J40";
             jar_Large.TaskProcess = "0%";
             jar_Large.ForeColor = Color.FromArgb(30, 80, 150);
-            if (J29.JarRack == true)
+            if (J31.JarRack == true)
             {
                 jar_Large.JarRack = true;
             }
@@ -1036,7 +1036,7 @@ namespace HematoxinandEosin
             jar_Large.RackNumber = "J41";
             jar_Large.TaskProcess = "0%";
             jar_Large.ForeColor = Color.FromArgb(30, 80, 150);
-            if (J28.JarRack == true)
+            if (J32.JarRack == true)
             {
                 jar_Large.JarRack = true;
             }
@@ -1054,7 +1054,7 @@ namespace HematoxinandEosin
             jar_Large.RackNumber = "J42";
             jar_Large.TaskProcess = "0%";
             jar_Large.ForeColor = Color.FromArgb(30, 80, 150);
-            if (J27.JarRack == true)
+            if (U6.JarRack == true)
             {
                 jar_Large.JarRack = true;
             }
@@ -1234,7 +1234,7 @@ namespace HematoxinandEosin
             jar_Large.RackNumber = "J43";
             jar_Large.TaskProcess = "0%";
             jar_Large.ForeColor = Color.FromArgb(30, 80, 150);
-            if (U6.JarRack == true)
+            if (U5.JarRack == true)
             {
                 jar_Large.JarRack = true;
             }
@@ -1252,7 +1252,7 @@ namespace HematoxinandEosin
             jar_Large.RackNumber = "J44";
             jar_Large.TaskProcess = "0%";
             jar_Large.ForeColor = Color.FromArgb(30, 80, 150);
-            if (U5.JarRack == true)
+            if (U4.JarRack == true)
             {
                 jar_Large.JarRack = true;
             }
@@ -1270,7 +1270,7 @@ namespace HematoxinandEosin
             jar_Large.RackNumber = "J45";
             jar_Large.TaskProcess = "0%";
             jar_Large.ForeColor = Color.FromArgb(30, 80, 150);
-            if (U4.JarRack == true)
+            if (U3.JarRack == true)
             {
                 jar_Large.JarRack = true;
             }
@@ -1288,7 +1288,7 @@ namespace HematoxinandEosin
             jar_Large.RackNumber = "J46";
             jar_Large.TaskProcess = "0%";
             jar_Large.ForeColor = Color.FromArgb(30, 80, 150);
-            if (U3.JarRack == true)
+            if (U2.JarRack == true)
             {
                 jar_Large.JarRack = true;
             }
@@ -1306,7 +1306,7 @@ namespace HematoxinandEosin
             jar_Large.RackNumber = "J47";
             jar_Large.TaskProcess = "0%";
             jar_Large.ForeColor = Color.FromArgb(30, 80, 150);
-            if (U2.JarRack == true)
+            if (U1.JarRack == true)
             {
                 jar_Large.JarRack = true;
             }
@@ -1324,7 +1324,7 @@ namespace HematoxinandEosin
             jar_Large.RackNumber = "J48";
             jar_Large.TaskProcess = "0%";
             jar_Large.ForeColor = Color.FromArgb(30, 80, 150);
-            if (U1.JarRack == true)
+            if (J33.JarRack == true)
             {
                 jar_Large.JarRack = true;
             }
@@ -1508,6 +1508,30 @@ namespace HematoxinandEosin
         }
 
         //Updating the position details and inserting the calibrated person details
+        //Saving position details to file
+        private void updatejarpos_tofile()
+        {
+
+            try
+            {
+                string sqlstr = "";
+                sqlstr = "select * from JarPosDeatils order by sno";
+                SqlDataAdapter sda = new SqlDataAdapter(sqlstr, con);
+                JPos_DB = new DataTable();
+                sda.Fill(JPos_DB);
+                if (JPos_DB.Rows.Count > 0)
+                {                    
+                    for (int i = 0; i < JPos_DB.Rows.Count; i++)
+                    {
+                        Communication.writejarposdetails(JPos_DB.Rows[i]["JarName"].ToString(),JPos_DB.Rows[i]["XPos"].ToString(),JPos_DB.Rows[i]["YPos"].ToString(),JPos_DB.Rows[i]["Z1Pos"].ToString(),JPos_DB.Rows[i]["Z2Pos"].ToString(),JPos_DB.Rows[i]["RANo"].ToString());                        
+                    }                    
+                }
+            }
+            catch (Exception d3)
+            {
+                MessageBox.Show(d3.ToString(), "Load position details from database", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
         private void btn_Save_Click(object sender, EventArgs e)
         {
             try
@@ -1517,17 +1541,19 @@ namespace HematoxinandEosin
                 try
                 {
                     sqlstr = "";
-                    sqlstr = "Update JarPosDeatils set XPos = " + Convert.ToInt32(txt_Xvalue.Text) + ",YPos = " + Convert.ToInt32(txt_Xvalue.Text);
+                    sqlstr = "Update JarPosDeatils set XPos = " + Convert.ToInt32(txt_Xvalue.Text) + ",YPos = " + Convert.ToInt32(txt_Yvalue.Text);
                     sqlstr = sqlstr + ",Z1Pos = " + Convert.ToInt32(txt_Zvalue.Text) + " where JarName = '" + cmbJarnumber.Text + "' and Sno = " + slnval;
                     cmd = new SqlCommand(sqlstr, con);
                     if (con.State == ConnectionState.Closed)
                         con.Open();
                     cmd.ExecuteNonQuery();
                     cmd.Dispose();
+                    loadPositiondetails_db();
+                    updatejarpos_tofile();
                 }
                 catch(Exception gh)
                 {
-
+                    Communication.writeCommunicationErrorlog(gh.ToString() + " While Updating calibrated details of Jar positions to table JarPosDeatils in btn_save_click function in Frm_Jarpositions details calibration");
                 }
                 //Inserting the details of calibrated by
                 try
@@ -1558,15 +1584,14 @@ namespace HematoxinandEosin
                 }
                 catch(Exception gh)
                 {
-
+                    Communication.writeCommunicationErrorlog(gh.ToString() + " While inserting calibrated details of Jar positions to table JarpositionCalibration in btn_save_click function in Frm_Jarpositions details calibration");
                 }
 
             }
             catch(Exception de)
             {
-
+                Communication.writeCommunicationErrorlog(de.ToString() + " Calibrated details of Jar positions not sved please check the table structure in btn_save_click function in Frm_Jarpositions details calibration");
             }
-
         }
 
         private void btn_rahome_Click(object sender, EventArgs e)
@@ -1859,7 +1884,7 @@ namespace HematoxinandEosin
                     Communication.SequnceNo++;
 
                     DateTime dltime = System.DateTime.Now;
-                    dltime = dltime.AddSeconds(5);  // Adding 5 seconds delay 
+                    dltime = dltime.AddSeconds(10);  // Adding 10 seconds delay 
                     delay(dltime);
                 }
                 #endregion
@@ -1953,7 +1978,7 @@ namespace HematoxinandEosin
                 MessageBox.Show(d3.ToString() + "While updating the text to display ", RequiredVariables.Msgtext, MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             }
         }
-        private void refresh_UI(string refjarname, string regName)
+        private void refresh_UI(string refjarname, string regName, bool rackflg)
         {
             string prtname = " ";
             switch (refjarname)
@@ -1962,7 +1987,7 @@ namespace HematoxinandEosin
                     {
                         J1.ProcessName = prtname;
                         J1.ReagentName = regName;
-                        J1.OnlyJar = true;
+                        if (rackflg == false) J1.OnlyJar = true; else J1.JarRack = true;
                         J1.BorderSize = 3;
                         break;
                     }
@@ -1970,7 +1995,7 @@ namespace HematoxinandEosin
                     {
                         J2.ProcessName = prtname;
                         J2.ReagentName = regName;
-                        J2.OnlyJar = true;
+                        if (rackflg == false) J2.OnlyJar = true; else J2.JarRack = true;
                         J2.BorderSize = 3;
                         break;
                     }
@@ -1978,7 +2003,7 @@ namespace HematoxinandEosin
                     {
                         J3.ProcessName = prtname;
                         J3.ReagentName = regName;
-                        J3.OnlyJar = true;
+                        if (rackflg == false) J3.OnlyJar = true; else J3.JarRack = true;
                         J3.BorderSize = 3;
                         break;
                     }
@@ -1987,14 +2012,14 @@ namespace HematoxinandEosin
                         J4.ProcessName = prtname;
                         J4.ReagentName = regName;
                         J4.BorderSize = 3;
-                        J4.OnlyJar = true;
+                        if (rackflg == false) J4.OnlyJar = true; else J4.JarRack = true;
                         break;
                     }
                 case "J5":
                     {
                         J5.ProcessName = prtname;
                         J5.ReagentName = regName;
-                        J5.OnlyJar = true;
+                        if (rackflg == false) J5.OnlyJar = true; else J5.JarRack = true;
                         J5.BorderSize = 3;
                         break;
                     }
@@ -2002,7 +2027,7 @@ namespace HematoxinandEosin
                     {
                         J6.ProcessName = prtname;
                         J6.ReagentName = regName;
-                        J6.OnlyJar = true;
+                        if (rackflg == false) J6.OnlyJar = true; else J6.JarRack = true;
                         J6.BorderSize = 3;
                         break;
                     }
@@ -2010,291 +2035,298 @@ namespace HematoxinandEosin
                     {
                         J7.ProcessName = prtname;
                         J7.ReagentName = regName;
-                        J7.OnlyJar = true; J7.BorderSize = 3;
+                        if (rackflg == false) J7.OnlyJar = true; else J7.JarRack = true;
+                        J7.BorderSize = 3;
                         break;
                     }
                 case "J8":
                     {
                         J8.ProcessName = prtname;
                         J8.ReagentName = regName;
-                        J8.OnlyJar = true; J8.BorderSize = 3;
+                        if (rackflg == false) J8.OnlyJar = true; else J8.JarRack = true;
+                        J8.BorderSize = 3;
                         break;
                     }
                 case "J9":
                     {
                         J9.ProcessName = prtname;
                         J9.ReagentName = regName;
-                        J9.OnlyJar = true; J9.BorderSize = 3;
+                        if (rackflg == false) J9.OnlyJar = true; else J9.JarRack = true;
+                        J9.BorderSize = 3;
                         break;
                     }
                 case "J10":
                     {
                         J10.ProcessName = prtname;
                         J10.ReagentName = regName;
-                        J10.OnlyJar = true; J10.BorderSize = 3;
+                        if (rackflg == false) J10.OnlyJar = true; else J10.JarRack = true;
+                        J10.BorderSize = 3;
                         break;
                     }
                 case "J11":
                     {
                         J11.ProcessName = prtname;
                         J11.ReagentName = regName;
-                        J11.OnlyJar = true; J11.BorderSize = 3;
+                        if (rackflg == false) J11.OnlyJar = true; else J11.JarRack = true;
+                        J11.BorderSize = 3;
                         break;
                     }
                 case "J12":
                     {
                         J12.ProcessName = prtname;
                         J12.ReagentName = regName;
-                        J12.OnlyJar = true; J12.BorderSize = 3;
+                        if (rackflg == true) J12.JarRack = true; else J12.OnlyJar = true;
+                        J12.BorderSize = 3;
                         break;
                     }
                 case "J13":
                     {
                         J13.ProcessName = prtname;
                         J13.ReagentName = regName;
-                        J13.OnlyJar = true; J13.BorderSize = 3;
+                        if (rackflg == true) J13.JarRack = true; else J13.OnlyJar = true; J13.BorderSize = 3;
                         break;
                     }
                 case "J14":
                     {
                         J14.ProcessName = prtname;
                         J14.ReagentName = regName;
-                        J14.OnlyJar = true; J14.BorderSize = 3;
+                        if (rackflg == true) J14.JarRack = true; else J14.OnlyJar = true; J14.BorderSize = 3;
                         break;
                     }
                 case "J15":
                     {
                         J15.ProcessName = prtname;
                         J15.ReagentName = regName;
-                        J15.OnlyJar = true; J15.BorderSize = 3;
+                        if (rackflg == true) J15.JarRack = true; else J15.OnlyJar = true; J15.BorderSize = 3;
                         break;
                     }
                 case "J16":
                     {
                         J16.ProcessName = prtname;
                         J16.ReagentName = regName;
-                        J16.OnlyJar = true; J16.BorderSize = 3;
+                        if (rackflg == true) J16.JarRack = true; else J16.OnlyJar = true; J16.BorderSize = 3;
                         break;
                     }
                 case "J17":
                     {
                         J17.ProcessName = prtname;
                         J17.ReagentName = regName;
-                        J17.OnlyJar = true; J17.BorderSize = 3;
+                        if (rackflg == true) J17.JarRack = true; else J17.OnlyJar = true; J17.BorderSize = 3;
                         break;
                     }
                 case "J18":
                     {
                         J18.ProcessName = prtname;
                         J18.ReagentName = regName;
-                        J18.OnlyJar = true; J18.BorderSize = 3;
+                        if (rackflg == true) J18.JarRack = true; else J18.OnlyJar = true; J18.BorderSize = 3;
                         break;
                     }
                 case "J19":
                     {
                         J19.ProcessName = prtname;
                         J19.ReagentName = regName;
-                        J19.OnlyJar = true; J19.BorderSize = 3;
+                        if (rackflg == true) J19.JarRack = true; else J19.OnlyJar = true; J19.BorderSize = 3;
                         break;
                     }
                 case "J20":
                     {
                         J20.ProcessName = prtname;
                         J20.ReagentName = regName;
-                        J20.OnlyJar = true; J20.BorderSize = 3;
+                        if (rackflg == true) J20.JarRack = true; else J20.OnlyJar = true; J20.BorderSize = 3;
                         break;
                     }
                 case "J21":
                     {
                         J21.ProcessName = prtname;
                         J21.ReagentName = regName;
-                        J21.OnlyJar = true; J21.BorderSize = 3;
+                        if (rackflg == true) J21.JarRack = true; else J21.OnlyJar = true; J21.BorderSize = 3;
                         break;
                     }
                 case "J22":
                     {
                         J22.ProcessName = prtname;
                         J22.ReagentName = regName;
-                        J22.OnlyJar = true; J22.BorderSize = 3;
+                        if (rackflg == true) J22.JarRack = true; else J22.OnlyJar = true; J22.BorderSize = 3;
                         break;
                     }
                 case "J23":
                     {
                         J23.ProcessName = prtname;
                         J23.ReagentName = regName;
-                        J23.OnlyJar = true; J23.BorderSize = 3;
+                        if (rackflg == true) J23.JarRack = true; else J23.OnlyJar = true; J23.BorderSize = 3;
                         break;
                     }
                 case "J24":
                     {
                         J24.ProcessName = prtname;
                         J24.ReagentName = regName;
-                        J24.OnlyJar = true; J24.BorderSize = 3;
+                        if (rackflg == true) J24.JarRack = true; else J24.OnlyJar = true; J24.BorderSize = 3;
                         break;
                     }
                 case "J25":
                     {
                         J25.ProcessName = prtname;
                         J25.ReagentName = regName;
-                        J25.OnlyJar = true; J25.BorderSize = 3;
+                        if (rackflg == true) J25.JarRack = true; else J25.OnlyJar = true; J25.BorderSize = 3;
                         break;
                     }
                 case "J26":
                     {
                         J26.ProcessName = prtname;
                         J26.ReagentName = regName;
-                        J26.OnlyJar = true; J26.BorderSize = 3;
+                        if (rackflg == true) J26.JarRack = true; else J26.OnlyJar = true; J26.BorderSize = 3;
                         break;
                     }
                 case "J27":
                     {
                         J27.ProcessName = prtname;
                         J27.ReagentName = regName;
-                        J27.OnlyJar = true; J27.BorderSize = 3;
+                        if (rackflg == true) J27.JarRack = true; J27.OnlyJar = true; J27.BorderSize = 3;
                         break;
                     }
                 case "J28":
                     {
                         J28.ProcessName = prtname;
                         J28.ReagentName = regName;
-                        J28.OnlyJar = true; J28.BorderSize = 3;
+                        if (rackflg == true) J28.JarRack = true; J28.OnlyJar = true; J28.BorderSize = 3;
                         break;
                     }
                 case "J29":
                     {
                         J29.ProcessName = prtname;
                         J29.ReagentName = regName;
-                        J29.OnlyJar = true; J29.BorderSize = 3;
+                        if (rackflg == true) J29.JarRack = true; else J29.OnlyJar = true; J29.BorderSize = 3;
                         break;
                     }
                 case "J30":
                     {
                         J30.ProcessName = prtname;
                         J30.ReagentName = regName;
-                        J30.OnlyJar = true; J30.BorderSize = 3;
+                        if (rackflg == true) J30.JarRack = true; else J30.OnlyJar = true; J30.BorderSize = 3;
                         break;
                     }
                 case "J31":
                     {
                         J31.ProcessName = prtname;
                         J31.ReagentName = regName;
-                        J31.OnlyJar = true; J31.BorderSize = 3;
+                        if (rackflg == true) J31.JarRack = true; J31.OnlyJar = true; J31.BorderSize = 3;
                         break;
                     }
                 case "J32":
                     {
                         J32.ProcessName = prtname;
                         J32.ReagentName = regName;
-                        J32.OnlyJar = true; J32.BorderSize = 3;
+                        if (rackflg == true) J32.JarRack = true; else J32.OnlyJar = true; J32.BorderSize = 3;
                         break;
                     }
                 case "J33":
                     {
                         J33.ProcessName = prtname;
                         J33.ReagentName = regName;
-                        J33.OnlyJar = true; J33.BorderSize = 3;
+                        if (rackflg == true) J33.JarRack = true; else J33.OnlyJar = true; J33.BorderSize = 3;
                         break;
                     }
                 case "W1":
                     {
                         W1.ProcessName = prtname;
                         W1.ReagentName = regName;
-                        W1.OnlyJar = true; W1.BorderSize = 3;
+                        if (rackflg == true) W1.JarRack = true; else W1.OnlyJar = true; W1.BorderSize = 3;
                         break;
                     }
                 case "W2":
                     {
                         W2.ProcessName = prtname;
                         W2.ReagentName = regName;
-                        W2.OnlyJar = true; W2.BorderSize = 3;
+                        if (rackflg == true) W2.JarRack = true; else W2.OnlyJar = true; W2.BorderSize = 3;
                         break;
                     }
                 case "W3":
                     {
                         W3.ProcessName = prtname;
                         W3.ReagentName = regName;
-                        W3.OnlyJar = true; W3.BorderSize = 3;
+                        if (rackflg == true) W3.JarRack = true; else W3.OnlyJar = true; W3.BorderSize = 3;
                         break;
                     }
                 case "W4":
                     {
                         W4.ProcessName = prtname;
                         W4.ReagentName = regName;
-                        W4.OnlyJar = true; W4.BorderSize = 3;
+                        if (rackflg == true) W4.JarRack = true; else W4.OnlyJar = true; W4.BorderSize = 3;
                         break;
                     }
                 case "W5":
                     {
                         W5.ProcessName = prtname;
                         W5.ReagentName = regName;
-                        W5.OnlyJar = true; W5.BorderSize = 3;
+                        if (rackflg == true) W5.JarRack = true; else W5.OnlyJar = true; W5.BorderSize = 3;
                         break;
                     }
                 case "W6":
                     {
                         W6.ProcessName = prtname;
                         W6.ReagentName = regName;
-                        W6.OnlyJar = true; W6.BorderSize = 3;
+                        if (rackflg == true) W6.JarRack = true; else W6.OnlyJar = true; W6.BorderSize = 3;
                         break;
                     }
+                
                 case "U1":
                     {
                         U1.ProcessName = prtname;
                         U1.ReagentName = regName;
-                        U1.OnlyJar = true; U1.BorderSize = 3;
+                        if (rackflg == true) U1.JarRack = true; else U1.OnlyJar = true; U1.BorderSize = 3;
                         break;
-                    }
+                    }                
                 case "U2":
                     {
                         U2.ProcessName = prtname;
                         U2.ReagentName = regName;
-                        U2.OnlyJar = true; U2.BorderSize = 3;
+                        if (rackflg == true) U2.JarRack = true; else U2.OnlyJar = true; U2.BorderSize = 3;
                         break;
                     }
                 case "U3":
                     {
                         U3.ProcessName = prtname;
                         U3.ReagentName = regName;
-                        U3.OnlyJar = true; U3.BorderSize = 3;
+                        if (rackflg == true) U3.JarRack = true; else U3.OnlyJar = true; U3.BorderSize = 3;
                         break;
                     }
                 case "U4":
                     {
                         U4.ProcessName = prtname;
                         U4.ReagentName = regName;
-                        U4.OnlyJar = true; U4.BorderSize = 3;
+                        if (rackflg == true) U4.JarRack = true; else U4.OnlyJar = true; U4.BorderSize = 3;
                         break;
                     }
                 case "U5":
                     {
                         U5.ProcessName = prtname;
                         U5.ReagentName = regName;
-                        U5.OnlyJar = true; U5.BorderSize = 3;
+                        if (rackflg == true) U5.JarRack = true; else U5.OnlyJar = true; U5.BorderSize = 3;
                         break;
                     }
                 case "U6":
                     {
                         U6.ProcessName = prtname;
                         U6.ReagentName = regName;
-                        U6.OnlyJar = true; U6.BorderSize = 3;
+                        if (rackflg == true) U6.JarRack = true; else U6.OnlyJar = true; U6.BorderSize = 3;
                         break;
                     }
                 case "L1":
                     {
                         L1.ReagentName = regName;
-                        L1.OnlyJar = true; L1.BorderSize = 3;
+                        if (rackflg == true) L1.JarRack = true; else L1.OnlyJar = true; L1.BorderSize = 3;
                         break;
                     }
                 case "L2":
                     {
                         L2.ReagentName = regName;
-                        L2.OnlyJar = true; L2.BorderSize = 3;
+                        if (rackflg == true) L2.JarRack = true; else L2.OnlyJar = true; L2.BorderSize = 3;
                         break;
                     }
                 case "L3":
                     {
                         L3.ReagentName = regName;
-                        L3.OnlyJar = true; L3.BorderSize = 3;
+                        if (rackflg == true) L3.JarRack = true; else L3.OnlyJar = true; L3.BorderSize = 3;
                         break;
                     }
                 case "H1":
@@ -2457,6 +2489,7 @@ namespace HematoxinandEosin
                             {
 
                                 displayScrData = "RA-" + lvl[0].ToString() + " Rack Pick " + JarName; ;
+                                refresh_UI(JarName, "", false);
                             }
                             else
                             {
@@ -2483,6 +2516,7 @@ namespace HematoxinandEosin
                             {
 
                                 displayScrData = "RA-" + lvl[0].ToString() + " Rack Placed in " + JarName; ;
+                                refresh_UI(JarName, "", true);
                             }
                             else
                             {
