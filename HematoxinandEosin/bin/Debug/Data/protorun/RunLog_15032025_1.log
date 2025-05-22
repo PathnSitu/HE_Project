@@ -1,0 +1,508 @@
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 12:15:16.663,March,Protorun Started,364
+H- E,ps,15-03-2025,-,-,-,30,15-03-2025 12:15:27.756,March,30 - Temperature set to device,364
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 12:15:29.014,March,Heater Switched On ,364
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 12:15:30.438,March,Heater Door Closed,364
+H- E,ps,15-03-2025,-,-,-,545,15-03-2025 12:15:30.860,March,Device temperature ,364
+H- E,ps,15-03-2025,W1,Tap Water,--,0,15-03-2025 12:15:36.124,March,Water Valve : 1 is Off,364
+H- E,ps,15-03-2025,W2,Tap Water,--,0,15-03-2025 12:15:36.889,March,Water Valve : 2 is Off,364
+H- E,ps,15-03-2025,W3,Tap Water,--,0,15-03-2025 12:15:37.669,March,Water Valve : 3 is Off,364
+H- E,ps,15-03-2025,W4,Tap Water,--,0,15-03-2025 12:15:38.448,March,Water Valve : 4 is Off,364
+H- E,ps,15-03-2025,W5,Tap Water,--,0,15-03-2025 12:15:39.208,March,Water Valve : 5 is Off,364
+H- E,ps,15-03-2025,W6,Tap Water,--,0,15-03-2025 12:15:39.988,March,Water Valve : 6 is Off,364
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 12:15:53.969,March,Home Reached,364
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 12:16:09.888,March,Home Reached,364
+H- E,ps,15-03-2025,L1,-,-,0,15-03-2025 12:16:19.915,March,Liquid Level - 200,364
+H- E,ps,15-03-2025,L2,-,-,0,15-03-2025 12:16:22.718,March,Liquid Level - 200,364
+H- E,ps,15-03-2025,L3,-,-,0,15-03-2025 12:16:25.498,March,Liquid Level - 200,364
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 12:16:39.183,March,Home Reached,364
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 12:16:54.014,March,Home Reached,364
+H- E,ps,15-03-2025,,,R1,0,15-03-2025 12:16:55.730,March,Test Started,364
+H- E,ps,15-03-2025,L1,Loading,R1,0,15-03-2025 12:17:02.181,March,Picked From,364
+H- E,ps,15-03-2025,H1,Heating,R1,0,15-03-2025 12:17:09.563,March,Placed In,364
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 12:17:10.204,March,Heater Door Closed,364
+H- E,ps,15-03-2025,-,-,-,545,15-03-2025 12:17:10.624,March,Device temperature ,364
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 12:27:56.774,March,Heater Door Opened,364
+H- E,ps,15-03-2025,,,R2,0,15-03-2025 12:27:57.551,March,Test Started,364
+H- E,ps,15-03-2025,L2,Loading,R2,0,15-03-2025 12:28:04.433,March,Picked From,364
+H- E,ps,15-03-2025,H2,Heating,R2,0,15-03-2025 12:28:11.320,March,Placed In,364
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 12:28:11.942,March,Heater Door Closed,364
+H- E,ps,15-03-2025,-,-,-,-273,15-03-2025 12:28:12.377,March,Device temperature ,364
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 12:37:11.115,March,Heater Door Opened,364
+H- E,ps,15-03-2025,H1,Heating,R1,0,15-03-2025 12:37:17.680,March,Picked From,364
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 12:37:18.301,March,Heater Door Closed,364
+H- E,ps,15-03-2025,J1,XYLENE-1,R1,0,15-03-2025 12:37:24.833,March,Placed In,364
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 12:38:58.963,March,Heater Door Opened,364
+H- E,ps,15-03-2025,,,R3,0,15-03-2025 12:38:59.648,March,Test Started,364
+H- E,ps,15-03-2025,L3,Loading,R3,0,15-03-2025 12:39:06.509,March,Picked From,364
+H- E,ps,15-03-2025,H1,Heating,R3,0,15-03-2025 12:39:13.432,March,Placed In,364
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 12:39:14.069,March,Heater Door Closed,364
+H- E,ps,15-03-2025,-,-,-,545,15-03-2025 12:39:14.489,March,Device temperature ,364
+H- E,ps,15-03-2025,J1,XYLENE-1,R1,0,15-03-2025 12:42:31.267,March,Picked From,364
+H- E,ps,15-03-2025,J2,XYLENE-2,R1,0,15-03-2025 12:42:37.593,March,Placed In,364
+H- E,ps,15-03-2025,J2,XYLENE-2,R1,0,15-03-2025 12:47:43.337,March,Picked From,364
+H- E,ps,15-03-2025,J3,XYLENE-3,R1,0,15-03-2025 12:47:49.704,March,Placed In,364
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 12:48:12.932,March,Heater Door Opened,364
+H- E,ps,15-03-2025,H2,Heating,R2,0,15-03-2025 12:48:20.436,March,Picked From,364
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 12:48:21.064,March,Heater Door Closed,364
+H- E,ps,15-03-2025,J1,XYLENE-1,R2,0,15-03-2025 12:48:27.589,March,Placed In,364
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 13:38:20.582,March,Protorun Started,365
+H- E,ps,15-03-2025,-,-,-,30,15-03-2025 13:38:31.404,March,30 - Temperature set to device,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 13:38:32.695,March,Heater Switched On ,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 13:38:34.108,March,Heater Door Closed,365
+H- E,ps,15-03-2025,-,-,-,447,15-03-2025 13:38:34.541,March,Device temperature ,365
+H- E,ps,15-03-2025,W1,Tap Water,--,0,15-03-2025 13:38:39.816,March,Water Valve : 1 is Off,365
+H- E,ps,15-03-2025,W2,Tap Water,--,0,15-03-2025 13:38:40.587,March,Water Valve : 2 is Off,365
+H- E,ps,15-03-2025,W3,Tap Water,--,0,15-03-2025 13:38:41.347,March,Water Valve : 3 is Off,365
+H- E,ps,15-03-2025,W4,Tap Water,--,0,15-03-2025 13:38:42.123,March,Water Valve : 4 is Off,365
+H- E,ps,15-03-2025,W5,Tap Water,--,0,15-03-2025 13:38:42.884,March,Water Valve : 5 is Off,365
+H- E,ps,15-03-2025,W6,Tap Water,--,0,15-03-2025 13:38:43.662,March,Water Valve : 6 is Off,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 13:38:57.636,March,Home Reached,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 13:39:13.490,March,Home Reached,365
+H- E,ps,15-03-2025,L1,-,-,0,15-03-2025 13:39:19.297,March,Liquid Level - 200,365
+H- E,ps,15-03-2025,L2,-,-,0,15-03-2025 13:39:22.321,March,Liquid Level - 200,365
+H- E,ps,15-03-2025,L3,-,-,0,15-03-2025 13:39:25.108,March,Liquid Level - 200,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 13:39:38.815,March,Home Reached,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 13:39:53.729,March,Home Reached,365
+H- E,ps,15-03-2025,,,R1,0,15-03-2025 13:39:55.394,March,Test Started,365
+H- E,ps,15-03-2025,L1,Loading,R1,0,15-03-2025 13:40:01.814,March,Picked From,365
+H- E,ps,15-03-2025,H1,Heating,R1,0,15-03-2025 13:40:09.224,March,Placed In,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 13:40:09.856,March,Heater Door Closed,365
+H- E,ps,15-03-2025,-,-,-,-273,15-03-2025 13:40:10.289,March,Device temperature ,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 13:50:57.007,March,Heater Door Opened,365
+H- E,ps,15-03-2025,,,R2,0,15-03-2025 13:50:57.684,March,Test Started,365
+H- E,ps,15-03-2025,L2,Loading,R2,0,15-03-2025 13:51:04.572,March,Picked From,365
+H- E,ps,15-03-2025,H2,Heating,R2,0,15-03-2025 13:51:11.470,March,Placed In,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 13:51:12.105,March,Heater Door Closed,365
+H- E,ps,15-03-2025,-,-,-,545,15-03-2025 13:51:12.551,March,Device temperature ,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 14:00:10.285,March,Heater Door Opened,365
+H- E,ps,15-03-2025,H1,Heating,R1,0,15-03-2025 14:00:16.723,March,Picked From,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 14:00:17.367,March,Heater Door Closed,365
+H- E,ps,15-03-2025,J1,XYLENE-1,R1,0,15-03-2025 14:00:23.851,March,Placed In,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 14:01:58.961,March,Heater Door Opened,365
+H- E,ps,15-03-2025,,,R3,0,15-03-2025 14:01:59.657,March,Test Started,365
+H- E,ps,15-03-2025,L3,Loading,R3,0,15-03-2025 14:02:06.525,March,Picked From,365
+H- E,ps,15-03-2025,H1,Heating,R3,0,15-03-2025 14:02:13.388,March,Placed In,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 14:02:14.019,March,Heater Door Closed,365
+H- E,ps,15-03-2025,-,-,-,545,15-03-2025 14:02:14.451,March,Device temperature ,365
+H- E,ps,15-03-2025,J1,XYLENE-1,R1,0,15-03-2025 14:05:30.871,March,Picked From,365
+H- E,ps,15-03-2025,J2,XYLENE-2,R1,0,15-03-2025 14:05:37.180,March,Placed In,365
+H- E,ps,15-03-2025,J2,XYLENE-2,R1,0,15-03-2025 14:10:43.072,March,Picked From,365
+H- E,ps,15-03-2025,J3,XYLENE-3,R1,0,15-03-2025 14:10:49.402,March,Placed In,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 14:11:12.262,March,Heater Door Opened,365
+H- E,ps,15-03-2025,H2,Heating,R2,0,15-03-2025 14:11:19.650,March,Picked From,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 14:11:20.294,March,Heater Door Closed,365
+H- E,ps,15-03-2025,J1,XYLENE-1,R2,0,15-03-2025 14:11:26.782,March,Placed In,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 14:13:02.499,March,Heater Door Opened,365
+H- E,ps,15-03-2025,L1,-,-,0,15-03-2025 14:13:07.321,March,Liquid Level - 200,365
+H- E,ps,15-03-2025,L2,-,-,0,15-03-2025 14:13:10.313,March,Liquid Level - 200,365
+H- E,ps,15-03-2025,L3,-,-,0,15-03-2025 14:13:13.059,March,Liquid Level - 200,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 14:13:26.764,March,Home Reached,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 14:13:41.633,March,Home Reached,365
+H- E,ps,15-03-2025,,,R4,0,15-03-2025 14:13:43.254,March,Test Started,365
+H- E,ps,15-03-2025,L1,Loading,R4,0,15-03-2025 14:13:49.605,March,Picked From,365
+H- E,ps,15-03-2025,H2,Heating,R4,0,15-03-2025 14:13:56.966,March,Placed In,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 14:13:57.586,March,Heater Door Closed,365
+H- E,ps,15-03-2025,-,-,-,545,15-03-2025 14:13:58.003,March,Device temperature ,365
+H- E,ps,15-03-2025,J3,XYLENE-3,R1,0,15-03-2025 14:15:57.707,March,Picked From,365
+H- E,ps,15-03-2025,J4,100 % Alcohol,R1,0,15-03-2025 14:16:04.041,March,Placed In,365
+H- E,ps,15-03-2025,J1,XYLENE-1,R2,0,15-03-2025 14:16:33.807,March,Picked From,365
+H- E,ps,15-03-2025,J2,XYLENE-2,R2,0,15-03-2025 14:16:40.166,March,Placed In,365
+H- E,ps,15-03-2025,J4,100 % Alcohol,R1,0,15-03-2025 14:19:11.502,March,Picked From,365
+H- E,ps,15-03-2025,J5,70%Alcohol,R1,0,15-03-2025 14:19:17.835,March,Placed In,365
+H- E,ps,15-03-2025,J2,XYLENE-2,R2,0,15-03-2025 14:21:47.180,March,Picked From,365
+H- E,ps,15-03-2025,J3,XYLENE-3,R2,0,15-03-2025 14:21:53.512,March,Placed In,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 14:22:14.323,March,Heater Door Opened,365
+H- E,ps,15-03-2025,H1,Heating,R3,0,15-03-2025 14:22:21.809,March,Picked From,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 14:22:22.439,March,Heater Door Closed,365
+H- E,ps,15-03-2025,J1,XYLENE-1,R3,0,15-03-2025 14:22:28.948,March,Placed In,365
+H- E,ps,15-03-2025,J5,70%Alcohol,R1,0,15-03-2025 14:22:36.891,March,Picked From,365
+H- E,ps,15-03-2025,J6,50% Alcohol,R1,0,15-03-2025 14:22:43.247,March,Placed In,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 14:24:44.620,March,Heater Door Opened,365
+H- E,ps,15-03-2025,,,R5,0,15-03-2025 14:24:45.364,March,Test Started,365
+H- E,ps,15-03-2025,L2,Loading,R5,0,15-03-2025 14:24:52.692,March,Picked From,365
+H- E,ps,15-03-2025,H1,Heating,R5,0,15-03-2025 14:24:59.559,March,Placed In,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 14:25:00.181,March,Heater Door Closed,365
+H- E,ps,15-03-2025,-,-,-,447,15-03-2025 14:25:00.597,March,Device temperature ,365
+H- E,ps,15-03-2025,W1,Tap Water,--,0,15-03-2025 14:25:26.265,March,Water Valve : 1 is On,365
+H- E,ps,15-03-2025,J6,50% Alcohol,R1,0,15-03-2025 14:25:52.422,March,Picked From,365
+H- E,ps,15-03-2025,W1,Running TAP Water,R1,0,15-03-2025 14:25:59.715,March,Placed In,365
+H- E,ps,15-03-2025,J3,XYLENE-3,R2,0,15-03-2025 14:27:02.090,March,Picked From,365
+H- E,ps,15-03-2025,J4,100 % Alcohol,R2,0,15-03-2025 14:27:08.433,March,Placed In,365
+H- E,ps,15-03-2025,J1,XYLENE-1,R3,0,15-03-2025 14:27:35.944,March,Picked From,365
+H- E,ps,15-03-2025,J2,XYLENE-2,R3,0,15-03-2025 14:27:41.825,March,Placed In,365
+H- E,ps,15-03-2025,W1,Tap Water,--,0,15-03-2025 14:29:00.661,March,Water Valve : 1 is Off,365
+H- E,ps,15-03-2025,W1,Running TAP Water,R1,0,15-03-2025 14:29:09.710,March,Picked From,365
+H- E,ps,15-03-2025,J8,Hematoxin,R1,0,15-03-2025 14:29:16.044,March,Placed In,365
+H- E,ps,15-03-2025,J4,100 % Alcohol,R2,0,15-03-2025 14:30:16.293,March,Picked From,365
+H- E,ps,15-03-2025,J5,70%Alcohol,R2,0,15-03-2025 14:30:22.617,March,Placed In,365
+H- E,ps,15-03-2025,J2,XYLENE-2,R3,0,15-03-2025 14:32:49.573,March,Picked From,365
+H- E,ps,15-03-2025,J3,XYLENE-3,R3,0,15-03-2025 14:32:55.888,March,Placed In,365
+H- E,ps,15-03-2025,J5,70%Alcohol,R2,0,15-03-2025 14:33:29.693,March,Picked From,365
+H- E,ps,15-03-2025,J6,50% Alcohol,R2,0,15-03-2025 14:33:36.045,March,Placed In,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 14:33:58.583,March,Heater Door Opened,365
+H- E,ps,15-03-2025,H2,Heating,R4,0,15-03-2025 14:34:07.554,March,Picked From,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 14:34:08.181,March,Heater Door Closed,365
+H- E,ps,15-03-2025,J1,XYLENE-1,R4,0,15-03-2025 14:34:15.137,March,Placed In,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 14:35:46.833,March,Heater Door Opened,365
+H- E,ps,15-03-2025,,,R6,0,15-03-2025 14:35:47.525,March,Test Started,365
+H- E,ps,15-03-2025,L3,Loading,R6,0,15-03-2025 14:35:54.447,March,Picked From,365
+H- E,ps,15-03-2025,H2,Heating,R6,0,15-03-2025 14:36:00.811,March,Placed In,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 14:36:01.442,March,Heater Door Closed,365
+H- E,ps,15-03-2025,-,-,-,545,15-03-2025 14:36:01.862,March,Device temperature ,365
+H- E,ps,15-03-2025,J6,50% Alcohol,R2,0,15-03-2025 14:36:45.282,March,Picked From,365
+H- E,ps,15-03-2025,W1,Running TAP Water,R2,0,15-03-2025 14:36:52.673,March,Placed In,365
+H- E,ps,15-03-2025,W2,Tap Water,--,0,15-03-2025 14:36:58.899,March,Water Valve : 2 is On,365
+H- E,ps,15-03-2025,J8,Hematoxin,R1,0,15-03-2025 14:37:23.024,March,Picked From,365
+H- E,ps,15-03-2025,W2,Running TAP Water,R1,0,15-03-2025 14:37:29.901,March,Placed In,365
+H- E,ps,15-03-2025,J3,XYLENE-3,R3,0,15-03-2025 14:38:05.637,March,Picked From,365
+H- E,ps,15-03-2025,J4,100 % Alcohol,R3,0,15-03-2025 14:38:11.983,March,Placed In,365
+H- E,ps,15-03-2025,J1,XYLENE-1,R4,0,15-03-2025 14:39:22.464,March,Picked From,365
+H- E,ps,15-03-2025,J2,XYLENE-2,R4,0,15-03-2025 14:39:28.832,March,Placed In,365
+H- E,ps,15-03-2025,W1,Tap Water,--,0,15-03-2025 14:39:53.054,March,Water Valve : 1 is Off,365
+H- E,ps,15-03-2025,W1,Running TAP Water,R2,0,15-03-2025 14:40:01.901,March,Picked From,365
+H- E,ps,15-03-2025,J8,Hematoxin,R2,0,15-03-2025 14:40:08.235,March,Placed In,365
+H- E,ps,15-03-2025,W2,Tap Water,--,0,15-03-2025 14:40:30.521,March,Water Valve : 2 is Off,365
+H- E,ps,15-03-2025,W2,Running TAP Water,R1,0,15-03-2025 14:40:37.340,March,Picked From,365
+H- E,ps,15-03-2025,J9,1%Acid Alcohol,R1,0,15-03-2025 14:40:44.191,March,Dip Completed,365
+H- E,ps,15-03-2025,W2,Running TAP Water,R1,0,15-03-2025 14:40:51.044,March,Placed In,365
+H- E,ps,15-03-2025,J4,100 % Alcohol,R3,0,15-03-2025 14:41:20.661,March,Picked From,365
+H- E,ps,15-03-2025,J5,70%Alcohol,R3,0,15-03-2025 14:41:26.983,March,Placed In,365
+H- E,ps,15-03-2025,W2,Tap Water,--,0,15-03-2025 14:43:52.060,March,Water Valve : 2 is Off,365
+H- E,ps,15-03-2025,W2,Running TAP Water,R1,0,15-03-2025 14:44:00.451,March,Picked From,365
+H- E,ps,15-03-2025,J18,Lithium Carbonate,R1,0,15-03-2025 14:44:07.299,March,Dip Completed,365
+H- E,ps,15-03-2025,W6,Running TAP Water,R1,0,15-03-2025 14:44:14.153,March,Placed In,365
+H- E,ps,15-03-2025,J5,70%Alcohol,R3,0,15-03-2025 14:44:35.464,March,Picked From,365
+H- E,ps,15-03-2025,J6,50% Alcohol,R3,0,15-03-2025 14:44:41.795,March,Placed In,365
+H- E,ps,15-03-2025,J2,XYLENE-2,R4,0,15-03-2025 14:44:58.411,March,Picked From,365
+H- E,ps,15-03-2025,J3,XYLENE-3,R4,0,15-03-2025 14:45:04.727,March,Placed In,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 14:45:11.739,March,Heater Door Opened,365
+H- E,ps,15-03-2025,H1,Heating,R5,0,15-03-2025 14:45:19.194,March,Picked From,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 14:45:19.827,March,Heater Door Closed,365
+H- E,ps,15-03-2025,J1,XYLENE-1,R5,0,15-03-2025 14:45:26.328,March,Placed In,365
+H- E,ps,15-03-2025,W6,Tap Water,--,0,15-03-2025 14:47:15.160,March,Water Valve : 6 is Off,365
+H- E,ps,15-03-2025,W6,Running TAP Water,R1,0,15-03-2025 14:47:24.775,March,Picked From,365
+H- E,ps,15-03-2025,J19,Eosin,R1,0,15-03-2025 14:47:31.135,March,Dip Completed,365
+H- E,ps,15-03-2025,J20,95% Alcohol,R1,0,15-03-2025 14:47:37.443,March,Placed In,365
+H- E,ps,15-03-2025,W1,Tap Water,--,0,15-03-2025 14:47:38.648,March,Water Valve : 1 is On,365
+H- E,ps,15-03-2025,J6,50% Alcohol,R3,0,15-03-2025 14:47:48.699,March,Picked From,365
+H- E,ps,15-03-2025,W1,Running TAP Water,R3,0,15-03-2025 14:47:56.036,March,Placed In,365
+H- E,ps,15-03-2025,J8,Hematoxin,R2,0,15-03-2025 14:48:15.065,March,Picked From,365
+H- E,ps,15-03-2025,W2,Running TAP Water,R2,0,15-03-2025 14:48:21.928,March,Placed In,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 14:48:22.838,March,Heater Door Opened,365
+H- E,ps,15-03-2025,L1,-,-,0,15-03-2025 14:48:29.410,March,Liquid Level - 200,365
+H- E,ps,15-03-2025,L2,-,-,0,15-03-2025 14:48:32.396,March,Liquid Level - 200,365
+H- E,ps,15-03-2025,L3,-,-,0,15-03-2025 14:48:35.160,March,Liquid Level - 200,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 14:48:48.876,March,Home Reached,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 14:49:03.759,March,Home Reached,365
+H- E,ps,15-03-2025,,,R7,0,15-03-2025 14:49:05.450,March,Test Started,365
+H- E,ps,15-03-2025,L1,Loading,R7,0,15-03-2025 14:49:11.845,March,Picked From,365
+H- E,ps,15-03-2025,H1,Heating,R7,0,15-03-2025 14:49:19.191,March,Placed In,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 14:49:19.808,March,Heater Door Closed,365
+H- E,ps,15-03-2025,-,-,-,545,15-03-2025 14:49:20.261,March,Device temperature ,365
+H- E,ps,15-03-2025,J3,XYLENE-3,R4,0,15-03-2025 14:50:12.132,March,Picked From,365
+H- E,ps,15-03-2025,J4,100 % Alcohol,R4,0,15-03-2025 14:50:18.441,March,Placed In,365
+H- E,ps,15-03-2025,J1,XYLENE-1,R5,0,15-03-2025 14:50:34.123,March,Picked From,365
+H- E,ps,15-03-2025,J2,XYLENE-2,R5,0,15-03-2025 14:50:40.470,March,Placed In,365
+H- E,ps,15-03-2025,J20,95% Alcohol,R1,0,15-03-2025 14:50:56.823,March,Picked From,365
+H- E,ps,15-03-2025,J21,100 % Alcohol,R1,0,15-03-2025 14:51:03.160,March,Placed In,365
+H- E,ps,15-03-2025,W2,Tap Water,--,0,15-03-2025 14:51:22.834,March,Water Valve : 2 is Off,365
+H- E,ps,15-03-2025,W2,Running TAP Water,R2,0,15-03-2025 14:51:30.708,March,Picked From,365
+H- E,ps,15-03-2025,J9,1%Acid Alcohol,R2,0,15-03-2025 14:51:37.574,March,Dip Completed,365
+H- E,ps,15-03-2025,W2,Running TAP Water,R2,0,15-03-2025 14:51:44.442,March,Placed In,365
+H- E,ps,15-03-2025,W1,Tap Water,--,0,15-03-2025 14:51:55.061,March,Water Valve : 1 is Off,365
+H- E,ps,15-03-2025,W1,Running TAP Water,R3,0,15-03-2025 14:52:01.125,March,Picked From,365
+H- E,ps,15-03-2025,J8,Hematoxin,R3,0,15-03-2025 14:52:07.484,March,Placed In,365
+H- E,ps,15-03-2025,J4,100 % Alcohol,R4,0,15-03-2025 14:53:26.409,March,Picked From,365
+H- E,ps,15-03-2025,J5,70%Alcohol,R4,0,15-03-2025 14:53:32.801,March,Placed In,365
+H- E,ps,15-03-2025,J21,100 % Alcohol,R1,0,15-03-2025 14:54:10.032,March,Picked From,365
+H- E,ps,15-03-2025,J22,100 % Alcohol,R1,0,15-03-2025 14:54:16.332,March,Placed In,365
+H- E,ps,15-03-2025,W2,Tap Water,--,0,15-03-2025 14:54:45.256,March,Water Valve : 2 is Off,365
+H- E,ps,15-03-2025,W2,Running TAP Water,R2,0,15-03-2025 14:54:53.347,March,Picked From,365
+H- E,ps,15-03-2025,J18,Lithium Carbonate,R2,0,15-03-2025 14:55:00.182,March,Dip Completed,365
+H- E,ps,15-03-2025,W6,Running TAP Water,R2,0,15-03-2025 14:55:07.103,March,Placed In,365
+H- E,ps,15-03-2025,J2,XYLENE-2,R5,0,15-03-2025 14:55:50.292,March,Picked From,365
+H- E,ps,15-03-2025,J3,XYLENE-3,R5,0,15-03-2025 14:55:56.628,March,Placed In,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 14:56:01.550,March,Heater Door Opened,365
+H- E,ps,15-03-2025,H2,Heating,R6,0,15-03-2025 14:56:09.077,March,Picked From,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 14:56:09.698,March,Heater Door Closed,365
+H- E,ps,15-03-2025,J1,XYLENE-1,R6,0,15-03-2025 14:56:16.682,March,Placed In,365
+H- E,ps,15-03-2025,J5,70%Alcohol,R4,0,15-03-2025 14:56:40.564,March,Picked From,365
+H- E,ps,15-03-2025,J6,50% Alcohol,R4,0,15-03-2025 14:56:46.874,March,Placed In,365
+H- E,ps,15-03-2025,J22,100 % Alcohol,R1,0,15-03-2025 14:57:23.280,March,Picked From,365
+H- E,ps,15-03-2025,J23,XYLENE-1,R1,0,15-03-2025 14:57:29.649,March,Placed In,365
+H- E,ps,15-03-2025,W6,Tap Water,--,0,15-03-2025 14:58:07.820,March,Water Valve : 6 is Off,365
+H- E,ps,15-03-2025,W6,Running TAP Water,R2,0,15-03-2025 14:58:15.901,March,Picked From,365
+H- E,ps,15-03-2025,J19,Eosin,R2,0,15-03-2025 14:58:22.242,March,Dip Completed,365
+H- E,ps,15-03-2025,J20,95% Alcohol,R2,0,15-03-2025 14:58:28.549,March,Placed In,365
+H- E,ps,15-03-2025,W1,Tap Water,--,0,15-03-2025 14:59:29.683,March,Water Valve : 1 is On,365
+H- E,ps,15-03-2025,J6,50% Alcohol,R4,0,15-03-2025 14:59:53.813,March,Picked From,365
+H- E,ps,15-03-2025,W1,Running TAP Water,R4,0,15-03-2025 15:00:01.111,March,Placed In,365
+H- E,ps,15-03-2025,J8,Hematoxin,R3,0,15-03-2025 15:00:13.984,March,Picked From,365
+H- E,ps,15-03-2025,W2,Running TAP Water,R3,0,15-03-2025 15:00:20.848,March,Placed In,365
+H- E,ps,15-03-2025,J23,XYLENE-1,R1,0,15-03-2025 15:00:38.983,March,Picked From,365
+H- E,ps,15-03-2025,J24,XYLENE-2,R1,0,15-03-2025 15:00:45.324,March,Placed In,365
+H- E,ps,15-03-2025,J3,XYLENE-3,R5,0,15-03-2025 15:01:03.103,March,Picked From,365
+H- E,ps,15-03-2025,J4,100 % Alcohol,R5,0,15-03-2025 15:01:09.441,March,Placed In,365
+H- E,ps,15-03-2025,J1,XYLENE-1,R6,0,15-03-2025 15:01:23.672,March,Picked From,365
+H- E,ps,15-03-2025,J2,XYLENE-2,R6,0,15-03-2025 15:01:30.036,March,Placed In,365
+H- E,ps,15-03-2025,J20,95% Alcohol,R2,0,15-03-2025 15:01:47.916,March,Picked From,365
+H- E,ps,15-03-2025,J21,100 % Alcohol,R2,0,15-03-2025 15:01:54.237,March,Placed In,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 15:01:56.763,March,Heater Door Opened,365
+H- E,ps,15-03-2025,,,R8,0,15-03-2025 15:01:57.445,March,Test Started,365
+H- E,ps,15-03-2025,L2,Loading,R8,0,15-03-2025 15:02:04.800,March,Picked From,365
+H- E,ps,15-03-2025,H2,Heating,R8,0,15-03-2025 15:02:11.612,March,Placed In,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 15:02:12.245,March,Heater Door Closed,365
+H- E,ps,15-03-2025,-,-,-,545,15-03-2025 15:02:12.664,March,Device temperature ,365
+H- E,ps,15-03-2025,W1,Tap Water,--,0,15-03-2025 15:03:02.007,March,Water Valve : 1 is Off,365
+H- E,ps,15-03-2025,W1,Running TAP Water,R4,0,15-03-2025 15:03:12.398,March,Picked From,365
+H- E,ps,15-03-2025,J8,Hematoxin,R4,0,15-03-2025 15:03:18.739,March,Placed In,365
+H- E,ps,15-03-2025,W2,Tap Water,--,0,15-03-2025 15:03:21.569,March,Water Valve : 2 is Off,365
+H- E,ps,15-03-2025,W2,Running TAP Water,R3,0,15-03-2025 15:03:28.386,March,Picked From,365
+H- E,ps,15-03-2025,J9,1%Acid Alcohol,R3,0,15-03-2025 15:03:35.294,March,Dip Completed,365
+H- E,ps,15-03-2025,W2,Running TAP Water,R3,0,15-03-2025 15:03:42.180,March,Placed In,365
+H- E,ps,15-03-2025,J24,XYLENE-2,R1,0,15-03-2025 15:03:54.624,March,Picked From,365
+H- E,ps,15-03-2025,J25,XYLENE-3,R1,0,15-03-2025 15:04:00.944,March,Placed In,365
+H- E,ps,15-03-2025,J4,100 % Alcohol,R5,0,15-03-2025 15:04:16.190,March,Picked From,365
+H- E,ps,15-03-2025,J5,70%Alcohol,R5,0,15-03-2025 15:04:22.553,March,Placed In,365
+H- E,ps,15-03-2025,J21,100 % Alcohol,R2,0,15-03-2025 15:05:01.221,March,Picked From,365
+H- E,ps,15-03-2025,J22,100 % Alcohol,R2,0,15-03-2025 15:05:07.606,March,Placed In,365
+H- E,ps,15-03-2025,J2,XYLENE-2,R6,0,15-03-2025 15:06:36.985,March,Picked From,365
+H- E,ps,15-03-2025,J3,XYLENE-3,R6,0,15-03-2025 15:06:43.381,March,Placed In,365
+H- E,ps,15-03-2025,J25,XYLENE-3,R1,0,15-03-2025 15:07:19.046,March,Picked From,365
+H- E,ps,15-03-2025,U1,Unloading,R1,0,15-03-2025 15:07:29.934,March,Placed In,365
+H- E,ps,15-03-2025,U1,Unloading,R1,0,15-03-2025 15:07:29.953,March,Test Completed,365
+H- E,ps,15-03-2025,J5,70%Alcohol,R5,0,15-03-2025 15:07:43.659,March,Picked From,365
+H- E,ps,15-03-2025,J6,50% Alcohol,R5,0,15-03-2025 15:07:49.986,March,Placed In,365
+H- E,ps,15-03-2025,W2,Tap Water,--,0,15-03-2025 15:07:59.206,March,Water Valve : 2 is Off,365
+H- E,ps,15-03-2025,W2,Running TAP Water,R3,0,15-03-2025 15:08:07.052,March,Picked From,365
+H- E,ps,15-03-2025,J18,Lithium Carbonate,R3,0,15-03-2025 15:08:13.946,March,Dip Completed,365
+H- E,ps,15-03-2025,W6,Running TAP Water,R3,0,15-03-2025 15:08:20.797,March,Placed In,365
+H- E,ps,15-03-2025,J22,100 % Alcohol,R2,0,15-03-2025 15:08:38.072,March,Picked From,365
+H- E,ps,15-03-2025,J23,XYLENE-1,R2,0,15-03-2025 15:08:44.423,March,Placed In,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 15:09:20.673,March,Heater Door Opened,365
+H- E,ps,15-03-2025,H1,Heating,R7,0,15-03-2025 15:09:28.539,March,Picked From,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 15:09:29.169,March,Heater Door Closed,365
+H- E,ps,15-03-2025,J1,XYLENE-1,R7,0,15-03-2025 15:09:35.679,March,Placed In,365
+H- E,ps,15-03-2025,W1,Tap Water,--,0,15-03-2025 15:10:32.862,March,Water Valve : 1 is On,365
+H- E,ps,15-03-2025,J6,50% Alcohol,R5,0,15-03-2025 15:10:58.492,March,Picked From,365
+H- E,ps,15-03-2025,W1,Running TAP Water,R5,0,15-03-2025 15:11:05.899,March,Placed In,365
+H- E,ps,15-03-2025,W2,Tap Water,--,0,15-03-2025 15:11:06.342,March,Water Valve : 2 is On,365
+H- E,ps,15-03-2025,J8,Hematoxin,R4,0,15-03-2025 15:11:25.420,March,Picked From,365
+H- E,ps,15-03-2025,W2,Running TAP Water,R4,0,15-03-2025 15:11:32.293,March,Placed In,365
+H- E,ps,15-03-2025,J3,XYLENE-3,R6,0,15-03-2025 15:11:53.078,March,Picked From,365
+H- E,ps,15-03-2025,J4,100 % Alcohol,R6,0,15-03-2025 15:11:59.427,March,Placed In,365
+H- E,ps,15-03-2025,J23,XYLENE-1,R2,0,15-03-2025 15:12:13.457,March,Picked From,365
+H- E,ps,15-03-2025,J24,XYLENE-2,R2,0,15-03-2025 15:12:19.812,March,Placed In,365
+H- E,ps,15-03-2025,W6,Tap Water,--,0,15-03-2025 15:12:26.748,March,Water Valve : 6 is Off,365
+H- E,ps,15-03-2025,W6,Running TAP Water,R3,0,15-03-2025 15:12:35.325,March,Picked From,365
+H- E,ps,15-03-2025,J19,Eosin,R3,0,15-03-2025 15:12:41.690,March,Dip Completed,365
+H- E,ps,15-03-2025,J20,95% Alcohol,R3,0,15-03-2025 15:12:47.995,March,Placed In,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 15:12:58.895,March,Heater Door Opened,365
+H- E,ps,15-03-2025,U1,Unloading,R9,0,15-03-2025 15:12:59.558,March,Test Started,365
+H- E,ps,15-03-2025,L3,Loading,R9,0,15-03-2025 15:13:07.938,March,Picked From,365
+H- E,ps,15-03-2025,H1,Heating,R9,0,15-03-2025 15:13:14.807,March,Placed In,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 15:13:15.447,March,Heater Door Closed,365
+H- E,ps,15-03-2025,-,-,-,545,15-03-2025 15:13:15.894,March,Device temperature ,365
+H- E,ps,15-03-2025,W1,Tap Water,--,0,15-03-2025 15:14:06.859,March,Water Valve : 1 is Off,365
+H- E,ps,15-03-2025,W1,Running TAP Water,R5,0,15-03-2025 15:14:17.236,March,Picked From,365
+H- E,ps,15-03-2025,J8,Hematoxin,R5,0,15-03-2025 15:14:23.540,March,Placed In,365
+H- E,ps,15-03-2025,J1,XYLENE-1,R7,0,15-03-2025 15:14:44.665,March,Picked From,365
+H- E,ps,15-03-2025,J2,XYLENE-2,R7,0,15-03-2025 15:14:50.974,March,Placed In,365
+H- E,ps,15-03-2025,W2,Tap Water,--,0,15-03-2025 15:15:02.299,March,Water Valve : 2 is Off,365
+H- E,ps,15-03-2025,W2,Running TAP Water,R4,0,15-03-2025 15:15:11.686,March,Picked From,365
+H- E,ps,15-03-2025,J9,1%Acid Alcohol,R4,0,15-03-2025 15:15:18.580,March,Dip Completed,365
+H- E,ps,15-03-2025,W2,Running TAP Water,R4,0,15-03-2025 15:15:25.933,March,Placed In,365
+H- E,ps,15-03-2025,J4,100 % Alcohol,R6,0,15-03-2025 15:15:41.480,March,Picked From,365
+H- E,ps,15-03-2025,J5,70%Alcohol,R6,0,15-03-2025 15:15:47.832,March,Placed In,365
+H- E,ps,15-03-2025,J24,XYLENE-2,R2,0,15-03-2025 15:16:00.076,March,Picked From,365
+H- E,ps,15-03-2025,J25,XYLENE-3,R2,0,15-03-2025 15:16:06.415,March,Placed In,365
+H- E,ps,15-03-2025,J20,95% Alcohol,R3,0,15-03-2025 15:16:18.575,March,Picked From,365
+H- E,ps,15-03-2025,J21,100 % Alcohol,R3,0,15-03-2025 15:16:24.893,March,Placed In,365
+H- E,ps,15-03-2025,W2,Tap Water,--,0,15-03-2025 15:18:26.771,March,Water Valve : 2 is Off,365
+H- E,ps,15-03-2025,W2,Running TAP Water,R4,0,15-03-2025 15:18:34.357,March,Picked From,365
+H- E,ps,15-03-2025,J18,Lithium Carbonate,R4,0,15-03-2025 15:18:41.227,March,Dip Completed,365
+H- E,ps,15-03-2025,W6,Running TAP Water,R4,0,15-03-2025 15:18:48.062,March,Placed In,365
+H- E,ps,15-03-2025,J5,70%Alcohol,R6,0,15-03-2025 15:18:56.443,March,Picked From,365
+H- E,ps,15-03-2025,J6,50% Alcohol,R6,0,15-03-2025 15:19:02.783,March,Placed In,365
+H- E,ps,15-03-2025,J25,XYLENE-3,R2,0,15-03-2025 15:19:14.221,March,Picked From,365
+H- E,ps,15-03-2025,U2,Unloading,R2,0,15-03-2025 15:19:25.061,March,Placed In,365
+H- E,ps,15-03-2025,U2,Unloading,R2,0,15-03-2025 15:19:25.080,March,Test Completed,365
+H- E,ps,15-03-2025,J21,100 % Alcohol,R3,0,15-03-2025 15:19:35.940,March,Picked From,365
+H- E,ps,15-03-2025,J22,100 % Alcohol,R3,0,15-03-2025 15:19:42.298,March,Placed In,365
+H- E,ps,15-03-2025,J2,XYLENE-2,R7,0,15-03-2025 15:19:57.912,March,Picked From,365
+H- E,ps,15-03-2025,J3,XYLENE-3,R7,0,15-03-2025 15:20:04.286,March,Placed In,365
+H- E,ps,15-03-2025,W1,Tap Water,--,0,15-03-2025 15:21:45.611,March,Water Valve : 1 is On,365
+H- E,ps,15-03-2025,W6,Tap Water,--,0,15-03-2025 15:21:49.023,March,Water Valve : 6 is Off,365
+H- E,ps,15-03-2025,W6,Running TAP Water,R4,0,15-03-2025 15:21:57.600,March,Picked From,365
+H- E,ps,15-03-2025,J19,Eosin,R4,0,15-03-2025 15:22:03.920,March,Dip Completed,365
+H- E,ps,15-03-2025,J20,95% Alcohol,R4,0,15-03-2025 15:22:10.238,March,Placed In,365
+H- E,ps,15-03-2025,W2,Tap Water,--,0,15-03-2025 15:22:11.058,March,Water Valve : 2 is On,365
+H- E,ps,15-03-2025,J6,50% Alcohol,R6,0,15-03-2025 15:22:20.766,March,Picked From,365
+H- E,ps,15-03-2025,W1,Running TAP Water,R6,0,15-03-2025 15:22:28.117,March,Placed In,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 15:22:35.088,March,Heater Door Opened,365
+H- E,ps,15-03-2025,H2,Heating,R8,0,15-03-2025 15:22:45.592,March,Picked From,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 15:22:46.213,March,Heater Door Closed,365
+H- E,ps,15-03-2025,J1,XYLENE-1,R8,0,15-03-2025 15:22:53.261,March,Placed In,365
+H- E,ps,15-03-2025,J8,Hematoxin,R5,0,15-03-2025 15:23:05.266,March,Picked From,365
+H- E,ps,15-03-2025,W2,Running TAP Water,R5,0,15-03-2025 15:23:12.133,March,Placed In,365
+H- E,ps,15-03-2025,J22,100 % Alcohol,R3,0,15-03-2025 15:23:24.288,March,Picked From,365
+H- E,ps,15-03-2025,J23,XYLENE-1,R3,0,15-03-2025 15:23:30.643,March,Placed In,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 15:24:04.889,March,Heater Door Opened,365
+H- E,ps,15-03-2025,L1,-,-,0,15-03-2025 15:24:08.775,March,Liquid Level - 200,365
+H- E,ps,15-03-2025,L2,-,-,0,15-03-2025 15:24:11.427,March,Liquid Level - 200,365
+H- E,ps,15-03-2025,L3,-,-,0,15-03-2025 15:24:14.195,March,Liquid Level - 200,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 15:24:27.897,March,Home Reached,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 15:24:42.796,March,Home Reached,365
+H- E,ps,15-03-2025,U2,Unloading,R10,0,15-03-2025 15:24:44.394,March,Test Started,365
+H- E,ps,15-03-2025,L1,Loading,R10,0,15-03-2025 15:24:50.761,March,Picked From,365
+H- E,ps,15-03-2025,H2,Heating,R10,0,15-03-2025 15:24:58.092,March,Placed In,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 15:24:58.728,March,Heater Door Closed,365
+H- E,ps,15-03-2025,-,-,-,-273,15-03-2025 15:24:59.141,March,Device temperature ,365
+H- E,ps,15-03-2025,J3,XYLENE-3,R7,0,15-03-2025 15:25:12.500,March,Picked From,365
+H- E,ps,15-03-2025,J4,100 % Alcohol,R7,0,15-03-2025 15:25:18.816,March,Placed In,365
+H- E,ps,15-03-2025,J20,95% Alcohol,R4,0,15-03-2025 15:25:28.815,March,Picked From,365
+H- E,ps,15-03-2025,J21,100 % Alcohol,R4,0,15-03-2025 15:25:35.195,March,Placed In,365
+H- E,ps,15-03-2025,W1,Tap Water,--,0,15-03-2025 15:25:47.107,March,Water Valve : 1 is Off,365
+H- E,ps,15-03-2025,W1,Running TAP Water,R6,0,15-03-2025 15:25:54.494,March,Picked From,365
+H- E,ps,15-03-2025,J8,Hematoxin,R6,0,15-03-2025 15:26:00.825,March,Placed In,365
+H- E,ps,15-03-2025,W2,Tap Water,--,0,15-03-2025 15:26:13.185,March,Water Valve : 2 is Off,365
+H- E,ps,15-03-2025,W2,Running TAP Water,R5,0,15-03-2025 15:26:20.251,March,Picked From,365
+H- E,ps,15-03-2025,J9,1%Acid Alcohol,R5,0,15-03-2025 15:26:27.108,March,Dip Completed,365
+H- E,ps,15-03-2025,W2,Running TAP Water,R5,0,15-03-2025 15:26:34.006,March,Placed In,365
+H- E,ps,15-03-2025,J23,XYLENE-1,R3,0,15-03-2025 15:26:50.751,March,Picked From,365
+H- E,ps,15-03-2025,J24,XYLENE-2,R3,0,15-03-2025 15:26:57.135,March,Placed In,365
+H- E,ps,15-03-2025,J1,XYLENE-1,R8,0,15-03-2025 15:27:59.701,March,Picked From,365
+H- E,ps,15-03-2025,J2,XYLENE-2,R8,0,15-03-2025 15:28:06.080,March,Placed In,365
+H- E,ps,15-03-2025,J4,100 % Alcohol,R7,0,15-03-2025 15:28:25.703,March,Picked From,365
+H- E,ps,15-03-2025,J5,70%Alcohol,R7,0,15-03-2025 15:28:32.070,March,Placed In,365
+H- E,ps,15-03-2025,J21,100 % Alcohol,R4,0,15-03-2025 15:28:42.043,March,Picked From,365
+H- E,ps,15-03-2025,J22,100 % Alcohol,R4,0,15-03-2025 15:28:48.408,March,Placed In,365
+H- E,ps,15-03-2025,W2,Tap Water,--,0,15-03-2025 15:29:35.088,March,Water Valve : 2 is Off,365
+H- E,ps,15-03-2025,W2,Running TAP Water,R5,0,15-03-2025 15:29:43.450,March,Picked From,365
+H- E,ps,15-03-2025,J18,Lithium Carbonate,R5,0,15-03-2025 15:29:50.321,March,Dip Completed,365
+H- E,ps,15-03-2025,W6,Running TAP Water,R5,0,15-03-2025 15:29:57.180,March,Placed In,365
+H- E,ps,15-03-2025,J24,XYLENE-2,R3,0,15-03-2025 15:30:06.064,March,Picked From,365
+H- E,ps,15-03-2025,J25,XYLENE-3,R3,0,15-03-2025 15:30:12.451,March,Placed In,365
+H- E,ps,15-03-2025,J5,70%Alcohol,R7,0,15-03-2025 15:31:39.863,March,Picked From,365
+H- E,ps,15-03-2025,J6,50% Alcohol,R7,0,15-03-2025 15:31:46.225,March,Placed In,365
+H- E,ps,15-03-2025,J22,100 % Alcohol,R4,0,15-03-2025 15:31:55.321,March,Picked From,365
+H- E,ps,15-03-2025,J23,XYLENE-1,R4,0,15-03-2025 15:32:01.692,March,Placed In,365
+H- E,ps,15-03-2025,J2,XYLENE-2,R8,0,15-03-2025 15:33:12.584,March,Picked From,365
+H- E,ps,15-03-2025,J3,XYLENE-3,R8,0,15-03-2025 15:33:18.929,March,Placed In,365
+H- E,ps,15-03-2025,J25,XYLENE-3,R3,0,15-03-2025 15:33:30.398,March,Picked From,365
+H- E,ps,15-03-2025,U3,Unloading,R3,0,15-03-2025 15:33:40.762,March,Placed In,365
+H- E,ps,15-03-2025,U3,Unloading,R3,0,15-03-2025 15:33:40.777,March,Test Completed,365
+H- E,ps,15-03-2025,W2,Tap Water,--,0,15-03-2025 15:33:43.126,March,Water Valve : 2 is On,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 15:33:49.416,March,Heater Door Opened,365
+H- E,ps,15-03-2025,H1,Heating,R9,0,15-03-2025 15:34:00.993,March,Picked From,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 15:34:01.629,March,Heater Door Closed,365
+H- E,ps,15-03-2025,J1,XYLENE-1,R9,0,15-03-2025 15:34:08.583,March,Placed In,365
+H- E,ps,15-03-2025,W6,Tap Water,--,0,15-03-2025 15:34:14.297,March,Water Valve : 6 is Off,365
+H- E,ps,15-03-2025,W6,Running TAP Water,R5,0,15-03-2025 15:34:23.659,March,Picked From,365
+H- E,ps,15-03-2025,J19,Eosin,R5,0,15-03-2025 15:34:29.984,March,Dip Completed,365
+H- E,ps,15-03-2025,J20,95% Alcohol,R5,0,15-03-2025 15:34:36.316,March,Placed In,365
+H- E,ps,15-03-2025,W1,Tap Water,--,0,15-03-2025 15:34:37.129,March,Water Valve : 1 is On,365
+H- E,ps,15-03-2025,J8,Hematoxin,R6,0,15-03-2025 15:34:51.791,March,Picked From,365
+H- E,ps,15-03-2025,W2,Running TAP Water,R6,0,15-03-2025 15:34:58.654,March,Placed In,365
+H- E,ps,15-03-2025,J6,50% Alcohol,R7,0,15-03-2025 15:35:16.801,March,Picked From,365
+H- E,ps,15-03-2025,W1,Running TAP Water,R7,0,15-03-2025 15:35:24.144,March,Placed In,365
+H- E,ps,15-03-2025,J23,XYLENE-1,R4,0,15-03-2025 15:35:32.690,March,Picked From,365
+H- E,ps,15-03-2025,J24,XYLENE-2,R4,0,15-03-2025 15:35:39.036,March,Placed In,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 15:35:45.254,March,Heater Door Opened,365
+H- E,ps,15-03-2025,U3,Unloading,R11,0,15-03-2025 15:35:45.938,March,Test Started,365
+H- E,ps,15-03-2025,L2,Loading,R11,0,15-03-2025 15:35:52.293,March,Picked From,365
+H- E,ps,15-03-2025,H1,Heating,R11,0,15-03-2025 15:35:59.126,March,Placed In,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 15:35:59.759,March,Heater Door Closed,365
+H- E,ps,15-03-2025,-,-,-,545,15-03-2025 15:36:00.194,March,Device temperature ,365
+H- E,ps,15-03-2025,J20,95% Alcohol,R5,0,15-03-2025 15:37:45.806,March,Picked From,365
+H- E,ps,15-03-2025,J21,100 % Alcohol,R5,0,15-03-2025 15:37:52.161,March,Placed In,365
+H- E,ps,15-03-2025,W2,Tap Water,--,0,15-03-2025 15:37:59.430,March,Water Valve : 2 is Off,365
+H- E,ps,15-03-2025,W2,Running TAP Water,R6,0,15-03-2025 15:38:07.290,March,Picked From,365
+H- E,ps,15-03-2025,J9,1%Acid Alcohol,R6,0,15-03-2025 15:38:14.181,March,Dip Completed,365
+H- E,ps,15-03-2025,W2,Running TAP Water,R6,0,15-03-2025 15:38:21.059,March,Placed In,365
+H- E,ps,15-03-2025,J3,XYLENE-3,R8,0,15-03-2025 15:38:39.065,March,Picked From,365
+H- E,ps,15-03-2025,J4,100 % Alcohol,R8,0,15-03-2025 15:38:45.393,March,Placed In,365
+H- E,ps,15-03-2025,J24,XYLENE-2,R4,0,15-03-2025 15:38:56.873,March,Picked From,365
+H- E,ps,15-03-2025,J25,XYLENE-3,R4,0,15-03-2025 15:39:03.207,March,Placed In,365
+H- E,ps,15-03-2025,J1,XYLENE-1,R9,0,15-03-2025 15:39:14.945,March,Picked From,365
+H- E,ps,15-03-2025,J2,XYLENE-2,R9,0,15-03-2025 15:39:21.285,March,Placed In,365
+H- E,ps,15-03-2025,W1,Tap Water,--,0,15-03-2025 15:39:30.337,March,Water Valve : 1 is Off,365
+H- E,ps,15-03-2025,W1,Running TAP Water,R7,0,15-03-2025 15:39:39.246,March,Picked From,365
+H- E,ps,15-03-2025,J8,Hematoxin,R7,0,15-03-2025 15:39:45.576,March,Placed In,365
+H- E,ps,15-03-2025,J21,100 % Alcohol,R5,0,15-03-2025 15:40:59.071,March,Picked From,365
+H- E,ps,15-03-2025,J22,100 % Alcohol,R5,0,15-03-2025 15:41:05.409,March,Placed In,365
+H- E,ps,15-03-2025,W2,Tap Water,--,0,15-03-2025 15:41:22.026,March,Water Valve : 2 is Off,365
+H- E,ps,15-03-2025,W2,Running TAP Water,R6,0,15-03-2025 15:41:30.407,March,Picked From,365
+H- E,ps,15-03-2025,J18,Lithium Carbonate,R6,0,15-03-2025 15:41:37.284,March,Dip Completed,365
+H- E,ps,15-03-2025,W6,Running TAP Water,R6,0,15-03-2025 15:41:44.166,March,Placed In,365
+H- E,ps,15-03-2025,J4,100 % Alcohol,R8,0,15-03-2025 15:41:54.307,March,Picked From,365
+H- E,ps,15-03-2025,J5,70%Alcohol,R8,0,15-03-2025 15:42:00.637,March,Placed In,365
+H- E,ps,15-03-2025,J25,XYLENE-3,R4,0,15-03-2025 15:42:10.630,March,Picked From,365
+H- E,ps,15-03-2025,U4,Unloading,R4,0,15-03-2025 15:42:20.493,March,Placed In,365
+H- E,ps,15-03-2025,U4,Unloading,R4,0,15-03-2025 15:42:20.511,March,Test Completed,365
+H- E,ps,15-03-2025,J22,100 % Alcohol,R5,0,15-03-2025 15:44:14.295,March,Picked From,365
+H- E,ps,15-03-2025,J23,XYLENE-1,R5,0,15-03-2025 15:44:20.648,March,Placed In,365
+H- E,ps,15-03-2025,J2,XYLENE-2,R9,0,15-03-2025 15:44:27.631,March,Picked From,365
+H- E,ps,15-03-2025,J3,XYLENE-3,R9,0,15-03-2025 15:44:33.995,March,Placed In,365
+H- E,ps,15-03-2025,W6,Tap Water,--,0,15-03-2025 15:44:45.180,March,Water Valve : 6 is Off,365
+H- E,ps,15-03-2025,W6,Running TAP Water,R6,0,15-03-2025 15:44:53.572,March,Picked From,365
+H- E,ps,15-03-2025,J19,Eosin,R6,0,15-03-2025 15:44:59.913,March,Dip Completed,365
+H- E,ps,15-03-2025,J20,95% Alcohol,R6,0,15-03-2025 15:45:06.277,March,Placed In,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 15:45:10.702,March,Heater Door Opened,365
+H- E,ps,15-03-2025,H2,Heating,R10,0,15-03-2025 15:45:19.720,March,Picked From,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 15:45:20.368,March,Heater Door Closed,365
+H- E,ps,15-03-2025,J1,XYLENE-1,R10,0,15-03-2025 15:45:27.321,March,Placed In,365
+H- E,ps,15-03-2025,J5,70%Alcohol,R8,0,15-03-2025 15:45:41.544,March,Picked From,365
+H- E,ps,15-03-2025,J6,50% Alcohol,R8,0,15-03-2025 15:45:47.911,March,Placed In,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 15:46:46.479,March,Heater Door Opened,365
+H- E,ps,15-03-2025,U4,Unloading,R12,0,15-03-2025 15:46:47.243,March,Test Started,365
+H- E,ps,15-03-2025,L3,Loading,R12,0,15-03-2025 15:46:55.126,March,Picked From,365
+H- E,ps,15-03-2025,H2,Heating,R12,0,15-03-2025 15:47:01.496,March,Placed In,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 15:47:02.139,March,Heater Door Closed,365
+H- E,ps,15-03-2025,-,-,-,545,15-03-2025 15:47:02.575,March,Device temperature ,365
+H- E,ps,15-03-2025,J23,XYLENE-1,R5,0,15-03-2025 15:47:28.928,March,Picked From,365
+H- E,ps,15-03-2025,J24,XYLENE-2,R5,0,15-03-2025 15:47:35.235,March,Placed In,365
+H- E,ps,15-03-2025,W2,Tap Water,--,0,15-03-2025 15:47:36.206,March,Water Valve : 2 is On,365
+H- E,ps,15-03-2025,J8,Hematoxin,R7,0,15-03-2025 15:47:53.801,March,Picked From,365
+H- E,ps,15-03-2025,W2,Running TAP Water,R7,0,15-03-2025 15:48:00.647,March,Placed In,365
+H- E,ps,15-03-2025,J20,95% Alcohol,R6,0,15-03-2025 15:48:14.292,March,Picked From,365
+H- E,ps,15-03-2025,J21,100 % Alcohol,R6,0,15-03-2025 15:48:20.609,March,Placed In,365
+H- E,ps,15-03-2025,W1,Tap Water,--,0,15-03-2025 15:48:30.881,March,Water Valve : 1 is On,365
+H- E,ps,15-03-2025,J6,50% Alcohol,R8,0,15-03-2025 15:48:55.036,March,Picked From,365
+H- E,ps,15-03-2025,W1,Running TAP Water,R8,0,15-03-2025 15:49:02.386,March,Placed In,365
+H- E,ps,15-03-2025,J3,XYLENE-3,R9,0,15-03-2025 15:49:43.251,March,Picked From,365
+H- E,ps,15-03-2025,J4,100 % Alcohol,R9,0,15-03-2025 15:49:49.566,March,Placed In,365
+H- E,ps,15-03-2025,J1,XYLENE-1,R10,0,15-03-2025 15:50:34.408,March,Picked From,365
+H- E,ps,15-03-2025,J2,XYLENE-2,R10,0,15-03-2025 15:50:40.765,March,Placed In,365
+H- E,ps,15-03-2025,J24,XYLENE-2,R5,0,15-03-2025 15:50:53.120,March,Picked From,365
+H- E,ps,15-03-2025,J25,XYLENE-3,R5,0,15-03-2025 15:50:59.443,March,Placed In,365
+H- E,ps,15-03-2025,W2,Tap Water,--,0,15-03-2025 15:51:01.465,March,Water Valve : 2 is Off,365
+H- E,ps,15-03-2025,W2,Running TAP Water,R7,0,15-03-2025 15:51:10.840,March,Picked From,365
+H- E,ps,15-03-2025,J9,1%Acid Alcohol,R7,0,15-03-2025 15:51:17.686,March,Dip Completed,365
+H- E,ps,15-03-2025,W2,Running TAP Water,R7,0,15-03-2025 15:51:24.561,March,Placed In,365
+H- E,ps,15-03-2025,J21,100 % Alcohol,R6,0,15-03-2025 15:51:40.174,March,Picked From,365
+H- E,ps,15-03-2025,J22,100 % Alcohol,R6,0,15-03-2025 15:51:46.491,March,Placed In,365
+H- E,ps,15-03-2025,W1,Tap Water,--,0,15-03-2025 15:52:03.167,March,Water Valve : 1 is Off,365
+H- E,ps,15-03-2025,W1,Running TAP Water,R8,0,15-03-2025 15:52:11.026,March,Picked From,365
+H- E,ps,15-03-2025,J8,Hematoxin,R8,0,15-03-2025 15:52:17.866,March,Placed In,365
+H- E,ps,15-03-2025,J4,100 % Alcohol,R9,0,15-03-2025 15:52:57.415,March,Picked From,365
+H- E,ps,15-03-2025,J5,70%Alcohol,R9,0,15-03-2025 15:53:03.746,March,Placed In,365
+H- E,ps,15-03-2025,J25,XYLENE-3,R5,0,15-03-2025 15:54:06.865,March,Picked From,365
+H- E,ps,15-03-2025,U5,Unloading,R5,0,15-03-2025 15:54:16.253,March,Placed In,365
+H- E,ps,15-03-2025,U5,Unloading,R5,0,15-03-2025 15:54:16.270,March,Test Completed,365
+H- E,ps,15-03-2025,W2,Tap Water,--,0,15-03-2025 15:54:25.367,March,Water Valve : 2 is Off,365
+H- E,ps,15-03-2025,W2,Running TAP Water,R7,0,15-03-2025 15:54:32.198,March,Picked From,365
+H- E,ps,15-03-2025,J18,Lithium Carbonate,R7,0,15-03-2025 15:54:39.031,March,Dip Completed,365
+H- E,ps,15-03-2025,W6,Running TAP Water,R7,0,15-03-2025 15:54:45.964,March,Placed In,365
+H- E,ps,15-03-2025,J22,100 % Alcohol,R6,0,15-03-2025 15:54:54.992,March,Picked From,365
+H- E,ps,15-03-2025,J23,XYLENE-1,R6,0,15-03-2025 15:55:01.325,March,Placed In,365
+H- E,ps,15-03-2025,J2,XYLENE-2,R10,0,15-03-2025 15:55:47.116,March,Picked From,365
+H- E,ps,15-03-2025,J3,XYLENE-3,R10,0,15-03-2025 15:55:53.487,March,Placed In,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 15:55:57.092,March,Heater Switched Off ,365
+H- E,ps,15-03-2025,W1,Tap Water,--,0,15-03-2025 15:55:58.181,March,Water Valve : 1 is Off,365
+H- E,ps,15-03-2025,W2,Tap Water,--,0,15-03-2025 15:55:58.940,March,Water Valve : 2 is Off,365
+H- E,ps,15-03-2025,W3,Tap Water,--,0,15-03-2025 15:55:59.704,March,Water Valve : 3 is Off,365
+H- E,ps,15-03-2025,W4,Tap Water,--,0,15-03-2025 15:56:00.466,March,Water Valve : 4 is Off,365
+H- E,ps,15-03-2025,W5,Tap Water,--,0,15-03-2025 15:56:01.243,March,Water Valve : 5 is Off,365
+H- E,ps,15-03-2025,W6,Tap Water,--,0,15-03-2025 15:56:02.006,March,Water Valve : 6 is Off,365
+H- E,ps,15-03-2025,-,-,-,0,15-03-2025 15:56:02.498,March,Protorun Stopped,365

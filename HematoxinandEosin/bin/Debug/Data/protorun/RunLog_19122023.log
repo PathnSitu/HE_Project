@@ -1,0 +1,120 @@
+TSP,ps,19-12-2023,-,-,0,19-12-2023 18:21:46,December,Test Started
+TSP,ps,19-12-2023,-,-,0,19-12-2023 18:21:51,December,Home Reached
+TSP,ps,19-12-2023,-,-,0,19-12-2023 18:21:51,December,
+TSP,ps,19-12-2023,-,-,0,19-12-2023 18:21:57,December,Home Reached
+TSP,ps,19-12-2023,-,-,0,19-12-2023 18:21:57,December,
+TSP,ps,19-12-2023,L1,-,0,19-12-2023 18:22:11,December,Liquid Level - 306
+TSP,ps,19-12-2023,L2,-,0,19-12-2023 18:22:13,December,Liquid Level - 2601
+TSP,ps,19-12-2023,L3,-,0,19-12-2023 18:22:16,December,Liquid Level - 2595
+TSP,ps,19-12-2023,-,-,0,19-12-2023 18:22:20,December,Home Reached
+TSP,ps,19-12-2023,-,-,0,19-12-2023 18:22:24,December,Home Reached
+TSP,ps,19-12-2023,,R1,0,19-12-2023 18:22:30,December,Test Started
+TSP,ps,19-12-2023,L1,R1,0,19-12-2023 18:22:37,December,Picked From
+TSP,ps,19-12-2023,J1,R1,0,19-12-2023 18:22:44,December,Placed In
+TSP,ps,19-12-2023,W1,R1,0,19-12-2023 18:25:27,December,Water Valve : 1 is On
+TSP,ps,19-12-2023,J1,R1,0,19-12-2023 18:25:50,December,Picked From
+TSP,ps,19-12-2023,W1,R1,0,19-12-2023 18:26:00,December,Placed In
+TSP,ps,19-12-2023,W1,R1,0,19-12-2023 18:28:06,December,Picked From
+TSP,ps,19-12-2023,J2,R1,0,19-12-2023 18:28:15,December,Placed In
+TSP,ps,19-12-2023,W1,R1,0,19-12-2023 18:28:33,December,Water Valve : 1 is Off
+TSP,ps,19-12-2023,W2,R1,0,19-12-2023 18:30:58,December,Water Valve : 2 is On
+TSP,ps,19-12-2023,J2,R1,0,19-12-2023 18:31:21,December,Picked From
+TSP,ps,19-12-2023,W2,R1,0,19-12-2023 18:31:31,December,Placed In
+TSP,ps,19-12-2023,W2,R1,0,19-12-2023 18:34:00,December,Picked From
+TSP,ps,19-12-2023,J3,R1,0,19-12-2023 18:34:10,December,Dipped In
+TSP,ps,19-12-2023,W3,R1,0,19-12-2023 18:34:20,December,Placed In
+TSP,ps,19-12-2023,W3,R1,0,19-12-2023 18:40:33,December,Picked From
+TSP,ps,19-12-2023,J4,R1,0,19-12-2023 18:40:42,December,Placed In
+Rack Status,ps,19-12-2023,-,-,0,19-12-2023 18:44:03,December,Rack Hold Status - 00
+Rack Status,ps,19-12-2023,-,-,0,19-12-2023 18:44:13,December,Home Reached
+Rack Status,ps,19-12-2023,-,-,0,19-12-2023 18:44:19,December,Home Reached
+Rack Status,ps,19-12-2023,-,-,0,19-12-2023 18:44:19,December,
+Rack Status,ps,19-12-2023,U1,-,0,19-12-2023 18:44:29,December,Liquid Level - 2551
+Rack Status,ps,19-12-2023,U2,-,0,19-12-2023 18:44:31,December,Liquid Level - 2579
+Rack Status,ps,19-12-2023,U3,-,0,19-12-2023 18:44:34,December,Liquid Level - 2580
+Rack Status,ps,19-12-2023,U4,-,0,19-12-2023 18:44:37,December,Liquid Level - 2560
+Rack Status,ps,19-12-2023,U5,-,0,19-12-2023 18:44:39,December,Liquid Level - 2569
+Rack Status,ps,19-12-2023,U6,-,0,19-12-2023 18:44:42,December,Liquid Level - 2572
+Rack Status,ps,19-12-2023,J1,-,0,19-12-2023 18:44:48,December,Liquid Level - 2580
+Rack Status,ps,19-12-2023,J2,-,0,19-12-2023 18:44:51,December,Liquid Level - 2584
+Rack Status,ps,19-12-2023,J3,-,0,19-12-2023 18:44:54,December,Liquid Level - 2601
+Rack Status,ps,19-12-2023,J4,-,0,19-12-2023 18:44:56,December,Liquid Level - 2597
+Rack Status,ps,19-12-2023,J5,-,0,19-12-2023 18:44:59,December,Liquid Level - 2595
+Rack Status,ps,19-12-2023,J6,-,0,19-12-2023 18:45:01,December,Liquid Level - 2576
+Rack Status,ps,19-12-2023,J7,-,0,19-12-2023 18:45:04,December,Liquid Level - 2587
+Rack Status,ps,19-12-2023,J8,-,0,19-12-2023 18:45:06,December,Liquid Level - 2580
+Rack Status,ps,19-12-2023,J9,-,0,19-12-2023 18:45:09,December,Liquid Level - 2583
+Rack Status,ps,19-12-2023,W1,-,0,19-12-2023 18:45:12,December,Liquid Level - 2579
+Rack Status,ps,19-12-2023,W2,-,0,19-12-2023 18:45:14,December,Liquid Level - 2573
+Rack Status,ps,19-12-2023,W3,-,0,19-12-2023 18:45:17,December,Liquid Level - 2579
+Rack Status,ps,19-12-2023,J10,-,0,19-12-2023 18:45:19,December,Liquid Level - 2590
+Rack Status,ps,19-12-2023,J11,-,0,19-12-2023 18:45:22,December,Liquid Level - 2593
+Rack Status,ps,19-12-2023,J12,-,0,19-12-2023 18:45:24,December,Liquid Level - 2577
+Rack Status,ps,19-12-2023,J13,-,0,19-12-2023 18:45:27,December,Liquid Level - 2568
+Rack Status,ps,19-12-2023,J14,-,0,19-12-2023 18:45:30,December,Liquid Level - 2575
+Rack Status,ps,19-12-2023,J15,-,0,19-12-2023 18:45:33,December,Liquid Level - 2556
+Rack Status,ps,19-12-2023,J16,-,0,19-12-2023 18:45:35,December,Liquid Level - 2576
+Rack Status,ps,19-12-2023,J17,-,0,19-12-2023 18:45:38,December,Liquid Level - 2603
+Rack Status,ps,19-12-2023,W4,-,0,19-12-2023 18:45:40,December,Liquid Level - 2574
+Rack Status,ps,19-12-2023,W5,-,0,19-12-2023 18:45:43,December,Liquid Level - 2556
+Rack Status,ps,19-12-2023,W6,-,0,19-12-2023 18:45:46,December,Liquid Level - 2571
+Rack Status,ps,19-12-2023,J18,-,0,19-12-2023 18:45:48,December,Liquid Level - 2577
+Rack Status,ps,19-12-2023,J19,-,0,19-12-2023 18:45:51,December,Liquid Level - 2586
+Rack Status,ps,19-12-2023,J20,-,0,19-12-2023 18:45:53,December,Liquid Level - 2589
+Rack Status,ps,19-12-2023,J21,-,0,19-12-2023 18:45:56,December,Liquid Level - 2582
+Rack Status,ps,19-12-2023,J22,-,0,19-12-2023 18:45:58,December,Liquid Level - 2582
+Rack Status,ps,19-12-2023,J23,-,0,19-12-2023 18:46:01,December,Liquid Level - 2598
+Rack Status,ps,19-12-2023,J24,-,0,19-12-2023 18:46:03,December,Liquid Level - 2579
+Rack Status,ps,19-12-2023,J25,-,0,19-12-2023 18:46:06,December,Liquid Level - 2586
+Rack Status,ps,19-12-2023,J26,-,0,19-12-2023 18:46:09,December,Liquid Level - 2581
+Rack Status,ps,19-12-2023,J27,-,0,19-12-2023 18:46:15,December,Liquid Level - 2569
+Rack Status,ps,19-12-2023,J28,-,0,19-12-2023 18:46:17,December,Liquid Level - 2607
+Rack Status,ps,19-12-2023,J29,-,0,19-12-2023 18:46:20,December,Liquid Level - 2605
+Rack Status,ps,19-12-2023,J30,-,0,19-12-2023 18:46:23,December,Liquid Level - 2612
+Rack Status,ps,19-12-2023,J31,-,0,19-12-2023 18:46:25,December,Liquid Level - 2605
+Rack Status,ps,19-12-2023,J32,-,0,19-12-2023 18:46:28,December,Liquid Level - 2614
+Rack Status,ps,19-12-2023,J33,-,0,19-12-2023 18:46:30,December,Liquid Level - 2611
+Rack Status,ps,19-12-2023,H1,-,0,19-12-2023 18:46:35,December,Liquid Level - 3566
+Rack Status,ps,19-12-2023,H2,-,0,19-12-2023 18:46:38,December,Liquid Level - 3549
+Rack Status,ps,19-12-2023,H3,-,0,19-12-2023 18:46:41,December,Liquid Level - 3542
+Rack Status,ps,19-12-2023,-,-,0,19-12-2023 18:46:54,December,Home Reached
+Rack Status,ps,19-12-2023,-,-,0,19-12-2023 18:46:59,December,Home Reached
+TSP,ps,19-12-2023,-,-,0,19-12-2023 18:47:43,December,Test Started
+TSP,ps,19-12-2023,-,-,0,19-12-2023 18:47:48,December,Home Reached
+TSP,ps,19-12-2023,-,-,0,19-12-2023 18:47:48,December,
+TSP,ps,19-12-2023,-,-,0,19-12-2023 18:47:53,December,Home Reached
+TSP,ps,19-12-2023,-,-,0,19-12-2023 18:47:53,December,
+TSP,ps,19-12-2023,L1,-,0,19-12-2023 18:48:07,December,Liquid Level - 261
+TSP,ps,19-12-2023,L2,-,0,19-12-2023 18:48:10,December,Liquid Level - 2607
+TSP,ps,19-12-2023,L3,-,0,19-12-2023 18:48:13,December,Liquid Level - 2595
+TSP,ps,19-12-2023,-,-,0,19-12-2023 18:48:16,December,Home Reached
+TSP,ps,19-12-2023,-,-,0,19-12-2023 18:48:21,December,Home Reached
+TSP,ps,19-12-2023,,R1,0,19-12-2023 18:48:26,December,Test Started
+TSP,ps,19-12-2023,L1,R1,0,19-12-2023 18:49:17,December,Picked From
+TSP,ps,19-12-2023,J1,R1,0,19-12-2023 18:50:00,December,Placed In
+TSP,ps,19-12-2023,W1,R1,0,19-12-2023 18:52:43,December,Water Valve : 1 is On
+TSP,ps,19-12-2023,J1,R1,0,19-12-2023 18:54:21,December,Picked From
+TSP,ps,19-12-2023,W1,R1,0,19-12-2023 18:55:43,December,Placed In
+TSP,ps,19-12-2023,W1,R1,0,19-12-2023 18:58:09,December,Picked From
+TSP,ps,19-12-2023,J2,R1,0,19-12-2023 18:59:01,December,Placed In
+TSP,ps,19-12-2023,W1,R1,0,19-12-2023 18:59:20,December,Water Valve : 1 is Off
+TSP,ps,19-12-2023,W2,R1,0,19-12-2023 19:01:44,December,Water Valve : 2 is On
+TSP,ps,19-12-2023,J2,R1,0,19-12-2023 19:02:12,December,Picked From
+TSP,ps,19-12-2023,W2,R1,0,19-12-2023 19:02:32,December,Placed In
+TSP,ps,19-12-2023,W2,R1,0,19-12-2023 19:04:49,December,Picked From
+TSP,ps,19-12-2023,W3,R1,0,19-12-2023 19:13:54,December,Water Valve : 3 is On
+TSP,ps,19-12-2023,J3,R1,0,19-12-2023 19:14:03,December,Dipped In
+TSP,ps,19-12-2023,W3,R1,0,19-12-2023 19:14:27,December,Placed In
+TSP,ps,19-12-2023,W3,R1,0,19-12-2023 19:16:56,December,Picked From
+TSP,ps,19-12-2023,J4,R1,0,19-12-2023 19:17:08,December,Placed In
+TSP,ps,19-12-2023,W2,R1,0,19-12-2023 19:17:26,December,Water Valve : 2 is Off
+TSP,ps,19-12-2023,W3,R1,0,19-12-2023 19:17:27,December,Water Valve : 3 is Off
+TSP,ps,19-12-2023,J4,R1,0,19-12-2023 19:19:17,December,Picked From
+TSP,ps,19-12-2023,J5,R1,0,19-12-2023 19:19:27,December,Placed In
+TSP,ps,19-12-2023,J5,R1,0,19-12-2023 19:21:33,December,Picked From
+TSP,ps,19-12-2023,J6,R1,0,19-12-2023 19:21:39,December,Placed In
+TSP,ps,19-12-2023,J6,R1,0,19-12-2023 19:23:45,December,Picked From
+TSP,ps,19-12-2023,J7,R1,0,19-12-2023 19:23:51,December,Placed In
+TSP,ps,19-12-2023,J7,R1,0,19-12-2023 19:25:57,December,Picked From
+TSP,ps,19-12-2023,U1,R1,0,19-12-2023 19:26:07,December,Placed In
+TSP,ps,19-12-2023,U1,R1,0,19-12-2023 19:26:08,December,Test Completed

@@ -1,0 +1,1825 @@
+Command Sent (SeqNo: 0, Retry: 0) WATER VALVE - 1 CONTROL OFF - #0,13,1,0*73eb  * 22-05-2025 15:28:17.162
+CRC-Response (SeqNo: 0) - 0,13,F000*29e9 * 22-05-2025 15:28:17.594
+Command Sent (SeqNo: 1, Retry: 0) WATER VALVE - 2 CONTROL OFF - #1,13,2,0*bfda  * 22-05-2025 15:28:18.204
+CRC-Response (SeqNo: 1) - 1,13,F000*b9e4 * 22-05-2025 15:28:18.316
+Command Sent (SeqNo: 2, Retry: 0) WATER VALVE - 3 CONTROL OFF - #2,13,3,0*6acb  * 22-05-2025 15:28:18.895
+CRC-Response (SeqNo: 2) - 2,13,F000*49f0 * 22-05-2025 15:28:19.14
+Command Sent (SeqNo: 3, Retry: 0) WATER VALVE - 4 CONTROL OFF - #3,13,4,0*67bb  * 22-05-2025 15:28:19.579
+CRC-Response (SeqNo: 3) - 3,13,F000*d9fd * 22-05-2025 15:28:19.698
+Command Sent (SeqNo: 4, Retry: 0) WATER VALVE - 5 CONTROL OFF - #4,13,5,0*41ab  * 22-05-2025 15:28:20.260
+CRC-Response (SeqNo: 4) - 4,13,F000*e9db * 22-05-2025 15:28:20.382
+Command Sent (SeqNo: 5, Retry: 0) WATER VALVE - 6 CONTROL OFF - #5,13,6,0*8d9a  * 22-05-2025 15:28:20.961
+CRC-Response (SeqNo: 5) - 5,13,F000*79d6 * 22-05-2025 15:28:21.80
+Command Sent (SeqNo: 6, Retry: 0) Home Command - #6,5,01111111*b1b5  * 22-05-2025 15:28:21.654
+CRC-Response (SeqNo: 6) - 6,5,I001,01111111*0f53 * 22-05-2025 15:28:21.765
+CRC-Response (SeqNo: 6) - 6,5,F000,11111111*09d7 * 22-05-2025 15:28:21.765
+Command Sent (SeqNo: 7, Retry: 0) Home Command - #7,5,01111111*7248  * 22-05-2025 15:28:23.859
+CRC-Response (SeqNo: 7) - 7,5,I001,01111111*9f02 * 22-05-2025 15:28:23.983
+CRC-Response (SeqNo: 7) - 7,5,F000,11111111*9986 * 22-05-2025 15:28:23.983
+Command Sent (SeqNo: 8, Retry: 0) Level Sensing For L1 - #8,4,17564,16380,0,0*ab6b  * 22-05-2025 15:28:26.51
+CRC-Response (SeqNo: 8) - 8,4,I001*4ef9 * 22-05-2025 15:28:26.169
+CRC-Response (SeqNo: 8) - 8,4,F000,599*d7e7 * 22-05-2025 15:28:34.452
+L1 Value - 599 * 22-05-2025 15:28:34.481
+Command Sent (SeqNo: 9, Retry: 0) Level Sensing For L2 - #9,4,13934,16380,0,0*534e  * 22-05-2025 15:28:35.46
+CRC-Response (SeqNo: 9) - 9,4,I001*8238 * 22-05-2025 15:28:35.167
+CRC-Response (SeqNo: 9) - 9,4,F000,641*42ef * 22-05-2025 15:28:37.442
+L2 Value - 641 * 22-05-2025 15:28:37.462
+Command Sent (SeqNo: 10, Retry: 0) Level Sensing For L3 - #10,4,10304,16380,0,0*d9f6  * 22-05-2025 15:28:38.19
+CRC-Response (SeqNo: 10) - 10,4,I001*82eb * 22-05-2025 15:28:38.140
+CRC-Response (SeqNo: 10) - 10,4,F000,604*0515 * 22-05-2025 15:28:40.416
+L3 Value - 604 * 22-05-2025 15:28:40.433
+Command Sent (SeqNo: 11, Retry: 0) Home Command - #11,5,01111111*e264  * 22-05-2025 15:28:40.980
+CRC-Response (SeqNo: 11) - 11,5,I001,01111111*59be * 22-05-2025 15:28:41.102
+CRC-Response (SeqNo: 11) - 11,5,F000,11111111*5f3a * 22-05-2025 15:28:41.102
+Command Sent (SeqNo: 12, Retry: 0) Home Command - #12,5,01111111*e660  * 22-05-2025 15:28:42.687
+CRC-Response (SeqNo: 12) - 12,5,I001,01111111*a94e * 22-05-2025 15:28:42.810
+CRC-Response (SeqNo: 12) - 12,5,F000,11111111*afca * 22-05-2025 15:28:42.810
+Rack - 1Protocol Started * 22-05-2025 15:28:44.331
+Command Sent (SeqNo: 13, Retry: 0) Rack-1 Picked from L1 - With RA:2 - #13,2,2,17564,16380,0,0*4d1e  * 22-05-2025 15:28:44.456
+CRC-Response (SeqNo: 13) - 13,2,I001,2*a123 * 22-05-2025 15:28:44.577
+CRC-Response (SeqNo: 13) - 13,2,F000,2*9e72 * 22-05-2025 15:28:51.732
+RA Picked Rack From L1 * 22-05-2025 15:28:51.734
+Command Sent (SeqNo: 14, Retry: 0) Rack-1 Placed in J1 - With RA:2 - #14,3,2,10304,800,0,0*3232  * 22-05-2025 15:28:52.46
+CRC-Response (SeqNo: 14) - 14,3,I001,2*b753 * 22-05-2025 15:28:52.170
+CRC-Response (SeqNo: 14) - 14,3,F000,2*8802 * 22-05-2025 15:28:58.549
+RA Placed Rack in J1 * 22-05-2025 15:28:58.551
+Command Sent (SeqNo: 15, Retry: 0) Rack-1 Picked from J1 - With RA:2 - #15,2,2,10304,800,0,0*5e5e  * 22-05-2025 15:30:58.642
+CRC-Response (SeqNo: 15) - 15,2,I001,2*bec3 * 22-05-2025 15:30:58.780
+CRC-Response (SeqNo: 15) - 15,2,F000,2*8192 * 22-05-2025 15:31:03.824
+RA Picked Rack From J1 * 22-05-2025 15:31:03.829
+Command Sent (SeqNo: 16, Retry: 0) Rack-1 Dipped in J2 - With RA:2 - #16,17,2,13934,800,5,1,1*95f3  * 22-05-2025 15:31:04.221
+CRC-Response (SeqNo: 16) - 16,17,I001,2*7a82 * 22-05-2025 15:31:04.366
+CRC-Response (SeqNo: 16) - 16,17,F000,2*45d3 * 22-05-2025 15:31:27.221
+Command Sent (SeqNo: 17, Retry: 0) Rack-1 Placed in J3 - With RA:2 - #17,3,2,17564,800,0,0*2a7d  * 22-05-2025 15:31:27.343
+CRC-Response (SeqNo: 17) - 17,3,I001,2*b8a3 * 22-05-2025 15:31:27.474
+CRC-Response (SeqNo: 17) - 17,3,F000,2*87f2 * 22-05-2025 15:31:33.56
+RA Placed Rack in J3 * 22-05-2025 15:31:33.59
+Command Sent (SeqNo: 18, Retry: 0) Rack-1 Picked from J3 - With RA:2 - #18,2,2,17564,800,0,0*af7b  * 22-05-2025 15:32:33.425
+CRC-Response (SeqNo: 18) - 18,2,I001,2*4452 * 22-05-2025 15:32:33.558
+CRC-Response (SeqNo: 18) - 18,2,F000,2*7b03 * 22-05-2025 15:32:38.594
+RA Picked Rack From J3 * 22-05-2025 15:32:38.596
+Command Sent (SeqNo: 19, Retry: 0) Rack-1 Dipped in J4 - With RA:2 - #19,17,2,21194,800,5,1,1*460b  * 22-05-2025 15:32:39.5
+CRC-Response (SeqNo: 19) - 19,17,I001,2*6eb2 * 22-05-2025 15:32:39.169
+CRC-Response (SeqNo: 19) - 19,17,F000,2*51e3 * 22-05-2025 15:33:02.17
+Command Sent (SeqNo: 20, Retry: 0) Rack-1 Placed in J5 - With RA:2 - #20,3,2,24824,800,0,0*d3f7  * 22-05-2025 15:33:02.138
+CRC-Response (SeqNo: 20) - 20,3,I001,2*261d * 22-05-2025 15:33:02.281
+CRC-Response (SeqNo: 20) - 20,3,F000,2*194c * 22-05-2025 15:33:07.853
+RA Placed Rack in J5 * 22-05-2025 15:33:07.856
+Command Sent (SeqNo: 21, Retry: 0) Rack-1 Picked from J5 - With RA:2 - #21,2,2,24824,800,0,0*bf9b  * 22-05-2025 15:35:09.239
+CRC-Response (SeqNo: 21) - 21,2,I001,2*2f8d * 22-05-2025 15:35:09.378
+CRC-Response (SeqNo: 21) - 21,2,F000,2*10dc * 22-05-2025 15:35:14.410
+RA Picked Rack From J5 * 22-05-2025 15:35:14.413
+Command Sent (SeqNo: 22, Retry: 0) Rack-1 Dipped in J6 - With RA:2 - #22,17,2,28454,800,5,1,1*0cb0  * 22-05-2025 15:35:14.827
+CRC-Response (SeqNo: 22) - 22,17,I001,2*4e93 * 22-05-2025 15:35:14.986
+CRC-Response (SeqNo: 22) - 22,17,F000,2*71c2 * 22-05-2025 15:35:37.823
+Command Sent (SeqNo: 23, Retry: 0) Rack-1 Placed in J7 - With RA:2 - #23,3,2,32084,800,0,0*5eb3  * 22-05-2025 15:35:37.959
+CRC-Response (SeqNo: 23) - 23,3,I001,2*29ed * 22-05-2025 15:35:38.109
+CRC-Response (SeqNo: 23) - 23,3,F000,2*16bc * 22-05-2025 15:35:43.673
+RA Placed Rack in J7 * 22-05-2025 15:35:43.675
+Command Sent (SeqNo: 24, Retry: 0) Rack-1 Picked from J7 - With RA:2 - #24,2,2,32084,800,0,0*ba57  * 22-05-2025 15:37:44.95
+CRC-Response (SeqNo: 24) - 24,2,I001,2*3f9d * 22-05-2025 15:37:44.231
+CRC-Response (SeqNo: 24) - 24,2,F000,2*00cc * 22-05-2025 15:37:49.275
+RA Picked Rack From J7 * 22-05-2025 15:37:49.278
+Command Sent (SeqNo: 25, Retry: 0) Rack-1 Placed in J8 - With RA:2 - #25,3,2,35714,800,0,0*4604  * 22-05-2025 15:37:49.677
+CRC-Response (SeqNo: 25) - 25,3,I001,2*360d * 22-05-2025 15:37:49.819
+CRC-Response (SeqNo: 25) - 25,3,F000,2*095c * 22-05-2025 15:37:55.388
+RA Placed Rack in J8 * 22-05-2025 15:37:55.391
+Command Sent (SeqNo: 26, Retry: 0) WATER VALVE - 1 CONTROL ON - #26,13,1,1*03ad  * 22-05-2025 15:42:38.779
+CRC-Response (SeqNo: 26) - 26,13,F000*4b19 * 22-05-2025 15:42:38.898
+Command Sent (SeqNo: 27, Retry: 0) Rack-1 Picked from J8 - With RA:2 - #27,2,2,35714,800,0,0*6e2c  * 22-05-2025 15:42:55.791
+CRC-Response (SeqNo: 27) - 27,2,I001,2*306d * 22-05-2025 15:42:55.919
+CRC-Response (SeqNo: 27) - 27,2,F000,2*0f3c * 22-05-2025 15:43:00.973
+RA Picked Rack From J8 * 22-05-2025 15:43:00.976
+Command Sent (SeqNo: 28, Retry: 0) RA-1 Movement - #28,5,00000111*1050  * 22-05-2025 15:43:01.374
+CRC-Response (SeqNo: 28) - 28,5,I001,00000111*62b5 * 22-05-2025 15:43:01.523
+CRC-Response (SeqNo: 28) - 28,5,F000,11111111*491c * 22-05-2025 15:43:01.524
+Command Sent (SeqNo: 29, Retry: 0) Rack-1 Placed in W1 - With RA:2 - #29,3,2,42974,800,0,0*6c3d  * 22-05-2025 15:43:03.469
+CRC-Response (SeqNo: 29) - 29,3,I001,2*09cd * 22-05-2025 15:43:03.590
+CRC-Response (SeqNo: 29) - 29,3,F000,2*369c * 22-05-2025 15:43:09.570
+RA Placed Rack in W1 * 22-05-2025 15:43:09.572
+Command Sent (SeqNo: 30, Retry: 0) RA2 Home Command - #30,5,00111000*331f  * 22-05-2025 15:43:10.41
+CRC-Response (SeqNo: 30) - 30,5,I001,00111000*21cf * 22-05-2025 15:43:10.578
+CRC-Response (SeqNo: 30) - 30,5,F000,11111111*77ca * 22-05-2025 15:43:10.579
+Rack - 2Protocol Started * 22-05-2025 15:43:17.153
+Command Sent (SeqNo: 31, Retry: 0) Rack-2 Picked from L2 - With RA:2 - #31,2,2,13934,16380,0,0*7286  * 22-05-2025 15:43:17.236
+CRC-Response (SeqNo: 31) - 31,2,I001,2*d389 * 22-05-2025 15:43:17.355
+CRC-Response (SeqNo: 31) - 31,2,F000,2*ecd8 * 22-05-2025 15:43:24.110
+RA Picked Rack From L2 * 22-05-2025 15:43:24.111
+Command Sent (SeqNo: 32, Retry: 0) Rack-2 Placed in J1 - With RA:2 - #32,3,2,10304,800,0,0*58c3  * 22-05-2025 15:43:37.839
+CRC-Response (SeqNo: 32) - 32,3,I001,2*10b8 * 22-05-2025 15:43:37.986
+CRC-Response (SeqNo: 32) - 32,3,F000,2*2fe9 * 22-05-2025 15:43:44.372
+RA Placed Rack in J1 * 22-05-2025 15:43:44.375
+Command Sent (SeqNo: 33, Retry: 0) WATER VALVE - 1 CONTROL OFF - #33,13,1,0*6ca1  * 22-05-2025 15:44:10.51
+CRC-Response (SeqNo: 33) - 33,13,F000*de77 * 22-05-2025 15:44:10.170
+Command Sent (SeqNo: 34, Retry: 0) Rack-1 Picked from W1 - With RA:1 - #34,2,1,42974,800,0,0*813c  * 22-05-2025 15:44:10.245
+CRC-Response (SeqNo: 34) - 34,2,I001,1*c2d9 * 22-05-2025 15:44:10.361
+CRC-Response (SeqNo: 34) - 34,2,F000,1*fd88 * 22-05-2025 15:44:18.112
+RA Picked Rack From W1 * 22-05-2025 15:44:18.114
+Command Sent (SeqNo: 35, Retry: 0) WATER VALVE - 2 CONTROL ON - #35,13,2,1*8610  * 22-05-2025 15:44:18.622
+CRC-Response (SeqNo: 35) - 35,13,F000*7e5c * 22-05-2025 15:44:18.746
+Command Sent (SeqNo: 36, Retry: 0) Rack-1 Dipped in J9 - With RA:1 - #36,17,1,39344,800,2,1,1*164a  * 22-05-2025 15:44:19.223
+CRC-Response (SeqNo: 36) - 36,17,I001,1*bc3b * 22-05-2025 15:44:19.349
+CRC-Response (SeqNo: 36) - 36,17,F000,1*836a * 22-05-2025 15:44:29.99
+Command Sent (SeqNo: 37, Retry: 0) Rack-1 Placed in W2 - With RA:1 - #37,3,1,46604,800,0,0*5459  * 22-05-2025 15:44:29.258
+CRC-Response (SeqNo: 37) - 37,3,I001,1*01e8 * 22-05-2025 15:44:29.398
+CRC-Response (SeqNo: 37) - 37,3,F000,1*3eb9 * 22-05-2025 15:44:35.371
+RA Placed Rack in W2 * 22-05-2025 15:44:35.374
+Command Sent (SeqNo: 38, Retry: 0) WATER VALVE - 2 CONTROL OFF - #38,13,2,0*df10  * 22-05-2025 15:45:35.859
+CRC-Response (SeqNo: 38) - 38,13,F000*ee04 * 22-05-2025 15:45:35.983
+Command Sent (SeqNo: 39, Retry: 0) Rack-1 Picked from W2 - With RA:1 - #39,2,1,46604,800,0,0*2d62  * 22-05-2025 15:45:36.64
+CRC-Response (SeqNo: 39) - 39,2,I001,1*3848 * 22-05-2025 15:45:36.179
+CRC-Response (SeqNo: 39) - 39,2,F000,1*0719 * 22-05-2025 15:45:41.241
+RA Picked Rack From W2 * 22-05-2025 15:45:41.243
+Command Sent (SeqNo: 40, Retry: 0) WATER VALVE - 3 CONTROL ON - #40,13,3,1*49a7  * 22-05-2025 15:45:41.450
+CRC-Response (SeqNo: 40) - 40,13,F000*f4d2 * 22-05-2025 15:45:41.578
+Command Sent (SeqNo: 41, Retry: 0) Rack-1 Dipped in J10 - With RA:1 - #41,17,1,53864,800,1,1,1*a231  * 22-05-2025 15:45:42.63
+CRC-Response (SeqNo: 41) - 41,17,I001,1*03d4 * 22-05-2025 15:45:42.183
+5 Seconds Timer increments in Jar J1 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 15:45:44.900
+CRC-Response (SeqNo: 41) - 41,17,F000,1*3c85 * 22-05-2025 15:45:47.969
+Command Sent (SeqNo: 42, Retry: 0) Rack-1 Placed in W3 - With RA:1 - #42,3,1,50234,800,0,0*99cf  * 22-05-2025 15:45:48.124
+CRC-Response (SeqNo: 42) - 42,3,I001,1*65e2 * 22-05-2025 15:45:48.251
+5 Seconds Timer increments in Jar J1 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 15:45:49.910
+CRC-Response (SeqNo: 42) - 42,3,F000,1*5ab3 * 22-05-2025 15:45:53.837
+RA Placed Rack in W3 * 22-05-2025 15:45:53.841
+Command Sent (SeqNo: 43, Retry: 0) Rack-2 Picked from J1 - With RA:2 - #43,2,2,10304,800,0,0*831a  * 22-05-2025 15:45:57.203
+CRC-Response (SeqNo: 43) - 43,2,I001,2*6d32 * 22-05-2025 15:45:57.327
+CRC-Response (SeqNo: 43) - 43,2,F000,2*5263 * 22-05-2025 15:46:02.400
+RA Picked Rack From J1 * 22-05-2025 15:46:02.405
+Command Sent (SeqNo: 44, Retry: 0) Rack-2 Dipped in J2 - With RA:2 - #44,17,2,13934,800,5,1,1*23af  * 22-05-2025 15:46:05.359
+CRC-Response (SeqNo: 44) - 44,17,I001,2*ce85 * 22-05-2025 15:46:05.531
+CRC-Response (SeqNo: 44) - 44,17,F000,2*f1d4 * 22-05-2025 15:46:28.371
+Command Sent (SeqNo: 45, Retry: 0) Rack-2 Placed in J3 - With RA:2 - #45,3,2,17564,800,0,0*c7c8  * 22-05-2025 15:46:45.700
+CRC-Response (SeqNo: 45) - 45,3,I001,2*be13 * 22-05-2025 15:46:45.858
+CRC-Response (SeqNo: 45) - 45,3,F000,2*8142 * 22-05-2025 15:46:51.427
+RA Placed Rack in J3 * 22-05-2025 15:46:51.430
+Command Sent (SeqNo: 46, Retry: 0) WATER VALVE - 3 CONTROL OFF - #46,13,3,0*a3e6  * 22-05-2025 15:46:55.202
+CRC-Response (SeqNo: 46) - 46,13,F000*54f9 * 22-05-2025 15:46:55.322
+Command Sent (SeqNo: 47, Retry: 0) Rack-1 Picked from W3 - With RA:1 - #47,2,1,50234,800,0,0*c552  * 22-05-2025 15:46:55.402
+CRC-Response (SeqNo: 47) - 47,2,I001,1*b933 * 22-05-2025 15:46:55.526
+CRC-Response (SeqNo: 47) - 47,2,F000,1*8662 * 22-05-2025 15:47:00.575
+RA Picked Rack From W3 * 22-05-2025 15:47:00.578
+Command Sent (SeqNo: 48, Retry: 0) Rack-1 Placed in J11 - With RA:1 - #48,3,1,57494,800,0,0*239f  * 22-05-2025 15:47:00.782
+CRC-Response (SeqNo: 48) - 48,3,I001,1*45c2 * 22-05-2025 15:47:00.929
+CRC-Response (SeqNo: 48) - 48,3,F000,1*7a93 * 22-05-2025 15:47:06.907
+RA Placed Rack in J11 * 22-05-2025 15:47:06.909
+Command Sent (SeqNo: 49, Retry: 0) Rack-2 Picked from J3 - With RA:2 - #49,2,2,17564,800,0,0*068a  * 22-05-2025 15:48:26.659
+CRC-Response (SeqNo: 49) - 49,2,I001,2*4d12 * 22-05-2025 15:48:26.781
+CRC-Response (SeqNo: 49) - 49,2,F000,2*7243 * 22-05-2025 15:48:31.844
+RA Picked Rack From J3 * 22-05-2025 15:48:31.846
+Command Sent (SeqNo: 50, Retry: 0) Rack-2 Dipped in J4 - With RA:2 - #50,17,2,21194,800,5,1,1*df60  * 22-05-2025 15:48:32.238
+CRC-Response (SeqNo: 50) - 50,17,I001,2*3d6d * 22-05-2025 15:48:32.400
+CRC-Response (SeqNo: 50) - 50,17,F000,2*023c * 22-05-2025 15:48:55.244
+Command Sent (SeqNo: 51, Retry: 0) Rack-2 Placed in J5 - With RA:2 - #51,3,2,24824,800,0,0*987f  * 22-05-2025 15:48:55.348
+CRC-Response (SeqNo: 51) - 51,3,I001,2*9756 * 22-05-2025 15:48:55.511
+CRC-Response (SeqNo: 51) - 51,3,F000,2*a807 * 22-05-2025 15:49:01.92
+RA Placed Rack in J5 * 22-05-2025 15:49:01.94
+Command Sent (SeqNo: 52, Retry: 0) Rack-1 Picked from J11 - With RA:1 - #52,2,1,57494,800,0,0*bb68  * 22-05-2025 15:49:07.393
+CRC-Response (SeqNo: 52) - 52,2,I001,1*5527 * 22-05-2025 15:49:07.517
+CRC-Response (SeqNo: 52) - 52,2,F000,1*6a76 * 22-05-2025 15:49:12.567
+RA Picked Rack From J11 * 22-05-2025 15:49:12.569
+Command Sent (SeqNo: 53, Retry: 0) Rack-1 Dipped in J12 - With RA:1 - #53,17,1,61124,800,2,1,1*22b7  * 22-05-2025 15:49:12.977
+CRC-Response (SeqNo: 53) - 53,17,I001,1*7822 * 22-05-2025 15:49:13.126
+CRC-Response (SeqNo: 53) - 53,17,F000,1*4773 * 22-05-2025 15:49:22.868
+Command Sent (SeqNo: 54, Retry: 0) Rack-1 Placed in J13 - With RA:1 - #54,3,1,64754,800,0,0*1f7f  * 22-05-2025 15:49:23.86
+CRC-Response (SeqNo: 54) - 54,3,I001,1*8606 * 22-05-2025 15:49:23.232
+CRC-Response (SeqNo: 54) - 54,3,F000,1*b957 * 22-05-2025 15:49:28.791
+RA Placed Rack in J13 * 22-05-2025 15:49:28.796
+Command Sent (SeqNo: 55, Retry: 0) Rack-2 Picked from J5 - With RA:2 - #55,2,2,24824,800,0,0*38df  * 22-05-2025 15:51:01.508
+CRC-Response (SeqNo: 55) - 55,2,I001,2*8ed6 * 22-05-2025 15:51:01.647
+CRC-Response (SeqNo: 55) - 55,2,F000,2*b187 * 22-05-2025 15:51:06.689
+RA Picked Rack From J5 * 22-05-2025 15:51:06.693
+Command Sent (SeqNo: 56, Retry: 0) Rack-2 Dipped in J6 - With RA:2 - #56,17,2,28454,800,5,1,1*e993  * 22-05-2025 15:51:07.90
+CRC-Response (SeqNo: 56) - 56,17,I001,2*b573 * 22-05-2025 15:51:07.238
+5 Seconds Timer increments in Jar J13 for R1 Other Rack Command Execution Under Progress and timer updated for tmr_r1_incub() * 22-05-2025 15:51:29.135
+CRC-Response (SeqNo: 56) - 56,17,F000,2*8a22 * 22-05-2025 15:51:30.80
+Command Sent (SeqNo: 57, Retry: 0) Rack-2 Placed in J7 - With RA:2 - #57,3,2,32084,800,0,0*d9f7  * 22-05-2025 15:51:30.193
+CRC-Response (SeqNo: 57) - 57,3,I001,2*88b6 * 22-05-2025 15:51:30.353
+5 Seconds Timer increments in Jar J13 for R1 Other Rack Command Execution Under Progress and timer updated for tmr_r1_incub() * 22-05-2025 15:51:34.138
+CRC-Response (SeqNo: 57) - 57,3,F000,2*b7e7 * 22-05-2025 15:51:35.933
+RA Placed Rack in J7 * 22-05-2025 15:51:35.936
+Command Sent (SeqNo: 58, Retry: 0) Rack-1 Picked from J13 - With RA:1 - #58,2,1,64754,800,0,0*de3d  * 22-05-2025 15:51:39.183
+CRC-Response (SeqNo: 58) - 58,2,I001,1*7507 * 22-05-2025 15:51:39.301
+CRC-Response (SeqNo: 58) - 58,2,F000,1*4a56 * 22-05-2025 15:51:44.349
+RA Picked Rack From J13 * 22-05-2025 15:51:44.351
+Command Sent (SeqNo: 59, Retry: 0) Rack-1 Placed in J14 - With RA:1 - #59,3,1,64754,8590,0,0*2539  * 22-05-2025 15:51:44.761
+CRC-Response (SeqNo: 59) - 59,3,I001,1*7c97 * 22-05-2025 15:51:44.909
+CRC-Response (SeqNo: 59) - 59,3,F000,1*43c6 * 22-05-2025 15:51:50.654
+RA Placed Rack in J14 * 22-05-2025 15:51:50.656
+Command Sent (SeqNo: 60, Retry: 0) Rack-2 Picked from J7 - With RA:2 - #60,2,2,32084,800,0,0*0e57  * 22-05-2025 15:53:37.316
+CRC-Response (SeqNo: 60) - 60,2,I001,2*dac9 * 22-05-2025 15:53:37.450
+CRC-Response (SeqNo: 60) - 60,2,F000,2*e598 * 22-05-2025 15:53:42.482
+RA Picked Rack From J7 * 22-05-2025 15:53:42.484
+Command Sent (SeqNo: 61, Retry: 0) Rack-2 Placed in J8 - With RA:2 - #61,3,2,35714,800,0,0*f204  * 22-05-2025 15:53:42.898
+CRC-Response (SeqNo: 61) - 61,3,I001,2*d359 * 22-05-2025 15:53:43.45
+CRC-Response (SeqNo: 61) - 61,3,F000,2*ec08 * 22-05-2025 15:53:48.602
+RA Placed Rack in J8 * 22-05-2025 15:53:48.605
+Command Sent (SeqNo: 62, Retry: 0) Rack-1 Picked from J14 - With RA:1 - #62,2,1,64754,8590,0,0*90fe  * 22-05-2025 15:53:51.879
+CRC-Response (SeqNo: 62) - 62,2,I001,1*1128 * 22-05-2025 15:53:52.0
+CRC-Response (SeqNo: 62) - 62,2,F000,1*2e79 * 22-05-2025 15:53:57.63
+RA Picked Rack From J14 * 22-05-2025 15:53:57.68
+Command Sent (SeqNo: 63, Retry: 0) Rack-1 Dipped in J15 - With RA:1 - #63,17,1,61124,8590,5,1,1*e0e4  * 22-05-2025 15:53:57.461
+CRC-Response (SeqNo: 63) - 63,17,I001,1*7c26 * 22-05-2025 15:53:57.622
+CRC-Response (SeqNo: 63) - 63,17,F000,1*4377 * 22-05-2025 15:54:20.474
+Command Sent (SeqNo: 64, Retry: 0) Rack-1 Placed in J16 - With RA:1 - #64,3,1,57494,8590,0,0*9e1a  * 22-05-2025 15:54:20.569
+CRC-Response (SeqNo: 64) - 64,3,I001,1*c209 * 22-05-2025 15:54:20.718
+CRC-Response (SeqNo: 64) - 64,3,F000,1*fd58 * 22-05-2025 15:54:26.283
+RA Placed Rack in J16 * 22-05-2025 15:54:26.285
+Command Sent (SeqNo: 65, Retry: 0) Rack-1 Picked from J16 - With RA:1 - #65,2,1,57494,8590,0,0*b376  * 22-05-2025 15:56:26.669
+CRC-Response (SeqNo: 65) - 65,2,I001,1*cb99 * 22-05-2025 15:56:26.809
+CRC-Response (SeqNo: 65) - 65,2,F000,1*f4c8 * 22-05-2025 15:56:31.852
+RA Picked Rack From J16 * 22-05-2025 15:56:31.854
+Command Sent (SeqNo: 66, Retry: 0) WATER VALVE - 4 CONTROL ON - #66,13,4,1*c28f  * 22-05-2025 15:56:32.238
+CRC-Response (SeqNo: 66) - 66,13,F000*9e58 * 22-05-2025 15:56:32.382
+Command Sent (SeqNo: 67, Retry: 0) Rack-1 Dipped in J17 - With RA:1 - #67,17,1,53864,8590,3,1,1*6e9b  * 22-05-2025 15:56:32.862
+CRC-Response (SeqNo: 67) - 67,17,I001,1*4c33 * 22-05-2025 15:56:32.983
+CRC-Response (SeqNo: 67) - 67,17,F000,1*7362 * 22-05-2025 15:56:47.103
+Command Sent (SeqNo: 68, Retry: 0) Rack-1 Placed in W4 - With RA:1 - #68,3,1,50234,8590,0,0*c428  * 22-05-2025 15:56:47.364
+CRC-Response (SeqNo: 68) - 68,3,I001,1*fdc9 * 22-05-2025 15:56:47.494
+CRC-Response (SeqNo: 68) - 68,3,F000,1*c298 * 22-05-2025 15:56:53.72
+RA Placed Rack in W4 * 22-05-2025 15:56:53.77
+Command Sent (SeqNo: 69, Retry: 0) WATER VALVE - 4 CONTROL OFF - #69,13,4,0*420e  * 22-05-2025 15:57:53.475
+CRC-Response (SeqNo: 69) - 69,13,F000*6e19 * 22-05-2025 15:57:53.616
+Command Sent (SeqNo: 70, Retry: 0) Rack-1 Picked from W4 - With RA:1 - #70,2,1,50234,8590,0,0*a088  * 22-05-2025 15:57:53.697
+CRC-Response (SeqNo: 70) - 70,2,I001,1*278d * 22-05-2025 15:57:53.815
+CRC-Response (SeqNo: 70) - 70,2,F000,1*18dc * 22-05-2025 15:57:58.858
+RA Picked Rack From W4 * 22-05-2025 15:57:58.860
+Command Sent (SeqNo: 71, Retry: 0) WATER VALVE - 5 CONTROL ON - #71,13,5,1*7492  * 22-05-2025 15:57:59.59
+CRC-Response (SeqNo: 71) - 71,13,F000*6b2f * 22-05-2025 15:57:59.186
+Command Sent (SeqNo: 72, Retry: 0) Rack-1 Dipped in J18 - With RA:1 - #72,17,1,39344,8590,5,1,1*b8b5  * 22-05-2025 15:57:59.659
+CRC-Response (SeqNo: 72) - 72,17,I001,1*43df * 22-05-2025 15:57:59.774
+CRC-Response (SeqNo: 72) - 72,17,F000,1*7c8e * 22-05-2025 15:58:23.443
+Command Sent (SeqNo: 73, Retry: 0) Rack-1 Placed in W5 - With RA:1 - #73,3,1,46604,8590,0,0*e36a  * 22-05-2025 15:58:23.674
+CRC-Response (SeqNo: 73) - 73,3,I001,1*e4bc * 22-05-2025 15:58:23.802
+CRC-Response (SeqNo: 73) - 73,3,F000,1*dbed * 22-05-2025 15:58:29.797
+RA Placed Rack in W5 * 22-05-2025 15:58:29.800
+Command Sent (SeqNo: 74, Retry: 0) WATER VALVE - 1 CONTROL ON - #74,13,1,1*8a13  * 22-05-2025 15:58:31.984
+CRC-Response (SeqNo: 74) - 74,13,F000*3b10 * 22-05-2025 15:58:32.104
+Command Sent (SeqNo: 75, Retry: 0) Rack-2 Picked from J8 - With RA:2 - #75,2,2,35714,800,0,0*8399  * 22-05-2025 15:58:49.987
+CRC-Response (SeqNo: 75) - 75,2,I001,2*36dd * 22-05-2025 15:58:50.111
+CRC-Response (SeqNo: 75) - 75,2,F000,2*098c * 22-05-2025 15:58:55.165
+RA Picked Rack From J8 * 22-05-2025 15:58:55.168
+Command Sent (SeqNo: 76, Retry: 0) RA-1 Movement - #76,5,00000111*c2b5  * 22-05-2025 15:58:55.566
+CRC-Response (SeqNo: 76) - 76,5,I001,00000111*ccc1 * 22-05-2025 15:58:55.703
+CRC-Response (SeqNo: 76) - 76,5,F000,11111111*e768 * 22-05-2025 15:58:55.703
+Command Sent (SeqNo: 77, Retry: 0) Rack-2 Placed in W1 - With RA:2 - #77,3,2,42974,800,0,0*d09b  * 22-05-2025 15:58:57.660
+CRC-Response (SeqNo: 77) - 77,3,I001,2*30bd * 22-05-2025 15:58:57.784
+CRC-Response (SeqNo: 77) - 77,3,F000,2*0fec * 22-05-2025 15:59:03.768
+RA Placed Rack in W1 * 22-05-2025 15:59:03.770
+Command Sent (SeqNo: 78, Retry: 0) RA2 Home Command - #78,5,00111000*68f0  * 22-05-2025 15:59:04.245
+CRC-Response (SeqNo: 78) - 78,5,I001,00111000*d209 * 22-05-2025 15:59:04.793
+CRC-Response (SeqNo: 78) - 78,5,F000,11111111*840c * 22-05-2025 15:59:04.793
+Command Sent (SeqNo: 79, Retry: 0) WATER VALVE - 5 CONTROL OFF - #79,13,5,0*1252  * 22-05-2025 15:59:31.272
+CRC-Response (SeqNo: 79) - 79,13,F000*ab48 * 22-05-2025 15:59:31.387
+Command Sent (SeqNo: 80, Retry: 0) Rack-1 Picked from W5 - With RA:1 - #80,2,1,46604,8590,0,0*d380  * 22-05-2025 15:59:31.463
+CRC-Response (SeqNo: 80) - 80,2,I001,1*33bd * 22-05-2025 15:59:31.588
+CRC-Response (SeqNo: 80) - 80,2,F000,1*0cec * 22-05-2025 15:59:38.927
+RA Picked Rack From W5 * 22-05-2025 15:59:38.929
+Command Sent (SeqNo: 81, Retry: 0) RA-2 Movement - #81,5,00111000*7bf8  * 22-05-2025 15:59:39.342
+CRC-Response (SeqNo: 81) - 81,5,I001,00111000*97ec * 22-05-2025 15:59:39.487
+CRC-Response (SeqNo: 81) - 81,5,F000,11111111*c1e9 * 22-05-2025 15:59:39.487
+Command Sent (SeqNo: 82, Retry: 0) WATER VALVE - 6 CONTROL ON - #82,13,6,1*9163  * 22-05-2025 15:59:41.439
+CRC-Response (SeqNo: 82) - 82,13,F000*ab0b * 22-05-2025 15:59:41.559
+Command Sent (SeqNo: 83, Retry: 0) Rack-1 Dipped in J19 - With RA:1 - #83,17,1,35714,8590,10,1,1*adae  * 22-05-2025 15:59:42.41
+CRC-Response (SeqNo: 83) - 83,17,I001,1*abcf * 22-05-2025 15:59:42.165
+5 Seconds Timer increments in Jar W1 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:00:04.217
+5 Seconds Timer increments in Jar W1 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:00:09.222
+5 Seconds Timer increments in Jar W1 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:00:14.232
+5 Seconds Timer increments in Jar W1 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:00:19.232
+5 Seconds Timer increments in Jar W1 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:00:24.225
+CRC-Response (SeqNo: 83) - 83,17,F000,1*949e * 22-05-2025 16:00:27.662
+Command Sent (SeqNo: 84, Retry: 0) Rack-1 Placed in W6 - With RA:1 - #84,3,1,42974,8590,0,0*4f20  * 22-05-2025 16:00:28.40
+CRC-Response (SeqNo: 84) - 84,3,I001,1*2a3d * 22-05-2025 16:00:28.171
+5 Seconds Timer increments in Jar W1 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:00:29.230
+CRC-Response (SeqNo: 84) - 84,3,F000,1*156c * 22-05-2025 16:00:34.151
+RA Placed Rack in W6 * 22-05-2025 16:00:34.153
+18 Seconds Timer increments in Jar W1 for R2 Other Rack Picked by RA and timer updated for tmr_r2_incub() * 22-05-2025 16:00:34.228
+Command Sent (SeqNo: 85, Retry: 0) WATER VALVE - 1 CONTROL OFF - #85,13,1,0*7652  * 22-05-2025 16:00:52.283
+CRC-Response (SeqNo: 85) - 85,13,F000*9b2d * 22-05-2025 16:00:52.401
+Command Sent (SeqNo: 86, Retry: 0) Rack-2 Picked from W1 - With RA:1 - #86,2,1,42974,800,0,0*43e0  * 22-05-2025 16:00:52.477
+CRC-Response (SeqNo: 86) - 86,2,I001,1*2c5d * 22-05-2025 16:00:52.605
+CRC-Response (SeqNo: 86) - 86,2,F000,1*130c * 22-05-2025 16:00:58.350
+RA Picked Rack From W1 * 22-05-2025 16:00:58.352
+Command Sent (SeqNo: 87, Retry: 0) WATER VALVE - 2 CONTROL ON - #87,13,2,1*6fe2  * 22-05-2025 16:00:58.871
+CRC-Response (SeqNo: 87) - 87,13,F000*fb34 * 22-05-2025 16:00:59.11
+Command Sent (SeqNo: 88, Retry: 0) Rack-2 Dipped in J9 - With RA:1 - #88,17,1,39344,800,2,1,1*d916  * 22-05-2025 16:00:59.483
+CRC-Response (SeqNo: 88) - 88,17,I001,1*8fea * 22-05-2025 16:00:59.603
+CRC-Response (SeqNo: 88) - 88,17,F000,1*b0bb * 22-05-2025 16:01:09.338
+Command Sent (SeqNo: 89, Retry: 0) Rack-2 Placed in W2 - With RA:1 - #89,3,1,46604,800,0,0*c796  * 22-05-2025 16:01:09.499
+CRC-Response (SeqNo: 89) - 89,3,I001,1*d0ac * 22-05-2025 16:01:09.638
+CRC-Response (SeqNo: 89) - 89,3,F000,1*effd * 22-05-2025 16:01:15.621
+RA Placed Rack in W2 * 22-05-2025 16:01:15.624
+Command Sent (SeqNo: 90, Retry: 0) WATER VALVE - 6 CONTROL OFF - #90,13,6,0*182e  * 22-05-2025 16:01:35.648
+CRC-Response (SeqNo: 90) - 90,13,F000*0e43 * 22-05-2025 16:01:35.774
+Command Sent (SeqNo: 91, Retry: 0) Rack-1 Picked from W6 - With RA:1 - #91,2,1,42974,8590,0,0*37ad  * 22-05-2025 16:01:35.852
+CRC-Response (SeqNo: 91) - 91,2,I001,1*0ae8 * 22-05-2025 16:01:35.972
+CRC-Response (SeqNo: 91) - 91,2,F000,1*35b9 * 22-05-2025 16:01:41.728
+RA Picked Rack From W6 * 22-05-2025 16:01:41.730
+Command Sent (SeqNo: 92, Retry: 0) RA-2 Movement - #92,5,00111000*fefe  * 22-05-2025 16:01:42.218
+CRC-Response (SeqNo: 92) - 92,5,I001,00111000*9b4d * 22-05-2025 16:01:42.350
+CRC-Response (SeqNo: 92) - 92,5,F000,11111111*cd48 * 22-05-2025 16:01:42.351
+Command Sent (SeqNo: 93, Retry: 0) Rack-1 Placed in J20 - With RA:1 - #93,3,1,32084,8590,0,0*e6af  * 22-05-2025 16:01:44.285
+CRC-Response (SeqNo: 93) - 93,3,I001,1*0c88 * 22-05-2025 16:01:44.425
+CRC-Response (SeqNo: 93) - 93,3,F000,1*33d9 * 22-05-2025 16:01:50.801
+RA Placed Rack in J20 * 22-05-2025 16:01:50.805
+Command Sent (SeqNo: 94, Retry: 0) RA1 Home Command - #94,5,00000111*8b5a  * 22-05-2025 16:01:51.383
+CRC-Response (SeqNo: 94) - 94,5,I001,00000111*4702 * 22-05-2025 16:01:51.926
+CRC-Response (SeqNo: 94) - 94,5,F000,11111111*6cab * 22-05-2025 16:01:51.926
+Command Sent (SeqNo: 95, Retry: 0) WATER VALVE - 2 CONTROL OFF - #95,13,2,0*e6af  * 22-05-2025 16:02:17.97
+CRC-Response (SeqNo: 95) - 95,13,F000*5e7c * 22-05-2025 16:02:17.216
+Command Sent (SeqNo: 96, Retry: 0) Rack-2 Picked from W2 - With RA:1 - #96,2,1,46604,800,0,0*93ad  * 22-05-2025 16:02:17.294
+CRC-Response (SeqNo: 96) - 96,2,I001,1*d059 * 22-05-2025 16:02:17.418
+CRC-Response (SeqNo: 96) - 96,2,F000,1*ef08 * 22-05-2025 16:02:24.757
+RA Picked Rack From W2 * 22-05-2025 16:02:24.760
+Command Sent (SeqNo: 97, Retry: 0) WATER VALVE - 3 CONTROL ON - #97,13,3,1*3fbe  * 22-05-2025 16:02:25.221
+CRC-Response (SeqNo: 97) - 97,13,F000*3e65 * 22-05-2025 16:02:25.376
+Command Sent (SeqNo: 98, Retry: 0) Rack-2 Dipped in J10 - With RA:1 - #98,17,1,53864,800,1,1,1*01f0  * 22-05-2025 16:02:25.856
+CRC-Response (SeqNo: 98) - 98,17,I001,1*4c17 * 22-05-2025 16:02:25.982
+CRC-Response (SeqNo: 98) - 98,17,F000,1*7346 * 22-05-2025 16:02:31.756
+Command Sent (SeqNo: 99, Retry: 0) Rack-2 Placed in W3 - With RA:1 - #99,3,1,50234,800,0,0*a044  * 22-05-2025 16:02:31.914
+CRC-Response (SeqNo: 99) - 99,3,I001,1*2ca8 * 22-05-2025 16:02:32.55
+CRC-Response (SeqNo: 99) - 99,3,F000,1*13f9 * 22-05-2025 16:02:37.616
+RA Placed Rack in W3 * 22-05-2025 16:02:37.619
+Rack - R3Protocol Started * 22-05-2025 16:03:10.537
+Command Sent (SeqNo: 100, Retry: 0) Rack-3 Picked from L3 - With RA:2 - #100,2,2,10304,16380,0,0*c271  * 22-05-2025 16:03:10.614
+CRC-Response (SeqNo: 100) - 100,2,I001,2*3708 * 22-05-2025 16:03:10.743
+CRC-Response (SeqNo: 100) - 100,2,F000,2*0859 * 22-05-2025 16:03:17.180
+RA Picked Rack From L3 * 22-05-2025 16:03:17.183
+Command Sent (SeqNo: 101, Retry: 0) Rack-3 Placed in J1 - With RA:2 - #101,3,2,10304,800,0,0*0dd9  * 22-05-2025 16:03:17.694
+CRC-Response (SeqNo: 101) - 101,3,I001,2*3e98 * 22-05-2025 16:03:17.831
+CRC-Response (SeqNo: 101) - 101,3,F000,2*01c9 * 22-05-2025 16:03:24.206
+RA Placed Rack in J1 * 22-05-2025 16:03:24.209
+Command Sent (SeqNo: 102, Retry: 0) WATER VALVE - 3 CONTROL OFF - #102,13,3,0*5dfe  * 22-05-2025 16:03:38.22
+CRC-Response (SeqNo: 102) - 102,13,F000*5e07 * 22-05-2025 16:03:38.139
+Command Sent (SeqNo: 103, Retry: 0) Rack-2 Picked from W3 - With RA:1 - #103,2,1,50234,800,0,0*5348  * 22-05-2025 16:03:38.213
+CRC-Response (SeqNo: 103) - 103,2,I001,1*39b8 * 22-05-2025 16:03:38.331
+CRC-Response (SeqNo: 103) - 103,2,F000,1*06e9 * 22-05-2025 16:03:43.392
+RA Picked Rack From W3 * 22-05-2025 16:03:43.394
+Command Sent (SeqNo: 104, Retry: 0) Rack-2 Placed in J11 - With RA:1 - #104,3,1,57494,800,0,0*d467  * 22-05-2025 16:03:43.605
+CRC-Response (SeqNo: 104) - 104,3,I001,1*2fc8 * 22-05-2025 16:03:43.768
+CRC-Response (SeqNo: 104) - 104,3,F000,1*1099 * 22-05-2025 16:03:49.744
+RA Placed Rack in J11 * 22-05-2025 16:03:49.746
+Command Sent (SeqNo: 105, Retry: 0) Rack-1 Picked from J20 - With RA:2 - #105,2,2,32084,8590,0,0*df0c  * 22-05-2025 16:03:52.386
+CRC-Response (SeqNo: 105) - 105,2,I001,2*2718 * 22-05-2025 16:03:52.568
+CRC-Response (SeqNo: 105) - 105,2,F000,2*1849 * 22-05-2025 16:04:00.190
+RA Picked Rack From J20 * 22-05-2025 16:04:00.200
+Command Sent (SeqNo: 106, Retry: 0) Rack-1 Dipped in J21 - With RA:2 - #106,17,2,28454,8590,3,1,1*e1ca  * 22-05-2025 16:04:00.536
+CRC-Response (SeqNo: 106) - 106,17,I001,2*215b * 22-05-2025 16:04:00.709
+CRC-Response (SeqNo: 106) - 106,17,F000,2*1e0a * 22-05-2025 16:04:14.815
+Command Sent (SeqNo: 107, Retry: 0) Rack-1 Placed in J22 - With RA:2 - #107,3,2,24824,8590,0,0*c1ed  * 22-05-2025 16:04:15.169
+CRC-Response (SeqNo: 107) - 107,3,I001,2*2178 * 22-05-2025 16:04:15.304
+CRC-Response (SeqNo: 107) - 107,3,F000,2*1e29 * 22-05-2025 16:04:20.871
+RA Placed Rack in J22 * 22-05-2025 16:04:20.874
+Command Sent (SeqNo: 108, Retry: 0) Rack-1 Picked from J22 - With RA:2 - #108,2,2,24824,8590,0,0*c3e8  * 22-05-2025 16:05:21.288
+CRC-Response (SeqNo: 108) - 108,2,I001,2*dd89 * 22-05-2025 16:05:21.426
+5 Secconds Timer increments in Jar J1 for R3 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 16:05:24.258
+CRC-Response (SeqNo: 108) - 108,2,F000,2*e2d8 * 22-05-2025 16:05:26.481
+RA Picked Rack From J22 * 22-05-2025 16:05:26.485
+Command Sent (SeqNo: 109, Retry: 0) Rack-1 Dipped in J23 - With RA:2 - #109,17,2,21194,8590,4,1,1*5ea3  * 22-05-2025 16:05:26.867
+CRC-Response (SeqNo: 109) - 109,17,I001,2*356b * 22-05-2025 16:05:27.7
+5 Secconds Timer increments in Jar J1 for R3 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 16:05:29.261
+5 Secconds Timer increments in Jar J1 for R3 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 16:05:34.267
+5 Secconds Timer increments in Jar J1 for R3 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 16:05:39.259
+5 Secconds Timer increments in Jar J1 for R3 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 16:05:44.264
+CRC-Response (SeqNo: 109) - 109,17,F000,2*0a3a * 22-05-2025 16:05:45.487
+Command Sent (SeqNo: 110, Retry: 0) Rack-1 Placed in J24 - With RA:2 - #110,3,2,17564,8590,0,0*84b6  * 22-05-2025 16:05:45.977
+CRC-Response (SeqNo: 110) - 110,3,I001,2*07cd * 22-05-2025 16:05:46.124
+5 Secconds Timer increments in Jar J1 for R3 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 16:05:49.267
+5 Seconds Timer increments in Jar J11 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:05:50.200
+CRC-Response (SeqNo: 110) - 110,3,F000,2*389c * 22-05-2025 16:05:51.683
+RA Placed Rack in J24 * 22-05-2025 16:05:51.693
+Command Sent (SeqNo: 111, Retry: 0) Rack-3 Picked from J1 - With RA:2 - #111,2,2,10304,800,0,0*4cb5  * 22-05-2025 16:05:54.315
+CRC-Response (SeqNo: 111) - 111,2,I001,2*0e5d * 22-05-2025 16:05:54.440
+5 Seconds Timer increments in Jar J11 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:05:55.208
+5 Seconds Timer increments in Jar J11 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:06:00.216
+CRC-Response (SeqNo: 111) - 111,2,F000,2*310c * 22-05-2025 16:06:00.432
+RA Picked Rack From J1 * 22-05-2025 16:06:00.436
+Command Sent (SeqNo: 112, Retry: 0) Rack-3 Dipped in J2 - With RA:2 - #112,17,2,13934,800,5,1,1*018f  * 22-05-2025 16:06:00.892
+CRC-Response (SeqNo: 112) - 112,17,I001,2*d2b3 * 22-05-2025 16:06:01.41
+5 Seconds Timer increments in Jar J11 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:06:05.213
+5 Seconds Timer increments in Jar J11 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:06:10.223
+5 Seconds Timer increments in Jar J11 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:06:15.240
+5 Seconds Timer increments in Jar J11 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:06:20.249
+CRC-Response (SeqNo: 112) - 112,17,F000,2*ede2 * 22-05-2025 16:06:23.880
+Command Sent (SeqNo: 113, Retry: 0) Rack-3 Placed in J3 - With RA:2 - #113,3,2,17564,800,0,0*3896  * 22-05-2025 16:06:23.996
+CRC-Response (SeqNo: 113) - 113,3,I001,2*083d * 22-05-2025 16:06:24.143
+5 Seconds Timer increments in Jar J11 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:06:25.254
+CRC-Response (SeqNo: 113) - 113,3,F000,2*376c * 22-05-2025 16:06:29.715
+RA Placed Rack in J3 * 22-05-2025 16:06:29.718
+Command Sent (SeqNo: 114, Retry: 0) Rack-2 Picked from J11 - With RA:1 - #114,2,1,57494,800,0,0*950b  * 22-05-2025 16:06:30.620
+CRC-Response (SeqNo: 114) - 114,2,I001,1*1f0d * 22-05-2025 16:06:30.747
+CRC-Response (SeqNo: 114) - 114,2,F000,1*205c * 22-05-2025 16:06:35.797
+RA Picked Rack From J11 * 22-05-2025 16:06:35.800
+Command Sent (SeqNo: 115, Retry: 0) Rack-2 Dipped in J12 - With RA:1 - #115,17,1,61124,800,2,1,1*9c5a  * 22-05-2025 16:06:36.286
+CRC-Response (SeqNo: 115) - 115,17,I001,1*a7e9 * 22-05-2025 16:06:36.438
+CRC-Response (SeqNo: 115) - 115,17,F000,1*98b8 * 22-05-2025 16:06:46.170
+Command Sent (SeqNo: 116, Retry: 0) Rack-2 Placed in J13 - With RA:1 - #116,3,1,64754,800,0,0*01ed  * 22-05-2025 16:06:46.374
+CRC-Response (SeqNo: 116) - 116,3,I001,1*196d * 22-05-2025 16:06:46.511
+CRC-Response (SeqNo: 116) - 116,3,F000,1*263c * 22-05-2025 16:06:52.86
+RA Placed Rack in J13 * 22-05-2025 16:06:52.88
+Command Sent (SeqNo: 117, Retry: 0) Rack-3 Picked from J3 - With RA:2 - #117,2,2,17564,800,0,0*9836  * 22-05-2025 16:07:31.97
+CRC-Response (SeqNo: 117) - 117,2,I001,2*11bd * 22-05-2025 16:07:31.227
+CRC-Response (SeqNo: 117) - 117,2,F000,2*2eec * 22-05-2025 16:07:36.272
+RA Picked Rack From J3 * 22-05-2025 16:07:36.274
+Command Sent (SeqNo: 118, Retry: 0) Rack-3 Dipped in J4 - With RA:2 - #118,17,2,21194,800,5,1,1*ede2  * 22-05-2025 16:07:36.680
+CRC-Response (SeqNo: 118) - 118,17,I001,2*0a92 * 22-05-2025 16:07:36.831
+5 Seconds Timer increments in Jar J24 for R1 Other Rack Command Execution Under Progress and timer updated for tmr_r1_incub() * 22-05-2025 16:07:52.34
+5 Seconds Timer increments in Jar J24 for R1 Other Rack Command Execution Under Progress and timer updated for tmr_r1_incub() * 22-05-2025 16:07:57.24
+CRC-Response (SeqNo: 118) - 118,17,F000,2*35c3 * 22-05-2025 16:07:59.681
+Command Sent (SeqNo: 119, Retry: 0) Rack-3 Placed in J5 - With RA:2 - #119,3,2,24824,800,0,0*5f76  * 22-05-2025 16:07:59.787
+CRC-Response (SeqNo: 119) - 119,3,I001,2*281d * 22-05-2025 16:07:59.937
+5 Seconds Timer increments in Jar J24 for R1 Other Rack Command Execution Under Progress and timer updated for tmr_r1_incub() * 22-05-2025 16:08:02.34
+CRC-Response (SeqNo: 119) - 119,3,F000,2*174c * 22-05-2025 16:08:05.509
+RA Placed Rack in J5 * 22-05-2025 16:08:05.512
+Command Sent (SeqNo: 120, Retry: 0) Rack-1 Picked from J24 - With RA:2 - #120,2,2,17564,8590,0,0*4bd4  * 22-05-2025 16:08:07.78
+CRC-Response (SeqNo: 120) - 120,2,I001,2*8f03 * 22-05-2025 16:08:07.199
+CRC-Response (SeqNo: 120) - 120,2,F000,2*b052 * 22-05-2025 16:08:13.202
+RA Picked Rack From J24 * 22-05-2025 16:08:13.205
+Command Sent (SeqNo: 121, Retry: 0) Rack-1 Dipped in J25 - With RA:2 - #121,17,2,13934,8590,5,1,1*6093  * 22-05-2025 16:08:13.688
+CRC-Response (SeqNo: 121) - 121,17,I001,2*92b8 * 22-05-2025 16:08:13.847
+CRC-Response (SeqNo: 121) - 121,17,F000,2*ade9 * 22-05-2025 16:08:36.690
+Command Sent (SeqNo: 122, Retry: 0) Rack-1 Placed in J26 - With RA:2 - #122,3,2,10304,8590,0,0*92e1  * 22-05-2025 16:08:36.796
+CRC-Response (SeqNo: 122) - 122,3,I001,2*8963 * 22-05-2025 16:08:36.940
+CRC-Response (SeqNo: 122) - 122,3,F000,2*b632 * 22-05-2025 16:08:42.508
+RA Placed Rack in J26 * 22-05-2025 16:08:42.511
+Command Sent (SeqNo: 123, Retry: 0) Rack-2 Picked from J13 - With RA:1 - #123,2,1,64754,800,0,0*6e34  * 22-05-2025 16:08:53.456
+CRC-Response (SeqNo: 123) - 123,2,I001,1*81b3 * 22-05-2025 16:08:53.618
+CRC-Response (SeqNo: 123) - 123,2,F000,1*bee2 * 22-05-2025 16:08:58.630
+RA Picked Rack From J13 * 22-05-2025 16:08:58.634
+Command Sent (SeqNo: 124, Retry: 0) Rack-2 Placed in J14 - With RA:1 - #124,3,1,64754,8590,0,0*45c1  * 22-05-2025 16:08:59.48
+CRC-Response (SeqNo: 124) - 124,3,I001,1*97c3 * 22-05-2025 16:08:59.190
+CRC-Response (SeqNo: 124) - 124,3,F000,1*a892 * 22-05-2025 16:09:04.934
+RA Placed Rack in J14 * 22-05-2025 16:09:04.937
+Command Sent (SeqNo: 125, Retry: 0) Rack-3 Picked from J5 - With RA:2 - #125,2,2,24824,800,0,0*ad70  * 22-05-2025 16:10:05.913
+CRC-Response (SeqNo: 125) - 125,2,I001,2*9f13 * 22-05-2025 16:10:06.45
+CRC-Response (SeqNo: 125) - 125,2,F000,2*a042 * 22-05-2025 16:10:12.844
+RA Picked Rack From J5 * 22-05-2025 16:10:12.847
+Command Sent (SeqNo: 126, Retry: 0) Rack-3 Dipped in J6 - With RA:2 - #126,17,2,28454,800,5,1,1*98cc  * 22-05-2025 16:10:12.998
+CRC-Response (SeqNo: 126) - 126,17,I001,2*e6a2 * 22-05-2025 16:10:13.147
+CRC-Response (SeqNo: 126) - 126,17,F000,2*d9f3 * 22-05-2025 16:10:36.2
+Command Sent (SeqNo: 127, Retry: 0) Rack-3 Placed in J7 - With RA:2 - #127,3,2,32084,800,0,0*4c58  * 22-05-2025 16:10:36.106
+CRC-Response (SeqNo: 127) - 127,3,I001,2*9973 * 22-05-2025 16:10:36.250
+CRC-Response (SeqNo: 127) - 127,3,F000,2*a622 * 22-05-2025 16:10:41.828
+RA Placed Rack in J7 * 22-05-2025 16:10:41.830
+Command Sent (SeqNo: 128, Retry: 0) Rack-1 Picked from J26 - With RA:2 - #128,2,2,10304,8590,0,0*c528  * 22-05-2025 16:10:42.904
+CRC-Response (SeqNo: 128) - 128,2,I001,2*6582 * 22-05-2025 16:10:43.24
+CRC-Response (SeqNo: 128) - 128,2,F000,2*5ad3 * 22-05-2025 16:10:50.641
+RA Picked Rack From J26 * 22-05-2025 16:10:50.644
+Command Sent (SeqNo: 129, Retry: 0) Rack-1 Placed in J27 - With RA:2 - #129,3,2,21194,16380,0,0*e02e  * 22-05-2025 16:10:50.981
+CRC-Response (SeqNo: 129) - 129,3,I001,2*6c12 * 22-05-2025 16:10:51.119
+CRC-Response (SeqNo: 129) - 129,3,F000,2*5343 * 22-05-2025 16:10:57.512
+RA Placed Rack in J27 * 22-05-2025 16:10:57.516
+Command Sent (SeqNo: 130, Retry: 0) Rack-2 Picked from J14 - With RA:1 - #130,2,1,64754,8590,0,0*ec71  * 22-05-2025 16:11:05.157
+CRC-Response (SeqNo: 130) - 130,2,I001,1*7247 * 22-05-2025 16:11:05.277
+CRC-Response (SeqNo: 130) - 130,2,F000,1*4d16 * 22-05-2025 16:11:10.337
+RA Picked Rack From J14 * 22-05-2025 16:11:10.339
+Command Sent (SeqNo: 131, Retry: 0) Rack-2 Dipped in J15 - With RA:1 - #131,17,1,61124,8590,5,1,1*cbf5  * 22-05-2025 16:11:10.736
+CRC-Response (SeqNo: 131) - 131,17,I001,1*5005 * 22-05-2025 16:11:10.882
+CRC-Response (SeqNo: 131) - 131,17,F000,1*6f54 * 22-05-2025 16:11:33.736
+Command Sent (SeqNo: 132, Retry: 0) Rack-2 Placed in J16 - With RA:1 - #132,3,1,57494,8590,0,0*6664  * 22-05-2025 16:11:33.840
+CRC-Response (SeqNo: 132) - 132,3,I001,1*7427 * 22-05-2025 16:11:33.974
+CRC-Response (SeqNo: 132) - 132,3,F000,1*4b76 * 22-05-2025 16:11:39.543
+RA Placed Rack in J16 * 22-05-2025 16:11:39.545
+Command Sent (SeqNo: 133, Retry: 0) Rack-3 Picked from J7 - With RA:2 - #133,2,2,32084,800,0,0*3dc5  * 22-05-2025 16:12:43.217
+CRC-Response (SeqNo: 133) - 133,2,I001,2*7cf7 * 22-05-2025 16:12:43.353
+CRC-Response (SeqNo: 133) - 133,2,F000,2*43a6 * 22-05-2025 16:12:49.732
+RA Picked Rack From J7 * 22-05-2025 16:12:49.733
+Command Sent (SeqNo: 134, Retry: 0) Rack-3 Placed in J8 - With RA:2 - #134,3,2,35714,800,0,0*491e  * 22-05-2025 16:12:50.289
+CRC-Response (SeqNo: 134) - 134,3,I001,2*6a87 * 22-05-2025 16:12:50.414
+CRC-Response (SeqNo: 134) - 134,3,F000,2*55d6 * 22-05-2025 16:12:56.4
+RA Placed Rack in J8 * 22-05-2025 16:12:56.7
+Command Sent (SeqNo: 135, Retry: 0) Rack-1 Picked from J27 - With RA:2 - #135,2,2,21194,16380,0,0*1c0f  * 22-05-2025 16:12:58.80
+CRC-Response (SeqNo: 135) - 135,2,I001,2*6317 * 22-05-2025 16:12:58.203
+CRC-Response (SeqNo: 135) - 135,2,F000,2*5c46 * 22-05-2025 16:13:05.9
+RA Picked Rack From J27 * 22-05-2025 16:13:05.13
+Command Sent (SeqNo: 136, Retry: 0) Rack-1 Dipped in J28 - With RA:2 - #136,17,2,24824,16380,5,1,1*ccac  * 22-05-2025 16:13:05.163
+CRC-Response (SeqNo: 136) - 136,17,I001,2*255f * 22-05-2025 16:13:05.304
+CRC-Response (SeqNo: 136) - 136,17,F000,2*1a0e * 22-05-2025 16:13:28.154
+Command Sent (SeqNo: 137, Retry: 0) Rack-1 Placed in J29 - With RA:2 - #137,3,2,28454,16380,0,0*1e04  * 22-05-2025 16:13:28.252
+CRC-Response (SeqNo: 137) - 137,3,I001,2*6577 * 22-05-2025 16:13:28.393
+CRC-Response (SeqNo: 137) - 137,3,F000,2*5a26 * 22-05-2025 16:13:33.967
+RA Placed Rack in J29 * 22-05-2025 16:13:33.969
+Command Sent (SeqNo: 138, Retry: 0) Rack-2 Picked from J16 - With RA:1 - #138,2,1,57494,8590,0,0*31ad  * 22-05-2025 16:13:39.949
+CRC-Response (SeqNo: 138) - 138,2,I001,1*98c6 * 22-05-2025 16:13:40.69
+CRC-Response (SeqNo: 138) - 138,2,F000,1*a797 * 22-05-2025 16:13:45.123
+RA Picked Rack From J16 * 22-05-2025 16:13:45.126
+Command Sent (SeqNo: 139, Retry: 0) WATER VALVE - 4 CONTROL ON - #139,13,4,1*1fdb  * 22-05-2025 16:13:45.522
+CRC-Response (SeqNo: 139) - 139,13,F000*6184 * 22-05-2025 16:13:45.664
+Command Sent (SeqNo: 140, Retry: 0) Rack-2 Dipped in J17 - With RA:1 - #140,17,1,53864,8590,3,1,1*00e3  * 22-05-2025 16:13:46.125
+CRC-Response (SeqNo: 140) - 140,17,I001,1*67f4 * 22-05-2025 16:13:46.240
+CRC-Response (SeqNo: 140) - 140,17,F000,1*58a5 * 22-05-2025 16:14:00.361
+Command Sent (SeqNo: 141, Retry: 0) Rack-2 Placed in W4 - With RA:1 - #141,3,1,50234,8590,0,0*7574  * 22-05-2025 16:14:00.638
+CRC-Response (SeqNo: 141) - 141,3,I001,1*0fcd * 22-05-2025 16:14:00.765
+CRC-Response (SeqNo: 141) - 141,3,F000,1*309c * 22-05-2025 16:14:06.343
+RA Placed Rack in W4 * 22-05-2025 16:14:06.346
+Command Sent (SeqNo: 142, Retry: 0) Rack-1 Picked from J29 - With RA:2 - #142,2,2,28454,16380,0,0*515a  * 22-05-2025 16:14:34.386
+CRC-Response (SeqNo: 142) - 142,2,I001,2*cdbc * 22-05-2025 16:14:34.522
+CRC-Response (SeqNo: 142) - 142,2,F000,2*f2ed * 22-05-2025 16:14:39.563
+RA Picked Rack From J29 * 22-05-2025 16:14:39.566
+Command Sent (SeqNo: 143, Retry: 0) Rack-1 Dipped in J30 - With RA:2 - #143,17,2,32084,16380,9,1,1*dde9  * 22-05-2025 16:14:39.964
+CRC-Response (SeqNo: 143) - 143,17,I001,2*22bb * 22-05-2025 16:14:40.107
+5 Seconds Timer increments in Jar W4 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:15:06.703
+5 Seconds Timer increments in Jar W4 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:15:11.696
+5 Seconds Timer increments in Jar W4 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:15:16.696
+CRC-Response (SeqNo: 143) - 143,17,F000,2*1dea * 22-05-2025 16:15:20.429
+Command Sent (SeqNo: 144, Retry: 0) Rack-1 Placed in J31 - With RA:2 - #144,3,2,35714,16380,0,0*0a38  * 22-05-2025 16:15:20.566
+CRC-Response (SeqNo: 144) - 144,3,I001,2*1e9d * 22-05-2025 16:15:20.693
+5 Seconds Timer increments in Jar W4 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:15:21.696
+CRC-Response (SeqNo: 144) - 144,3,F000,2*21cc * 22-05-2025 16:15:26.279
+RA Placed Rack in J31 * 22-05-2025 16:15:26.281
+Command Sent (SeqNo: 145, Retry: 0) WATER VALVE - 4 CONTROL OFF - #145,13,4,0*ba3c  * 22-05-2025 16:15:27.169
+CRC-Response (SeqNo: 145) - 145,13,F000*bb60 * 22-05-2025 16:15:27.288
+Command Sent (SeqNo: 146, Retry: 0) Rack-2 Picked from W4 - With RA:1 - #146,2,1,50234,8590,0,0*3e90  * 22-05-2025 16:15:27.364
+CRC-Response (SeqNo: 146) - 146,2,I001,1*19bd * 22-05-2025 16:15:27.496
+CRC-Response (SeqNo: 146) - 146,2,F000,1*26ec * 22-05-2025 16:15:32.537
+RA Picked Rack From W4 * 22-05-2025 16:15:32.539
+Command Sent (SeqNo: 147, Retry: 0) WATER VALVE - 5 CONTROL ON - #147,13,5,1*632d  * 22-05-2025 16:15:32.749
+CRC-Response (SeqNo: 147) - 147,13,F000*db79 * 22-05-2025 16:15:32.877
+Command Sent (SeqNo: 148, Retry: 0) Rack-2 Dipped in J18 - With RA:1 - #148,17,1,39344,8590,5,1,1*8a08  * 22-05-2025 16:15:33.349
+CRC-Response (SeqNo: 148) - 148,17,I001,1*07de * 22-05-2025 16:15:33.468
+CRC-Response (SeqNo: 148) - 148,17,F000,1*388f * 22-05-2025 16:15:57.125
+Command Sent (SeqNo: 149, Retry: 0) Rack-2 Placed in W5 - With RA:1 - #149,3,1,46604,8590,0,0*b062  * 22-05-2025 16:15:57.354
+CRC-Response (SeqNo: 149) - 149,3,I001,1*e54c * 22-05-2025 16:15:57.504
+CRC-Response (SeqNo: 149) - 149,3,F000,1*da1d * 22-05-2025 16:16:03.472
+RA Placed Rack in W5 * 22-05-2025 16:16:03.476
+Command Sent (SeqNo: 150, Retry: 0) WATER VALVE - 5 CONTROL OFF - #150,13,5,0*d5a0  * 22-05-2025 16:17:03.964
+CRC-Response (SeqNo: 150) - 150,13,F000*2e0e * 22-05-2025 16:17:04.91
+Command Sent (SeqNo: 151, Retry: 0) Rack-2 Picked from W5 - With RA:1 - #151,2,1,46604,8590,0,0*d4c2  * 22-05-2025 16:17:04.167
+CRC-Response (SeqNo: 151) - 151,2,I001,1*3f08 * 22-05-2025 16:17:04.286
+CRC-Response (SeqNo: 151) - 151,2,F000,1*0059 * 22-05-2025 16:17:09.340
+RA Picked Rack From W5 * 22-05-2025 16:17:09.343
+Command Sent (SeqNo: 152, Retry: 0) RA-2 Movement - #152,5,00111000*2977  * 22-05-2025 16:17:09.559
+CRC-Response (SeqNo: 152) - 152,5,I001,00111000*f0a9 * 22-05-2025 16:17:09.705
+CRC-Response (SeqNo: 152) - 152,5,F000,11111111*a6ac * 22-05-2025 16:17:09.706
+Command Sent (SeqNo: 153, Retry: 0) WATER VALVE - 6 CONTROL ON - #153,13,6,1*00d1  * 22-05-2025 16:17:11.664
+CRC-Response (SeqNo: 153) - 153,13,F000*de1a * 22-05-2025 16:17:11.787
+Command Sent (SeqNo: 154, Retry: 0) Rack-2 Dipped in J19 - With RA:1 - #154,17,1,35714,8590,10,1,1*abc0  * 22-05-2025 16:17:12.255
+CRC-Response (SeqNo: 154) - 154,17,I001,1*941c * 22-05-2025 16:17:12.378
+5 Seconds Timer increments in Jar J31 for R1 Other Rack Command Execution Under Progress and timer updated for tmr_r1_incub() * 22-05-2025 16:17:27.596
+5 Seconds Timer increments in Jar J31 for R1 Other Rack Command Execution Under Progress and timer updated for tmr_r1_incub() * 22-05-2025 16:17:31.597
+5 Seconds Timer increments in Jar J31 for R1 Other Rack Command Execution Under Progress and timer updated for tmr_r1_incub() * 22-05-2025 16:17:36.596
+5 Seconds Timer increments in Jar J31 for R1 Other Rack Command Execution Under Progress and timer updated for tmr_r1_incub() * 22-05-2025 16:17:41.600
+5 Seconds Timer increments in Jar J31 for R1 Other Rack Command Execution Under Progress and timer updated for tmr_r1_incub() * 22-05-2025 16:17:46.603
+5 Seconds Timer increments in Jar J31 for R1 Other Rack Command Execution Under Progress and timer updated for tmr_r1_incub() * 22-05-2025 16:17:51.603
+5 Secconds Timer increments in Jar J8 for R3 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 16:17:56.374
+5 Seconds Timer increments in Jar J31 for R1 Other Rack Command Execution Under Progress and timer updated for tmr_r1_incub() * 22-05-2025 16:17:56.603
+CRC-Response (SeqNo: 154) - 154,17,F000,1*ab4d * 22-05-2025 16:17:57.872
+Command Sent (SeqNo: 155, Retry: 0) Rack-2 Placed in W6 - With RA:1 - #155,3,1,42974,8590,0,0*4862  * 22-05-2025 16:17:58.257
+CRC-Response (SeqNo: 155) - 155,3,I001,1*2688 * 22-05-2025 16:17:58.390
+5 Secconds Timer increments in Jar J8 for R3 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 16:18:01.368
+5 Seconds Timer increments in Jar J31 for R1 Other Rack Command Execution Under Progress and timer updated for tmr_r1_incub() * 22-05-2025 16:18:01.609
+CRC-Response (SeqNo: 155) - 155,3,F000,1*19d9 * 22-05-2025 16:18:04.368
+RA Placed Rack in W6 * 22-05-2025 16:18:04.379
+Command Sent (SeqNo: 156, Retry: 0) WATER VALVE - 1 CONTROL ON - #156,13,1,1*fea0  * 22-05-2025 16:18:05.425
+CRC-Response (SeqNo: 156) - 156,13,F000*8e25 * 22-05-2025 16:18:05.545
+11 Secconds Timer increments in Jar J8 for R3 Other Rack Waiting count is high and timer upadted for tmr_r3_incub() * 22-05-2025 16:18:06.369
+Command Sent (SeqNo: 157, Retry: 0) Rack-1 Picked from J31 - With RA:2 - #157,2,2,35714,16380,0,0*09e6  * 22-05-2025 16:18:06.657
+CRC-Response (SeqNo: 157) - 157,2,I001,2*21a8 * 22-05-2025 16:18:06.774
+CRC-Response (SeqNo: 157) - 157,2,F000,2*1ef9 * 22-05-2025 16:18:15.958
+RA Picked Rack From J31 * 22-05-2025 16:18:15.960
+Command Sent (SeqNo: 158, Retry: 0) RA-1 Movement - #158,5,00000111*4cc3  * 22-05-2025 16:18:16.259
+CRC-Response (SeqNo: 158) - 158,5,I001,00000111*2f23 * 22-05-2025 16:18:16.397
+CRC-Response (SeqNo: 158) - 158,5,F000,11111111*048a * 22-05-2025 16:18:16.398
+Command Sent (SeqNo: 159, Retry: 0) Rack-1 Dipped in J32 - With RA:2 - #159,17,2,39344,16380,9,1,1*9eeb  * 22-05-2025 16:18:18.334
+5 Secconds Timer increments in Jar J8 for R3 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 16:18:18.346
+CRC-Response (SeqNo: 159) - 159,17,I001,2*3967 * 22-05-2025 16:18:18.471
+5 Secconds Timer increments in Jar J8 for R3 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 16:18:22.351
+5 Secconds Timer increments in Jar J8 for R3 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 16:18:27.364
+5 Secconds Timer increments in Jar J8 for R3 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 16:18:32.366
+5 Secconds Timer increments in Jar J8 for R3 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 16:18:37.373
+5 Secconds Timer increments in Jar J8 for R3 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 16:18:42.367
+5 Secconds Timer increments in Jar J8 for R3 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 16:18:47.372
+5 Secconds Timer increments in Jar J8 for R3 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 16:18:52.375
+5 Secconds Timer increments in Jar J8 for R3 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 16:18:57.378
+CRC-Response (SeqNo: 159) - 159,17,F000,2*0636 * 22-05-2025 16:18:58.857
+Command Sent (SeqNo: 160, Retry: 0) Rack-1 Placed in J33 - With RA:2 - #160,3,2,64754,16380,0,0*5aea  * 22-05-2025 16:18:58.944
+CRC-Response (SeqNo: 160) - 160,3,I001,2*73d7 * 22-05-2025 16:18:59.87
+5 Secconds Timer increments in Jar J8 for R3 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 16:19:02.385
+5 Seconds Timer increments in Jar W6 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:19:04.816
+CRC-Response (SeqNo: 160) - 160,3,F000,2*4c86 * 22-05-2025 16:19:07.96
+RA Placed Rack in J33 * 22-05-2025 16:19:07.99
+11 Secconds Timer increments in Jar J8 for R3 Other Rack Picked by RA and timer upadted for tmr_r3_incub() * 22-05-2025 16:19:07.395
+Command Sent (SeqNo: 161, Retry: 0) RA2 Home Command - #161,5,00111000*ee76  * 22-05-2025 16:19:07.539
+CRC-Response (SeqNo: 161) - 161,5,I001,00111000*44a9 * 22-05-2025 16:19:08.78
+CRC-Response (SeqNo: 161) - 161,5,F000,11111111*12ac * 22-05-2025 16:19:08.78
+18 Seconds Timer increments in Jar W6 for R2 Other Rack Waiting count is high and timer updated for tmr_r2_incub() * 22-05-2025 16:19:09.832
+Command Sent (SeqNo: 162, Retry: 0) Rack-3 Picked from J8 - With RA:2 - #162,2,2,35714,800,0,0*040b  * 22-05-2025 16:19:18.458
+CRC-Response (SeqNo: 162) - 162,2,I001,2*75b7 * 22-05-2025 16:19:18.579
+CRC-Response (SeqNo: 162) - 162,2,F000,2*4ae6 * 22-05-2025 16:19:27.736
+RA Picked Rack From J8 * 22-05-2025 16:19:27.738
+18 Seconds Timer increments in Jar W6 for R2 Other Rack Picked by RA and timer updated for tmr_r2_incub() * 22-05-2025 16:19:27.863
+Command Sent (SeqNo: 163, Retry: 0) RA-1 Movement - #163,5,00000111*5423  * 22-05-2025 16:19:28.40
+CRC-Response (SeqNo: 163) - 163,5,I001,00000111*59a4 * 22-05-2025 16:19:28.174
+CRC-Response (SeqNo: 163) - 163,5,F000,11111111*720d * 22-05-2025 16:19:28.174
+Command Sent (SeqNo: 164, Retry: 0) Rack-3 Placed in W1 - With RA:2 - #164,3,2,42974,800,0,0*67f8  * 22-05-2025 16:19:30.107
+CRC-Response (SeqNo: 164) - 164,3,I001,2*a696 * 22-05-2025 16:19:30.248
+CRC-Response (SeqNo: 164) - 164,3,F000,2*99c7 * 22-05-2025 16:19:36.222
+RA Placed Rack in W1 * 22-05-2025 16:19:36.224
+Command Sent (SeqNo: 165, Retry: 0) RA2 Home Command - #165,5,00111000*2187  * 22-05-2025 16:19:36.682
+CRC-Response (SeqNo: 165) - 165,5,I001,00111000*85eb * 22-05-2025 16:19:37.219
+CRC-Response (SeqNo: 165) - 165,5,F000,11111111*d3ee * 22-05-2025 16:19:37.219
+Command Sent (SeqNo: 166, Retry: 0) WATER VALVE - 6 CONTROL OFF - #166,13,6,0*0fc4  * 22-05-2025 16:19:45.943
+CRC-Response (SeqNo: 166) - 166,13,F000*81d5 * 22-05-2025 16:19:46.63
+Command Sent (SeqNo: 167, Retry: 0) Rack-2 Picked from W6 - With RA:1 - #167,2,1,42974,8590,0,0*6579  * 22-05-2025 16:19:46.142
+CRC-Response (SeqNo: 167) - 167,2,I001,1*64e7 * 22-05-2025 16:19:46.266
+CRC-Response (SeqNo: 167) - 167,2,F000,1*5bb6 * 22-05-2025 16:19:54.16
+RA Picked Rack From W6 * 22-05-2025 16:19:54.19
+Command Sent (SeqNo: 168, Retry: 0) RA-2 Movement - #168,5,00111000*f26a  * 22-05-2025 16:19:54.521
+CRC-Response (SeqNo: 168) - 168,5,I001,00111000*167f * 22-05-2025 16:19:54.663
+CRC-Response (SeqNo: 168) - 168,5,F000,11111111*407a * 22-05-2025 16:19:54.663
+Command Sent (SeqNo: 169, Retry: 0) Rack-2 Placed in J20 - With RA:1 - #169,3,1,32084,8590,0,0*796b  * 22-05-2025 16:19:56.605
+CRC-Response (SeqNo: 169) - 169,3,I001,1*5d47 * 22-05-2025 16:19:56.746
+CRC-Response (SeqNo: 169) - 169,3,F000,1*6216 * 22-05-2025 16:20:03.119
+RA Placed Rack in J20 * 22-05-2025 16:20:03.122
+Command Sent (SeqNo: 170, Retry: 0) RA1 Home Command - #170,5,00000111*d125  * 22-05-2025 16:20:03.704
+CRC-Response (SeqNo: 170) - 170,5,I001,00000111*5505 * 22-05-2025 16:20:04.284
+CRC-Response (SeqNo: 170) - 170,5,F000,11111111*7eac * 22-05-2025 16:20:04.285
+Command Sent (SeqNo: 171, Retry: 0) WATER VALVE - 1 CONTROL OFF - #171,13,1,0*b839  * 22-05-2025 16:20:36.706
+CRC-Response (SeqNo: 171) - 171,13,F000*74a2 * 22-05-2025 16:20:36.832
+Command Sent (SeqNo: 172, Retry: 0) Rack-3 Picked from W1 - With RA:1 - #172,2,1,42974,800,0,0*af5f  * 22-05-2025 16:20:36.909
+CRC-Response (SeqNo: 172) - 172,2,I001,1*88f3 * 22-05-2025 16:20:37.37
+CRC-Response (SeqNo: 172) - 172,2,F000,1*b7a2 * 22-05-2025 16:20:44.766
+RA Picked Rack From W1 * 22-05-2025 16:20:44.768
+Command Sent (SeqNo: 173, Retry: 0) WATER VALVE - 2 CONTROL ON - #173,13,2,1*a189  * 22-05-2025 16:20:45.332
+CRC-Response (SeqNo: 173) - 173,13,F000*14bb * 22-05-2025 16:20:45.459
+Command Sent (SeqNo: 174, Retry: 0) Rack-3 Dipped in J9 - With RA:1 - #174,17,1,39344,800,2,1,1*5be2  * 22-05-2025 16:20:45.946
+CRC-Response (SeqNo: 174) - 174,17,I001,1*53e5 * 22-05-2025 16:20:46.114
+CRC-Response (SeqNo: 174) - 174,17,F000,1*6cb4 * 22-05-2025 16:20:55.854
+Command Sent (SeqNo: 175, Retry: 0) Rack-3 Placed in W2 - With RA:1 - #175,3,1,46604,800,0,0*4acb  * 22-05-2025 16:20:56.13
+CRC-Response (SeqNo: 175) - 175,3,I001,1*9e83 * 22-05-2025 16:20:56.149
+CRC-Response (SeqNo: 175) - 175,3,F000,1*a1d2 * 22-05-2025 16:21:02.126
+RA Placed Rack in W2 * 22-05-2025 16:21:02.128
+Command Sent (SeqNo: 176, Retry: 0) Rack-1 Picked from J33 - With RA:1 - #176,2,1,64754,16380,0,0*fc91  * 22-05-2025 16:21:08.532
+CRC-Response (SeqNo: 176) - 176,2,I001,1*5db2 * 22-05-2025 16:21:08.662
+CRC-Response (SeqNo: 176) - 176,2,F000,1*62e3 * 22-05-2025 16:21:15.873
+RA Picked Rack From J33 * 22-05-2025 16:21:15.875
+Command Sent (SeqNo: 177, Retry: 0) Rack-1 Placed in U1 - With RA:1 - #177,3,1,61124,16380,0,0*d945  * 22-05-2025 16:21:16.118
+CRC-Response (SeqNo: 177) - 177,3,I001,1*5422 * 22-05-2025 16:21:16.264
+CRC-Response (SeqNo: 177) - 177,3,F000,1*6b73 * 22-05-2025 16:21:21.833
+RA Placed Rack in U1 * 22-05-2025 16:21:21.835
+Rack - 1Protocol Ended * 22-05-2025 16:21:22.683
+Command Sent (SeqNo: 178, Retry: 0) WATER VALVE - 2 CONTROL OFF - #178,13,2,0*d209  * 22-05-2025 16:22:03.606
+5 Seconds Timer increments in Jar J20 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:22:03.656
+CRC-Response (SeqNo: 178) - 178,13,F000*24c8 * 22-05-2025 16:22:03.721
+Command Sent (SeqNo: 179, Retry: 0) Rack-3 Picked from W2 - With RA:1 - #179,2,1,46604,800,0,0*8b89  * 22-05-2025 16:22:03.795
+CRC-Response (SeqNo: 179) - 179,2,I001,1*6d82 * 22-05-2025 16:22:03.911
+5 Seconds Timer increments in Jar J20 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:22:08.661
+CRC-Response (SeqNo: 179) - 179,2,F000,1*52d3 * 22-05-2025 16:22:10.724
+RA Picked Rack From W2 * 22-05-2025 16:22:10.727
+Command Sent (SeqNo: 180, Retry: 0) WATER VALVE - 3 CONTROL ON - #180,13,3,1*84d9  * 22-05-2025 16:22:11.225
+CRC-Response (SeqNo: 180) - 180,13,F000*d49f * 22-05-2025 16:22:11.355
+Command Sent (SeqNo: 181, Retry: 0) Rack-3 Dipped in J10 - With RA:1 - #181,17,1,53864,800,1,1,1*905d  * 22-05-2025 16:22:11.818
+CRC-Response (SeqNo: 181) - 181,17,I001,1*8be0 * 22-05-2025 16:22:11.934
+5 Seconds Timer increments in Jar J20 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:22:13.672
+CRC-Response (SeqNo: 181) - 181,17,F000,1*b4b1 * 22-05-2025 16:22:17.704
+Command Sent (SeqNo: 182, Retry: 0) Rack-3 Placed in W3 - With RA:1 - #182,3,1,50234,800,0,0*76c5  * 22-05-2025 16:22:17.869
+CRC-Response (SeqNo: 182) - 182,3,I001,1*5002 * 22-05-2025 16:22:18.1
+5 Seconds Timer increments in Jar J20 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:22:18.665
+CRC-Response (SeqNo: 182) - 182,3,F000,1*6f53 * 22-05-2025 16:22:23.569
+RA Placed Rack in W3 * 22-05-2025 16:22:23.572
+11 Seconds Timer increments in Jar J20 for R2 Other Rack Picked by RA and timer updated for tmr_r2_incub() * 22-05-2025 16:22:23.668
+Command Sent (SeqNo: 183, Retry: 0) Rack-2 Picked from J20 - With RA:2 - #183,2,2,32084,8590,0,0*f10d  * 22-05-2025 16:22:34.719
+CRC-Response (SeqNo: 183) - 183,2,I001,2*58d2 * 22-05-2025 16:22:34.842
+CRC-Response (SeqNo: 183) - 183,2,F000,2*6783 * 22-05-2025 16:22:43.605
+RA Picked Rack From J20 * 22-05-2025 16:22:43.609
+Command Sent (SeqNo: 184, Retry: 0) Rack-2 Dipped in J21 - With RA:2 - #184,17,2,28454,8590,3,1,1*72b4  * 22-05-2025 16:22:43.805
+CRC-Response (SeqNo: 184) - 184,17,I001,2*46b1 * 22-05-2025 16:22:43.966
+CRC-Response (SeqNo: 184) - 184,17,F000,2*79e0 * 22-05-2025 16:22:58.61
+Command Sent (SeqNo: 185, Retry: 0) Rack-2 Placed in J22 - With RA:2 - #185,3,2,24824,8590,0,0*6b1d  * 22-05-2025 16:22:58.411
+CRC-Response (SeqNo: 185) - 185,3,I001,2*8bf3 * 22-05-2025 16:22:58.545
+CRC-Response (SeqNo: 185) - 185,3,F000,2*b4a2 * 22-05-2025 16:23:04.114
+RA Placed Rack in J22 * 22-05-2025 16:23:04.118
+Command Sent (SeqNo: 186, Retry: 0) WATER VALVE - 3 CONTROL OFF - #186,13,3,0*6e98  * 22-05-2025 16:23:24.957
+CRC-Response (SeqNo: 186) - 186,13,F000*74b4 * 22-05-2025 16:23:25.73
+Command Sent (SeqNo: 187, Retry: 0) Rack-3 Picked from W3 - With RA:1 - #187,2,1,50234,800,0,0*2a58  * 22-05-2025 16:23:25.144
+CRC-Response (SeqNo: 187) - 187,2,I001,1*8cd3 * 22-05-2025 16:23:25.265
+CRC-Response (SeqNo: 187) - 187,2,F000,1*b382 * 22-05-2025 16:23:30.325
+RA Picked Rack From W3 * 22-05-2025 16:23:30.328
+Command Sent (SeqNo: 188, Retry: 0) Rack-3 Placed in J11 - With RA:1 - #188,3,1,57494,800,0,0*cc95  * 22-05-2025 16:23:30.539
+CRC-Response (SeqNo: 188) - 188,3,I001,1*7022 * 22-05-2025 16:23:30.666
+CRC-Response (SeqNo: 188) - 188,3,F000,1*4f73 * 22-05-2025 16:23:36.643
+RA Placed Rack in J11 * 22-05-2025 16:23:36.645
+Command Sent (SeqNo: 189, Retry: 0) Rack-2 Picked from J22 - With RA:2 - #189,2,2,24824,8590,0,0*5a5c  * 22-05-2025 16:24:04.520
+CRC-Response (SeqNo: 189) - 189,2,I001,2*78f2 * 22-05-2025 16:24:04.646
+CRC-Response (SeqNo: 189) - 189,2,F000,2*47a3 * 22-05-2025 16:24:09.693
+RA Picked Rack From J22 * 22-05-2025 16:24:09.697
+Command Sent (SeqNo: 190, Retry: 0) Rack-2 Dipped in J23 - With RA:2 - #190,17,2,21194,8590,4,1,1*1bb3  * 22-05-2025 16:24:10.108
+CRC-Response (SeqNo: 190) - 190,17,I001,2*b559 * 22-05-2025 16:24:10.269
+CRC-Response (SeqNo: 190) - 190,17,F000,2*8a08 * 22-05-2025 16:24:28.744
+Command Sent (SeqNo: 191, Retry: 0) Rack-2 Placed in J24 - With RA:2 - #191,3,2,17564,8590,0,0*1d02  * 22-05-2025 16:24:29.233
+CRC-Response (SeqNo: 191) - 191,3,I001,2*a2b6 * 22-05-2025 16:24:29.379
+CRC-Response (SeqNo: 191) - 191,3,F000,2*9de7 * 22-05-2025 16:24:34.951
+RA Placed Rack in J24 * 22-05-2025 16:24:34.954
+Command Sent (SeqNo: 192, Retry: 0) Home Command - #192,5,00111111*75f7  * 22-05-2025 16:24:52.902
+CRC-Response (SeqNo: 192) - 192,5,I001,00111111*33fb * 22-05-2025 16:24:53.41
+CRC-Response (SeqNo: 192) - 192,5,F000,11111111*f56f * 22-05-2025 16:24:53.41
+Command Sent (SeqNo: 193, Retry: 0) Level Sensing For L1 - #193,4,17564,16380,0,0*ff4e  * 22-05-2025 16:24:53.612
+CRC-Response (SeqNo: 193) - 193,4,F005*4de5 * 22-05-2025 16:24:53.728
+Command Sent (SeqNo: 193, Retry: 0)  - #193,4,17564,16380,0,0*ff4e  * 22-05-2025 16:24:58.786
+CRC-Response (SeqNo: 193) - 193,4,I001*9ae7 * 22-05-2025 16:24:58.913
+CRC-Response (SeqNo: 193) - 193,4,F000,688*9791 * 22-05-2025 16:25:07.187
+L1 Value - 688 * 22-05-2025 16:25:07.207
+Command Sent (SeqNo: 194, Retry: 0) Level Sensing For L2 - #194,4,13934,16380,0,0*8fe3  * 22-05-2025 16:25:07.288
+CRC-Response (SeqNo: 194) - 194,4,I001*7ca6 * 22-05-2025 16:25:07.422
+CRC-Response (SeqNo: 194) - 194,4,F000,693*0b24 * 22-05-2025 16:25:09.695
+L2 Value - 693 * 22-05-2025 16:25:09.717
+Command Sent (SeqNo: 195, Retry: 0) Level Sensing For L3 - #195,4,10304,16380,0,0*7ec1  * 22-05-2025 16:25:10.285
+CRC-Response (SeqNo: 195) - 195,4,I001*b067 * 22-05-2025 16:25:10.421
+CRC-Response (SeqNo: 195) - 195,4,F000,679*af5d * 22-05-2025 16:25:12.708
+L3 Value - 679 * 22-05-2025 16:25:12.732
+Command Sent (SeqNo: 196, Retry: 0) Home Command - #196,5,01111111*7a16  * 22-05-2025 16:25:13.294
+CRC-Response (SeqNo: 196) - 196,5,I001,01111111*32a9 * 22-05-2025 16:25:13.420
+CRC-Response (SeqNo: 196) - 196,5,F000,11111111*342d * 22-05-2025 16:25:13.421
+Command Sent (SeqNo: 197, Retry: 0) Home Command - #197,5,01111111*b9eb  * 22-05-2025 16:25:14.982
+CRC-Response (SeqNo: 197) - 197,5,I001,01111111*a2f8 * 22-05-2025 16:25:15.106
+CRC-Response (SeqNo: 197) - 197,5,F000,11111111*a47c * 22-05-2025 16:25:15.106
+Rack - 4Protocol Started * 22-05-2025 16:25:16.637
+Command Sent (SeqNo: 198, Retry: 0) Rack-4 Picked from L1 - With RA:2 - #198,2,2,17564,16380,0,0*e9a6  * 22-05-2025 16:25:16.713
+CRC-Response (SeqNo: 198) - 198,2,I001,2*41a7 * 22-05-2025 16:25:16.854
+CRC-Response (SeqNo: 198) - 198,2,F000,2*7ef6 * 22-05-2025 16:25:24.6
+RA Picked Rack From L1 * 22-05-2025 16:25:24.10
+Command Sent (SeqNo: 199, Retry: 0) Rack-4 Placed in J1 - With RA:2 - #199,3,2,10304,800,0,0*f4e7  * 22-05-2025 16:25:24.322
+CRC-Response (SeqNo: 199) - 199,3,I001,2*4837 * 22-05-2025 16:25:24.462
+CRC-Response (SeqNo: 199) - 199,3,F000,2*7766 * 22-05-2025 16:25:30.833
+RA Placed Rack in J1 * 22-05-2025 16:25:30.835
+Command Sent (SeqNo: 200, Retry: 0) Rack-3 Picked from J11 - With RA:1 - #200,2,1,57494,800,0,0*47f4  * 22-05-2025 16:25:38.138
+CRC-Response (SeqNo: 200) - 200,2,I001,1*324c * 22-05-2025 16:25:38.261
+CRC-Response (SeqNo: 200) - 200,2,F000,1*0d1d * 22-05-2025 16:25:44.369
+RA Picked Rack From J11 * 22-05-2025 16:25:44.371
+Command Sent (SeqNo: 201, Retry: 0) Rack-3 Dipped in J12 - With RA:1 - #201,17,1,61124,800,2,1,1*0c36  * 22-05-2025 16:25:44.722
+CRC-Response (SeqNo: 201) - 201,17,I001,1*9704 * 22-05-2025 16:25:44.866
+CRC-Response (SeqNo: 201) - 201,17,F000,1*a855 * 22-05-2025 16:25:54.598
+Command Sent (SeqNo: 202, Retry: 0) Rack-3 Placed in J13 - With RA:1 - #202,3,1,64754,800,0,0*d312  * 22-05-2025 16:25:54.827
+CRC-Response (SeqNo: 202) - 202,3,I001,1*342c * 22-05-2025 16:25:54.967
+CRC-Response (SeqNo: 202) - 202,3,F000,1*0b7d * 22-05-2025 16:26:00.530
+RA Placed Rack in J13 * 22-05-2025 16:26:00.532
+Command Sent (SeqNo: 203, Retry: 0) Rack-2 Picked from J24 - With RA:2 - #203,2,2,17564,8590,0,0*8fc0  * 22-05-2025 16:26:35.332
+CRC-Response (SeqNo: 203) - 203,2,I001,2*3cfc * 22-05-2025 16:26:35.458
+CRC-Response (SeqNo: 203) - 203,2,F000,2*03ad * 22-05-2025 16:26:41.448
+RA Picked Rack From J24 * 22-05-2025 16:26:41.451
+Command Sent (SeqNo: 204, Retry: 0) Rack-2 Dipped in J25 - With RA:2 - #204,17,2,13934,8590,5,1,1*2e2a  * 22-05-2025 16:26:41.909
+CRC-Response (SeqNo: 204) - 204,17,I001,2*5a55 * 22-05-2025 16:26:42.72
+CRC-Response (SeqNo: 204) - 204,17,F000,2*6504 * 22-05-2025 16:27:04.920
+Command Sent (SeqNo: 205, Retry: 0) Rack-2 Placed in J26 - With RA:2 - #205,3,2,10304,8590,0,0*d204  * 22-05-2025 16:27:05.35
+CRC-Response (SeqNo: 205) - 205,3,I001,2*efdd * 22-05-2025 16:27:05.178
+CRC-Response (SeqNo: 205) - 205,3,F000,2*d08c * 22-05-2025 16:27:10.739
+RA Placed Rack in J26 * 22-05-2025 16:27:10.745
+Command Sent (SeqNo: 206, Retry: 0) Rack-4 Picked from J1 - With RA:2 - #206,2,2,10304,800,0,0*da0e  * 22-05-2025 16:27:30.966
+CRC-Response (SeqNo: 206) - 206,2,I001,2*2cec * 22-05-2025 16:27:31.101
+CRC-Response (SeqNo: 206) - 206,2,F000,2*13bd * 22-05-2025 16:27:36.851
+RA Picked Rack From J1 * 22-05-2025 16:27:36.854
+Command Sent (SeqNo: 207, Retry: 0) Rack-4 Dipped in J2 - With RA:2 - #207,17,2,13934,800,5,1,1*5d33  * 22-05-2025 16:27:37.53
+CRC-Response (SeqNo: 207) - 207,17,I001,2*1e5a * 22-05-2025 16:27:37.205
+CRC-Response (SeqNo: 207) - 207,17,F000,2*210b * 22-05-2025 16:28:00.52
+Command Sent (SeqNo: 208, Retry: 0) Rack-4 Placed in J3 - With RA:2 - #208,3,2,17564,800,0,0*ff3e  * 22-05-2025 16:28:00.177
+CRC-Response (SeqNo: 208) - 208,3,I001,2*154c * 22-05-2025 16:28:00.314
+5 Secconds Timer increments in Jar J13 for R3 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 16:28:00.899
+CRC-Response (SeqNo: 208) - 208,3,F000,2*2a1d * 22-05-2025 16:28:05.899
+5 Secconds Timer increments in Jar J13 for R3 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 16:28:05.899
+RA Placed Rack in J3 * 22-05-2025 16:28:05.901
+Command Sent (SeqNo: 209, Retry: 0) Rack-3 Picked from J13 - With RA:1 - #209,2,1,64754,800,0,0*66e5  * 22-05-2025 16:28:10.949
+CRC-Response (SeqNo: 209) - 209,2,I001,1*1d9c * 22-05-2025 16:28:11.68
+CRC-Response (SeqNo: 209) - 209,2,F000,1*22cd * 22-05-2025 16:28:16.116
+RA Picked Rack From J13 * 22-05-2025 16:28:16.119
+Command Sent (SeqNo: 210, Retry: 0) Rack-3 Placed in J14 - With RA:1 - #210,3,1,64754,8590,0,0*e770  * 22-05-2025 16:28:16.518
+CRC-Response (SeqNo: 210) - 210,3,I001,1*0289 * 22-05-2025 16:28:16.645
+CRC-Response (SeqNo: 210) - 210,3,F000,1*3dd8 * 22-05-2025 16:28:22.399
+RA Placed Rack in J14 * 22-05-2025 16:28:22.402
+Command Sent (SeqNo: 211, Retry: 0) Rack-4 Picked from J3 - With RA:2 - #211,2,2,17564,800,0,0*238d  * 22-05-2025 16:29:06.275
+CRC-Response (SeqNo: 211) - 211,2,I001,2*0a59 * 22-05-2025 16:29:06.396
+5 Seconds Timer increments in Jar J26 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:29:11.76
+CRC-Response (SeqNo: 211) - 211,2,F000,2*3508 * 22-05-2025 16:29:11.450
+RA Picked Rack From J3 * 22-05-2025 16:29:11.453
+Command Sent (SeqNo: 212, Retry: 0) Rack-4 Dipped in J4 - With RA:2 - #212,17,2,21194,800,5,1,1*6d2c  * 22-05-2025 16:29:11.849
+CRC-Response (SeqNo: 212) - 212,17,I001,2*11b6 * 22-05-2025 16:29:11.993
+5 Seconds Timer increments in Jar J26 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:29:16.81
+5 Seconds Timer increments in Jar J26 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:29:21.83
+5 Seconds Timer increments in Jar J26 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:29:26.84
+5 Seconds Timer increments in Jar J26 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:29:31.95
+CRC-Response (SeqNo: 212) - 212,17,F000,2*2ee7 * 22-05-2025 16:29:34.819
+Command Sent (SeqNo: 213, Retry: 0) Rack-4 Placed in J5 - With RA:2 - #213,3,2,24824,800,0,0*b5de  * 22-05-2025 16:29:34.940
+CRC-Response (SeqNo: 213) - 213,3,I001,2*0c39 * 22-05-2025 16:29:35.68
+5 Seconds Timer increments in Jar J26 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:29:36.85
+CRC-Response (SeqNo: 213) - 213,3,F000,2*3368 * 22-05-2025 16:29:40.648
+RA Placed Rack in J5 * 22-05-2025 16:29:40.650
+Command Sent (SeqNo: 214, Retry: 0) Rack-2 Picked from J26 - With RA:2 - #214,2,2,10304,8590,0,0*2e78  * 22-05-2025 16:29:41.550
+CRC-Response (SeqNo: 214) - 214,2,I001,2*1a49 * 22-05-2025 16:29:41.678
+CRC-Response (SeqNo: 214) - 214,2,F000,2*2518 * 22-05-2025 16:29:48.489
+RA Picked Rack From J26 * 22-05-2025 16:29:48.494
+Command Sent (SeqNo: 215, Retry: 0) Rack-2 Placed in J27 - With RA:2 - #215,3,2,21194,16380,0,0*dcc5  * 22-05-2025 16:29:48.633
+CRC-Response (SeqNo: 215) - 215,3,I001,2*13d9 * 22-05-2025 16:29:48.770
+CRC-Response (SeqNo: 215) - 215,3,F000,2*2c88 * 22-05-2025 16:29:55.162
+RA Placed Rack in J27 * 22-05-2025 16:29:55.165
+Command Sent (SeqNo: 216, Retry: 0) Rack-3 Picked from J14 - With RA:1 - #216,2,1,64754,8590,0,0*7da9  * 22-05-2025 16:30:23.651
+CRC-Response (SeqNo: 216) - 216,2,I001,1*d1a8 * 22-05-2025 16:30:23.776
+Rack Unloaded From U1 * 22-05-2025 16:30:24.616
+CRC-Response (SeqNo: 216) - 216,2,F000,1*eef9 * 22-05-2025 16:30:28.826
+RA Picked Rack From J14 * 22-05-2025 16:30:28.829
+Command Sent (SeqNo: 217, Retry: 0) Rack-3 Dipped in J15 - With RA:1 - #217,17,1,61124,8590,5,1,1*6018  * 22-05-2025 16:30:29.244
+CRC-Response (SeqNo: 217) - 217,17,I001,1*dce7 * 22-05-2025 16:30:29.402
+CRC-Response (SeqNo: 217) - 217,17,F000,1*e3b6 * 22-05-2025 16:30:52.235
+Command Sent (SeqNo: 218, Retry: 0) Rack-3 Placed in J16 - With RA:1 - #218,3,1,57494,8590,0,0*3aac  * 22-05-2025 16:30:52.351
+CRC-Response (SeqNo: 218) - 218,3,I001,1*e808 * 22-05-2025 16:30:52.484
+CRC-Response (SeqNo: 218) - 218,3,F000,1*d759 * 22-05-2025 16:30:58.58
+RA Placed Rack in J16 * 22-05-2025 16:30:58.62
+Command Sent (SeqNo: 219, Retry: 0) Rack-4 Picked from J5 - With RA:2 - #219,2,2,24824,800,0,0*fc14  * 22-05-2025 16:31:41.49
+CRC-Response (SeqNo: 219) - 219,2,I001,2*e0d8 * 22-05-2025 16:31:41.180
+CRC-Response (SeqNo: 219) - 219,2,F000,2*df89 * 22-05-2025 16:31:47.541
+RA Picked Rack From J5 * 22-05-2025 16:31:47.544
+Command Sent (SeqNo: 220, Retry: 0) Rack-4 Dipped in J6 - With RA:2 - #220,17,2,28454,800,5,1,1*4dce  * 22-05-2025 16:31:47.633
+CRC-Response (SeqNo: 220) - 220,17,I001,2*adb9 * 22-05-2025 16:31:47.777
+5 Seconds Timer increments in Jar J27 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:31:55.682
+5 Seconds Timer increments in Jar J27 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:32:01.684
+5 Seconds Timer increments in Jar J27 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:32:06.685
+CRC-Response (SeqNo: 220) - 220,17,F000,2*92e8 * 22-05-2025 16:32:10.617
+Command Sent (SeqNo: 221, Retry: 0) Rack-4 Placed in J7 - With RA:2 - #221,3,2,32084,800,0,0*f7e3  * 22-05-2025 16:32:10.727
+5 Seconds Timer increments in Jar J27 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:32:10.741
+CRC-Response (SeqNo: 221) - 221,3,I001,2*8297 * 22-05-2025 16:32:10.865
+5 Seconds Timer increments in Jar J27 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:32:15.746
+CRC-Response (SeqNo: 221) - 221,3,F000,2*bdc6 * 22-05-2025 16:32:16.425
+RA Placed Rack in J7 * 22-05-2025 16:32:16.428
+Command Sent (SeqNo: 222, Retry: 0) Rack-2 Picked from J27 - With RA:2 - #222,2,2,21194,16380,0,0*82fd  * 22-05-2025 16:32:20.795
+CRC-Response (SeqNo: 222) - 222,2,I001,2*41a6 * 22-05-2025 16:32:20.919
+CRC-Response (SeqNo: 222) - 222,2,F000,2*7ef7 * 22-05-2025 16:32:27.328
+RA Picked Rack From J27 * 22-05-2025 16:32:27.331
+Command Sent (SeqNo: 223, Retry: 0) Rack-2 Dipped in J28 - With RA:2 - #223,17,2,24824,16380,5,1,1*35dc  * 22-05-2025 16:32:27.884
+CRC-Response (SeqNo: 223) - 223,17,I001,2*e9b6 * 22-05-2025 16:32:28.32
+CRC-Response (SeqNo: 223) - 223,17,F000,2*d6e7 * 22-05-2025 16:32:50.868
+Command Sent (SeqNo: 224, Retry: 0) Rack-2 Placed in J29 - With RA:2 - #224,3,2,28454,16380,0,0*04b3  * 22-05-2025 16:32:50.992
+CRC-Response (SeqNo: 224) - 224,3,I001,2*9287 * 22-05-2025 16:32:51.135
+CRC-Response (SeqNo: 224) - 224,3,F000,2*add6 * 22-05-2025 16:32:56.704
+RA Placed Rack in J29 * 22-05-2025 16:32:56.706
+Command Sent (SeqNo: 225, Retry: 0) Rack-3 Picked from J16 - With RA:1 - #225,2,1,57494,8590,0,0*e9e3  * 22-05-2025 16:32:58.443
+CRC-Response (SeqNo: 225) - 225,2,I001,1*9a57 * 22-05-2025 16:32:58.565
+CRC-Response (SeqNo: 225) - 225,2,F000,1*a506 * 22-05-2025 16:33:03.621
+RA Picked Rack From J16 * 22-05-2025 16:33:03.622
+Command Sent (SeqNo: 226, Retry: 0) WATER VALVE - 4 CONTROL ON - #226,13,4,1*c066  * 22-05-2025 16:33:04.22
+CRC-Response (SeqNo: 226) - 226,13,F000*109b * 22-05-2025 16:33:04.146
+Command Sent (SeqNo: 227, Retry: 0) Rack-3 Dipped in J17 - With RA:1 - #227,17,1,53864,8590,3,1,1*e2b1  * 22-05-2025 16:33:04.626
+CRC-Response (SeqNo: 227) - 227,17,I001,1*d8e3 * 22-05-2025 16:33:04.753
+CRC-Response (SeqNo: 227) - 227,17,F000,1*e7b2 * 22-05-2025 16:33:18.853
+Command Sent (SeqNo: 228, Retry: 0) Rack-3 Placed in W4 - With RA:1 - #228,3,1,50234,8590,0,0*9ebd  * 22-05-2025 16:33:19.119
+CRC-Response (SeqNo: 228) - 228,3,I001,1*ac07 * 22-05-2025 16:33:19.258
+CRC-Response (SeqNo: 228) - 228,3,F000,1*9356 * 22-05-2025 16:33:24.843
+RA Placed Rack in W4 * 22-05-2025 16:33:24.845
+Command Sent (SeqNo: 229, Retry: 0) Rack-2 Picked from J29 - With RA:2 - #229,2,2,28454,16380,0,0*e552  * 22-05-2025 16:33:57.96
+CRC-Response (SeqNo: 229) - 229,2,I001,2*a4d7 * 22-05-2025 16:33:57.254
+CRC-Response (SeqNo: 229) - 229,2,F000,2*9b86 * 22-05-2025 16:34:02.267
+RA Picked Rack From J29 * 22-05-2025 16:34:02.268
+Command Sent (SeqNo: 230, Retry: 0) Rack-2 Dipped in J30 - With RA:2 - #230,17,2,32084,16380,9,1,1*0cac  * 22-05-2025 16:34:02.683
+CRC-Response (SeqNo: 230) - 230,17,I001,2*6e44 * 22-05-2025 16:34:02.829
+5 Seconds Timer increments in Jar J7 for R4 Other Rack Command Execution Under Progress and timer updated for tmr_r1_incub() * 22-05-2025 16:34:17.778
+5 Seconds Timer increments in Jar J7 for R4 Other Rack Command Execution Under Progress and timer updated for tmr_r1_incub() * 22-05-2025 16:34:22.783
+5 Secconds Timer increments in Jar W4 for R3 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 16:34:25.178
+5 Seconds Timer increments in Jar J7 for R4 Other Rack Command Execution Under Progress and timer updated for tmr_r1_incub() * 22-05-2025 16:34:26.797
+5 Secconds Timer increments in Jar W4 for R3 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 16:34:30.183
+5 Seconds Timer increments in Jar J7 for R4 Other Rack Command Execution Under Progress and timer updated for tmr_r1_incub() * 22-05-2025 16:34:31.797
+5 Secconds Timer increments in Jar W4 for R3 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 16:34:35.183
+5 Seconds Timer increments in Jar J7 for R4 Other Rack Command Execution Under Progress and timer updated for tmr_r1_incub() * 22-05-2025 16:34:36.794
+5 Secconds Timer increments in Jar W4 for R3 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 16:34:40.183
+5 Seconds Timer increments in Jar J7 for R4 Other Rack Command Execution Under Progress and timer updated for tmr_r1_incub() * 22-05-2025 16:34:41.800
+CRC-Response (SeqNo: 230) - 230,17,F000,2*5115 * 22-05-2025 16:34:43.130
+Command Sent (SeqNo: 231, Retry: 0) Rack-2 Placed in J31 - With RA:2 - #231,3,2,35714,16380,0,0*5c0f  * 22-05-2025 16:34:43.296
+CRC-Response (SeqNo: 231) - 231,3,I001,2*7e93 * 22-05-2025 16:34:43.426
+5 Secconds Timer increments in Jar W4 for R3 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 16:34:45.181
+5 Seconds Timer increments in Jar J7 for R4 Other Rack Command Execution Under Progress and timer updated for tmr_r1_incub() * 22-05-2025 16:34:46.805
+CRC-Response (SeqNo: 231) - 231,3,F000,2*41c2 * 22-05-2025 16:34:49.14
+RA Placed Rack in J31 * 22-05-2025 16:34:49.16
+18 Secconds Timer increments in Jar W4 for R3 Other Rack Waiting count is high and timer upadted for tmr_r3_incub() * 22-05-2025 16:34:50.182
+Command Sent (SeqNo: 232, Retry: 0) Rack-4 Picked from J7 - With RA:2 - #232,2,2,32084,800,0,0*f2cb  * 22-05-2025 16:34:51.864
+CRC-Response (SeqNo: 232) - 232,2,I001,2*bda2 * 22-05-2025 16:34:51.993
+CRC-Response (SeqNo: 232) - 232,2,F000,2*82f3 * 22-05-2025 16:34:58.361
+RA Picked Rack From J7 * 22-05-2025 16:34:58.370
+Command Sent (SeqNo: 233, Retry: 0) Rack-4 Placed in J8 - With RA:2 - #233,3,2,35714,800,0,0*0e98  * 22-05-2025 16:34:58.448
+CRC-Response (SeqNo: 233) - 233,3,I001,2*b432 * 22-05-2025 16:34:58.581
+CRC-Response (SeqNo: 233) - 233,3,F000,2*8b63 * 22-05-2025 16:35:04.165
+RA Placed Rack in J8 * 22-05-2025 16:35:04.168
+Command Sent (SeqNo: 234, Retry: 0) WATER VALVE - 4 CONTROL OFF - #234,13,4,0*492b  * 22-05-2025 16:35:08.235
+CRC-Response (SeqNo: 234) - 234,13,F000*b5d3 * 22-05-2025 16:35:08.350
+Command Sent (SeqNo: 235, Retry: 0) Rack-3 Picked from W4 - With RA:1 - #235,2,1,50234,8590,0,0*afd1  * 22-05-2025 16:35:08.421
+CRC-Response (SeqNo: 235) - 235,2,I001,1*6653 * 22-05-2025 16:35:08.540
+CRC-Response (SeqNo: 235) - 235,2,F000,1*5902 * 22-05-2025 16:35:13.601
+RA Picked Rack From W4 * 22-05-2025 16:35:13.610
+Command Sent (SeqNo: 236, Retry: 0) WATER VALVE - 5 CONTROL ON - #236,13,5,1*903a  * 22-05-2025 16:35:13.801
+CRC-Response (SeqNo: 236) - 236,13,F000*d5ca * 22-05-2025 16:35:13.942
+Command Sent (SeqNo: 237, Retry: 0) Rack-3 Dipped in J18 - With RA:1 - #237,17,1,39344,8590,5,1,1*5b60  * 22-05-2025 16:35:14.436
+CRC-Response (SeqNo: 237) - 237,17,I001,1*1b1e * 22-05-2025 16:35:14.556
+CRC-Response (SeqNo: 237) - 237,17,F000,1*244f * 22-05-2025 16:35:38.214
+Command Sent (SeqNo: 238, Retry: 0) Rack-3 Placed in W5 - With RA:1 - #238,3,1,46604,8590,0,0*c35a  * 22-05-2025 16:35:38.409
+CRC-Response (SeqNo: 238) - 238,3,I001,1*5003 * 22-05-2025 16:35:38.554
+CRC-Response (SeqNo: 238) - 238,3,F000,1*6f52 * 22-05-2025 16:35:44.540
+RA Placed Rack in W5 * 22-05-2025 16:35:44.542
+Command Sent (SeqNo: 239, Retry: 0) WATER VALVE - 5 CONTROL OFF - #239,13,5,0*10bb  * 22-05-2025 16:36:45.8
+CRC-Response (SeqNo: 239) - 239,13,F000*258b * 22-05-2025 16:36:45.125
+Command Sent (SeqNo: 240, Retry: 0) Rack-3 Picked from W5 - With RA:1 - #240,2,1,46604,8590,0,0*c19c  * 22-05-2025 16:36:45.199
+CRC-Response (SeqNo: 240) - 240,2,I001,1*0259 * 22-05-2025 16:36:45.331
+5 Seconds Timer increments in Jar J31 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:36:49.383
+CRC-Response (SeqNo: 240) - 240,2,F000,1*3d08 * 22-05-2025 16:36:50.383
+RA Picked Rack From W5 * 22-05-2025 16:36:50.394
+Command Sent (SeqNo: 241, Retry: 0) RA-2 Movement - #241,5,00111000*af72  * 22-05-2025 16:36:50.576
+CRC-Response (SeqNo: 241) - 241,5,I001,00111000*b84c * 22-05-2025 16:36:50.709
+CRC-Response (SeqNo: 241) - 241,5,F000,11111111*ee49 * 22-05-2025 16:36:50.710
+Command Sent (SeqNo: 242, Retry: 0) WATER VALVE - 6 CONTROL ON - #242,13,6,1*53ed  * 22-05-2025 16:36:52.647
+CRC-Response (SeqNo: 242) - 242,13,F000*cf49 * 22-05-2025 16:36:52.781
+Command Sent (SeqNo: 243, Retry: 0) Rack-3 Dipped in J19 - With RA:1 - #243,17,1,35714,8590,10,1,1*3809  * 22-05-2025 16:36:53.232
+CRC-Response (SeqNo: 243) - 243,17,I001,1*e0fe * 22-05-2025 16:36:53.358
+5 Seconds Timer increments in Jar J31 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:36:54.390
+5 Seconds Timer increments in Jar J31 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:36:59.393
+5 Seconds Timer increments in Jar J31 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:37:04.388
+5 Seconds Timer increments in Jar J31 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:37:09.392
+5 Seconds Timer increments in Jar J31 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:37:14.392
+5 Seconds Timer increments in Jar J31 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:37:19.391
+5 Seconds Timer increments in Jar J31 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:37:24.388
+5 Seconds Timer increments in Jar J31 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:37:29.384
+5 Seconds Timer increments in Jar J31 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:37:34.387
+CRC-Response (SeqNo: 243) - 243,17,F000,1*dfaf * 22-05-2025 16:37:38.856
+Command Sent (SeqNo: 244, Retry: 0) Rack-3 Placed in W6 - With RA:1 - #244,3,1,42974,8590,0,0*5d3c  * 22-05-2025 16:37:39.243
+CRC-Response (SeqNo: 244) - 244,3,I001,1*1bd9 * 22-05-2025 16:37:39.370
+5 Seconds Timer increments in Jar J31 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:37:39.384
+5 Seconds Timer increments in Jar J31 for R2 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:37:44.384
+CRC-Response (SeqNo: 244) - 244,3,F000,1*2488 * 22-05-2025 16:37:45.361
+RA Placed Rack in W6 * 22-05-2025 16:37:45.363
+Command Sent (SeqNo: 245, Retry: 0) Rack-2 Picked from J31 - With RA:2 - #245,2,2,35714,16380,0,0*c241  * 22-05-2025 16:37:49.434
+CRC-Response (SeqNo: 245) - 245,2,I001,2*1309 * 22-05-2025 16:37:49.558
+CRC-Response (SeqNo: 245) - 245,2,F000,2*2c58 * 22-05-2025 16:37:58.743
+RA Picked Rack From J31 * 22-05-2025 16:37:58.747
+Command Sent (SeqNo: 246, Retry: 0) RA-1 Movement - #246,5,00000111*192b  * 22-05-2025 16:37:59.3
+CRC-Response (SeqNo: 246) - 246,5,I001,00000111*f452 * 22-05-2025 16:37:59.131
+CRC-Response (SeqNo: 246) - 246,5,F000,11111111*dffb * 22-05-2025 16:37:59.131
+Command Sent (SeqNo: 247, Retry: 0) Rack-2 Dipped in J32 - With RA:2 - #247,17,2,39344,16380,9,1,1*7298  * 22-05-2025 16:38:01.64
+CRC-Response (SeqNo: 247) - 247,17,I001,2*d1ab * 22-05-2025 16:38:01.219
+CRC-Response (SeqNo: 247) - 247,17,F000,2*eefa * 22-05-2025 16:38:41.504
+Command Sent (SeqNo: 248, Retry: 0) Rack-2 Placed in J33 - With RA:2 - #248,3,2,64754,16380,0,0*2e94  * 22-05-2025 16:38:41.671
+CRC-Response (SeqNo: 248) - 248,3,I001,2*2559 * 22-05-2025 16:38:41.819
+5 Secconds Timer increments in Jar W6 for R3 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 16:38:46.786
+CRC-Response (SeqNo: 248) - 248,3,F000,2*1a08 * 22-05-2025 16:38:49.822
+RA Placed Rack in J33 * 22-05-2025 16:38:49.826
+Command Sent (SeqNo: 249, Retry: 0) RA2 Home Command - #249,5,00111000*7093  * 22-05-2025 16:38:50.272
+5 Secconds Timer increments in Jar W6 for R3 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 16:38:50.803
+CRC-Response (SeqNo: 249) - 249,5,I001,00111000*7acb * 22-05-2025 16:38:50.806
+CRC-Response (SeqNo: 249) - 249,5,F000,11111111*2cce * 22-05-2025 16:38:50.806
+Command Sent (SeqNo: 250, Retry: 0) WATER VALVE - 6 CONTROL OFF - #250,13,6,0*daa0  * 22-05-2025 16:38:55.858
+CRC-Response (SeqNo: 250) - 250,13,F000*6a01 * 22-05-2025 16:38:55.974
+Command Sent (SeqNo: 251, Retry: 0) Rack-3 Picked from W6 - With RA:1 - #251,2,1,42974,8590,0,0*25b1  * 22-05-2025 16:38:56.47
+CRC-Response (SeqNo: 251) - 251,2,I001,1*3b0c * 22-05-2025 16:38:56.176
+CRC-Response (SeqNo: 251) - 251,2,F000,1*045d * 22-05-2025 16:39:03.915
+RA Picked Rack From W6 * 22-05-2025 16:39:03.917
+Command Sent (SeqNo: 252, Retry: 0) RA-2 Movement - #252,5,00111000*2a74  * 22-05-2025 16:39:04.440
+CRC-Response (SeqNo: 252) - 252,5,I001,00111000*b4ed * 22-05-2025 16:39:04.572
+CRC-Response (SeqNo: 252) - 252,5,F000,11111111*e2e8 * 22-05-2025 16:39:04.573
+Command Sent (SeqNo: 253, Retry: 0) Rack-3 Placed in J20 - With RA:1 - #253,3,1,32084,8590,0,0*f4b3  * 22-05-2025 16:39:06.516
+CRC-Response (SeqNo: 253) - 253,3,I001,1*3d6c * 22-05-2025 16:39:06.655
+CRC-Response (SeqNo: 253) - 253,3,F000,1*023d * 22-05-2025 16:39:13.32
+RA Placed Rack in J20 * 22-05-2025 16:39:13.36
+Command Sent (SeqNo: 254, Retry: 0) RA1 Home Command - #254,5,00000111*5fd0  * 22-05-2025 16:39:13.600
+CRC-Response (SeqNo: 254) - 254,5,I001,00000111*68a2 * 22-05-2025 16:39:14.135
+CRC-Response (SeqNo: 254) - 254,5,F000,11111111*430b * 22-05-2025 16:39:14.136
+Command Sent (SeqNo: 255, Retry: 0) WATER VALVE - 1 CONTROL ON - #255,13,1,1*e410  * 22-05-2025 16:39:47.551
+CRC-Response (SeqNo: 255) - 255,13,F000*3a3e * 22-05-2025 16:39:47.700
+Command Sent (SeqNo: 0, Retry: 0) Rack-4 Picked from J8 - With RA:2 - #0,2,2,35714,800,0,0*33a5  * 22-05-2025 16:40:04.547
+CRC-Response (SeqNo: 0) - 0,2,I001,2*b15e * 22-05-2025 16:40:04.692
+CRC-Response (SeqNo: 0) - 0,2,F000,2*8e0f * 22-05-2025 16:40:13.851
+RA Picked Rack From J8 * 22-05-2025 16:40:13.854
+Command Sent (SeqNo: 1, Retry: 0) RA-1 Movement - #1,5,00000111*576d  * 22-05-2025 16:40:14.132
+CRC-Response (SeqNo: 1) - 1,5,I001,00000111*13cc * 22-05-2025 16:40:14.258
+CRC-Response (SeqNo: 1) - 1,5,F000,11111111*3865 * 22-05-2025 16:40:14.259
+Command Sent (SeqNo: 2, Retry: 0) Rack-4 Placed in W1 - With RA:2 - #2,3,2,42974,800,0,0*60a7  * 22-05-2025 16:40:16.220
+CRC-Response (SeqNo: 2) - 2,3,I001,2*b73e * 22-05-2025 16:40:16.358
+CRC-Response (SeqNo: 2) - 2,3,F000,2*886f * 22-05-2025 16:40:22.332
+RA Placed Rack in W1 * 22-05-2025 16:40:22.336
+Command Sent (SeqNo: 3, Retry: 0) RA2 Home Command - #3,5,00111000*ed38  * 22-05-2025 16:40:22.829
+CRC-Response (SeqNo: 3) - 3,5,I001,00111000*0ec1 * 22-05-2025 16:40:23.365
+CRC-Response (SeqNo: 3) - 3,5,F000,11111111*58c4 * 22-05-2025 16:40:23.365
+Command Sent (SeqNo: 4, Retry: 0) Rack-2 Picked from J33 - With RA:1 - #4,2,1,64754,16380,0,0*867c  * 22-05-2025 16:40:50.280
+CRC-Response (SeqNo: 4) - 4,2,I001,1*655f * 22-05-2025 16:40:50.403
+CRC-Response (SeqNo: 4) - 4,2,F000,1*5a0e * 22-05-2025 16:40:56.826
+RA Picked Rack From J33 * 22-05-2025 16:40:56.828
+Command Sent (SeqNo: 5, Retry: 0) Rack-2 Placed in U2 - With RA:1 - #5,3,1,57494,16380,0,0*7a04  * 22-05-2025 16:40:57.349
+CRC-Response (SeqNo: 5) - 5,3,I001,1*6ccf * 22-05-2025 16:40:57.479
+CRC-Response (SeqNo: 5) - 5,3,F000,1*539e * 22-05-2025 16:41:03.461
+RA Placed Rack in U2 * 22-05-2025 16:41:03.464
+R2Protocol End Time * 22-05-2025 16:41:04.401
+Command Sent (SeqNo: 6, Retry: 0) Rack-3 Picked from J20 - With RA:2 - #6,2,2,32084,8590,0,0*d4e1  * 22-05-2025 16:41:14.599
+CRC-Response (SeqNo: 6) - 6,2,I001,2*aebe * 22-05-2025 16:41:14.724
+5 Seconds Timer increments in Jar W1 for R4 Other Rack Command Execution Under Progress and timer updated for tmr_r1_incub() * 22-05-2025 16:41:22.801
+CRC-Response (SeqNo: 6) - 6,2,F000,2*91ef * 22-05-2025 16:41:23.485
+RA Picked Rack From J20 * 22-05-2025 16:41:23.489
+Command Sent (SeqNo: 7, Retry: 0) Rack-3 Dipped in J21 - With RA:2 - #7,17,2,28454,8590,3,1,1*9dc4  * 22-05-2025 16:41:23.683
+CRC-Response (SeqNo: 7) - 7,17,I001,2*e359 * 22-05-2025 16:41:23.827
+5 Seconds Timer increments in Jar W1 for R4 Other Rack Command Execution Under Progress and timer updated for tmr_r1_incub() * 22-05-2025 16:41:27.817
+5 Seconds Timer increments in Jar W1 for R4 Other Rack Command Execution Under Progress and timer updated for tmr_r1_incub() * 22-05-2025 16:41:32.823
+5 Seconds Timer increments in Jar W1 for R4 Other Rack Command Execution Under Progress and timer updated for tmr_r1_incub() * 22-05-2025 16:41:37.836
+CRC-Response (SeqNo: 7) - 7,17,F000,2*dc08 * 22-05-2025 16:41:37.939
+Command Sent (SeqNo: 8, Retry: 0) Rack-3 Placed in J22 - With RA:2 - #8,3,2,24824,8590,0,0*0710  * 22-05-2025 16:41:38.288
+CRC-Response (SeqNo: 8) - 8,3,I001,2*971e * 22-05-2025 16:41:38.432
+5 Seconds Timer increments in Jar W1 for R4 Other Rack Command Execution Under Progress and timer updated for tmr_r1_incub() * 22-05-2025 16:41:42.854
+CRC-Response (SeqNo: 8) - 8,3,F000,2*a84f * 22-05-2025 16:41:44.9
+RA Placed Rack in J22 * 22-05-2025 16:41:44.10
+Command Sent (SeqNo: 9, Retry: 0) WATER VALVE - 1 CONTROL OFF - #9,13,1,0*192b  * 22-05-2025 16:41:47.914
+CRC-Response (SeqNo: 9) - 9,13,F000*7983 * 22-05-2025 16:41:48.31
+Command Sent (SeqNo: 10, Retry: 0) Rack-4 Picked from W1 - With RA:1 - #10,2,1,42974,800,0,0*53b4  * 22-05-2025 16:41:48.105
+CRC-Response (SeqNo: 10) - 10,2,I001,1*af93 * 22-05-2025 16:41:48.221
+Rack Unloaded From U2 * 22-05-2025 16:41:49.101
+CRC-Response (SeqNo: 10) - 10,2,F000,1*90c2 * 22-05-2025 16:41:55.31
+RA Picked Rack From W1 * 22-05-2025 16:41:55.34
+Command Sent (SeqNo: 11, Retry: 0) WATER VALVE - 2 CONTROL ON - #11,13,2,1*1508  * 22-05-2025 16:41:55.505
+CRC-Response (SeqNo: 11) - 11,13,F000*74cf * 22-05-2025 16:41:55.633
+Command Sent (SeqNo: 12, Retry: 0) Rack-4 Dipped in J9 - With RA:1 - #12,17,1,39344,800,2,1,1*9c96  * 22-05-2025 16:41:56.100
+CRC-Response (SeqNo: 12) - 12,17,I001,1*4bd7 * 22-05-2025 16:41:56.223
+CRC-Response (SeqNo: 12) - 12,17,F000,1*7486 * 22-05-2025 16:42:05.965
+Command Sent (SeqNo: 13, Retry: 0) Rack-4 Placed in W2 - With RA:1 - #13,3,1,46604,800,0,0*86d1  * 22-05-2025 16:42:06.130
+CRC-Response (SeqNo: 13) - 13,3,I001,1*6ca2 * 22-05-2025 16:42:06.265
+CRC-Response (SeqNo: 13) - 13,3,F000,1*53f3 * 22-05-2025 16:42:12.246
+RA Placed Rack in W2 * 22-05-2025 16:42:12.248
+Command Sent (SeqNo: 14, Retry: 0) Rack-3 Picked from J22 - With RA:2 - #14,2,2,24824,8590,0,0*144b  * 22-05-2025 16:42:44.387
+CRC-Response (SeqNo: 14) - 14,2,I001,2*7b92 * 22-05-2025 16:42:44.506
+CRC-Response (SeqNo: 14) - 14,2,F000,2*44c3 * 22-05-2025 16:42:49.563
+RA Picked Rack From J22 * 22-05-2025 16:42:49.566
+Command Sent (SeqNo: 15, Retry: 0) Rack-3 Dipped in J23 - With RA:2 - #15,17,2,21194,8590,4,1,1*8c0c  * 22-05-2025 16:42:49.961
+CRC-Response (SeqNo: 15) - 15,17,I001,2*3e8d * 22-05-2025 16:42:50.160
+CRC-Response (SeqNo: 15) - 15,17,F000,2*01dc * 22-05-2025 16:43:08.605
+Command Sent (SeqNo: 16, Retry: 0) Rack-3 Placed in J24 - With RA:2 - #16,3,2,17564,8590,0,0*299d  * 22-05-2025 16:43:09.74
+CRC-Response (SeqNo: 16) - 16,3,I001,2*7df2 * 22-05-2025 16:43:09.236
+5 Seconds Timer increments in Jar W2 for R4 Other Rack Command Execution Under Progress and timer updated for tmr_r1_incub() * 22-05-2025 16:43:12.686
+CRC-Response (SeqNo: 16) - 16,3,F000,2*42a3 * 22-05-2025 16:43:14.782
+RA Placed Rack in J24 * 22-05-2025 16:43:14.786
+Command Sent (SeqNo: 17, Retry: 0) WATER VALVE - 2 CONTROL OFF - #17,13,2,0*ff49  * 22-05-2025 16:43:17.739
+CRC-Response (SeqNo: 17) - 17,13,F000*d4e4 * 22-05-2025 16:43:17.858
+Command Sent (SeqNo: 18, Retry: 0) Rack-4 Picked from W2 - With RA:1 - #18,2,1,46604,800,0,0*3326  * 22-05-2025 16:43:17.935
+CRC-Response (SeqNo: 18) - 18,2,I001,1*4512 * 22-05-2025 16:43:18.64
+CRC-Response (SeqNo: 18) - 18,2,F000,1*7a43 * 22-05-2025 16:43:23.108
+RA Picked Rack From W2 * 22-05-2025 16:43:23.113
+Command Sent (SeqNo: 19, Retry: 0) WATER VALVE - 3 CONTROL ON - #19,13,3,1*7358  * 22-05-2025 16:43:23.324
+CRC-Response (SeqNo: 19) - 19,13,F000*b4a8 * 22-05-2025 16:43:23.448
+Command Sent (SeqNo: 20, Retry: 0) Rack-4 Dipped in J10 - With RA:1 - #20,17,1,53864,800,1,1,1*e44a  * 22-05-2025 16:43:23.923
+CRC-Response (SeqNo: 20) - 20,17,I001,1*f7d8 * 22-05-2025 16:43:24.41
+CRC-Response (SeqNo: 20) - 20,17,F000,1*c889 * 22-05-2025 16:43:29.821
+Command Sent (SeqNo: 21, Retry: 0) Rack-4 Placed in W3 - With RA:1 - #21,3,1,50234,800,0,0*bb03  * 22-05-2025 16:43:29.989
+CRC-Response (SeqNo: 21) - 21,3,I001,1*e20c * 22-05-2025 16:43:30.119
+CRC-Response (SeqNo: 21) - 21,3,F000,1*dd5d * 22-05-2025 16:43:35.697
+RA Placed Rack in W3 * 22-05-2025 16:43:35.700
+Command Sent (SeqNo: 22, Retry: 0) WATER VALVE - 3 CONTROL OFF - #22,13,3,0*f0cc  * 22-05-2025 16:44:37.74
+CRC-Response (SeqNo: 22) - 22,13,F000*8b2b * 22-05-2025 16:44:37.195
+Command Sent (SeqNo: 23, Retry: 0) Rack-4 Picked from W3 - With RA:1 - #23,2,1,50234,800,0,0*932b  * 22-05-2025 16:44:37.275
+CRC-Response (SeqNo: 23) - 23,2,I001,1*e46c * 22-05-2025 16:44:37.397
+CRC-Response (SeqNo: 23) - 23,2,F000,1*db3d * 22-05-2025 16:44:42.454
+RA Picked Rack From W3 * 22-05-2025 16:44:42.457
+Command Sent (SeqNo: 24, Retry: 0) Rack-4 Placed in J11 - With RA:1 - #24,3,1,57494,800,0,0*1404  * 22-05-2025 16:44:42.651
+CRC-Response (SeqNo: 24) - 24,3,I001,1*f21c * 22-05-2025 16:44:42.782
+CRC-Response (SeqNo: 24) - 24,3,F000,1*cd4d * 22-05-2025 16:44:48.764
+RA Placed Rack in J11 * 22-05-2025 16:44:48.767
+Command Sent (SeqNo: 25, Retry: 0) Rack-3 Picked from J24 - With RA:2 - #25,2,2,17564,8590,0,0*d5bb  * 22-05-2025 16:45:16.166
+CRC-Response (SeqNo: 25) - 25,2,I001,2*facc * 22-05-2025 16:45:16.320
+CRC-Response (SeqNo: 25) - 25,2,F000,2*c59d * 22-05-2025 16:45:21.341
+RA Picked Rack From J24 * 22-05-2025 16:45:21.343
+Command Sent (SeqNo: 26, Retry: 0) Rack-3 Dipped in J25 - With RA:2 - #26,17,2,13934,8590,5,1,1*6452  * 22-05-2025 16:45:21.740
+CRC-Response (SeqNo: 26) - 26,17,I001,2*7e86 * 22-05-2025 16:45:21.890
+CRC-Response (SeqNo: 26) - 26,17,F000,2*41d7 * 22-05-2025 16:45:44.738
+Command Sent (SeqNo: 27, Retry: 0) Rack-3 Placed in J26 - With RA:2 - #27,3,2,10304,8590,0,0*0c8e  * 22-05-2025 16:45:44.856
+CRC-Response (SeqNo: 27) - 27,3,I001,2*fcac * 22-05-2025 16:45:45.2
+CRC-Response (SeqNo: 27) - 27,3,F000,2*c3fd * 22-05-2025 16:45:50.582
+RA Placed Rack in J26 * 22-05-2025 16:45:50.583
+Rack - 5Protocol Started * 22-05-2025 16:46:01.483
+Command Sent (SeqNo: 28, Retry: 0) Rack-5 Picked from L2 - With RA:2 - #28,2,2,13934,16380,0,0*27cf  * 22-05-2025 16:46:01.552
+CRC-Response (SeqNo: 28) - 28,2,I001,2*005d * 22-05-2025 16:46:01.670
+CRC-Response (SeqNo: 28) - 28,2,F000,2*3f0c * 22-05-2025 16:46:07.421
+RA Picked Rack From L2 * 22-05-2025 16:46:07.424
+Command Sent (SeqNo: 29, Retry: 0) Rack-5 Placed in J1 - With RA:2 - #29,3,2,10304,800,0,0*ac58  * 22-05-2025 16:46:07.635
+CRC-Response (SeqNo: 29) - 29,3,I001,2*09cd * 22-05-2025 16:46:07.761
+CRC-Response (SeqNo: 29) - 29,3,F000,2*369c * 22-05-2025 16:46:14.138
+RA Placed Rack in J1 * 22-05-2025 16:46:14.140
+Command Sent (SeqNo: 30, Retry: 0) Rack-4 Picked from J11 - With RA:1 - #30,2,1,57494,800,0,0*6599  * 22-05-2025 16:46:49.256
+CRC-Response (SeqNo: 30) - 30,2,I001,1*1798 * 22-05-2025 16:46:49.404
+CRC-Response (SeqNo: 30) - 30,2,F000,1*28c9 * 22-05-2025 16:46:54.425
+RA Picked Rack From J11 * 22-05-2025 16:46:54.427
+Command Sent (SeqNo: 31, Retry: 0) Rack-4 Dipped in J12 - With RA:1 - #31,17,1,61124,800,2,1,1*71bf  * 22-05-2025 16:46:54.840
+CRC-Response (SeqNo: 31) - 31,17,I001,1*c821 * 22-05-2025 16:46:54.983
+CRC-Response (SeqNo: 31) - 31,17,F000,1*f770 * 22-05-2025 16:47:04.728
+Command Sent (SeqNo: 32, Retry: 0) Rack-4 Placed in J13 - With RA:1 - #32,3,1,64754,800,0,0*f17f  * 22-05-2025 16:47:04.945
+CRC-Response (SeqNo: 32) - 32,3,I001,1*11f8 * 22-05-2025 16:47:05.97
+CRC-Response (SeqNo: 32) - 32,3,F000,1*2ea9 * 22-05-2025 16:47:10.662
+RA Placed Rack in J13 * 22-05-2025 16:47:10.664
+Command Sent (SeqNo: 33, Retry: 0) Rack-3 Picked from J26 - With RA:2 - #33,2,2,10304,8590,0,0*a53e  * 22-05-2025 16:47:50.969
+CRC-Response (SeqNo: 33) - 33,2,I001,2*1928 * 22-05-2025 16:47:51.95
+CRC-Response (SeqNo: 33) - 33,2,F000,2*2679 * 22-05-2025 16:47:56.848
+RA Picked Rack From J26 * 22-05-2025 16:47:56.851
+Command Sent (SeqNo: 34, Retry: 0) Rack-3 Placed in J27 - With RA:2 - #34,3,2,21194,16380,0,0*48a9  * 22-05-2025 16:47:57.67
+CRC-Response (SeqNo: 34) - 34,3,I001,2*0f58 * 22-05-2025 16:47:57.207
+CRC-Response (SeqNo: 34) - 34,3,F000,2*3009 * 22-05-2025 16:48:03.602
+RA Placed Rack in J27 * 22-05-2025 16:48:03.604
+Command Sent (SeqNo: 35, Retry: 0) Rack-5 Picked from J1 - With RA:2 - #35,2,2,10304,800,0,0*bc27  * 22-05-2025 16:48:15.219
+CRC-Response (SeqNo: 35) - 35,2,I001,2*06c8 * 22-05-2025 16:48:15.345
+CRC-Response (SeqNo: 35) - 35,2,F000,2*3999 * 22-05-2025 16:48:21.748
+RA Picked Rack From J1 * 22-05-2025 16:48:21.752
+Command Sent (SeqNo: 36, Retry: 0) Rack-5 Dipped in J2 - With RA:2 - #36,17,2,13934,800,5,1,1*ec6a  * 22-05-2025 16:48:22.304
+CRC-Response (SeqNo: 36) - 36,17,I001,2*bd7b * 22-05-2025 16:48:22.457
+CRC-Response (SeqNo: 36) - 36,17,F000,2*822a * 22-05-2025 16:48:45.292
+Command Sent (SeqNo: 37, Retry: 0) Rack-5 Placed in J3 - With RA:2 - #37,3,2,17564,800,0,0*c804  * 22-05-2025 16:48:45.412
+CRC-Response (SeqNo: 37) - 37,3,I001,2*00a8 * 22-05-2025 16:48:45.555
+CRC-Response (SeqNo: 37) - 37,3,F000,2*3ff9 * 22-05-2025 16:48:51.127
+RA Placed Rack in J3 * 22-05-2025 16:48:51.140
+Command Sent (SeqNo: 38, Retry: 0) Rack-4 Picked from J13 - With RA:1 - #38,2,1,64754,800,0,0*b8b5  * 22-05-2025 16:49:12.45
+CRC-Response (SeqNo: 38) - 38,2,I001,1*fd19 * 22-05-2025 16:49:12.169
+CRC-Response (SeqNo: 38) - 38,2,F000,1*c248 * 22-05-2025 16:49:17.204
+RA Picked Rack From J13 * 22-05-2025 16:49:17.205
+Command Sent (SeqNo: 39, Retry: 0) Rack-4 Placed in J14 - With RA:1 - #39,3,1,64754,8590,0,0*435f  * 22-05-2025 16:49:17.645
+CRC-Response (SeqNo: 39) - 39,3,I001,1*f489 * 22-05-2025 16:49:17.779
+CRC-Response (SeqNo: 39) - 39,3,F000,1*cbd8 * 22-05-2025 16:49:23.524
+RA Placed Rack in J14 * 22-05-2025 16:49:23.526
+Command Sent (SeqNo: 40, Retry: 0) Rack-5 Picked from J3 - With RA:2 - #40,2,2,17564,800,0,0*9b55  * 22-05-2025 16:49:51.511
+CRC-Response (SeqNo: 40) - 40,2,I001,2*62c2 * 22-05-2025 16:49:51.635
+CRC-Response (SeqNo: 40) - 40,2,F000,2*5d93 * 22-05-2025 16:49:56.688
+RA Picked Rack From J3 * 22-05-2025 16:49:56.690
+Command Sent (SeqNo: 41, Retry: 0) Rack-5 Dipped in J4 - With RA:2 - #41,17,2,21194,800,5,1,1*8f7d  * 22-05-2025 16:49:57.104
+CRC-Response (SeqNo: 41) - 41,17,I001,2*0294 * 22-05-2025 16:49:57.248
+5 Secconds Timer increments in Jar J27 for R3 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 16:50:04.126
+5 Secconds Timer increments in Jar J27 for R3 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 16:50:09.126
+5 Secconds Timer increments in Jar J27 for R3 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 16:50:14.122
+CRC-Response (SeqNo: 41) - 41,17,F000,2*3dc5 * 22-05-2025 16:50:20.112
+11 Secconds Timer increments in Jar J27 for R3 Other Rack Picked by RA and timer upadted for tmr_r3_incub() * 22-05-2025 16:50:20.120
+Command Sent (SeqNo: 42, Retry: 0) Rack-5 Placed in J5 - With RA:2 - #42,3,2,24824,800,0,0*0d06  * 22-05-2025 16:50:20.233
+CRC-Response (SeqNo: 42) - 42,3,I001,2*64a2 * 22-05-2025 16:50:20.375
+CRC-Response (SeqNo: 42) - 42,3,F000,2*5bf3 * 22-05-2025 16:50:25.938
+RA Placed Rack in J5 * 22-05-2025 16:50:25.940
+Command Sent (SeqNo: 43, Retry: 0) Rack-3 Picked from J27 - With RA:2 - #43,2,2,21194,16380,0,0*e5d4  * 22-05-2025 16:50:30.183
+CRC-Response (SeqNo: 43) - 43,2,I001,2*6d32 * 22-05-2025 16:50:30.305
+CRC-Response (SeqNo: 43) - 43,2,F000,2*5263 * 22-05-2025 16:50:36.684
+RA Picked Rack From J27 * 22-05-2025 16:50:36.686
+Command Sent (SeqNo: 44, Retry: 0) Rack-3 Dipped in J28 - With RA:2 - #44,17,2,24824,16380,5,1,1*72ec  * 22-05-2025 16:50:36.766
+CRC-Response (SeqNo: 44) - 44,17,I001,2*ce85 * 22-05-2025 16:50:36.915
+CRC-Response (SeqNo: 44) - 44,17,F000,2*f1d4 * 22-05-2025 16:50:59.763
+Command Sent (SeqNo: 45, Retry: 0) Rack-3 Placed in J29 - With RA:2 - #45,3,2,28454,16380,0,0*639a  * 22-05-2025 16:50:59.867
+CRC-Response (SeqNo: 45) - 45,3,I001,2*be13 * 22-05-2025 16:51:00.15
+CRC-Response (SeqNo: 45) - 45,3,F000,2*8142 * 22-05-2025 16:51:05.582
+RA Placed Rack in J29 * 22-05-2025 16:51:05.585
+Command Sent (SeqNo: 46, Retry: 0) Rack-4 Picked from J14 - With RA:1 - #46,2,1,64754,8590,0,0*f62c  * 22-05-2025 16:51:24.718
+CRC-Response (SeqNo: 46) - 46,2,I001,1*7c62 * 22-05-2025 16:51:24.846
+CRC-Response (SeqNo: 46) - 46,2,F000,1*4333 * 22-05-2025 16:51:29.889
+RA Picked Rack From J14 * 22-05-2025 16:51:29.892
+Command Sent (SeqNo: 47, Retry: 0) Rack-4 Dipped in J15 - With RA:1 - #47,17,1,61124,8590,5,1,1*796f  * 22-05-2025 16:51:30.305
+CRC-Response (SeqNo: 47) - 47,17,I001,1*8bca * 22-05-2025 16:51:30.468
+CRC-Response (SeqNo: 47) - 47,17,F000,1*b49b * 22-05-2025 16:51:53.333
+Command Sent (SeqNo: 48, Retry: 0) Rack-4 Placed in J16 - With RA:1 - #48,3,1,57494,8590,0,0*b129  * 22-05-2025 16:51:53.420
+CRC-Response (SeqNo: 48) - 48,3,I001,1*45c2 * 22-05-2025 16:51:53.570
+CRC-Response (SeqNo: 48) - 48,3,F000,1*7a93 * 22-05-2025 16:51:59.150
+RA Placed Rack in J16 * 22-05-2025 16:51:59.153
+Command Sent (SeqNo: 49, Retry: 0) Rack-3 Picked from J29 - With RA:2 - #49,2,2,28454,16380,0,0*536b  * 22-05-2025 16:52:05.989
+CRC-Response (SeqNo: 49) - 49,2,I001,2*4d12 * 22-05-2025 16:52:06.110
+CRC-Response (SeqNo: 49) - 49,2,F000,2*7243 * 22-05-2025 16:52:11.171
+RA Picked Rack From J29 * 22-05-2025 16:52:11.173
+Command Sent (SeqNo: 50, Retry: 0) Rack-3 Dipped in J30 - With RA:2 - #50,17,2,32084,16380,9,1,1*610a  * 22-05-2025 16:52:11.567
+CRC-Response (SeqNo: 50) - 50,17,I001,2*3d6d * 22-05-2025 16:52:11.717
+5 Seconds Timer increments in Jar J5 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:52:27.262
+5 Seconds Timer increments in Jar J5 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:52:32.271
+5 Seconds Timer increments in Jar J5 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:52:36.284
+5 Seconds Timer increments in Jar J5 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:52:41.280
+5 Seconds Timer increments in Jar J5 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:52:46.271
+5 Seconds Timer increments in Jar J5 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:52:51.287
+CRC-Response (SeqNo: 50) - 50,17,F000,2*023c * 22-05-2025 16:52:52.58
+Command Sent (SeqNo: 51, Retry: 0) Rack-3 Placed in J31 - With RA:2 - #51,3,2,35714,16380,0,0*ea36  * 22-05-2025 16:52:52.167
+CRC-Response (SeqNo: 51) - 51,3,I001,2*9756 * 22-05-2025 16:52:52.310
+5 Seconds Timer increments in Jar J5 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:52:56.293
+CRC-Response (SeqNo: 51) - 51,3,F000,2*a807 * 22-05-2025 16:52:57.876
+RA Placed Rack in J31 * 22-05-2025 16:52:57.878
+Command Sent (SeqNo: 52, Retry: 0) Rack-5 Picked from J5 - With RA:2 - #52,2,2,24824,800,0,0*4c6a  * 22-05-2025 16:53:01.338
+CRC-Response (SeqNo: 52) - 52,2,I001,2*5467 * 22-05-2025 16:53:01.458
+CRC-Response (SeqNo: 52) - 52,2,F000,2*6b36 * 22-05-2025 16:53:07.862
+RA Picked Rack From J5 * 22-05-2025 16:53:07.865
+Command Sent (SeqNo: 53, Retry: 0) Rack-5 Dipped in J6 - With RA:2 - #53,17,2,28454,800,5,1,1*d606  * 22-05-2025 16:53:08.417
+CRC-Response (SeqNo: 53) - 53,17,I001,2*7962 * 22-05-2025 16:53:08.565
+CRC-Response (SeqNo: 53) - 53,17,F000,2*4633 * 22-05-2025 16:53:31.420
+Command Sent (SeqNo: 54, Retry: 0) Rack-5 Placed in J7 - With RA:2 - #54,3,2,32084,800,0,0*9db3  * 22-05-2025 16:53:31.521
+CRC-Response (SeqNo: 54) - 54,3,I001,2*8746 * 22-05-2025 16:53:31.664
+CRC-Response (SeqNo: 54) - 54,3,F000,2*b817 * 22-05-2025 16:53:37.236
+RA Placed Rack in J7 * 22-05-2025 16:53:37.238
+Command Sent (SeqNo: 55, Retry: 0) Rack-4 Picked from J16 - With RA:1 - #55,2,1,57494,8590,0,0*8045  * 22-05-2025 16:54:00.523
+CRC-Response (SeqNo: 55) - 55,2,I001,1*8f96 * 22-05-2025 16:54:00.650
+CRC-Response (SeqNo: 55) - 55,2,F000,1*b0c7 * 22-05-2025 16:54:05.699
+RA Picked Rack From J16 * 22-05-2025 16:54:05.701
+Command Sent (SeqNo: 56, Retry: 0) WATER VALVE - 4 CONTROL ON - #56,13,4,1*329b  * 22-05-2025 16:54:06.92
+CRC-Response (SeqNo: 56) - 56,13,F000*91a8 * 22-05-2025 16:54:06.226
+Command Sent (SeqNo: 57, Retry: 0) Rack-4 Dipped in J17 - With RA:1 - #57,17,1,53864,8590,3,1,1*917f  * 22-05-2025 16:54:06.715
+CRC-Response (SeqNo: 57) - 57,17,I001,1*4837 * 22-05-2025 16:54:06.833
+CRC-Response (SeqNo: 57) - 57,17,F000,1*7766 * 22-05-2025 16:54:20.967
+Command Sent (SeqNo: 58, Retry: 0) Rack-4 Placed in W4 - With RA:1 - #58,3,1,50234,8590,0,0*f71b  * 22-05-2025 16:54:21.284
+CRC-Response (SeqNo: 58) - 58,3,I001,1*b9c6 * 22-05-2025 16:54:21.420
+CRC-Response (SeqNo: 58) - 58,3,F000,1*8697 * 22-05-2025 16:54:27.5
+RA Placed Rack in W4 * 22-05-2025 16:54:27.6
+Command Sent (SeqNo: 59, Retry: 0) Rack-3 Picked from J31 - With RA:2 - #59,2,2,35714,16380,0,0*5e82  * 22-05-2025 16:54:58.268
+CRC-Response (SeqNo: 59) - 59,2,I001,2*b116 * 22-05-2025 16:54:58.389
+CRC-Response (SeqNo: 59) - 59,2,F000,2*8e47 * 22-05-2025 16:55:04.777
+RA Picked Rack From J31 * 22-05-2025 16:55:04.781
+Command Sent (SeqNo: 60, Retry: 0) RA-1 Movement - #60,5,00000111*4bbf  * 22-05-2025 16:55:05.348
+CRC-Response (SeqNo: 60) - 60,5,I001,00000111*9173 * 22-05-2025 16:55:05.494
+CRC-Response (SeqNo: 60) - 60,5,F000,11111111*bada * 22-05-2025 16:55:05.495
+Command Sent (SeqNo: 61, Retry: 0) Rack-3 Dipped in J32 - With RA:2 - #61,17,2,39344,16380,9,1,1*85a0  * 22-05-2025 16:55:07.429
+CRC-Response (SeqNo: 61) - 61,17,I001,2*c56d * 22-05-2025 16:55:07.568
+5 Seconds Timer increments in Jar W4 for R4 Other Rack Command Execution Under Progress and timer updated for tmr_r1_incub() * 22-05-2025 16:55:28.334
+5 Seconds Timer increments in Jar W4 for R4 Other Rack Command Execution Under Progress and timer updated for tmr_r1_incub() * 22-05-2025 16:55:32.344
+5 Seconds Timer increments in Jar W4 for R4 Other Rack Command Execution Under Progress and timer updated for tmr_r1_incub() * 22-05-2025 16:55:37.333
+5 Seconds Timer increments in Jar J7 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:55:37.582
+5 Seconds Timer increments in Jar W4 for R4 Other Rack Command Execution Under Progress and timer updated for tmr_r1_incub() * 22-05-2025 16:55:42.341
+5 Seconds Timer increments in Jar J7 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:55:42.591
+5 Seconds Timer increments in Jar W4 for R4 Other Rack Command Execution Under Progress and timer updated for tmr_r1_incub() * 22-05-2025 16:55:47.339
+5 Seconds Timer increments in Jar J7 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:55:47.589
+CRC-Response (SeqNo: 61) - 61,17,F000,2*fa3c * 22-05-2025 16:55:47.931
+Command Sent (SeqNo: 62, Retry: 0) Rack-3 Placed in J33 - With RA:2 - #62,3,2,64754,16380,0,0*c142  * 22-05-2025 16:55:48.31
+CRC-Response (SeqNo: 62) - 62,3,I001,2*dca9 * 22-05-2025 16:55:48.176
+5 Seconds Timer increments in Jar W4 for R4 Other Rack Command Execution Under Progress and timer updated for tmr_r1_incub() * 22-05-2025 16:55:52.335
+5 Seconds Timer increments in Jar J7 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 16:55:52.599
+CRC-Response (SeqNo: 62) - 62,3,F000,2*e3f8 * 22-05-2025 16:55:56.191
+RA Placed Rack in J33 * 22-05-2025 16:55:56.193
+Command Sent (SeqNo: 63, Retry: 0) RA2 Home Command - #63,5,00111000*3217  * 22-05-2025 16:55:56.632
+CRC-Response (SeqNo: 63) - 63,5,I001,00111000*1c2f * 22-05-2025 16:55:57.172
+CRC-Response (SeqNo: 63) - 63,5,F000,11111111*4a2a * 22-05-2025 16:55:57.172
+18 Seconds Timer increments in Jar W4 for R4 Other Rack Waiting count is high and timer updated for tmr_r1_incub() * 22-05-2025 16:55:57.338
+Command Sent (SeqNo: 64, Retry: 0) Rack-5 Picked from J7 - With RA:2 - #64,2,2,32084,800,0,0*3ea6  * 22-05-2025 16:55:57.655
+CRC-Response (SeqNo: 64) - 64,2,I001,2*0f88 * 22-05-2025 16:55:57.776
+CRC-Response (SeqNo: 64) - 64,2,F000,2*30d9 * 22-05-2025 16:56:06.548
+RA Picked Rack From J7 * 22-05-2025 16:56:06.550
+Command Sent (SeqNo: 65, Retry: 0) Rack-5 Placed in J8 - With RA:2 - #65,3,2,35714,800,0,0*c2f5  * 22-05-2025 16:56:06.727
+CRC-Response (SeqNo: 65) - 65,3,I001,2*0618 * 22-05-2025 16:56:06.878
+CRC-Response (SeqNo: 65) - 65,3,F000,2*3949 * 22-05-2025 16:56:12.450
+RA Placed Rack in J8 * 22-05-2025 16:56:12.454
+Command Sent (SeqNo: 66, Retry: 0) WATER VALVE - 4 CONTROL OFF - #66,13,4,0*024e  * 22-05-2025 16:56:15.404
+CRC-Response (SeqNo: 66) - 66,13,F000*9e58 * 22-05-2025 16:56:15.518
+Command Sent (SeqNo: 67, Retry: 0) Rack-4 Picked from W4 - With RA:1 - #67,2,1,50234,8590,0,0*c62d  * 22-05-2025 16:56:15.594
+CRC-Response (SeqNo: 67) - 67,2,I001,1*0138 * 22-05-2025 16:56:15.724
+CRC-Response (SeqNo: 67) - 67,2,F000,1*3e69 * 22-05-2025 16:56:22.663
+RA Picked Rack From W4 * 22-05-2025 16:56:22.665
+Command Sent (SeqNo: 68, Retry: 0) WATER VALVE - 5 CONTROL ON - #68,13,5,1*8e5f  * 22-05-2025 16:56:22.986
+CRC-Response (SeqNo: 68) - 68,13,F000*fe14 * 22-05-2025 16:56:23.109
+Command Sent (SeqNo: 69, Retry: 0) Rack-4 Dipped in J18 - With RA:1 - #69,17,1,39344,8590,5,1,1*6edb  * 22-05-2025 16:56:23.592
+CRC-Response (SeqNo: 69) - 69,17,I001,1*a407 * 22-05-2025 16:56:23.714
+CRC-Response (SeqNo: 69) - 69,17,F000,1*9b56 * 22-05-2025 16:56:47.388
+Command Sent (SeqNo: 70, Retry: 0) Rack-4 Placed in W5 - With RA:1 - #70,3,1,46604,8590,0,0*d02e  * 22-05-2025 16:56:47.588
+CRC-Response (SeqNo: 70) - 70,3,I001,1*eb4c * 22-05-2025 16:56:47.736
+CRC-Response (SeqNo: 70) - 70,3,F000,1*d41d * 22-05-2025 16:56:53.719
+RA Placed Rack in W5 * 22-05-2025 16:56:53.722
+Command Sent (SeqNo: 71, Retry: 0) WATER VALVE - 5 CONTROL OFF - #71,13,5,0*b453  * 22-05-2025 16:57:55.182
+CRC-Response (SeqNo: 71) - 71,13,F000*6b2f * 22-05-2025 16:57:55.301
+Command Sent (SeqNo: 72, Retry: 0) Rack-4 Picked from W5 - With RA:1 - #72,2,1,46604,8590,0,0*ce06  * 22-05-2025 16:57:55.374
+CRC-Response (SeqNo: 72) - 72,2,I001,1*ed2c * 22-05-2025 16:57:55.505
+5 Secconds Timer increments in Jar J33 for R3 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 16:57:57.572
+CRC-Response (SeqNo: 72) - 72,2,F000,1*d27d * 22-05-2025 16:58:00.547
+RA Picked Rack From W5 * 22-05-2025 16:58:00.549
+Command Sent (SeqNo: 73, Retry: 0) RA-2 Movement - #73,5,00111000*b315  * 22-05-2025 16:58:00.756
+CRC-Response (SeqNo: 73) - 73,5,I001,00111000*e07e * 22-05-2025 16:58:00.889
+CRC-Response (SeqNo: 73) - 73,5,F000,11111111*b67b * 22-05-2025 16:58:00.889
+11 Secconds Timer increments in Jar J33 for R3 Other Rack Picked by RA and timer upadted for tmr_r3_incub() * 22-05-2025 16:58:01.582
+Command Sent (SeqNo: 74, Retry: 0) WATER VALVE - 6 CONTROL ON - #74,13,6,1*4ba2  * 22-05-2025 16:58:02.849
+CRC-Response (SeqNo: 74) - 74,13,F000*3b10 * 22-05-2025 16:58:02.988
+Command Sent (SeqNo: 75, Retry: 0) Rack-4 Dipped in J19 - With RA:1 - #75,17,1,35714,8590,10,1,1*3665  * 22-05-2025 16:58:03.459
+CRC-Response (SeqNo: 75) - 75,17,I001,1*37c5 * 22-05-2025 16:58:03.575
+5 Secconds Timer increments in Jar J33 for R3 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 16:58:12.598
+5 Secconds Timer increments in Jar J33 for R3 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 16:58:17.608
+5 Secconds Timer increments in Jar J33 for R3 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 16:58:22.611
+5 Secconds Timer increments in Jar J33 for R3 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 16:58:27.613
+5 Secconds Timer increments in Jar J33 for R3 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 16:58:32.624
+5 Secconds Timer increments in Jar J33 for R3 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 16:58:37.616
+5 Secconds Timer increments in Jar J33 for R3 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 16:58:42.629
+5 Secconds Timer increments in Jar J33 for R3 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 16:58:47.636
+CRC-Response (SeqNo: 75) - 75,17,F000,1*0894 * 22-05-2025 16:58:49.112
+Command Sent (SeqNo: 76, Retry: 0) Rack-4 Placed in W6 - With RA:1 - #76,3,1,42974,8590,0,0*52a6  * 22-05-2025 16:58:49.457
+CRC-Response (SeqNo: 76) - 76,3,I001,1*f4ac * 22-05-2025 16:58:49.593
+5 Secconds Timer increments in Jar J33 for R3 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 16:58:52.629
+CRC-Response (SeqNo: 76) - 76,3,F000,1*cbfd * 22-05-2025 16:58:55.583
+RA Placed Rack in W6 * 22-05-2025 16:58:55.586
+Command Sent (SeqNo: 77, Retry: 0) Rack-3 Picked from J33 - With RA:1 - #77,2,1,64754,16380,0,0*540a  * 22-05-2025 16:58:57.693
+CRC-Response (SeqNo: 77) - 77,2,I001,1*fd3c * 22-05-2025 16:58:57.813
+CRC-Response (SeqNo: 77) - 77,2,F000,1*c26d * 22-05-2025 16:59:05.443
+RA Picked Rack From J33 * 22-05-2025 16:59:05.447
+Command Sent (SeqNo: 78, Retry: 0) Rack-3 Placed in U3 - With RA:1 - #78,3,1,53864,16380,0,0*9a9d  * 22-05-2025 16:59:05.782
+CRC-Response (SeqNo: 78) - 78,3,I001,1*01cd * 22-05-2025 16:59:05.927
+CRC-Response (SeqNo: 78) - 78,3,F000,1*3e9c * 22-05-2025 16:59:12.321
+RA Placed Rack in U3 * 22-05-2025 16:59:12.323
+Rack - 3Protocol End Time * 22-05-2025 16:59:13.340
+Rack Unloaded From U3 * 22-05-2025 16:59:24.116
+Command Sent (SeqNo: 79, Retry: 0) WATER VALVE - 6 CONTROL OFF - #79,13,6,0*12a2  * 22-05-2025 16:59:56.65
+CRC-Response (SeqNo: 79) - 79,13,F000*ab48 * 22-05-2025 16:59:56.200
+Command Sent (SeqNo: 80, Retry: 0) Rack-4 Picked from W6 - With RA:1 - #80,2,1,42974,8590,0,0*3780  * 22-05-2025 16:59:56.278
+CRC-Response (SeqNo: 80) - 80,2,I001,1*33bd * 22-05-2025 16:59:56.406
+CRC-Response (SeqNo: 80) - 80,2,F000,1*0cec * 22-05-2025 17:00:02.796
+RA Picked Rack From W6 * 22-05-2025 17:00:02.809
+Command Sent (SeqNo: 81, Retry: 0) RA-2 Movement - #81,5,00111000*7bf8  * 22-05-2025 17:00:03.150
+CRC-Response (SeqNo: 81) - 81,5,I001,00111000*97ec * 22-05-2025 17:00:03.294
+CRC-Response (SeqNo: 81) - 81,5,F000,11111111*c1e9 * 22-05-2025 17:00:03.294
+Command Sent (SeqNo: 82, Retry: 0) Rack-4 Placed in J20 - With RA:1 - #82,3,1,32084,8590,0,0*e682  * 22-05-2025 17:00:05.229
+CRC-Response (SeqNo: 82) - 82,3,I001,1*35dd * 22-05-2025 17:00:05.351
+CRC-Response (SeqNo: 82) - 82,3,F000,1*0a8c * 22-05-2025 17:00:11.754
+RA Placed Rack in J20 * 22-05-2025 17:00:11.756
+Command Sent (SeqNo: 83, Retry: 0) RA1 Home Command - #83,5,00000111*c1ad  * 22-05-2025 17:00:12.327
+CRC-Response (SeqNo: 83) - 83,5,I001,00000111*8ae1 * 22-05-2025 17:00:12.869
+CRC-Response (SeqNo: 83) - 83,5,F000,11111111*a148 * 22-05-2025 17:00:12.870
+Rack - R6Protocol Started * 22-05-2025 17:00:32.696
+Command Sent (SeqNo: 84, Retry: 0) Rack-6 Picked from L3 - With RA:2 - #84,2,2,10304,16380,0,0*9936  * 22-05-2025 17:00:32.765
+CRC-Response (SeqNo: 84) - 84,2,I001,2*e7bc * 22-05-2025 17:00:32.884
+CRC-Response (SeqNo: 84) - 84,2,F000,2*d8ed * 22-05-2025 17:00:39.337
+RA Picked Rack From L3 * 22-05-2025 17:00:39.339
+Command Sent (SeqNo: 85, Retry: 0) Rack-6 Placed in J1 - With RA:2 - #85,3,2,10304,800,0,0*56d3  * 22-05-2025 17:00:39.836
+CRC-Response (SeqNo: 85) - 85,3,I001,2*ee2c * 22-05-2025 17:00:39.974
+CRC-Response (SeqNo: 85) - 85,3,F000,2*d17d * 22-05-2025 17:00:46.342
+RA Placed Rack in J1 * 22-05-2025 17:00:46.345
+Command Sent (SeqNo: 86, Retry: 0) WATER VALVE - 1 CONTROL ON - #86,13,1,1*a3d3  * 22-05-2025 17:00:55.840
+CRC-Response (SeqNo: 86) - 86,13,F000*6b39 * 22-05-2025 17:00:55.963
+Command Sent (SeqNo: 87, Retry: 0) Rack-5 Picked from J8 - With RA:2 - #87,2,2,35714,800,0,0*c5b4  * 22-05-2025 17:01:12.845
+CRC-Response (SeqNo: 87) - 87,2,I001,2*e84c * 22-05-2025 17:01:12.973
+CRC-Response (SeqNo: 87) - 87,2,F000,2*d71d * 22-05-2025 17:01:20.988
+RA Picked Rack From J8 * 22-05-2025 17:01:20.990
+Command Sent (SeqNo: 88, Retry: 0) RA-1 Movement - #88,5,00000111*1a48  * 22-05-2025 17:01:21.434
+CRC-Response (SeqNo: 88) - 88,5,I001,00000111*b896 * 22-05-2025 17:01:21.563
+CRC-Response (SeqNo: 88) - 88,5,F000,11111111*933f * 22-05-2025 17:01:21.563
+Command Sent (SeqNo: 89, Retry: 0) Rack-5 Placed in W1 - With RA:2 - #89,3,2,42974,800,0,0*c7a5  * 22-05-2025 17:01:23.529
+CRC-Response (SeqNo: 89) - 89,3,I001,2*d1ec * 22-05-2025 17:01:23.668
+CRC-Response (SeqNo: 89) - 89,3,F000,2*eebd * 22-05-2025 17:01:29.643
+RA Placed Rack in W1 * 22-05-2025 17:01:29.647
+Command Sent (SeqNo: 90, Retry: 0) RA2 Home Command - #90,5,00111000*3907  * 22-05-2025 17:01:30.119
+CRC-Response (SeqNo: 90) - 90,5,I001,00111000*fbec * 22-05-2025 17:01:30.667
+CRC-Response (SeqNo: 90) - 90,5,F000,11111111*ade9 * 22-05-2025 17:01:30.667
+Command Sent (SeqNo: 91, Retry: 0) Rack-4 Picked from J20 - With RA:2 - #91,2,2,32084,8590,0,0*09c7  * 22-05-2025 17:02:12.344
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:02:30.78
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:02:35.81
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:02:40.83
+No response for func_code: 2, SeqNo: 92, Retry: 1 * 22-05-2025 17:02:42.360
+Command Sent (SeqNo: 91, Retry: 1) Rack-4 Picked from J20 - With RA:2 - #91,2,2,32084,8590,0,0*09c7  * 22-05-2025 17:02:42.413
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:02:45.92
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:02:46.398
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:02:50.99
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:02:51.402
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:02:55.103
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:02:56.399
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:03:00.108
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:03:01.400
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:03:05.111
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:03:06.396
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:03:10.107
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:03:11.400
+No response for func_code: 2, SeqNo: 89, Retry: 2 * 22-05-2025 17:03:12.433
+Command Sent (SeqNo: 88, Retry: 2) Rack-4 Picked from J20 - With RA:2 - #91,2,2,32084,8590,0,0*09c7  * 22-05-2025 17:03:12.484
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:03:15.103
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:03:16.403
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:03:20.119
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:03:21.399
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:03:25.126
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:03:26.406
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:03:30.119
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:03:31.404
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:03:35.126
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:03:36.404
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:03:40.122
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:03:41.404
+No response for func_code: 2, SeqNo: 87, Retry: 3 * 22-05-2025 17:03:42.505
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:03:45.132
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:03:46.397
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:03:50.142
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:03:51.406
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:03:55.135
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:03:56.408
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:04:00.144
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:04:01.409
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:04:05.135
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:04:06.425
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:04:10.142
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:04:11.426
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:04:15.143
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:04:16.434
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:04:20.149
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:04:21.433
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:04:25.147
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:04:26.431
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:04:30.151
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:04:31.435
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:04:35.151
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:04:36.438
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:04:40.155
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:04:41.513
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:04:45.157
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:04:46.434
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:04:50.154
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:04:51.436
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:04:55.160
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:04:56.440
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:05:00.178
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:05:01.434
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:05:05.192
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:05:06.432
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:05:10.204
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:05:11.443
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:05:15.205
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:05:16.445
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:05:20.212
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:05:21.448
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:05:25.217
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:05:26.455
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:05:30.217
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:05:31.451
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:05:35.215
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:05:36.454
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:05:40.214
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:05:41.451
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:05:45.217
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:05:46.462
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:05:50.216
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:05:51.466
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:05:55.211
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:05:56.462
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:06:00.217
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:06:01.472
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:06:05.220
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:06:06.483
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:06:10.218
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:06:11.482
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:06:15.218
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:06:16.489
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:06:20.210
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:06:21.501
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:06:25.218
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:06:26.495
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:06:30.212
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:06:31.495
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:06:35.210
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:06:36.495
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:06:40.215
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:06:41.504
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:06:45.217
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:06:46.505
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:06:50.223
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:06:51.511
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:06:55.237
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:06:56.511
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:07:00.231
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:07:01.515
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:07:05.231
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:07:06.512
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:07:10.229
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:07:11.520
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:07:15.228
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:07:16.526
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:07:20.226
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:07:21.531
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:07:25.228
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:07:26.523
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:07:30.239
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:07:31.522
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:07:35.255
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:07:36.528
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:07:40.271
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:07:41.530
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:07:45.286
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:07:46.530
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:07:50.293
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:07:51.529
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:07:55.294
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:07:56.531
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:08:00.295
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:08:01.526
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:08:05.291
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:08:06.554
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:08:10.292
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:08:11.552
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:08:15.289
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:08:16.563
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:08:20.299
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:08:21.557
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:08:25.288
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:08:26.556
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:08:30.295
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:08:31.569
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:08:35.292
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:08:36.574
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:08:40.301
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:08:41.575
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:08:45.295
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:08:46.582
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:08:50.292
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:08:51.594
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:08:55.296
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:08:56.599
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:09:00.293
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:09:01.606
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:09:05.306
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:09:06.608
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:09:10.316
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:09:11.614
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:09:15.307
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:09:16.623
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:09:20.314
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:09:21.621
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:09:25.317
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:09:26.618
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:09:30.321
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:09:31.630
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:09:35.322
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:09:36.641
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:09:40.331
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:09:41.643
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:09:45.325
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:09:46.643
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:09:50.324
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:09:51.641
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:09:55.327
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:09:56.639
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:10:00.319
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:10:01.638
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:10:05.327
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:10:06.644
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:10:10.322
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:10:11.657
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:10:15.319
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:10:16.648
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:10:20.322
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:10:21.654
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:10:25.330
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:10:26.652
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:10:30.329
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:10:31.656
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:10:35.326
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:10:36.655
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:10:40.332
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:10:41.660
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:10:45.350
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:10:46.664
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:10:50.365
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:10:51.670
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:10:55.387
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:10:56.668
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:11:00.392
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:11:01.673
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:11:05.398
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:11:06.676
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:11:10.405
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:11:11.688
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:11:15.405
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:11:16.692
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:11:20.409
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:11:21.700
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:11:25.398
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:11:26.698
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:11:30.409
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:11:31.697
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:11:35.407
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:11:36.705
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:11:40.412
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:11:41.697
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:11:45.420
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:11:46.703
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:11:50.435
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:11:51.701
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:11:55.441
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:11:56.704
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:12:00.464
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:12:01.695
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:12:05.461
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:12:06.697
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:12:10.470
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:12:11.699
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:12:15.464
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:12:16.706
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:12:20.466
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:12:21.698
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:12:25.470
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:12:26.710
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:12:30.463
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:12:31.710
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:12:35.467
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:12:36.723
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:12:40.466
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:12:41.729
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:12:45.465
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:12:46.734
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:12:50.466
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:12:51.734
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:12:55.463
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:12:56.732
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:13:00.475
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:13:01.725
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:13:05.490
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:13:06.738
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:13:10.494
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:13:11.747
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:13:15.496
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:13:16.747
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:13:20.508
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:13:21.746
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:13:25.515
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:13:26.743
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:13:30.524
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:13:31.743
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:13:35.521
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:13:36.748
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:13:40.534
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:13:41.742
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:13:45.551
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:13:46.748
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:13:50.564
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:13:51.741
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:13:55.556
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:13:56.749
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:14:00.562
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:14:01.754
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:14:05.561
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:14:06.741
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:14:10.567
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:14:11.747
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:14:15.565
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:14:16.753
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:14:20.560
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:14:21.758
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:14:25.554
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:14:26.762
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:14:30.555
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:14:31.761
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:14:35.556
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:14:36.768
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:14:40.568
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:14:41.760
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:14:45.571
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:14:46.762
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:14:50.571
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:14:51.756
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:14:55.581
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:14:56.757
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:15:00.574
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:15:01.760
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:15:05.574
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:15:06.764
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:15:10.578
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:15:11.765
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:15:15.569
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:15:16.765
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:15:20.575
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:15:21.759
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:15:25.568
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:15:26.761
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:15:30.573
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:15:31.767
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:15:35.572
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:15:36.764
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:15:40.573
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:15:41.771
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:15:45.583
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:15:46.789
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:15:50.589
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:15:51.792
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:15:55.596
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:15:56.791
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:16:00.599
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:16:01.790
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:16:05.616
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:16:06.795
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:16:10.620
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:16:11.793
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:16:15.632
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:16:16.793
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:16:20.643
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:16:21.800
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:16:25.645
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:16:26.799
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:16:30.650
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:16:31.797
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:16:35.661
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:16:36.787
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:16:40.670
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:16:41.791
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:16:45.665
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:16:46.796
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:16:50.664
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:16:51.794
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:16:55.671
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:16:56.795
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:17:00.668
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:17:01.806
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:17:05.672
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:17:06.807
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:17:10.682
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:17:11.806
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:17:15.680
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:17:16.812
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:17:20.683
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:17:21.803
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:17:25.684
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:17:26.816
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:17:30.690
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:17:31.823
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:17:35.691
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:17:36.832
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:17:40.708
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:17:41.842
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:17:45.710
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:17:46.840
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:17:50.711
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:17:51.839
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:17:55.713
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:17:56.839
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:18:00.713
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:18:01.847
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:18:05.717
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:18:06.839
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:18:10.720
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:18:11.843
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:18:15.724
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:18:16.835
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:18:20.729
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:18:21.837
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:18:25.737
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:18:26.838
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:18:30.735
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:18:31.850
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:18:35.732
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:18:36.859
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:18:40.733
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:18:41.862
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:18:45.737
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:18:46.862
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:18:50.730
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:18:51.858
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:18:55.729
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:18:56.858
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:19:00.726
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:19:01.868
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:19:05.738
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:19:06.872
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:19:10.751
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:19:11.876
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:19:15.751
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:19:16.875
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:19:20.746
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:19:21.877
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:19:25.744
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:19:26.875
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:19:30.751
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:19:31.869
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:19:35.752
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:19:36.873
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:19:40.746
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:19:41.878
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:19:45.754
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:19:46.870
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:19:50.758
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:19:51.875
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:19:55.759
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:19:56.877
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:20:00.755
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:20:01.869
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:20:05.760
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:20:06.870
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:20:10.763
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:20:11.870
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:20:15.777
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:20:16.868
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:20:20.783
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:20:21.871
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:20:25.782
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:20:26.865
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:20:30.777
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:20:31.874
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:20:35.786
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:20:36.880
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:20:40.800
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:20:41.886
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:20:45.800
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:20:46.886
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:20:50.801
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:20:51.885
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:20:55.811
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:20:56.894
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:21:00.814
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:21:01.881
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:21:05.818
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:21:06.880
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:21:10.841
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:21:11.882
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:21:15.846
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:21:16.891
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:21:20.861
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:21:21.888
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:21:25.856
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:21:26.893
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:21:30.870
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:21:31.883
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:21:35.882
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:21:36.891
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:21:40.895
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:21:41.892
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:21:45.906
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:21:46.889
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:21:50.897
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:21:51.885
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:21:55.903
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:21:56.885
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:22:00.898
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:22:01.891
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:22:05.909
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:22:06.889
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:22:10.903
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:22:11.888
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:22:15.905
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:22:16.895
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:22:20.909
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:22:21.892
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:22:25.900
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:22:26.884
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:22:30.902
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:22:31.889
+5 Seconds Timer increments in Jar W1 for R5 Other Rack Command Execution Under Progress and timer updated for tmr_r2_incub() * 22-05-2025 17:22:35.899
+5 Secconds Timer increments in Jar J1 for R6 Other Rack Command Execution Under Progress and timer upadted for tmr_r3_incub() * 22-05-2025 17:22:36.888
+User Aborted / Stopped the application forcefully  * 22-05-2025 17:22:39.692

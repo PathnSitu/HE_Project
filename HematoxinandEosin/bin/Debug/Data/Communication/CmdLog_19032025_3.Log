@@ -1,0 +1,1063 @@
+Command Sent SET TEMPERATURE - #0,10,32*870a
+ * 19-03-2025 13:11:15.498
+CRC-Response  - 0,10,F000*1ae9 * 19-03-2025 13:11:15.727
+Command Sent HEATER ON - #1,12,1*dbe7
+ * 19-03-2025 13:11:16.781
+CRC-Response  - 1,12,F000*68e5 * 19-03-2025 13:11:16.990
+Command Sent HEATER DOOR CLOSE - #2,8,1,0*21eb
+ * 19-03-2025 13:11:17.539
+CRC-Response  - 2,8,I001*fd79 * 19-03-2025 13:11:17.762
+CRC-Response  - 2,8,F000*29bb * 19-03-2025 13:11:18.87
+Command Sent READ TEMPERATURE - #3,11*ed1a
+ * 19-03-2025 13:11:18.321
+CRC-Response  - 3,11,F000,545*d48f * 19-03-2025 13:11:18.534
+Command Sent WATER VALVE - 1 CONTROL OFF - #4,13,1,0*80ea
+ * 19-03-2025 13:11:28.588
+CRC-Response  - 4,13,F000*e9db * 19-03-2025 13:11:28.796
+Command Sent WATER VALVE - 2 CONTROL OFF - #5,13,2,0*4cdb
+ * 19-03-2025 13:11:29.362
+CRC-Response  - 5,13,F000*79d6 * 19-03-2025 13:11:29.569
+Command Sent WATER VALVE - 3 CONTROL OFF - #6,13,3,0*99ca
+ * 19-03-2025 13:11:30.122
+CRC-Response  - 6,13,F000*89c2 * 19-03-2025 13:11:30.332
+Command Sent WATER VALVE - 4 CONTROL OFF - #7,13,4,0*94ba
+ * 19-03-2025 13:11:30.880
+CRC-Response  - 7,13,F000*19cf * 19-03-2025 13:11:31.90
+Command Sent WATER VALVE - 5 CONTROL OFF - #8,13,5,0*14ab
+ * 19-03-2025 13:11:31.657
+CRC-Response  - 8,13,F000*e98e * 19-03-2025 13:11:31.866
+Command Sent WATER VALVE - 6 CONTROL OFF - #9,13,6,0*d89a
+ * 19-03-2025 13:11:32.416
+CRC-Response  - 9,13,F000*7983 * 19-03-2025 13:11:32.626
+Command Sent HEATER OFF - #10,12,0*121c
+ * 19-03-2025 13:11:33.177
+CRC-Response  - 10,12,F000*35c3 * 19-03-2025 13:11:33.385
+Command Sent Home Command - #11,5,01111111*e264
+ * 19-03-2025 13:11:33.953
+CRC-Response  - 11,5,I001,01111111*59be * 19-03-2025 13:11:34.163
+CRC-Response  - 11,5,F000*4be9 * 19-03-2025 13:11:47.415
+Command Sent Home Command - #12,5,01111111*e660
+ * 19-03-2025 13:11:49.798
+CRC-Response  - 12,5,I001,01111111*a94e * 19-03-2025 13:11:50.51
+CRC-Response  - 12,5,F000*5ea9 * 19-03-2025 13:12:03.266
+Command Sent Level Sensing For L1 - #13,4,17564,16380,0,0*94b5
+ * 19-03-2025 13:12:04.644
+CRC-Response  - 13,4,I001*97ab * 19-03-2025 13:12:04.861
+CRC-Response  - 13,4,F000,752*93c3 * 19-03-2025 13:12:08.542
+L1 Value - 200 * 19-03-2025 13:12:08.567
+Command Sent Level Sensing For L2 - #14,4,13934,16380,0,0*e418
+ * 19-03-2025 13:12:08.924
+CRC-Response  - 14,4,I001*71ea * 19-03-2025 13:12:09.133
+CRC-Response  - 14,4,F000,712*9834 * 19-03-2025 13:12:11.424
+L2 Value - 200 * 19-03-2025 13:12:11.442
+Command Sent Level Sensing For L3 - #15,4,10304,16380,0,0*153a
+ * 19-03-2025 13:12:11.697
+CRC-Response  - 15,4,I001*bd2b * 19-03-2025 13:12:11.905
+CRC-Response  - 15,4,F000,715*9988 * 19-03-2025 13:12:14.195
+L3 Value - 200 * 19-03-2025 13:12:14.213
+Command Sent Home Command - #16,5,01111111*2991
+ * 19-03-2025 13:12:14.481
+CRC-Response  - 16,5,I001,01111111*680c * 19-03-2025 13:12:14.689
+CRC-Response  - 16,5,F000*ada8 * 19-03-2025 13:12:27.949
+Command Sent Home Command - #17,5,01111111*ea6c
+ * 19-03-2025 13:12:29.329
+CRC-Response  - 17,5,I001,01111111*f85d * 19-03-2025 13:12:29.536
+CRC-Response  - 17,5,F000*6169 * 19-03-2025 13:12:42.786
+Rack - 1Protocol Started * 19-03-2025 13:12:43.871
+Command Sent Rack-1 Picked from L1 - #18,2,1,17564,16380,0,0*c654
+ * 19-03-2025 13:12:43.977
+CRC-Response  - 18,2,I001,1*4512 * 19-03-2025 13:12:44.194
+CRC-Response  - 18,2,F000,1*7a43 * 19-03-2025 13:12:50.214
+RA Picked Rack From L1 * 19-03-2025 13:12:50.217
+Command Sent Rack-1 Placed in H1 - #19,3,1,2688,1000,0,1*0ed4
+ * 19-03-2025 13:12:50.783
+CRC-Response  - 19,3,I001,1*4c82 * 19-03-2025 13:12:51.1
+CRC-Response  - 19,3,F000,1*73d3 * 19-03-2025 13:12:57.856
+RA Placed Rack in H1 * 19-03-2025 13:12:57.859
+Command Sent HEATER DOOR CLOSE - #20,8,1,0*2711
+ * 19-03-2025 13:12:58.137
+CRC-Response  - 20,8,I001*beff * 19-03-2025 13:12:58.358
+CRC-Response  - 20,8,F000*6a3d * 19-03-2025 13:12:58.686
+Command Sent READ TEMPERATURE - #21,11*b506
+ * 19-03-2025 13:12:58.914
+CRC-Response  - 21,11,F000,545*8e13 * 19-03-2025 13:12:59.121
+Command Sent HEATER ON - #22,12,1*30ef
+ * 19-03-2025 13:12:59.176
+Command Sent HEATER ON - #23,12,1*e1ee
+ * 19-03-2025 13:13:04.240
+CRC-Response  - 23,12,F000*ca27 * 19-03-2025 13:13:09.466
+Command Sent READ TEMPERATURE - #24,11*7906
+ * 19-03-2025 13:13:40.277
+CRC-Response  - 24,11,F000,545*8b1f * 19-03-2025 13:13:40.502
+Command Sent READ TEMPERATURE - #25,11*8507
+ * 19-03-2025 13:13:50.562
+CRC-Response  - 25,11,F000,545*0a1d * 19-03-2025 13:13:50.773
+Command Sent READ TEMPERATURE - #26,11*c107
+ * 19-03-2025 13:14:00.832
+CRC-Response  - 26,11,F000,545*c918 * 19-03-2025 13:14:01.40
+Command Sent READ TEMPERATURE - #27,11*3d06
+ * 19-03-2025 13:14:11.94
+CRC-Response  - 27,11,F000,545*481a * 19-03-2025 13:14:11.315
+Command Sent READ TEMPERATURE - #28,11*2905
+ * 19-03-2025 13:14:21.372
+CRC-Response  - 28,11,F000,545*470e * 19-03-2025 13:14:21.580
+Command Sent READ TEMPERATURE - #29,11*d504
+ * 19-03-2025 13:14:31.633
+CRC-Response  - 29,11,F000,447*c7dc * 19-03-2025 13:14:31.849
+Command Sent READ TEMPERATURE - #30,11*893a
+ * 19-03-2025 13:14:41.900
+CRC-Response  - 30,11,F000,545*ce11 * 19-03-2025 13:14:42.106
+Command Sent READ TEMPERATURE - #31,11*753b
+ * 19-03-2025 13:14:52.161
+CRC-Response  - 31,11,F000,545*4f13 * 19-03-2025 13:14:52.371
+Command Sent READ TEMPERATURE - #32,11*313b
+ * 19-03-2025 13:15:02.427
+CRC-Response  - 32,11,F000,545*8c16 * 19-03-2025 13:15:02.794
+Command Sent READ TEMPERATURE - #33,11*cd3a
+ * 19-03-2025 13:15:12.847
+CRC-Response  - 33,11,F000,-273*dbaa * 19-03-2025 13:15:13.55
+Command Sent READ TEMPERATURE - #34,11*b93b
+ * 19-03-2025 13:15:23.101
+CRC-Response  - 34,11,F000,545*4a1f * 19-03-2025 13:15:23.316
+Command Sent READ TEMPERATURE - #35,11*453a
+ * 19-03-2025 13:15:33.364
+CRC-Response  - 35,11,F000,545*cb1d * 19-03-2025 13:15:33.585
+Command Sent READ TEMPERATURE - #36,11*013a
+ * 19-03-2025 13:15:43.634
+CRC-Response  - 36,11,F000,545*0818 * 19-03-2025 13:15:43.849
+Command Sent READ TEMPERATURE - #37,11*fd3b
+ * 19-03-2025 13:15:53.915
+CRC-Response  - 37,11,F000,545*891a * 19-03-2025 13:15:54.121
+Command Sent READ TEMPERATURE - #38,11*e938
+ * 19-03-2025 13:16:04.174
+CRC-Response  - 38,11,F000,545*860e * 19-03-2025 13:16:04.385
+Command Sent READ TEMPERATURE - #39,11*1539
+ * 19-03-2025 13:16:14.452
+CRC-Response  - 39,11,F000,545*070c * 19-03-2025 13:16:14.656
+Command Sent READ TEMPERATURE - #40,11*498f
+ * 19-03-2025 13:16:24.712
+CRC-Response  - 40,11,F000,545*0917 * 19-03-2025 13:16:24.922
+Command Sent READ TEMPERATURE - #41,11*b58e
+ * 19-03-2025 13:16:34.971
+CRC-Response  - 41,11,F000,545*8815 * 19-03-2025 13:16:35.178
+Command Sent READ TEMPERATURE - #42,11*f18e
+ * 19-03-2025 13:16:45.242
+CRC-Response  - 42,11,F000,545*4b10 * 19-03-2025 13:16:45.452
+Command Sent READ TEMPERATURE - #43,11*0d8f
+ * 19-03-2025 13:16:55.506
+CRC-Response  - 43,11,F000,545*ca12 * 19-03-2025 13:16:55.719
+Command Sent READ TEMPERATURE - #44,11*798e
+ * 19-03-2025 13:17:05.780
+CRC-Response  - 44,11,F000,545*8d19 * 19-03-2025 13:17:05.991
+Command Sent READ TEMPERATURE - #45,11*858f
+ * 19-03-2025 13:17:16.43
+CRC-Response  - 45,11,F000,545*0c1b * 19-03-2025 13:17:16.253
+Command Sent READ TEMPERATURE - #46,11*c18f
+ * 19-03-2025 13:17:26.313
+CRC-Response  - 46,11,F000,545*cf1e * 19-03-2025 13:17:26.520
+Command Sent READ TEMPERATURE - #47,11*3d8e
+ * 19-03-2025 13:17:36.573
+CRC-Response  - 47,11,F000,545*4e1c * 19-03-2025 13:17:36.787
+Command Sent HEATER OFF - #48,12,0*5a48
+ * 19-03-2025 13:17:38.894
+CRC-Response  - 48,12,F000*e5b4 * 19-03-2025 13:17:39.108
+Command Sent HEATER DOOR OPEN - #49,8,1,1*cdc9
+ * 19-03-2025 13:17:58.832
+CRC-Response  - 49,8,I001*7414 * 19-03-2025 13:17:59.59
+CRC-Response  - 49,8,F000*a0d6 * 19-03-2025 13:17:59.382
+Command Sent Rack-1 Picked from H1 - #50,2,1,2688,1000,0,1*87ab
+ * 19-03-2025 13:17:59.634
+CRC-Response  - 50,2,I001,1*9f86 * 19-03-2025 13:17:59.845
+CRC-Response  - 50,2,F000,1*a0d7 * 19-03-2025 13:18:04.938
+RA Picked Rack From H1 * 19-03-2025 13:18:04.939
+Command Sent HEATER DOOR CLOSE - #51,8,1,0*0140
+ * 19-03-2025 13:18:05.436
+CRC-Response  - 51,8,I001*4218 * 19-03-2025 13:18:05.650
+CRC-Response  - 51,8,F000*96da * 19-03-2025 13:18:05.993
+Command Sent Rack-1 Placed in J1 - #52,3,1,10304,800,0,0*3f08
+ * 19-03-2025 13:18:06.200
+CRC-Response  - 52,3,I001,1*99e6 * 19-03-2025 13:18:06.411
+CRC-Response  - 52,3,F000,1*a6b7 * 19-03-2025 13:18:12.479
+RA Placed Rack in J1 * 19-03-2025 13:18:12.482
+Command Sent HEATER ON - #53,12,1*2198- * 19-03-2025 13:18:21.42
+CRC-Response  - 53,12,F000*1096 * 19-03-2025 13:18:21.261
+Command Sent HEATER OFF - #54,12,0*5658- * 19-03-2025 13:18:27.263
+CRC-Response  - 54,12,F000*20b0 * 19-03-2025 13:18:27.517
+Command Sent HEATER DOOR OPEN - #55,8,1,1*01c4- * 19-03-2025 13:18:28.66
+CRC-Response  - 55,8,I001*b119 * 19-03-2025 13:18:28.274
+CRC-Response  - 55,8,F000*65db * 19-03-2025 13:18:28.614
+Rack - 2Protocol Started * 19-03-2025 13:18:28.791
+Command Sent Rack-2 Picked from L2 - #56,2,1,13934,16380,0,0*1fe6- * 19-03-2025 13:18:28.870
+CRC-Response  - 56,2,I001,1*8066 * 19-03-2025 13:18:29.90
+CRC-Response  - 56,2,F000,1*bf37 * 19-03-2025 13:18:35.502
+RA Picked Rack From L2 * 19-03-2025 13:18:35.506
+Command Sent Rack-2 Placed in H1 - #57,3,1,2688,1000,0,1*634f- * 19-03-2025 13:18:35.693
+CRC-Response  - 57,3,I001,1*89f6 * 19-03-2025 13:18:35.908
+CRC-Response  - 57,3,F000,1*b6a7 * 19-03-2025 13:18:42.363
+RA Placed Rack in H1 * 19-03-2025 13:18:42.366
+Command Sent HEATER DOOR CLOSE - #58,8,1,0*01d9- * 19-03-2025 13:18:42.483
+CRC-Response  - 58,8,I001*28d8 * 19-03-2025 13:18:42.689
+CRC-Response  - 58,8,F000*fc1a * 19-03-2025 13:18:43.31
+Command Sent READ TEMPERATURE - #59,11*15b1- * 19-03-2025 13:18:43.243
+CRC-Response  - 59,11,F000,447*00da * 19-03-2025 13:18:43.449
+Command Sent HEATER ON - #60,12,1*12ab- * 19-03-2025 13:18:43.517
+CRC-Response  - 60,12,F000*ef72 * 19-03-2025 13:18:43.727
+Command Sent READ TEMPERATURE - #61,11*75f7  * 19-03-2025 13:19:14.993
+CRC-Response  - 61,11,F000,545*4a16 * 19-03-2025 13:19:15.216
+Command Sent READ TEMPERATURE - #62,11*31f7  * 19-03-2025 13:19:25.286
+CRC-Response  - 62,11,F000,545*8913 * 19-03-2025 13:19:25.495
+Command Sent READ TEMPERATURE - #63,11*cdf6  * 19-03-2025 13:19:35.549
+CRC-Response  - 63,11,F000,545*0811 * 19-03-2025 13:19:35.763
+Command Sent READ TEMPERATURE - #64,11*b9f7  * 19-03-2025 13:19:45.839
+CRC-Response  - 64,11,F000,545*4f1a * 19-03-2025 13:19:46.62
+Command Sent HEATER OFF - #65,12,0*876a  * 19-03-2025 13:19:53.213
+CRC-Response  - 65,12,F000*bf4d * 19-03-2025 13:19:53.420
+Command Sent Rack-1 Picked from J1 - #66,2,1,10304,800,0,0*acec  * 19-03-2025 13:20:13.240
+CRC-Response  - 66,2,I001,1*c469 * 19-03-2025 13:20:13.463
+CRC-Response  - 66,2,F000,1*fb38 * 19-03-2025 13:20:19.511
+RA Picked Rack From J1 * 19-03-2025 13:20:19.517
+Command Sent Rack-1 Placed in J2 - #67,3,1,13934,800 ,0,0*bc0d  * 19-03-2025 13:20:20.72
+CRC-Response  - 67,3,I001,1*cdf9 * 19-03-2025 13:20:20.285
+CRC-Response  - 67,3,F000,1*f2a8 * 19-03-2025 13:20:25.889
+RA Placed Rack in J2 * 19-03-2025 13:20:25.893
+Command Sent HEATER ON - #68,12,1*5aaa  * 19-03-2025 13:20:34.405
+CRC-Response  - 68,12,F000*2f15 * 19-03-2025 13:20:34.611
+Command Sent READ TEMPERATURE - #69,11*15f5  * 19-03-2025 13:21:05.286
+CRC-Response  - 69,11,F000,545*0209 * 19-03-2025 13:21:05.575
+Command Sent READ TEMPERATURE - #70,11*49cb  * 19-03-2025 13:21:15.640
+CRC-Response  - 70,11,F000,545*0a14 * 19-03-2025 13:21:15.849
+Command Sent READ TEMPERATURE - #71,11*b5ca  * 19-03-2025 13:21:25.911
+CRC-Response  - 71,11,F000,545*8b16 * 19-03-2025 13:21:26.117
+Command Sent READ TEMPERATURE - #72,11*f1ca  * 19-03-2025 13:21:36.167
+CRC-Response  - 72,11,F000,545*4813 * 19-03-2025 13:21:36.375
+Command Sent READ TEMPERATURE - #73,11*0dcb  * 19-03-2025 13:21:46.432
+CRC-Response  - 73,11,F000,545*c911 * 19-03-2025 13:21:46.657
+Command Sent READ TEMPERATURE - #74,11*79ca  * 19-03-2025 13:21:56.715
+CRC-Response  - 74,11,F000,545*8e1a * 19-03-2025 13:21:56.924
+Command Sent HEATER OFF - #75,12,0*477a  * 19-03-2025 13:22:06.741
+CRC-Response  - 75,12,F000*7a1c * 19-03-2025 13:22:06.949
+Command Sent Rack-1 Picked from J2 - #76,2,1,13934,800 ,0,0*4071  * 19-03-2025 13:22:26.815
+CRC-Response  - 76,2,I001,1*386d * 19-03-2025 13:22:27.23
+CRC-Response  - 76,2,F000,1*073c * 19-03-2025 13:22:32.105
+RA Picked Rack From J2 * 19-03-2025 13:22:32.108
+Command Sent Rack-1 Placed in J4 - #77,3,1,21194,800 ,0,0*2bd9  * 19-03-2025 13:22:32.613
+CRC-Response  - 77,3,I001,1*31fd * 19-03-2025 13:22:32.830
+CRC-Response  - 77,3,F000,1*0eac * 19-03-2025 13:22:38.838
+RA Placed Rack in J4 * 19-03-2025 13:22:38.840
+Command Sent HEATER ON - #78,12,1*9aba  * 19-03-2025 13:22:46.973
+CRC-Response  - 78,12,F000*ea44 * 19-03-2025 13:22:47.180
+Command Sent READ TEMPERATURE - #79,11*d5c8  * 19-03-2025 13:23:17.839
+CRC-Response  - 79,11,F000,545*c309 * 19-03-2025 13:23:18.67
+Command Sent HEATER OFF - #80,12,0*1285  * 19-03-2025 13:23:23.222
+CRC-Response  - 80,12,F000*1a13 * 19-03-2025 13:23:23.444
+Command Sent HEATER DOOR OPEN - #81,8,1,1*5840  * 19-03-2025 13:23:43.258
+CRC-Response  - 81,8,I001*d240 * 19-03-2025 13:23:43.470
+CRC-Response  - 81,8,F000*0682 * 19-03-2025 13:23:43.807
+Command Sent Rack-2 Picked from H1 - #82,2,1,2688,1000,0,1*23ff  * 19-03-2025 13:23:44.37
+CRC-Response  - 82,2,I001,1*f91c * 19-03-2025 13:23:44.254
+CRC-Response  - 82,2,F000,1*c64d * 19-03-2025 13:23:51.535
+RA Picked Rack From H1 * 19-03-2025 13:23:51.539
+Command Sent HEATER DOOR CLOSE - #83,8,1,0*58a2  * 19-03-2025 13:23:51.863
+CRC-Response  - 83,8,I001*0bc1 * 19-03-2025 13:23:52.78
+CRC-Response  - 83,8,F000*df03 * 19-03-2025 13:23:52.422
+Command Sent Rack-2 Placed in J1 - #84,3,1,10304,800,0,0*abad  * 19-03-2025 13:23:52.651
+CRC-Response  - 84,3,I001,1*2a3d * 19-03-2025 13:23:52.867
+CRC-Response  - 84,3,F000,1*156c * 19-03-2025 13:23:58.923
+RA Placed Rack in J1 * 19-03-2025 13:23:58.927
+Command Sent HEATER ON - #85,12,1*8744  * 19-03-2025 13:24:08.487
+CRC-Response  - 85,12,F000*4a2c * 19-03-2025 13:24:08.825
+Command Sent HEATER OFF - #86,12,0*7485  * 19-03-2025 13:24:11.8
+CRC-Response  - 86,12,F000*ba38 * 19-03-2025 13:24:11.218
+Command Sent HEATER DOOR OPEN - #87,8,1,1*5826  * 19-03-2025 13:24:11.797
+CRC-Response  - 87,8,I001*f8c0 * 19-03-2025 13:24:12.6
+CRC-Response  - 87,8,F000*2c02 * 19-03-2025 13:24:12.344
+Command Sent HEATER ON - #88,12,1*9a45  * 19-03-2025 13:24:12.491
+CRC-Response  - 88,12,F000*da74 * 19-03-2025 13:24:12.698
+Rack - R3Protocol Started * 19-03-2025 13:24:12.712
+Command Sent Rack-3 Picked from L3 - #89,2,1,10304,16380,0,0*741a  * 19-03-2025 13:24:12.785
+CRC-Response  - 89,2,I001,1*1c6d * 19-03-2025 13:24:18.13
+CRC-Response  - 89,2,F000,1*233c * 19-03-2025 13:24:19.406
+RA Picked Rack From L3 * 19-03-2025 13:24:19.408
+Command Sent Rack-3 Placed in H1 - #90,3,1,2688,1000,0,1*daea  * 19-03-2025 13:24:19.861
+CRC-Response  - 90,3,I001,1*0378 * 19-03-2025 13:24:20.72
+CRC-Response  - 90,3,F000,1*3c29 * 19-03-2025 13:24:26.464
+RA Placed Rack in H1 * 19-03-2025 13:24:26.467
+Command Sent HEATER DOOR CLOSE - #91,8,1,0*5440  * 19-03-2025 13:24:26.664
+CRC-Response  - 91,8,I001*424d * 19-03-2025 13:24:26.882
+CRC-Response  - 91,8,F000*968f * 19-03-2025 13:24:27.208
+Command Sent READ TEMPERATURE - #92,11*30a3  * 19-03-2025 13:24:27.434
+CRC-Response  - 92,11,F000,545*861c * 19-03-2025 13:24:27.642
+Command Sent HEATER OFF - #93,12,0*e195  * 19-03-2025 13:24:28.375
+CRC-Response  - 93,12,F000*2f56 * 19-03-2025 13:24:28.588
+Command Sent HEATER ON - #94,12,1*9655  * 19-03-2025 13:24:29.647
+CRC-Response  - 94,12,F000*1f70 * 19-03-2025 13:24:29.861
+Command Sent HEATER OFF - #95,12,0*8795  * 19-03-2025 13:24:31.366
+CRC-Response  - 95,12,F000*8f7d * 19-03-2025 13:24:31.577
+Command Sent HEATER ON - #96,12,1*7454  * 19-03-2025 13:24:32.663
+CRC-Response  - 96,12,F000*7f69 * 19-03-2025 13:24:32.873
+Command Sent HEATER OFF - #97,12,0*6594  * 19-03-2025 13:24:34.373
+CRC-Response  - 97,12,F000*ef64 * 19-03-2025 13:24:34.587
+Command Sent HEATER ON - #98,12,1*5a55  * 19-03-2025 13:24:35.661
+CRC-Response  - 98,12,F000*1f25 * 19-03-2025 13:24:35.871
+Command Sent HEATER OFF - #99,12,0*4b95  * 19-03-2025 13:24:37.363
+CRC-Response  - 99,12,F000*8f28 * 19-03-2025 13:24:37.573
+Command Sent HEATER ON - #100,12,1*c154  * 19-03-2025 13:24:38.668
+CRC-Response  - 100,12,F000*ef1f * 19-03-2025 13:24:38.877
+Command Sent Rack-1 Picked from J4 - #101,2,1,21194,800 ,0,0*cdd5  * 19-03-2025 13:24:39.366
+CRC-Response  - 101,2,I001,1*f319 * 19-03-2025 13:24:39.587
+CRC-Response  - 101,2,F000,1*cc48 * 19-03-2025 13:24:46.868
+RA Picked Rack From J4 * 19-03-2025 13:24:46.871
+Command Sent Rack-1 Placed in J5 - #102,3,1,24824,800 ,0,0*3ff5  * 19-03-2025 13:24:47.223
+CRC-Response  - 102,3,I001,1*3028 * 19-03-2025 13:24:47.442
+CRC-Response  - 102,3,F000,1*0f79 * 19-03-2025 13:24:53.35
+RA Placed Rack in J5 * 19-03-2025 13:24:53.38
+Command Sent READ TEMPERATURE - #103,11*f75e  * 19-03-2025 13:25:06.566
+CRC-Response  - 103,11,F000,545*a40d * 19-03-2025 13:25:06.784
+Command Sent READ TEMPERATURE - #104,11*835f  * 19-03-2025 13:25:16.833
+CRC-Response  - 104,11,F000,545*e306 * 19-03-2025 13:25:17.43
+Command Sent READ TEMPERATURE - #105,11*7f5e  * 19-03-2025 13:25:27.108
+CRC-Response  - 105,11,F000,545*6204 * 19-03-2025 13:25:27.317
+Command Sent READ TEMPERATURE - #106,11*3b5e  * 19-03-2025 13:25:37.369
+CRC-Response  - 106,11,F000,545*a101 * 19-03-2025 13:25:37.578
+Command Sent READ TEMPERATURE - #107,11*c75f  * 19-03-2025 13:25:48.641
+CRC-Response  - 107,11,F000,545*2003 * 19-03-2025 13:25:48.855
+Command Sent READ TEMPERATURE - #108,11*d35c  * 19-03-2025 13:25:58.929
+CRC-Response  - 108,11,F000,545*2f17 * 19-03-2025 13:25:59.144
+Command Sent Rack-2 Picked from J1 - #109,2,1,10304,800,0,0*fd29  * 19-03-2025 13:25:59.929
+CRC-Response  - 109,2,I001,1*1998 * 19-03-2025 13:26:00.146
+CRC-Response  - 109,2,F000,1*26c9 * 19-03-2025 13:26:06.982
+RA Picked Rack From J1 * 19-03-2025 13:26:06.986
+Command Sent Rack-2 Placed in J2 - #110,3,1,13934,800 ,0,0*776d  * 19-03-2025 13:26:07.322
+CRC-Response  - 110,3,I001,1*068d * 19-03-2025 13:26:07.535
+CRC-Response  - 110,3,F000,1*39dc * 19-03-2025 13:26:13.136
+RA Placed Rack in J2 * 19-03-2025 13:26:13.139
+Command Sent READ TEMPERATURE - #111,11*8f62  * 19-03-2025 13:26:17.971
+CRC-Response  - 111,11,F000,545*270a * 19-03-2025 13:26:18.189
+Command Sent READ TEMPERATURE - #112,11*cb62  * 19-03-2025 13:26:28.247
+CRC-Response  - 112,11,F000,545*e40f * 19-03-2025 13:26:28.624
+Command Sent READ TEMPERATURE - #113,11*3763  * 19-03-2025 13:26:39.697
+CRC-Response  - 113,11,F000,545*650d * 19-03-2025 13:26:39.918
+Command Sent READ TEMPERATURE - #114,11*4362  * 19-03-2025 13:26:51.833
+CRC-Response  - 114,11,F000,545*2206 * 19-03-2025 13:26:52.43
+Command Sent Rack-1 Picked from J5 - #115,2,1,24824,800 ,0,0*a501  * 19-03-2025 13:26:54.5
+CRC-Response  - 115,2,I001,1*da5c * 19-03-2025 13:26:54.231
+CRC-Response  - 115,2,F000,1*e50d * 19-03-2025 13:27:00.852
+RA Picked Rack From J5 * 19-03-2025 13:27:01.178
+Command Sent Rack-1 Placed in J6 - #116,3,1,28454,800 ,0,0*c20f  * 19-03-2025 13:27:01.552
+CRC-Response  - 116,3,I001,1*196d * 19-03-2025 13:27:01.762
+CRC-Response  - 116,3,F000,1*263c * 19-03-2025 13:27:07.373
+RA Placed Rack in J6 * 19-03-2025 13:27:07.378
+Command Sent READ TEMPERATURE - #117,11*0762  * 19-03-2025 13:27:11.841
+CRC-Response  - 117,11,F000,545*e103 * 19-03-2025 13:27:12.49
+Command Sent READ TEMPERATURE - #118,11*1361  * 19-03-2025 13:27:22.99
+CRC-Response  - 118,11,F000,545*ee17 * 19-03-2025 13:27:22.350
+Command Sent READ TEMPERATURE - #119,11*ef60  * 19-03-2025 13:27:32.395
+CRC-Response  - 119,11,F000,545*6f15 * 19-03-2025 13:27:32.615
+Command Sent READ TEMPERATURE - #120,11*7327  * 19-03-2025 13:27:42.674
+CRC-Response  - 120,11,F000,447*a4db * 19-03-2025 13:27:42.881
+Command Sent READ TEMPERATURE - #121,11*8f26  * 19-03-2025 13:27:52.942
+CRC-Response  - 121,11,F000,545*2409 * 19-03-2025 13:27:53.292
+Command Sent READ TEMPERATURE - #122,11*cb26  * 19-03-2025 13:28:04.363
+CRC-Response  - 122,11,F000,545*e70c * 19-03-2025 13:28:04.583
+Command Sent Rack-2 Picked from J2 - #123,2,1,13934,800 ,0,0*8b4b  * 19-03-2025 13:28:13.976
+CRC-Response  - 123,2,I001,1*81b3 * 19-03-2025 13:28:14.194
+CRC-Response  - 123,2,F000,1*bee2 * 19-03-2025 13:28:21.28
+RA Picked Rack From J2 * 19-03-2025 13:28:21.38
+Command Sent Rack-2 Placed in J4 - #124,3,1,21194,800 ,0,0*866b  * 19-03-2025 13:28:21.341
+CRC-Response  - 124,3,I001,1*97c3 * 19-03-2025 13:28:21.553
+CRC-Response  - 124,3,F000,1*a892 * 19-03-2025 13:28:27.568
+RA Placed Rack in J4 * 19-03-2025 13:28:27.570
+Command Sent READ TEMPERATURE - #125,11*bf27  * 19-03-2025 13:28:32.4
+CRC-Response  - 125,11,F000,545*a007 * 19-03-2025 13:28:32.211
+Command Sent READ TEMPERATURE - #126,11*fb27  * 19-03-2025 13:28:42.265
+CRC-Response  - 126,11,F000,545*6302 * 19-03-2025 13:28:42.474
+Command Sent WATER VALVE - 1 CONTROL ON - #127,13,1,1*0247  * 19-03-2025 13:28:50.149
+CRC-Response  - 127,13,F000*c499 * 19-03-2025 13:28:50.357
+Command Sent HEATER OFF - #128,12,0*89b7  * 19-03-2025 13:28:51.166
+CRC-Response  - 128,12,F000*e5d9 * 19-03-2025 13:28:51.377
+Command Sent Rack-1 Picked from J6 - #129,2,1,28454,800 ,0,0*f339  * 19-03-2025 13:29:08.210
+CRC-Response  - 129,2,I001,1*a193 * 19-03-2025 13:29:08.453
+CRC-Response  - 129,2,F000,1*9ec2 * 19-03-2025 13:29:14.436
+RA Picked Rack From J6 * 19-03-2025 13:29:14.438
+Command Sent Rack-1 Placed in W1 - #130,3,1,42974,800 ,0,0*215c  * 19-03-2025 13:29:14.609
+CRC-Response  - 130,3,I001,1*be86 * 19-03-2025 13:29:14.825
+CRC-Response  - 130,3,F000,1*81d7 * 19-03-2025 13:29:21.654
+RA Placed Rack in W1 * 19-03-2025 13:29:21.658
+Command Sent READ TEMPERATURE - #131,11*4f1b  * 19-03-2025 13:29:26.331
+CRC-Response  - 131,11,F000,-273*d282 * 19-03-2025 13:29:26.538
+Command Sent HEATER DOOR OPEN - #132,8,1,1*8121  * 19-03-2025 13:29:27.167
+CRC-Response  - 132,8,I001*3a58 * 19-03-2025 13:29:27.375
+CRC-Response  - 132,8,F000*ee9a * 19-03-2025 13:29:27.716
+Command Sent Rack-3 Picked from H1 - #133,2,1,2688,1000,0,1*877d  * 19-03-2025 13:29:27.925
+CRC-Response  - 133,2,I001,1*7db7 * 19-03-2025 13:29:28.135
+CRC-Response  - 133,2,F000,1*42e6 * 19-03-2025 13:29:37.882
+RA Picked Rack From H1 * 19-03-2025 13:29:37.885
+Command Sent HEATER DOOR CLOSE - #134,8,1,0*4186  * 19-03-2025 13:29:38.318
+CRC-Response  - 134,8,I001*10d8 * 19-03-2025 13:29:38.534
+CRC-Response  - 134,8,F000*c41a * 19-03-2025 13:29:38.862
+Command Sent Rack-3 Placed in J1 - #135,3,1,10304,800,0,0*0f2f  * 19-03-2025 13:29:39.86
+CRC-Response  - 135,3,I001,1*ae96 * 19-03-2025 13:29:39.294
+CRC-Response  - 135,3,F000,1*91c7 * 19-03-2025 13:29:45.366
+RA Placed Rack in J1 * 19-03-2025 13:29:45.370
+Command Sent READ TEMPERATURE - #136,11*3b1a  * 19-03-2025 13:29:49.261
+CRC-Response  - 136,11,F000,-273*1584 * 19-03-2025 13:29:49.466
+Command Sent HEATER ON - #137,12,1*7666  * 19-03-2025 13:29:54.912
+CRC-Response  - 137,12,F000*d0c9 * 19-03-2025 13:29:55.153
+Command Sent HEATER OFF - #138,12,0*49a7  * 19-03-2025 13:30:08.493
+CRC-Response  - 138,12,F000*2088 * 19-03-2025 13:30:08.713
+Command Sent READ TEMPERATURE - #139,11*2f19  * 19-03-2025 13:30:25.791
+CRC-Response  - 139,11,F000,545*ad16 * 19-03-2025 13:30:26.0
+Command Sent Rack-2 Picked from J4 - #140,2,1,21194,800 ,0,0*98ad  * 19-03-2025 13:30:28.589
+CRC-Response  - 140,2,I001,1*065d * 19-03-2025 13:30:28.813
+CRC-Response  - 140,2,F000,1*390c * 19-03-2025 13:30:35.229
+RA Picked Rack From J4 * 19-03-2025 13:30:35.241
+Command Sent Rack-2 Placed in J5 - #141,3,1,24824,800 ,0,0*88f4  * 19-03-2025 13:30:35.414
+CRC-Response  - 141,3,I001,1*0fcd * 19-03-2025 13:30:35.632
+CRC-Response  - 141,3,F000,1*309c * 19-03-2025 13:30:41.232
+RA Placed Rack in J5 * 19-03-2025 13:30:41.242
+Command Sent READ TEMPERATURE - #142,11*cbae  * 19-03-2025 13:30:45.645
+CRC-Response  - 142,11,F000,545*e10a * 19-03-2025 13:30:45.853
+Command Sent HEATER ON - #143,12,1*3211  * 19-03-2025 13:30:49.784
+CRC-Response  - 143,12,F000*ca4a * 19-03-2025 13:30:49.990
+Command Sent HEATER OFF - #144,12,0*45d1  * 19-03-2025 13:31:02.363
+CRC-Response  - 144,12,F000*fa6c * 19-03-2025 13:31:02.580
+Command Sent READ TEMPERATURE - #145,11*bfaf  * 19-03-2025 13:31:09.600
+CRC-Response  - 145,11,F000,545*a601 * 19-03-2025 13:31:09.807
+Command Sent WATER VALVE - 1 CONTROL OFF - #146,13,1,0*ae6c  * 19-03-2025 13:31:22.443
+CRC-Response  - 146,13,F000*4b74 * 19-03-2025 13:31:22.650
+Command Sent Rack-1 Picked from W1 - #147,2,1,42974,800 ,0,0*ddce  * 19-03-2025 13:31:22.707
+CRC-Response  - 147,2,I001,1*dcec * 19-03-2025 13:31:27.925
+CRC-Response  - 147,2,F000,1*e3bd * 19-03-2025 13:31:30.174
+RA Picked Rack From W1 * 19-03-2025 13:31:30.178
+Command Sent Rack-1 Placed in J8 - #148,3,1,35714,800 ,0,0*0031  * 19-03-2025 13:31:30.316
+CRC-Response  - 148,3,I001,1*201d * 19-03-2025 13:31:30.529
+CRC-Response  - 148,3,F000,1*1f4c * 19-03-2025 13:31:36.556
+RA Placed Rack in J8 * 19-03-2025 13:31:36.559
+Command Sent READ TEMPERATURE - #149,11*efac  * 19-03-2025 13:31:40.972
+CRC-Response  - 149,11,F000,545*6a10 * 19-03-2025 13:31:41.179
+Command Sent HEATER ON - #150,12,1*c101  * 19-03-2025 13:31:45.133
+CRC-Response  - 150,12,F000*ff0f * 19-03-2025 13:31:45.341
+Command Sent Rack-3 Picked from J1 - #151,2,1,10304,800,0,0*c907  * 19-03-2025 13:31:46.202
+CRC-Response  - 151,2,I001,1*3f08 * 19-03-2025 13:31:46.410
+CRC-Response  - 151,2,F000,1*0059 * 19-03-2025 13:31:54.487
+RA Picked Rack From J1 * 19-03-2025 13:31:54.491
+Command Sent Rack-3 Placed in J2 - #152,3,1,13934,800 ,0,0*1151  * 19-03-2025 13:31:55.45
+CRC-Response  - 152,3,I001,1*fc39 * 19-03-2025 13:31:55.263
+CRC-Response  - 152,3,F000,1*c368 * 19-03-2025 13:32:00.867
+RA Placed Rack in J2 * 19-03-2025 13:32:00.871
+Command Sent READ TEMPERATURE - #153,11*f792  * 19-03-2025 13:32:05.931
+CRC-Response  - 153,11,F000,447*a0d8 * 19-03-2025 13:32:06.151
+Command Sent READ TEMPERATURE - #154,11*8393  * 19-03-2025 13:32:16.224
+CRC-Response  - 154,11,F000,545*e603 * 19-03-2025 13:32:16.434
+Command Sent HEATER OFF - #155,12,0*54c0  * 19-03-2025 13:32:22.139
+CRC-Response  - 155,12,F000*af30 * 19-03-2025 13:32:22.396
+Command Sent Rack-2 Picked from J5 - #156,2,1,24824,800 ,0,0*1200  * 19-03-2025 13:32:42.181
+CRC-Response  - 156,2,I001,1*e5b9 * 19-03-2025 13:32:42.393
+CRC-Response  - 156,2,F000,1*dae8 * 19-03-2025 13:32:48.841
+RA Picked Rack From J5 * 19-03-2025 13:32:48.843
+Command Sent Rack-2 Placed in J6 - #157,3,1,28454,800 ,0,0*9777  * 19-03-2025 13:32:48.980
+CRC-Response  - 157,3,I001,1*ec29 * 19-03-2025 13:32:49.198
+CRC-Response  - 157,3,F000,1*d378 * 19-03-2025 13:32:54.795
+RA Placed Rack in J6 * 19-03-2025 13:32:54.798
+Command Sent HEATER OFF - #158,12,0*49c1  * 19-03-2025 13:32:58.119
+CRC-Response  - 158,12,F000*3f68 * 19-03-2025 13:32:58.327
+Command Sent HEATER DOOR OPEN - #159,8,1,1*6b1b  * 19-03-2025 13:32:58.891
+CRC-Response  - 159,8,I001*2932 * 19-03-2025 13:32:59.98
+CRC-Response  - 159,8,F000*fdf0 * 19-03-2025 13:32:59.440
+Command Sent Level Sensing For L1 - #160,4,17564,16380,0,0*455e  * 19-03-2025 13:32:59.648
+CRC-Response  - 160,4,I001*7fe6 * 19-03-2025 13:32:59.855
+CRC-Response  - 160,4,F000,746*9854 * 19-03-2025 13:33:03.947
+L1 Value - 200 * 19-03-2025 13:33:03.963
+Command Sent Level Sensing For L2 - #161,4,13934,16380,0,0*bd7b  * 19-03-2025 13:33:04.433
+CRC-Response  - 161,4,I001*b327 * 19-03-2025 13:33:04.644
+CRC-Response  - 161,4,F000,711*c9eb * 19-03-2025 13:33:06.938
+L2 Value - 200 * 19-03-2025 13:33:06.953
+Command Sent Level Sensing For L3 - #162,4,10304,16380,0,0*f420  * 19-03-2025 13:33:07.209
+CRC-Response  - 162,4,I001*a667 * 19-03-2025 13:33:07.420
+CRC-Response  - 162,4,F000,708*5b2e * 19-03-2025 13:33:09.721
+L3 Value - 200 * 19-03-2025 13:33:09.735
+Command Sent Home Command - #163,5,01111111*790e  * 19-03-2025 13:33:09.991
+CRC-Response  - 163,5,I001,01111111*7489 * 19-03-2025 13:33:10.199
+CRC-Response  - 163,5,F000*6f65 * 19-03-2025 13:33:23.466
+Command Sent Home Command - #164,5,01111111*b2fb  * 19-03-2025 13:33:24.899
+CRC-Response  - 164,5,I001,01111111*453b * 19-03-2025 13:33:25.109
+CRC-Response  - 164,5,F000*8924 * 19-03-2025 13:33:38.374
+Rack - 4Protocol Started * 19-03-2025 13:33:39.423
+Command Sent Rack-4 Picked from L1 - #165,2,1,17564,16380,0,0*4435  * 19-03-2025 13:33:39.512
+CRC-Response  - 165,2,I001,1*ae46 * 19-03-2025 13:33:39.730
+CRC-Response  - 165,2,F000,1*9117 * 19-03-2025 13:33:45.738
+RA Picked Rack From L1 * 19-03-2025 13:33:45.741
+Command Sent Rack-4 Placed in H1 - #166,3,1,2688,1000,0,1*8e2c  * 19-03-2025 13:33:45.847
+CRC-Response  - 166,3,I001,1*6d77 * 19-03-2025 13:33:46.62
+CRC-Response  - 166,3,F000,1*5226 * 19-03-2025 13:33:52.929
+RA Placed Rack in H1 * 19-03-2025 13:33:52.933
+Command Sent HEATER DOOR CLOSE - #167,8,1,0*7e75  * 19-03-2025 13:33:53.143
+CRC-Response  - 167,8,I001*55a7 * 19-03-2025 13:33:53.352
+CRC-Response  - 167,8,F000*8165 * 19-03-2025 13:33:53.692
+Command Sent READ TEMPERATURE - #168,11*d3d4  * 19-03-2025 13:33:53.898
+CRC-Response  - 168,11,F000,545*2911 * 19-03-2025 13:33:54.108
+Command Sent HEATER ON - #169,12,1*5832  * 19-03-2025 13:33:54.172
+Command Sent HEATER ON - #170,12,1*0122  * 19-03-2025 13:33:59.243
+Command Sent Rack-3 Picked from J2 - #171,2,1,13934,800 ,0,0*3c67  * 19-03-2025 13:34:04.313
+CRC-Response  - 171,2,I001,1*8703 * 19-03-2025 13:34:09.541
+CRC-Response  - 171,2,F000,1*b852 * 19-03-2025 13:34:10.983
+RA Picked Rack From J2 * 19-03-2025 13:34:10.986
+Command Sent Rack-3 Placed in J4 - #172,3,1,21194,800 ,0,0*b5b6  * 19-03-2025 13:34:11.385
+CRC-Response  - 172,3,I001,1*4432 * 19-03-2025 13:34:11.604
+Command Sent HEATER OFF - #173,12,0*f2e3  * 19-03-2025 13:34:17.527
+CRC-Response  - 173,12,F000*c5ba * 19-03-2025 13:34:17.627
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:34:37.575
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:34:48.673
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:34:55.654
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:34:59.688
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:35:06.702
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:35:10.685
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:35:17.733
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:35:21.715
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:35:28.765
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:35:32.762
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:35:39.799
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:35:43.810
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:35:50.815
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:35:54.819
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:36:01.820
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:36:05.858
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:36:12.874
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:36:16.893
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:36:23.914
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:36:27.913
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:36:34.916
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:36:38.916
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:36:45.942
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:36:49.989
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:36:57.23
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:37:01.21
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:37:08.48
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:37:12.37
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:37:19.60
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:37:23.60
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:37:30.68
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:37:33.72
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:37:41.67
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:37:44.70
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:37:52.78
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:37:55.72
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:38:03.110
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:38:06.111
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:38:14.126
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:38:17.146
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:38:25.153
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:38:28.159
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:38:36.186
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:38:39.190
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:38:47.187
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:38:50.201
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:38:54.6
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:38:58.213
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:39:01.276
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:39:05.52
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:39:08.279
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:39:12.368
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:39:16.82
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:39:19.285
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:39:23.404
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:39:26.123
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:39:30.323
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:39:34.415
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:39:37.157
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:39:41.372
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:39:45.414
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:39:48.179
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:39:52.410
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:39:56.413
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:39:59.183
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:40:03.415
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:40:07.410
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:40:10.192
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:40:14.444
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:40:18.459
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:40:21.234
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:40:25.458
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:40:29.486
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:40:32.258
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:40:36.493
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:40:40.485
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:40:43.285
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:40:47.508
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:40:51.519
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:40:54.305
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:40:58.535
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:41:02.534
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:41:05.358
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:41:09.539
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:41:13.533
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:41:16.411
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:41:20.628
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:41:24.546
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:41:27.437
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:41:31.568
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:41:35.577
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:41:38.441
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:41:42.602
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:41:46.619
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:41:49.450
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:41:53.616
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:41:57.621
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:42:00.521
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:42:04.609
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:42:08.662
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:42:11.572
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:42:15.665
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:42:19.685
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:42:22.563
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:42:26.685
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:42:30.696
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:42:33.561
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:42:37.690
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:42:41.711
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:42:44.567
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:42:48.745
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:42:52.745
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:42:55.584
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:42:59.761
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:43:03.791
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:43:06.617
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:43:10.804
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:43:14.813
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:43:17.660
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:43:21.821
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:43:25.834
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:43:28.689
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:43:32.875
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:43:36.871
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:43:39.692
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:43:43.913
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:43:47.906
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:43:50.692
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:43:54.922
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:43:58.950
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:44:01.736
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:44:05.945
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:44:10.12
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:44:12.785
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:44:16.983
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:44:21.72
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:44:23.868
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:44:27.998
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:44:32.83
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:44:34.912
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:44:39.85
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:44:42.115
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:44:45.933
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:44:50.125
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:44:53.140
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:44:56.943
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:45:01.160
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:45:04.171
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:45:07.976
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:45:12.164
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:45:15.197
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:45:18.985
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:45:23.167
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:45:26.192
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:45:30.29
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:45:34.237
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:45:37.241
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:45:41.60
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:45:45.243
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:45:48.238
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:45:51.134
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:45:56.250
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:45:59.282
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:46:02.158
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:46:06.322
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:46:10.315
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:46:13.199
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:46:17.326
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:46:21.322
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:46:24.241
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:46:28.362
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:46:32.316
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:46:35.279
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:46:39.398
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:46:43.370
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:46:46.314
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:46:50.429
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:46:54.437
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:46:57.313
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:47:01.452
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:47:05.447
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:47:08.365
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:47:12.484
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:47:16.473
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:47:19.365
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:47:23.533
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:47:27.511
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:47:30.408
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:47:34.534
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:47:38.533
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:47:41.438
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:47:45.544
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:47:49.555
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:47:52.447
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:47:56.550
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:48:00.559
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:48:03.453
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:48:07.549
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:48:11.576
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:48:14.485
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:48:18.561
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:48:22.629
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:48:25.518
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:48:29.584
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:48:33.659
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:48:36.530
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:48:40.612
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:48:44.657
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:48:47.542
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:48:51.608
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:48:55.730
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:48:58.661
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:49:02.613
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:49:06.732
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:49:09.616
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:49:13.625
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:49:17.738
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:49:20.653
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:49:24.670
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:49:28.746
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:49:31.675
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:49:35.700
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:49:39.768
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:49:42.700
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:49:46.788
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:49:50.827
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:49:53.768
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:49:57.823
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:50:01.856
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:50:04.821
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:50:08.845
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:50:12.892
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:50:15.889
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:50:19.876
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:50:23.930
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:50:26.938
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:50:30.902
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:50:34.973
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:50:37.986
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:50:41.936
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:50:46.2
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:50:49.36
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:50:52.938
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:50:57.34
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:51:00.35
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:51:03.987
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:51:08.41
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:51:11.42
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:51:15.29
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:51:19.49
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:51:22.46
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:51:26.34
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:51:29.73
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:51:33.79
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:51:37.61
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:51:40.70
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:51:43.158
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:51:48.71
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:51:51.70
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:51:54.158
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:51:59.111
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:52:02.101
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:52:05.179
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:52:10.113
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:52:13.124
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:52:16.188
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:52:21.127
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:52:24.198
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:52:27.226
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:52:32.164
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:52:35.240
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:52:38.241
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:52:43.194
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:52:46.236
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:52:49.253
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:52:54.192
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:52:57.253
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:53:00.300
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:53:05.186
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:53:08.296
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:53:11.320
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:53:16.195
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:53:19.336
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:53:22.361
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:53:27.223
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:53:30.371
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:53:33.365
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:53:38.233
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:53:41.412
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:53:44.412
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:53:48.263
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:53:52.409
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:53:55.413
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:53:59.292
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:54:03.429
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:54:06.451
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:54:10.325
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:54:14.488
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:54:17.500
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:54:21.361
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:54:25.527
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:54:28.550
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:54:32.408
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:54:36.558
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:54:39.577
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:54:43.415
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:54:47.567
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:54:50.609
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:54:54.468
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:54:58.591
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:55:01.693
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:55:05.543
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:55:09.613
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:55:12.719
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:55:16.571
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:55:20.630
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:55:23.736
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:55:27.579
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:55:31.657
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:55:34.736
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:55:38.618
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:55:42.700
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:55:45.771
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:55:49.608
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:55:53.789
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:55:56.795
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:56:00.649
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:56:04.822
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:56:07.824
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:56:11.660
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:56:15.817
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:56:18.898
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:56:22.663
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:56:26.866
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:56:29.934
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:56:33.698
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:56:37.915
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:56:40.976
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:56:44.770
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:56:48.941
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:56:52.40
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:56:55.786
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:56:59.936
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:57:03.56
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:57:06.830
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:57:10.953
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:57:13.95
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:57:17.863
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:57:21.990
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:57:24.117
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:57:28.889
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:57:33.40
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:57:35.113
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:57:39.919
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:57:44.44
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:57:46.155
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:57:50.983
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:57:54.73
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:57:57.188
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:58:02.22
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:58:05.79
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:58:08.193
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:58:13.51
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:58:16.97
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:58:19.236
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:58:24.61
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:58:27.123
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:58:30.239
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:58:35.71
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:58:38.156
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:58:41.270
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:58:46.105
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:58:49.217
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:58:52.290
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:58:57.129
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:59:00.235
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:59:03.333
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:59:08.158
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:59:11.270
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:59:14.360
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:59:19.233
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:59:22.294
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:59:25.371
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:59:29.246
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:59:33.319
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:59:36.402
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:59:40.292
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:59:44.337
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:59:47.420
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 13:59:51.334
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 13:59:55.410
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 13:59:58.471
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 14:00:02.358
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 14:00:06.414
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 14:00:09.513
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 14:00:13.393
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 14:00:17.425
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 14:00:20.559
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 14:00:24.425
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 14:00:28.452
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 14:00:31.599
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 14:00:35.478
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 14:00:39.490
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 14:00:42.609
+11 Secconds Timer incrementes in Jar J6 for R2 as other racks picking by RA in tmr_r2_incub() * 19-03-2025 14:00:46.547
+11 Secconds Timer incrementes in Jar J8 for R1 as other racks picking by RA in tmr_r1_incub() * 19-03-2025 14:00:50.546
+11 Secconds Timer incrementes in Jar H1 for R4 as other racks picking by RA in tmr_r4_incub() * 19-03-2025 14:00:53.684
+User Aborted / Stopped the application forcefully  * 19-03-2025 14:00:56.647
+Command Sent READ TEMPERATURE - #174,13,1,0*87f9  * 19-03-2025 14:00:59.754
+CRC-Response  - 174,13,F000*249d * 19-03-2025 14:00:59.985
+Command Sent READ TEMPERATURE - #175,11*bfeb  * 19-03-2025 14:01:00.45
+Command Sent WATER VALVE - 2 CONTROL OFF - #176,13,2,0*5e88  * 19-03-2025 14:01:05.107
+CRC-Response  - 176,13,F000*4484 * 19-03-2025 14:01:10.319
+Command Sent WATER VALVE - 3 CONTROL OFF - #177,13,3,0*5218  * 19-03-2025 14:01:10.669
+CRC-Response  - 177,13,F000*d489 * 19-03-2025 14:01:10.877
+Command Sent WATER VALVE - 4 CONTROL OFF - #178,13,4,0*d3e9  * 19-03-2025 14:01:11.432
+CRC-Response  - 178,13,F000*24c8 * 19-03-2025 14:01:11.647
+Command Sent WATER VALVE - 5 CONTROL OFF - #179,13,5,0*df79  * 19-03-2025 14:01:12.196
+CRC-Response  - 179,13,F000*b4c5 * 19-03-2025 14:01:12.407
+Command Sent WATER VALVE - 6 CONTROL OFF - #180,13,6,0*4508  * 19-03-2025 14:01:12.958
+CRC-Response  - 180,13,F000*d49f * 19-03-2025 14:01:13.166
+Command Sent READ TEMPERATURE - #181,11*8ebe  * 19-03-2025 14:01:33.193
+CRC-Response  - 181,11,F000,-273*d5c9 * 19-03-2025 14:01:33.417
+Command Sent READ TEMPERATURE - #182,11*cabe  * 19-03-2025 14:01:43.493
+CRC-Response  - 182,11,F000,-273*d6ca * 19-03-2025 14:01:43.715
+Command Sent READ TEMPERATURE - #183,11*36bf  * 19-03-2025 14:01:53.772
+CRC-Response  - 183,11,F000,-273*17ca * 19-03-2025 14:01:53.986
+Command Sent READ TEMPERATURE - #184,11*42be  * 19-03-2025 14:02:04.36
+CRC-Response  - 184,11,F000,-273*d0cc * 19-03-2025 14:02:04.245
+Command Sent READ TEMPERATURE - #185,11*bebf  * 19-03-2025 14:02:14.295
+CRC-Response  - 185,11,F000,-273*11cc * 19-03-2025 14:02:14.503
+Command Sent READ TEMPERATURE - #186,11*fabf  * 19-03-2025 14:02:24.559
+CRC-Response  - 186,11,F000,-273*12cf * 19-03-2025 14:02:24.765
+Command Sent READ TEMPERATURE - #187,11*06be  * 19-03-2025 14:02:34.826
+CRC-Response  - 187,11,F000,-273*d3cf * 19-03-2025 14:02:35.35
+Command Sent READ TEMPERATURE - #188,11*12bd  * 19-03-2025 14:02:45.98
+CRC-Response  - 188,11,F000,-273*dcc0 * 19-03-2025 14:02:45.324
+Command Sent READ TEMPERATURE - #189,11*eebc  * 19-03-2025 14:02:55.390
+CRC-Response  - 189,11,F000,-273*1dc0 * 19-03-2025 14:02:55.604
+Command Sent READ TEMPERATURE - #190,11*b282  * 19-03-2025 14:03:05.675
+CRC-Response  - 190,11,F000,-273*1408 * 19-03-2025 14:03:05.885
+Command Sent READ TEMPERATURE - #191,11*4e83  * 19-03-2025 14:03:15.944
+CRC-Response  - 191,11,F000,-273*d508 * 19-03-2025 14:03:16.157
+Command Sent READ TEMPERATURE - #192,11*0a83  * 19-03-2025 14:03:26.219
+CRC-Response  - 192,11,F000,-273*d60b * 19-03-2025 14:03:26.426
+Command Sent READ TEMPERATURE - #193,11*f682  * 19-03-2025 14:03:36.475
+CRC-Response  - 193,11,F000,-273*170b * 19-03-2025 14:03:36.694
+Command Sent READ TEMPERATURE - #194,11*8283  * 19-03-2025 14:03:46.740
+CRC-Response  - 194,11,F000,-273*d00d * 19-03-2025 14:03:47.83
+Command Sent READ TEMPERATURE - #195,11*7e82  * 19-03-2025 14:03:57.141
+CRC-Response  - 195,11,F000,-273*110d * 19-03-2025 14:03:57.349
+Command Sent READ TEMPERATURE - #196,11*3a82  * 19-03-2025 14:04:07.409
+CRC-Response  - 196,11,F000,-273*120e * 19-03-2025 14:04:07.616
+Command Sent READ TEMPERATURE - #197,11*c683  * 19-03-2025 14:04:17.664
+CRC-Response  - 197,11,F000,-273*d30e * 19-03-2025 14:04:17.869
+Command Sent READ TEMPERATURE - #198,11*d280  * 19-03-2025 14:04:27.935
+CRC-Response  - 198,11,F000,-273*dc01 * 19-03-2025 14:04:28.146
+Command Sent READ TEMPERATURE - #199,11*2e81  * 19-03-2025 14:04:38.202
+CRC-Response  - 199,11,F000,-273*1d01 * 19-03-2025 14:04:38.418
+Command Sent READ TEMPERATURE - #200,11*805e  * 19-03-2025 14:04:48.480
+CRC-Response  - 200,11,F000,-273*e381 * 19-03-2025 14:04:48.687
+Command Sent READ TEMPERATURE - #201,11*7c5f  * 19-03-2025 14:04:58.752
+CRC-Response  - 201,11,F000,-273*2281 * 19-03-2025 14:04:58.961
+Command Sent READ TEMPERATURE - #202,11*385f  * 19-03-2025 14:05:09.16
+CRC-Response  - 202,11,F000,-273*2182 * 19-03-2025 14:05:09.226
+Command Sent READ TEMPERATURE - #203,11*c45e  * 19-03-2025 14:05:19.281
+CRC-Response  - 203,11,F000,-273*e082 * 19-03-2025 14:05:19.491
+Command Sent READ TEMPERATURE - #204,11*b05f  * 19-03-2025 14:05:29.536
+CRC-Response  - 204,11,F000,-273*2784 * 19-03-2025 14:05:29.746
+Command Sent READ TEMPERATURE - #205,11*4c5e  * 19-03-2025 14:05:39.821
+CRC-Response  - 205,11,F000,-273*e684 * 19-03-2025 14:05:40.32
+Command Sent READ TEMPERATURE - #206,11*085e  * 19-03-2025 14:05:50.84
+CRC-Response  - 206,11,F000,-273*e587 * 19-03-2025 14:05:50.298
+Command Sent READ TEMPERATURE - #207,11*f45f  * 19-03-2025 14:06:00.349
+CRC-Response  - 207,11,F000,-273*2487 * 19-03-2025 14:06:00.557
+Command Sent READ TEMPERATURE - #208,11*e05c  * 19-03-2025 14:06:10.614
+CRC-Response  - 208,11,F000,-273*2b88 * 19-03-2025 14:06:10.822
+Command Sent READ TEMPERATURE - #209,11*1c5d  * 19-03-2025 14:06:20.863
+CRC-Response  - 209,11,F000,-273*ea88 * 19-03-2025 14:06:21.81
+Command Sent READ TEMPERATURE - #210,11*4063  * 19-03-2025 14:06:31.139
+CRC-Response  - 210,11,F000,-273*e340 * 19-03-2025 14:06:31.352
+Command Sent READ TEMPERATURE - #211,11*bc62  * 19-03-2025 14:06:41.395
+CRC-Response  - 211,11,F000,-273*2240 * 19-03-2025 14:06:41.604
+Command Sent READ TEMPERATURE - #212,11*f862  * 19-03-2025 14:06:51.660
+CRC-Response  - 212,11,F000,-273*2143 * 19-03-2025 14:06:51.871
+Command Sent READ TEMPERATURE - #213,11*0463  * 19-03-2025 14:07:01.927
+CRC-Response  - 213,11,F000,-273*e043 * 19-03-2025 14:07:02.144
+Command Sent READ TEMPERATURE - #214,11*7062  * 19-03-2025 14:07:12.198
+CRC-Response  - 214,11,F000,-273*2745 * 19-03-2025 14:07:12.452
+Command Sent READ TEMPERATURE - #215,11*8c63  * 19-03-2025 14:07:22.524
+CRC-Response  - 215,11,F000,-273*e645 * 19-03-2025 14:07:22.732
+Command Sent READ TEMPERATURE - #216,11*c863  * 19-03-2025 14:07:32.802
+CRC-Response  - 216,11,F000,-273*e546 * 19-03-2025 14:07:33.14
+Command Sent READ TEMPERATURE - #217,11*3462  * 19-03-2025 14:07:43.87
+CRC-Response  - 217,11,F000,-273*2446 * 19-03-2025 14:07:43.300
+Command Sent READ TEMPERATURE - #218,11*2061  * 19-03-2025 14:07:53.365
+CRC-Response  - 218,11,F000,-273*2b49 * 19-03-2025 14:07:53.580
+Command Sent READ TEMPERATURE - #219,11*dc60  * 19-03-2025 14:08:03.631
+CRC-Response  - 219,11,F000,-273*ea49 * 19-03-2025 14:08:03.849
+Command Sent READ TEMPERATURE - #220,11*4027  * 19-03-2025 14:08:13.908
+CRC-Response  - 220,11,F000,-273*e203 * 19-03-2025 14:08:14.163
+Command Sent READ TEMPERATURE - #221,11*bc26  * 19-03-2025 14:08:24.213
+CRC-Response  - 221,11,F000,-273*2303 * 19-03-2025 14:08:24.423
+Command Sent READ TEMPERATURE - #222,11*f826  * 19-03-2025 14:08:34.483
+CRC-Response  - 222,11,F000,-273*2000 * 19-03-2025 14:08:34.693
+Command Sent READ TEMPERATURE - #223,11*0427  * 19-03-2025 14:08:44.738
+CRC-Response  - 223,11,F000,-273*e100 * 19-03-2025 14:08:44.946
+Command Sent READ TEMPERATURE - #224,11*7026  * 19-03-2025 14:08:54.996
+CRC-Response  - 224,11,F000,-273*2606 * 19-03-2025 14:08:55.205
+Command Sent READ TEMPERATURE - #225,11*8c27  * 19-03-2025 14:09:05.256
+CRC-Response  - 225,11,F000,-273*e706 * 19-03-2025 14:09:05.462
+Command Sent READ TEMPERATURE - #226,11*c827  * 19-03-2025 14:09:15.518
+CRC-Response  - 226,11,F000,-273*e405 * 19-03-2025 14:09:15.730
+Command Sent READ TEMPERATURE - #227,11*3426  * 19-03-2025 14:09:25.798
+CRC-Response  - 227,11,F000,-273*2505 * 19-03-2025 14:09:26.7
+Command Sent READ TEMPERATURE - #228,11*2025  * 19-03-2025 14:09:36.74
+CRC-Response  - 228,11,F000,-273*2a0a * 19-03-2025 14:09:36.291
+Command Sent READ TEMPERATURE - #229,11*dc24  * 19-03-2025 14:09:46.333
+CRC-Response  - 229,11,F000,-273*eb0a * 19-03-2025 14:09:46.538
+Command Sent READ TEMPERATURE - #230,11*801a  * 19-03-2025 14:09:56.591
+CRC-Response  - 230,11,F000,-273*e2c2 * 19-03-2025 14:09:56.807
+Command Sent READ TEMPERATURE - #231,11*7c1b  * 19-03-2025 14:10:06.873
+CRC-Response  - 231,11,F000,-273*23c2 * 19-03-2025 14:10:07.84
+Command Sent READ TEMPERATURE - #232,11*381b  * 19-03-2025 14:10:17.130
+CRC-Response  - 232,11,F000,-273*20c1 * 19-03-2025 14:10:17.341
+Command Sent READ TEMPERATURE - #233,11*c41a  * 19-03-2025 14:10:27.415
+CRC-Response  - 233,11,F000,-273*e1c1 * 19-03-2025 14:10:27.627
+Command Sent READ TEMPERATURE - #234,11*b01b  * 19-03-2025 14:10:37.676
+CRC-Response  - 234,11,F000,-273*26c7 * 19-03-2025 14:10:37.887
+Command Sent READ TEMPERATURE - #235,11*4c1a  * 19-03-2025 14:10:47.963
+CRC-Response  - 235,11,F000,-273*e7c7 * 19-03-2025 14:10:48.177
+Command Sent READ TEMPERATURE - #236,11*081a  * 19-03-2025 14:10:58.221
+CRC-Response  - 236,11,F000,-273*e4c4 * 19-03-2025 14:10:58.448
+Command Sent READ TEMPERATURE - #237,11*f41b  * 19-03-2025 14:11:08.492
+CRC-Response  - 237,11,F000,-273*25c4 * 19-03-2025 14:11:08.700
+Command Sent READ TEMPERATURE - #238,11*e018  * 19-03-2025 14:11:18.769
+CRC-Response  - 238,11,F000,-273*2acb * 19-03-2025 14:11:18.988
+Command Sent READ TEMPERATURE - #239,11*1c19  * 19-03-2025 14:11:29.37
+CRC-Response  - 239,11,F000,-273*ebcb * 19-03-2025 14:11:29.249
+Command Sent READ TEMPERATURE - #240,11*40af  * 19-03-2025 14:11:39.309
+CRC-Response  - 240,11,F000,-273*e085 * 19-03-2025 14:11:39.521
+Command Sent READ TEMPERATURE - #241,11*bcae  * 19-03-2025 14:11:49.568
+CRC-Response  - 241,11,F000,-273*2185 * 19-03-2025 14:11:49.780
+Command Sent READ TEMPERATURE - #242,11*f8ae  * 19-03-2025 14:11:59.845
+CRC-Response  - 242,11,F000,-273*2286 * 19-03-2025 14:12:00.58
+Command Sent READ TEMPERATURE - #243,11*04af  * 19-03-2025 14:12:10.119
+CRC-Response  - 243,11,F000,-273*e386 * 19-03-2025 14:12:10.331
+Command Sent READ TEMPERATURE - #244,11*70ae  * 19-03-2025 14:12:20.384
+CRC-Response  - 244,11,F000,-273*2480 * 19-03-2025 14:12:20.626
+Command Sent READ TEMPERATURE - #245,11*8caf  * 19-03-2025 14:12:30.685
+CRC-Response  - 245,11,F000,-273*e580 * 19-03-2025 14:12:30.898
+Command Sent READ TEMPERATURE - #246,11*c8af  * 19-03-2025 14:12:40.943
+CRC-Response  - 246,11,F000,-273*e683 * 19-03-2025 14:12:41.157
+Command Sent READ TEMPERATURE - #247,11*34ae  * 19-03-2025 14:12:51.211
+CRC-Response  - 247,11,F000,-273*2783 * 19-03-2025 14:12:51.423

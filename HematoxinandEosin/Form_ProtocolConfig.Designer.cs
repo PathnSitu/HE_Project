@@ -44,6 +44,7 @@ namespace HematoxinandEosin
             this.dt_Washtime = new System.Windows.Forms.DateTimePicker();
             this.label17 = new System.Windows.Forms.Label();
             this.panel_Buttons = new System.Windows.Forms.Panel();
+            this.btn_AddNewRecord = new System.Windows.Forms.Button();
             this.chk_WashRequired = new System.Windows.Forms.CheckBox();
             this.panel_reagent = new System.Windows.Forms.Panel();
             this.pnl_Wsh = new System.Windows.Forms.Panel();
@@ -100,6 +101,7 @@ namespace HematoxinandEosin
             this.button24 = new System.Windows.Forms.Button();
             this.chk_vk = new System.Windows.Forms.CheckBox();
             this.txt_protocolName = new System.Windows.Forms.TextBox();
+            this.chk_Detele = new System.Windows.Forms.CheckBox();
             this.panel_Buttons.SuspendLayout();
             this.panel_reagent.SuspendLayout();
             this.pnl_Wsh.SuspendLayout();
@@ -152,40 +154,40 @@ namespace HematoxinandEosin
             this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.Location = new System.Drawing.Point(18, 3);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 38);
+            this.btnAdd.Size = new System.Drawing.Size(75, 45);
             this.btnAdd.TabIndex = 27;
-            this.btnAdd.Text = "Add";
+            this.btnAdd.Text = "Add New Protocol";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnModify
             // 
             this.btnModify.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModify.Location = new System.Drawing.Point(18, 83);
+            this.btnModify.Location = new System.Drawing.Point(18, 131);
             this.btnModify.Name = "btnModify";
-            this.btnModify.Size = new System.Drawing.Size(75, 38);
+            this.btnModify.Size = new System.Drawing.Size(75, 45);
             this.btnModify.TabIndex = 28;
-            this.btnModify.Text = "Modify";
+            this.btnModify.Text = "Modify Details";
             this.btnModify.UseVisualStyleBackColor = true;
             this.btnModify.Click += new System.EventHandler(this.btnModify_Click);
             // 
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(18, 163);
+            this.btnDelete.Location = new System.Drawing.Point(18, 190);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 38);
+            this.btnDelete.Size = new System.Drawing.Size(75, 45);
             this.btnDelete.TabIndex = 29;
-            this.btnDelete.Text = "Delete";
+            this.btnDelete.Text = "Delete Details";
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnSave
             // 
             this.btnSave.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(18, 243);
+            this.btnSave.Location = new System.Drawing.Point(18, 251);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 38);
+            this.btnSave.Size = new System.Drawing.Size(75, 45);
             this.btnSave.TabIndex = 30;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -196,7 +198,7 @@ namespace HematoxinandEosin
             this.btnRefresh.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRefresh.Location = new System.Drawing.Point(18, 323);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(75, 38);
+            this.btnRefresh.Size = new System.Drawing.Size(75, 45);
             this.btnRefresh.TabIndex = 31;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
@@ -259,6 +261,7 @@ namespace HematoxinandEosin
             // 
             // panel_Buttons
             // 
+            this.panel_Buttons.Controls.Add(this.btn_AddNewRecord);
             this.panel_Buttons.Controls.Add(this.btnAdd);
             this.panel_Buttons.Controls.Add(this.btnModify);
             this.panel_Buttons.Controls.Add(this.btnDelete);
@@ -268,6 +271,17 @@ namespace HematoxinandEosin
             this.panel_Buttons.Name = "panel_Buttons";
             this.panel_Buttons.Size = new System.Drawing.Size(114, 381);
             this.panel_Buttons.TabIndex = 58;
+            // 
+            // btn_AddNewRecord
+            // 
+            this.btn_AddNewRecord.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_AddNewRecord.Location = new System.Drawing.Point(18, 72);
+            this.btn_AddNewRecord.Name = "btn_AddNewRecord";
+            this.btn_AddNewRecord.Size = new System.Drawing.Size(75, 45);
+            this.btn_AddNewRecord.TabIndex = 32;
+            this.btn_AddNewRecord.Text = "Add New Details";
+            this.btn_AddNewRecord.UseVisualStyleBackColor = true;
+            this.btn_AddNewRecord.Click += new System.EventHandler(this.btn_AddNewRecord_Click);
             // 
             // chk_WashRequired
             // 
@@ -540,6 +554,7 @@ namespace HematoxinandEosin
             // 
             // panel_protocol
             // 
+            this.panel_protocol.Controls.Add(this.chk_Detele);
             this.panel_protocol.Controls.Add(this.lbl_CloneName);
             this.panel_protocol.Controls.Add(this.txt_CloneName);
             this.panel_protocol.Controls.Add(this.chk_Clone);
@@ -567,7 +582,7 @@ namespace HematoxinandEosin
             // 
             this.lbl_CloneName.AutoSize = true;
             this.lbl_CloneName.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_CloneName.Location = new System.Drawing.Point(130, 142);
+            this.lbl_CloneName.Location = new System.Drawing.Point(120, 142);
             this.lbl_CloneName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_CloneName.Name = "lbl_CloneName";
             this.lbl_CloneName.Size = new System.Drawing.Size(136, 20);
@@ -577,7 +592,7 @@ namespace HematoxinandEosin
             // txt_CloneName
             // 
             this.txt_CloneName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_CloneName.Location = new System.Drawing.Point(270, 143);
+            this.txt_CloneName.Location = new System.Drawing.Point(260, 143);
             this.txt_CloneName.Margin = new System.Windows.Forms.Padding(4);
             this.txt_CloneName.Name = "txt_CloneName";
             this.txt_CloneName.Size = new System.Drawing.Size(392, 23);
@@ -587,7 +602,7 @@ namespace HematoxinandEosin
             // 
             this.chk_Clone.AutoSize = true;
             this.chk_Clone.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chk_Clone.Location = new System.Drawing.Point(35, 142);
+            this.chk_Clone.Location = new System.Drawing.Point(37, 142);
             this.chk_Clone.Margin = new System.Windows.Forms.Padding(4);
             this.chk_Clone.Name = "chk_Clone";
             this.chk_Clone.Size = new System.Drawing.Size(85, 21);
@@ -684,7 +699,7 @@ namespace HematoxinandEosin
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(269, 73);
+            this.label4.Location = new System.Drawing.Point(212, 73);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(131, 20);
@@ -696,7 +711,7 @@ namespace HematoxinandEosin
             this.cmbNofJars.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbNofJars.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbNofJars.FormattingEnabled = true;
-            this.cmbNofJars.Location = new System.Drawing.Point(408, 68);
+            this.cmbNofJars.Location = new System.Drawing.Point(351, 68);
             this.cmbNofJars.Margin = new System.Windows.Forms.Padding(4);
             this.cmbNofJars.Name = "cmbNofJars";
             this.cmbNofJars.Size = new System.Drawing.Size(72, 23);
@@ -933,6 +948,19 @@ namespace HematoxinandEosin
             this.txt_protocolName.TabIndex = 67;
             this.txt_protocolName.Visible = false;
             // 
+            // chk_Detele
+            // 
+            this.chk_Detele.AutoSize = true;
+            this.chk_Detele.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chk_Detele.Location = new System.Drawing.Point(525, 69);
+            this.chk_Detele.Margin = new System.Windows.Forms.Padding(4);
+            this.chk_Detele.Name = "chk_Detele";
+            this.chk_Detele.Size = new System.Drawing.Size(127, 21);
+            this.chk_Detele.TabIndex = 67;
+            this.chk_Detele.Text = "Delete Protocol ";
+            this.chk_Detele.UseVisualStyleBackColor = true;
+            this.chk_Detele.CheckedChanged += new System.EventHandler(this.chk_Detele_CheckedChanged);
+            // 
             // Form_ProtocolConfig
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1045,5 +1073,7 @@ namespace HematoxinandEosin
         private System.Windows.Forms.Label lbl_CloneName;
         private System.Windows.Forms.TextBox txt_CloneName;
         private System.Windows.Forms.CheckBox chk_Clone;
+        private System.Windows.Forms.Button btn_AddNewRecord;
+        private System.Windows.Forms.CheckBox chk_Detele;
     }
 }

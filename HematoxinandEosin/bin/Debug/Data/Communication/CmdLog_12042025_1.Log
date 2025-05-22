@@ -1,0 +1,39 @@
+Command Sent (SeqNo: 0, Retry: 0) SET TEMPERATURE - #0,10,32*870a  * 12-04-2025 12:40:57.892
+Raw Resp (SeqNo: 1) - #0,10,F000*1ae9
+ * 12-04-2025 12:40:58.171
+CRC-Response (SeqNo: 1) - 0,10,F000*1ae9 * 12-04-2025 12:40:58.171
+Command Sent (SeqNo: 0, Retry: 0) SET TEMPERATURE - #0,10,32*870a  * 12-04-2025 12:44:49.16
+Raw Resp (SeqNo: 1) - #0,10,F000*1ae9
+ * 12-04-2025 12:44:49.262
+CRC-Response (SeqNo: 1) - 0,10,F000*1ae9 * 12-04-2025 12:44:49.263
+User Aborted / Stopped the application forcefully  * 12-04-2025 12:46:43.687
+Command Sent (SeqNo: 1, Retry: 0) WATER VALVE - 1 CONTROL OFF - #1,13,1,0*bf2a  * 12-04-2025 12:46:46.760
+Raw Resp (SeqNo: 2) - #1,13,F000*b9e4
+ * 12-04-2025 12:46:46.939
+CRC-Response (SeqNo: 2) - 1,13,F000*b9e4 * 12-04-2025 12:46:46.940
+CRC-Response  - 1,13,F000*b9e4 * 12-04-2025 12:46:46.947
+Command Sent (SeqNo: 2, Retry: 0) WATER VALVE - 2 CONTROL OFF - #2,13,2,0*aa9a  * 12-04-2025 12:46:50.718
+Raw Resp (SeqNo: 3) - #2,13,F000*49f0
+ * 12-04-2025 12:46:50.831
+CRC-Response (SeqNo: 3) - 2,13,F000*49f0 * 12-04-2025 12:46:50.832
+CRC-Response  - 2,13,F000*49f0 * 12-04-2025 12:46:50.832
+Command Sent (SeqNo: 3, Retry: 0) WATER VALVE - 3 CONTROL OFF - #3,13,3,0*a60a  * 12-04-2025 12:46:55.267
+Raw Resp (SeqNo: 4) - #3,13,F000*d9fd
+ * 12-04-2025 12:46:55.376
+CRC-Response (SeqNo: 4) - 3,13,F000*d9fd * 12-04-2025 12:46:55.376
+CRC-Response  - 3,13,F000*d9fd * 12-04-2025 12:46:55.377
+Command Sent (SeqNo: 4, Retry: 0) WATER VALVE - 4 CONTROL OFF - #4,13,4,0*81fa  * 12-04-2025 12:46:55.835
+Raw Resp (SeqNo: 5) - #4,13,F000*e9db
+ * 12-04-2025 12:46:55.953
+CRC-Response (SeqNo: 5) - 4,13,F000*e9db * 12-04-2025 12:46:55.953
+CRC-Response  - 4,13,F000*e9db * 12-04-2025 12:46:55.954
+Command Sent (SeqNo: 5, Retry: 0) WATER VALVE - 5 CONTROL OFF - #5,13,5,0*8d6a  * 12-04-2025 12:46:56.387
+Raw Resp (SeqNo: 6) - #5,13,F000*79d6
+ * 12-04-2025 12:46:56.503
+CRC-Response (SeqNo: 6) - 5,13,F000*79d6 * 12-04-2025 12:46:56.503
+CRC-Response  - 5,13,F000*79d6 * 12-04-2025 12:46:56.504
+Command Sent (SeqNo: 6, Retry: 0) WATER VALVE - 6 CONTROL OFF - #6,13,6,0*98da  * 12-04-2025 12:46:56.939
+Raw Resp (SeqNo: 7) - #6,13,F000*89c2
+ * 12-04-2025 12:46:57.58
+CRC-Response (SeqNo: 7) - 6,13,F000*89c2 * 12-04-2025 12:46:57.59
+CRC-Response  - 6,13,F000*89c2 * 12-04-2025 12:46:57.59

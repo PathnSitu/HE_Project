@@ -1,0 +1,605 @@
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 13:10:42.706,February,Protorun Started,273
+DHPL,ps,25-02-2025,W1,Tap Water,--,0,25-02-2025 13:10:48.299,February,Water Valve : 1 is Off,273
+DHPL,ps,25-02-2025,W2,Tap Water,--,0,25-02-2025 13:10:49.061,February,Water Valve : 2 is Off,273
+DHPL,ps,25-02-2025,W3,Tap Water,--,0,25-02-2025 13:10:49.834,February,Water Valve : 3 is Off,273
+DHPL,ps,25-02-2025,W4,Tap Water,--,0,25-02-2025 13:10:50.603,February,Water Valve : 4 is Off,273
+DHPL,ps,25-02-2025,W5,Tap Water,--,0,25-02-2025 13:10:51.372,February,Water Valve : 5 is Off,273
+DHPL,ps,25-02-2025,W6,Tap Water,--,0,25-02-2025 13:10:52.130,February,Water Valve : 6 is Off,273
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 13:11:06.178,February,Home Reached,273
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 13:11:21.974,February,Home Reached,273
+DHPL,ps,25-02-2025,L1,-,-,0,25-02-2025 13:11:35.751,February,Liquid Level - 600,273
+DHPL,ps,25-02-2025,L2,-,-,0,25-02-2025 13:11:38.474,February,Liquid Level - 600,273
+DHPL,ps,25-02-2025,L3,-,-,0,25-02-2025 13:11:41.235,February,Liquid Level - 600,273
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 13:11:54.970,February,Home Reached,273
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 13:12:10.760,February,Home Reached,273
+DHPL,ps,25-02-2025,,,R1,0,25-02-2025 13:12:17.573,February,Test Started,273
+DHPL,ps,25-02-2025,L1,Loading,R1,0,25-02-2025 13:12:24.381,February,Picked From,273
+DHPL,ps,25-02-2025,J1,70%Alcohol,R1,0,25-02-2025 13:12:31.191,February,Placed In,273
+DHPL,ps,25-02-2025,J1,70%Alcohol,R1,0,25-02-2025 13:14:37.160,February,Picked From,273
+DHPL,ps,25-02-2025,J2,95% Alcohol,R1,0,25-02-2025 13:14:43.463,February,Placed In,273
+DHPL,ps,25-02-2025,,,R2,0,25-02-2025 13:15:46.217,February,Test Started,273
+DHPL,ps,25-02-2025,L2,Loading,R2,0,25-02-2025 13:15:53.040,February,Picked From,273
+DHPL,ps,25-02-2025,J1,70%Alcohol,R2,0,25-02-2025 13:15:59.833,February,Placed In,273
+DHPL,ps,25-02-2025,J2,95% Alcohol,R1,0,25-02-2025 13:16:49.957,February,Picked From,273
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R1,0,25-02-2025 13:16:56.266,February,Placed In,273
+DHPL,ps,25-02-2025,J1,70%Alcohol,R2,0,25-02-2025 13:18:06.283,February,Picked From,273
+DHPL,ps,25-02-2025,J2,95% Alcohol,R2,0,25-02-2025 13:18:12.570,February,Placed In,273
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R1,0,25-02-2025 13:19:02.725,February,Picked From,273
+DHPL,ps,25-02-2025,J4,100 % Alcohol,R1,0,25-02-2025 13:19:09.003,February,Placed In,273
+DHPL,ps,25-02-2025,,,R3,0,25-02-2025 13:19:14.735,February,Test Started,273
+DHPL,ps,25-02-2025,L3,Loading,R3,0,25-02-2025 13:19:21.524,February,Picked From,273
+DHPL,ps,25-02-2025,J1,70%Alcohol,R3,0,25-02-2025 13:19:28.316,February,Placed In,273
+DHPL,ps,25-02-2025,J2,95% Alcohol,R2,0,25-02-2025 13:20:19.019,February,Picked From,273
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R2,0,25-02-2025 13:20:25.334,February,Placed In,273
+DHPL,ps,25-02-2025,J4,100 % Alcohol,R1,0,25-02-2025 13:21:15.364,February,Picked From,273
+DHPL,ps,25-02-2025,J5,XYLENE-1,R1,0,25-02-2025 13:21:21.696,February,Placed In,273
+DHPL,ps,25-02-2025,J1,70%Alcohol,R3,0,25-02-2025 13:21:35.746,February,Picked From,273
+DHPL,ps,25-02-2025,J2,95% Alcohol,R3,0,25-02-2025 13:21:42.053,February,Placed In,273
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R2,0,25-02-2025 13:22:31.801,February,Picked From,273
+DHPL,ps,25-02-2025,J4,100 % Alcohol,R2,0,25-02-2025 13:22:38.101,February,Placed In,273
+DHPL,ps,25-02-2025,L1,-,-,0,25-02-2025 13:22:50.120,February,Liquid Level - 600,273
+DHPL,ps,25-02-2025,L2,-,-,0,25-02-2025 13:22:53.087,February,Liquid Level - 600,273
+DHPL,ps,25-02-2025,L3,-,-,0,25-02-2025 13:22:55.848,February,Liquid Level - 600,273
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 13:23:09.599,February,Home Reached,273
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 13:23:25.415,February,Home Reached,273
+DHPL,ps,25-02-2025,J5,XYLENE-1,R1,0,25-02-2025 13:23:48.911,February,Picked From,273
+DHPL,ps,25-02-2025,J6,XYLENE-2,R1,0,25-02-2025 13:23:56.237,February,Placed In,273
+DHPL,ps,25-02-2025,J4,100 % Alcohol,R2,0,25-02-2025 13:24:44.555,February,Picked From,273
+DHPL,ps,25-02-2025,J2,95% Alcohol,R3,0,25-02-2025 13:24:50.637,February,Picked From,273
+DHPL,ps,25-02-2025,J5,XYLENE-1,R2,0,25-02-2025 13:24:57.361,February,Placed In,273
+DHPL,ps,25-02-2025,J6,XYLENE-2,R1,0,25-02-2025 13:26:03.289,February,Picked From,273
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R3,0,25-02-2025 13:26:09.538,February,Placed In,273
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 14:22:02.962,February,Protorun Started,274
+DHPL,ps,25-02-2025,W1,Tap Water,--,0,25-02-2025 14:22:06.472,February,Water Valve : 1 is Off,274
+DHPL,ps,25-02-2025,W2,Tap Water,--,0,25-02-2025 14:22:07.238,February,Water Valve : 2 is Off,274
+DHPL,ps,25-02-2025,W3,Tap Water,--,0,25-02-2025 14:22:07.997,February,Water Valve : 3 is Off,274
+DHPL,ps,25-02-2025,W4,Tap Water,--,0,25-02-2025 14:22:08.789,February,Water Valve : 4 is Off,274
+DHPL,ps,25-02-2025,W5,Tap Water,--,0,25-02-2025 14:22:09.547,February,Water Valve : 5 is Off,274
+DHPL,ps,25-02-2025,W6,Tap Water,--,0,25-02-2025 14:22:10.322,February,Water Valve : 6 is Off,274
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 14:22:24.367,February,Home Reached,274
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 14:22:40.185,February,Home Reached,274
+DHPL,ps,25-02-2025,L1,-,-,0,25-02-2025 14:22:50.061,February,Liquid Level - 600,274
+DHPL,ps,25-02-2025,L2,-,-,0,25-02-2025 14:22:52.786,February,Liquid Level - 600,274
+DHPL,ps,25-02-2025,L3,-,-,0,25-02-2025 14:22:55.550,February,Liquid Level - 600,274
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 14:23:09.293,February,Home Reached,274
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 14:23:25.117,February,Home Reached,274
+DHPL,ps,25-02-2025,,,R1,0,25-02-2025 14:23:26.872,February,Test Started,274
+DHPL,ps,25-02-2025,L1,Loading,R1,0,25-02-2025 14:23:33.696,February,Picked From,274
+DHPL,ps,25-02-2025,J1,70%Alcohol,R1,0,25-02-2025 14:23:40.506,February,Placed In,274
+DHPL,ps,25-02-2025,J1,70%Alcohol,R1,0,25-02-2025 14:25:46.357,February,Picked From,274
+DHPL,ps,25-02-2025,J2,95% Alcohol,R1,0,25-02-2025 14:25:52.641,February,Placed In,274
+DHPL,ps,25-02-2025,,,R2,0,25-02-2025 14:26:55.268,February,Test Started,274
+DHPL,ps,25-02-2025,L2,Loading,R2,0,25-02-2025 14:27:02.384,February,Picked From,274
+DHPL,ps,25-02-2025,J1,70%Alcohol,R2,0,25-02-2025 14:27:09.190,February,Placed In,274
+DHPL,ps,25-02-2025,J2,95% Alcohol,R1,0,25-02-2025 14:27:58.942,February,Picked From,274
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R1,0,25-02-2025 14:28:05.247,February,Placed In,274
+DHPL,ps,25-02-2025,J1,70%Alcohol,R2,0,25-02-2025 14:29:15.532,February,Picked From,274
+DHPL,ps,25-02-2025,J2,95% Alcohol,R2,0,25-02-2025 14:29:21.837,February,Placed In,274
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R1,0,25-02-2025 14:30:11.551,February,Picked From,274
+DHPL,ps,25-02-2025,J4,100 % Alcohol,R1,0,25-02-2025 14:30:17.854,February,Placed In,274
+DHPL,ps,25-02-2025,,,R3,0,25-02-2025 14:30:23.966,February,Test Started,274
+DHPL,ps,25-02-2025,L3,Loading,R3,0,25-02-2025 14:30:30.758,February,Picked From,274
+DHPL,ps,25-02-2025,J1,70%Alcohol,R3,0,25-02-2025 14:30:37.555,February,Placed In,274
+DHPL,ps,25-02-2025,J2,95% Alcohol,R2,0,25-02-2025 14:31:28.207,February,Picked From,274
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R2,0,25-02-2025 14:31:34.491,February,Placed In,274
+DHPL,ps,25-02-2025,J4,100 % Alcohol,R1,0,25-02-2025 14:32:25.174,February,Picked From,274
+DHPL,ps,25-02-2025,J5,XYLENE-1,R1,0,25-02-2025 14:32:31.461,February,Placed In,274
+DHPL,ps,25-02-2025,J1,70%Alcohol,R3,0,25-02-2025 14:32:44.884,February,Picked From,274
+DHPL,ps,25-02-2025,J2,95% Alcohol,R3,0,25-02-2025 14:32:51.183,February,Placed In,274
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R2,0,25-02-2025 14:33:40.811,February,Picked From,274
+DHPL,ps,25-02-2025,J4,100 % Alcohol,R2,0,25-02-2025 14:33:47.119,February,Placed In,274
+DHPL,ps,25-02-2025,L1,-,-,0,25-02-2025 14:34:00.194,February,Liquid Level - 600,274
+DHPL,ps,25-02-2025,L2,-,-,0,25-02-2025 14:34:03.170,February,Liquid Level - 600,274
+DHPL,ps,25-02-2025,L3,-,-,0,25-02-2025 14:34:05.934,February,Liquid Level - 600,274
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 14:34:19.673,February,Home Reached,274
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 14:34:35.489,February,Home Reached,274
+DHPL,ps,25-02-2025,,,R4,0,25-02-2025 14:34:37.225,February,Test Started,274
+DHPL,ps,25-02-2025,J5,XYLENE-1,R1,0,25-02-2025 14:34:43.782,February,Picked From,274
+DHPL,ps,25-02-2025,J6,XYLENE-2,R1,0,25-02-2025 14:34:50.565,February,Placed In,274
+DHPL,ps,25-02-2025,J2,95% Alcohol,R3,0,25-02-2025 14:34:59.464,February,Picked From,274
+DHPL,ps,25-02-2025,L1,Loading,R4,0,25-02-2025 14:35:05.521,February,Picked From,274
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R3,0,25-02-2025 14:35:12.247,February,Placed In,274
+DHPL,ps,25-02-2025,J4,100 % Alcohol,R2,0,25-02-2025 14:35:54.003,February,Picked From,274
+DHPL,ps,25-02-2025,J5,XYLENE-1,R2,0,25-02-2025 14:36:00.294,February,Placed In,274
+DHPL,ps,25-02-2025,W1,Tap Water,--,0,25-02-2025 14:36:31.433,February,Water Valve : 1 is Off,274
+DHPL,ps,25-02-2025,W2,Tap Water,--,0,25-02-2025 14:36:32.196,February,Water Valve : 2 is Off,274
+DHPL,ps,25-02-2025,W3,Tap Water,--,0,25-02-2025 14:36:33.001,February,Water Valve : 3 is Off,274
+DHPL,ps,25-02-2025,W4,Tap Water,--,0,25-02-2025 14:36:33.786,February,Water Valve : 4 is Off,274
+DHPL,ps,25-02-2025,W5,Tap Water,--,0,25-02-2025 14:36:34.550,February,Water Valve : 5 is Off,274
+DHPL,ps,25-02-2025,W6,Tap Water,--,0,25-02-2025 14:36:35.336,February,Water Valve : 6 is Off,274
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 14:36:35.830,February,Protorun Stopped,274
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 14:39:08.037,February,Protorun Started,275
+DHPL,ps,25-02-2025,W1,Tap Water,--,0,25-02-2025 14:39:11.436,February,Water Valve : 1 is Off,275
+DHPL,ps,25-02-2025,W2,Tap Water,--,0,25-02-2025 14:39:12.205,February,Water Valve : 2 is Off,275
+DHPL,ps,25-02-2025,W3,Tap Water,--,0,25-02-2025 14:39:12.975,February,Water Valve : 3 is Off,275
+DHPL,ps,25-02-2025,W4,Tap Water,--,0,25-02-2025 14:39:13.731,February,Water Valve : 4 is Off,275
+DHPL,ps,25-02-2025,W5,Tap Water,--,0,25-02-2025 14:39:14.485,February,Water Valve : 5 is Off,275
+DHPL,ps,25-02-2025,W6,Tap Water,--,0,25-02-2025 14:39:15.248,February,Water Valve : 6 is Off,275
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 14:39:29.289,February,Home Reached,275
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 14:39:45.059,February,Home Reached,275
+DHPL,ps,25-02-2025,L1,-,-,0,25-02-2025 14:39:50.676,February,Liquid Level - 600,275
+DHPL,ps,25-02-2025,L2,-,-,0,25-02-2025 14:39:53.655,February,Liquid Level - 600,275
+DHPL,ps,25-02-2025,L3,-,-,0,25-02-2025 14:39:56.440,February,Liquid Level - 600,275
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 14:40:10.178,February,Home Reached,275
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 14:40:25.941,February,Home Reached,275
+DHPL,ps,25-02-2025,,XYLENE-2,R1,0,25-02-2025 14:40:27.692,February,Test Started,275
+DHPL,ps,25-02-2025,L1,Loading,R1,0,25-02-2025 14:40:34.059,February,Picked From,275
+DHPL,ps,25-02-2025,J1,70%Alcohol,R1,0,25-02-2025 14:40:40.833,February,Placed In,275
+DHPL,ps,25-02-2025,J1,70%Alcohol,R1,0,25-02-2025 14:42:46.648,February,Picked From,275
+DHPL,ps,25-02-2025,J2,95% Alcohol,R1,0,25-02-2025 14:42:52.954,February,Placed In,275
+DHPL,ps,25-02-2025,,XYLENE-1,R2,0,25-02-2025 14:43:55.599,February,Test Started,275
+DHPL,ps,25-02-2025,L2,Loading,R2,0,25-02-2025 14:44:02.436,February,Picked From,275
+DHPL,ps,25-02-2025,J1,70%Alcohol,R2,0,25-02-2025 14:44:09.230,February,Placed In,275
+DHPL,ps,25-02-2025,J2,95% Alcohol,R1,0,25-02-2025 14:44:59.368,February,Picked From,275
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R1,0,25-02-2025 14:45:05.671,February,Placed In,275
+DHPL,ps,25-02-2025,J1,70%Alcohol,R2,0,25-02-2025 14:46:17.031,February,Picked From,275
+DHPL,ps,25-02-2025,J2,95% Alcohol,R2,0,25-02-2025 14:46:23.337,February,Placed In,275
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R1,0,25-02-2025 14:47:11.995,February,Picked From,275
+DHPL,ps,25-02-2025,J4,100 % Alcohol,R1,0,25-02-2025 14:47:18.298,February,Placed In,275
+DHPL,ps,25-02-2025,,100 % Alcohol,R3,0,25-02-2025 14:47:24.965,February,Test Started,275
+DHPL,ps,25-02-2025,L3,Loading,R3,0,25-02-2025 14:47:31.756,February,Picked From,275
+DHPL,ps,25-02-2025,J1,70%Alcohol,R3,0,25-02-2025 14:47:38.582,February,Placed In,275
+DHPL,ps,25-02-2025,J2,95% Alcohol,R2,0,25-02-2025 14:48:29.741,February,Picked From,275
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R2,0,25-02-2025 14:48:36.022,February,Placed In,275
+DHPL,ps,25-02-2025,J4,100 % Alcohol,R1,0,25-02-2025 14:49:24.651,February,Picked From,275
+DHPL,ps,25-02-2025,J5,XYLENE-1,R1,0,25-02-2025 14:49:30.946,February,Placed In,275
+DHPL,ps,25-02-2025,J1,70%Alcohol,R3,0,25-02-2025 14:49:45.895,February,Picked From,275
+DHPL,ps,25-02-2025,J2,95% Alcohol,R3,0,25-02-2025 14:49:52.181,February,Placed In,275
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R2,0,25-02-2025 14:50:42.334,February,Picked From,275
+DHPL,ps,25-02-2025,J4,100 % Alcohol,R2,0,25-02-2025 14:50:48.630,February,Placed In,275
+DHPL,ps,25-02-2025,L1,-,-,0,25-02-2025 14:51:01.206,February,Liquid Level - 600,275
+DHPL,ps,25-02-2025,L2,-,-,0,25-02-2025 14:51:04.182,February,Liquid Level - 600,275
+DHPL,ps,25-02-2025,L3,-,-,0,25-02-2025 14:51:06.941,February,Liquid Level - 600,275
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 14:51:20.689,February,Home Reached,275
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 14:51:38.247,February,Home Reached,275
+DHPL,ps,25-02-2025,J5,XYLENE-1,R1,0,25-02-2025 14:51:47.682,February,Picked From,275
+DHPL,ps,25-02-2025,J6,XYLENE-2,R1,0,25-02-2025 14:51:53.987,February,Placed In,275
+DHPL,ps,25-02-2025,J2,95% Alcohol,R3,0,25-02-2025 14:52:10.487,February,Picked From,275
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R3,0,25-02-2025 14:52:16.780,February,Placed In,275
+DHPL,ps,25-02-2025,J4,100 % Alcohol,R2,0,25-02-2025 14:52:54.974,February,Picked From,275
+DHPL,ps,25-02-2025,J5,XYLENE-1,R2,0,25-02-2025 14:53:01.254,February,Placed In,275
+DHPL,ps,25-02-2025,J6,XYLENE-2,R1,0,25-02-2025 14:54:00.319,February,Picked From,275
+DHPL,ps,25-02-2025,J7,XYLENE-3,R1,0,25-02-2025 14:54:06.611,February,Placed In,275
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R3,0,25-02-2025 14:54:24.103,February,Picked From,275
+DHPL,ps,25-02-2025,J4,100 % Alcohol,R3,0,25-02-2025 14:54:30.416,February,Placed In,275
+DHPL,ps,25-02-2025,J5,XYLENE-1,R2,0,25-02-2025 14:55:07.605,February,Picked From,275
+DHPL,ps,25-02-2025,J6,XYLENE-2,R2,0,25-02-2025 14:55:13.904,February,Placed In,275
+DHPL,ps,25-02-2025,J7,XYLENE-3,R1,0,25-02-2025 14:56:12.915,February,Picked From,275
+DHPL,ps,25-02-2025,U1,Unloading,R1,0,25-02-2025 14:56:21.715,February,Placed In,275
+DHPL,ps,25-02-2025,U1,Unloading,R1,0,25-02-2025 14:56:22.725,February,Test Completed,275
+DHPL,ps,25-02-2025,J4,100 % Alcohol,R3,0,25-02-2025 14:56:51.806,February,Picked From,275
+DHPL,ps,25-02-2025,J5,XYLENE-1,R3,0,25-02-2025 14:56:58.103,February,Placed In,275
+DHPL,ps,25-02-2025,J6,XYLENE-2,R2,0,25-02-2025 14:57:20.210,February,Picked From,275
+DHPL,ps,25-02-2025,J7,XYLENE-3,R2,0,25-02-2025 14:57:26.510,February,Placed In,275
+DHPL,ps,25-02-2025,J5,XYLENE-1,R3,0,25-02-2025 14:59:16.449,February,Picked From,275
+DHPL,ps,25-02-2025,J6,XYLENE-2,R3,0,25-02-2025 14:59:22.742,February,Placed In,275
+DHPL,ps,25-02-2025,J7,XYLENE-3,R2,0,25-02-2025 14:59:33.789,February,Picked From,275
+DHPL,ps,25-02-2025,U2,Unloading,R2,0,25-02-2025 14:59:42.596,February,Placed In,275
+DHPL,ps,25-02-2025,U2,Unloading,R2,0,25-02-2025 14:59:43.594,February,Test Completed,275
+DHPL,ps,25-02-2025,J6,XYLENE-2,R3,0,25-02-2025 15:01:31.582,February,Picked From,275
+DHPL,ps,25-02-2025,J7,XYLENE-3,R3,0,25-02-2025 15:01:37.909,February,Placed In,275
+DHPL,ps,25-02-2025,J7,XYLENE-3,R3,0,25-02-2025 15:03:43.769,February,Picked From,275
+DHPL,ps,25-02-2025,U3,Unloading,R3,0,25-02-2025 15:03:52.066,February,Placed In,275
+DHPL,ps,25-02-2025,U3,Unloading,R3,0,25-02-2025 15:03:53.082,February,Test Completed,275
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 15:04:31.198,February,Protorun Started,276
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 15:05:04.897,February,Protorun Started,277
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 15:07:44.222,February,Protorun Started,278
+DHPL,ps,25-02-2025,W1,Tap Water,--,0,25-02-2025 15:07:47.716,February,Water Valve : 1 is Off,278
+DHPL,ps,25-02-2025,W2,Tap Water,--,0,25-02-2025 15:07:48.516,February,Water Valve : 2 is Off,278
+DHPL,ps,25-02-2025,W3,Tap Water,--,0,25-02-2025 15:07:49.290,February,Water Valve : 3 is Off,278
+DHPL,ps,25-02-2025,W4,Tap Water,--,0,25-02-2025 15:07:50.050,February,Water Valve : 4 is Off,278
+DHPL,ps,25-02-2025,W5,Tap Water,--,0,25-02-2025 15:07:50.836,February,Water Valve : 5 is Off,278
+DHPL,ps,25-02-2025,W6,Tap Water,--,0,25-02-2025 15:07:51.596,February,Water Valve : 6 is Off,278
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 15:08:05.631,February,Home Reached,278
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 15:08:21.426,February,Home Reached,278
+DHPL,ps,25-02-2025,L1,-,-,0,25-02-2025 15:08:29.935,February,Liquid Level - 600,278
+DHPL,ps,25-02-2025,L2,-,-,0,25-02-2025 15:08:32.541,February,Liquid Level - 600,278
+DHPL,ps,25-02-2025,L3,-,-,0,25-02-2025 15:08:35.312,February,Liquid Level - 600,278
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 15:08:49.062,February,Home Reached,278
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 15:09:04.836,February,Home Reached,278
+DHPL,ps,25-02-2025,,,R1,0,25-02-2025 15:09:06.573,February,Test Started,278
+DHPL,ps,25-02-2025,L1,Loading,R1,0,25-02-2025 15:09:13.404,February,Picked From,278
+DHPL,ps,25-02-2025,J1,70%Alcohol,R1,0,25-02-2025 15:09:20.211,February,Placed In,278
+DHPL,ps,25-02-2025,J1,70%Alcohol,R1,0,25-02-2025 15:11:26.632,February,Picked From,278
+DHPL,ps,25-02-2025,J2,95% Alcohol,R1,0,25-02-2025 15:11:32.914,February,Placed In,278
+DHPL,ps,25-02-2025,,,R2,0,25-02-2025 15:12:35.955,February,Test Started,278
+DHPL,ps,25-02-2025,L2,Loading,R2,0,25-02-2025 15:12:42.774,February,Picked From,278
+DHPL,ps,25-02-2025,J1,70%Alcohol,R2,0,25-02-2025 15:12:49.582,February,Placed In,278
+DHPL,ps,25-02-2025,J2,95% Alcohol,R1,0,25-02-2025 15:13:40.274,February,Picked From,278
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R1,0,25-02-2025 15:13:46.563,February,Placed In,278
+DHPL,ps,25-02-2025,J1,70%Alcohol,R2,0,25-02-2025 15:14:56.106,February,Picked From,278
+DHPL,ps,25-02-2025,J2,95% Alcohol,R2,0,25-02-2025 15:15:02.400,February,Placed In,278
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R1,0,25-02-2025 15:15:52.879,February,Picked From,278
+DHPL,ps,25-02-2025,J4,100 % Alcohol,R1,0,25-02-2025 15:15:59.169,February,Placed In,278
+DHPL,ps,25-02-2025,,,R3,0,25-02-2025 15:16:04.346,February,Test Started,278
+DHPL,ps,25-02-2025,L3,Loading,R3,0,25-02-2025 15:16:11.151,February,Picked From,278
+DHPL,ps,25-02-2025,J1,70%Alcohol,R3,0,25-02-2025 15:16:17.955,February,Placed In,278
+DHPL,ps,25-02-2025,J2,95% Alcohol,R2,0,25-02-2025 15:17:09.726,February,Picked From,278
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R2,0,25-02-2025 15:17:16.024,February,Placed In,278
+DHPL,ps,25-02-2025,J4,100 % Alcohol,R1,0,25-02-2025 15:18:05.555,February,Picked From,278
+DHPL,ps,25-02-2025,J5,XYLENE-1,R1,0,25-02-2025 15:18:11.847,February,Placed In,278
+DHPL,ps,25-02-2025,J1,70%Alcohol,R3,0,25-02-2025 15:18:25.232,February,Picked From,278
+DHPL,ps,25-02-2025,J2,95% Alcohol,R3,0,25-02-2025 15:18:31.530,February,Placed In,278
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R2,0,25-02-2025 15:19:23.349,February,Picked From,278
+DHPL,ps,25-02-2025,J4,100 % Alcohol,R2,0,25-02-2025 15:19:29.652,February,Placed In,278
+DHPL,ps,25-02-2025,L1,-,-,0,25-02-2025 15:19:40.558,February,Liquid Level - 600,278
+DHPL,ps,25-02-2025,L2,-,-,0,25-02-2025 15:19:43.543,February,Liquid Level - 600,278
+DHPL,ps,25-02-2025,L3,-,-,0,25-02-2025 15:19:46.320,February,Liquid Level - 600,278
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 15:20:00.072,February,Home Reached,278
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 15:20:15.879,February,Home Reached,278
+DHPL,ps,25-02-2025,,,R4,0,25-02-2025 15:20:17.615,February,Test Started,278
+DHPL,ps,25-02-2025,L1,Loading,R4,0,25-02-2025 15:20:24.445,February,Picked From,278
+DHPL,ps,25-02-2025,J1,70%Alcohol,R4,0,25-02-2025 15:20:31.259,February,Placed In,278
+DHPL,ps,25-02-2025,J2,95% Alcohol,R3,0,25-02-2025 15:20:37.829,February,Picked From,278
+DHPL,ps,25-02-2025,J5,XYLENE-1,R1,0,25-02-2025 15:20:43.950,February,Picked From,278
+DHPL,ps,25-02-2025,J6,XYLENE-2,R1,0,25-02-2025 15:20:50.757,February,Placed In,278
+DHPL,ps,25-02-2025,J4,100 % Alcohol,R2,0,25-02-2025 15:21:36.039,February,Picked From,278
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R3,0,25-02-2025 15:21:42.127,February,Placed In,278
+DHPL,ps,25-02-2025,J1,70%Alcohol,R4,0,25-02-2025 15:22:38.646,February,Picked From,278
+DHPL,ps,25-02-2025,J5,XYLENE-1,R2,0,25-02-2025 15:22:44.840,February,Placed In,278
+DHPL,ps,25-02-2025,J2,95% Alcohol,R4,0,25-02-2025 15:22:58.988,February,Placed In,278
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R3,0,25-02-2025 15:23:49.021,February,Picked From,278
+DHPL,ps,25-02-2025,J6,XYLENE-2,R1,0,25-02-2025 15:23:55.048,February,Picked From,278
+DHPL,ps,25-02-2025,J4,100 % Alcohol,R3,0,25-02-2025 15:24:01.798,February,Placed In,278
+DHPL,ps,25-02-2025,,,R5,0,25-02-2025 15:24:04.263,February,Test Started,278
+DHPL,ps,25-02-2025,J7,XYLENE-3,R1,0,25-02-2025 15:24:11.847,February,Placed In,278
+DHPL,ps,25-02-2025,L2,Loading,R5,0,25-02-2025 15:24:52.581,February,Picked From,278
+DHPL,ps,25-02-2025,J1,70%Alcohol,R5,0,25-02-2025 15:24:59.882,February,Placed In,278
+DHPL,ps,25-02-2025,J5,XYLENE-1,R2,0,25-02-2025 15:25:06.131,February,Picked From,278
+DHPL,ps,25-02-2025,J2,95% Alcohol,R4,0,25-02-2025 15:25:13.283,February,Picked From,278
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R4,0,25-02-2025 15:25:20.088,February,Placed In,278
+DHPL,ps,25-02-2025,J6,XYLENE-2,R2,0,25-02-2025 15:26:08.915,February,Placed In,278
+DHPL,ps,25-02-2025,J7,XYLENE-3,R1,0,25-02-2025 15:26:18.645,February,Picked From,278
+DHPL,ps,25-02-2025,U1,Unloading,R1,0,25-02-2025 15:26:27.441,February,Placed In,278
+DHPL,ps,25-02-2025,U1,Unloading,R1,0,25-02-2025 15:26:28.461,February,Test Completed,278
+DHPL,ps,25-02-2025,W1,Tap Water,--,0,25-02-2025 15:26:56.502,February,Water Valve : 1 is Off,278
+DHPL,ps,25-02-2025,W2,Tap Water,--,0,25-02-2025 15:26:57.289,February,Water Valve : 2 is Off,278
+DHPL,ps,25-02-2025,W3,Tap Water,--,0,25-02-2025 15:26:58.047,February,Water Valve : 3 is Off,278
+DHPL,ps,25-02-2025,W4,Tap Water,--,0,25-02-2025 15:26:58.818,February,Water Valve : 4 is Off,278
+DHPL,ps,25-02-2025,W5,Tap Water,--,0,25-02-2025 15:26:59.581,February,Water Valve : 5 is Off,278
+DHPL,ps,25-02-2025,W6,Tap Water,--,0,25-02-2025 15:27:00.355,February,Water Valve : 6 is Off,278
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 15:27:00.853,February,Protorun Stopped,278
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 15:34:16.539,February,Protorun Started,279
+DHPL,ps,25-02-2025,W1,Tap Water,--,0,25-02-2025 15:34:20.268,February,Water Valve : 1 is Off,279
+DHPL,ps,25-02-2025,W2,Tap Water,--,0,25-02-2025 15:34:21.102,February,Water Valve : 2 is Off,279
+DHPL,ps,25-02-2025,W3,Tap Water,--,0,25-02-2025 15:34:21.881,February,Water Valve : 3 is Off,279
+DHPL,ps,25-02-2025,W4,Tap Water,--,0,25-02-2025 15:34:22.653,February,Water Valve : 4 is Off,279
+DHPL,ps,25-02-2025,W5,Tap Water,--,0,25-02-2025 15:34:23.431,February,Water Valve : 5 is Off,279
+DHPL,ps,25-02-2025,W6,Tap Water,--,0,25-02-2025 15:34:24.188,February,Water Valve : 6 is Off,279
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 15:34:38.231,February,Home Reached,279
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 15:34:54.034,February,Home Reached,279
+DHPL,ps,25-02-2025,L1,-,-,0,25-02-2025 15:35:03.374,February,Liquid Level - 600,279
+DHPL,ps,25-02-2025,L2,-,-,0,25-02-2025 15:35:06.159,February,Liquid Level - 600,279
+DHPL,ps,25-02-2025,L3,-,-,0,25-02-2025 15:35:08.933,February,Liquid Level - 600,279
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 15:35:22.662,February,Home Reached,279
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 15:35:38.436,February,Home Reached,279
+DHPL,ps,25-02-2025,,,R1,0,25-02-2025 15:35:40.183,February,Test Started,279
+DHPL,ps,25-02-2025,L1,Loading,R1,0,25-02-2025 15:35:47.008,February,Picked From,279
+DHPL,ps,25-02-2025,J1,70%Alcohol,R1,0,25-02-2025 15:35:53.821,February,Placed In,279
+DHPL,ps,25-02-2025,J1,70%Alcohol,R1,0,25-02-2025 15:37:59.708,February,Picked From,279
+DHPL,ps,25-02-2025,J2,95% Alcohol,R1,0,25-02-2025 15:38:05.994,February,Placed In,279
+DHPL,ps,25-02-2025,,,R2,0,25-02-2025 15:39:08.600,February,Test Started,279
+DHPL,ps,25-02-2025,L2,Loading,R2,0,25-02-2025 15:39:15.443,February,Picked From,279
+DHPL,ps,25-02-2025,J1,70%Alcohol,R2,0,25-02-2025 15:39:22.242,February,Placed In,279
+DHPL,ps,25-02-2025,J2,95% Alcohol,R1,0,25-02-2025 15:40:11.945,February,Picked From,279
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R1,0,25-02-2025 15:40:18.269,February,Placed In,279
+DHPL,ps,25-02-2025,J1,70%Alcohol,R2,0,25-02-2025 15:41:29.037,February,Picked From,279
+DHPL,ps,25-02-2025,J2,95% Alcohol,R2,0,25-02-2025 15:41:35.372,February,Placed In,279
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R1,0,25-02-2025 15:42:25.568,February,Picked From,279
+DHPL,ps,25-02-2025,J4,100 % Alcohol,R1,0,25-02-2025 15:42:31.867,February,Placed In,279
+DHPL,ps,25-02-2025,,,R3,0,25-02-2025 15:42:37.984,February,Test Started,279
+DHPL,ps,25-02-2025,L3,Loading,R3,0,25-02-2025 15:42:44.785,February,Picked From,279
+DHPL,ps,25-02-2025,J1,70%Alcohol,R3,0,25-02-2025 15:42:51.608,February,Placed In,279
+DHPL,ps,25-02-2025,J2,95% Alcohol,R2,0,25-02-2025 15:43:42.720,February,Picked From,279
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R2,0,25-02-2025 15:43:49.014,February,Placed In,279
+DHPL,ps,25-02-2025,J4,100 % Alcohol,R1,0,25-02-2025 15:44:38.237,February,Picked From,279
+DHPL,ps,25-02-2025,J5,XYLENE-1,R1,0,25-02-2025 15:44:44.541,February,Placed In,279
+DHPL,ps,25-02-2025,J1,70%Alcohol,R3,0,25-02-2025 15:44:58.920,February,Picked From,279
+DHPL,ps,25-02-2025,J2,95% Alcohol,R3,0,25-02-2025 15:45:05.215,February,Placed In,279
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R2,0,25-02-2025 15:45:55.411,February,Picked From,279
+DHPL,ps,25-02-2025,J4,100 % Alcohol,R2,0,25-02-2025 15:46:01.719,February,Placed In,279
+DHPL,ps,25-02-2025,L1,-,-,0,25-02-2025 15:46:14.211,February,Liquid Level - 600,279
+DHPL,ps,25-02-2025,L2,-,-,0,25-02-2025 15:46:17.202,February,Liquid Level - 600,279
+DHPL,ps,25-02-2025,L3,-,-,0,25-02-2025 15:46:19.961,February,Liquid Level - 600,279
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 15:46:33.706,February,Home Reached,279
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 15:46:49.464,February,Home Reached,279
+DHPL,ps,25-02-2025,,,R4,0,25-02-2025 15:46:51.225,February,Test Started,279
+DHPL,ps,25-02-2025,L1,Loading,R4,0,25-02-2025 15:46:58.040,February,Picked From,279
+DHPL,ps,25-02-2025,J1,70%Alcohol,R4,0,25-02-2025 15:47:04.856,February,Placed In,279
+DHPL,ps,25-02-2025,J2,95% Alcohol,R3,0,25-02-2025 15:47:23.494,February,Picked From,279
+DHPL,ps,25-02-2025,J5,XYLENE-1,R1,0,25-02-2025 15:47:29.550,February,Picked From,279
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R3,0,25-02-2025 15:47:36.292,February,Placed In,279
+DHPL,ps,25-02-2025,J4,100 % Alcohol,R2,0,25-02-2025 15:48:08.103,February,Picked From,279
+DHPL,ps,25-02-2025,J6,XYLENE-2,R1,0,25-02-2025 15:48:14.366,February,Placed In,279
+DHPL,ps,25-02-2025,W1,Tap Water,--,0,25-02-2025 15:49:06.440,February,Water Valve : 1 is Off,279
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 15:53:19.486,February,Protorun Started,280
+DHPL,ps,25-02-2025,W1,Tap Water,--,0,25-02-2025 15:53:23.191,February,Water Valve : 1 is Off,280
+DHPL,ps,25-02-2025,W2,Tap Water,--,0,25-02-2025 15:53:23.938,February,Water Valve : 2 is Off,280
+DHPL,ps,25-02-2025,W3,Tap Water,--,0,25-02-2025 15:53:24.698,February,Water Valve : 3 is Off,280
+DHPL,ps,25-02-2025,W4,Tap Water,--,0,25-02-2025 15:53:25.459,February,Water Valve : 4 is Off,280
+DHPL,ps,25-02-2025,W5,Tap Water,--,0,25-02-2025 15:53:26.220,February,Water Valve : 5 is Off,280
+DHPL,ps,25-02-2025,W6,Tap Water,--,0,25-02-2025 15:53:26.993,February,Water Valve : 6 is Off,280
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 15:53:41.029,February,Home Reached,280
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 15:53:56.806,February,Home Reached,280
+DHPL,ps,25-02-2025,L1,-,-,0,25-02-2025 15:54:02.440,February,Liquid Level - 600,280
+DHPL,ps,25-02-2025,L2,-,-,0,25-02-2025 15:54:05.410,February,Liquid Level - 600,280
+DHPL,ps,25-02-2025,L3,-,-,0,25-02-2025 15:54:08.157,February,Liquid Level - 600,280
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 15:54:21.913,February,Home Reached,280
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 15:54:37.687,February,Home Reached,280
+DHPL,ps,25-02-2025,,,R1,0,25-02-2025 15:54:39.589,February,Test Started,280
+DHPL,ps,25-02-2025,L1,Loading,R1,0,25-02-2025 15:54:46.398,February,Picked From,280
+DHPL,ps,25-02-2025,J1,70%Alcohol,R1,0,25-02-2025 15:54:53.210,February,Placed In,280
+DHPL,ps,25-02-2025,J1,70%Alcohol,R1,0,25-02-2025 15:57:00.037,February,Picked From,280
+DHPL,ps,25-02-2025,J2,95% Alcohol,R1,0,25-02-2025 15:57:06.355,February,Placed In,280
+DHPL,ps,25-02-2025,,,R2,0,25-02-2025 15:58:08.953,February,Test Started,280
+DHPL,ps,25-02-2025,L2,Loading,R2,0,25-02-2025 15:58:15.757,February,Picked From,280
+DHPL,ps,25-02-2025,J1,70%Alcohol,R2,0,25-02-2025 15:58:22.560,February,Placed In,280
+DHPL,ps,25-02-2025,J2,95% Alcohol,R1,0,25-02-2025 15:59:12.751,February,Picked From,280
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R1,0,25-02-2025 15:59:19.034,February,Placed In,280
+DHPL,ps,25-02-2025,J1,70%Alcohol,R2,0,25-02-2025 16:00:28.956,February,Picked From,280
+DHPL,ps,25-02-2025,J2,95% Alcohol,R2,0,25-02-2025 16:00:35.241,February,Placed In,280
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R1,0,25-02-2025 16:01:25.352,February,Picked From,280
+DHPL,ps,25-02-2025,J4,100 % Alcohol,R1,0,25-02-2025 16:01:31.650,February,Placed In,280
+DHPL,ps,25-02-2025,,,R3,0,25-02-2025 16:01:37.337,February,Test Started,280
+DHPL,ps,25-02-2025,L3,Loading,R3,0,25-02-2025 16:01:44.138,February,Picked From,280
+DHPL,ps,25-02-2025,J1,70%Alcohol,R3,0,25-02-2025 16:01:50.924,February,Placed In,280
+DHPL,ps,25-02-2025,J2,95% Alcohol,R2,0,25-02-2025 16:02:41.589,February,Picked From,280
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R2,0,25-02-2025 16:02:47.888,February,Placed In,280
+DHPL,ps,25-02-2025,J4,100 % Alcohol,R1,0,25-02-2025 16:03:38.039,February,Picked From,280
+DHPL,ps,25-02-2025,J5,XYLENE-1,R1,0,25-02-2025 16:03:44.331,February,Placed In,280
+DHPL,ps,25-02-2025,J1,70%Alcohol,R3,0,25-02-2025 16:03:58.206,February,Picked From,280
+DHPL,ps,25-02-2025,J2,95% Alcohol,R3,0,25-02-2025 16:04:04.510,February,Placed In,280
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R2,0,25-02-2025 16:04:54.227,February,Picked From,280
+DHPL,ps,25-02-2025,J4,100 % Alcohol,R2,0,25-02-2025 16:05:00.524,February,Placed In,280
+DHPL,ps,25-02-2025,L1,-,-,0,25-02-2025 16:05:12.546,February,Liquid Level - 600,280
+DHPL,ps,25-02-2025,L2,-,-,0,25-02-2025 16:05:15.531,February,Liquid Level - 600,280
+DHPL,ps,25-02-2025,L3,-,-,0,25-02-2025 16:05:18.307,February,Liquid Level - 600,280
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 16:05:32.030,February,Home Reached,280
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 16:05:47.844,February,Home Reached,280
+DHPL,ps,25-02-2025,,,R4,0,25-02-2025 16:05:49.605,February,Test Started,280
+DHPL,ps,25-02-2025,L1,Loading,R4,0,25-02-2025 16:05:56.413,February,Picked From,280
+DHPL,ps,25-02-2025,J1,70%Alcohol,R4,0,25-02-2025 16:06:03.210,February,Placed In,280
+DHPL,ps,25-02-2025,J5,XYLENE-1,R1,0,25-02-2025 16:06:11.427,February,Picked From,280
+DHPL,ps,25-02-2025,J6,XYLENE-2,R1,0,25-02-2025 16:06:18.717,February,Placed In,280
+DHPL,ps,25-02-2025,J4,100 % Alcohol,R2,0,25-02-2025 16:07:07.984,February,Picked From,280
+DHPL,ps,25-02-2025,J5,XYLENE-1,R2,0,25-02-2025 16:07:14.269,February,Placed In,280
+DHPL,ps,25-02-2025,J1,70%Alcohol,R4,0,25-02-2025 16:08:10.566,February,Picked From,280
+DHPL,ps,25-02-2025,J2,95% Alcohol,R3,0,25-02-2025 16:08:16.798,February,Picked From,280
+DHPL,ps,25-02-2025,J2,95% Alcohol,R4,0,25-02-2025 16:08:22.873,February,Placed In,280
+DHPL,ps,25-02-2025,W1,Tap Water,--,0,25-02-2025 16:09:04.141,February,Water Valve : 1 is Off,280
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 17:20:18.260,February,Protorun Started,281
+DHPL,ps,25-02-2025,W1,Tap Water,--,0,25-02-2025 17:20:21.839,February,Water Valve : 1 is Off,281
+DHPL,ps,25-02-2025,W2,Tap Water,--,0,25-02-2025 17:20:22.611,February,Water Valve : 2 is Off,281
+DHPL,ps,25-02-2025,W3,Tap Water,--,0,25-02-2025 17:20:23.377,February,Water Valve : 3 is Off,281
+DHPL,ps,25-02-2025,W4,Tap Water,--,0,25-02-2025 17:20:24.146,February,Water Valve : 4 is Off,281
+DHPL,ps,25-02-2025,W5,Tap Water,--,0,25-02-2025 17:20:24.918,February,Water Valve : 5 is Off,281
+DHPL,ps,25-02-2025,W6,Tap Water,--,0,25-02-2025 17:20:25.678,February,Water Valve : 6 is Off,281
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 17:20:39.725,February,Home Reached,281
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 17:20:55.532,February,Home Reached,281
+DHPL,ps,25-02-2025,L1,-,-,0,25-02-2025 17:21:01.145,February,Liquid Level - 600,281
+DHPL,ps,25-02-2025,L2,-,-,0,25-02-2025 17:21:04.113,February,Liquid Level - 600,281
+DHPL,ps,25-02-2025,L3,-,-,0,25-02-2025 17:21:06.881,February,Liquid Level - 600,281
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 17:21:20.626,February,Home Reached,281
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 17:21:36.402,February,Home Reached,281
+DHPL,ps,25-02-2025,,,R1,0,25-02-2025 17:21:38.186,February,Test Started,281
+DHPL,ps,25-02-2025,L1,Loading,R1,0,25-02-2025 17:21:45.018,February,Picked From,281
+DHPL,ps,25-02-2025,J1,70%Alcohol,R1,0,25-02-2025 17:21:51.818,February,Placed In,281
+DHPL,ps,25-02-2025,J1,70%Alcohol,R1,0,25-02-2025 17:23:57.723,February,Picked From,281
+DHPL,ps,25-02-2025,J2,95% Alcohol,R1,0,25-02-2025 17:24:04.029,February,Placed In,281
+DHPL,ps,25-02-2025,,,R2,0,25-02-2025 17:25:06.585,February,Test Started,281
+DHPL,ps,25-02-2025,L2,Loading,R2,0,25-02-2025 17:25:13.497,February,Picked From,281
+DHPL,ps,25-02-2025,J1,70%Alcohol,R2,0,25-02-2025 17:25:20.290,February,Placed In,281
+DHPL,ps,25-02-2025,J1,70%Alcohol,R2,0,25-02-2025 17:27:27.114,February,Picked From,281
+DHPL,ps,25-02-2025,J2,95% Alcohol,R2,0,25-02-2025 17:27:33.415,February,Placed In,281
+DHPL,ps,25-02-2025,,,R3,0,25-02-2025 17:28:36.030,February,Test Started,281
+DHPL,ps,25-02-2025,L3,Loading,R3,0,25-02-2025 17:28:42.847,February,Picked From,281
+DHPL,ps,25-02-2025,J1,70%Alcohol,R3,0,25-02-2025 17:28:49.660,February,Placed In,281
+DHPL,ps,25-02-2025,J2,95% Alcohol,R1,0,25-02-2025 17:30:02.395,February,Picked From,281
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R1,0,25-02-2025 17:30:08.677,February,Placed In,281
+DHPL,ps,25-02-2025,J1,70%Alcohol,R3,0,25-02-2025 17:32:02.056,February,Picked From,281
+DHPL,ps,25-02-2025,J2,95% Alcohol,R3,0,25-02-2025 17:32:08.357,February,Placed In,281
+DHPL,ps,25-02-2025,W1,Tap Water,--,0,25-02-2025 17:32:37.543,February,Water Valve : 1 is Off,281
+DHPL,ps,25-02-2025,W2,Tap Water,--,0,25-02-2025 17:32:38.300,February,Water Valve : 2 is Off,281
+DHPL,ps,25-02-2025,W3,Tap Water,--,0,25-02-2025 17:32:39.063,February,Water Valve : 3 is Off,281
+DHPL,ps,25-02-2025,W4,Tap Water,--,0,25-02-2025 17:32:39.839,February,Water Valve : 4 is Off,281
+DHPL,ps,25-02-2025,W5,Tap Water,--,0,25-02-2025 17:32:40.596,February,Water Valve : 5 is Off,281
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 17:41:43.442,February,Protorun Started,282
+DHPL,ps,25-02-2025,W1,Tap Water,--,0,25-02-2025 17:41:47.077,February,Water Valve : 1 is Off,282
+DHPL,ps,25-02-2025,W2,Tap Water,--,0,25-02-2025 17:41:47.846,February,Water Valve : 2 is Off,282
+DHPL,ps,25-02-2025,W3,Tap Water,--,0,25-02-2025 17:41:48.619,February,Water Valve : 3 is Off,282
+DHPL,ps,25-02-2025,W4,Tap Water,--,0,25-02-2025 17:41:49.379,February,Water Valve : 4 is Off,282
+DHPL,ps,25-02-2025,W5,Tap Water,--,0,25-02-2025 17:41:50.146,February,Water Valve : 5 is Off,282
+DHPL,ps,25-02-2025,W6,Tap Water,--,0,25-02-2025 17:41:50.908,February,Water Valve : 6 is Off,282
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 17:42:04.947,February,Home Reached,282
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 17:42:20.727,February,Home Reached,282
+DHPL,ps,25-02-2025,L1,-,-,0,25-02-2025 17:42:26.367,February,Liquid Level - 600,282
+DHPL,ps,25-02-2025,L2,-,-,0,25-02-2025 17:42:29.333,February,Liquid Level - 600,282
+DHPL,ps,25-02-2025,L3,-,-,0,25-02-2025 17:42:32.116,February,Liquid Level - 600,282
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 17:42:45.864,February,Home Reached,282
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 17:43:01.645,February,Home Reached,282
+DHPL,ps,25-02-2025,,,R1,0,25-02-2025 17:43:03.410,February,Test Started,282
+DHPL,ps,25-02-2025,L1,Loading,R1,0,25-02-2025 17:43:10.263,February,Picked From,282
+DHPL,ps,25-02-2025,J1,70%Alcohol,R1,0,25-02-2025 17:43:17.072,February,Placed In,282
+DHPL,ps,25-02-2025,J1,70%Alcohol,R1,0,25-02-2025 17:45:23.872,February,Picked From,282
+DHPL,ps,25-02-2025,J2,95% Alcohol,R1,0,25-02-2025 17:45:30.158,February,Placed In,282
+DHPL,ps,25-02-2025,,,R2,0,25-02-2025 17:46:32.818,February,Test Started,282
+DHPL,ps,25-02-2025,L2,Loading,R2,0,25-02-2025 17:46:39.676,February,Picked From,282
+DHPL,ps,25-02-2025,J1,70%Alcohol,R2,0,25-02-2025 17:46:46.497,February,Placed In,282
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 17:50:41.703,February,Protorun Started,283
+DHPL,ps,25-02-2025,W1,Tap Water,--,0,25-02-2025 17:50:45.368,February,Water Valve : 1 is Off,283
+DHPL,ps,25-02-2025,W2,Tap Water,--,0,25-02-2025 17:50:46.127,February,Water Valve : 2 is Off,283
+DHPL,ps,25-02-2025,W3,Tap Water,--,0,25-02-2025 17:50:46.899,February,Water Valve : 3 is Off,283
+DHPL,ps,25-02-2025,W4,Tap Water,--,0,25-02-2025 17:50:47.657,February,Water Valve : 4 is Off,283
+DHPL,ps,25-02-2025,W5,Tap Water,--,0,25-02-2025 17:50:48.426,February,Water Valve : 5 is Off,283
+DHPL,ps,25-02-2025,W6,Tap Water,--,0,25-02-2025 17:50:49.184,February,Water Valve : 6 is Off,283
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 17:51:03.225,February,Home Reached,283
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 17:51:18.993,February,Home Reached,283
+DHPL,ps,25-02-2025,L1,-,-,0,25-02-2025 17:51:24.663,February,Liquid Level - 600,283
+DHPL,ps,25-02-2025,L2,-,-,0,25-02-2025 17:51:27.613,February,Liquid Level - 600,283
+DHPL,ps,25-02-2025,L3,-,-,0,25-02-2025 17:51:30.389,February,Liquid Level - 600,283
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 17:51:44.128,February,Home Reached,283
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 17:51:59.905,February,Home Reached,283
+DHPL,ps,25-02-2025,,,R1,0,25-02-2025 17:52:01.659,February,Test Started,283
+DHPL,ps,25-02-2025,L1,Loading,R1,0,25-02-2025 17:52:08.498,February,Picked From,283
+DHPL,ps,25-02-2025,J1,70%Alcohol,R1,0,25-02-2025 17:52:15.299,February,Placed In,283
+DHPL,ps,25-02-2025,J1,70%Alcohol,R1,0,25-02-2025 17:54:21.131,February,Picked From,283
+DHPL,ps,25-02-2025,J2,95% Alcohol,R1,0,25-02-2025 17:54:27.434,February,Placed In,283
+DHPL,ps,25-02-2025,,,R2,0,25-02-2025 17:55:30.071,February,Test Started,283
+DHPL,ps,25-02-2025,L2,Loading,R2,0,25-02-2025 17:55:36.945,February,Picked From,283
+DHPL,ps,25-02-2025,J1,70%Alcohol,R2,0,25-02-2025 17:55:43.848,February,Placed In,283
+DHPL,ps,25-02-2025,J2,95% Alcohol,R1,0,25-02-2025 17:56:33.783,February,Picked From,283
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R1,0,25-02-2025 17:56:40.088,February,Placed In,283
+DHPL,ps,25-02-2025,J1,70%Alcohol,R2,0,25-02-2025 17:57:50.665,February,Picked From,283
+DHPL,ps,25-02-2025,J2,95% Alcohol,R2,0,25-02-2025 17:57:56.963,February,Placed In,283
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R1,0,25-02-2025 17:58:46.428,February,Picked From,283
+DHPL,ps,25-02-2025,J4,100 % Alcohol,R1,0,25-02-2025 17:58:52.737,February,Placed In,283
+DHPL,ps,25-02-2025,,,R3,0,25-02-2025 17:58:58.630,February,Test Started,283
+DHPL,ps,25-02-2025,L3,Loading,R3,0,25-02-2025 17:59:05.431,February,Picked From,283
+DHPL,ps,25-02-2025,J1,70%Alcohol,R3,0,25-02-2025 17:59:12.251,February,Placed In,283
+DHPL,ps,25-02-2025,J2,95% Alcohol,R2,0,25-02-2025 18:00:03.348,February,Picked From,283
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R2,0,25-02-2025 18:00:09.653,February,Placed In,283
+DHPL,ps,25-02-2025,J4,100 % Alcohol,R1,0,25-02-2025 18:00:59.085,February,Picked From,283
+DHPL,ps,25-02-2025,J5,XYLENE-1,R1,0,25-02-2025 18:01:05.384,February,Placed In,283
+DHPL,ps,25-02-2025,J1,70%Alcohol,R3,0,25-02-2025 18:01:20.532,February,Picked From,283
+DHPL,ps,25-02-2025,J2,95% Alcohol,R3,0,25-02-2025 18:01:26.849,February,Placed In,283
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R2,0,25-02-2025 18:02:16.051,February,Picked From,283
+DHPL,ps,25-02-2025,J4,100 % Alcohol,R2,0,25-02-2025 18:02:22.351,February,Placed In,283
+DHPL,ps,25-02-2025,L1,-,-,0,25-02-2025 18:02:34.876,February,Liquid Level - 600,283
+DHPL,ps,25-02-2025,L2,-,-,0,25-02-2025 18:02:37.936,February,Liquid Level - 600,283
+DHPL,ps,25-02-2025,L3,-,-,0,25-02-2025 18:02:40.608,February,Liquid Level - 600,283
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 18:02:54.367,February,Home Reached,283
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 18:03:10.163,February,Home Reached,283
+DHPL,ps,25-02-2025,,,R4,0,25-02-2025 18:03:11.930,February,Test Started,283
+DHPL,ps,25-02-2025,L1,Loading,R4,0,25-02-2025 18:03:18.740,February,Picked From,283
+DHPL,ps,25-02-2025,J1,70%Alcohol,R4,0,25-02-2025 18:03:25.543,February,Placed In,283
+DHPL,ps,25-02-2025,J5,XYLENE-1,R1,0,25-02-2025 18:03:43.763,February,Picked From,283
+DHPL,ps,25-02-2025,J6,XYLENE-2,R1,0,25-02-2025 18:03:51.063,February,Placed In,283
+DHPL,ps,25-02-2025,J4,100 % Alcohol,R2,0,25-02-2025 18:04:29.682,February,Picked From,283
+DHPL,ps,25-02-2025,J2,95% Alcohol,R3,0,25-02-2025 18:04:35.630,February,Picked From,283
+DHPL,ps,25-02-2025,J5,XYLENE-1,R2,0,25-02-2025 18:04:41.982,February,Placed In,283
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R3,0,25-02-2025 18:05:31.910,February,Placed In,283
+DHPL,ps,25-02-2025,J6,XYLENE-2,R1,0,25-02-2025 18:05:58.974,February,Picked From,283
+DHPL,ps,25-02-2025,J1,70%Alcohol,R4,0,25-02-2025 18:06:05.011,February,Picked From,283
+DHPL,ps,25-02-2025,J7,XYLENE-3,R1,0,25-02-2025 18:06:12.768,February,Placed In,283
+DHPL,ps,25-02-2025,J2,95% Alcohol,R4,0,25-02-2025 18:06:48.819,February,Placed In,283
+DHPL,ps,25-02-2025,J5,XYLENE-1,R2,0,25-02-2025 18:07:38.382,February,Picked From,283
+DHPL,ps,25-02-2025,J6,XYLENE-2,R2,0,25-02-2025 18:07:45.186,February,Placed In,283
+DHPL,ps,25-02-2025,,,R5,0,25-02-2025 18:07:53.196,February,Test Started,283
+DHPL,ps,25-02-2025,L2,Loading,R5,0,25-02-2025 18:08:00.495,February,Picked From,283
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R3,0,25-02-2025 18:08:07.242,February,Picked From,283
+DHPL,ps,25-02-2025,J4,100 % Alcohol,R3,0,25-02-2025 18:08:14.027,February,Placed In,283
+DHPL,ps,25-02-2025,J1,70%Alcohol,R5,0,25-02-2025 18:08:55.323,February,Placed In,283
+DHPL,ps,25-02-2025,,,R6,0,25-02-2025 18:12:24.027,February,Test Started,283
+DHPL,ps,25-02-2025,J7,XYLENE-3,R1,0,25-02-2025 18:12:31.117,February,Picked From,283
+DHPL,ps,25-02-2025,J2,95% Alcohol,R4,0,25-02-2025 18:12:37.668,February,Picked From,283
+DHPL,ps,25-02-2025,J1,70%Alcohol,R5,0,25-02-2025 18:12:44.409,February,Picked From,283
+DHPL,ps,25-02-2025,L3,Loading,R6,0,25-02-2025 18:12:50.316,February,Picked From,283
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R4,0,25-02-2025 18:12:56.465,February,Placed In,283
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 18:23:06.657,February,Protorun Started,284
+DHPL,ps,25-02-2025,W1,Tap Water,--,0,25-02-2025 18:23:10.325,February,Water Valve : 1 is Off,284
+DHPL,ps,25-02-2025,W2,Tap Water,--,0,25-02-2025 18:23:11.085,February,Water Valve : 2 is Off,284
+DHPL,ps,25-02-2025,W3,Tap Water,--,0,25-02-2025 18:23:11.840,February,Water Valve : 3 is Off,284
+DHPL,ps,25-02-2025,W4,Tap Water,--,0,25-02-2025 18:23:12.783,February,Water Valve : 4 is Off,284
+DHPL,ps,25-02-2025,W5,Tap Water,--,0,25-02-2025 18:23:13.551,February,Water Valve : 5 is Off,284
+DHPL,ps,25-02-2025,W6,Tap Water,--,0,25-02-2025 18:23:14.321,February,Water Valve : 6 is Off,284
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 18:23:28.349,February,Home Reached,284
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 18:23:44.136,February,Home Reached,284
+DHPL,ps,25-02-2025,L1,-,-,0,25-02-2025 18:23:49.746,February,Liquid Level - 600,284
+DHPL,ps,25-02-2025,L2,-,-,0,25-02-2025 18:23:52.714,February,Liquid Level - 600,284
+DHPL,ps,25-02-2025,L3,-,-,0,25-02-2025 18:23:55.479,February,Liquid Level - 600,284
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 18:24:09.207,February,Home Reached,284
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 18:24:24.999,February,Home Reached,284
+DHPL,ps,25-02-2025,,,R1,0,25-02-2025 18:24:26.874,February,Test Started,284
+DHPL,ps,25-02-2025,L1,Loading,R1,0,25-02-2025 18:24:33.698,February,Picked From,284
+DHPL,ps,25-02-2025,J1,70%Alcohol,R1,0,25-02-2025 18:24:40.514,February,Placed In,284
+DHPL,ps,25-02-2025,J1,70%Alcohol,R1,0,25-02-2025 18:26:47.338,February,Picked From,284
+DHPL,ps,25-02-2025,J2,95% Alcohol,R1,0,25-02-2025 18:26:53.640,February,Placed In,284
+DHPL,ps,25-02-2025,,,R2,0,25-02-2025 18:27:55.252,February,Test Started,284
+DHPL,ps,25-02-2025,L2,Loading,R2,0,25-02-2025 18:28:02.067,February,Picked From,284
+DHPL,ps,25-02-2025,J1,70%Alcohol,R2,0,25-02-2025 18:28:08.862,February,Placed In,284
+DHPL,ps,25-02-2025,J2,95% Alcohol,R1,0,25-02-2025 18:29:00.036,February,Picked From,284
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R1,0,25-02-2025 18:29:06.344,February,Placed In,284
+DHPL,ps,25-02-2025,J1,70%Alcohol,R2,0,25-02-2025 18:30:15.210,February,Picked From,284
+DHPL,ps,25-02-2025,J2,95% Alcohol,R2,0,25-02-2025 18:30:21.504,February,Placed In,284
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R1,0,25-02-2025 18:31:12.450,February,Picked From,284
+DHPL,ps,25-02-2025,J4,100 % Alcohol,R1,0,25-02-2025 18:31:18.750,February,Placed In,284
+DHPL,ps,25-02-2025,,,R3,0,25-02-2025 18:31:23.636,February,Test Started,284
+DHPL,ps,25-02-2025,L3,Loading,R3,0,25-02-2025 18:31:30.434,February,Picked From,284
+DHPL,ps,25-02-2025,J1,70%Alcohol,R3,0,25-02-2025 18:31:37.220,February,Placed In,284
+DHPL,ps,25-02-2025,J2,95% Alcohol,R2,0,25-02-2025 18:32:27.819,February,Picked From,284
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R2,0,25-02-2025 18:32:34.101,February,Placed In,284
+DHPL,ps,25-02-2025,J4,100 % Alcohol,R1,0,25-02-2025 18:33:24.816,February,Picked From,284
+DHPL,ps,25-02-2025,J5,XYLENE-1,R1,0,25-02-2025 18:33:31.118,February,Placed In,284
+DHPL,ps,25-02-2025,J1,70%Alcohol,R3,0,25-02-2025 18:33:44.546,February,Picked From,284
+DHPL,ps,25-02-2025,J2,95% Alcohol,R3,0,25-02-2025 18:33:50.834,February,Placed In,284
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R2,0,25-02-2025 18:34:40.421,February,Picked From,284
+DHPL,ps,25-02-2025,J4,100 % Alcohol,R2,0,25-02-2025 18:34:46.711,February,Placed In,284
+DHPL,ps,25-02-2025,L1,-,-,0,25-02-2025 18:34:58.840,February,Liquid Level - 600,284
+DHPL,ps,25-02-2025,L2,-,-,0,25-02-2025 18:35:01.809,February,Liquid Level - 600,284
+DHPL,ps,25-02-2025,L3,-,-,0,25-02-2025 18:35:04.580,February,Liquid Level - 600,284
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 18:35:18.311,February,Home Reached,284
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 18:35:34.109,February,Home Reached,284
+DHPL,ps,25-02-2025,,,R4,0,25-02-2025 18:35:35.844,February,Test Started,284
+DHPL,ps,25-02-2025,L1,Loading,R4,0,25-02-2025 18:35:42.657,February,Picked From,284
+DHPL,ps,25-02-2025,J1,70%Alcohol,R4,0,25-02-2025 18:35:49.456,February,Placed In,284
+DHPL,ps,25-02-2025,J2,95% Alcohol,R3,0,25-02-2025 18:36:08.137,February,Picked From,284
+DHPL,ps,25-02-2025,J5,XYLENE-1,R1,0,25-02-2025 18:36:14.187,February,Picked From,284
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R3,0,25-02-2025 18:36:20.933,February,Placed In,284
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 18:39:48.302,February,Protorun Started,285
+DHPL,ps,25-02-2025,W1,Tap Water,--,0,25-02-2025 18:39:51.961,February,Water Valve : 1 is Off,285
+DHPL,ps,25-02-2025,W2,Tap Water,--,0,25-02-2025 18:39:52.743,February,Water Valve : 2 is Off,285
+DHPL,ps,25-02-2025,W3,Tap Water,--,0,25-02-2025 18:39:53.499,February,Water Valve : 3 is Off,285
+DHPL,ps,25-02-2025,W4,Tap Water,--,0,25-02-2025 18:39:54.271,February,Water Valve : 4 is Off,285
+DHPL,ps,25-02-2025,W5,Tap Water,--,0,25-02-2025 18:39:55.028,February,Water Valve : 5 is Off,285
+DHPL,ps,25-02-2025,W6,Tap Water,--,0,25-02-2025 18:39:55.787,February,Water Valve : 6 is Off,285
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 18:40:09.813,February,Home Reached,285
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 18:40:25.660,February,Home Reached,285
+DHPL,ps,25-02-2025,L1,-,-,0,25-02-2025 18:40:31.276,February,Liquid Level - 600,285
+DHPL,ps,25-02-2025,L2,-,-,0,25-02-2025 18:40:34.268,February,Liquid Level - 600,285
+DHPL,ps,25-02-2025,L3,-,-,0,25-02-2025 18:40:37.030,February,Liquid Level - 600,285
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 18:40:50.763,February,Home Reached,285
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 18:41:06.553,February,Home Reached,285
+DHPL,ps,25-02-2025,,,R1,0,25-02-2025 18:41:08.327,February,Test Started,285
+DHPL,ps,25-02-2025,L1,Loading,R1,0,25-02-2025 18:41:15.148,February,Picked From,285
+DHPL,ps,25-02-2025,J1,70%Alcohol,R1,0,25-02-2025 18:41:21.978,February,Placed In,285
+DHPL,ps,25-02-2025,J1,70%Alcohol,R1,0,25-02-2025 18:43:27.412,February,Picked From,285
+DHPL,ps,25-02-2025,J2,95% Alcohol,R1,0,25-02-2025 18:43:33.692,February,Placed In,285
+DHPL,ps,25-02-2025,,,R2,0,25-02-2025 18:44:36.735,February,Test Started,285
+DHPL,ps,25-02-2025,L2,Loading,R2,0,25-02-2025 18:44:43.552,February,Picked From,285
+DHPL,ps,25-02-2025,J1,70%Alcohol,R2,0,25-02-2025 18:44:50.350,February,Placed In,285
+DHPL,ps,25-02-2025,J2,95% Alcohol,R1,0,25-02-2025 18:45:40.071,February,Picked From,285
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R1,0,25-02-2025 18:45:46.373,February,Placed In,285
+DHPL,ps,25-02-2025,J1,70%Alcohol,R2,0,25-02-2025 18:46:58.161,February,Picked From,285
+DHPL,ps,25-02-2025,J2,95% Alcohol,R2,0,25-02-2025 18:47:04.443,February,Placed In,285
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R1,0,25-02-2025 18:47:53.711,February,Picked From,285
+DHPL,ps,25-02-2025,J4,100 % Alcohol,R1,0,25-02-2025 18:48:00.015,February,Placed In,285
+DHPL,ps,25-02-2025,,,R3,0,25-02-2025 18:48:05.099,February,Test Started,285
+DHPL,ps,25-02-2025,L3,Loading,R3,0,25-02-2025 18:48:11.924,February,Picked From,285
+DHPL,ps,25-02-2025,J1,70%Alcohol,R3,0,25-02-2025 18:48:18.734,February,Placed In,285
+DHPL,ps,25-02-2025,J2,95% Alcohol,R2,0,25-02-2025 18:49:10.763,February,Picked From,285
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R2,0,25-02-2025 18:49:17.061,February,Placed In,285
+DHPL,ps,25-02-2025,J4,100 % Alcohol,R1,0,25-02-2025 18:50:06.347,February,Picked From,285
+DHPL,ps,25-02-2025,J5,XYLENE-1,R1,0,25-02-2025 18:50:12.662,February,Placed In,285
+DHPL,ps,25-02-2025,J1,70%Alcohol,R3,0,25-02-2025 18:50:26.067,February,Picked From,285
+DHPL,ps,25-02-2025,J2,95% Alcohol,R3,0,25-02-2025 18:50:32.350,February,Placed In,285
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R2,0,25-02-2025 18:51:24.346,February,Picked From,285
+DHPL,ps,25-02-2025,J4,100 % Alcohol,R2,0,25-02-2025 18:51:30.645,February,Placed In,285
+DHPL,ps,25-02-2025,L1,-,-,0,25-02-2025 18:51:43.376,February,Liquid Level - 600,285
+DHPL,ps,25-02-2025,L2,-,-,0,25-02-2025 18:51:46.327,February,Liquid Level - 600,285
+DHPL,ps,25-02-2025,L3,-,-,0,25-02-2025 18:51:49.082,February,Liquid Level - 600,285
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 18:52:02.811,February,Home Reached,285
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 18:52:18.614,February,Home Reached,285
+DHPL,ps,25-02-2025,,,R4,0,25-02-2025 18:52:20.358,February,Test Started,285
+DHPL,ps,25-02-2025,L1,Loading,R4,0,25-02-2025 18:52:27.167,February,Picked From,285
+DHPL,ps,25-02-2025,J1,70%Alcohol,R4,0,25-02-2025 18:52:33.958,February,Placed In,285
+DHPL,ps,25-02-2025,J2,95% Alcohol,R3,0,25-02-2025 18:52:49.650,February,Picked From,285
+DHPL,ps,25-02-2025,J5,XYLENE-1,R1,0,25-02-2025 18:52:55.694,February,Picked From,285
+DHPL,ps,25-02-2025,J6,XYLENE-2,R1,0,25-02-2025 18:53:02.471,February,Placed In,285
+DHPL,ps,25-02-2025,J3,100 % Alcohol,R3,0,25-02-2025 18:53:37.000,February,Placed In,285
+DHPL,ps,25-02-2025,W1,Tap Water,--,0,25-02-2025 18:53:51.539,February,Water Valve : 1 is Off,285
+DHPL,ps,25-02-2025,W2,Tap Water,--,0,25-02-2025 18:53:52.304,February,Water Valve : 2 is Off,285
+DHPL,ps,25-02-2025,W3,Tap Water,--,0,25-02-2025 18:53:53.059,February,Water Valve : 3 is Off,285
+DHPL,ps,25-02-2025,W4,Tap Water,--,0,25-02-2025 18:53:53.864,February,Water Valve : 4 is Off,285
+DHPL,ps,25-02-2025,W5,Tap Water,--,0,25-02-2025 18:53:54.619,February,Water Valve : 5 is Off,285
+DHPL,ps,25-02-2025,W6,Tap Water,--,0,25-02-2025 18:53:55.422,February,Water Valve : 6 is Off,285
+DHPL,ps,25-02-2025,-,-,-,0,25-02-2025 18:53:55.876,February,Protorun Stopped,285

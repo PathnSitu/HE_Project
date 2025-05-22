@@ -1,0 +1,675 @@
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 16:53:37.216,April,Protorun Started,577
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 16:54:43.336,April,Protorun Started,578
+H&E,ps,30-04-2025,-,-,-,30,30-04-2025 16:54:53.539,April,30 - Temperature set to device,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 16:55:13.926,April,Heater Switched On ,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 16:55:14.970,April,Heater Door Closed,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 16:55:15.663,April,Device temperature ,578
+H&E,ps,30-04-2025,W1,Tap Water,--,0,30-04-2025 16:55:30.886,April,Water Valve : 1 is Off,578
+H&E,ps,30-04-2025,W2,Tap Water,--,0,30-04-2025 16:55:31.574,April,Water Valve : 2 is Off,578
+H&E,ps,30-04-2025,W3,Tap Water,--,0,30-04-2025 16:55:32.273,April,Water Valve : 3 is Off,578
+H&E,ps,30-04-2025,W4,Tap Water,--,0,30-04-2025 16:55:32.966,April,Water Valve : 4 is Off,578
+H&E,ps,30-04-2025,W5,Tap Water,--,0,30-04-2025 16:55:33.665,April,Water Valve : 5 is Off,578
+H&E,ps,30-04-2025,W6,Tap Water,--,0,30-04-2025 16:55:34.362,April,Water Valve : 6 is Off,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 16:55:35.061,April,Home Reached,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 16:55:37.270,April,Home Reached,578
+H&E,ps,30-04-2025,L1,-,-,0,30-04-2025 16:55:47.805,April,Liquid Level - 767,578
+H&E,ps,30-04-2025,L2,-,-,0,30-04-2025 16:55:50.799,April,Liquid Level - 763,578
+H&E,ps,30-04-2025,L3,-,-,0,30-04-2025 16:55:53.797,April,Liquid Level - 762,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 16:55:54.504,April,Home Reached,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 16:55:56.203,April,Home Reached,578
+H&E,ps,30-04-2025,,,R1,0,30-04-2025 16:55:57.733,April,Test Started,578
+H&E,ps,30-04-2025,L1,Loading,R1,0,30-04-2025 16:56:05.347,April,Picked From,578
+H&E,ps,30-04-2025,H1,Heating,R1,0,30-04-2025 16:56:12.472,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 16:56:13.541,April,Heater Door Closed,578
+H&E,ps,30-04-2025,-,-,-,447,30-04-2025 16:56:14.254,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 16:56:29.454,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 16:56:43.648,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 16:56:44.639,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 16:56:59.826,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 16:57:15.024,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 16:57:30.290,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 16:57:45.488,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 16:58:00.710,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 16:58:15.905,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 16:58:31.101,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 16:58:46.299,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 16:59:01.494,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 16:59:16.707,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 16:59:31.904,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 16:59:47.098,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 17:00:02.290,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 17:00:17.494,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:00:32.705,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 17:00:47.912,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 17:01:03.125,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 17:01:18.334,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:01:32.890,April,Heater Door Opened,578
+H&E,ps,30-04-2025,,,R2,0,30-04-2025 17:01:33.422,April,Test Started,578
+H&E,ps,30-04-2025,L2,Loading,R2,0,30-04-2025 17:01:40.524,April,Picked From,578
+H&E,ps,30-04-2025,H2,Heating,R2,0,30-04-2025 17:01:47.628,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:01:48.693,April,Heater Door Closed,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:01:49.376,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:02:04.583,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:02:18.342,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:02:19.770,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:02:34.978,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:02:50.176,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:03:05.380,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:03:20.561,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:03:35.762,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 17:03:50.951,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:04:06.140,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:04:21.344,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:04:36.543,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:04:51.728,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:05:06.930,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:05:22.125,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 17:05:37.343,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:05:52.577,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:06:08.766,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:06:13.025,April,Heater Door Opened,578
+H&E,ps,30-04-2025,H1,Heating,R1,0,30-04-2025 17:06:19.629,April,Picked From,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:06:20.181,April,Heater Door Closed,578
+H&E,ps,30-04-2025,J1,XYLENE-1,R1,0,30-04-2025 17:06:27.254,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 17:06:31.685,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:06:46.885,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:07:02.086,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:07:17.293,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:07:19.971,April,Heater Door Opened,578
+H&E,ps,30-04-2025,,,R3,0,30-04-2025 17:07:20.492,April,Test Started,578
+H&E,ps,30-04-2025,L3,Loading,R3,0,30-04-2025 17:07:27.090,April,Picked From,578
+H&E,ps,30-04-2025,H1,Heating,R3,0,30-04-2025 17:07:33.691,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:07:34.742,April,Heater Door Closed,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:07:35.455,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 17:07:50.657,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 17:08:04.406,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 17:08:05.869,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:08:23.078,April,Device temperature ,578
+H&E,ps,30-04-2025,J1,XYLENE-1,R1,0,30-04-2025 17:08:34.836,April,Picked From,578
+H&E,ps,30-04-2025,J2,XYLENE-2,R1,0,30-04-2025 17:08:40.930,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:08:45.446,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:09:00.639,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:09:15.827,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:09:31.016,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:09:46.209,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:10:01.392,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:10:16.602,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:10:32.817,April,Device temperature ,578
+H&E,ps,30-04-2025,J2,XYLENE-2,R1,0,30-04-2025 17:10:46.561,April,Picked From,578
+H&E,ps,30-04-2025,J4,100 % Alcohol,R1,0,30-04-2025 17:10:53.148,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:10:57.170,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 17:11:12.396,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:11:27.605,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:11:43.801,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:11:48.296,April,Heater Door Opened,578
+H&E,ps,30-04-2025,H2,Heating,R2,0,30-04-2025 17:11:56.390,April,Picked From,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:11:56.970,April,Heater Door Closed,578
+H&E,ps,30-04-2025,J1,XYLENE-1,R2,0,30-04-2025 17:12:04.057,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:12:07.958,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:12:23.165,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:12:39.377,April,Device temperature ,578
+H&E,ps,30-04-2025,J4,100 % Alcohol,R1,0,30-04-2025 17:13:00.258,April,Picked From,578
+H&E,ps,30-04-2025,J5,70%Alcohol,R1,0,30-04-2025 17:13:06.350,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 17:13:11.366,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:13:20.768,April,Home Reached,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:13:21.799,April,Heater Door Opened,578
+H&E,ps,30-04-2025,L1,-,-,0,30-04-2025 17:13:30.802,April,Liquid Level - 762,578
+H&E,ps,30-04-2025,L2,-,-,0,30-04-2025 17:13:33.771,April,Liquid Level - 766,578
+H&E,ps,30-04-2025,L3,-,-,0,30-04-2025 17:13:36.744,April,Liquid Level - 762,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:13:37.437,April,Home Reached,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:13:39.156,April,Home Reached,578
+H&E,ps,30-04-2025,,,R4,0,30-04-2025 17:13:40.708,April,Test Started,578
+H&E,ps,30-04-2025,L1,Loading,R4,0,30-04-2025 17:13:48.301,April,Picked From,578
+H&E,ps,30-04-2025,H2,Heating,R4,0,30-04-2025 17:13:55.410,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:13:56.457,April,Heater Door Closed,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 17:13:57.151,April,Device temperature ,578
+H&E,ps,30-04-2025,J1,XYLENE-1,R2,0,30-04-2025 17:14:10.678,April,Picked From,578
+H&E,ps,30-04-2025,J2,XYLENE-2,R2,0,30-04-2025 17:14:16.779,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:14:21.557,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 17:14:36.752,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 17:14:52.959,April,Device temperature ,578
+H&E,ps,30-04-2025,J5,70%Alcohol,R1,0,30-04-2025 17:15:12.972,April,Picked From,578
+H&E,ps,30-04-2025,J6,95% Alcohol,R1,0,30-04-2025 17:15:19.067,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 17:15:23.571,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:15:38.770,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:15:54.009,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:16:10.200,April,Device temperature ,578
+H&E,ps,30-04-2025,J2,XYLENE-2,R2,0,30-04-2025 17:16:24.864,April,Picked From,578
+H&E,ps,30-04-2025,J4,100 % Alcohol,R2,0,30-04-2025 17:16:31.460,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:16:35.971,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:16:51.158,April,Device temperature ,578
+H&E,ps,30-04-2025,W1,Tap Water,--,0,30-04-2025 17:17:09.655,April,Water Valve : 1 is On,578
+H&E,ps,30-04-2025,J6,95% Alcohol,R1,0,30-04-2025 17:17:25.686,April,Picked From,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:17:25.886,April,Home Reached,578
+H&E,ps,30-04-2025,W1,Running TAP Water,R1,0,30-04-2025 17:17:34.866,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:17:35.483,April,Home Reached,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:17:39.249,April,Heater Door Opened,578
+H&E,ps,30-04-2025,H1,Heating,R3,0,30-04-2025 17:17:45.839,April,Picked From,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:17:46.394,April,Heater Door Closed,578
+H&E,ps,30-04-2025,J1,XYLENE-1,R3,0,30-04-2025 17:17:53.477,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 17:17:57.629,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 17:18:12.836,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 17:18:29.046,April,Device temperature ,578
+H&E,ps,30-04-2025,J4,100 % Alcohol,R2,0,30-04-2025 17:18:38.568,April,Picked From,578
+H&E,ps,30-04-2025,J5,70%Alcohol,R2,0,30-04-2025 17:18:44.700,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:18:49.690,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:19:04.877,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 17:19:21.080,April,Device temperature ,578
+H&E,ps,30-04-2025,W1,Tap Water,--,0,30-04-2025 17:19:35.089,April,Water Valve : 1 is Off,578
+H&E,ps,30-04-2025,W1,Running TAP Water,R1,0,30-04-2025 17:19:43.480,April,Picked From,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:19:43.701,April,Home Reached,578
+H&E,ps,30-04-2025,J8,Hematoxin,R1,0,30-04-2025 17:19:52.181,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:19:52.864,April,Home Reached,578
+H&E,ps,30-04-2025,J1,XYLENE-1,R3,0,30-04-2025 17:20:01.012,April,Picked From,578
+H&E,ps,30-04-2025,J2,XYLENE-2,R3,0,30-04-2025 17:20:07.099,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:20:11.212,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:20:17.982,April,Heater Door Opened,578
+H&E,ps,30-04-2025,,,R5,0,30-04-2025 17:20:18.508,April,Test Started,578
+H&E,ps,30-04-2025,L2,Loading,R5,0,30-04-2025 17:20:25.086,April,Picked From,578
+H&E,ps,30-04-2025,H1,Heating,R5,0,30-04-2025 17:20:32.175,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:20:33.239,April,Heater Door Closed,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:20:33.921,April,Device temperature ,578
+H&E,ps,30-04-2025,J5,70%Alcohol,R2,0,30-04-2025 17:20:53.761,April,Picked From,578
+H&E,ps,30-04-2025,J6,95% Alcohol,R2,0,30-04-2025 17:20:59.846,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:21:04.425,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:21:19.655,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:21:34.842,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 17:21:51.066,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:22:06.272,April,Device temperature ,578
+H&E,ps,30-04-2025,J2,XYLENE-2,R3,0,30-04-2025 17:22:15.186,April,Picked From,578
+H&E,ps,30-04-2025,J4,100 % Alcohol,R3,0,30-04-2025 17:22:21.775,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:22:26.290,April,Device temperature ,578
+H&E,ps,30-04-2025,W2,Tap Water,--,0,30-04-2025 17:22:35.398,April,Water Valve : 2 is On,578
+H&E,ps,30-04-2025,W1,Tap Water,--,0,30-04-2025 17:22:43.222,April,Water Valve : 1 is On,578
+H&E,ps,30-04-2025,J8,Hematoxin,R1,0,30-04-2025 17:22:59.283,April,Picked From,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:22:59.515,April,Home Reached,578
+H&E,ps,30-04-2025,W2,Running TAP Water,R1,0,30-04-2025 17:23:08.509,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:23:09.173,April,Home Reached,578
+H&E,ps,30-04-2025,J6,95% Alcohol,R2,0,30-04-2025 17:23:19.478,April,Picked From,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:23:19.709,April,Home Reached,578
+H&E,ps,30-04-2025,W1,Running TAP Water,R2,0,30-04-2025 17:23:28.695,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:23:29.316,April,Home Reached,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:23:32.415,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:23:50.627,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:23:56.022,April,Heater Door Opened,578
+H&E,ps,30-04-2025,H2,Heating,R4,0,30-04-2025 17:24:02.610,April,Picked From,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:24:03.142,April,Heater Door Closed,578
+H&E,ps,30-04-2025,J1,XYLENE-1,R4,0,30-04-2025 17:24:10.218,April,Placed In,578
+H&E,ps,30-04-2025,W2,Tap Water,--,0,30-04-2025 17:24:13.719,April,Water Valve : 2 is Off,578
+H&E,ps,30-04-2025,W2,Running TAP Water,R1,0,30-04-2025 17:24:21.595,April,Picked From,578
+H&E,ps,30-04-2025,J9,Mild Acid,R1,0,30-04-2025 17:24:28.179,April,Placed In,578
+H&E,ps,30-04-2025,J4,100 % Alcohol,R3,0,30-04-2025 17:24:39.850,April,Picked From,578
+H&E,ps,30-04-2025,J5,70%Alcohol,R3,0,30-04-2025 17:24:45.945,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:24:50.699,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:25:05.912,April,Device temperature ,578
+H&E,ps,30-04-2025,W2,Tap Water,--,0,30-04-2025 17:25:11.417,April,Water Valve : 2 is On,578
+H&E,ps,30-04-2025,J9,Mild Acid,R1,0,30-04-2025 17:25:33.786,April,Picked From,578
+H&E,ps,30-04-2025,W2,Running TAP Water,R1,0,30-04-2025 17:25:40.361,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:25:44.382,April,Device temperature ,578
+H&E,ps,30-04-2025,W1,Tap Water,--,0,30-04-2025 17:25:51.898,April,Water Valve : 1 is Off,578
+H&E,ps,30-04-2025,W1,Running TAP Water,R2,0,30-04-2025 17:25:57.782,April,Picked From,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:25:57.984,April,Home Reached,578
+H&E,ps,30-04-2025,J8,Hematoxin,R2,0,30-04-2025 17:26:06.445,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:26:07.079,April,Home Reached,578
+H&E,ps,30-04-2025,J1,XYLENE-1,R4,0,30-04-2025 17:26:16.823,April,Picked From,578
+H&E,ps,30-04-2025,J2,XYLENE-2,R4,0,30-04-2025 17:26:22.932,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:26:27.891,April,Device temperature ,578
+H&E,ps,30-04-2025,W2,Tap Water,--,0,30-04-2025 17:26:40.564,April,Water Valve : 2 is Off,578
+H&E,ps,30-04-2025,W2,Running TAP Water,R1,0,30-04-2025 17:26:48.493,April,Picked From,578
+H&E,ps,30-04-2025,J18,Bluing,R1,0,30-04-2025 17:26:55.081,April,Placed In,578
+H&E,ps,30-04-2025,J5,70%Alcohol,R3,0,30-04-2025 17:27:03.046,April,Picked From,578
+H&E,ps,30-04-2025,J6,95% Alcohol,R3,0,30-04-2025 17:27:09.149,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:27:13.984,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:27:19.780,April,Heater Door Opened,578
+H&E,ps,30-04-2025,,,R6,0,30-04-2025 17:27:20.310,April,Test Started,578
+H&E,ps,30-04-2025,L3,Loading,R6,0,30-04-2025 17:27:27.921,April,Picked From,578
+H&E,ps,30-04-2025,H2,Heating,R6,0,30-04-2025 17:27:34.554,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:27:35.632,April,Heater Door Closed,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 17:27:36.326,April,Device temperature ,578
+H&E,ps,30-04-2025,W6,Tap Water,--,0,30-04-2025 17:27:38.274,April,Water Valve : 6 is On,578
+H&E,ps,30-04-2025,J18,Bluing,R1,0,30-04-2025 17:28:01.671,April,Picked From,578
+H&E,ps,30-04-2025,W6,Running TAP Water,R1,0,30-04-2025 17:28:07.761,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:28:12.223,April,Device temperature ,578
+H&E,ps,30-04-2025,J2,XYLENE-2,R4,0,30-04-2025 17:28:30.069,April,Picked From,578
+H&E,ps,30-04-2025,J4,100 % Alcohol,R4,0,30-04-2025 17:28:36.663,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 17:28:41.141,April,Device temperature ,578
+H&E,ps,30-04-2025,W2,Tap Water,--,0,30-04-2025 17:28:49.679,April,Water Valve : 2 is On,578
+H&E,ps,30-04-2025,W1,Tap Water,--,0,30-04-2025 17:28:52.335,April,Water Valve : 1 is On,578
+H&E,ps,30-04-2025,J8,Hematoxin,R2,0,30-04-2025 17:29:13.592,April,Picked From,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:29:13.817,April,Home Reached,578
+H&E,ps,30-04-2025,W2,Running TAP Water,R2,0,30-04-2025 17:29:22.814,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:29:23.448,April,Home Reached,578
+H&E,ps,30-04-2025,J6,95% Alcohol,R3,0,30-04-2025 17:29:44.598,April,Picked From,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:29:44.801,April,Home Reached,578
+H&E,ps,30-04-2025,W1,Running TAP Water,R3,0,30-04-2025 17:29:53.799,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:29:54.436,April,Home Reached,578
+H&E,ps,30-04-2025,W6,Tap Water,--,0,30-04-2025 17:29:56.161,April,Water Valve : 6 is Off,578
+H&E,ps,30-04-2025,W6,Running TAP Water,R1,0,30-04-2025 17:30:04.551,April,Picked From,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:30:04.768,April,Home Reached,578
+H&E,ps,30-04-2025,J19,Ethnol ,R1,0,30-04-2025 17:30:13.268,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:30:13.907,April,Home Reached,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 17:30:17.689,April,Device temperature ,578
+H&E,ps,30-04-2025,W2,Tap Water,--,0,30-04-2025 17:30:23.009,April,Water Valve : 2 is Off,578
+H&E,ps,30-04-2025,W2,Running TAP Water,R2,0,30-04-2025 17:30:30.902,April,Picked From,578
+H&E,ps,30-04-2025,J9,Mild Acid,R2,0,30-04-2025 17:30:37.523,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:30:48.785,April,Heater Door Opened,578
+H&E,ps,30-04-2025,H1,Heating,R5,0,30-04-2025 17:30:55.343,April,Picked From,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:30:55.905,April,Heater Door Closed,578
+H&E,ps,30-04-2025,J1,XYLENE-1,R5,0,30-04-2025 17:31:02.989,April,Placed In,578
+H&E,ps,30-04-2025,J4,100 % Alcohol,R4,0,30-04-2025 17:31:20.813,April,Picked From,578
+H&E,ps,30-04-2025,J5,70%Alcohol,R4,0,30-04-2025 17:31:26.944,April,Placed In,578
+H&E,ps,30-04-2025,J19,Ethnol ,R1,0,30-04-2025 17:31:35.355,April,Picked From,578
+H&E,ps,30-04-2025,J20,Eosin ,R1,0,30-04-2025 17:31:41.464,April,Placed In,578
+H&E,ps,30-04-2025,W2,Tap Water,--,0,30-04-2025 17:31:42.200,April,Water Valve : 2 is On,578
+H&E,ps,30-04-2025,J9,Mild Acid,R2,0,30-04-2025 17:31:48.157,April,Picked From,578
+H&E,ps,30-04-2025,W2,Running TAP Water,R2,0,30-04-2025 17:31:54.758,April,Placed In,578
+H&E,ps,30-04-2025,W1,Tap Water,--,0,30-04-2025 17:31:55.499,April,Water Valve : 1 is Off,578
+H&E,ps,30-04-2025,W1,Running TAP Water,R3,0,30-04-2025 17:32:01.378,April,Picked From,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:32:01.598,April,Home Reached,578
+H&E,ps,30-04-2025,J8,Hematoxin,R3,0,30-04-2025 17:32:10.139,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:32:10.793,April,Home Reached,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:32:14.000,April,Device temperature ,578
+H&E,ps,30-04-2025,J20,Eosin ,R1,0,30-04-2025 17:32:35.556,April,Picked From,578
+H&E,ps,30-04-2025,J21,95 % Alcohol,R1,0,30-04-2025 17:32:41.647,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:32:46.658,April,Device temperature ,578
+H&E,ps,30-04-2025,W2,Tap Water,--,0,30-04-2025 17:32:55.945,April,Water Valve : 2 is Off,578
+H&E,ps,30-04-2025,W2,Running TAP Water,R2,0,30-04-2025 17:33:03.859,April,Picked From,578
+H&E,ps,30-04-2025,J18,Bluing,R2,0,30-04-2025 17:33:10.455,April,Placed In,578
+H&E,ps,30-04-2025,J1,XYLENE-1,R5,0,30-04-2025 17:33:20.637,April,Picked From,578
+H&E,ps,30-04-2025,J2,XYLENE-2,R5,0,30-04-2025 17:33:26.737,April,Placed In,578
+H&E,ps,30-04-2025,J5,70%Alcohol,R4,0,30-04-2025 17:33:34.350,April,Picked From,578
+H&E,ps,30-04-2025,J6,95% Alcohol,R4,0,30-04-2025 17:33:40.471,April,Placed In,578
+H&E,ps,30-04-2025,J21,95 % Alcohol,R1,0,30-04-2025 17:33:47.741,April,Picked From,578
+H&E,ps,30-04-2025,J22,100 % Alcohol,R1,0,30-04-2025 17:33:53.855,April,Placed In,578
+H&E,ps,30-04-2025,W6,Tap Water,--,0,30-04-2025 17:33:54.671,April,Water Valve : 6 is On,578
+H&E,ps,30-04-2025,J18,Bluing,R2,0,30-04-2025 17:34:16.056,April,Picked From,578
+H&E,ps,30-04-2025,W6,Running TAP Water,R2,0,30-04-2025 17:34:22.161,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 17:34:43.974,April,Device temperature ,578
+H&E,ps,30-04-2025,W2,Tap Water,--,0,30-04-2025 17:34:53.334,April,Water Valve : 2 is On,578
+H&E,ps,30-04-2025,J22,100 % Alcohol,R1,0,30-04-2025 17:35:00.441,April,Picked From,578
+H&E,ps,30-04-2025,J23,100 % Alcohol,R1,0,30-04-2025 17:35:06.553,April,Placed In,578
+H&E,ps,30-04-2025,J8,Hematoxin,R3,0,30-04-2025 17:35:17.243,April,Picked From,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:35:17.450,April,Home Reached,578
+H&E,ps,30-04-2025,W2,Running TAP Water,R3,0,30-04-2025 17:35:26.455,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:35:27.088,April,Home Reached,578
+H&E,ps,30-04-2025,W1,Tap Water,--,0,30-04-2025 17:35:27.697,April,Water Valve : 1 is On,578
+H&E,ps,30-04-2025,W6,Tap Water,--,0,30-04-2025 17:35:28.843,April,Water Valve : 6 is Off,578
+H&E,ps,30-04-2025,W6,Running TAP Water,R2,0,30-04-2025 17:35:37.154,April,Picked From,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:35:37.357,April,Home Reached,578
+H&E,ps,30-04-2025,J19,Ethnol ,R2,0,30-04-2025 17:35:45.847,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:35:46.457,April,Home Reached,578
+H&E,ps,30-04-2025,J2,XYLENE-2,R5,0,30-04-2025 17:35:55.099,April,Picked From,578
+H&E,ps,30-04-2025,J4,100 % Alcohol,R5,0,30-04-2025 17:36:01.705,April,Placed In,578
+H&E,ps,30-04-2025,J6,95% Alcohol,R4,0,30-04-2025 17:36:19.111,April,Picked From,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:36:19.326,April,Home Reached,578
+H&E,ps,30-04-2025,W1,Running TAP Water,R4,0,30-04-2025 17:36:28.326,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:36:28.969,April,Home Reached,578
+H&E,ps,30-04-2025,J23,100 % Alcohol,R1,0,30-04-2025 17:36:40.645,April,Picked From,578
+H&E,ps,30-04-2025,J24,XYLENE-1,R1,0,30-04-2025 17:36:46.759,April,Placed In,578
+H&E,ps,30-04-2025,W2,Tap Water,--,0,30-04-2025 17:36:50.647,April,Water Valve : 2 is Off,578
+H&E,ps,30-04-2025,W2,Running TAP Water,R3,0,30-04-2025 17:36:58.539,April,Picked From,578
+H&E,ps,30-04-2025,J9,Mild Acid,R3,0,30-04-2025 17:37:05.134,April,Placed In,578
+H&E,ps,30-04-2025,J19,Ethnol ,R2,0,30-04-2025 17:37:13.444,April,Picked From,578
+H&E,ps,30-04-2025,J20,Eosin ,R2,0,30-04-2025 17:37:19.534,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:37:24.349,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:37:35.203,April,Heater Door Opened,578
+H&E,ps,30-04-2025,H2,Heating,R6,0,30-04-2025 17:37:44.840,April,Picked From,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:37:45.376,April,Heater Door Closed,578
+H&E,ps,30-04-2025,J1,XYLENE-1,R6,0,30-04-2025 17:37:52.497,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 17:37:56.859,April,Device temperature ,578
+H&E,ps,30-04-2025,J4,100 % Alcohol,R5,0,30-04-2025 17:38:09.805,April,Picked From,578
+H&E,ps,30-04-2025,J5,70%Alcohol,R5,0,30-04-2025 17:38:15.899,April,Placed In,578
+H&E,ps,30-04-2025,W2,Tap Water,--,0,30-04-2025 17:38:16.620,April,Water Valve : 2 is On,578
+H&E,ps,30-04-2025,J9,Mild Acid,R3,0,30-04-2025 17:38:25.717,April,Picked From,578
+H&E,ps,30-04-2025,W2,Running TAP Water,R3,0,30-04-2025 17:38:32.335,April,Placed In,578
+H&E,ps,30-04-2025,J20,Eosin ,R2,0,30-04-2025 17:38:43.114,April,Picked From,578
+H&E,ps,30-04-2025,J21,95 % Alcohol,R2,0,30-04-2025 17:38:49.210,April,Placed In,578
+H&E,ps,30-04-2025,W1,Tap Water,--,0,30-04-2025 17:38:51.539,April,Water Valve : 1 is Off,578
+H&E,ps,30-04-2025,W1,Running TAP Water,R4,0,30-04-2025 17:38:57.440,April,Picked From,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:38:57.662,April,Home Reached,578
+H&E,ps,30-04-2025,J8,Hematoxin,R4,0,30-04-2025 17:39:06.149,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:39:06.774,April,Home Reached,578
+H&E,ps,30-04-2025,J24,XYLENE-1,R1,0,30-04-2025 17:39:14.402,April,Picked From,578
+H&E,ps,30-04-2025,J25,XYLENE-2,R1,0,30-04-2025 17:39:20.509,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 17:39:24.916,April,Device temperature ,578
+H&E,ps,30-04-2025,W2,Tap Water,--,0,30-04-2025 17:39:33.522,April,Water Valve : 2 is Off,578
+H&E,ps,30-04-2025,W2,Running TAP Water,R3,0,30-04-2025 17:39:41.422,April,Picked From,578
+H&E,ps,30-04-2025,J18,Bluing,R3,0,30-04-2025 17:39:48.054,April,Placed In,578
+H&E,ps,30-04-2025,J21,95 % Alcohol,R2,0,30-04-2025 17:39:56.297,April,Picked From,578
+H&E,ps,30-04-2025,J22,100 % Alcohol,R2,0,30-04-2025 17:40:02.408,April,Placed In,578
+H&E,ps,30-04-2025,J1,XYLENE-1,R6,0,30-04-2025 17:40:10.074,April,Picked From,578
+H&E,ps,30-04-2025,J2,XYLENE-2,R6,0,30-04-2025 17:40:16.193,April,Placed In,578
+H&E,ps,30-04-2025,J5,70%Alcohol,R5,0,30-04-2025 17:40:34.019,April,Picked From,578
+H&E,ps,30-04-2025,J6,95% Alcohol,R5,0,30-04-2025 17:40:40.145,April,Placed In,578
+H&E,ps,30-04-2025,W6,Tap Water,--,0,30-04-2025 17:40:41.236,April,Water Valve : 6 is On,578
+H&E,ps,30-04-2025,J18,Bluing,R3,0,30-04-2025 17:40:54.620,April,Picked From,578
+H&E,ps,30-04-2025,W6,Running TAP Water,R3,0,30-04-2025 17:41:00.722,April,Placed In,578
+H&E,ps,30-04-2025,J22,100 % Alcohol,R2,0,30-04-2025 17:41:09.490,April,Picked From,578
+H&E,ps,30-04-2025,J23,100 % Alcohol,R2,0,30-04-2025 17:41:15.603,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:41:20.542,April,Device temperature ,578
+H&E,ps,30-04-2025,J25,XYLENE-2,R1,0,30-04-2025 17:41:27.134,April,Picked From,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:41:27.382,April,Home Reached,578
+H&E,ps,30-04-2025,U1,Unloading,R1,0,30-04-2025 17:41:40.382,April,Placed In,578
+H&E,ps,30-04-2025,U1,Unloading,R1,0,30-04-2025 17:41:40.994,April,Test Completed,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:41:43.087,April,Home Reached,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 17:41:44.823,April,Device temperature ,578
+H&E,ps,30-04-2025,W2,Tap Water,--,0,30-04-2025 17:41:49.383,April,Water Valve : 2 is On,578
+H&E,ps,30-04-2025,W6,Tap Water,--,0,30-04-2025 17:42:00.922,April,Water Valve : 6 is Off,578
+H&E,ps,30-04-2025,W6,Running TAP Water,R3,0,30-04-2025 17:42:09.321,April,Picked From,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:42:09.523,April,Home Reached,578
+H&E,ps,30-04-2025,J19,Ethnol ,R3,0,30-04-2025 17:42:17.997,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:42:18.638,April,Home Reached,578
+H&E,ps,30-04-2025,J8,Hematoxin,R4,0,30-04-2025 17:42:31.040,April,Picked From,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:42:31.264,April,Home Reached,578
+H&E,ps,30-04-2025,W2,Running TAP Water,R4,0,30-04-2025 17:42:40.231,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:42:40.853,April,Home Reached,578
+H&E,ps,30-04-2025,W1,Tap Water,--,0,30-04-2025 17:42:41.377,April,Water Valve : 1 is On,578
+H&E,ps,30-04-2025,J2,XYLENE-2,R6,0,30-04-2025 17:42:49.430,April,Picked From,578
+H&E,ps,30-04-2025,J4,100 % Alcohol,R6,0,30-04-2025 17:42:56.037,April,Placed In,578
+H&E,ps,30-04-2025,J23,100 % Alcohol,R2,0,30-04-2025 17:43:03.748,April,Picked From,578
+H&E,ps,30-04-2025,J24,XYLENE-1,R2,0,30-04-2025 17:43:09.851,April,Placed In,578
+H&E,ps,30-04-2025,J6,95% Alcohol,R5,0,30-04-2025 17:43:19.665,April,Picked From,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:43:19.880,April,Home Reached,578
+H&E,ps,30-04-2025,W1,Running TAP Water,R5,0,30-04-2025 17:43:28.857,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:43:29.503,April,Home Reached,578
+H&E,ps,30-04-2025,J19,Ethnol ,R3,0,30-04-2025 17:43:42.615,April,Picked From,578
+H&E,ps,30-04-2025,J20,Eosin ,R3,0,30-04-2025 17:43:48.719,April,Placed In,578
+H&E,ps,30-04-2025,W2,Tap Water,--,0,30-04-2025 17:43:50.446,April,Water Valve : 2 is Off,578
+H&E,ps,30-04-2025,W2,Running TAP Water,R4,0,30-04-2025 17:43:58.339,April,Picked From,578
+H&E,ps,30-04-2025,J9,Mild Acid,R4,0,30-04-2025 17:44:04.953,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 17:44:09.387,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:44:26.593,April,Device temperature ,578
+H&E,ps,30-04-2025,J20,Eosin ,R3,0,30-04-2025 17:44:40.306,April,Picked From,578
+H&E,ps,30-04-2025,J21,95 % Alcohol,R3,0,30-04-2025 17:44:46.406,April,Placed In,578
+H&E,ps,30-04-2025,W2,Tap Water,--,0,30-04-2025 17:44:48.159,April,Water Valve : 2 is On,578
+H&E,ps,30-04-2025,J4,100 % Alcohol,R6,0,30-04-2025 17:45:02.665,April,Picked From,578
+H&E,ps,30-04-2025,J5,70%Alcohol,R6,0,30-04-2025 17:45:08.802,April,Placed In,578
+H&E,ps,30-04-2025,J9,Mild Acid,R4,0,30-04-2025 17:45:15.572,April,Picked From,578
+H&E,ps,30-04-2025,W2,Running TAP Water,R4,0,30-04-2025 17:45:22.156,April,Placed In,578
+H&E,ps,30-04-2025,J24,XYLENE-1,R2,0,30-04-2025 17:45:32.446,April,Picked From,578
+H&E,ps,30-04-2025,J25,XYLENE-2,R2,0,30-04-2025 17:45:38.546,April,Placed In,578
+H&E,ps,30-04-2025,W1,Tap Water,--,0,30-04-2025 17:45:39.278,April,Water Valve : 1 is Off,578
+H&E,ps,30-04-2025,W1,Running TAP Water,R5,0,30-04-2025 17:45:45.176,April,Picked From,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:45:45.376,April,Home Reached,578
+H&E,ps,30-04-2025,J8,Hematoxin,R5,0,30-04-2025 17:45:53.862,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:45:54.528,April,Home Reached,578
+H&E,ps,30-04-2025,J21,95 % Alcohol,R3,0,30-04-2025 17:46:05.912,April,Picked From,578
+H&E,ps,30-04-2025,J22,100 % Alcohol,R3,0,30-04-2025 17:46:12.002,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 17:46:16.937,April,Device temperature ,578
+H&E,ps,30-04-2025,W2,Tap Water,--,0,30-04-2025 17:46:22.351,April,Water Valve : 2 is Off,578
+H&E,ps,30-04-2025,W2,Running TAP Water,R4,0,30-04-2025 17:46:30.236,April,Picked From,578
+H&E,ps,30-04-2025,J18,Bluing,R4,0,30-04-2025 17:46:36.851,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:46:41.358,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:46:58.572,April,Device temperature ,578
+H&E,ps,30-04-2025,J5,70%Alcohol,R6,0,30-04-2025 17:47:14.944,April,Picked From,578
+H&E,ps,30-04-2025,J6,95% Alcohol,R6,0,30-04-2025 17:47:21.054,April,Placed In,578
+H&E,ps,30-04-2025,W6,Tap Water,--,0,30-04-2025 17:47:22.059,April,Water Valve : 6 is On,578
+H&E,ps,30-04-2025,J22,100 % Alcohol,R3,0,30-04-2025 17:47:28.135,April,Picked From,578
+H&E,ps,30-04-2025,J23,100 % Alcohol,R3,0,30-04-2025 17:47:34.260,April,Placed In,578
+H&E,ps,30-04-2025,J18,Bluing,R4,0,30-04-2025 17:47:42.462,April,Picked From,578
+H&E,ps,30-04-2025,W6,Running TAP Water,R4,0,30-04-2025 17:47:48.593,April,Placed In,578
+H&E,ps,30-04-2025,J25,XYLENE-2,R2,0,30-04-2025 17:48:06.154,April,Picked From,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:48:06.354,April,Home Reached,578
+H&E,ps,30-04-2025,U2,Unloading,R2,0,30-04-2025 17:48:18.853,April,Placed In,578
+H&E,ps,30-04-2025,U2,Unloading,R2,0,30-04-2025 17:48:19.466,April,Test Completed,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:48:21.545,April,Home Reached,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:48:24.012,April,Device temperature ,578
+H&E,ps,30-04-2025,J23,100 % Alcohol,R3,0,30-04-2025 17:48:42.413,April,Picked From,578
+H&E,ps,30-04-2025,J24,XYLENE-1,R3,0,30-04-2025 17:48:48.528,April,Placed In,578
+H&E,ps,30-04-2025,W6,Tap Water,--,0,30-04-2025 17:48:49.265,April,Water Valve : 6 is Off,578
+H&E,ps,30-04-2025,W6,Running TAP Water,R4,0,30-04-2025 17:48:57.655,April,Picked From,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:48:57.870,April,Home Reached,578
+H&E,ps,30-04-2025,J19,Ethnol ,R4,0,30-04-2025 17:49:06.347,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:49:06.977,April,Home Reached,578
+H&E,ps,30-04-2025,W1,Tap Water,--,0,30-04-2025 17:49:07.243,April,Water Valve : 1 is On,578
+H&E,ps,30-04-2025,W2,Tap Water,--,0,30-04-2025 17:49:08.696,April,Water Valve : 2 is On,578
+H&E,ps,30-04-2025,J8,Hematoxin,R5,0,30-04-2025 17:49:19.382,April,Picked From,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:49:19.591,April,Home Reached,578
+H&E,ps,30-04-2025,W2,Running TAP Water,R5,0,30-04-2025 17:49:28.595,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:49:29.223,April,Home Reached,578
+H&E,ps,30-04-2025,J6,95% Alcohol,R6,0,30-04-2025 17:49:40.635,April,Picked From,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:49:40.842,April,Home Reached,578
+H&E,ps,30-04-2025,W1,Running TAP Water,R6,0,30-04-2025 17:49:49.847,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:49:50.456,April,Home Reached,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:49:53.532,April,Device temperature ,578
+H&E,ps,30-04-2025,J19,Ethnol ,R4,0,30-04-2025 17:50:15.943,April,Picked From,578
+H&E,ps,30-04-2025,J20,Eosin ,R4,0,30-04-2025 17:50:22.068,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 17:50:26.585,April,Device temperature ,578
+H&E,ps,30-04-2025,W2,Tap Water,--,0,30-04-2025 17:50:29.777,April,Water Valve : 2 is Off,578
+H&E,ps,30-04-2025,W2,Running TAP Water,R5,0,30-04-2025 17:50:37.679,April,Picked From,578
+H&E,ps,30-04-2025,J9,Mild Acid,R5,0,30-04-2025 17:50:44.271,April,Placed In,578
+H&E,ps,30-04-2025,J24,XYLENE-1,R3,0,30-04-2025 17:50:55.632,April,Picked From,578
+H&E,ps,30-04-2025,J25,XYLENE-2,R3,0,30-04-2025 17:51:01.734,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:51:06.792,April,Device temperature ,578
+H&E,ps,30-04-2025,J20,Eosin ,R4,0,30-04-2025 17:51:15.642,April,Picked From,578
+H&E,ps,30-04-2025,J21,95 % Alcohol,R4,0,30-04-2025 17:51:21.750,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:51:26.269,April,Device temperature ,578
+H&E,ps,30-04-2025,W2,Tap Water,--,0,30-04-2025 17:51:27.518,April,Water Valve : 2 is On,578
+H&E,ps,30-04-2025,J9,Mild Acid,R5,0,30-04-2025 17:51:49.935,April,Picked From,578
+H&E,ps,30-04-2025,W2,Running TAP Water,R5,0,30-04-2025 17:51:56.535,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:52:00.518,April,Device temperature ,578
+H&E,ps,30-04-2025,W1,Tap Water,--,0,30-04-2025 17:52:08.085,April,Water Valve : 1 is Off,578
+H&E,ps,30-04-2025,W1,Running TAP Water,R6,0,30-04-2025 17:52:13.978,April,Picked From,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:52:14.176,April,Home Reached,578
+H&E,ps,30-04-2025,J8,Hematoxin,R6,0,30-04-2025 17:52:22.665,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:52:23.274,April,Home Reached,578
+H&E,ps,30-04-2025,J21,95 % Alcohol,R4,0,30-04-2025 17:52:35.331,April,Picked From,578
+H&E,ps,30-04-2025,J22,100 % Alcohol,R4,0,30-04-2025 17:52:41.444,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 17:52:46.103,April,Device temperature ,578
+H&E,ps,30-04-2025,W2,Tap Water,--,0,30-04-2025 17:52:56.736,April,Water Valve : 2 is Off,578
+H&E,ps,30-04-2025,W2,Running TAP Water,R5,0,30-04-2025 17:53:04.670,April,Picked From,578
+H&E,ps,30-04-2025,J18,Bluing,R5,0,30-04-2025 17:53:11.292,April,Placed In,578
+H&E,ps,30-04-2025,J25,XYLENE-2,R3,0,30-04-2025 17:53:18.913,April,Picked From,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:53:19.127,April,Home Reached,578
+H&E,ps,30-04-2025,U3,Unloading,R3,0,30-04-2025 17:53:31.101,April,Placed In,578
+H&E,ps,30-04-2025,U3,Unloading,R3,0,30-04-2025 17:53:31.728,April,Test Completed,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:53:33.799,April,Home Reached,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 17:53:36.957,April,Device temperature ,578
+H&E,ps,30-04-2025,J22,100 % Alcohol,R4,0,30-04-2025 17:53:50.089,April,Picked From,578
+H&E,ps,30-04-2025,J23,100 % Alcohol,R4,0,30-04-2025 17:53:56.182,April,Placed In,578
+H&E,ps,30-04-2025,W6,Tap Water,--,0,30-04-2025 17:53:56.928,April,Water Valve : 6 is On,578
+H&E,ps,30-04-2025,J18,Bluing,R5,0,30-04-2025 17:54:19.880,April,Picked From,578
+H&E,ps,30-04-2025,W6,Running TAP Water,R5,0,30-04-2025 17:54:25.998,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:54:30.698,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:54:48.911,April,Device temperature ,578
+H&E,ps,30-04-2025,J23,100 % Alcohol,R4,0,30-04-2025 17:55:01.775,April,Picked From,578
+H&E,ps,30-04-2025,J24,XYLENE-1,R4,0,30-04-2025 17:55:07.868,April,Placed In,578
+H&E,ps,30-04-2025,W2,Tap Water,--,0,30-04-2025 17:55:08.869,April,Water Valve : 2 is On,578
+H&E,ps,30-04-2025,J8,Hematoxin,R6,0,30-04-2025 17:55:30.310,April,Picked From,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:55:30.509,April,Home Reached,578
+H&E,ps,30-04-2025,W2,Running TAP Water,R6,0,30-04-2025 17:55:39.497,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:55:40.128,April,Home Reached,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:55:43.388,April,Device temperature ,578
+H&E,ps,30-04-2025,W6,Tap Water,--,0,30-04-2025 17:55:49.212,April,Water Valve : 6 is Off,578
+H&E,ps,30-04-2025,W6,Running TAP Water,R5,0,30-04-2025 17:55:57.595,April,Picked From,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:55:57.797,April,Home Reached,578
+H&E,ps,30-04-2025,J19,Ethnol ,R5,0,30-04-2025 17:56:06.279,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:56:06.898,April,Home Reached,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 17:56:10.204,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 17:56:28.391,April,Device temperature ,578
+H&E,ps,30-04-2025,W2,Tap Water,--,0,30-04-2025 17:56:39.738,April,Water Valve : 2 is Off,578
+H&E,ps,30-04-2025,W2,Running TAP Water,R6,0,30-04-2025 17:56:47.615,April,Picked From,578
+H&E,ps,30-04-2025,J9,Mild Acid,R6,0,30-04-2025 17:56:54.237,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:56:58.724,April,Device temperature ,578
+H&E,ps,30-04-2025,J19,Ethnol ,R5,0,30-04-2025 17:57:15.864,April,Picked From,578
+H&E,ps,30-04-2025,J20,Eosin ,R5,0,30-04-2025 17:57:21.973,April,Placed In,578
+H&E,ps,30-04-2025,J24,XYLENE-1,R4,0,30-04-2025 17:57:29.945,April,Picked From,578
+H&E,ps,30-04-2025,J25,XYLENE-2,R4,0,30-04-2025 17:57:36.058,April,Placed In,578
+H&E,ps,30-04-2025,W2,Tap Water,--,0,30-04-2025 17:57:37.417,April,Water Valve : 2 is On,578
+H&E,ps,30-04-2025,J9,Mild Acid,R6,0,30-04-2025 17:57:59.850,April,Picked From,578
+H&E,ps,30-04-2025,W2,Running TAP Water,R6,0,30-04-2025 17:58:06.445,April,Placed In,578
+H&E,ps,30-04-2025,J20,Eosin ,R5,0,30-04-2025 17:58:14.559,April,Picked From,578
+H&E,ps,30-04-2025,J21,95 % Alcohol,R5,0,30-04-2025 17:58:20.649,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:58:21.389,April,Home Reached,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:58:22.421,April,Heater Door Opened,578
+H&E,ps,30-04-2025,L1,-,-,0,30-04-2025 17:58:31.418,April,Liquid Level - 761,578
+H&E,ps,30-04-2025,L2,-,-,0,30-04-2025 17:58:34.406,April,Liquid Level - 759,578
+H&E,ps,30-04-2025,L3,-,-,0,30-04-2025 17:58:37.398,April,Liquid Level - 766,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:58:38.102,April,Home Reached,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:58:39.849,April,Home Reached,578
+H&E,ps,30-04-2025,U1,Unloading,R7,0,30-04-2025 17:58:41.390,April,Test Started,578
+H&E,ps,30-04-2025,L1,Loading,R7,0,30-04-2025 17:58:48.988,April,Picked From,578
+H&E,ps,30-04-2025,H1,Heating,R7,0,30-04-2025 17:58:56.103,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:58:57.162,April,Heater Door Closed,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 17:58:57.862,April,Device temperature ,578
+H&E,ps,30-04-2025,W2,Tap Water,--,0,30-04-2025 17:59:06.644,April,Water Valve : 2 is Off,578
+H&E,ps,30-04-2025,W2,Running TAP Water,R6,0,30-04-2025 17:59:14.557,April,Picked From,578
+H&E,ps,30-04-2025,J18,Bluing,R6,0,30-04-2025 17:59:21.200,April,Placed In,578
+H&E,ps,30-04-2025,J21,95 % Alcohol,R5,0,30-04-2025 17:59:30.291,April,Picked From,578
+H&E,ps,30-04-2025,J22,100 % Alcohol,R5,0,30-04-2025 17:59:36.422,April,Placed In,578
+H&E,ps,30-04-2025,J25,XYLENE-2,R4,0,30-04-2025 17:59:48.170,April,Picked From,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 17:59:48.389,April,Home Reached,578
+H&E,ps,30-04-2025,U4,Unloading,R4,0,30-04-2025 17:59:59.853,April,Placed In,578
+H&E,ps,30-04-2025,U4,Unloading,R4,0,30-04-2025 18:00:00.469,April,Test Completed,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 18:00:05.534,April,Home Reached,578
+H&E,ps,30-04-2025,W6,Tap Water,--,0,30-04-2025 18:00:07.252,April,Water Valve : 6 is On,578
+H&E,ps,30-04-2025,J18,Bluing,R6,0,30-04-2025 18:00:29.822,April,Picked From,578
+H&E,ps,30-04-2025,W6,Running TAP Water,R6,0,30-04-2025 18:00:35.948,April,Placed In,578
+H&E,ps,30-04-2025,J22,100 % Alcohol,R5,0,30-04-2025 18:00:45.055,April,Picked From,578
+H&E,ps,30-04-2025,J23,100 % Alcohol,R5,0,30-04-2025 18:00:51.171,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 18:00:55.707,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 18:01:10.905,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 18:01:27.123,April,Device temperature ,578
+H&E,ps,30-04-2025,W6,Tap Water,--,0,30-04-2025 18:01:36.153,April,Water Valve : 6 is Off,578
+H&E,ps,30-04-2025,W6,Running TAP Water,R6,0,30-04-2025 18:01:41.548,April,Picked From,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 18:01:41.755,April,Home Reached,578
+H&E,ps,30-04-2025,J19,Ethnol ,R6,0,30-04-2025 18:01:50.242,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 18:01:50.844,April,Home Reached,578
+H&E,ps,30-04-2025,J23,100 % Alcohol,R5,0,30-04-2025 18:02:00.446,April,Picked From,578
+H&E,ps,30-04-2025,J24,XYLENE-1,R5,0,30-04-2025 18:02:06.553,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 18:02:11.186,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 18:02:26.386,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 18:02:42.607,April,Device temperature ,578
+H&E,ps,30-04-2025,J19,Ethnol ,R6,0,30-04-2025 18:02:57.874,April,Picked From,578
+H&E,ps,30-04-2025,J20,Eosin ,R6,0,30-04-2025 18:03:03.984,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 18:03:08.495,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 18:03:23.710,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 18:03:39.900,April,Device temperature ,578
+H&E,ps,30-04-2025,J20,Eosin ,R6,0,30-04-2025 18:03:54.628,April,Picked From,578
+H&E,ps,30-04-2025,J21,95 % Alcohol,R6,0,30-04-2025 18:04:00.760,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 18:04:05.190,April,Device temperature ,578
+H&E,ps,30-04-2025,J24,XYLENE-1,R5,0,30-04-2025 18:04:13.194,April,Picked From,578
+H&E,ps,30-04-2025,J25,XYLENE-2,R5,0,30-04-2025 18:04:19.291,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 18:04:23.786,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 18:04:27.420,April,Heater Door Opened,578
+H&E,ps,30-04-2025,U2,Unloading,R8,0,30-04-2025 18:04:27.950,April,Test Started,578
+H&E,ps,30-04-2025,L2,Loading,R8,0,30-04-2025 18:04:34.021,April,Picked From,578
+H&E,ps,30-04-2025,H2,Heating,R8,0,30-04-2025 18:04:41.104,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 18:04:42.182,April,Heater Door Closed,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 18:04:42.881,April,Device temperature ,578
+H&E,ps,30-04-2025,J21,95 % Alcohol,R6,0,30-04-2025 18:05:09.371,April,Picked From,578
+H&E,ps,30-04-2025,J22,100 % Alcohol,R6,0,30-04-2025 18:05:15.456,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 18:05:19.875,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 18:05:35.069,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 18:05:50.252,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 18:06:06.438,April,Device temperature ,578
+H&E,ps,30-04-2025,J22,100 % Alcohol,R6,0,30-04-2025 18:06:22.072,April,Picked From,578
+H&E,ps,30-04-2025,J23,100 % Alcohol,R6,0,30-04-2025 18:06:28.206,April,Placed In,578
+H&E,ps,30-04-2025,J25,XYLENE-2,R5,0,30-04-2025 18:06:35.956,April,Picked From,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 18:06:36.170,April,Home Reached,578
+H&E,ps,30-04-2025,U5,Unloading,R5,0,30-04-2025 18:06:47.163,April,Placed In,578
+H&E,ps,30-04-2025,U5,Unloading,R5,0,30-04-2025 18:06:47.772,April,Test Completed,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 18:06:52.846,April,Home Reached,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 18:06:54.576,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 18:07:09.773,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 18:07:25.975,April,Device temperature ,578
+H&E,ps,30-04-2025,J23,100 % Alcohol,R6,0,30-04-2025 18:07:36.332,April,Picked From,578
+H&E,ps,30-04-2025,J24,XYLENE-1,R6,0,30-04-2025 18:07:42.463,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 18:07:47.417,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 18:08:02.626,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 18:08:17.815,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 18:08:33.009,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 18:08:49.210,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 18:08:56.703,April,Heater Door Opened,578
+H&E,ps,30-04-2025,H1,Heating,R7,0,30-04-2025 18:09:04.304,April,Picked From,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 18:09:04.849,April,Heater Door Closed,578
+H&E,ps,30-04-2025,J1,XYLENE-1,R7,0,30-04-2025 18:09:11.946,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 18:09:16.358,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 18:09:34.553,April,Device temperature ,578
+H&E,ps,30-04-2025,J24,XYLENE-1,R6,0,30-04-2025 18:09:49.072,April,Picked From,578
+H&E,ps,30-04-2025,J25,XYLENE-2,R6,0,30-04-2025 18:09:55.172,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 18:09:59.669,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 18:10:12.486,April,Heater Door Opened,578
+H&E,ps,30-04-2025,U3,Unloading,R9,0,30-04-2025 18:10:13.014,April,Test Started,578
+H&E,ps,30-04-2025,L3,Loading,R9,0,30-04-2025 18:10:19.086,April,Picked From,578
+H&E,ps,30-04-2025,H1,Heating,R9,0,30-04-2025 18:10:25.689,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 18:10:26.762,April,Heater Door Closed,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 18:10:27.461,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 18:10:42.651,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 18:10:56.922,April,Device temperature ,578
+H&E,ps,30-04-2025,J1,XYLENE-1,R7,0,30-04-2025 18:11:18.545,April,Picked From,578
+H&E,ps,30-04-2025,J2,XYLENE-2,R7,0,30-04-2025 18:11:24.662,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 18:11:28.862,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 18:11:47.068,April,Device temperature ,578
+H&E,ps,30-04-2025,J25,XYLENE-2,R6,0,30-04-2025 18:12:01.278,April,Picked From,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 18:12:01.479,April,Home Reached,578
+H&E,ps,30-04-2025,U6,Unloading,R6,0,30-04-2025 18:12:12.494,April,Placed In,578
+H&E,ps,30-04-2025,U6,Unloading,R6,0,30-04-2025 18:12:13.083,April,Test Completed,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 18:12:18.145,April,Home Reached,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 18:12:19.876,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 18:12:35.064,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 18:12:50.278,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 18:13:05.503,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 18:13:21.698,April,Device temperature ,578
+H&E,ps,30-04-2025,J2,XYLENE-2,R7,0,30-04-2025 18:13:32.747,April,Picked From,578
+H&E,ps,30-04-2025,J4,100 % Alcohol,R7,0,30-04-2025 18:13:39.374,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 18:13:43.844,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 18:13:59.033,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 18:14:14.241,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 18:14:30.458,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 18:14:41.700,April,Heater Door Opened,578
+H&E,ps,30-04-2025,H2,Heating,R8,0,30-04-2025 18:14:49.792,April,Picked From,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 18:14:50.335,April,Heater Door Closed,578
+H&E,ps,30-04-2025,J1,XYLENE-1,R8,0,30-04-2025 18:14:57.417,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 18:15:01.365,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 18:15:16.590,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 18:15:32.793,April,Device temperature ,578
+H&E,ps,30-04-2025,J4,100 % Alcohol,R7,0,30-04-2025 18:15:46.476,April,Picked From,578
+H&E,ps,30-04-2025,J5,70%Alcohol,R7,0,30-04-2025 18:15:52.593,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 18:16:01.759,April,Home Reached,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 18:16:02.795,April,Heater Door Opened,578
+H&E,ps,30-04-2025,L1,-,-,0,30-04-2025 18:16:11.794,April,Liquid Level - 762,578
+H&E,ps,30-04-2025,L2,-,-,0,30-04-2025 18:16:14.772,April,Liquid Level - 759,578
+H&E,ps,30-04-2025,L3,-,-,0,30-04-2025 18:16:17.772,April,Liquid Level - 763,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 18:16:18.479,April,Home Reached,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 18:16:20.192,April,Home Reached,578
+H&E,ps,30-04-2025,U4,Unloading,R10,0,30-04-2025 18:16:21.720,April,Test Started,578
+H&E,ps,30-04-2025,L1,Loading,R10,0,30-04-2025 18:16:29.318,April,Picked From,578
+H&E,ps,30-04-2025,H2,Heating,R10,0,30-04-2025 18:16:36.419,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 18:16:37.494,April,Heater Door Closed,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 18:16:38.189,April,Device temperature ,578
+H&E,ps,30-04-2025,J1,XYLENE-1,R8,0,30-04-2025 18:17:04.033,April,Picked From,578
+H&E,ps,30-04-2025,J2,XYLENE-2,R8,0,30-04-2025 18:17:10.138,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 18:17:14.634,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 18:17:29.826,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 18:17:46.029,April,Device temperature ,578
+H&E,ps,30-04-2025,J5,70%Alcohol,R7,0,30-04-2025 18:17:59.682,April,Picked From,578
+H&E,ps,30-04-2025,J6,95% Alcohol,R7,0,30-04-2025 18:18:05.781,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 18:18:10.808,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 18:18:25.997,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 18:18:41.192,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 18:18:57.414,April,Device temperature ,578
+H&E,ps,30-04-2025,J2,XYLENE-2,R8,0,30-04-2025 18:19:17.251,April,Picked From,578
+H&E,ps,30-04-2025,J4,100 % Alcohol,R8,0,30-04-2025 18:19:23.850,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 18:19:28.359,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,-273,30-04-2025 18:19:43.560,April,Device temperature ,578
+H&E,ps,30-04-2025,W1,Tap Water,--,0,30-04-2025 18:19:48.968,April,Water Valve : 1 is On,578
+H&E,ps,30-04-2025,J6,95% Alcohol,R7,0,30-04-2025 18:20:12.373,April,Picked From,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 18:20:12.591,April,Home Reached,578
+H&E,ps,30-04-2025,W1,Running TAP Water,R7,0,30-04-2025 18:20:21.582,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 18:20:22.192,April,Home Reached,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 18:20:24.979,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 18:20:26.242,April,Heater Door Opened,578
+H&E,ps,30-04-2025,H1,Heating,R9,0,30-04-2025 18:20:32.808,April,Picked From,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 18:20:33.384,April,Heater Door Closed,578
+H&E,ps,30-04-2025,J1,XYLENE-1,R9,0,30-04-2025 18:20:40.478,April,Placed In,578
+H&E,ps,30-04-2025,-,-,-,545,30-04-2025 18:20:44.919,April,Device temperature ,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 18:20:57.421,April,Heater Switched Off ,578
+H&E,ps,30-04-2025,W1,Tap Water,--,0,30-04-2025 18:20:58.430,April,Water Valve : 1 is On,578
+H&E,ps,30-04-2025,W2,Tap Water,--,0,30-04-2025 18:20:59.126,April,Water Valve : 2 is On,578
+H&E,ps,30-04-2025,W3,Tap Water,--,0,30-04-2025 18:20:59.820,April,Water Valve : 3 is On,578
+H&E,ps,30-04-2025,W4,Tap Water,--,0,30-04-2025 18:21:00.516,April,Water Valve : 4 is On,578
+H&E,ps,30-04-2025,W5,Tap Water,--,0,30-04-2025 18:21:01.203,April,Water Valve : 5 is On,578
+H&E,ps,30-04-2025,W6,Tap Water,--,0,30-04-2025 18:21:01.898,April,Water Valve : 6 is On,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 18:21:02.596,April,Home Reached,578
+H&E,ps,30-04-2025,-,-,-,0,30-04-2025 18:21:04.804,April,Home Reached,578

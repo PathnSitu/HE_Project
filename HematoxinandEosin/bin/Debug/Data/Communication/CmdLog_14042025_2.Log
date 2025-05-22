@@ -1,0 +1,188 @@
+Command Sent (SeqNo: 0, Retry: 0) HEATER DOOR CLOSE - #0,8,1,0*e1c8  * 14-04-2025 06:45:54.142
+Raw Resp (SeqNo: 1) - #0,8,I001*24f8
+ * 14-04-2025 06:45:55.688
+CRC-Response (SeqNo: 1) - 0,8,I001*24f8 * 14-04-2025 06:45:55.689
+Duplicate Response Ignored (SeqNo: 1): #0,8,F000*f03a
+ * 14-04-2025 06:45:56.782
+Raw Resp (SeqNo: 1) - #0,8,F000*f03a
+ * 14-04-2025 06:45:56.782
+CRC-Response (SeqNo: 1) - 0,8,F000*f03a * 14-04-2025 06:45:56.782
+Command Sent (SeqNo: 1, Retry: 0) HEATER DOOR CLOSE - #1,8,1,0*21d8  * 14-04-2025 06:46:38.227
+Raw Resp (SeqNo: 2) - #1,8,I001*e839
+ * 14-04-2025 06:46:38.457
+CRC-Response (SeqNo: 2) - 1,8,I001*e839 * 14-04-2025 06:46:38.458
+Duplicate Response Ignored (SeqNo: 2): #1,8,F000*3cfb
+ * 14-04-2025 06:46:38.800
+Raw Resp (SeqNo: 2) - #1,8,F000*3cfb
+ * 14-04-2025 06:46:39.88
+CRC-Response (SeqNo: 2) - 1,8,F000*3cfb * 14-04-2025 06:46:39.89
+Command Sent (SeqNo: 2, Retry: 0) HEATER DOOR CLOSE - #2,8,1,0*21eb  * 14-04-2025 06:47:19.911
+Raw Resp (SeqNo: 3) - #2,8,I001*fd79
+ * 14-04-2025 06:47:20.138
+CRC-Response (SeqNo: 3) - 2,8,I001*fd79 * 14-04-2025 06:47:20.139
+Duplicate Response Ignored (SeqNo: 3): #2,8,F000*29bb
+ * 14-04-2025 06:47:20.466
+Raw Resp (SeqNo: 3) - #2,8,F000*29bb
+ * 14-04-2025 06:47:20.467
+CRC-Response (SeqNo: 3) - 2,8,F000*29bb * 14-04-2025 06:47:20.467
+Command Sent (SeqNo: 3, Retry: 0) HEATER DOOR CLOSE - #3,8,1,0*e1fb  * 14-04-2025 06:57:21.64
+Raw Resp (SeqNo: 4) - #3,8,I001*31b8
+ * 14-04-2025 06:57:21.296
+CRC-Response (SeqNo: 4) - 3,8,I001*31b8 * 14-04-2025 06:57:21.296
+Duplicate Response Ignored (SeqNo: 4): #3,8,F000*e57a
+ * 14-04-2025 06:57:21.629
+Raw Resp (SeqNo: 4) - #3,8,F000*e57a
+ * 14-04-2025 06:57:21.629
+CRC-Response (SeqNo: 4) - 3,8,F000*e57a * 14-04-2025 06:57:21.630
+Command Sent (SeqNo: 4, Retry: 0) HEATER DOOR CLOSE - #4,8,1,0*218d  * 14-04-2025 07:20:25.52
+Raw Resp (SeqNo: 5) - #4,8,I001*d7f9
+ * 14-04-2025 07:20:25.324
+CRC-Response (SeqNo: 5) - 4,8,I001*d7f9 * 14-04-2025 07:20:25.324
+Raw Resp (SeqNo: 5) - #4,8,F000*033b
+ * 14-04-2025 07:20:25.629
+CRC-Response (SeqNo: 5) - 4,8,F000*033b * 14-04-2025 07:20:25.629
+Rack Unloaded From U5 * 14-04-2025 07:20:42.687
+Command Sent (SeqNo: 0, Retry: 0) HEATER DOOR CLOSE - #0,8,1,0*e1c8  * 14-04-2025 07:22:03.806
+CRC-Response  - 0,8,F000*f03a * 14-04-2025 07:22:04.287
+Command Sent (SeqNo: 1, Retry: 0) READ TEMPERATURE - #1,11*551b  * 14-04-2025 07:22:04.410
+CRC-Response  - 1,11,F000,-273*b231 * 14-04-2025 07:22:04.525
+Command Sent (SeqNo: 0, Retry: 0) SET TEMPERATURE - #0,10,32*870a  * 14-04-2025 07:23:18.72
+CRC-Response  - 0,10,F000*1ae9 * 14-04-2025 07:23:18.340
+Command Sent (SeqNo: 1, Retry: 0) HEATER ON - #1,12,1*dbe7  * 14-04-2025 07:23:19.273
+CRC-Response  - 1,12,F000*68e5 * 14-04-2025 07:23:19.387
+Command Sent (SeqNo: 2, Retry: 0) HEATER DOOR CLOSE - #2,8,1,0*21eb  * 14-04-2025 07:23:19.828
+CRC-Response  - 2,8,F000*29bb * 14-04-2025 07:23:20.287
+Command Sent (SeqNo: 3, Retry: 0) READ TEMPERATURE - #3,11*ed1a  * 14-04-2025 07:23:20.389
+CRC-Response  - 3,11,F000,545*d48f * 14-04-2025 07:23:20.504
+Command Sent (SeqNo: 4, Retry: 0) WATER VALVE - 1 CONTROL OFF - #4,13,1,0*80ea  * 14-04-2025 07:23:35.444
+CRC-Response  - 4,13,F000*e9db * 14-04-2025 07:23:35.568
+Command Sent (SeqNo: 5, Retry: 0) WATER VALVE - 2 CONTROL OFF - #5,13,2,0*4cdb  * 14-04-2025 07:23:36.65
+CRC-Response  - 5,13,F000*79d6 * 14-04-2025 07:23:36.185
+Command Sent (SeqNo: 6, Retry: 0) WATER VALVE - 3 CONTROL OFF - #6,13,3,0*99ca  * 14-04-2025 07:23:36.621
+CRC-Response  - 6,13,F000*89c2 * 14-04-2025 07:23:36.742
+Command Sent (SeqNo: 7, Retry: 0) WATER VALVE - 4 CONTROL OFF - #7,13,4,0*94ba  * 14-04-2025 07:23:37.177
+CRC-Response  - 7,13,F000*19cf * 14-04-2025 07:23:37.294
+Command Sent (SeqNo: 8, Retry: 0) WATER VALVE - 5 CONTROL OFF - #8,13,5,0*14ab  * 14-04-2025 07:23:37.732
+CRC-Response  - 8,13,F000*e98e * 14-04-2025 07:23:37.850
+Command Sent (SeqNo: 9, Retry: 0) WATER VALVE - 6 CONTROL OFF - #9,13,6,0*d89a  * 14-04-2025 07:23:38.286
+CRC-Response  - 9,13,F000*7983 * 14-04-2025 07:23:38.407
+Command Sent (SeqNo: 10, Retry: 0) Home Command - #10,5,01111111*2199  * 14-04-2025 07:23:38.845
+CRC-Response  - 10,5,F000*8728 * 14-04-2025 07:23:38.967
+Command Sent (SeqNo: 11, Retry: 0) Home Command - #11,5,01111111*e264  * 14-04-2025 07:23:40.921
+CRC-Response  - 11,5,F000*4be9 * 14-04-2025 07:23:41.43
+Command Sent (SeqNo: 12, Retry: 0) Level Sensing For L1 - #12,4,17564,16380,0,0*6888  * 14-04-2025 07:23:41.987
+CRC-Response  - 12,4,F000,749*077e * 14-04-2025 07:23:50.396
+L1 Value - 749 * 14-04-2025 07:23:50.428
+Command Sent (SeqNo: 13, Retry: 0) Level Sensing For L2 - #13,4,13934,16380,0,0*90ad  * 14-04-2025 07:23:50.573
+CRC-Response  - 13,4,F000,748*0442 * 14-04-2025 07:23:52.986
+L2 Value - 748 * 14-04-2025 07:23:53.9
+Command Sent (SeqNo: 14, Retry: 0) Level Sensing For L3 - #14,4,10304,16380,0,0*e907  * 14-04-2025 07:23:53.141
+CRC-Response  - 14,4,F000,732*f835 * 14-04-2025 07:23:55.544
+L3 Value - 732 * 14-04-2025 07:23:55.566
+Command Sent (SeqNo: 15, Retry: 0) Home Command - #15,5,01111111*2d95  * 14-04-2025 07:23:55.720
+CRC-Response  - 15,5,F000*b8e8 * 14-04-2025 07:23:55.844
+Command Sent (SeqNo: 16, Retry: 0) Home Command - #16,5,01111111*2991  * 14-04-2025 07:23:57.287
+CRC-Response  - 16,5,F000*ada8 * 14-04-2025 07:23:57.413
+Rack - 1Protocol Started * 14-04-2025 07:23:58.555
+Command Sent (SeqNo: 17, Retry: 0) Rack-1 Picked from L1 - #17,2,2,17564,16380,0,0*c95b  * 14-04-2025 07:23:58.668
+CRC-Response  - 17,2,F000,2*4b33 * 14-04-2025 07:24:05.974
+RA Picked Rack From L1 * 14-04-2025 07:24:05.976
+Command Sent (SeqNo: 18, Retry: 0) Rack-1 Placed in H1 - #18,3,2,2688,1000,0,1*f3aa  * 14-04-2025 07:24:06.269
+CRC-Response  - 18,3,F000,2*b7c2 * 14-04-2025 07:24:13.282
+RA Placed Rack in H1 * 14-04-2025 07:24:13.285
+Command Sent (SeqNo: 19, Retry: 0) HEATER DOOR CLOSE - #19,8,1,0*32c8  * 14-04-2025 07:24:13.888
+CRC-Response  - 19,8,F000*f0e9 * 14-04-2025 07:24:14.382
+Command Sent (SeqNo: 20, Retry: 0) READ TEMPERATURE - #20,11*4907  * 14-04-2025 07:24:14.467
+CRC-Response  - 20,11,F000,545*0f11 * 14-04-2025 07:24:14.585
+Command Sent (SeqNo: 21, Retry: 0) READ TEMPERATURE - #21,11*b506  * 14-04-2025 07:24:29.512
+CRC-Response  - 21,11,F000,545*8e13 * 14-04-2025 07:24:29.640
+Command Sent (SeqNo: 22, Retry: 0) READ TEMPERATURE - #22,11*f106  * 14-04-2025 07:24:34.58
+CRC-Response  - 22,11,F000,-273*1a6b * 14-04-2025 07:24:34.178
+Command Sent (SeqNo: 23, Retry: 0) READ TEMPERATURE - #23,11*0d07  * 14-04-2025 07:24:44.569
+CRC-Response  - 23,11,F000,-273*db6b * 14-04-2025 07:24:44.689
+Command Sent (SeqNo: 24, Retry: 0) READ TEMPERATURE - #24,11*7906  * 14-04-2025 07:24:59.630
+CRC-Response  - 24,11,F000,-273*1c6d * 14-04-2025 07:24:59.762
+Command Sent (SeqNo: 25, Retry: 0) READ TEMPERATURE - #25,11*8507  * 14-04-2025 07:25:14.686
+CRC-Response  - 25,11,F000,-273*dd6d * 14-04-2025 07:25:14.807
+Command Sent (SeqNo: 26, Retry: 0) READ TEMPERATURE - #26,11*c107  * 14-04-2025 07:25:29.747
+CRC-Response  - 26,11,F000,-273*de6e * 14-04-2025 07:25:29.856
+Command Sent (SeqNo: 27, Retry: 0) READ TEMPERATURE - #27,11*3d06  * 14-04-2025 07:25:44.831
+CRC-Response  - 27,11,F000,-273*1f6e * 14-04-2025 07:25:44.958
+Command Sent (SeqNo: 28, Retry: 0) READ TEMPERATURE - #28,11*2905  * 14-04-2025 07:25:59.889
+Command Sent (SeqNo: 29, Retry: 0) READ TEMPERATURE - #29,11*d504  * 14-04-2025 07:26:14.933
+Command Sent (SeqNo: 30, Retry: 0) READ TEMPERATURE - #30,11*893a  * 14-04-2025 07:26:29.985
+CRC-Response (SeqNo: 31) - 30,11,F000,-273*d8a9 * 14-04-2025 07:26:30.133
+Command Sent (SeqNo: 31, Retry: 0) READ TEMPERATURE - #31,11*753b  * 14-04-2025 07:26:45.71
+CRC-Response (SeqNo: 32) - 31,11,F000,-273*19a9 * 14-04-2025 07:26:45.189
+Command Sent (SeqNo: 32, Retry: 0) READ TEMPERATURE - #32,11*313b  * 14-04-2025 07:27:00.120
+CRC-Response (SeqNo: 33) - 32,11,F000,545*8c16 * 14-04-2025 07:27:00.244
+Command Sent (SeqNo: 33, Retry: 0) READ TEMPERATURE - #33,11*cd3a  * 14-04-2025 07:27:15.189
+CRC-Response (SeqNo: 34) - 33,11,F000,-273*dbaa * 14-04-2025 07:27:15.311
+Command Sent (SeqNo: 34, Retry: 0) READ TEMPERATURE - #34,11*b93b  * 14-04-2025 07:27:30.250
+CRC-Response (SeqNo: 35) - 34,11,F000,-273*1cac * 14-04-2025 07:27:30.372
+Command Sent (SeqNo: 35, Retry: 0) READ TEMPERATURE - #35,11*453a  * 14-04-2025 07:27:45.322
+CRC-Response (SeqNo: 36) - 35,11,F000,-273*ddac * 14-04-2025 07:27:45.441
+Command Sent (SeqNo: 36, Retry: 0) READ TEMPERATURE - #36,11*013a  * 14-04-2025 07:28:00.380
+CRC-Response (SeqNo: 37) - 36,11,F000,-273*deaf * 14-04-2025 07:28:00.501
+Command Sent (SeqNo: 37, Retry: 0) READ TEMPERATURE - #37,11*fd3b  * 14-04-2025 07:28:15.450
+CRC-Response (SeqNo: 38) - 37,11,F000,-273*1faf * 14-04-2025 07:28:15.561
+Command Sent (SeqNo: 38, Retry: 0) READ TEMPERATURE - #38,11*e938  * 14-04-2025 07:28:30.524
+CRC-Response (SeqNo: 38) - 38,11,F000,545*860e * 14-04-2025 07:28:30.661
+Command Sent (SeqNo: 39, Retry: 0) READ TEMPERATURE - #39,11*1539  * 14-04-2025 07:28:45.573
+CRC-Response (SeqNo: 39) - 39,11,F000,545*070c * 14-04-2025 07:28:45.692
+Command Sent (SeqNo: 40, Retry: 0) READ TEMPERATURE - #40,11*498f  * 14-04-2025 07:29:00.651
+CRC-Response (SeqNo: 40) - 40,11,F000,-273*daee * 14-04-2025 07:29:00.779
+Command Sent (SeqNo: 41, Retry: 0) READ TEMPERATURE - #41,11*b58e  * 14-04-2025 07:29:15.744
+CRC-Response (SeqNo: 41) - 41,11,F000,-273*1bee * 14-04-2025 07:29:15.861
+Command Sent (SeqNo: 42, Retry: 0) READ TEMPERATURE - #42,11*f18e  * 14-04-2025 07:29:30.841
+CRC-Response (SeqNo: 42) - 42,11,F000,-273*18ed * 14-04-2025 07:29:30.965
+Command Sent (SeqNo: 43, Retry: 0) READ TEMPERATURE - #43,11*0d8f  * 14-04-2025 07:29:45.918
+CRC-Response (SeqNo: 43) - 43,11,F000,545*ca12 * 14-04-2025 07:29:46.60
+Command Sent (SeqNo: 44, Retry: 0) READ TEMPERATURE - #44,11*798e  * 14-04-2025 07:30:00.983
+CRC-Response (SeqNo: 44) - 44,11,F000,-273*1eeb * 14-04-2025 07:30:01.105
+Command Sent (SeqNo: 45, Retry: 0) READ TEMPERATURE - #45,11*858f  * 14-04-2025 07:30:16.56
+CRC-Response (SeqNo: 45) - 45,11,F000,-273*dfeb * 14-04-2025 07:30:16.172
+Command Sent (SeqNo: 46, Retry: 0) HEATER DOOR OPEN - #46,8,1,1*cd36  * 14-04-2025 07:30:19.30
+CRC-Response (SeqNo: 46) - 46,8,I001*3454 * 14-04-2025 07:30:19.162
+CRC-Response (SeqNo: 46) - 46,8,F000*e096 * 14-04-2025 07:30:19.501
+Rack - 2Protocol Started * 14-04-2025 07:30:19.568
+Command Sent (SeqNo: 47, Retry: 0) Rack-2 Picked from L2 - #47,2,2,13934,16380,0,0*f2d6  * 14-04-2025 07:30:19.652
+CRC-Response (SeqNo: 47) - 47,2,I001,2*b873 * 14-04-2025 07:30:19.777
+CRC-Response (SeqNo: 47) - 47,2,F000,2*8722 * 14-04-2025 07:30:26.256
+RA Picked Rack From L2 * 14-04-2025 07:30:26.259
+Command Sent (SeqNo: 48, Retry: 0) Rack-2 Placed in H2 - #48,3,2,2688,8700,0,1*0cd0  * 14-04-2025 07:30:26.770
+CRC-Response (SeqNo: 48) - 48,3,I001,2*4482 * 14-04-2025 07:30:26.905
+CRC-Response (SeqNo: 48) - 48,3,F000,2*7bd3 * 14-04-2025 07:30:33.366
+RA Placed Rack in H2 * 14-04-2025 07:30:33.371
+Command Sent (SeqNo: 49, Retry: 0) HEATER DOOR CLOSE - #49,8,1,0*0d08  * 14-04-2025 07:30:34.392
+CRC-Response (SeqNo: 49) - 49,8,I001*7414 * 14-04-2025 07:30:34.529
+CRC-Response (SeqNo: 49) - 49,8,F000*a0d6 * 14-04-2025 07:30:34.867
+Command Sent (SeqNo: 50, Retry: 0) READ TEMPERATURE - #50,11*89b2  * 14-04-2025 07:30:34.970
+CRC-Response (SeqNo: 50) - 50,11,F000,-273*da2f * 14-04-2025 07:30:35.85
+Command Sent (SeqNo: 51, Retry: 0) READ TEMPERATURE - #51,11*75b3  * 14-04-2025 07:30:50.50
+CRC-Response (SeqNo: 51) - 51,11,F000,-273*1b2f * 14-04-2025 07:30:50.176
+Command Sent (SeqNo: 52, Retry: 0) READ TEMPERATURE - #52,11*31b3  * 14-04-2025 07:30:54.940
+CRC-Response (SeqNo: 52) - 52,11,F000,545*8a10 * 14-04-2025 07:30:55.56
+Command Sent (SeqNo: 53, Retry: 0) READ TEMPERATURE - #53,11*cdb2  * 14-04-2025 07:31:05.116
+CRC-Response (SeqNo: 53) - 53,11,F000,-273*d92c * 14-04-2025 07:31:05.236
+Command Sent (SeqNo: 54, Retry: 0) READ TEMPERATURE - #54,11*b9b3  * 14-04-2025 07:31:20.179
+CRC-Response (SeqNo: 54) - 54,11,F000,-273*1e2a * 14-04-2025 07:31:20.297
+Command Sent (SeqNo: 55, Retry: 0) READ TEMPERATURE - #55,11*45b2  * 14-04-2025 07:31:35.256
+CRC-Response (SeqNo: 55) - 55,11,F000,-273*df2a * 14-04-2025 07:31:35.379
+Command Sent (SeqNo: 56, Retry: 0) READ TEMPERATURE - #56,11*01b2  * 14-04-2025 07:31:50.308
+CRC-Response (SeqNo: 56) - 56,11,F000,545*0e1e * 14-04-2025 07:31:50.454
+Command Sent (SeqNo: 57, Retry: 0) READ TEMPERATURE - #57,11*fdb3  * 14-04-2025 07:32:05.353
+CRC-Response (SeqNo: 57) - 57,11,F000,545*8f1c * 14-04-2025 07:32:05.473
+Command Sent (SeqNo: 58, Retry: 0) READ TEMPERATURE - #58,11*e9b0  * 14-04-2025 07:32:20.408
+CRC-Response (SeqNo: 58) - 58,11,F000,-273*1226 * 14-04-2025 07:32:20.519
+Command Sent (SeqNo: 59, Retry: 0) READ TEMPERATURE - #59,11*15b1  * 14-04-2025 07:32:35.469
+CRC-Response (SeqNo: 59) - 59,11,F000,545*010a * 14-04-2025 07:32:35.587
+Command Sent (SeqNo: 60, Retry: 0) READ TEMPERATURE - #60,11*89f6  * 14-04-2025 07:32:50.538
+CRC-Response (SeqNo: 60) - 60,11,F000,-273*db6c * 14-04-2025 07:32:50.654
+Command Sent (SeqNo: 61, Retry: 0) READ TEMPERATURE - #61,11*75f7  * 14-04-2025 07:33:05.596
+CRC-Response (SeqNo: 61) - 61,11,F000,545*4a16 * 14-04-2025 07:33:05.721
+User Aborted / Stopped the application forcefully  * 14-04-2025 07:33:16.603
+Command Sent (SeqNo: 62, Retry: 0) HEATER OFF - #62,12,0*306b  * 14-04-2025 07:33:19.686
+Error sending func_code: 12, SeqNo: 62, Retry: 1, Error: The port is closed. * 14-04-2025 07:33:19.891
+Error sending func_code: 12, SeqNo: 62, Retry: 2, Error: The port is closed. * 14-04-2025 07:33:19.919
+Error sending func_code: 12, SeqNo: 62, Retry: 3, Error: The port is closed. * 14-04-2025 07:33:19.940

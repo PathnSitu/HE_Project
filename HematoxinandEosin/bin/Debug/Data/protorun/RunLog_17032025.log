@@ -1,0 +1,742 @@
+H- E,ps,17-03-2025,-,-,-,0,17-03-2025 11:25:59.335,March,Protorun Started,377
+H- E,ps,17-03-2025,-,-,-,30,17-03-2025 11:26:10.147,March,30 - Temperature set to device,377
+H- E,ps,17-03-2025,-,-,-,0,17-03-2025 11:26:11.431,March,Heater Switched On ,377
+H- E,ps,17-03-2025,-,-,-,0,17-03-2025 11:26:12.851,March,Heater Door Closed,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:26:13.365,March,Device temperature ,377
+H- E,ps,17-03-2025,W1,Tap Water,--,0,17-03-2025 11:26:22.490,March,Water Valve : 1 is Off,377
+H- E,ps,17-03-2025,W2,Tap Water,--,0,17-03-2025 11:26:27.540,March,Water Valve : 2 is Off,377
+H- E,ps,17-03-2025,W3,Tap Water,--,0,17-03-2025 11:26:34.430,March,Water Valve : 3 is Off,377
+H- E,ps,17-03-2025,W4,Tap Water,--,0,17-03-2025 11:26:41.474,March,Water Valve : 4 is Off,377
+H- E,ps,17-03-2025,W5,Tap Water,--,0,17-03-2025 11:26:49.355,March,Water Valve : 5 is Off,377
+H- E,ps,17-03-2025,W6,Tap Water,--,0,17-03-2025 11:26:56.996,March,Water Valve : 6 is Off,377
+H- E,ps,17-03-2025,-,-,-,0,17-03-2025 11:27:10.524,March,Home Reached,377
+H- E,ps,17-03-2025,-,-,-,0,17-03-2025 11:27:26.198,March,Home Reached,377
+H- E,ps,17-03-2025,L1,-,-,0,17-03-2025 11:27:36.109,March,Liquid Level - 200,377
+H- E,ps,17-03-2025,L2,-,-,0,17-03-2025 11:27:38.842,March,Liquid Level - 200,377
+H- E,ps,17-03-2025,L3,-,-,0,17-03-2025 11:27:41.645,March,Liquid Level - 200,377
+H- E,ps,17-03-2025,-,-,-,0,17-03-2025 11:27:55.347,March,Home Reached,377
+H- E,ps,17-03-2025,-,-,-,0,17-03-2025 11:28:10.257,March,Home Reached,377
+H- E,ps,17-03-2025,,,R1,0,17-03-2025 11:28:11.874,March,Test Started,377
+H- E,ps,17-03-2025,L1,Loading,R1,0,17-03-2025 11:28:18.695,March,Picked From,377
+H- E,ps,17-03-2025,H1,Heating,R1,0,17-03-2025 11:28:26.053,March,Placed In,377
+H- E,ps,17-03-2025,-,-,-,0,17-03-2025 11:28:26.688,March,Heater Door Closed,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:28:27.122,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:28:29.450,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:28:32.412,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:28:37.672,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:28:42.964,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:28:48.257,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:28:53.523,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:28:58.782,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,-273,17-03-2025 11:29:04.053,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:29:09.329,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:29:14.599,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:29:19.861,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:29:25.211,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:29:30.473,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:29:35.766,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:29:41.053,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:29:46.317,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,-273,17-03-2025 11:29:51.579,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:29:56.849,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:30:02.108,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:30:07.383,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:30:12.652,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:30:17.924,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:30:23.190,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:30:28.456,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:30:33.744,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:30:39.016,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:30:44.278,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:30:49.557,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:30:54.829,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:31:00.225,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:31:05.501,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:31:10.788,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:31:16.048,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:31:21.311,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:31:26.579,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,-273,17-03-2025 11:31:31.859,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:31:37.121,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:31:42.391,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:31:47.652,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:31:52.927,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:31:58.209,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,-273,17-03-2025 11:32:03.467,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:32:08.738,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:32:14.000,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:32:19.260,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:32:24.525,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:32:29.784,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,-273,17-03-2025 11:32:35.053,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:32:40.322,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:32:45.583,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:32:50.848,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:32:56.117,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:33:01.383,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:33:06.640,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:33:11.912,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:33:17.177,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:33:22.447,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:33:27.801,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:33:33.073,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:33:38.355,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:33:43.624,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:33:49.098,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:33:54.373,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:33:59.649,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:34:04.931,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:34:10.192,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:34:15.461,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:34:20.719,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,-273,17-03-2025 11:34:25.986,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:34:31.262,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:34:36.551,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:34:41.818,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:34:47.080,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:34:52.350,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:34:57.604,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:35:02.872,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:35:08.164,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:35:13.441,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:35:18.706,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:35:23.977,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:35:29.240,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:35:34.500,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:35:39.777,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:35:45.057,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:35:50.345,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:35:55.625,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:36:00.908,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:36:06.179,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:36:11.448,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:36:16.728,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:36:22.004,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:36:27.336,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,-273,17-03-2025 11:36:32.590,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:36:37.861,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:36:43.123,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:36:48.387,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:36:53.656,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:36:58.931,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:37:04.186,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:37:09.455,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:37:14.716,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:37:19.989,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:37:25.255,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:37:30.513,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:37:35.796,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:37:41.072,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:37:46.330,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:37:51.610,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:37:56.878,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:38:02.137,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:38:07.400,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:38:12.659,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:38:17.927,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:38:23.194,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:38:28.462,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:38:33.724,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:38:38.989,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:38:44.259,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:38:49.559,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:38:54.907,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:39:00.088,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:39:05.342,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:39:10.635,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,0,17-03-2025 11:39:13.885,March,Heater Door Opened,377
+H- E,ps,17-03-2025,,,R2,0,17-03-2025 11:39:14.568,March,Test Started,377
+H- E,ps,17-03-2025,L2,Loading,R2,0,17-03-2025 11:39:21.358,March,Picked From,377
+H- E,ps,17-03-2025,H2,Heating,R2,0,17-03-2025 11:39:28.245,March,Placed In,377
+H- E,ps,17-03-2025,-,-,-,0,17-03-2025 11:39:28.881,March,Heater Door Closed,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:39:29.316,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:39:32.356,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:39:34.581,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:39:39.854,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:39:45.129,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:39:50.389,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:39:55.650,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:40:00.929,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:40:06.191,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:40:11.468,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,-273,17-03-2025 11:40:16.732,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:40:22.007,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:40:27.285,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:40:32.552,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:40:37.823,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:40:43.086,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:40:48.361,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:40:53.628,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:40:58.886,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:41:04.166,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:41:09.430,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:41:14.697,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:41:19.952,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:41:25.235,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:41:30.510,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:41:35.786,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:41:41.041,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:41:46.303,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:41:51.564,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:41:56.828,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:42:02.093,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:42:07.380,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:42:12.646,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:42:17.926,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:42:23.191,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:42:28.477,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:42:33.739,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:42:39.009,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:42:44.280,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:42:49.565,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:42:54.833,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:43:00.123,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:43:05.368,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:43:10.627,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:43:15.896,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:43:21.160,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:43:26.420,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:43:31.683,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:43:36.950,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:43:42.237,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:43:47.503,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:43:52.767,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:43:58.047,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:44:03.322,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:44:08.605,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:44:13.835,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:44:19.121,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:44:24.412,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:44:29.672,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:44:34.958,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:44:40.229,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:44:45.489,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:44:50.745,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:44:56.026,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:45:01.293,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:45:06.557,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:45:11.811,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:45:17.082,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:45:22.359,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:45:27.630,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:45:32.898,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:45:38.151,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:45:43.485,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:45:48.745,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:45:53.997,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:45:59.297,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:46:04.565,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:46:09.845,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:46:15.207,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:46:20.478,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:46:25.764,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:46:31.028,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:46:36.322,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:46:41.581,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:46:46.861,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:46:52.133,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:46:57.384,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:47:02.638,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:47:07.948,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:47:13.261,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:47:18.535,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:47:23.829,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:47:29.100,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:47:34.359,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:47:39.649,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:47:44.909,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:47:50.180,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:47:55.453,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:48:00.714,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:48:06.017,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:48:12.289,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:48:18.545,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:48:24.832,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,0,17-03-2025 11:48:27.604,March,Heater Door Opened,377
+H- E,ps,17-03-2025,H1,Heating,R1,0,17-03-2025 11:48:34.109,March,Picked From,377
+H- E,ps,17-03-2025,-,-,-,0,17-03-2025 11:48:34.739,March,Heater Door Closed,377
+H- E,ps,17-03-2025,J1,XYLENE-1,R1,0,17-03-2025 11:48:41.240,March,Placed In,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:48:45.325,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:48:50.605,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:48:55.872,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:49:01.141,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:49:06.410,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:49:11.666,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:49:16.922,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:49:22.180,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:49:27.445,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:49:32.702,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:49:37.998,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:49:43.282,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:49:48.570,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:49:53.827,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:49:59.112,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:50:04.381,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:50:09.638,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:50:14.921,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,0,17-03-2025 11:50:16.165,March,Heater Door Opened,377
+H- E,ps,17-03-2025,,,R3,0,17-03-2025 11:50:16.837,March,Test Started,377
+H- E,ps,17-03-2025,L3,Loading,R3,0,17-03-2025 11:50:23.700,March,Picked From,377
+H- E,ps,17-03-2025,H1,Heating,R3,0,17-03-2025 11:50:30.546,March,Placed In,377
+H- E,ps,17-03-2025,-,-,-,0,17-03-2025 11:50:31.182,March,Heater Door Closed,377
+H- E,ps,17-03-2025,-,-,-,-273,17-03-2025 11:50:31.600,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:50:34.673,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:50:36.856,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:50:42.137,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:50:47.405,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:50:52.672,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:50:57.934,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:51:03.207,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:51:08.492,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:51:13.749,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:51:19.021,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,-273,17-03-2025 11:51:24.286,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:51:29.579,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:51:34.858,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:51:40.126,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:51:45.396,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:51:50.662,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:51:55.937,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:52:01.217,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:52:06.491,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:52:11.767,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:52:17.042,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:52:22.329,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:52:27.599,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:52:32.856,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:52:38.134,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:52:43.401,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:52:48.658,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:52:53.921,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:52:59.188,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:53:04.457,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:53:09.787,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:53:15.041,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:53:20.303,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:53:26.556,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:53:32.821,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:53:39.106,March,Device temperature ,377
+H- E,ps,17-03-2025,J1,XYLENE-1,R1,0,17-03-2025 11:53:49.003,March,Picked From,377
+H- E,ps,17-03-2025,J2,XYLENE-2,R1,0,17-03-2025 11:53:55.324,March,Placed In,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:53:59.569,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:54:04.830,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:54:10.091,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:54:15.379,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:54:20.640,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:54:26.034,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:54:31.289,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:54:36.547,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:54:41.805,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:54:47.067,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:54:52.336,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:54:57.599,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:55:02.891,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:55:08.149,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:55:13.429,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:55:18.700,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:55:23.964,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:55:29.227,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:55:34.504,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:55:39.765,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:55:45.036,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:55:50.298,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:55:55.564,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:56:00.837,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:56:06.091,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:56:11.367,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:56:16.622,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:56:21.898,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:56:27.185,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:56:32.453,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:56:37.726,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:56:42.981,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:56:48.245,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:56:53.502,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:56:58.771,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:57:04.097,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:57:09.359,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:57:14.635,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:57:19.901,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:57:25.178,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:57:30.453,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:57:35.737,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:57:40.995,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:57:46.254,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:57:51.512,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:57:56.792,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:58:02.095,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:58:07.359,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:58:12.637,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:58:17.914,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:58:23.175,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:58:28.646,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:58:33.913,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,-273,17-03-2025 11:58:40.180,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:58:46.457,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:58:52.725,March,Device temperature ,377
+H- E,ps,17-03-2025,J2,XYLENE-2,R1,0,17-03-2025 11:59:02.078,March,Picked From,377
+H- E,ps,17-03-2025,J3,XYLENE-3,R1,0,17-03-2025 11:59:08.369,March,Placed In,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:59:12.551,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,0,17-03-2025 11:59:29.032,March,Heater Door Opened,377
+H- E,ps,17-03-2025,H2,Heating,R2,0,17-03-2025 11:59:36.611,March,Picked From,377
+H- E,ps,17-03-2025,-,-,-,0,17-03-2025 11:59:37.247,March,Heater Door Closed,377
+H- E,ps,17-03-2025,J1,XYLENE-1,R2,0,17-03-2025 11:59:44.203,March,Placed In,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 11:59:47.932,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:59:53.185,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 11:59:58.449,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:00:03.721,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:00:08.998,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:00:14.266,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:00:19.538,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:00:24.820,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:00:30.073,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:00:35.337,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:00:40.595,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 12:00:45.854,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:00:51.112,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:00:56.570,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:01:01.725,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,-273,17-03-2025 12:01:06.995,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:01:12.273,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,0,17-03-2025 12:01:22.712,March,Heater Door Opened,377
+H- E,ps,17-03-2025,L1,-,-,0,17-03-2025 12:01:27.299,March,Liquid Level - 200,377
+H- E,ps,17-03-2025,L2,-,-,0,17-03-2025 12:01:30.288,March,Liquid Level - 200,377
+H- E,ps,17-03-2025,L3,-,-,0,17-03-2025 12:01:33.103,March,Liquid Level - 200,377
+H- E,ps,17-03-2025,-,-,-,0,17-03-2025 12:01:46.838,March,Home Reached,377
+H- E,ps,17-03-2025,-,-,-,0,17-03-2025 12:02:01.779,March,Home Reached,377
+H- E,ps,17-03-2025,,,R4,0,17-03-2025 12:02:03.364,March,Test Started,377
+H- E,ps,17-03-2025,L1,Loading,R4,0,17-03-2025 12:02:09.742,March,Picked From,377
+H- E,ps,17-03-2025,H2,Heating,R4,0,17-03-2025 12:02:17.072,March,Placed In,377
+H- E,ps,17-03-2025,-,-,-,0,17-03-2025 12:02:17.706,March,Heater Door Closed,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:02:18.120,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:02:20.451,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:02:23.396,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:02:28.651,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:02:33.951,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:02:39.229,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:02:44.487,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:02:49.753,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:02:55.036,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:03:00.291,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:03:05.548,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:03:10.805,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:03:16.073,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:03:21.326,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:03:26.592,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:03:31.858,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:03:37.129,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:03:42.421,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:03:47.689,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:03:53.951,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:04:00.227,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:04:06.478,March,Device temperature ,377
+H- E,ps,17-03-2025,J3,XYLENE-3,R1,0,17-03-2025 12:04:15.872,March,Picked From,377
+H- E,ps,17-03-2025,J4,100 % Alcohol,R1,0,17-03-2025 12:04:22.159,March,Placed In,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:04:26.824,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:04:44.183,March,Device temperature ,377
+H- E,ps,17-03-2025,J1,XYLENE-1,R2,0,17-03-2025 12:04:51.829,March,Picked From,377
+H- E,ps,17-03-2025,J2,XYLENE-2,R2,0,17-03-2025 12:04:58.181,March,Placed In,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:05:02.330,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:05:07.615,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:05:12.883,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:05:18.146,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:05:23.412,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:05:28.673,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:05:33.947,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:05:39.203,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:05:44.475,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:05:49.750,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:05:55.018,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:06:00.284,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:06:05.553,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:06:10.826,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:06:16.099,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:06:21.352,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:06:26.624,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,-273,17-03-2025 12:06:31.890,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:06:37.152,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:06:42.417,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:06:47.674,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:06:52.931,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:06:58.184,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:07:03.538,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:07:09.918,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:07:16.092,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 12:07:21.426,March,Device temperature ,377
+H- E,ps,17-03-2025,J4,100 % Alcohol,R1,0,17-03-2025 12:07:29.621,March,Picked From,377
+H- E,ps,17-03-2025,J5,70%Alcohol,R1,0,17-03-2025 12:07:35.926,March,Placed In,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:07:40.214,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:07:45.474,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:07:50.751,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:07:56.036,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:08:01.296,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 12:08:06.556,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:08:11.817,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 12:08:17.086,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:08:22.344,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:08:27.668,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:08:32.939,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:08:38.213,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:08:43.465,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:08:48.734,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:08:53.995,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:08:59.251,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:09:04.611,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 12:09:09.811,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:09:15.085,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:09:20.352,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 12:09:25.634,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,-273,17-03-2025 12:09:30.887,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:09:36.170,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:09:42.460,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:09:48.856,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:09:55.127,March,Device temperature ,377
+H- E,ps,17-03-2025,J2,XYLENE-2,R2,0,17-03-2025 12:10:05.969,March,Picked From,377
+H- E,ps,17-03-2025,J3,XYLENE-3,R2,0,17-03-2025 12:10:12.299,March,Placed In,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:10:16.497,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,0,17-03-2025 12:10:32.065,March,Heater Door Opened,377
+H- E,ps,17-03-2025,H1,Heating,R3,0,17-03-2025 12:10:39.615,March,Picked From,377
+H- E,ps,17-03-2025,-,-,-,0,17-03-2025 12:10:40.245,March,Heater Door Closed,377
+H- E,ps,17-03-2025,J1,XYLENE-1,R3,0,17-03-2025 12:10:47.249,March,Placed In,377
+H- E,ps,17-03-2025,J5,70%Alcohol,R1,0,17-03-2025 12:10:54.831,March,Picked From,377
+H- E,ps,17-03-2025,J6,50% Alcohol,R1,0,17-03-2025 12:11:01.157,March,Placed In,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:11:05.932,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:11:11.186,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:11:16.453,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 12:11:21.799,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:11:27.006,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:11:32.276,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:11:37.539,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:11:42.816,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:11:48.077,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:11:53.341,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:11:58.605,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:12:03.886,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:12:09.159,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:12:14.420,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:12:19.707,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:12:24.971,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:12:30.238,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 12:12:35.510,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:12:40.776,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:12:46.034,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:12:51.302,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 12:12:56.571,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 12:13:01.836,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,0,17-03-2025 12:13:04.676,March,Heater Door Opened,377
+H- E,ps,17-03-2025,,,R5,0,17-03-2025 12:13:05.340,March,Test Started,377
+H- E,ps,17-03-2025,L2,Loading,R5,0,17-03-2025 12:13:12.685,March,Picked From,377
+H- E,ps,17-03-2025,H1,Heating,R5,0,17-03-2025 12:13:19.573,March,Placed In,377
+H- E,ps,17-03-2025,-,-,-,0,17-03-2025 12:13:20.207,March,Heater Door Closed,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:13:20.636,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 12:13:23.196,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:13:25.904,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:13:31.175,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:13:36.441,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:13:41.711,March,Device temperature ,377
+H- E,ps,17-03-2025,W1,Tap Water,--,0,17-03-2025 12:13:46.173,March,Water Valve : 1 is On,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:13:56.158,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:14:01.416,March,Device temperature ,377
+H- E,ps,17-03-2025,J6,50% Alcohol,R1,0,17-03-2025 12:14:10.499,March,Picked From,377
+H- E,ps,17-03-2025,W1,Running TAP Water,R1,0,17-03-2025 12:14:17.799,March,Placed In,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:14:21.015,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:14:26.286,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:14:31.546,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:14:36.812,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:14:42.249,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:14:47.542,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:14:52.803,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:14:59.069,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:15:05.392,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:15:10.676,March,Device temperature ,377
+H- E,ps,17-03-2025,J3,XYLENE-3,R2,0,17-03-2025 12:15:21.542,March,Picked From,377
+H- E,ps,17-03-2025,J4,100 % Alcohol,R2,0,17-03-2025 12:15:27.908,March,Placed In,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 12:15:32.489,March,Device temperature ,377
+H- E,ps,17-03-2025,J1,XYLENE-1,R3,0,17-03-2025 12:15:54.108,March,Picked From,377
+H- E,ps,17-03-2025,J2,XYLENE-2,R3,0,17-03-2025 12:16:00.406,March,Placed In,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:16:04.803,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:16:10.057,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 12:16:15.345,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:16:20.628,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:16:25.887,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:16:31.152,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:16:36.439,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:16:41.714,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:16:46.976,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:16:52.257,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:16:57.556,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:17:03.841,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:17:10.146,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:17:16.412,March,Device temperature ,377
+H- E,ps,17-03-2025,W1,Tap Water,--,0,17-03-2025 12:17:23.669,March,Water Valve : 1 is Off,377
+H- E,ps,17-03-2025,W1,Running TAP Water,R1,0,17-03-2025 12:17:32.629,March,Picked From,377
+H- E,ps,17-03-2025,J8,Hematoxin,R1,0,17-03-2025 12:17:38.964,March,Placed In,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:17:43.592,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:17:48.863,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:17:54.131,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:17:59.404,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:18:04.670,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:18:09.936,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:18:16.218,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:18:22.502,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:18:27.760,March,Device temperature ,377
+H- E,ps,17-03-2025,J4,100 % Alcohol,R2,0,17-03-2025 12:18:35.899,March,Picked From,377
+H- E,ps,17-03-2025,J5,70%Alcohol,R2,0,17-03-2025 12:18:42.223,March,Placed In,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:18:46.833,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:18:52.111,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:18:57.374,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:19:02.637,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:19:07.939,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 12:19:13.228,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:19:18.490,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 12:19:23.751,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:19:29.030,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 12:19:34.376,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 12:19:39.566,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:19:44.845,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 12:19:50.116,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:19:55.384,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:20:00.644,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:20:05.902,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:20:11.217,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:20:16.450,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 12:20:21.731,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:20:27.018,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:20:32.291,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:20:37.551,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:20:43.848,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:20:50.111,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 12:20:56.383,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:21:01.660,March,Device temperature ,377
+H- E,ps,17-03-2025,J2,XYLENE-2,R3,0,17-03-2025 12:21:08.523,March,Picked From,377
+H- E,ps,17-03-2025,J3,XYLENE-3,R3,0,17-03-2025 12:21:14.872,March,Placed In,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:21:18.984,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:21:24.318,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:21:37.634,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:21:42.910,March,Device temperature ,377
+H- E,ps,17-03-2025,J5,70%Alcohol,R2,0,17-03-2025 12:21:49.493,March,Picked From,377
+H- E,ps,17-03-2025,J6,50% Alcohol,R2,0,17-03-2025 12:21:55.823,March,Placed In,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 12:22:00.281,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,0,17-03-2025 12:22:17.710,March,Heater Door Opened,377
+H- E,ps,17-03-2025,H2,Heating,R4,0,17-03-2025 12:22:26.671,March,Picked From,377
+H- E,ps,17-03-2025,-,-,-,0,17-03-2025 12:22:27.306,March,Heater Door Closed,377
+H- E,ps,17-03-2025,J1,XYLENE-1,R4,0,17-03-2025 12:22:34.258,March,Placed In,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:22:38.631,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:22:43.891,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:22:49.154,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:22:54.430,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:22:59.685,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:23:04.955,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:23:10.243,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:23:15.511,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:23:20.802,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:23:26.084,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:23:31.338,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:23:36.602,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:23:41.855,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:23:47.137,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:23:52.406,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:23:57.672,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:24:02.930,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,0,17-03-2025 12:24:06.804,March,Heater Door Opened,377
+H- E,ps,17-03-2025,,,R6,0,17-03-2025 12:24:07.462,March,Test Started,377
+H- E,ps,17-03-2025,L3,Loading,R6,0,17-03-2025 12:24:14.289,March,Picked From,377
+H- E,ps,17-03-2025,H2,Heating,R6,0,17-03-2025 12:24:21.170,March,Placed In,377
+H- E,ps,17-03-2025,-,-,-,0,17-03-2025 12:24:21.806,March,Heater Door Closed,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:24:22.251,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:24:25.395,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:24:32.510,March,Device temperature ,377
+H- E,ps,17-03-2025,W1,Tap Water,--,0,17-03-2025 12:24:38.513,March,Water Valve : 1 is On,377
+H- E,ps,17-03-2025,J6,50% Alcohol,R2,0,17-03-2025 12:25:05.066,March,Picked From,377
+H- E,ps,17-03-2025,W1,Running TAP Water,R2,0,17-03-2025 12:25:12.399,March,Placed In,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:25:15.570,March,Device temperature ,377
+H- E,ps,17-03-2025,W2,Tap Water,--,0,17-03-2025 12:25:21.583,March,Water Valve : 2 is On,377
+H- E,ps,17-03-2025,J8,Hematoxin,R1,0,17-03-2025 12:25:45.655,March,Picked From,377
+H- E,ps,17-03-2025,W2,Running TAP Water,R1,0,17-03-2025 12:25:52.536,March,Placed In,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:25:56.662,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 12:26:13.962,March,Device temperature ,377
+H- E,ps,17-03-2025,J3,XYLENE-3,R3,0,17-03-2025 12:26:24.487,March,Picked From,377
+H- E,ps,17-03-2025,J4,100 % Alcohol,R3,0,17-03-2025 12:26:30.814,March,Placed In,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:26:35.064,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:26:45.336,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:26:55.605,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:27:05.892,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:27:16.164,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 12:27:27.471,March,Device temperature ,377
+H- E,ps,17-03-2025,J1,XYLENE-1,R4,0,17-03-2025 12:27:41.109,March,Picked From,377
+H- E,ps,17-03-2025,J2,XYLENE-2,R4,0,17-03-2025 12:27:47.452,March,Placed In,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:27:51.587,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:28:09.856,March,Device temperature ,377
+H- E,ps,17-03-2025,W1,Tap Water,--,0,17-03-2025 12:28:13.016,March,Water Valve : 1 is Off,377
+H- E,ps,17-03-2025,W1,Running TAP Water,R2,0,17-03-2025 12:28:22.107,March,Picked From,377
+H- E,ps,17-03-2025,J8,Hematoxin,R2,0,17-03-2025 12:28:28.910,March,Placed In,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:28:33.084,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:28:51.394,March,Device temperature ,377
+H- E,ps,17-03-2025,W2,Tap Water,--,0,17-03-2025 12:28:53.541,March,Water Valve : 2 is Off,377
+H- E,ps,17-03-2025,W2,Running TAP Water,R1,0,17-03-2025 12:29:00.614,March,Picked From,377
+H- E,ps,17-03-2025,J9,1%Acid Alcohol,R1,0,17-03-2025 12:29:07.442,March,Dip Completed,377
+H- E,ps,17-03-2025,W2,Running TAP Water,R1,0,17-03-2025 12:29:14.303,March,Placed In,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:29:18.601,March,Device temperature ,377
+H- E,ps,17-03-2025,J4,100 % Alcohol,R3,0,17-03-2025 12:29:40.155,March,Picked From,377
+H- E,ps,17-03-2025,J5,70%Alcohol,R3,0,17-03-2025 12:29:46.486,March,Placed In,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:29:50.920,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:30:01.211,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:30:11.488,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:30:21.759,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:30:32.031,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,447,17-03-2025 12:30:42.298,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:30:52.568,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:31:02.821,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:31:13.168,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:31:23.436,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:31:33.706,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:31:43.972,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:31:54.234,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:32:05.506,March,Device temperature ,377
+H- E,ps,17-03-2025,W2,Tap Water,--,0,17-03-2025 12:32:14.809,March,Water Valve : 2 is Off,377
+H- E,ps,17-03-2025,W2,Running TAP Water,R1,0,17-03-2025 12:32:22.911,March,Picked From,377
+H- E,ps,17-03-2025,J18,Lithium Carbonate,R1,0,17-03-2025 12:32:29.748,March,Dip Completed,377
+H- E,ps,17-03-2025,W6,Running TAP Water,R1,0,17-03-2025 12:32:36.618,March,Placed In,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:32:40.923,March,Device temperature ,377
+H- E,ps,17-03-2025,J5,70%Alcohol,R3,0,17-03-2025 12:32:54.921,March,Picked From,377
+H- E,ps,17-03-2025,J6,50% Alcohol,R3,0,17-03-2025 12:33:01.269,March,Placed In,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:33:10.482,March,Device temperature ,377
+H- E,ps,17-03-2025,J2,XYLENE-2,R4,0,17-03-2025 12:33:17.816,March,Picked From,377
+H- E,ps,17-03-2025,J3,XYLENE-3,R4,0,17-03-2025 12:33:24.168,March,Placed In,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:33:30.819,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,0,17-03-2025 12:33:31.459,March,Heater Door Opened,377
+H- E,ps,17-03-2025,H1,Heating,R5,0,17-03-2025 12:33:38.939,March,Picked From,377
+H- E,ps,17-03-2025,-,-,-,0,17-03-2025 12:33:39.574,March,Heater Door Closed,377
+H- E,ps,17-03-2025,J1,XYLENE-1,R5,0,17-03-2025 12:33:46.555,March,Placed In,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:33:50.134,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:34:00.394,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:34:10.652,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:34:20.939,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:34:31.199,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:34:41.534,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:34:51.805,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:35:02.063,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:35:26.469,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:35:36.732,March,Device temperature ,377
+H- E,ps,17-03-2025,W6,Tap Water,--,0,17-03-2025 12:35:37.522,March,Water Valve : 6 is Off,377
+H- E,ps,17-03-2025,W6,Running TAP Water,R1,0,17-03-2025 12:35:47.117,March,Picked From,377
+H- E,ps,17-03-2025,J19,Eosin,R1,0,17-03-2025 12:35:53.479,March,Dip Completed,377
+H- E,ps,17-03-2025,J20,95% Alcohol,R1,0,17-03-2025 12:35:59.823,March,Placed In,377
+H- E,ps,17-03-2025,J6,50% Alcohol,R3,0,17-03-2025 12:36:08.066,March,Picked From,377
+H- E,ps,17-03-2025,W1,Running TAP Water,R3,0,17-03-2025 12:36:15.385,March,Placed In,377
+H- E,ps,17-03-2025,W2,Tap Water,--,0,17-03-2025 12:36:16.642,March,Water Valve : 2 is On,377
+H- E,ps,17-03-2025,J8,Hematoxin,R2,0,17-03-2025 12:36:36.249,March,Picked From,377
+H- E,ps,17-03-2025,W2,Running TAP Water,R2,0,17-03-2025 12:36:43.120,March,Placed In,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:36:46.763,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:36:57.033,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:37:07.294,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,545,17-03-2025 12:37:17.568,March,Device temperature ,377
+H- E,ps,17-03-2025,-,-,-,0,17-03-2025 12:37:22.296,March,Heater Door Opened,377
+H- E,ps,17-03-2025,L1,-,-,0,17-03-2025 12:37:28.860,March,Liquid Level - 200,377
+H- E,ps,17-03-2025,L2,-,-,0,17-03-2025 12:37:31.844,March,Liquid Level - 200,377
+H- E,ps,17-03-2025,L3,-,-,0,17-03-2025 12:37:34.596,March,Liquid Level - 200,377
+H- E,ps,17-03-2025,-,-,-,0,17-03-2025 12:37:48.347,March,Home Reached,377
+H- E,ps,17-03-2025,-,-,-,0,17-03-2025 12:38:03.245,March,Home Reached,377
+H- E,ps,17-03-2025,,,R7,0,17-03-2025 12:38:04.885,March,Test Started,377
+H- E,ps,17-03-2025,L1,Loading,R7,0,17-03-2025 12:38:14.689,March,Picked From,377
+H- E,ps,17-03-2025,H1,Heating,R7,0,17-03-2025 12:38:22.061,March,Placed In,377

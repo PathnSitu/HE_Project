@@ -1,0 +1,195 @@
+Command Sent (SeqNo: 0, Retry: 0)  SET TEMPERATURE - #0,10,32*870a  * 12-04-2025 13:14:00.519
+CRC-Response (SeqNo: 1) - 0,10,F000*1ae9 * 12-04-2025 13:14:00.760
+CRC-Response  - 0,10,F000*1ae9 * 12-04-2025 13:14:00.772
+Command Sent (SeqNo: 1, Retry: 0)  HEATER ON - #1,12,1*dbe7  * 12-04-2025 13:14:01.718
+CRC-Response (SeqNo: 2) - 1,12,F000*68e5 * 12-04-2025 13:14:01.847
+CRC-Response  - 1,12,F000*68e5 * 12-04-2025 13:14:01.848
+Command Sent (SeqNo: 2, Retry: 0)  HEATER DOOR CLOSE - #2,8,1,0*21eb  * 12-04-2025 13:14:02.278
+CRC-Response (SeqNo: 3) - 2,8,I001*fd79 * 12-04-2025 13:14:02.396
+Duplicate Response Ignored (SeqNo: 3): #2,8,F000*29bb
+ * 12-04-2025 13:14:02.739
+No response for func_code: 8, SeqNo: 3, Retry: 1 * 12-04-2025 13:14:22.287
+Command Sent (SeqNo: 3, Retry: 1)  HEATER DOOR CLOSE - #2,8,1,0*21eb  * 12-04-2025 13:14:22.373
+Duplicate Response Ignored (SeqNo: 3): #2,8,I001*fd79
+ * 12-04-2025 13:14:22.497
+Duplicate Response Ignored (SeqNo: 3): #2,8,F000*29bb
+ * 12-04-2025 13:14:22.828
+No response for func_code: 8, SeqNo: 2, Retry: 2 * 12-04-2025 13:14:42.388
+Command Sent (SeqNo: 2, Retry: 2)  HEATER DOOR CLOSE - #2,8,1,0*21eb  * 12-04-2025 13:14:42.441
+Duplicate Response Ignored (SeqNo: 2): #2,8,I001*fd79
+ * 12-04-2025 13:14:42.569
+Duplicate Response Ignored (SeqNo: 2): #2,8,F000*29bb
+ * 12-04-2025 13:14:42.902
+No response for func_code: 8, SeqNo: 1, Retry: 3 * 12-04-2025 13:15:02.442
+User Aborted / Stopped the application forcefully  * 12-04-2025 13:15:11.943
+Command Sent (SeqNo: 0, Retry: 0)  SET TEMPERATURE - #0,10,32*870a  * 12-04-2025 13:16:46.879
+CRC-Response (SeqNo: 1) - 0,10,F000*1ae9 * 12-04-2025 13:16:47.130
+CRC-Response  - 0,10,F000*1ae9 * 12-04-2025 13:17:06.116
+Command Sent (SeqNo: 1, Retry: 0)  HEATER ON - #1,12,1*dbe7  * 12-04-2025 13:17:07.201
+CRC-Response (SeqNo: 2) - 1,12,F000*68e5 * 12-04-2025 13:17:07.325
+CRC-Response  - 1,12,F000*68e5 * 12-04-2025 13:17:28.24
+No response for func_code: 12, SeqNo: 2, Retry: 1 * 12-04-2025 13:17:28.27
+Command Sent (SeqNo: 2, Retry: 1)  HEATER DOOR CLOSE - #1,12,1*dbe7  * 12-04-2025 13:17:28.80
+Duplicate Response Ignored (SeqNo: 2): #1,12,F000*68e5
+ * 12-04-2025 13:17:28.207
+No response for func_code: 12, SeqNo: 1, Retry: 2 * 12-04-2025 13:17:48.100
+Command Sent (SeqNo: 1, Retry: 2)  HEATER DOOR CLOSE - #1,12,1*dbe7  * 12-04-2025 13:17:48.153
+Duplicate Response Ignored (SeqNo: 1): #1,12,F000*68e5
+ * 12-04-2025 13:17:48.278
+User Aborted / Stopped the application forcefully  * 12-04-2025 13:18:03.16
+Command Sent (SeqNo: 0, Retry: 0)  SET TEMPERATURE - #0,10,32*870a  * 12-04-2025 13:19:40.799
+CRC-Response (SeqNo: 1) - 0,10,F000*1ae9 * 12-04-2025 13:19:41.34
+CRC-Response  - 0,10,F000*1ae9 * 12-04-2025 13:19:45.556
+Command Sent (SeqNo: 1, Retry: 0)  HEATER ON - #1,12,1*dbe7  * 12-04-2025 13:19:45.647
+CRC-Response (SeqNo: 2) - 1,12,F000*68e5 * 12-04-2025 13:19:45.756
+CRC-Response  - 1,12,F000*68e5 * 12-04-2025 13:19:48.568
+Command Sent (SeqNo: 2, Retry: 0)  HEATER DOOR CLOSE - #2,8,1,0*21eb  * 12-04-2025 13:19:48.622
+CRC-Response (SeqNo: 3) - 2,8,I001*fd79 * 12-04-2025 13:19:48.741
+Duplicate Response Ignored (SeqNo: 3): #2,8,F000*29bb
+ * 12-04-2025 13:19:49.86
+No response for func_code: 8, SeqNo: 3, Retry: 1 * 12-04-2025 13:20:08.633
+Command Sent (SeqNo: 3, Retry: 1)  HEATER DOOR CLOSE - #2,8,1,0*21eb  * 12-04-2025 13:20:08.687
+Duplicate Response Ignored (SeqNo: 3): #2,8,I001*fd79
+ * 12-04-2025 13:20:08.807
+Duplicate Response Ignored (SeqNo: 3): #2,8,F000*29bb
+ * 12-04-2025 13:20:09.147
+No response for func_code: 8, SeqNo: 2, Retry: 2 * 12-04-2025 13:20:28.702
+Command Sent (SeqNo: 2, Retry: 2)  HEATER DOOR CLOSE - #2,8,1,0*21eb  * 12-04-2025 13:20:28.755
+Duplicate Response Ignored (SeqNo: 2): #2,8,I001*fd79
+ * 12-04-2025 13:20:28.882
+Duplicate Response Ignored (SeqNo: 2): #2,8,F000*29bb
+ * 12-04-2025 13:20:29.205
+No response for func_code: 8, SeqNo: 1, Retry: 3 * 12-04-2025 13:20:48.768
+User Aborted / Stopped the application forcefully  * 12-04-2025 13:20:59.463
+Command Sent (SeqNo: 0, Retry: 0)  SET TEMPERATURE - #0,10,32*870a  * 12-04-2025 13:22:05.43
+No response for func_code: 10, SeqNo: 1, Retry: 1 * 12-04-2025 13:22:29.976
+Command Sent (SeqNo: 1, Retry: 1)  SET TEMPERATURE - #0,10,32*870a  * 12-04-2025 13:22:38.361
+CRC-Response (SeqNo: 1) - 0,10,F000*1ae9 * 12-04-2025 13:22:49.127
+CRC-Response  - 0,10,F000*1ae9 * 12-04-2025 13:22:51.901
+Command Sent (SeqNo: 0, Retry: 0)  SET TEMPERATURE - #0,10,32*870a  * 12-04-2025 13:22:51.946
+Duplicate Response Ignored (SeqNo: 1): #0,10,F000*1ae9
+ * 12-04-2025 13:23:04.692
+No response for func_code: 10, SeqNo: 1, Retry: 1 * 12-04-2025 13:23:11.958
+Command Sent (SeqNo: 1, Retry: 1)  HEATER DOOR CLOSE - #0,10,32*870a  * 12-04-2025 13:23:12.15
+Duplicate Response Ignored (SeqNo: 1): #0,10,F000*1ae9
+ * 12-04-2025 13:23:26.266
+No response for func_code: 10, SeqNo: 0, Retry: 2 * 12-04-2025 13:23:32.35
+Command Sent (SeqNo: 0, Retry: 2)  HEATER DOOR CLOSE - #0,10,32*870a  * 12-04-2025 13:23:32.87
+No response for func_code: 10, SeqNo: -1, Retry: 3 * 12-04-2025 13:23:58.506
+CRC-Response (SeqNo: -2) - 0,10,F000*1ae9 * 12-04-2025 13:24:10.175
+CRC-Response  - 0,10,F000*1ae9 * 12-04-2025 13:24:30.887
+User Aborted / Stopped the application forcefully  * 12-04-2025 13:25:42.174
+Command Sent (SeqNo: 0, Retry: 0)  SET TEMPERATURE - #0,10,32*870a  * 12-04-2025 13:26:13.956
+Duplicate Response Ignored (SeqNo: 1): #0,10,F000*1ae9
+ * 12-04-2025 13:26:20.290
+No response for func_code: 10, SeqNo: 1, Retry: 1 * 12-04-2025 13:26:34.60
+Command Sent (SeqNo: 1, Retry: 1)  SET TEMPERATURE - #0,10,32*870a  * 12-04-2025 13:26:34.113
+Duplicate Response Ignored (SeqNo: 1): #0,10,F000*1ae9
+ * 12-04-2025 13:26:47.145
+Command Sent (SeqNo: 0, Retry: 0)  SET TEMPERATURE - #0,10,32*870a  * 12-04-2025 13:27:49.574
+CRC-Response (SeqNo: 1) - 0,10,F000*1ae9 * 12-04-2025 13:27:49.796
+CRC-Response  - 0,10,F000*1ae9 * 12-04-2025 13:27:54.718
+Command Sent (SeqNo: 1, Retry: 0)  HEATER ON - #1,12,1*dbe7  * 12-04-2025 13:27:54.870
+CRC-Response (SeqNo: 2) - 1,12,F000*68e5 * 12-04-2025 13:27:54.995
+CRC-Response  - 1,12,F000*68e5 * 12-04-2025 13:28:09.634
+Command Sent (SeqNo: 2, Retry: 0)  HEATER DOOR CLOSE - #2,8,1,0*21eb  * 12-04-2025 13:28:09.689
+CRC-Response (SeqNo: 3) - 2,8,I001*fd79 * 12-04-2025 13:28:37.225
+Duplicate Response Ignored (SeqNo: 3): #2,8,F000*29bb
+ * 12-04-2025 13:28:37.336
+No response for func_code: 8, SeqNo: 3, Retry: 1 * 12-04-2025 13:28:48.470
+Command Sent (SeqNo: 3, Retry: 1)  HEATER DOOR CLOSE - #2,8,1,0*21eb  * 12-04-2025 13:28:48.524
+Duplicate Response Ignored (SeqNo: 3): #2,8,I001*fd79
+ * 12-04-2025 13:28:48.644
+Duplicate Response Ignored (SeqNo: 3): #2,8,F000*29bb
+ * 12-04-2025 13:28:48.984
+No response for func_code: 8, SeqNo: 2, Retry: 2 * 12-04-2025 13:29:08.541
+Command Sent (SeqNo: 2, Retry: 2)  HEATER DOOR CLOSE - #2,8,1,0*21eb  * 12-04-2025 13:29:08.593
+Duplicate Response Ignored (SeqNo: 2): #2,8,I001*fd79
+ * 12-04-2025 13:29:08.715
+Duplicate Response Ignored (SeqNo: 2): #2,8,F000*29bb
+ * 12-04-2025 13:29:09.52
+No response for func_code: 8, SeqNo: 1, Retry: 3 * 12-04-2025 13:29:28.878
+Command Sent (SeqNo: 0, Retry: 0)  SET TEMPERATURE - #0,10,32*870a  * 12-04-2025 13:31:58.841
+CRC-Response (SeqNo: 1) - 0,10,F000*1ae9 * 12-04-2025 13:32:02.350
+CRC-Response  - 0,10,F000*1ae9 * 12-04-2025 13:32:02.362
+Command Sent (SeqNo: 1, Retry: 0)  HEATER ON - #1,12,1*dbe7  * 12-04-2025 13:32:02.415
+CRC-Response (SeqNo: 2) - 1,12,F000*68e5 * 12-04-2025 13:32:05.312
+CRC-Response  - 1,12,F000*68e5 * 12-04-2025 13:32:05.314
+Command Sent (SeqNo: 2, Retry: 0)  HEATER DOOR CLOSE - #2,8,1,0*21eb  * 12-04-2025 13:32:05.371
+CRC-Response (SeqNo: 3) - 2,8,I001*fd79 * 12-04-2025 13:32:16.245
+Duplicate Response Ignored (SeqNo: 3): #2,8,F000*29bb
+ * 12-04-2025 13:32:16.457
+No response for func_code: 8, SeqNo: 3, Retry: 1 * 12-04-2025 13:32:27.44
+Command Sent (SeqNo: 3, Retry: 1)  HEATER DOOR CLOSE - #2,8,1,0*21eb  * 12-04-2025 13:32:27.99
+Duplicate Response Ignored (SeqNo: 3): #2,8,I001*fd79
+ * 12-04-2025 13:32:27.322
+Duplicate Response Ignored (SeqNo: 3): #2,8,F000*29bb
+ * 12-04-2025 13:32:27.661
+No response for func_code: 8, SeqNo: 2, Retry: 2 * 12-04-2025 13:32:47.106
+Command Sent (SeqNo: 2, Retry: 2)  HEATER DOOR CLOSE - #2,8,1,0*21eb  * 12-04-2025 13:32:47.158
+Duplicate Response Ignored (SeqNo: 2): #2,8,I001*fd79
+ * 12-04-2025 13:32:47.416
+Duplicate Response Ignored (SeqNo: 2): #2,8,F000*29bb
+ * 12-04-2025 13:32:47.711
+No response for func_code: 8, SeqNo: 1, Retry: 3 * 12-04-2025 13:33:07.167
+User Aborted / Stopped the application forcefully  * 12-04-2025 13:33:19.845
+Command Sent (SeqNo: 0, Retry: 0)  SET TEMPERATURE - #0,10,32*870a  * 12-04-2025 13:34:03.810
+Duplicate Response Ignored (SeqNo: 1): #0,10,F000*1ae9
+ * 12-04-2025 13:34:09.530
+No response for func_code: 10, SeqNo: 1, Retry: 1 * 12-04-2025 13:34:23.910
+Command Sent (SeqNo: 1, Retry: 1)  SET TEMPERATURE - #0,10,32*870a  * 12-04-2025 13:34:23.965
+Duplicate Response Ignored (SeqNo: 1): #0,10,F000*1ae9
+ * 12-04-2025 13:34:30.700
+No response for func_code: 10, SeqNo: 0, Retry: 2 * 12-04-2025 13:34:43.972
+Command Sent (SeqNo: 0, Retry: 2)  SET TEMPERATURE - #0,10,32*870a  * 12-04-2025 13:34:44.25
+No response for func_code: 10, SeqNo: -1, Retry: 3 * 12-04-2025 13:35:06.182
+CRC-Response (SeqNo: -1) - 0,10,F000*1ae9 * 12-04-2025 13:35:10.201
+CRC-Response  - 0,10,F000*1ae9 * 12-04-2025 13:35:16.726
+User Aborted / Stopped the application forcefully  * 12-04-2025 13:40:54.943
+User Aborted / Stopped the application forcefully  * 12-04-2025 13:41:22.41
+Command Sent (SeqNo: 0, Retry: 0)  SET TEMPERATURE - #0,10,32*870a  * 12-04-2025 13:41:53.345
+Duplicate Response Ignored (SeqNo: 1): #0,10,F000*1ae9
+ * 12-04-2025 13:41:59.27
+No response for func_code: 10, SeqNo: 1, Retry: 1 * 12-04-2025 13:42:13.447
+Command Sent (SeqNo: 1, Retry: 1)  SET TEMPERATURE - #0,10,32*870a  * 12-04-2025 13:42:13.501
+Duplicate Response Ignored (SeqNo: 1): #0,10,F000*1ae9
+ * 12-04-2025 13:42:13.710
+No response for func_code: 10, SeqNo: 0, Retry: 2 * 12-04-2025 13:42:33.508
+Command Sent (SeqNo: 0, Retry: 2)  SET TEMPERATURE - #0,10,32*870a  * 12-04-2025 13:42:33.561
+CRC-Response (SeqNo: 0) - 0,10,F000*1ae9 * 12-04-2025 13:42:33.774
+CRC-Response  - 0,10,F000*1ae9 * 12-04-2025 13:42:33.775
+Command Sent (SeqNo: 0, Retry: 0)  SET TEMPERATURE - #0,10,32*870a  * 12-04-2025 13:42:33.829
+Duplicate Response Ignored (SeqNo: 1): #0,10,F000*1ae9
+ * 12-04-2025 13:42:38.619
+No response for func_code: 10, SeqNo: 1, Retry: 1 * 12-04-2025 13:42:58.405
+Command Sent (SeqNo: 1, Retry: 1)  HEATER DOOR CLOSE - #0,10,32*870a  * 12-04-2025 13:42:58.458
+Duplicate Response Ignored (SeqNo: 1): #0,10,F000*1ae9
+ * 12-04-2025 13:42:58.684
+No response for func_code: 10, SeqNo: 0, Retry: 2 * 12-04-2025 13:43:18.467
+Command Sent (SeqNo: 0, Retry: 2)  HEATER DOOR CLOSE - #0,10,32*870a  * 12-04-2025 13:43:18.518
+Duplicate Response Ignored (SeqNo: 0): #0,10,F000*1ae9
+ * 12-04-2025 13:43:18.736
+No response for func_code: 10, SeqNo: -1, Retry: 3 * 12-04-2025 13:43:38.524
+Command Sent (SeqNo: 0, Retry: 0)  SET TEMPERATURE - #0,10,32*870a  * 12-04-2025 13:50:20.254
+CRC-Response (SeqNo: 1) - 0,10,F000*1ae9 * 12-04-2025 13:50:20.668
+CRC-Response  - 0,10,F000*1ae9 * 12-04-2025 13:50:26.332
+Command Sent (SeqNo: 1, Retry: 0)  HEATER ON - #1,12,1*dbe7  * 12-04-2025 13:50:27.436
+CRC-Response (SeqNo: 2) - 1,12,F000*68e5 * 12-04-2025 13:50:27.657
+CRC-Response  - 1,12,F000*68e5 * 12-04-2025 13:50:32.922
+Command Sent (SeqNo: 2, Retry: 0)  HEATER DOOR CLOSE - #2,8,1,0*21eb  * 12-04-2025 13:50:33.507
+CRC-Response (SeqNo: 3) - 2,8,I001*fd79 * 12-04-2025 13:50:33.714
+Duplicate Response Ignored (SeqNo: 3): #2,8,F000*29bb
+ * 12-04-2025 13:50:34.68
+No response for func_code: 8, SeqNo: 3, Retry: 1 * 12-04-2025 13:50:53.714
+Command Sent (SeqNo: 3, Retry: 1)  HEATER DOOR CLOSE - #2,8,1,0*21eb  * 12-04-2025 13:50:53.767
+Duplicate Response Ignored (SeqNo: 3): #2,8,I001*fd79
+ * 12-04-2025 13:50:54.82
+Duplicate Response Ignored (SeqNo: 3): #2,8,F000*29bb
+ * 12-04-2025 13:50:54.341
+No response for func_code: 8, SeqNo: 2, Retry: 2 * 12-04-2025 13:51:18.782
+Command Sent (SeqNo: 2, Retry: 2)  HEATER DOOR CLOSE - #2,8,1,0*21eb  * 12-04-2025 13:51:18.834
+Duplicate Response Ignored (SeqNo: 1): #2,8,I001*fd79
+ * 12-04-2025 13:51:19.47
+Duplicate Response Ignored (SeqNo: 1): #2,8,F000*29bb
+ * 12-04-2025 13:51:19.453
+No response for func_code: 8, SeqNo: 0, Retry: 3 * 12-04-2025 13:51:43.851

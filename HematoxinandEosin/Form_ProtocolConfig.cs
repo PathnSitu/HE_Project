@@ -26,7 +26,7 @@ namespace HematoxinandEosin
         SqlCommand cmd = new SqlCommand();
         DataTable table = new DataTable("table");
         SqlDataAdapter sda = new SqlDataAdapter();
-        Boolean addflg = false, modflg = false, delflg = false, gridsel = false;
+        Boolean addflg = false, modflg = false, delflg = false, gridsel = false, addnewrecflg=false;
         string sqlstr = "";
         string prototype = "";
         int index;
@@ -57,8 +57,6 @@ namespace HematoxinandEosin
         
         private void Form9_Load(object sender, EventArgs e)
         {
-            
-
             try
             {
                 #region Database Connection
@@ -120,6 +118,7 @@ namespace HematoxinandEosin
                 btnAdd.Enabled = true;
                 btnModify.Enabled = false;
                 btnDelete.Enabled = false;
+                btn_AddNewRecord.Enabled = false;
             }
             catch (Exception d3)
             {
@@ -128,7 +127,6 @@ namespace HematoxinandEosin
             finally
             {
             }
-
         }
 
         private DataTable FetchJPosDetails()
@@ -252,8 +250,8 @@ namespace HematoxinandEosin
                     dgv_Detail.Rows[dgv_Detail.Rows.Count - 2].Cells["RegName"].Value = cmbTempature.Text;
                     dgv_Detail.Rows[dgv_Detail.Rows.Count - 2].Cells["ShortName"].Value = "HTR";
                     dgv_Detail.Rows[dgv_Detail.Rows.Count - 2].Cells["IncubTime"].Value = dt_Heatingtime.Value.ToString().Substring(14, 5);
-                    dgv_Detail.Rows[dgv_Detail.Rows.Count - 2].Cells["Noofdips"].Value = "0";
-                    dgv_Detail.Rows[dgv_Detail.Rows.Count - 2].Cells["Priority"].Value = "0";
+                    dgv_Detail.Rows[dgv_Detail.Rows.Count - 2].Cells["Noofdips"].Value = 0;
+                    dgv_Detail.Rows[dgv_Detail.Rows.Count - 2].Cells["Priority"].Value = false;
                     Slno++;
                 }
                 else
@@ -362,6 +360,42 @@ namespace HematoxinandEosin
                 MessageBox.Show(d3.ToString() + "  While adding new procol details details ");
             }
         }
+        private void deleteprotodetails()
+        {
+            if(cmbProtocol.Text== "Select") { MessageBox.Show("Select valid protocol to delete", RequiredVariables.Msgtext, MessageBoxButtons.YesNo, MessageBoxIcon.Information); cmbProtocol.Focus(); return; }
+            if (MessageBox.Show("Are you Sure to delete the Selected Protocol Information", RequiredVariables.Msgtext, MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+            {
+                if (MessageBox.Show("The deleted Protocol details cann't be restored back \r\n Confirm to delete the Selected protocol Information from database ", RequiredVariables.Msgtext, MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                {
+                    if (con.State == ConnectionState.Closed)
+                        con.Open();
+                    //Deleting information from protocol Master Table
+                    sqlstr = string.Empty;
+                    sqlstr = "Delete from ProtocolMaster where ProtocolName = '" + cmbProtocol.Text + "'";
+                    cmd = new SqlCommand(sqlstr, con);
+                    cmd.ExecuteNonQuery();
+                    cmd.Dispose();
+
+                    if (con.State == ConnectionState.Closed)
+                        con.Open();
+                    //Deleting information from protocol details from Factory / User protocol
+                    sqlstr = string.Empty;
+                    sqlstr = "Delete from " + tabName + " where ProtocolName = '" + cmbProtocol.Text + "'";//sqlstr = sqlstr + " where ProtocolName = '" + cmbProtocol.Text + "' and Slno = " + Slno;" where ProtocolName = '" + cmbProtocol.Text + "'";
+                    cmd = new SqlCommand(sqlstr, con);
+                    cmd.ExecuteNonQuery();
+                    cmd.Dispose();
+                    con.Close();
+                    MessageBox.Show("Selected Protocol details Sucessfully Deleted from database", RequiredVariables.Msgtext, MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    Clear();
+                    btnAdd.Enabled = true;
+                    btnDelete.Enabled = false;
+                    btnModify.Enabled = false;
+                    btnSave.Enabled = true;
+                    cmbProtocol.SelectedIndex=0;                    
+                }
+            }
+            chk_Detele.Checked = false;
+        }
         private void button2_Click(object sender, EventArgs e)//btn_Load
         {
             if(btn_loadDetails.Text== "Load Details")
@@ -378,6 +412,15 @@ namespace HematoxinandEosin
                 btnDelete.Enabled = false;
                 btn_LoadGrid.Enabled = true;
                 btn_loadDetails.Enabled = true;
+                btnSave.Enabled = false;
+                btnAdd.Focus();
+                Slno = 1;
+                load_Protocols();
+            }
+            else if(btn_loadDetails.Text == "Delete Protocol")
+            {
+                deleteprotodetails();
+                Clear();
                 btnSave.Enabled = false;
                 btnAdd.Focus();
                 Slno = 1;
@@ -400,6 +443,7 @@ namespace HematoxinandEosin
         private void btnModify_Click(object sender, EventArgs e)
         {
             addflg = false;
+            addnewrecflg = false;
             modflg = true;
             delflg = false;
             btnSave.Text = "Update";
@@ -407,6 +451,7 @@ namespace HematoxinandEosin
             //cmbProtocol.Focus();
             //cmbProtocol.SelectedIndex = 0;
             btnAdd.Enabled = false;
+            btn_AddNewRecord.Enabled = false;
             btnDelete.Enabled = false;
             btnModify.Enabled = false;
             btnSave.Enabled = true;
@@ -440,6 +485,7 @@ namespace HematoxinandEosin
         }
         private int numberOfThreads = 1;
         private int iterationsPerThread = 1;
+        private int maxSerialNumber = 0;
         private async void fetchprotodetails(String prtoname)
         {
             try
@@ -499,6 +545,9 @@ namespace HematoxinandEosin
                     sda.Fill(table);
                     if (table.Rows.Count > 0)
                     {
+                        
+                        maxSerialNumber = table.AsEnumerable().Max(row => row.Field<int>("Slno"));
+                        btnAdd.Enabled = btn_AddNewRecord.Enabled = btn_loadDetails.Enabled = btn_LoadGrid.Enabled = false;
                         dgv_Detail.Rows.Clear();
                         for (int i = 0; i < table.Rows.Count; i++)
                         {
@@ -570,7 +619,7 @@ namespace HematoxinandEosin
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            addflg = false;
+            addflg = false; addnewrecflg = false;
             modflg = false;
             delflg = true;
             btnSave.Text = "Remove";
@@ -578,6 +627,7 @@ namespace HematoxinandEosin
            // cmbProtocol.SelectedIndex = 0;
             //cmbProtocol.Focus();
             btnAdd.Enabled    = false;
+            btn_AddNewRecord.Enabled = false;
             btnDelete.Enabled = false;
             btnModify.Enabled = false;
             btnSave.Enabled   = true;
@@ -614,7 +664,6 @@ namespace HematoxinandEosin
                         {
                             sqlstr = sqlstr + "0,";
                         }
-
                         sqlstr = sqlstr + Convert.ToInt32(dgv_Detail.Rows[i].Cells["Noofdips"].Value.ToString()) + ")";
                         ////sqlstr = sqlstr + ",'" + (dgv_protodetails.Rows[i].Cells["Washtime"].Value.ToString()) + "')";                         
                         if (con.State == ConnectionState.Closed)
@@ -626,6 +675,40 @@ namespace HematoxinandEosin
                     cmd.Dispose();
                     con.Close();
                     Jarinx = 1;
+                }
+                else if (addnewrecflg == true)
+                {
+                    sqlstr = "";
+                    sqlstr = "Insert into " + tabName + "(Slno,ProtocolName,JarNo,Temp_Reagent,ShortName,IncubationTime,Priority,No_of_Dips) Values(";  //
+                    sqlstr = sqlstr + Slno + ",'";
+                    sqlstr = sqlstr + txt_protocolName.Text + "','";
+                    sqlstr = sqlstr + cmbJarName.Text + "','";   
+                    sqlstr = sqlstr + cmbReagent.Text + "','";
+                    sqlstr = sqlstr + txtReagentShortName.Text + "','";   //  + "',No_of_Dips = " + ;
+                    sqlstr = sqlstr + dt_incubationtime.Value.ToString().Substring(14, 5) + "',";
+                    if (chk_WashRequired.Checked == true)
+                        sqlstr = sqlstr + "1,";
+                    else if (chk_WashRequired.Checked == false)
+                        sqlstr = sqlstr + "0,";
+                        
+                    sqlstr = sqlstr + Convert.ToInt32(cmbNofDips.Text) + ")";
+                    ////sqlstr = sqlstr + ",'" + (dgv_protodetails.Rows[i].Cells["Washtime"].Value.ToString()) + "')";                         
+                    if (con.State == ConnectionState.Closed)
+                        con.Open();
+                    cmd = new SqlCommand(sqlstr, con);
+                    cmd.ExecuteNonQuery();
+                    
+                    MessageBox.Show("Protocol details Sucessfully Saved to database", RequiredVariables.Msgtext, MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    cmd.Dispose();
+                    con.Close();
+                    Clear();
+                    btnAdd.Enabled = true;
+                    btnDelete.Enabled = false;
+                    btnModify.Enabled = false;
+                    btn_AddNewRecord.Enabled = false;
+                    btnSave.Enabled = true;
+                    cmbProtocol.Text = txt_protocolName.Text;
+                    fetchprotodetails(cmbProtocol.Text);
                 }
                 else if (modflg == true)
                 {
@@ -700,7 +783,7 @@ namespace HematoxinandEosin
             }
             catch (Exception d3)
             {
-
+                MessageBox.Show(d3.ToString());
             }
             finally
             {
@@ -712,9 +795,10 @@ namespace HematoxinandEosin
         {
             Clear();
             btnAdd.Enabled = true;
-            btnDelete.Enabled = true;
-            btnModify.Enabled = true;
-            btnSave.Enabled = true;            
+            btn_AddNewRecord.Enabled = false;
+            btnDelete.Enabled = false;
+            btnModify.Enabled = false;
+            btnSave.Enabled = false;            
             btn_LoadGrid.Enabled = true;
             btn_LoadGrid.Enabled = true;
         }
@@ -965,6 +1049,7 @@ namespace HematoxinandEosin
             {
                 Clear();
                 addflg = true;
+                addnewrecflg = false;
                 modflg = false;
                 delflg = false;
                 btnSave.Text = "Save";
@@ -978,6 +1063,7 @@ namespace HematoxinandEosin
                 btnSave.Enabled = true;
                 dgv_Detail.Rows.Clear();
                 cmbNofJars.Text = "";
+                chk_Clone.Enabled = false;
                 //pnl_Ip1.Enabled = true;
                 Jarinx = 0;
             }
@@ -1062,11 +1148,25 @@ namespace HematoxinandEosin
         {
             try
             {
-                chk_WashRequired.Checked = false;
+                chk_WashRequired.Checked = false;                
                 Slno = Convert.ToInt32(dgv_Detail.Rows[dgv_Detail.CurrentRow.Index].Cells["sln"].Value.ToString());
                 txt_protocolName.Text = dgv_Detail.Rows[dgv_Detail.CurrentRow.Index].Cells["protoName"].Value.ToString();
-                cmbReagent.Text = dgv_Detail.Rows[dgv_Detail.CurrentRow.Index].Cells["RegName"].Value.ToString();
+
+                if(dgv_Detail.Rows[dgv_Detail.CurrentRow.Index].Cells["JarName"].Value.ToString()== "Heater")
+                {
+                    cmbReagent.Items.Clear();
+                    for(int i=1;i<=100;i++)
+                    {
+                        cmbReagent.Items.Add(i.ToString());
+                    }
+                }
+                else
+                {
+                    load_reagents_information();
+                }
                 cmbJarName.Text = dgv_Detail.Rows[dgv_Detail.CurrentRow.Index].Cells["JarName"].Value.ToString();
+                cmbReagent.Text = dgv_Detail.Rows[dgv_Detail.CurrentRow.Index].Cells["RegName"].Value.ToString();
+                
                 txtReagentShortName.Text = dgv_Detail.Rows[dgv_Detail.CurrentRow.Index].Cells["ShortName"].Value.ToString();
                 cmbNofDips.Text = dgv_Detail.Rows[dgv_Detail.CurrentRow.Index].Cells["Noofdips"].Value.ToString();
                 var inc = DateTime.ParseExact(dgv_Detail.Rows[dgv_Detail.CurrentRow.Index].Cells["IncubTime"].Value.ToString(), "mm:ss", null);
@@ -1079,12 +1179,13 @@ namespace HematoxinandEosin
                 {
                     btnModify.Enabled = true;
                     btnDelete.Enabled = true;
+                    btn_AddNewRecord.Enabled = true;
                 }
                 else {
                     btnModify.Enabled = false;
                     btnDelete.Enabled = false;
-                }
-                
+                    btn_AddNewRecord.Enabled = false;
+                }                
             }
             catch(Exception d3)
             {
@@ -1101,13 +1202,44 @@ namespace HematoxinandEosin
                 lbl_CloneName.Visible = true;
                 txt_CloneName.Focus();
                 btn_loadDetails.Text = "Clone Details";
+                btn_loadDetails.Enabled = true;
             }
             else
             {
                 txt_CloneName.Visible = false;
                 lbl_CloneName.Visible = false;                
                 btn_loadDetails.Text = "Load Details";
+                btn_loadDetails.Enabled = false;
             }
+        }
+
+        private void chk_Detele_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chk_Detele.Checked == true)
+            {                
+                btn_loadDetails.Text = "Delete Protocol";
+                btn_loadDetails.Enabled = true;
+            }
+            else
+            {               
+                btn_loadDetails.Text = "Load Details";
+                btn_loadDetails.Enabled = false;
+            }
+        }
+
+        private void btn_AddNewRecord_Click(object sender, EventArgs e)
+        {
+            addnewrecflg = true;
+            Slno = maxSerialNumber + 1;
+            modflg = false;
+            delflg = false;
+            btnSave.Text = "Save";            
+            btnAdd.Enabled = false;
+            btn_AddNewRecord.Enabled = false;
+            btnDelete.Enabled = false;
+            btnModify.Enabled = false;
+            btnSave.Enabled = true;            
+            cmbJarName.Focus();
         }
 
         private void button1_Click(object sender, EventArgs e)//btn_loadgrid
@@ -1171,7 +1303,7 @@ namespace HematoxinandEosin
                 dgv_Detail.Rows[dgv_Detail.Rows.Count - 2].Cells["Priority"].Value = false;
             }
             dgv_Detail.Rows[dgv_Detail.Rows.Count - 2].Cells["IncubTime"].Value = dt_incubationtime.Value.ToString().Substring(14, 5);
-            dgv_Detail.Rows[dgv_Detail.Rows.Count - 2].Cells["Noofdips"].Value = cmbNofDips.Text;
+            dgv_Detail.Rows[dgv_Detail.Rows.Count - 2].Cells["Noofdips"].Value = Convert.ToInt32( cmbNofDips.Text);
             Slno++;
             Jarinx++;
             
@@ -1188,7 +1320,8 @@ namespace HematoxinandEosin
                 txtReagentShortName.Text = "";
                 cmbNofDips.Text = "";
                 chk_WashRequired.Checked = false;
-              //  cmbReagent.SelectedIndex = 0;
+                //  cmbReagent.SelectedIndex = 0;
+                cmbNofDips.SelectedIndex = 1;
             }
         }
         private void load_reagents_information()
@@ -1208,7 +1341,6 @@ namespace HematoxinandEosin
                 {
                     cmbReagent.Items.Clear();
                     cmbReagent.Items.Add("Select");
-
                     for (int i = 0; i < dt.Rows.Count; i++)
                     {
                         cmbReagent.Items.Add(dt.Rows[i]["ReagentName"].ToString());

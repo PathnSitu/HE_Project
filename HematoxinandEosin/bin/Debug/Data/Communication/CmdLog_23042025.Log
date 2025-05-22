@@ -1,0 +1,140 @@
+CRC-Response (SeqNo: 11) - 11,5,F000,11111111*5f3a * 23-04-2025 14:42:02.113
+Command Sent (SeqNo: 12, Retry: 0) Home Command - #12,5,01111111*e660  * 23-04-2025 14:42:03.690
+CRC-Response (SeqNo: 12) - 12,5,I001,01111111*a94e * 23-04-2025 14:42:03.811
+CRC-Response (SeqNo: 12) - 12,5,F000,11111101*3fcb * 23-04-2025 14:42:03.812
+Rack - 1Protocol Started * 23-04-2025 14:42:05.336
+Command Sent (SeqNo: 13, Retry: 0) Rack-1 Picked from L1 - With RA:2 - #13,2,2,17564,16380,0,0*4d1e  * 23-04-2025 14:42:05.477
+CRC-Response (SeqNo: 13) - 13,2,I001,2*a123 * 23-04-2025 14:42:05.600
+CRC-Response (SeqNo: 13) - 13,2,F000,2*9e72 * 23-04-2025 14:42:12.777
+RA Picked Rack From L1 * 23-04-2025 14:42:12.780
+Command Sent (SeqNo: 14, Retry: 0) RA-1 Movement - #14,5,00000111*c345  * 23-04-2025 14:42:13.105
+CRC-Response (SeqNo: 14) - 14,5,I001,00000111*2580 * 23-04-2025 14:42:13.246
+CRC-Response (SeqNo: 14) - 14,5,F000,11100111*3215 * 23-04-2025 14:42:13.247
+Command Sent (SeqNo: 15, Retry: 0) Rack-1 Placed in J12 - With RA:2 - #15,3,2,61124,800,0,0*3853  * 23-04-2025 14:42:15.191
+CRC-Response (SeqNo: 15) - 15,3,I001,2*7202 * 23-04-2025 14:42:15.311
+CRC-Response (SeqNo: 15) - 15,3,F000,2*4d53 * 23-04-2025 14:42:25.404
+RA Placed Rack in J12 * 23-04-2025 14:42:25.406
+Command Sent (SeqNo: 16, Retry: 0) RA2 Home Command - #16,5,00111000*7910  * 23-04-2025 14:42:25.855
+CRC-Response (SeqNo: 16) - 16,5,I001,00111000*388d * 23-04-2025 14:42:26.396
+CRC-Response (SeqNo: 16) - 16,5,F000,11111111*6e88 * 23-04-2025 14:42:38.114
+Command Sent (SeqNo: 17, Retry: 0) WATER VALVE - 3 CONTROL ON - #17,13,3,1*ffd9  * 23-04-2025 15:02:08.943
+CRC-Response (SeqNo: 17) - 17,13,F000*d4e4 * 23-04-2025 15:02:09.67
+Command Sent (SeqNo: 18, Retry: 0) Rack-1 Picked from J12 - With RA:1 - #18,2,1,61124,800,0,0*046f  * 23-04-2025 15:02:26.60
+CRC-Response (SeqNo: 18) - 18,2,I001,1*4512 * 23-04-2025 15:02:26.189
+CRC-Response (SeqNo: 18) - 18,2,F000,1*7a43 * 23-04-2025 15:02:31.920
+RA Picked Rack From J12 * 23-04-2025 15:02:31.923
+Command Sent (SeqNo: 19, Retry: 0) Rack-1 Placed in W3 - With RA:1 - #19,3,1,50234,800,0,0*e9a5  * 23-04-2025 15:02:32.166
+CRC-Response (SeqNo: 19) - 19,3,I001,1*4c82 * 23-04-2025 15:02:32.292
+CRC-Response (SeqNo: 19) - 19,3,F000,1*73d3 * 23-04-2025 15:02:38.710
+RA Placed Rack in W3 * 23-04-2025 15:02:38.712
+Rack - 2Protocol Started * 23-04-2025 15:04:48.190
+Command Sent (SeqNo: 20, Retry: 0) Rack-2 Picked from L2 - With RA:2 - #20,2,2,13934,16380,0,0*6f46  * 23-04-2025 15:04:48.300
+CRC-Response (SeqNo: 20) - 20,2,I001,2*eadc * 23-04-2025 15:04:48.439
+CRC-Response (SeqNo: 20) - 20,2,F000,2*d58d * 23-04-2025 15:04:55.194
+RA Picked Rack From L2 * 23-04-2025 15:04:55.201
+Command Sent (SeqNo: 21, Retry: 0) RA-1 Movement - #21,5,00000111*0c4c  * 23-04-2025 15:04:55.468
+CRC-Response (SeqNo: 21) - 21,5,I001,00000111*3063 * 23-04-2025 15:04:55.607
+CRC-Response (SeqNo: 21) - 21,5,F000,11100111*27f6 * 23-04-2025 15:04:58.715
+Command Sent (SeqNo: 22, Retry: 0) Rack-2 Placed in J12 - With RA:2 - #22,3,2,61124,800,0,0*7fa2  * 23-04-2025 15:05:00.546
+CRC-Response (SeqNo: 22) - 22,3,I001,2*ecbc * 23-04-2025 15:05:00.683
+CRC-Response (SeqNo: 22) - 22,3,F000,2*d3ed * 23-04-2025 15:05:11.191
+RA Placed Rack in J12 * 23-04-2025 15:05:11.194
+Command Sent (SeqNo: 23, Retry: 0) RA2 Home Command - #23,5,00111000*b619  * 23-04-2025 15:05:11.703
+CRC-Response (SeqNo: 23) - 23,5,I001,00111000*2d6e * 23-04-2025 15:05:12.242
+CRC-Response (SeqNo: 23) - 23,5,F000,11110111*876a * 23-04-2025 15:05:23.966
+Command Sent (SeqNo: 24, Retry: 0) RA2 Home Command - #24,5,00111000*7dec  * 23-04-2025 15:05:33.929
+CRC-Response (SeqNo: 24) - 24,5,I001,00111000*1cdc * 23-04-2025 15:05:35.112
+CRC-Response (SeqNo: 24) - 24,5,F000,11111111*4ad9 * 23-04-2025 15:05:35.113
+Command Sent (SeqNo: 25, Retry: 0) WATER VALVE - 3 CONTROL OFF - #25,13,3,0*168d  * 23-04-2025 15:07:39.328
+CRC-Response (SeqNo: 25) - 25,13,F000*bb0d * 23-04-2025 15:07:39.446
+Command Sent (SeqNo: 26, Retry: 0) Rack-1 Picked from W3 - With RA:1 - #26,2,1,50234,800,0,0*5fe7  * 23-04-2025 15:07:39.545
+CRC-Response (SeqNo: 26) - 26,2,I001,1*f47c * 23-04-2025 15:07:39.668
+CRC-Response (SeqNo: 26) - 26,2,F000,1*cb2d * 23-04-2025 15:07:46.614
+RA Picked Rack From W3 * 23-04-2025 15:07:46.618
+Command Sent (SeqNo: 27, Retry: 0) Rack-1 Placed in J11 - With RA:1 - #27,3,1,57494,800,0,0*5040  * 23-04-2025 15:07:46.959
+CRC-Response (SeqNo: 27) - 27,3,I001,1*fdec * 23-04-2025 15:07:47.98
+CRC-Response (SeqNo: 27) - 27,3,F000,1*c2bd * 23-04-2025 15:07:53.108
+RA Placed Rack in J11 * 23-04-2025 15:07:53.112
+Command Sent (SeqNo: 28, Retry: 0) WATER VALVE - 3 CONTROL ON - #28,13,3,1*4f8d  * 23-04-2025 15:12:37.55
+CRC-Response (SeqNo: 28) - 28,13,F000*2b55 * 23-04-2025 15:12:37.176
+Command Sent (SeqNo: 29, Retry: 0) Rack-1 Picked from J11 - With RA:1 - #29,2,1,57494,800,0,0*297b  * 23-04-2025 15:12:54.49
+CRC-Response (SeqNo: 29) - 29,2,I001,1*c44c * 23-04-2025 15:12:54.179
+CRC-Response (SeqNo: 29) - 29,2,F000,1*fb1d * 23-04-2025 15:12:59.246
+RA Picked Rack From J11 * 23-04-2025 15:12:59.249
+Command Sent (SeqNo: 30, Retry: 0) Rack-1 Placed in W3 - With RA:1 - #30,3,1,50234,800,0,0*9603  * 23-04-2025 15:12:59.638
+CRC-Response (SeqNo: 30) - 30,3,I001,1*db59 * 23-04-2025 15:12:59.779
+CRC-Response (SeqNo: 30) - 30,3,F000,1*e408 * 23-04-2025 15:13:05.789
+RA Placed Rack in W3 * 23-04-2025 15:13:05.792
+Command Sent (SeqNo: 31, Retry: 0) WATER VALVE - 3 CONTROL OFF - #31,13,3,0*7581  * 23-04-2025 15:18:06.762
+CRC-Response (SeqNo: 31) - 31,13,F000*be6e * 23-04-2025 15:18:06.881
+Command Sent (SeqNo: 32, Retry: 0) Rack-1 Picked from W3 - With RA:1 - #32,2,1,50234,800,0,0*be2b  * 23-04-2025 15:18:06.967
+CRC-Response (SeqNo: 32) - 32,2,I001,1*dd39 * 23-04-2025 15:18:07.85
+CRC-Response (SeqNo: 32) - 32,2,F000,1*e268 * 23-04-2025 15:18:12.152
+RA Picked Rack From W3 * 23-04-2025 15:18:12.156
+Command Sent (SeqNo: 33, Retry: 0) Rack-1 Dipped in J10 - With RA:1 - #33,17,1,53864,800,1,1,1*6df4  * 23-04-2025 15:18:12.359
+CRC-Response (SeqNo: 33) - 33,17,I001,1*702a * 23-04-2025 15:18:12.500
+CRC-Response (SeqNo: 33) - 33,17,F000,1*4f7b * 23-04-2025 15:18:17.899
+Command Sent (SeqNo: 34, Retry: 0) Rack-1 Placed in W3 - With RA:1 - #34,3,1,50234,800,0,0*a6f2  * 23-04-2025 15:18:18.4
+CRC-Response (SeqNo: 34) - 34,3,I001,1*0e18 * 23-04-2025 15:18:18.137
+CRC-Response (SeqNo: 34) - 34,3,F000,1*3149 * 23-04-2025 15:18:23.724
+RA Placed Rack in W3 * 23-04-2025 15:18:23.728
+Command Sent (SeqNo: 35, Retry: 0) WATER VALVE - 3 CONTROL OFF - #35,13,3,0*8680  * 23-04-2025 15:23:24.954
+CRC-Response (SeqNo: 35) - 35,13,F000*7e5c * 23-04-2025 15:23:25.74
+Command Sent (SeqNo: 36, Retry: 0) Rack-1 Picked from W3 - With RA:1 - #36,2,1,50234,800,0,0*8eda  * 23-04-2025 15:23:25.159
+CRC-Response (SeqNo: 36) - 36,2,I001,1*0878 * 23-04-2025 15:23:25.280
+CRC-Response (SeqNo: 36) - 36,2,F000,1*3729 * 23-04-2025 15:23:30.349
+RA Picked Rack From W3 * 23-04-2025 15:23:30.353
+Command Sent (SeqNo: 37, Retry: 0) Rack-1 Placed in J13 - With RA:1 - #37,3,1,64754,800,0,0*3db3  * 23-04-2025 15:23:30.561
+CRC-Response (SeqNo: 37) - 37,3,I001,1*01e8 * 23-04-2025 15:23:30.709
+CRC-Response (SeqNo: 37) - 37,3,F000,1*3eb9 * 23-04-2025 15:23:37.519
+RA Placed Rack in J13 * 23-04-2025 15:23:37.520
+Command Sent (SeqNo: 38, Retry: 0) Rack-1 Picked from J13 - With RA:1 - #38,2,1,64754,800,0,0*b8b5  * 23-04-2025 15:24:37.853
+CRC-Response (SeqNo: 38) - 38,2,I001,1*fd19 * 23-04-2025 15:24:37.991
+CRC-Response (SeqNo: 38) - 38,2,F000,1*c248 * 23-04-2025 15:24:43.48
+RA Picked Rack From J13 * 23-04-2025 15:24:43.52
+Command Sent (SeqNo: 39, Retry: 0) Rack-1 Placed in J14 - With RA:1 - #39,3,1,64754,8590,0,0*435f  * 23-04-2025 15:24:43.452
+CRC-Response (SeqNo: 39) - 39,3,I001,1*f489 * 23-04-2025 15:24:43.597
+CRC-Response (SeqNo: 39) - 39,3,F000,1*cbd8 * 23-04-2025 15:24:49.357
+RA Placed Rack in J14 * 23-04-2025 15:24:49.360
+Command Sent (SeqNo: 40, Retry: 0) WATER VALVE - 3 CONTROL ON - #40,13,3,1*49a7  * 23-04-2025 15:24:55.61
+CRC-Response (SeqNo: 40) - 40,13,F000*f4d2 * 23-04-2025 15:24:55.180
+Command Sent (SeqNo: 41, Retry: 0) Rack-2 Picked from J12 - With RA:1 - #41,2,1,61124,800,0,0*cc7c  * 23-04-2025 15:25:12.80
+CRC-Response (SeqNo: 41) - 41,2,I001,1*a6d3 * 23-04-2025 15:25:12.209
+CRC-Response (SeqNo: 41) - 41,2,F000,1*9982 * 23-04-2025 15:25:17.984
+RA Picked Rack From J12 * 23-04-2025 15:25:17.987
+Command Sent (SeqNo: 42, Retry: 0) Rack-2 Placed in W3 - With RA:1 - #42,3,1,50234,800,0,0*99cf  * 23-04-2025 15:25:18.205
+CRC-Response (SeqNo: 42) - 42,3,I001,1*65e2 * 23-04-2025 15:25:18.346
+CRC-Response (SeqNo: 42) - 42,3,F000,1*5ab3 * 23-04-2025 15:25:24.751
+RA Placed Rack in W3 * 23-04-2025 15:25:24.755
+Command Sent (SeqNo: 43, Retry: 0) Rack-1 Picked from J14 - With RA:1 - #43,2,1,64754,8590,0,0*a3e0  * 23-04-2025 15:25:49.886
+CRC-Response (SeqNo: 43) - 43,2,I001,1*6c72 * 23-04-2025 15:25:50.7
+CRC-Response (SeqNo: 43) - 43,2,F000,1*5323 * 23-04-2025 15:25:56.843
+RA Picked Rack From J14 * 23-04-2025 15:25:56.847
+Command Sent (SeqNo: 44, Retry: 0) Rack-1 Placed in J15 - With RA:1 - #44,3,1,61124,8590,0,0*911a  * 23-04-2025 15:25:57.15
+CRC-Response (SeqNo: 44) - 44,3,I001,1*7a02 * 23-04-2025 15:25:57.170
+CRC-Response (SeqNo: 44) - 44,3,F000,1*4553 * 23-04-2025 15:26:02.759
+RA Placed Rack in J15 * 23-04-2025 15:26:02.762
+Command Sent (SeqNo: 45, Retry: 0) Rack-1 Picked from J15 - With RA:1 - #45,2,1,61124,8590,0,0*bc76  * 23-04-2025 15:27:03.276
+CRC-Response (SeqNo: 45) - 45,2,I001,1*7392 * 23-04-2025 15:27:03.412
+CRC-Response (SeqNo: 45) - 45,2,F000,1*4cc3 * 23-04-2025 15:27:08.475
+RA Picked Rack From J15 * 23-04-2025 15:27:08.478
+Command Sent (SeqNo: 46, Retry: 0) Rack-1 Placed in J16 - With RA:1 - #46,3,1,57494,8590,0,0*9e40  * 23-04-2025 15:27:08.918
+CRC-Response (SeqNo: 46) - 46,3,I001,1*b0a3 * 23-04-2025 15:27:09.52
+CRC-Response (SeqNo: 46) - 46,3,F000,1*8ff2 * 23-04-2025 15:27:14.659
+RA Placed Rack in J16 * 23-04-2025 15:27:14.662
+Rack - R3Protocol Started * 23-04-2025 15:27:33.292
+Command Sent (SeqNo: 47, Retry: 0) Rack-3 Picked from L3 - With RA:2 - #47,2,2,10304,16380,0,0*ffc9  * 23-04-2025 15:27:33.387
+CRC-Response (SeqNo: 47) - 47,2,I001,2*b873 * 23-04-2025 15:27:33.513
+CRC-Response (SeqNo: 47) - 47,2,F000,2*8722 * 23-04-2025 15:27:40.2
+RA Picked Rack From L3 * 23-04-2025 15:27:40.8
+Command Sent (SeqNo: 48, Retry: 0) RA-1 Movement - #48,5,00000111*d659  * 23-04-2025 15:27:40.509
+CRC-Response (SeqNo: 48) - 48,5,I001,00000111*eb55 * 23-04-2025 15:27:40.649
+CRC-Response (SeqNo: 48) - 48,5,F000,11100110*3c01 * 23-04-2025 15:27:42.376
+Command Sent (SeqNo: 49, Retry: 0) Rack-3 Placed in J12 - With RA:2 - #49,3,2,61124,800,0,0*3c8c  * 23-04-2025 15:27:43.587
+CRC-Response (SeqNo: 49) - 49,3,F006,2*bf62 * 23-04-2025 15:27:43.726
+Command Sent (SeqNo: 50, Retry: 0) RA1 Home Command - #50,5,00000111*88ba  * 23-04-2025 15:27:43.780
+CRC-Response (SeqNo: 50) - 50,5,I001,00000111*d583 * 23-04-2025 15:27:43.901
+CRC-Response (SeqNo: 50) - 50,5,F000,11100111*c216 * 23-04-2025 15:27:43.901
+Command Sent (SeqNo: 51, Retry: 0) RA2 Home Command - #51,5,00111000*36eb  * 23-04-2025 15:27:44.186
+CRC-Response (SeqNo: 51) - 51,5,I001,00111000*387e * 23-04-2025 15:27:44.753
+CRC-Response (SeqNo: 51) - 51,5,F000,11111111*6e7b * 23-04-2025 15:27:47.464

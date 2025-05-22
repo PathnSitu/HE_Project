@@ -1,0 +1,35 @@
+--------------------------------------------------------------------------
+Communication Failed for func_code: 10, SeqNo: 1,03-05-2025 10:38:51
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Communication Failed for func_code: 12, SeqNo: 0,03-05-2025 10:38:54
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Communication Failed for func_code: 10, SeqNo: 0,03-05-2025 10:38:55
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Communication Failed for func_code: 13, SeqNo: 1,03-05-2025 10:40:10
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Failed to open port for func_code: 13,03-05-2025 10:40:27
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1046.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__917.MoveNext(),03-05-2025 10:40:27
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Failed to open port for func_code: 12,03-05-2025 10:40:35
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Communication Failed for func_code: 12, SeqNo: 22,03-05-2025 10:43:20
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Communication Failed for func_code: 12, SeqNo: 22,03-05-2025 10:43:22
+--------------------------------------------------------------------------

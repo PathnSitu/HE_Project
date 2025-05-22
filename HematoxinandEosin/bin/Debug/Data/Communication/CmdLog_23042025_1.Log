@@ -1,0 +1,721 @@
+Command Sent (SeqNo: 0, Retry: 0) WATER VALVE - 1 CONTROL OFF - #0,13,1,0*73eb  * 23-04-2025 14:25:51.466
+CRC-Response (SeqNo: 0) - 0,13,F000*29e9 * 23-04-2025 14:25:51.695
+Command Sent (SeqNo: 1, Retry: 0) WATER VALVE - 2 CONTROL OFF - #1,13,2,0*bfda  * 23-04-2025 14:25:52.348
+CRC-Response (SeqNo: 1) - 1,13,F000*b9e4 * 23-04-2025 14:25:52.469
+Command Sent (SeqNo: 2, Retry: 0) WATER VALVE - 3 CONTROL OFF - #2,13,3,0*6acb  * 23-04-2025 14:25:53.47
+CRC-Response (SeqNo: 2) - 2,13,F000*49f0 * 23-04-2025 14:25:53.168
+Command Sent (SeqNo: 3, Retry: 0) WATER VALVE - 4 CONTROL OFF - #3,13,4,0*67bb  * 23-04-2025 14:25:53.761
+CRC-Response (SeqNo: 3) - 3,13,F000*d9fd * 23-04-2025 14:25:53.881
+Command Sent (SeqNo: 4, Retry: 0) WATER VALVE - 5 CONTROL OFF - #4,13,5,0*41ab  * 23-04-2025 14:25:54.463
+CRC-Response (SeqNo: 4) - 4,13,F000*e9db * 23-04-2025 14:25:54.579
+Command Sent (SeqNo: 5, Retry: 0) WATER VALVE - 6 CONTROL OFF - #5,13,6,0*8d9a  * 23-04-2025 14:25:55.176
+CRC-Response (SeqNo: 5) - 5,13,F000*79d6 * 23-04-2025 14:25:55.297
+Command Sent (SeqNo: 6, Retry: 0) Home Command - #6,5,01111111*b1b5  * 23-04-2025 14:25:55.879
+CRC-Response (SeqNo: 6) - 6,5,I001,01111111*0f53 * 23-04-2025 14:25:56.1
+CRC-Response (SeqNo: 6) - 6,5,F000,11111111*09d7 * 23-04-2025 14:25:56.1
+Command Sent (SeqNo: 7, Retry: 0) Home Command - #7,5,01111111*7248  * 23-04-2025 14:25:58.108
+CRC-Response (SeqNo: 7) - 7,5,I001,01111111*9f02 * 23-04-2025 14:25:58.232
+CRC-Response (SeqNo: 7) - 7,5,F000,11111101*0987 * 23-04-2025 14:25:58.233
+Command Sent (SeqNo: 8, Retry: 0) Level Sensing For L1 - #8,4,17564,16380,0,0*ab6b  * 23-04-2025 14:26:00.335
+CRC-Response (SeqNo: 8) - 8,4,I001*4ef9 * 23-04-2025 14:26:00.463
+CRC-Response (SeqNo: 8) - 8,4,F000,3898*d0c7 * 23-04-2025 14:26:08.774
+L1 Value - 3898 * 23-04-2025 14:26:08.822
+Command Sent (SeqNo: 9, Retry: 0) Level Sensing For L2 - #9,4,13934,16380,0,0*534e  * 23-04-2025 14:26:09.386
+CRC-Response (SeqNo: 9) - 9,4,I001*8238 * 23-04-2025 14:26:09.509
+CRC-Response (SeqNo: 9) - 9,4,F000,3897*5585 * 23-04-2025 14:26:11.796
+L2 Value - 3897 * 23-04-2025 14:26:11.825
+Command Sent (SeqNo: 10, Retry: 0) Level Sensing For L3 - #10,4,10304,16380,0,0*d9f6  * 23-04-2025 14:26:12.375
+CRC-Response (SeqNo: 10) - 10,4,I001*82eb * 23-04-2025 14:26:12.497
+CRC-Response (SeqNo: 10) - 10,4,F000,3894*8640 * 23-04-2025 14:26:14.776
+L3 Value - 3894 * 23-04-2025 14:26:14.806
+Command Sent (SeqNo: 11, Retry: 0) HEATER DOOR CLOSE - #11,8,1,0*f241  * 23-04-2025 14:26:15.429
+CRC-Response (SeqNo: 11) - 11,8,I001*822a * 23-04-2025 14:26:15.555
+CRC-Response (SeqNo: 11) - 11,8,F000*56e8 * 23-04-2025 14:26:15.893
+Command Sent (SeqNo: 12, Retry: 0) Home Command - #12,5,00111111*2670  * 23-04-2025 14:26:16.501
+CRC-Response (SeqNo: 12) - 12,5,I001,00111111*695e * 23-04-2025 14:26:16.623
+CRC-Response (SeqNo: 12) - 12,5,F000,10111111*6fda * 23-04-2025 14:26:27.683
+Command Sent (SeqNo: 13, Retry: 0) Home Command - #13,5,00111111*e58d  * 23-04-2025 14:26:29.798
+CRC-Response (SeqNo: 13) - 13,5,I001,00111111*f90f * 23-04-2025 14:26:29.923
+CRC-Response (SeqNo: 13) - 13,5,F000,10111111*ff8b * 23-04-2025 14:26:29.923
+Command Sent (SeqNo: 14, Retry: 0) Home Command - #14,5,00111111*2e78  * 23-04-2025 14:26:43.14
+CRC-Response (SeqNo: 14) - 14,5,I001,00111111*c8bd * 23-04-2025 14:26:43.136
+CRC-Response (SeqNo: 14) - 14,5,F000,10111111*ce39 * 23-04-2025 14:26:43.136
+Command Sent (SeqNo: 15, Retry: 0) Level Sensing For L1 - #15,4,17564,16380,0,0*1c3d  * 23-04-2025 14:26:43.724
+CRC-Response (SeqNo: 15) - 15,4,F005*6a29 * 23-04-2025 14:26:43.845
+Command Sent (SeqNo: 15, Retry: 0)  - #15,4,17564,16380,0,0*1c3d  * 23-04-2025 14:26:48.906
+CRC-Response (SeqNo: 15) - 15,4,I001*bd2b * 23-04-2025 14:26:49.30
+CRC-Response (SeqNo: 15) - 15,4,F000,467*68fb * 23-04-2025 14:26:57.352
+L1 Value - 467 * 23-04-2025 14:26:57.381
+Command Sent (SeqNo: 16, Retry: 0) Level Sensing For L2 - #16,4,13934,16380,0,0*5c61  * 23-04-2025 14:26:57.449
+CRC-Response (SeqNo: 16) - 16,4,I001*a86b * 23-04-2025 14:26:57.574
+CRC-Response (SeqNo: 16) - 16,4,F000,498*98ba * 23-04-2025 14:26:59.866
+L2 Value - 498 * 23-04-2025 14:26:59.894
+Command Sent (SeqNo: 17, Retry: 0) Level Sensing For L3 - #17,4,10304,16380,0,0*ad43  * 23-04-2025 14:27:00.461
+CRC-Response (SeqNo: 17) - 17,4,I001*64aa * 23-04-2025 14:27:00.584
+CRC-Response (SeqNo: 17) - 17,4,F000,465*6e83 * 23-04-2025 14:27:02.878
+L3 Value - 465 * 23-04-2025 14:27:02.905
+Command Sent (SeqNo: 18, Retry: 0) Home Command - #18,5,01111111*fe78  * 23-04-2025 14:27:03.456
+CRC-Response (SeqNo: 18) - 18,5,I001,01111111*0b68 * 23-04-2025 14:27:03.579
+CRC-Response (SeqNo: 18) - 18,5,F000,11111111*0dec * 23-04-2025 14:27:14.633
+Command Sent (SeqNo: 19, Retry: 0) Home Command - #19,5,01111111*3d85  * 23-04-2025 14:27:16.229
+CRC-Response (SeqNo: 19) - 19,5,I001,01111111*9b39 * 23-04-2025 14:27:16.350
+CRC-Response (SeqNo: 19) - 19,5,F000,11111111*9dbd * 23-04-2025 14:27:16.351
+Rack - 1Protocol Started * 23-04-2025 14:27:17.884
+Command Sent (SeqNo: 20, Retry: 0) Rack-1 Picked from L1 - With RA:2 - #20,2,2,17564,16380,0,0*6b5e  * 23-04-2025 14:27:18.46
+CRC-Response (SeqNo: 20) - 20,2,I001,2*eadc * 23-04-2025 14:27:18.163
+CRC-Response (SeqNo: 20) - 20,2,F000,2*d58d * 23-04-2025 14:27:25.346
+RA Picked Rack From L1 * 23-04-2025 14:27:25.349
+Command Sent (SeqNo: 21, Retry: 0) RA-1 Movement - #21,5,00000111*0c4c  * 23-04-2025 14:27:25.764
+CRC-Response (SeqNo: 21) - 21,5,I001,00000111*3063 * 23-04-2025 14:27:25.892
+CRC-Response (SeqNo: 21) - 21,5,F000,11100111*27f6 * 23-04-2025 14:27:25.893
+Command Sent (SeqNo: 22, Retry: 0) Rack-1 Placed in J12 - With RA:2 - #22,3,2,61124,800,0,0*7fa2  * 23-04-2025 14:27:27.851
+CRC-Response (SeqNo: 22) - 22,3,I001,2*ecbc * 23-04-2025 14:27:27.972
+CRC-Response (SeqNo: 22) - 22,3,F000,2*d3ed * 23-04-2025 14:27:38.77
+RA Placed Rack in J12 * 23-04-2025 14:27:38.80
+Command Sent (SeqNo: 23, Retry: 0) RA2 Home Command - #23,5,00111000*b619  * 23-04-2025 14:27:38.456
+CRC-Response (SeqNo: 23) - 23,5,I001,00111000*2d6e * 23-04-2025 14:27:38.985
+CRC-Response (SeqNo: 23) - 23,5,F000,11101101*2b57 * 23-04-2025 14:27:50.725
+Command Sent (SeqNo: 24, Retry: 0) RA2 Home Command - #24,5,00111000*7dec  * 23-04-2025 14:27:52.309
+CRC-Response (SeqNo: 24) - 24,5,I001,00111000*1cdc * 23-04-2025 14:27:52.433
+CRC-Response (SeqNo: 24) - 24,5,F000,11111101*dad8 * 23-04-2025 14:27:52.433
+Command Sent (SeqNo: 25, Retry: 0) RA2 Home Command - #25,5,00111000*be11  * 23-04-2025 14:27:54.20
+CRC-Response (SeqNo: 25) - 25,5,I001,00111000*8c8d * 23-04-2025 14:27:54.144
+CRC-Response (SeqNo: 25) - 25,5,F000,11111111*da88 * 23-04-2025 14:27:54.144
+Command Sent (SeqNo: 26, Retry: 0) RA2 Home Command - #26,5,00111000*ba15  * 23-04-2025 14:27:55.724
+CRC-Response (SeqNo: 26) - 26,5,I001,00111000*7c7d * 23-04-2025 14:27:55.861
+CRC-Response (SeqNo: 26) - 26,5,F000,11111111*2a78 * 23-04-2025 14:27:55.862
+Command Sent (SeqNo: 27, Retry: 0) RA2 Home Command - #27,5,00111000*79e8  * 23-04-2025 14:27:57.456
+CRC-Response (SeqNo: 27) - 27,5,I001,00111000*ec2c * 23-04-2025 14:27:57.580
+CRC-Response (SeqNo: 27) - 27,5,F000,11111101*2a28 * 23-04-2025 14:27:57.581
+Command Sent (SeqNo: 28, Retry: 0) RA2 Home Command - #28,5,00111000*6dfc  * 23-04-2025 14:27:59.178
+CRC-Response (SeqNo: 28) - 28,5,I001,00111000*1f19 * 23-04-2025 14:27:59.317
+CRC-Response (SeqNo: 28) - 28,5,F000,11111111*491c * 23-04-2025 14:27:59.317
+Command Sent (SeqNo: 29, Retry: 0) RA2 Home Command - #29,5,00111000*ae01  * 23-04-2025 14:28:00.898
+CRC-Response (SeqNo: 29) - 29,5,I001,00111000*8f48 * 23-04-2025 14:28:01.22
+CRC-Response (SeqNo: 29) - 29,5,F000,11111111*d94d * 23-04-2025 14:28:01.23
+Command Sent (SeqNo: 30, Retry: 0) RA2 Home Command - #30,5,00111000*331f  * 23-04-2025 14:28:02.610
+CRC-Response (SeqNo: 30) - 30,5,I001,00111000*21cf * 23-04-2025 14:28:02.735
+CRC-Response (SeqNo: 30) - 30,5,F000,11111111*77ca * 23-04-2025 14:28:02.735
+Command Sent (SeqNo: 31, Retry: 0) RA2 Home Command - #31,5,00111000*f0e2  * 23-04-2025 14:28:04.344
+CRC-Response (SeqNo: 31) - 31,5,I001,00111000*b19e * 23-04-2025 14:28:04.466
+CRC-Response (SeqNo: 31) - 31,5,F000,11111111*e79b * 23-04-2025 14:28:04.467
+Command Sent (SeqNo: 32, Retry: 0) RA2 Home Command - #32,5,00111000*f4e6  * 23-04-2025 14:28:06.52
+CRC-Response (SeqNo: 32) - 32,5,I001,00111000*416e * 23-04-2025 14:28:06.174
+CRC-Response (SeqNo: 32) - 32,5,F000,11111111*176b * 23-04-2025 14:28:06.175
+Command Sent (SeqNo: 33, Retry: 0) RA2 Home Command - #33,5,00111000*371b  * 23-04-2025 14:28:07.755
+CRC-Response (SeqNo: 33) - 33,5,I001,00111000*d13f * 23-04-2025 14:28:07.878
+CRC-Response (SeqNo: 33) - 33,5,F000,11111101*173b * 23-04-2025 14:28:07.878
+Command Sent (SeqNo: 34, Retry: 0) RA2 Home Command - #34,5,00111000*fcee  * 23-04-2025 14:28:09.459
+CRC-Response (SeqNo: 34) - 34,5,I001,00111000*e08d * 23-04-2025 14:28:09.587
+CRC-Response (SeqNo: 34) - 34,5,F000,11111101*2689 * 23-04-2025 14:28:09.587
+Command Sent (SeqNo: 35, Retry: 0) RA2 Home Command - #35,5,00111000*3f13  * 23-04-2025 14:28:11.183
+CRC-Response (SeqNo: 35) - 35,5,I001,00111000*70dc * 23-04-2025 14:28:11.307
+CRC-Response (SeqNo: 35) - 35,5,F000,11111101*b6d8 * 23-04-2025 14:28:11.307
+Command Sent (SeqNo: 36, Retry: 0) RA2 Home Command - #36,5,00111000*3b17  * 23-04-2025 14:28:12.906
+CRC-Response (SeqNo: 36) - 36,5,I001,00111000*802c * 23-04-2025 14:28:13.30
+CRC-Response (SeqNo: 36) - 36,5,F000,11111101*4628 * 23-04-2025 14:28:13.31
+Command Sent (SeqNo: 37, Retry: 0) RA2 Home Command - #37,5,00111000*f8ea  * 23-04-2025 14:28:14.632
+CRC-Response (SeqNo: 37) - 37,5,I001,00111000*107d * 23-04-2025 14:28:14.756
+CRC-Response (SeqNo: 37) - 37,5,F000,11111111*4678 * 23-04-2025 14:28:14.756
+Command Sent (SeqNo: 38, Retry: 0) RA2 Home Command - #38,5,00111000*ecfe  * 23-04-2025 14:28:16.335
+CRC-Response (SeqNo: 38) - 38,5,I001,00111000*e348 * 23-04-2025 14:28:16.461
+CRC-Response (SeqNo: 38) - 38,5,F000,11111101*254c * 23-04-2025 14:28:16.461
+Command Sent (SeqNo: 39, Retry: 0) RA2 Home Command - #39,5,00111000*2f03  * 23-04-2025 14:28:18.58
+CRC-Response (SeqNo: 39) - 39,5,I001,00111000*7319 * 23-04-2025 14:28:18.184
+CRC-Response (SeqNo: 39) - 39,5,F000,11111111*251c * 23-04-2025 14:28:18.184
+Command Sent (SeqNo: 40, Retry: 0) RA2 Home Command - #40,5,00111000*7414  * 23-04-2025 14:28:19.782
+CRC-Response (SeqNo: 40) - 40,5,I001,00111000*547e * 23-04-2025 14:28:19.904
+CRC-Response (SeqNo: 40) - 40,5,F000,11111111*027b * 23-04-2025 14:28:19.905
+Command Sent (SeqNo: 41, Retry: 0) RA2 Home Command - #41,5,00111000*b7e9  * 23-04-2025 14:28:21.501
+CRC-Response (SeqNo: 41) - 41,5,I001,00111000*c42f * 23-04-2025 14:28:21.625
+CRC-Response (SeqNo: 41) - 41,5,F000,11111111*922a * 23-04-2025 14:28:21.626
+Command Sent (SeqNo: 42, Retry: 0) RA2 Home Command - #42,5,00111000*b3ed  * 23-04-2025 14:28:23.223
+CRC-Response (SeqNo: 42) - 42,5,I001,00111000*34df * 23-04-2025 14:28:23.361
+CRC-Response (SeqNo: 42) - 42,5,F000,11111111*62da * 23-04-2025 14:28:23.362
+Command Sent (SeqNo: 43, Retry: 0) RA2 Home Command - #43,5,00111000*7010  * 23-04-2025 14:28:24.958
+CRC-Response (SeqNo: 43) - 43,5,I001,00111000*a48e * 23-04-2025 14:28:25.81
+CRC-Response (SeqNo: 43) - 43,5,F000,11111101*628a * 23-04-2025 14:28:25.82
+Command Sent (SeqNo: 44, Retry: 0) RA2 Home Command - #44,5,00111000*bbe5  * 23-04-2025 14:28:26.667
+CRC-Response (SeqNo: 44) - 44,5,I001,00111000*953c * 23-04-2025 14:28:26.795
+CRC-Response (SeqNo: 44) - 44,5,F000,11111111*c339 * 23-04-2025 14:28:26.796
+Command Sent (SeqNo: 45, Retry: 0) RA2 Home Command - #45,5,00111000*7818  * 23-04-2025 14:28:28.393
+CRC-Response (SeqNo: 45) - 45,5,I001,00111000*056d * 23-04-2025 14:28:28.518
+CRC-Response (SeqNo: 45) - 45,5,F000,11111111*5368 * 23-04-2025 14:28:28.519
+Command Sent (SeqNo: 46, Retry: 0) RA2 Home Command - #46,5,00111000*7c1c  * 23-04-2025 14:28:30.98
+CRC-Response (SeqNo: 46) - 46,5,I001,00111000*f59d * 23-04-2025 14:28:30.223
+CRC-Response (SeqNo: 46) - 46,5,F000,11111111*a398 * 23-04-2025 14:28:30.224
+Command Sent (SeqNo: 47, Retry: 0) RA2 Home Command - #47,5,00111000*bfe1  * 23-04-2025 14:28:31.800
+CRC-Response (SeqNo: 47) - 47,5,I001,00111000*65cc * 23-04-2025 14:28:31.941
+CRC-Response (SeqNo: 47) - 47,5,F000,11111101*a3c8 * 23-04-2025 14:28:31.942
+Command Sent (SeqNo: 48, Retry: 0) RA2 Home Command - #48,5,00111000*abf5  * 23-04-2025 14:28:33.532
+CRC-Response (SeqNo: 48) - 48,5,I001,00111000*96f9 * 23-04-2025 14:28:33.657
+CRC-Response (SeqNo: 48) - 48,5,F000,11111111*c0fc * 23-04-2025 14:28:33.657
+Command Sent (SeqNo: 49, Retry: 0) RA2 Home Command - #49,5,00111000*6808  * 23-04-2025 14:28:35.251
+CRC-Response (SeqNo: 49) - 49,5,I001,00111000*06a8 * 23-04-2025 14:28:35.392
+CRC-Response (SeqNo: 49) - 49,5,F000,11111111*50ad * 23-04-2025 14:28:35.392
+Command Sent (SeqNo: 50, Retry: 0) RA2 Home Command - #50,5,00111000*f516  * 23-04-2025 14:28:37.0
+CRC-Response (SeqNo: 50) - 50,5,I001,00111000*a82f * 23-04-2025 14:28:37.140
+CRC-Response (SeqNo: 50) - 50,5,F000,11111111*fe2a * 23-04-2025 14:28:37.141
+Command Sent (SeqNo: 51, Retry: 0) RA2 Home Command - #51,5,00111000*36eb  * 23-04-2025 14:28:38.736
+CRC-Response (SeqNo: 51) - 51,5,I001,00111000*387e * 23-04-2025 14:28:38.877
+CRC-Response (SeqNo: 51) - 51,5,F000,11111111*6e7b * 23-04-2025 14:28:38.877
+Command Sent (SeqNo: 52, Retry: 0) RA2 Home Command - #52,5,00111000*32ef  * 23-04-2025 14:28:40.537
+CRC-Response (SeqNo: 52) - 52,5,I001,00111000*c88e * 23-04-2025 14:28:40.662
+CRC-Response (SeqNo: 52) - 52,5,F000,11111111*9e8b * 23-04-2025 14:28:40.662
+Command Sent (SeqNo: 53, Retry: 0) RA2 Home Command - #53,5,00111000*f112  * 23-04-2025 14:28:42.245
+CRC-Response (SeqNo: 53) - 53,5,I001,00111000*58df * 23-04-2025 14:28:42.385
+CRC-Response (SeqNo: 53) - 53,5,F000,11111111*0eda * 23-04-2025 14:28:42.385
+Command Sent (SeqNo: 54, Retry: 0) RA2 Home Command - #54,5,00111000*3ae7  * 23-04-2025 14:28:43.983
+CRC-Response (SeqNo: 54) - 54,5,I001,00111000*696d * 23-04-2025 14:28:44.107
+CRC-Response (SeqNo: 54) - 54,5,F000,11111111*3f68 * 23-04-2025 14:28:44.108
+Command Sent (SeqNo: 55, Retry: 0) RA2 Home Command - #55,5,00111000*f91a  * 23-04-2025 14:28:45.706
+CRC-Response (SeqNo: 55) - 55,5,I001,00111000*f93c * 23-04-2025 14:28:45.830
+CRC-Response (SeqNo: 55) - 55,5,F000,11111111*af39 * 23-04-2025 14:28:45.830
+Command Sent (SeqNo: 56, Retry: 0) RA2 Home Command - #56,5,00111000*fd1e  * 23-04-2025 14:28:47.416
+CRC-Response (SeqNo: 56) - 56,5,I001,00111000*09cc * 23-04-2025 14:28:47.555
+CRC-Response (SeqNo: 56) - 56,5,F000,11111111*5fc9 * 23-04-2025 14:28:47.555
+Command Sent (SeqNo: 57, Retry: 0) RA2 Home Command - #57,5,00111000*3ee3  * 23-04-2025 14:28:49.165
+CRC-Response (SeqNo: 57) - 57,5,I001,00111000*999d * 23-04-2025 14:28:49.293
+CRC-Response (SeqNo: 57) - 57,5,F000,11111111*cf98 * 23-04-2025 14:28:49.294
+Command Sent (SeqNo: 58, Retry: 0) RA2 Home Command - #58,5,00111000*2af7  * 23-04-2025 14:28:50.882
+CRC-Response (SeqNo: 58) - 58,5,I001,00111000*6aa8 * 23-04-2025 14:28:51.6
+CRC-Response (SeqNo: 58) - 58,5,F000,11111111*3cad * 23-04-2025 14:28:51.6
+Command Sent (SeqNo: 59, Retry: 0) RA2 Home Command - #59,5,00111000*e90a  * 23-04-2025 14:28:52.605
+CRC-Response (SeqNo: 59) - 59,5,I001,00111000*faf9 * 23-04-2025 14:28:52.727
+CRC-Response (SeqNo: 59) - 59,5,F000,11111101*3cfd * 23-04-2025 14:28:52.727
+Command Sent (SeqNo: 60, Retry: 0) RA2 Home Command - #60,5,00111000*3613  * 23-04-2025 14:28:54.324
+CRC-Response (SeqNo: 60) - 60,5,I001,00111000*ecdf * 23-04-2025 14:28:54.463
+CRC-Response (SeqNo: 60) - 60,5,F000,11111111*bada * 23-04-2025 14:28:54.463
+Command Sent (SeqNo: 61, Retry: 0) RA2 Home Command - #61,5,00111000*f5ee  * 23-04-2025 14:28:56.64
+CRC-Response (SeqNo: 61) - 61,5,I001,00111000*7c8e * 23-04-2025 14:28:56.188
+CRC-Response (SeqNo: 61) - 61,5,F000,11111111*2a8b * 23-04-2025 14:28:56.188
+Command Sent (SeqNo: 62, Retry: 0) RA2 Home Command - #62,5,00111000*f1ea  * 23-04-2025 14:28:57.786
+CRC-Response (SeqNo: 62) - 62,5,I001,00111000*8c7e * 23-04-2025 14:28:57.908
+CRC-Response (SeqNo: 62) - 62,5,F000,11111111*da7b * 23-04-2025 14:28:57.908
+Command Sent (SeqNo: 63, Retry: 0) RA2 Home Command - #63,5,00111000*3217  * 23-04-2025 14:28:59.490
+CRC-Response (SeqNo: 63) - 63,5,I001,00111000*1c2f * 23-04-2025 14:28:59.613
+CRC-Response (SeqNo: 63) - 63,5,F000,11111101*da2b * 23-04-2025 14:28:59.614
+Command Sent (SeqNo: 64, Retry: 0) RA2 Home Command - #64,5,00111000*f9e2  * 23-04-2025 14:29:01.208
+CRC-Response (SeqNo: 64) - 64,5,I001,00111000*2d9d * 23-04-2025 14:29:01.333
+CRC-Response (SeqNo: 64) - 64,5,F000,11111111*7b98 * 23-04-2025 14:29:01.333
+Command Sent (SeqNo: 65, Retry: 0) RA2 Home Command - #65,5,00111000*3a1f  * 23-04-2025 14:29:02.911
+CRC-Response (SeqNo: 65) - 65,5,I001,00111000*bdcc * 23-04-2025 14:29:03.34
+CRC-Response (SeqNo: 65) - 65,5,F000,11111111*ebc9 * 23-04-2025 14:29:03.35
+Command Sent (SeqNo: 66, Retry: 0) RA2 Home Command - #66,5,00111000*3e1b  * 23-04-2025 14:29:04.620
+CRC-Response (SeqNo: 66) - 66,5,I001,00111000*4d3c * 23-04-2025 14:29:04.744
+CRC-Response (SeqNo: 66) - 66,5,F000,11111111*1b39 * 23-04-2025 14:29:04.745
+Command Sent (SeqNo: 67, Retry: 0) RA2 Home Command - #67,5,00111000*fde6  * 23-04-2025 14:29:06.345
+CRC-Response (SeqNo: 67) - 67,5,I001,00111000*dd6d * 23-04-2025 14:29:06.469
+CRC-Response (SeqNo: 67) - 67,5,F000,11111111*8b68 * 23-04-2025 14:29:06.469
+Command Sent (SeqNo: 68, Retry: 0) RA2 Home Command - #68,5,00111000*e9f2  * 23-04-2025 14:29:08.65
+CRC-Response (SeqNo: 68) - 68,5,I001,00111000*2e58 * 23-04-2025 14:29:08.191
+CRC-Response (SeqNo: 68) - 68,5,F000,11111111*785d * 23-04-2025 14:29:08.191
+Command Sent (SeqNo: 69, Retry: 0) RA2 Home Command - #69,5,00111000*2a0f  * 23-04-2025 14:29:09.774
+CRC-Response (SeqNo: 69) - 69,5,I001,00111000*be09 * 23-04-2025 14:29:09.914
+CRC-Response (SeqNo: 69) - 69,5,F000,11111111*e80c * 23-04-2025 14:29:09.915
+Command Sent (SeqNo: 70, Retry: 0) RA2 Home Command - #70,5,00111000*b711  * 23-04-2025 14:29:11.509
+CRC-Response (SeqNo: 70) - 70,5,I001,00111000*108e * 23-04-2025 14:29:11.635
+CRC-Response (SeqNo: 70) - 70,5,F000,11111111*468b * 23-04-2025 14:29:11.635
+Command Sent (SeqNo: 71, Retry: 0) RA2 Home Command - #71,5,00111000*74ec  * 23-04-2025 14:29:13.249
+CRC-Response (SeqNo: 71) - 71,5,I001,00111000*80df * 23-04-2025 14:29:13.375
+CRC-Response (SeqNo: 71) - 71,5,F000,11111111*d6da * 23-04-2025 14:29:13.376
+Command Sent (SeqNo: 72, Retry: 0) RA2 Home Command - #72,5,00111000*70e8  * 23-04-2025 14:29:14.958
+CRC-Response (SeqNo: 72) - 72,5,I001,00111000*702f * 23-04-2025 14:29:15.81
+CRC-Response (SeqNo: 72) - 72,5,F000,11111101*b62b * 23-04-2025 14:29:15.81
+Command Sent (SeqNo: 73, Retry: 0) RA2 Home Command - #73,5,00111000*b315  * 23-04-2025 14:29:16.682
+CRC-Response (SeqNo: 73) - 73,5,I001,00111000*e07e * 23-04-2025 14:29:16.807
+CRC-Response (SeqNo: 73) - 73,5,F000,11111111*b67b * 23-04-2025 14:29:16.807
+Command Sent (SeqNo: 74, Retry: 0) RA2 Home Command - #74,5,00111000*78e0  * 23-04-2025 14:29:18.420
+CRC-Response (SeqNo: 74) - 74,5,I001,00111000*d1cc * 23-04-2025 14:29:18.544
+CRC-Response (SeqNo: 74) - 74,5,F000,11111111*87c9 * 23-04-2025 14:29:18.544
+Command Sent (SeqNo: 75, Retry: 0) RA2 Home Command - #75,5,00111000*bb1d  * 23-04-2025 14:29:20.144
+CRC-Response (SeqNo: 75) - 75,5,I001,00111000*419d * 23-04-2025 14:29:20.265
+CRC-Response (SeqNo: 75) - 75,5,F000,11111101*8799 * 23-04-2025 14:29:20.266
+Command Sent (SeqNo: 76, Retry: 0) RA2 Home Command - #76,5,00111000*bf19  * 23-04-2025 14:29:21.850
+CRC-Response (SeqNo: 76) - 76,5,I001,00111000*b16d * 23-04-2025 14:29:21.972
+CRC-Response (SeqNo: 76) - 76,5,F000,11111111*e768 * 23-04-2025 14:29:21.973
+Command Sent (SeqNo: 77, Retry: 0) RA2 Home Command - #77,5,00111000*7ce4  * 23-04-2025 14:29:23.564
+CRC-Response (SeqNo: 77) - 77,5,I001,00111000*213c * 23-04-2025 14:29:23.686
+CRC-Response (SeqNo: 77) - 77,5,F000,11111111*7739 * 23-04-2025 14:29:23.687
+Command Sent (SeqNo: 78, Retry: 0) RA2 Home Command - #78,5,00111000*68f0  * 23-04-2025 14:29:25.290
+CRC-Response (SeqNo: 78) - 78,5,I001,00111000*d209 * 23-04-2025 14:29:25.428
+CRC-Response (SeqNo: 78) - 78,5,F000,11111111*840c * 23-04-2025 14:29:25.429
+Command Sent (SeqNo: 79, Retry: 0) RA2 Home Command - #79,5,00111000*ab0d  * 23-04-2025 14:29:27.11
+CRC-Response (SeqNo: 79) - 79,5,I001,00111000*4258 * 23-04-2025 14:29:27.134
+CRC-Response (SeqNo: 79) - 79,5,F000,11111111*145d * 23-04-2025 14:29:27.135
+Command Sent (SeqNo: 80, Retry: 0) RA2 Home Command - #80,5,00111000*b805  * 23-04-2025 14:29:28.748
+CRC-Response (SeqNo: 80) - 80,5,I001,00111000*07bd * 23-04-2025 14:29:28.870
+CRC-Response (SeqNo: 80) - 80,5,F000,11111101*c1b9 * 23-04-2025 14:29:28.871
+Command Sent (SeqNo: 81, Retry: 0) RA2 Home Command - #81,5,00111000*7bf8  * 23-04-2025 14:29:30.459
+CRC-Response (SeqNo: 81) - 81,5,I001,00111000*97ec * 23-04-2025 14:29:30.583
+CRC-Response (SeqNo: 81) - 81,5,F000,11111111*c1e9 * 23-04-2025 14:29:30.583
+Command Sent (SeqNo: 82, Retry: 0) RA2 Home Command - #82,5,00111000*7ffc  * 23-04-2025 14:29:32.163
+CRC-Response (SeqNo: 82) - 82,5,I001,00111000*671c * 23-04-2025 14:29:32.287
+CRC-Response (SeqNo: 82) - 82,5,F000,11111111*3119 * 23-04-2025 14:29:32.288
+Command Sent (SeqNo: 83, Retry: 0) RA2 Home Command - #83,5,00111000*bc01  * 23-04-2025 14:29:33.889
+CRC-Response (SeqNo: 83) - 83,5,I001,00111000*f74d * 23-04-2025 14:29:34.12
+CRC-Response (SeqNo: 83) - 83,5,F000,11111111*a148 * 23-04-2025 14:29:34.12
+Command Sent (SeqNo: 84, Retry: 0) RA2 Home Command - #84,5,00111000*77f4  * 23-04-2025 14:29:35.611
+CRC-Response (SeqNo: 84) - 84,5,I001,00111000*c6ff * 23-04-2025 14:29:35.733
+CRC-Response (SeqNo: 84) - 84,5,F000,11111111*90fa * 23-04-2025 14:29:35.734
+Command Sent (SeqNo: 85, Retry: 0) RA2 Home Command - #85,5,00111000*b409  * 23-04-2025 14:29:37.335
+CRC-Response (SeqNo: 85) - 85,5,I001,00111000*56ae * 23-04-2025 14:29:37.458
+CRC-Response (SeqNo: 85) - 85,5,F000,11111111*00ab * 23-04-2025 14:29:37.459
+Command Sent (SeqNo: 86, Retry: 0) RA2 Home Command - #86,5,00111000*b00d  * 23-04-2025 14:29:39.55
+CRC-Response (SeqNo: 86) - 86,5,I001,00111000*a65e * 23-04-2025 14:29:39.179
+CRC-Response (SeqNo: 86) - 86,5,F000,11111111*f05b * 23-04-2025 14:29:39.180
+Command Sent (SeqNo: 87, Retry: 0) RA2 Home Command - #87,5,00111000*73f0  * 23-04-2025 14:29:40.769
+CRC-Response (SeqNo: 87) - 87,5,I001,00111000*360f * 23-04-2025 14:29:40.893
+CRC-Response (SeqNo: 87) - 87,5,F000,11111101*f00b * 23-04-2025 14:29:40.893
+Command Sent (SeqNo: 88, Retry: 0) RA2 Home Command - #88,5,00111000*67e4  * 23-04-2025 14:29:42.475
+CRC-Response (SeqNo: 88) - 88,5,I001,00111000*c53a * 23-04-2025 14:29:42.598
+CRC-Response (SeqNo: 88) - 88,5,F000,11111111*933f * 23-04-2025 14:29:42.598
+Command Sent (SeqNo: 89, Retry: 0) RA2 Home Command - #89,5,00111000*a419  * 23-04-2025 14:29:44.178
+CRC-Response (SeqNo: 89) - 89,5,I001,00111000*556b * 23-04-2025 14:29:44.302
+CRC-Response (SeqNo: 89) - 89,5,F000,11111101*936f * 23-04-2025 14:29:44.303
+Command Sent (SeqNo: 90, Retry: 0) RA2 Home Command - #90,5,00111000*3907  * 23-04-2025 14:29:45.884
+CRC-Response (SeqNo: 90) - 90,5,I001,00111000*fbec * 23-04-2025 14:29:46.9
+CRC-Response (SeqNo: 90) - 90,5,F000,11111111*ade9 * 23-04-2025 14:29:46.10
+Command Sent (SeqNo: 91, Retry: 0) RA2 Home Command - #91,5,00111000*fafa  * 23-04-2025 14:29:47.591
+CRC-Response (SeqNo: 91) - 91,5,I001,00111000*6bbd * 23-04-2025 14:29:47.715
+CRC-Response (SeqNo: 91) - 91,5,F000,11111101*adb9 * 23-04-2025 14:29:47.715
+Command Sent (SeqNo: 92, Retry: 0) RA2 Home Command - #92,5,00111000*fefe  * 23-04-2025 14:29:49.314
+CRC-Response (SeqNo: 92) - 92,5,I001,00111000*9b4d * 23-04-2025 14:29:49.453
+CRC-Response (SeqNo: 92) - 92,5,F000,11111111*cd48 * 23-04-2025 14:29:49.454
+Command Sent (SeqNo: 93, Retry: 0) RA2 Home Command - #93,5,00111000*3d03  * 23-04-2025 14:29:51.68
+CRC-Response (SeqNo: 93) - 93,5,I001,00111000*0b1c * 23-04-2025 14:29:51.192
+CRC-Response (SeqNo: 93) - 93,5,F000,11111111*5d19 * 23-04-2025 14:29:51.192
+Command Sent (SeqNo: 94, Retry: 0) RA2 Home Command - #94,5,00111000*f6f6  * 23-04-2025 14:29:52.769
+CRC-Response (SeqNo: 94) - 94,5,I001,00111000*3aae * 23-04-2025 14:29:52.895
+CRC-Response (SeqNo: 94) - 94,5,F000,11111111*6cab * 23-04-2025 14:29:52.895
+Command Sent (SeqNo: 95, Retry: 0) RA2 Home Command - #95,5,00111000*350b  * 23-04-2025 14:29:54.491
+CRC-Response (SeqNo: 95) - 95,5,I001,00111000*aaff * 23-04-2025 14:29:54.613
+CRC-Response (SeqNo: 95) - 95,5,F000,11111111*fcfa * 23-04-2025 14:29:54.614
+Command Sent (SeqNo: 96, Retry: 0) RA2 Home Command - #96,5,00111000*310f  * 23-04-2025 14:29:56.212
+CRC-Response (SeqNo: 96) - 96,5,I001,00111000*5a0f * 23-04-2025 14:29:56.336
+CRC-Response (SeqNo: 96) - 96,5,F000,11111111*0c0a * 23-04-2025 14:29:56.336
+Command Sent (SeqNo: 97, Retry: 0) RA2 Home Command - #97,5,00111000*f2f2  * 23-04-2025 14:29:57.930
+CRC-Response (SeqNo: 97) - 97,5,I001,00111000*ca5e * 23-04-2025 14:29:58.54
+CRC-Response (SeqNo: 97) - 97,5,F000,11111111*9c5b * 23-04-2025 14:29:58.54
+Command Sent (SeqNo: 98, Retry: 0) RA2 Home Command - #98,5,00111000*e6e6  * 23-04-2025 14:29:59.662
+CRC-Response (SeqNo: 98) - 98,5,I001,00111000*396b * 23-04-2025 14:29:59.787
+CRC-Response (SeqNo: 98) - 98,5,F000,11111111*6f6e * 23-04-2025 14:29:59.787
+Command Sent (SeqNo: 99, Retry: 0) RA2 Home Command - #99,5,00111000*251b  * 23-04-2025 14:30:01.390
+CRC-Response (SeqNo: 99) - 99,5,I001,00111000*a93a * 23-04-2025 14:30:01.515
+CRC-Response (SeqNo: 99) - 99,5,F000,11111111*ff3f * 23-04-2025 14:30:01.516
+Command Sent (SeqNo: 100, Retry: 0) RA2 Home Command - #100,5,00111000*eb82  * 23-04-2025 14:30:03.141
+CRC-Response (SeqNo: 100) - 100,5,I001,00111000*5d18 * 23-04-2025 14:30:03.263
+CRC-Response (SeqNo: 100) - 100,5,F000,11111111*0b1d * 23-04-2025 14:30:03.264
+Command Sent (SeqNo: 101, Retry: 0) RA2 Home Command - #101,5,00111000*287f  * 23-04-2025 14:30:04.860
+CRC-Response (SeqNo: 101) - 101,5,I001,00111000*cd49 * 23-04-2025 14:30:04.986
+CRC-Response (SeqNo: 101) - 101,5,F000,11111111*9b4c * 23-04-2025 14:30:04.987
+Command Sent (SeqNo: 102, Retry: 0) RA2 Home Command - #102,5,00111000*2c7b  * 23-04-2025 14:30:06.584
+CRC-Response (SeqNo: 102) - 102,5,I001,00111000*3db9 * 23-04-2025 14:30:06.714
+CRC-Response (SeqNo: 102) - 102,5,F000,11111111*6bbc * 23-04-2025 14:30:06.714
+Command Sent (SeqNo: 103, Retry: 0) RA2 Home Command - #103,5,00111000*ef86  * 23-04-2025 14:30:08.306
+CRC-Response (SeqNo: 103) - 103,5,I001,00111000*ade8 * 23-04-2025 14:30:08.448
+CRC-Response (SeqNo: 103) - 103,5,F000,11111111*fbed * 23-04-2025 14:30:08.448
+Command Sent (SeqNo: 104, Retry: 0) RA2 Home Command - #104,5,00111000*2473  * 23-04-2025 14:30:10.44
+CRC-Response (SeqNo: 104) - 104,5,I001,00111000*9c5a * 23-04-2025 14:30:10.168
+CRC-Response (SeqNo: 104) - 104,5,F000,11111111*ca5f * 23-04-2025 14:30:10.169
+Command Sent (SeqNo: 105, Retry: 0) RA2 Home Command - #105,5,00111000*e78e  * 23-04-2025 14:30:11.768
+CRC-Response (SeqNo: 105) - 105,5,I001,00111000*0c0b * 23-04-2025 14:30:11.908
+CRC-Response (SeqNo: 105) - 105,5,F000,11111111*5a0e * 23-04-2025 14:30:11.909
+Command Sent (SeqNo: 106, Retry: 0) RA2 Home Command - #106,5,00111000*e38a  * 23-04-2025 14:30:13.489
+CRC-Response (SeqNo: 106) - 106,5,I001,00111000*fcfb * 23-04-2025 14:30:13.627
+CRC-Response (SeqNo: 106) - 106,5,F000,11111111*aafe * 23-04-2025 14:30:13.627
+Command Sent (SeqNo: 107, Retry: 0) RA2 Home Command - #107,5,00111000*2077  * 23-04-2025 14:30:15.210
+CRC-Response (SeqNo: 107) - 107,5,I001,00111000*6caa * 23-04-2025 14:30:15.335
+CRC-Response (SeqNo: 107) - 107,5,F000,11111111*3aaf * 23-04-2025 14:30:15.336
+Command Sent (SeqNo: 108, Retry: 0) RA2 Home Command - #108,5,00111000*3463  * 23-04-2025 14:30:16.930
+CRC-Response (SeqNo: 108) - 108,5,I001,00111000*9f9f * 23-04-2025 14:30:17.54
+CRC-Response (SeqNo: 108) - 108,5,F000,11111111*c99a * 23-04-2025 14:30:17.55
+Command Sent (SeqNo: 109, Retry: 0) RA2 Home Command - #109,5,00111000*f79e  * 23-04-2025 14:30:18.649
+CRC-Response (SeqNo: 109) - 109,5,I001,00111000*0fce * 23-04-2025 14:30:18.773
+CRC-Response (SeqNo: 109) - 109,5,F000,11111111*59cb * 23-04-2025 14:30:18.773
+Command Sent (SeqNo: 110, Retry: 0) RA2 Home Command - #110,5,00111000*6a80  * 23-04-2025 14:30:20.380
+CRC-Response (SeqNo: 110) - 110,5,I001,00111000*a149 * 23-04-2025 14:30:20.504
+CRC-Response (SeqNo: 110) - 110,5,F000,11111111*f74c * 23-04-2025 14:30:20.505
+Command Sent (SeqNo: 111, Retry: 0) RA2 Home Command - #111,5,00111000*a97d  * 23-04-2025 14:30:22.104
+CRC-Response (SeqNo: 111) - 111,5,I001,00111000*3118 * 23-04-2025 14:30:22.225
+CRC-Response (SeqNo: 111) - 111,5,F000,11111111*671d * 23-04-2025 14:30:22.226
+Command Sent (SeqNo: 112, Retry: 0) RA2 Home Command - #112,5,00111000*ad79  * 23-04-2025 14:30:23.826
+CRC-Response (SeqNo: 112) - 112,5,I001,00111000*c1e8 * 23-04-2025 14:30:23.952
+CRC-Response (SeqNo: 112) - 112,5,F000,11111111*97ed * 23-04-2025 14:30:23.953
+Command Sent (SeqNo: 113, Retry: 0) RA2 Home Command - #113,5,00111000*6e84  * 23-04-2025 14:30:25.564
+CRC-Response (SeqNo: 113) - 113,5,I001,00111000*51b9 * 23-04-2025 14:30:25.688
+CRC-Response (SeqNo: 113) - 113,5,F000,11111101*97bd * 23-04-2025 14:30:25.689
+Command Sent (SeqNo: 114, Retry: 0) RA2 Home Command - #114,5,00111000*a571  * 23-04-2025 14:30:27.284
+CRC-Response (SeqNo: 114) - 114,5,I001,00111000*600b * 23-04-2025 14:30:27.407
+CRC-Response (SeqNo: 114) - 114,5,F000,11111111*360e * 23-04-2025 14:30:27.407
+Command Sent (SeqNo: 115, Retry: 0) RA2 Home Command - #115,5,00111000*668c  * 23-04-2025 14:30:29.10
+CRC-Response (SeqNo: 115) - 115,5,I001,00111000*f05a * 23-04-2025 14:30:29.135
+CRC-Response (SeqNo: 115) - 115,5,F000,11111111*a65f * 23-04-2025 14:30:29.136
+Command Sent (SeqNo: 116, Retry: 0) RA2 Home Command - #116,5,00111000*6288  * 23-04-2025 14:30:30.735
+CRC-Response (SeqNo: 116) - 116,5,I001,00111000*00aa * 23-04-2025 14:30:30.861
+CRC-Response (SeqNo: 116) - 116,5,F000,11111111*56af * 23-04-2025 14:30:30.861
+Command Sent (SeqNo: 117, Retry: 0) RA2 Home Command - #117,5,00111000*a175  * 23-04-2025 14:30:32.469
+CRC-Response (SeqNo: 117) - 117,5,I001,00111000*90fb * 23-04-2025 14:30:32.596
+CRC-Response (SeqNo: 117) - 117,5,F000,11111101*56ff * 23-04-2025 14:30:32.596
+Command Sent (SeqNo: 118, Retry: 0) RA2 Home Command - #118,5,00111000*b561  * 23-04-2025 14:30:34.180
+CRC-Response (SeqNo: 118) - 118,5,I001,00111000*63ce * 23-04-2025 14:30:34.305
+CRC-Response (SeqNo: 118) - 118,5,F000,11111111*35cb * 23-04-2025 14:30:34.306
+Command Sent (SeqNo: 119, Retry: 0) RA2 Home Command - #119,5,00111000*769c  * 23-04-2025 14:30:35.905
+CRC-Response (SeqNo: 119) - 119,5,I001,00111000*f39f * 23-04-2025 14:30:36.31
+CRC-Response (SeqNo: 119) - 119,5,F000,11111111*a59a * 23-04-2025 14:30:36.32
+Command Sent (SeqNo: 120, Retry: 0) RA2 Home Command - #120,5,00111000*a985  * 23-04-2025 14:30:37.627
+CRC-Response (SeqNo: 120) - 120,5,I001,00111000*e5b9 * 23-04-2025 14:30:37.751
+CRC-Response (SeqNo: 120) - 120,5,F000,11111111*b3bc * 23-04-2025 14:30:37.752
+Command Sent (SeqNo: 121, Retry: 0) RA2 Home Command - #121,5,00111000*6a78  * 23-04-2025 14:30:39.338
+CRC-Response (SeqNo: 121) - 121,5,I001,00111000*75e8 * 23-04-2025 14:30:39.462
+CRC-Response (SeqNo: 121) - 121,5,F000,11111111*23ed * 23-04-2025 14:30:39.462
+Command Sent (SeqNo: 122, Retry: 0) RA2 Home Command - #122,5,00111000*6e7c  * 23-04-2025 14:30:41.60
+CRC-Response (SeqNo: 122) - 122,5,I001,00111000*8518 * 23-04-2025 14:30:41.181
+CRC-Response (SeqNo: 122) - 122,5,F000,11111111*d31d * 23-04-2025 14:30:41.181
+Command Sent (SeqNo: 123, Retry: 0) RA2 Home Command - #123,5,00111000*ad81  * 23-04-2025 14:30:42.781
+CRC-Response (SeqNo: 123) - 123,5,I001,00111000*1549 * 23-04-2025 14:30:42.905
+CRC-Response (SeqNo: 123) - 123,5,F000,11111101*d34d * 23-04-2025 14:30:42.905
+Command Sent (SeqNo: 124, Retry: 0) RA2 Home Command - #124,5,00111000*6674  * 23-04-2025 14:30:44.512
+CRC-Response (SeqNo: 124) - 124,5,I001,00111000*24fb * 23-04-2025 14:30:44.636
+CRC-Response (SeqNo: 124) - 124,5,F000,11111111*72fe * 23-04-2025 14:30:44.636
+Command Sent (SeqNo: 125, Retry: 0) RA2 Home Command - #125,5,00111000*a589  * 23-04-2025 14:30:46.225
+CRC-Response (SeqNo: 125) - 125,5,I001,00111000*b4aa * 23-04-2025 14:30:46.350
+CRC-Response (SeqNo: 125) - 125,5,F000,11111111*e2af * 23-04-2025 14:30:46.350
+Command Sent (SeqNo: 126, Retry: 0) RA2 Home Command - #126,5,00111000*a18d  * 23-04-2025 14:30:47.949
+CRC-Response (SeqNo: 126) - 126,5,I001,00111000*445a * 23-04-2025 14:30:48.70
+CRC-Response (SeqNo: 126) - 126,5,F000,11111101*825e * 23-04-2025 14:30:48.71
+Command Sent (SeqNo: 127, Retry: 0) RA2 Home Command - #127,5,00111000*6270  * 23-04-2025 14:30:49.670
+CRC-Response (SeqNo: 127) - 127,5,I001,00111000*d40b * 23-04-2025 14:30:49.793
+CRC-Response (SeqNo: 127) - 127,5,F000,11111111*820e * 23-04-2025 14:30:49.794
+Command Sent (SeqNo: 128, Retry: 0) RA2 Home Command - #128,5,00111000*7664  * 23-04-2025 14:30:51.395
+CRC-Response (SeqNo: 128) - 128,5,I001,00111000*273e * 23-04-2025 14:30:51.518
+CRC-Response (SeqNo: 128) - 128,5,F000,11111111*713b * 23-04-2025 14:30:51.519
+Command Sent (SeqNo: 129, Retry: 0) RA2 Home Command - #129,5,00111000*b599  * 23-04-2025 14:30:53.97
+CRC-Response (SeqNo: 129) - 129,5,I001,00111000*b76f * 23-04-2025 14:30:53.223
+CRC-Response (SeqNo: 129) - 129,5,F000,11111101*716b * 23-04-2025 14:30:53.224
+Command Sent (SeqNo: 130, Retry: 0) RA2 Home Command - #130,5,00111000*2887  * 23-04-2025 14:30:54.819
+CRC-Response (SeqNo: 130) - 130,5,I001,00111000*19e8 * 23-04-2025 14:30:54.944
+CRC-Response (SeqNo: 130) - 130,5,F000,11111111*4fed * 23-04-2025 14:30:54.944
+Command Sent (SeqNo: 131, Retry: 0) RA2 Home Command - #131,5,00111000*eb7a  * 23-04-2025 14:30:56.545
+CRC-Response (SeqNo: 131) - 131,5,I001,00111000*89b9 * 23-04-2025 14:30:56.669
+CRC-Response (SeqNo: 131) - 131,5,F000,11111101*4fbd * 23-04-2025 14:30:56.669
+Command Sent (SeqNo: 132, Retry: 0) RA2 Home Command - #132,5,00111000*ef7e  * 23-04-2025 14:30:58.265
+CRC-Response (SeqNo: 132) - 132,5,I001,00111000*7949 * 23-04-2025 14:30:58.390
+CRC-Response (SeqNo: 132) - 132,5,F000,11111101*bf4d * 23-04-2025 14:30:58.391
+Command Sent (SeqNo: 133, Retry: 0) RA2 Home Command - #133,5,00111000*2c83  * 23-04-2025 14:30:59.987
+CRC-Response (SeqNo: 133) - 133,5,I001,00111000*e918 * 23-04-2025 14:31:00.109
+CRC-Response (SeqNo: 133) - 133,5,F000,11111111*bf1d * 23-04-2025 14:31:00.110
+Command Sent (SeqNo: 134, Retry: 0) RA2 Home Command - #134,5,00111000*e776  * 23-04-2025 14:31:01.695
+CRC-Response (SeqNo: 134) - 134,5,I001,00111000*d8aa * 23-04-2025 14:31:01.819
+CRC-Response (SeqNo: 134) - 134,5,F000,11111111*8eaf * 23-04-2025 14:31:01.820
+Command Sent (SeqNo: 135, Retry: 0) RA2 Home Command - #135,5,00111000*248b  * 23-04-2025 14:31:03.404
+CRC-Response (SeqNo: 135) - 135,5,I001,00111000*48fb * 23-04-2025 14:31:03.527
+CRC-Response (SeqNo: 135) - 135,5,F000,11111111*1efe * 23-04-2025 14:31:03.528
+Command Sent (SeqNo: 136, Retry: 0) RA2 Home Command - #136,5,00111000*208f  * 23-04-2025 14:31:05.125
+CRC-Response (SeqNo: 136) - 136,5,I001,00111000*b80b * 23-04-2025 14:31:05.247
+CRC-Response (SeqNo: 136) - 136,5,F000,11111111*ee0e * 23-04-2025 14:31:05.247
+Command Sent (SeqNo: 137, Retry: 0) RA2 Home Command - #137,5,00111000*e372  * 23-04-2025 14:31:06.855
+CRC-Response (SeqNo: 137) - 137,5,I001,00111000*285a * 23-04-2025 14:31:06.979
+CRC-Response (SeqNo: 137) - 137,5,F000,11111111*7e5f * 23-04-2025 14:31:06.979
+Command Sent (SeqNo: 138, Retry: 0) RA2 Home Command - #138,5,00111000*f766  * 23-04-2025 14:31:08.559
+CRC-Response (SeqNo: 138) - 138,5,I001,00111000*db6f * 23-04-2025 14:31:08.682
+CRC-Response (SeqNo: 138) - 138,5,F000,11111111*8d6a * 23-04-2025 14:31:08.683
+Command Sent (SeqNo: 139, Retry: 0) RA2 Home Command - #139,5,00111000*349b  * 23-04-2025 14:31:10.276
+CRC-Response (SeqNo: 139) - 139,5,I001,00111000*4b3e * 23-04-2025 14:31:10.401
+CRC-Response (SeqNo: 139) - 139,5,F000,11111111*1d3b * 23-04-2025 14:31:10.401
+Command Sent (SeqNo: 140, Retry: 0) RA2 Home Command - #140,5,00111000*6f8c  * 23-04-2025 14:31:12.12
+CRC-Response (SeqNo: 140) - 140,5,I001,00111000*6c59 * 23-04-2025 14:31:12.138
+CRC-Response (SeqNo: 140) - 140,5,F000,11111111*3a5c * 23-04-2025 14:31:12.138
+Command Sent (SeqNo: 141, Retry: 0) RA2 Home Command - #141,5,00111000*ac71  * 23-04-2025 14:31:13.732
+CRC-Response (SeqNo: 141) - 141,5,I001,00111000*fc08 * 23-04-2025 14:31:13.856
+CRC-Response (SeqNo: 141) - 141,5,F000,11111111*aa0d * 23-04-2025 14:31:13.856
+Command Sent (SeqNo: 142, Retry: 0) RA2 Home Command - #142,5,00111000*a875  * 23-04-2025 14:31:15.452
+CRC-Response (SeqNo: 142) - 142,5,I001,00111000*0cf8 * 23-04-2025 14:31:15.575
+CRC-Response (SeqNo: 142) - 142,5,F000,11111111*5afd * 23-04-2025 14:31:15.576
+Command Sent (SeqNo: 143, Retry: 0) RA2 Home Command - #143,5,00111000*6b88  * 23-04-2025 14:31:17.176
+CRC-Response (SeqNo: 143) - 143,5,I001,00111000*9ca9 * 23-04-2025 14:31:17.300
+CRC-Response (SeqNo: 143) - 143,5,F000,11111101*5aad * 23-04-2025 14:31:17.300
+Command Sent (SeqNo: 144, Retry: 0) RA2 Home Command - #144,5,00111000*a07d  * 23-04-2025 14:31:18.883
+CRC-Response (SeqNo: 144) - 144,5,I001,00111000*ad1b * 23-04-2025 14:31:19.22
+CRC-Response (SeqNo: 144) - 144,5,F000,11111111*fb1e * 23-04-2025 14:31:19.23
+Command Sent (SeqNo: 145, Retry: 0) RA2 Home Command - #145,5,00111000*6380  * 23-04-2025 14:31:20.604
+CRC-Response (SeqNo: 145) - 145,5,I001,00111000*3d4a * 23-04-2025 14:31:20.743
+CRC-Response (SeqNo: 145) - 145,5,F000,11111101*fb4e * 23-04-2025 14:31:20.744
+Command Sent (SeqNo: 146, Retry: 0) RA2 Home Command - #146,5,00111000*6784  * 23-04-2025 14:31:22.339
+CRC-Response (SeqNo: 146) - 146,5,I001,00111000*cdba * 23-04-2025 14:31:22.480
+CRC-Response (SeqNo: 146) - 146,5,F000,11111111*9bbf * 23-04-2025 14:31:22.480
+Command Sent (SeqNo: 147, Retry: 0) RA2 Home Command - #147,5,00111000*a479  * 23-04-2025 14:31:24.77
+CRC-Response (SeqNo: 147) - 147,5,I001,00111000*5deb * 23-04-2025 14:31:24.200
+CRC-Response (SeqNo: 147) - 147,5,F000,11111111*0bee * 23-04-2025 14:31:24.201
+Command Sent (SeqNo: 148, Retry: 0) RA2 Home Command - #148,5,00111000*b06d  * 23-04-2025 14:31:25.813
+CRC-Response (SeqNo: 148) - 148,5,I001,00111000*aede * 23-04-2025 14:31:25.939
+CRC-Response (SeqNo: 148) - 148,5,F000,11111111*f8db * 23-04-2025 14:31:25.939
+Command Sent (SeqNo: 149, Retry: 0) RA2 Home Command - #149,5,00111000*7390  * 23-04-2025 14:31:27.519
+CRC-Response (SeqNo: 149) - 149,5,I001,00111000*3e8f * 23-04-2025 14:31:27.641
+CRC-Response (SeqNo: 149) - 149,5,F000,11111111*688a * 23-04-2025 14:31:27.642
+Command Sent (SeqNo: 150, Retry: 0) RA2 Home Command - #150,5,00111000*ee8e  * 23-04-2025 14:31:29.240
+CRC-Response (SeqNo: 150) - 150,5,I001,00111000*9008 * 23-04-2025 14:31:29.364
+CRC-Response (SeqNo: 150) - 150,5,F000,11111101*560c * 23-04-2025 14:31:29.364
+Command Sent (SeqNo: 151, Retry: 0) RA2 Home Command - #151,5,00111000*2d73  * 23-04-2025 14:31:30.967
+CRC-Response (SeqNo: 151) - 151,5,I001,00111000*0059 * 23-04-2025 14:31:31.91
+CRC-Response (SeqNo: 151) - 151,5,F000,11111111*565c * 23-04-2025 14:31:31.91
+Command Sent (SeqNo: 152, Retry: 0) RA2 Home Command - #152,5,00111000*2977  * 23-04-2025 14:31:32.684
+CRC-Response (SeqNo: 152) - 152,5,I001,00111000*f0a9 * 23-04-2025 14:31:32.806
+CRC-Response (SeqNo: 152) - 152,5,F000,11111101*36ad * 23-04-2025 14:31:32.807
+Command Sent (SeqNo: 153, Retry: 0) RA2 Home Command - #153,5,00111000*ea8a  * 23-04-2025 14:31:34.386
+CRC-Response (SeqNo: 153) - 153,5,I001,00111000*60f8 * 23-04-2025 14:31:34.510
+CRC-Response (SeqNo: 153) - 153,5,F000,11111111*36fd * 23-04-2025 14:31:34.510
+Command Sent (SeqNo: 154, Retry: 0) RA2 Home Command - #154,5,00111000*217f  * 23-04-2025 14:31:36.102
+CRC-Response (SeqNo: 154) - 154,5,I001,00111000*514a * 23-04-2025 14:31:36.226
+CRC-Response (SeqNo: 154) - 154,5,F000,11111111*074f * 23-04-2025 14:31:36.227
+Command Sent (SeqNo: 155, Retry: 0) RA2 Home Command - #155,5,00111000*e282  * 23-04-2025 14:31:37.821
+CRC-Response (SeqNo: 155) - 155,5,I001,00111000*c11b * 23-04-2025 14:31:37.948
+CRC-Response (SeqNo: 155) - 155,5,F000,11111111*971e * 23-04-2025 14:31:37.948
+Command Sent (SeqNo: 156, Retry: 0) RA2 Home Command - #156,5,00111000*e686  * 23-04-2025 14:31:39.539
+CRC-Response (SeqNo: 156) - 156,5,I001,00111000*31eb * 23-04-2025 14:31:39.663
+CRC-Response (SeqNo: 156) - 156,5,F000,11111101*f7ef * 23-04-2025 14:31:39.664
+Command Sent (SeqNo: 157, Retry: 0) RA2 Home Command - #157,5,00111000*257b  * 23-04-2025 14:31:41.244
+CRC-Response (SeqNo: 157) - 157,5,I001,00111000*a1ba * 23-04-2025 14:31:41.383
+CRC-Response (SeqNo: 157) - 157,5,F000,11111111*f7bf * 23-04-2025 14:31:41.384
+Command Sent (SeqNo: 158, Retry: 0) RA2 Home Command - #158,5,00111000*316f  * 23-04-2025 14:31:42.965
+CRC-Response (SeqNo: 158) - 158,5,I001,00111000*528f * 23-04-2025 14:31:43.102
+CRC-Response (SeqNo: 158) - 158,5,F000,11111111*048a * 23-04-2025 14:31:43.102
+Command Sent (SeqNo: 159, Retry: 0) RA2 Home Command - #159,5,00111000*f292  * 23-04-2025 14:31:44.682
+CRC-Response (SeqNo: 159) - 159,5,I001,00111000*c2de * 23-04-2025 14:31:44.806
+CRC-Response (SeqNo: 159) - 159,5,F000,11111111*94db * 23-04-2025 14:31:44.806
+Command Sent (SeqNo: 160, Retry: 0) RA2 Home Command - #160,5,00111000*2d8b  * 23-04-2025 14:31:46.385
+CRC-Response (SeqNo: 160) - 160,5,I001,00111000*d4f8 * 23-04-2025 14:31:46.508
+CRC-Response (SeqNo: 160) - 160,5,F000,11111111*82fd * 23-04-2025 14:31:46.509
+Command Sent (SeqNo: 161, Retry: 0) RA2 Home Command - #161,5,00111000*ee76  * 23-04-2025 14:31:48.93
+CRC-Response (SeqNo: 161) - 161,5,I001,00111000*44a9 * 23-04-2025 14:31:48.215
+CRC-Response (SeqNo: 161) - 161,5,F000,11111101*82ad * 23-04-2025 14:31:48.215
+Command Sent (SeqNo: 162, Retry: 0) RA2 Home Command - #162,5,00111000*ea72  * 23-04-2025 14:31:49.818
+CRC-Response (SeqNo: 162) - 162,5,I001,00111000*b459 * 23-04-2025 14:31:49.942
+CRC-Response (SeqNo: 162) - 162,5,F000,11111101*725d * 23-04-2025 14:31:49.942
+Command Sent (SeqNo: 163, Retry: 0) RA2 Home Command - #163,5,00111000*298f  * 23-04-2025 14:31:51.535
+CRC-Response (SeqNo: 163) - 163,5,I001,00111000*2408 * 23-04-2025 14:31:51.672
+CRC-Response (SeqNo: 163) - 163,5,F000,11111111*720d * 23-04-2025 14:31:51.672
+Command Sent (SeqNo: 164, Retry: 0) RA2 Home Command - #164,5,00111000*e27a  * 23-04-2025 14:31:53.248
+CRC-Response (SeqNo: 164) - 164,5,I001,00111000*15ba * 23-04-2025 14:31:53.389
+CRC-Response (SeqNo: 164) - 164,5,F000,11111111*43bf * 23-04-2025 14:31:53.389
+Command Sent (SeqNo: 165, Retry: 0) RA2 Home Command - #165,5,00111000*2187  * 23-04-2025 14:31:55.2
+CRC-Response (SeqNo: 165) - 165,5,I001,00111000*85eb * 23-04-2025 14:31:55.124
+CRC-Response (SeqNo: 165) - 165,5,F000,11111111*d3ee * 23-04-2025 14:31:55.124
+Command Sent (SeqNo: 166, Retry: 0) RA2 Home Command - #166,5,00111000*2583  * 23-04-2025 14:31:56.708
+CRC-Response (SeqNo: 166) - 166,5,I001,00111000*751b * 23-04-2025 14:31:56.837
+CRC-Response (SeqNo: 166) - 166,5,F000,11111111*231e * 23-04-2025 14:31:56.838
+Command Sent (SeqNo: 167, Retry: 0) RA2 Home Command - #167,5,00111000*e67e  * 23-04-2025 14:31:58.429
+CRC-Response (SeqNo: 167) - 167,5,I001,00111000*e54a * 23-04-2025 14:31:58.551
+CRC-Response (SeqNo: 167) - 167,5,F000,11111111*b34f * 23-04-2025 14:31:58.552
+Command Sent (SeqNo: 168, Retry: 0) RA2 Home Command - #168,5,00111000*f26a  * 23-04-2025 14:32:00.128
+CRC-Response (SeqNo: 168) - 168,5,I001,00111000*167f * 23-04-2025 14:32:00.250
+CRC-Response (SeqNo: 168) - 168,5,F000,11111111*407a * 23-04-2025 14:32:00.251
+Command Sent (SeqNo: 169, Retry: 0) RA2 Home Command - #169,5,00111000*3197  * 23-04-2025 14:32:01.836
+CRC-Response (SeqNo: 169) - 169,5,I001,00111000*862e * 23-04-2025 14:32:01.974
+CRC-Response (SeqNo: 169) - 169,5,F000,11111111*d02b * 23-04-2025 14:32:01.974
+Command Sent (SeqNo: 170, Retry: 0) RA2 Home Command - #170,5,00111000*ac89  * 23-04-2025 14:32:03.551
+CRC-Response (SeqNo: 170) - 170,5,I001,00111000*28a9 * 23-04-2025 14:32:03.692
+CRC-Response (SeqNo: 170) - 170,5,F000,11111111*7eac * 23-04-2025 14:32:03.692
+Command Sent (SeqNo: 171, Retry: 0) RA2 Home Command - #171,5,00111000*6f74  * 23-04-2025 14:32:05.266
+CRC-Response (SeqNo: 171) - 171,5,I001,00111000*b8f8 * 23-04-2025 14:32:05.699
+CRC-Response (SeqNo: 171) - 171,5,F000,11111111*eefd * 23-04-2025 14:32:05.700
+Command Sent (SeqNo: 172, Retry: 0) RA2 Home Command - #172,5,00111000*6b70  * 23-04-2025 14:32:07.293
+CRC-Response (SeqNo: 172) - 172,5,I001,00111000*4808 * 23-04-2025 14:32:07.416
+CRC-Response (SeqNo: 172) - 172,5,F000,11111111*1e0d * 23-04-2025 14:32:07.417
+Command Sent (SeqNo: 173, Retry: 0) RA2 Home Command - #173,5,00111000*a88d  * 23-04-2025 14:32:08.998
+CRC-Response (SeqNo: 173) - 173,5,I001,00111000*d859 * 23-04-2025 14:32:09.693
+CRC-Response (SeqNo: 173) - 173,5,F000,11111101*1e5d * 23-04-2025 14:32:09.693
+Command Sent (SeqNo: 174, Retry: 0) RA2 Home Command - #174,5,00111000*6378  * 23-04-2025 14:32:11.276
+CRC-Response (SeqNo: 174) - 174,5,I001,00111000*e9eb * 23-04-2025 14:32:11.401
+CRC-Response (SeqNo: 174) - 174,5,F000,11111111*bfee * 23-04-2025 14:32:11.402
+Command Sent (SeqNo: 175, Retry: 0) RA2 Home Command - #175,5,00111000*a085  * 23-04-2025 14:32:13.5
+CRC-Response (SeqNo: 175) - 175,5,I001,00111000*79ba * 23-04-2025 14:32:13.135
+CRC-Response (SeqNo: 175) - 175,5,F000,11111101*bfbe * 23-04-2025 14:32:13.135
+Command Sent (SeqNo: 176, Retry: 0) RA2 Home Command - #176,5,00111000*a481  * 23-04-2025 14:32:14.706
+CRC-Response (SeqNo: 176) - 176,5,I001,00111000*894a * 23-04-2025 14:32:14.833
+CRC-Response (SeqNo: 176) - 176,5,F000,11111111*df4f * 23-04-2025 14:32:14.833
+Command Sent (SeqNo: 177, Retry: 0) RA2 Home Command - #177,5,00111000*677c  * 23-04-2025 14:32:16.411
+CRC-Response (SeqNo: 177) - 177,5,I001,00111000*191b * 23-04-2025 14:32:16.535
+CRC-Response (SeqNo: 177) - 177,5,F000,11111111*4f1e * 23-04-2025 14:32:16.535
+Command Sent (SeqNo: 178, Retry: 0) RA2 Home Command - #178,5,00111000*7368  * 23-04-2025 14:32:18.117
+CRC-Response (SeqNo: 178) - 178,5,I001,00111000*ea2e * 23-04-2025 14:32:18.802
+CRC-Response (SeqNo: 178) - 178,5,F000,11111111*bc2b * 23-04-2025 14:32:18.802
+Command Sent (SeqNo: 179, Retry: 0) RA2 Home Command - #179,5,00111000*b095  * 23-04-2025 14:32:20.372
+CRC-Response (SeqNo: 179) - 179,5,I001,00111000*7a7f * 23-04-2025 14:32:20.507
+CRC-Response (SeqNo: 179) - 179,5,F000,11111111*2c7a * 23-04-2025 14:32:20.507
+Command Sent (SeqNo: 180, Retry: 0) RA2 Home Command - #180,5,00111000*a39d  * 23-04-2025 14:32:22.94
+CRC-Response (SeqNo: 180) - 180,5,I001,00111000*3f9a * 23-04-2025 14:32:22.218
+CRC-Response (SeqNo: 180) - 180,5,F000,11111111*699f * 23-04-2025 14:32:22.219
+Command Sent (SeqNo: 181, Retry: 0) RA2 Home Command - #181,5,00111000*6060  * 23-04-2025 14:32:23.795
+CRC-Response (SeqNo: 181) - 181,5,I001,00111000*afcb * 23-04-2025 14:32:23.917
+CRC-Response (SeqNo: 181) - 181,5,F000,11111111*f9ce * 23-04-2025 14:32:23.918
+Command Sent (SeqNo: 182, Retry: 0) RA2 Home Command - #182,5,00111000*6464  * 23-04-2025 14:32:25.498
+CRC-Response (SeqNo: 182) - 182,5,I001,00111000*5f3b * 23-04-2025 14:32:25.622
+CRC-Response (SeqNo: 182) - 182,5,F000,11111101*993f * 23-04-2025 14:32:25.622
+Command Sent (SeqNo: 183, Retry: 0) RA2 Home Command - #183,5,00111000*a799  * 23-04-2025 14:32:27.214
+CRC-Response (SeqNo: 183) - 183,5,I001,00111000*cf6a * 23-04-2025 14:32:27.357
+CRC-Response (SeqNo: 183) - 183,5,F000,11111101*096e * 23-04-2025 14:32:27.358
+Command Sent (SeqNo: 184, Retry: 0) RA2 Home Command - #184,5,00111000*6c6c  * 23-04-2025 14:32:28.949
+CRC-Response (SeqNo: 184) - 184,5,I001,00111000*fed8 * 23-04-2025 14:32:29.87
+CRC-Response (SeqNo: 184) - 184,5,F000,11111111*a8dd * 23-04-2025 14:32:29.88
+Command Sent (SeqNo: 185, Retry: 0) RA2 Home Command - #185,5,00111000*af91  * 23-04-2025 14:32:30.679
+CRC-Response (SeqNo: 185) - 185,5,I001,00111000*6e89 * 23-04-2025 14:32:30.804
+CRC-Response (SeqNo: 185) - 185,5,F000,11111111*388c * 23-04-2025 14:32:30.805
+Command Sent (SeqNo: 186, Retry: 0) RA2 Home Command - #186,5,00111000*ab95  * 23-04-2025 14:32:32.398
+CRC-Response (SeqNo: 186) - 186,5,I001,00111000*9e79 * 23-04-2025 14:32:32.538
+CRC-Response (SeqNo: 186) - 186,5,F000,11111101*587d * 23-04-2025 14:32:32.539
+Command Sent (SeqNo: 187, Retry: 0) RA2 Home Command - #187,5,00111000*6868  * 23-04-2025 14:32:34.138
+CRC-Response (SeqNo: 187) - 187,5,I001,00111000*0e28 * 23-04-2025 14:32:34.276
+CRC-Response (SeqNo: 187) - 187,5,F000,11111101*c82c * 23-04-2025 14:32:34.277
+Command Sent (SeqNo: 188, Retry: 0) RA2 Home Command - #188,5,00111000*7c7c  * 23-04-2025 14:32:35.875
+CRC-Response (SeqNo: 188) - 188,5,I001,00111000*fd1d * 23-04-2025 14:32:36.14
+CRC-Response (SeqNo: 188) - 188,5,F000,11111111*ab18 * 23-04-2025 14:32:36.15
+Command Sent (SeqNo: 189, Retry: 0) RA2 Home Command - #189,5,00111000*bf81  * 23-04-2025 14:32:37.610
+CRC-Response (SeqNo: 189) - 189,5,I001,00111000*6d4c * 23-04-2025 14:32:37.749
+CRC-Response (SeqNo: 189) - 189,5,F000,11111111*3b49 * 23-04-2025 14:32:37.750
+Command Sent (SeqNo: 190, Retry: 0) RA2 Home Command - #190,5,00111000*229f  * 23-04-2025 14:32:39.346
+CRC-Response (SeqNo: 190) - 190,5,I001,00111000*c3cb * 23-04-2025 14:32:39.469
+CRC-Response (SeqNo: 190) - 190,5,F000,11111111*95ce * 23-04-2025 14:32:39.498
+Command Sent (SeqNo: 191, Retry: 0) RA2 Home Command - #191,5,00111000*e162  * 23-04-2025 14:32:41.86
+CRC-Response (SeqNo: 191) - 191,5,I001,00111000*539a * 23-04-2025 14:32:41.209
+CRC-Response (SeqNo: 191) - 191,5,F000,11111111*059f * 23-04-2025 14:32:41.210
+Command Sent (SeqNo: 192, Retry: 0) RA2 Home Command - #192,5,00111000*e566  * 23-04-2025 14:32:42.787
+CRC-Response (SeqNo: 192) - 192,5,I001,00111000*a36a * 23-04-2025 14:32:42.910
+CRC-Response (SeqNo: 192) - 192,5,F000,11111111*f56f * 23-04-2025 14:32:42.910
+Command Sent (SeqNo: 193, Retry: 0) RA2 Home Command - #193,5,00111000*269b  * 23-04-2025 14:32:44.489
+CRC-Response (SeqNo: 193) - 193,5,I001,00111000*333b * 23-04-2025 14:32:44.613
+CRC-Response (SeqNo: 193) - 193,5,F000,11111111*653e * 23-04-2025 14:32:44.613
+Command Sent (SeqNo: 194, Retry: 0) RA2 Home Command - #194,5,00111000*ed6e  * 23-04-2025 14:32:46.210
+CRC-Response (SeqNo: 194) - 194,5,I001,00111000*0289 * 23-04-2025 14:32:46.333
+CRC-Response (SeqNo: 194) - 194,5,F000,11111101*c48d * 23-04-2025 14:32:46.334
+Command Sent (SeqNo: 195, Retry: 0) RA2 Home Command - #195,5,00111000*2e93  * 23-04-2025 14:32:47.936
+CRC-Response (SeqNo: 195) - 195,5,I001,00111000*92d8 * 23-04-2025 14:32:48.74
+CRC-Response (SeqNo: 195) - 195,5,F000,11111111*c4dd * 23-04-2025 14:32:48.74
+Command Sent (SeqNo: 196, Retry: 0) RA2 Home Command - #196,5,00111000*2a97  * 23-04-2025 14:32:49.663
+CRC-Response (SeqNo: 196) - 196,5,I001,00111000*6228 * 23-04-2025 14:32:49.786
+CRC-Response (SeqNo: 196) - 196,5,F000,11111111*342d * 23-04-2025 14:32:49.786
+Command Sent (SeqNo: 197, Retry: 0) RA2 Home Command - #197,5,00111000*e96a  * 23-04-2025 14:32:51.385
+CRC-Response (SeqNo: 197) - 197,5,I001,00111000*f279 * 23-04-2025 14:32:51.523
+CRC-Response (SeqNo: 197) - 197,5,F000,11111111*a47c * 23-04-2025 14:32:51.524
+Command Sent (SeqNo: 198, Retry: 0) RA2 Home Command - #198,5,00111000*fd7e  * 23-04-2025 14:32:53.117
+CRC-Response (SeqNo: 198) - 198,5,I001,00111000*014c * 23-04-2025 14:32:53.254
+CRC-Response (SeqNo: 198) - 198,5,F000,11111111*5749 * 23-04-2025 14:32:53.255
+Command Sent (SeqNo: 199, Retry: 0) RA2 Home Command - #199,5,00111000*3e83  * 23-04-2025 14:32:54.840
+CRC-Response (SeqNo: 199) - 199,5,I001,00111000*911d * 23-04-2025 14:32:54.966
+CRC-Response (SeqNo: 199) - 199,5,F000,11111111*c718 * 23-04-2025 14:32:54.966
+Command Sent (SeqNo: 200, Retry: 0) RA2 Home Command - #200,5,00111000*e881  * 23-04-2025 14:32:56.564
+CRC-Response (SeqNo: 200) - 200,5,I001,00111000*195c * 23-04-2025 14:32:56.687
+CRC-Response (SeqNo: 200) - 200,5,F000,11111111*4f59 * 23-04-2025 14:32:56.687
+Command Sent (SeqNo: 201, Retry: 0) RA2 Home Command - #201,5,00111000*2b7c  * 23-04-2025 14:32:58.281
+CRC-Response (SeqNo: 201) - 201,5,I001,00111000*890d * 23-04-2025 14:32:58.418
+CRC-Response (SeqNo: 201) - 201,5,F000,11111111*df08 * 23-04-2025 14:32:58.418
+Command Sent (SeqNo: 202, Retry: 0) RA2 Home Command - #202,5,00111000*2f78  * 23-04-2025 14:33:00.18
+CRC-Response (SeqNo: 202) - 202,5,I001,00111000*79fd * 23-04-2025 14:33:00.147
+CRC-Response (SeqNo: 202) - 202,5,F000,11111111*2ff8 * 23-04-2025 14:33:00.148
+Command Sent (SeqNo: 203, Retry: 0) RA2 Home Command - #203,5,00111000*ec85  * 23-04-2025 14:33:01.741
+CRC-Response (SeqNo: 203) - 203,5,I001,00111000*e9ac * 23-04-2025 14:33:01.866
+CRC-Response (SeqNo: 203) - 203,5,F000,11111111*bfa9 * 23-04-2025 14:33:01.867
+Command Sent (SeqNo: 204, Retry: 0) RA2 Home Command - #204,5,00111000*2770  * 23-04-2025 14:33:03.461
+CRC-Response (SeqNo: 204) - 204,5,I001,00111000*d81e * 23-04-2025 14:33:03.586
+CRC-Response (SeqNo: 204) - 204,5,F000,11111111*8e1b * 23-04-2025 14:33:03.587
+Command Sent (SeqNo: 205, Retry: 0) RA2 Home Command - #205,5,00111000*e48d  * 23-04-2025 14:33:05.164
+CRC-Response (SeqNo: 205) - 205,5,I001,00111000*484f * 23-04-2025 14:33:05.288
+CRC-Response (SeqNo: 205) - 205,5,F000,11111101*8e4b * 23-04-2025 14:33:05.288
+Command Sent (SeqNo: 206, Retry: 0) RA2 Home Command - #206,5,00111000*e089  * 23-04-2025 14:33:06.867
+CRC-Response (SeqNo: 206) - 206,5,I001,00111000*b8bf * 23-04-2025 14:33:07.8
+CRC-Response (SeqNo: 206) - 206,5,F000,11111111*eeba * 23-04-2025 14:33:07.9
+Command Sent (SeqNo: 207, Retry: 0) RA2 Home Command - #207,5,00111000*2374  * 23-04-2025 14:33:08.606
+CRC-Response (SeqNo: 207) - 207,5,I001,00111000*28ee * 23-04-2025 14:33:08.745
+CRC-Response (SeqNo: 207) - 207,5,F000,11111111*7eeb * 23-04-2025 14:33:08.746
+Command Sent (SeqNo: 208, Retry: 0) RA2 Home Command - #208,5,00111000*3760  * 23-04-2025 14:33:10.343
+CRC-Response (SeqNo: 208) - 208,5,I001,00111000*dbdb * 23-04-2025 14:33:10.484
+CRC-Response (SeqNo: 208) - 208,5,F000,11111111*8dde * 23-04-2025 14:33:10.484
+Command Sent (SeqNo: 209, Retry: 0) RA2 Home Command - #209,5,00111000*f49d  * 23-04-2025 14:33:12.82
+CRC-Response (SeqNo: 209) - 209,5,I001,00111000*4b8a * 23-04-2025 14:33:12.222
+CRC-Response (SeqNo: 209) - 209,5,F000,11111101*8d8e * 23-04-2025 14:33:12.223
+Command Sent (SeqNo: 210, Retry: 0) RA2 Home Command - #210,5,00111000*6983  * 23-04-2025 14:33:13.818
+CRC-Response (SeqNo: 210) - 210,5,I001,00111000*e50d * 23-04-2025 14:33:13.943
+CRC-Response (SeqNo: 210) - 210,5,F000,11111111*b308 * 23-04-2025 14:33:13.943
+Command Sent (SeqNo: 211, Retry: 0) RA2 Home Command - #211,5,00111000*aa7e  * 23-04-2025 14:33:15.540
+CRC-Response (SeqNo: 211) - 211,5,I001,00111000*755c * 23-04-2025 14:33:15.661
+CRC-Response (SeqNo: 211) - 211,5,F000,11111111*2359 * 23-04-2025 14:33:15.662
+Command Sent (SeqNo: 212, Retry: 0) RA2 Home Command - #212,5,00111000*ae7a  * 23-04-2025 14:33:17.246
+CRC-Response (SeqNo: 212) - 212,5,I001,00111000*85ac * 23-04-2025 14:33:17.383
+CRC-Response (SeqNo: 212) - 212,5,F000,11111111*d3a9 * 23-04-2025 14:33:17.384
+Command Sent (SeqNo: 213, Retry: 0) RA2 Home Command - #213,5,00111000*6d87  * 23-04-2025 14:33:18.968
+CRC-Response (SeqNo: 213) - 213,5,I001,00111000*15fd * 23-04-2025 14:33:19.103
+CRC-Response (SeqNo: 213) - 213,5,F000,11111111*43f8 * 23-04-2025 14:33:19.104
+Command Sent (SeqNo: 214, Retry: 0) RA2 Home Command - #214,5,00111000*a672  * 23-04-2025 14:33:20.685
+CRC-Response (SeqNo: 214) - 214,5,I001,00111000*244f * 23-04-2025 14:33:20.811
+CRC-Response (SeqNo: 214) - 214,5,F000,11111111*724a * 23-04-2025 14:33:20.811
+Command Sent (SeqNo: 215, Retry: 0) RA2 Home Command - #215,5,00111000*658f  * 23-04-2025 14:33:22.412
+CRC-Response (SeqNo: 215) - 215,5,I001,00111000*b41e * 23-04-2025 14:33:22.537
+CRC-Response (SeqNo: 215) - 215,5,F000,11111111*e21b * 23-04-2025 14:33:22.537
+Command Sent (SeqNo: 216, Retry: 0) RA2 Home Command - #216,5,00111000*618b  * 23-04-2025 14:33:24.134
+CRC-Response (SeqNo: 216) - 216,5,I001,00111000*44ee * 23-04-2025 14:33:24.258
+CRC-Response (SeqNo: 216) - 216,5,F000,11111111*12eb * 23-04-2025 14:33:24.259
+Command Sent (SeqNo: 217, Retry: 0) RA2 Home Command - #217,5,00111000*a276  * 23-04-2025 14:33:25.840
+CRC-Response (SeqNo: 217) - 217,5,I001,00111000*d4bf * 23-04-2025 14:33:25.964
+CRC-Response (SeqNo: 217) - 217,5,F000,11111111*82ba * 23-04-2025 14:33:25.965
+Command Sent (SeqNo: 218, Retry: 0) RA2 Home Command - #218,5,00111000*b662  * 23-04-2025 14:33:27.561
+CRC-Response (SeqNo: 218) - 218,5,I001,00111000*278a * 23-04-2025 14:33:27.686
+CRC-Response (SeqNo: 218) - 218,5,F000,11111101*e18e * 23-04-2025 14:33:27.687
+Command Sent (SeqNo: 219, Retry: 0) RA2 Home Command - #219,5,00111000*759f  * 23-04-2025 14:33:29.279
+CRC-Response (SeqNo: 219) - 219,5,I001,00111000*b7db * 23-04-2025 14:33:29.418
+CRC-Response (SeqNo: 219) - 219,5,F000,11111111*e1de * 23-04-2025 14:33:29.419
+Command Sent (SeqNo: 220, Retry: 0) RA2 Home Command - #220,5,00111000*aa86  * 23-04-2025 14:33:31.22
+CRC-Response (SeqNo: 220) - 220,5,I001,00111000*a1fd * 23-04-2025 14:33:31.161
+CRC-Response (SeqNo: 220) - 220,5,F000,11111111*f7f8 * 23-04-2025 14:33:31.161
+Command Sent (SeqNo: 221, Retry: 0) RA2 Home Command - #221,5,00111000*697b  * 23-04-2025 14:33:32.767
+CRC-Response (SeqNo: 221) - 221,5,I001,00111000*31ac * 23-04-2025 14:33:32.890
+CRC-Response (SeqNo: 221) - 221,5,F000,11111111*67a9 * 23-04-2025 14:33:32.891
+Command Sent (SeqNo: 222, Retry: 0) RA2 Home Command - #222,5,00111000*6d7f  * 23-04-2025 14:33:34.486
+CRC-Response (SeqNo: 222) - 222,5,I001,00111000*c15c * 23-04-2025 14:33:34.611
+CRC-Response (SeqNo: 222) - 222,5,F000,11111111*9759 * 23-04-2025 14:33:34.612
+Command Sent (SeqNo: 223, Retry: 0) RA2 Home Command - #223,5,00111000*ae82  * 23-04-2025 14:33:36.188
+CRC-Response (SeqNo: 223) - 223,5,I001,00111000*510d * 23-04-2025 14:33:36.328
+CRC-Response (SeqNo: 223) - 223,5,F000,11111111*0708 * 23-04-2025 14:33:36.328
+Command Sent (SeqNo: 224, Retry: 0) RA2 Home Command - #224,5,00111000*6577  * 23-04-2025 14:33:37.921
+CRC-Response (SeqNo: 224) - 224,5,I001,00111000*60bf * 23-04-2025 14:33:38.59
+CRC-Response (SeqNo: 224) - 224,5,F000,11111101*a6bb * 23-04-2025 14:33:38.59
+Command Sent (SeqNo: 225, Retry: 0) RA2 Home Command - #225,5,00111000*a68a  * 23-04-2025 14:33:39.647
+CRC-Response (SeqNo: 225) - 225,5,I001,00111000*f0ee * 23-04-2025 14:33:39.771
+CRC-Response (SeqNo: 225) - 225,5,F000,11111101*36ea * 23-04-2025 14:33:39.771
+Command Sent (SeqNo: 226, Retry: 0) RA2 Home Command - #226,5,00111000*a28e  * 23-04-2025 14:33:41.358
+CRC-Response (SeqNo: 226) - 226,5,I001,00111000*001e * 23-04-2025 14:33:41.482
+CRC-Response (SeqNo: 226) - 226,5,F000,11111101*c61a * 23-04-2025 14:33:41.482
+Command Sent (SeqNo: 227, Retry: 0) RA2 Home Command - #227,5,00111000*6173  * 23-04-2025 14:33:43.63
+CRC-Response (SeqNo: 227) - 227,5,I001,00111000*904f * 23-04-2025 14:33:43.187
+CRC-Response (SeqNo: 227) - 227,5,F000,11111101*564b * 23-04-2025 14:33:43.188
+Command Sent (SeqNo: 0, Retry: 0) WATER VALVE - 1 CONTROL OFF - #0,13,1,0*73eb  * 23-04-2025 14:41:27.135
+CRC-Response (SeqNo: 0) - 0,13,F000*29e9 * 23-04-2025 14:41:27.436
+Command Sent (SeqNo: 1, Retry: 0) WATER VALVE - 2 CONTROL OFF - #1,13,2,0*bfda  * 23-04-2025 14:41:28.56
+CRC-Response (SeqNo: 1) - 1,13,F000*b9e4 * 23-04-2025 14:41:28.168
+Command Sent (SeqNo: 2, Retry: 0) WATER VALVE - 3 CONTROL OFF - #2,13,3,0*6acb  * 23-04-2025 14:41:28.732
+CRC-Response (SeqNo: 2) - 2,13,F000*49f0 * 23-04-2025 14:41:28.853
+Command Sent (SeqNo: 3, Retry: 0) WATER VALVE - 4 CONTROL OFF - #3,13,4,0*67bb  * 23-04-2025 14:41:29.437
+CRC-Response (SeqNo: 3) - 3,13,F000*d9fd * 23-04-2025 14:41:29.548
+Command Sent (SeqNo: 4, Retry: 0) WATER VALVE - 5 CONTROL OFF - #4,13,5,0*41ab  * 23-04-2025 14:41:30.124
+CRC-Response (SeqNo: 4) - 4,13,F000*e9db * 23-04-2025 14:41:30.233
+Command Sent (SeqNo: 5, Retry: 0) WATER VALVE - 6 CONTROL OFF - #5,13,6,0*8d9a  * 23-04-2025 14:41:30.796
+CRC-Response (SeqNo: 5) - 5,13,F000*79d6 * 23-04-2025 14:41:30.914
+Command Sent (SeqNo: 6, Retry: 0) Home Command - #6,5,01111111*b1b5  * 23-04-2025 14:41:31.494
+CRC-Response (SeqNo: 6) - 6,5,I001,01111111*0f53 * 23-04-2025 14:41:31.614
+CRC-Response (SeqNo: 6) - 6,5,F000,11111111*09d7 * 23-04-2025 14:41:31.614
+Command Sent (SeqNo: 7, Retry: 0) Home Command - #7,5,01111111*7248  * 23-04-2025 14:41:33.715
+CRC-Response (SeqNo: 7) - 7,5,I001,01111111*9f02 * 23-04-2025 14:41:33.838
+CRC-Response (SeqNo: 7) - 7,5,F000,11111101*0987 * 23-04-2025 14:41:33.839
+Command Sent (SeqNo: 8, Retry: 0) Level Sensing For L1 - #8,4,17564,16380,0,0*ab6b  * 23-04-2025 14:41:35.926
+CRC-Response (SeqNo: 8) - 8,4,I001*4ef9 * 23-04-2025 14:41:36.44
+CRC-Response (SeqNo: 8) - 8,4,F000,470*7172 * 23-04-2025 14:41:44.355
+L1 Value - 470 * 23-04-2025 14:41:44.386
+Command Sent (SeqNo: 9, Retry: 0) Level Sensing For L2 - #9,4,13934,16380,0,0*534e  * 23-04-2025 14:41:44.935
+CRC-Response (SeqNo: 9) - 9,4,I001*8238 * 23-04-2025 14:41:45.55
+CRC-Response (SeqNo: 9) - 9,4,F000,498*148a * 23-04-2025 14:41:47.353
+L2 Value - 498 * 23-04-2025 14:41:47.375
+Command Sent (SeqNo: 10, Retry: 0) Level Sensing For L3 - #10,4,10304,16380,0,0*d9f6  * 23-04-2025 14:41:47.929
+CRC-Response (SeqNo: 10) - 10,4,I001*82eb * 23-04-2025 14:41:48.53
+CRC-Response (SeqNo: 10) - 10,4,F000,469*a076 * 23-04-2025 14:41:50.349
+L3 Value - 469 * 23-04-2025 14:41:50.365
+Command Sent (SeqNo: 11, Retry: 0) Home Command - #11,5,01111111*e264  * 23-04-2025 14:41:50.928
+CRC-Response (SeqNo: 11) - 11,5,I001,01111111*59be * 23-04-2025 14:41:51.51

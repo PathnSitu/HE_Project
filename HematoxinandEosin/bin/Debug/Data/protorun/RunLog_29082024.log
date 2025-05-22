@@ -1,0 +1,244 @@
+Home Command,ps,29-08-2024,-,-,-,0,29-08-2024 15:34:48.708,August,Home Reached,0
+Home Command,ps,29-08-2024,-,-,-,0,29-08-2024 15:34:48.930,August,,0
+Home Command,ps,29-08-2024,-,-,-,0,29-08-2024 15:34:51.252,August,Home Reached,0
+Home Command,ps,29-08-2024,-,-,-,0,29-08-2024 15:34:51.305,August,,0
+Home Command,ps,29-08-2024,U1,-,-,0,29-08-2024 15:34:57.998,August,Liquid Level - 2571,0
+Level Sense,ps,29-08-2024,U2,-,-,0,29-08-2024 15:35:00.737,August,Liquid Level - 266,0
+Level Sense,ps,29-08-2024,U3,-,-,0,29-08-2024 15:35:03.283,August,Liquid Level - 2570,0
+Level Sense,ps,29-08-2024,U4,-,-,0,29-08-2024 15:35:05.864,August,Liquid Level - 2574,0
+Level Sense,ps,29-08-2024,U5,-,-,0,29-08-2024 15:35:08.433,August,Liquid Level - 2565,0
+Level Sense,ps,29-08-2024,U6,-,-,0,29-08-2024 15:35:13.738,August,Liquid Level - 2562,0
+PAP,ps,29-08-2024,-,-,-,0,29-08-2024 15:39:53.913,August,Protorun Started,54
+PAP,ps,29-08-2024,-,-,-,0,29-08-2024 15:40:10.145,August,Home Reached,54
+PAP,ps,29-08-2024,-,-,-,0,29-08-2024 15:40:13.579,August,Home Reached,54
+PAP,ps,29-08-2024,L1,-,-,0,29-08-2024 15:40:25.562,August,Liquid Level - 279,54
+PAP,ps,29-08-2024,L2,-,-,0,29-08-2024 15:40:30.762,August,Liquid Level - 287,54
+PAP,ps,29-08-2024,L3,-,-,0,29-08-2024 15:40:33.609,August,Liquid Level - 259,54
+PAP,ps,29-08-2024,-,-,-,0,29-08-2024 15:40:45.009,August,Home Reached,54
+PAP,ps,29-08-2024,-,-,-,0,29-08-2024 15:40:45.555,August,Home Status - 11111111,54
+PAP,ps,29-08-2024,-,-,-,0,29-08-2024 15:40:47.139,August,Home Reached,54
+PAP,ps,29-08-2024,-,-,-,0,29-08-2024 15:40:47.169,August,,54
+PAP,ps,29-08-2024,,,R1,0,29-08-2024 15:40:48.999,August,Test Started,54
+PAP,ps,29-08-2024,L1,Loading,R1,0,29-08-2024 15:41:00.233,August,Picked From,54
+PAP,ps,29-08-2024,J1,95% Alcohol,R1,0,29-08-2024 15:41:07.425,August,Placed In,54
+PAP,ps,29-08-2024,J1,95% Alcohol,R1,0,29-08-2024 16:01:13.363,August,Picked From,54
+PAP,ps,29-08-2024,J2,80% Alcohol,R1,0,29-08-2024 16:01:19.576,August,Placed In,54
+PAP,ps,29-08-2024,,,R2,0,29-08-2024 16:02:22.380,August,Test Started,54
+PAP,ps,29-08-2024,L2,Loading,R2,0,29-08-2024 16:02:29.580,August,Picked From,54
+PAP,ps,29-08-2024,J1,95% Alcohol,R2,0,29-08-2024 16:02:36.833,August,Placed In,54
+PAP,ps,29-08-2024,J2,80% Alcohol,R1,0,29-08-2024 16:04:29.115,August,Picked From,54
+PAP,ps,29-08-2024,J3,70%Alcohol,R1,0,29-08-2024 16:04:35.264,August,Placed In,54
+PAP,ps,29-08-2024,J3,70%Alcohol,R1,0,29-08-2024 16:07:41.542,August,Picked From,54
+PAP,ps,29-08-2024,J4,50% Alcohol,R1,0,29-08-2024 16:07:47.702,August,Placed In,54
+PAP,ps,29-08-2024,J4,50% Alcohol,R1,0,29-08-2024 16:10:54.071,August,Picked From,54
+PAP,ps,29-08-2024,J5,DI Water,R1,0,29-08-2024 16:11:00.208,August,Placed In,54
+PAP,ps,29-08-2024,J5,DI Water,R1,0,29-08-2024 16:13:06.391,August,Picked From,54
+PAP,ps,29-08-2024,J6,Reagent - A Harris Hematoxylin,R1,0,29-08-2024 16:13:12.521,August,Placed In,54
+PAP,ps,29-08-2024,W1,Tap Water,--,0,29-08-2024 16:17:54.989,August,Water Valve : 1 is On,54
+PAP,ps,29-08-2024,J6,Reagent - A Harris Hematoxylin,R1,0,29-08-2024 16:18:18.400,August,Picked From,54
+PAP,ps,29-08-2024,W1,Running TAP Water,R1,0,29-08-2024 16:18:25.990,August,Placed In,54
+PAP,ps,29-08-2024,W1,Tap Water,--,0,29-08-2024 16:20:26.664,August,Water Valve : 1 is Off,54
+PAP,ps,29-08-2024,W1,Running TAP Water,R1,0,29-08-2024 16:20:32.905,August,Picked From,54
+PAP,ps,29-08-2024,W1,Tap Water,--,0,29-08-2024 16:20:33.090,August,Water Valve : 1 is On,54
+PAP,ps,29-08-2024,J7,1%Acid Alcohol,R1,0,29-08-2024 16:20:40.114,August,Dipped In,54
+PAP,ps,29-08-2024,W1,Running TAP Water,R1,0,29-08-2024 16:20:47.861,August,Placed In,54
+PAP,ps,29-08-2024,J1,95% Alcohol,R2,0,29-08-2024 16:22:46.404,August,Picked From,54
+PAP,ps,29-08-2024,J2,80% Alcohol,R2,0,29-08-2024 16:22:52.667,August,Placed In,54
+PAP,ps,29-08-2024,W1,Tap Water,--,0,29-08-2024 16:23:04.626,August,Water Valve : 1 is Off,54
+PAP,ps,29-08-2024,W1,Running TAP Water,R1,0,29-08-2024 16:23:14.513,August,Picked From,54
+PAP,ps,29-08-2024,J8,DI Water,R1,0,29-08-2024 16:24:45.782,August,Dipped In,54
+PAP,ps,29-08-2024,J9,95% Alcohol,R1,0,29-08-2024 16:24:51.978,August,Placed In,54
+PAP,ps,29-08-2024,J2,80% Alcohol,R2,0,29-08-2024 16:26:02.351,August,Picked From,54
+PAP,ps,29-08-2024,J3,70%Alcohol,R2,0,29-08-2024 16:26:08.455,August,Placed In,54
+PAP,ps,29-08-2024,J9,95% Alcohol,R1,0,29-08-2024 16:27:00.760,August,Picked From,54
+PAP,ps,29-08-2024,J10,95% Alcohol,R1,0,29-08-2024 16:27:08.466,August,Placed In,54
+PAP,ps,29-08-2024,,,R3,0,29-08-2024 16:27:23.879,August,Test Started,54
+PAP,ps,29-08-2024,L3,Loading,R3,0,29-08-2024 16:27:34.671,August,Picked From,54
+PAP,ps,29-08-2024,J1,95% Alcohol,R3,0,29-08-2024 16:27:41.954,August,Placed In,54
+PAP,ps,29-08-2024,J10,95% Alcohol,R1,0,29-08-2024 16:29:19.621,August,Picked From,54
+PAP,ps,29-08-2024,J11,Reagent B Orange G6,R1,0,29-08-2024 16:29:25.886,August,Placed In,54
+PAP,ps,29-08-2024,J3,70%Alcohol,R2,0,29-08-2024 16:29:46.603,August,Picked From,54
+PAP,ps,29-08-2024,J4,50% Alcohol,R2,0,29-08-2024 16:29:52.819,August,Placed In,54
+PAP,ps,29-08-2024,J11,Reagent B Orange G6,R1,0,29-08-2024 16:32:36.404,August,Picked From,54
+PAP,ps,29-08-2024,J12,95% Alcohol,R1,0,29-08-2024 16:32:42.489,August,Placed In,54
+PAP,ps,29-08-2024,J12,95% Alcohol,R1,0,29-08-2024 16:33:18.088,August,Picked From,54
+PAP,ps,29-08-2024,J13,95% Alcohol,R1,0,29-08-2024 16:33:24.201,August,Placed In,54
+PAP,ps,29-08-2024,J13,95% Alcohol,R1,0,29-08-2024 16:34:00.868,August,Picked From,54
+PAP,ps,29-08-2024,J14,Reagent-C EA50,R1,0,29-08-2024 16:34:07.045,August,Placed In,54
+PAP,ps,29-08-2024,J4,50% Alcohol,R2,0,29-08-2024 16:34:30.597,August,Picked From,54
+PAP,ps,29-08-2024,J5,DI Water,R2,0,29-08-2024 16:34:36.734,August,Placed In,54
+PAP,ps,29-08-2024,J5,DI Water,R2,0,29-08-2024 16:36:42.269,August,Picked From,54
+PAP,ps,29-08-2024,J6,Reagent - A Harris Hematoxylin,R2,0,29-08-2024 16:36:48.369,August,Placed In,54
+PAP,ps,29-08-2024,W1,Tap Water,--,0,29-08-2024 16:41:30.657,August,Water Valve : 1 is On,54
+PAP,ps,29-08-2024,J6,Reagent - A Harris Hematoxylin,R2,0,29-08-2024 16:41:54.014,August,Picked From,54
+PAP,ps,29-08-2024,W1,Running TAP Water,R2,0,29-08-2024 16:42:01.608,August,Placed In,54
+PAP,ps,29-08-2024,W1,Tap Water,--,0,29-08-2024 16:44:01.851,August,Water Valve : 1 is Off,54
+PAP,ps,29-08-2024,W1,Running TAP Water,R2,0,29-08-2024 16:44:08.076,August,Picked From,54
+PAP,ps,29-08-2024,W1,Tap Water,--,0,29-08-2024 16:44:08.253,August,Water Valve : 1 is On,54
+PAP,ps,29-08-2024,J7,1%Acid Alcohol,R2,0,29-08-2024 16:44:15.251,August,Dipped In,54
+PAP,ps,29-08-2024,W1,Running TAP Water,R2,0,29-08-2024 16:44:22.880,August,Placed In,54
+PAP,ps,29-08-2024,J14,Reagent-C EA50,R1,0,29-08-2024 16:44:31.190,August,Picked From,54
+PAP,ps,29-08-2024,J15,95% Alcohol,R1,0,29-08-2024 16:44:37.277,August,Placed In,54
+PAP,ps,29-08-2024,W1,Tap Water,--,0,29-08-2024 16:46:23.104,August,Water Valve : 1 is Off,54
+PAP,ps,29-08-2024,W1,Running TAP Water,R2,0,29-08-2024 16:46:31.363,August,Picked From,54
+PAP,ps,29-08-2024,J8,DI Water,R2,0,29-08-2024 16:48:03.127,August,Dipped In,54
+PAP,ps,29-08-2024,J9,95% Alcohol,R2,0,29-08-2024 16:48:09.231,August,Placed In,54
+PAP,ps,29-08-2024,J15,95% Alcohol,R1,0,29-08-2024 16:48:18.403,August,Picked From,54
+PAP,ps,29-08-2024,J16,95% Alcohol,R1,0,29-08-2024 16:48:24.524,August,Placed In,54
+PAP,ps,29-08-2024,J1,95% Alcohol,R3,0,29-08-2024 16:48:42.331,August,Picked From,54
+PAP,ps,29-08-2024,J2,80% Alcohol,R3,0,29-08-2024 16:48:48.444,August,Placed In,54
+PAP,ps,29-08-2024,J9,95% Alcohol,R2,0,29-08-2024 16:50:17.859,August,Picked From,54
+PAP,ps,29-08-2024,J10,95% Alcohol,R2,0,29-08-2024 16:50:25.457,August,Placed In,54
+PAP,ps,29-08-2024,J16,95% Alcohol,R1,0,29-08-2024 16:50:46.653,August,Picked From,54
+PAP,ps,29-08-2024,J17,100 % Alcohol,R1,0,29-08-2024 16:50:52.752,August,Placed In,54
+PAP,ps,29-08-2024,J17,100 % Alcohol,R1,0,29-08-2024 16:51:29.255,August,Picked From,54
+PAP,ps,29-08-2024,J18,100 % Alcohol,R1,0,29-08-2024 16:51:36.863,August,Placed In,54
+PAP,ps,29-08-2024,J18,100 % Alcohol,R1,0,29-08-2024 16:52:12.674,August,Picked From,54
+PAP,ps,29-08-2024,J19,100 % Alcohol,R1,0,29-08-2024 16:52:18.768,August,Placed In,54
+PAP,ps,29-08-2024,J19,100 % Alcohol,R1,0,29-08-2024 16:52:55.593,August,Picked From,54
+PAP,ps,29-08-2024,J20,XYLENE-1,R1,0,29-08-2024 16:53:01.686,August,Placed In,54
+PAP,ps,29-08-2024,J2,80% Alcohol,R3,0,29-08-2024 16:53:23.090,August,Picked From,54
+PAP,ps,29-08-2024,J3,70%Alcohol,R3,0,29-08-2024 16:53:29.171,August,Placed In,54
+PAP,ps,29-08-2024,J10,95% Alcohol,R2,0,29-08-2024 16:53:51.563,August,Picked From,54
+PAP,ps,29-08-2024,J11,Reagent B Orange G6,R2,0,29-08-2024 16:53:57.640,August,Placed In,54
+PAP,ps,29-08-2024,J20,XYLENE-1,R1,0,29-08-2024 16:55:10.458,August,Picked From,54
+PAP,ps,29-08-2024,J21,XYLENE-2,R1,0,29-08-2024 16:55:16.543,August,Placed In,54
+PAP,ps,29-08-2024,L1,-,-,0,29-08-2024 16:55:38.606,August,Liquid Level - 307,54
+PAP,ps,29-08-2024,L2,-,-,0,29-08-2024 16:55:41.378,August,Liquid Level - 299,54
+PAP,ps,29-08-2024,L3,-,-,0,29-08-2024 16:55:43.940,August,Liquid Level - 314,54
+PAP,ps,29-08-2024,-,-,-,0,29-08-2024 16:55:55.316,August,Home Reached,54
+PAP,ps,29-08-2024,-,-,-,0,29-08-2024 16:55:55.749,August,Home Status - 11111111,54
+PAP,ps,29-08-2024,-,-,-,0,29-08-2024 16:55:57.333,August,Home Reached,54
+PAP,ps,29-08-2024,-,-,-,0,29-08-2024 16:55:57.355,August,,54
+PAP,ps,29-08-2024,,,R4,0,29-08-2024 16:55:59.154,August,Test Started,54
+PAP,ps,29-08-2024,L1,Loading,R4,0,29-08-2024 16:56:10.373,August,Picked From,54
+PAP,ps,29-08-2024,J1,95% Alcohol,R4,0,29-08-2024 16:56:17.463,August,Placed In,54
+PAP,ps,29-08-2024,J3,70%Alcohol,R3,0,29-08-2024 16:56:35.803,August,Picked From,54
+PAP,ps,29-08-2024,J4,50% Alcohol,R3,0,29-08-2024 16:56:41.887,August,Placed In,54
+PAP,ps,29-08-2024,J11,Reagent B Orange G6,R2,0,29-08-2024 16:57:07.320,August,Picked From,54
+PAP,ps,29-08-2024,J12,95% Alcohol,R2,0,29-08-2024 16:57:13.415,August,Placed In,54
+PAP,ps,29-08-2024,J12,95% Alcohol,R2,0,29-08-2024 16:57:49.166,August,Picked From,54
+PAP,ps,29-08-2024,J13,95% Alcohol,R2,0,29-08-2024 16:57:55.249,August,Placed In,54
+PAP,ps,29-08-2024,J13,95% Alcohol,R2,0,29-08-2024 16:58:30.930,August,Picked From,54
+PAP,ps,29-08-2024,J14,Reagent-C EA50,R2,0,29-08-2024 16:58:37.031,August,Placed In,54
+PAP,ps,29-08-2024,J21,XYLENE-2,R1,0,29-08-2024 16:58:53.664,August,Picked From,54
+PAP,ps,29-08-2024,J22,XYLENE-3,R1,0,29-08-2024 16:58:59.767,August,Placed In,54
+PAP,ps,29-08-2024,J4,50% Alcohol,R3,0,29-08-2024 16:59:48.184,August,Picked From,54
+PAP,ps,29-08-2024,J5,DI Water,R3,0,29-08-2024 16:59:54.279,August,Placed In,54
+PAP,ps,29-08-2024,J22,XYLENE-3,R1,0,29-08-2024 17:01:06.077,August,Picked From,54
+PAP,ps,29-08-2024,U1,Unloading,R1,0,29-08-2024 17:01:16.196,August,Placed In,54
+PAP,ps,29-08-2024,U1,Unloading,R1,0,29-08-2024 17:01:17.219,August,Test Completed,54
+PAP,ps,29-08-2024,J5,DI Water,R3,0,29-08-2024 17:02:04.498,August,Picked From,54
+PAP,ps,29-08-2024,J6,Reagent - A Harris Hematoxylin,R3,0,29-08-2024 17:02:10.705,August,Placed In,54
+PAP,ps,29-08-2024,W1,Tap Water,--,0,29-08-2024 17:06:53.092,August,Water Valve : 1 is On,54
+PAP,ps,29-08-2024,J6,Reagent - A Harris Hematoxylin,R3,0,29-08-2024 17:07:16.434,August,Picked From,54
+PAP,ps,29-08-2024,W1,Running TAP Water,R3,0,29-08-2024 17:07:24.033,August,Placed In,54
+PAP,ps,29-08-2024,J14,Reagent-C EA50,R2,0,29-08-2024 17:08:45.188,August,Picked From,54
+PAP,ps,29-08-2024,J15,95% Alcohol,R2,0,29-08-2024 17:08:51.279,August,Placed In,54
+PAP,ps,29-08-2024,W1,Tap Water,--,0,29-08-2024 17:09:25.334,August,Water Valve : 1 is Off,54
+PAP,ps,29-08-2024,W1,Running TAP Water,R3,0,29-08-2024 17:09:33.583,August,Picked From,54
+PAP,ps,29-08-2024,W1,Tap Water,--,0,29-08-2024 17:09:33.766,August,Water Valve : 1 is On,54
+PAP,ps,29-08-2024,J7,1%Acid Alcohol,R3,0,29-08-2024 17:09:40.759,August,Dipped In,54
+PAP,ps,29-08-2024,W1,Running TAP Water,R3,0,29-08-2024 17:09:48.358,August,Placed In,54
+PAP,ps,29-08-2024,J15,95% Alcohol,R2,0,29-08-2024 17:10:59.008,August,Picked From,54
+PAP,ps,29-08-2024,J16,95% Alcohol,R2,0,29-08-2024 17:11:05.101,August,Placed In,54
+PAP,ps,29-08-2024,W1,Tap Water,--,0,29-08-2024 17:11:48.700,August,Water Valve : 1 is Off,54
+PAP,ps,29-08-2024,W1,Running TAP Water,R3,0,29-08-2024 17:11:56.947,August,Picked From,54
+PAP,ps,29-08-2024,J8,DI Water,R3,0,29-08-2024 17:13:28.571,August,Dipped In,54
+PAP,ps,29-08-2024,J9,95% Alcohol,R3,0,29-08-2024 17:13:34.662,August,Placed In,54
+PAP,ps,29-08-2024,J16,95% Alcohol,R2,0,29-08-2024 17:13:45.700,August,Picked From,54
+PAP,ps,29-08-2024,J17,100 % Alcohol,R2,0,29-08-2024 17:13:51.792,August,Placed In,54
+PAP,ps,29-08-2024,J17,100 % Alcohol,R2,0,29-08-2024 17:14:27.404,August,Picked From,54
+PAP,ps,29-08-2024,J18,100 % Alcohol,R2,0,29-08-2024 17:14:34.996,August,Placed In,54
+PAP,ps,29-08-2024,J18,100 % Alcohol,R2,0,29-08-2024 17:15:11.587,August,Picked From,54
+PAP,ps,29-08-2024,J19,100 % Alcohol,R2,0,29-08-2024 17:15:17.690,August,Placed In,54
+PAP,ps,29-08-2024,J19,100 % Alcohol,R2,0,29-08-2024 17:15:54.401,August,Picked From,54
+PAP,ps,29-08-2024,J20,XYLENE-1,R2,0,29-08-2024 17:16:00.498,August,Placed In,54
+PAP,ps,29-08-2024,J9,95% Alcohol,R3,0,29-08-2024 17:16:19.279,August,Picked From,54
+PAP,ps,29-08-2024,J10,95% Alcohol,R3,0,29-08-2024 17:16:26.878,August,Placed In,54
+PAP,ps,29-08-2024,J1,95% Alcohol,R4,0,29-08-2024 17:16:44.196,August,Picked From,54
+PAP,ps,29-08-2024,J2,80% Alcohol,R4,0,29-08-2024 17:16:50.275,August,Placed In,54
+PAP,ps,29-08-2024,J20,XYLENE-1,R2,0,29-08-2024 17:18:08.148,August,Picked From,54
+PAP,ps,29-08-2024,J21,XYLENE-2,R2,0,29-08-2024 17:18:14.234,August,Placed In,54
+PAP,ps,29-08-2024,J10,95% Alcohol,R3,0,29-08-2024 17:18:35.510,August,Picked From,54
+PAP,ps,29-08-2024,J11,Reagent B Orange G6,R3,0,29-08-2024 17:18:41.593,August,Placed In,54
+PAP,ps,29-08-2024,J2,80% Alcohol,R4,0,29-08-2024 17:20:01.289,August,Picked From,54
+PAP,ps,29-08-2024,J3,70%Alcohol,R4,0,29-08-2024 17:20:07.382,August,Placed In,54
+PAP,ps,29-08-2024,J21,XYLENE-2,R2,0,29-08-2024 17:20:21.349,August,Picked From,54
+PAP,ps,29-08-2024,J22,XYLENE-3,R2,0,29-08-2024 17:20:27.425,August,Placed In,54
+PAP,ps,29-08-2024,J11,Reagent B Orange G6,R3,0,29-08-2024 17:21:51.230,August,Picked From,54
+PAP,ps,29-08-2024,J12,95% Alcohol,R3,0,29-08-2024 17:21:57.414,August,Placed In,54
+PAP,ps,29-08-2024,J12,95% Alcohol,R3,0,29-08-2024 17:22:33.017,August,Picked From,54
+PAP,ps,29-08-2024,J13,95% Alcohol,R3,0,29-08-2024 17:22:39.102,August,Placed In,54
+PAP,ps,29-08-2024,J13,95% Alcohol,R3,0,29-08-2024 17:23:14.693,August,Picked From,54
+PAP,ps,29-08-2024,J14,Reagent-C EA50,R3,0,29-08-2024 17:23:20.803,August,Placed In,54
+PAP,ps,29-08-2024,J22,XYLENE-3,R2,0,29-08-2024 17:23:42.520,August,Picked From,54
+PAP,ps,29-08-2024,U2,Unloading,R2,0,29-08-2024 17:23:52.591,August,Placed In,54
+PAP,ps,29-08-2024,U2,Unloading,R2,0,29-08-2024 17:23:53.605,August,Test Completed,54
+PAP,ps,29-08-2024,J3,70%Alcohol,R4,0,29-08-2024 17:24:28.186,August,Picked From,54
+PAP,ps,29-08-2024,J4,50% Alcohol,R4,0,29-08-2024 17:24:34.288,August,Placed In,54
+PAP,ps,29-08-2024,J4,50% Alcohol,R4,0,29-08-2024 17:27:39.919,August,Picked From,54
+PAP,ps,29-08-2024,J5,DI Water,R4,0,29-08-2024 17:27:46.014,August,Placed In,54
+PAP,ps,29-08-2024,J5,DI Water,R4,0,29-08-2024 17:29:52.738,August,Picked From,54
+PAP,ps,29-08-2024,J6,Reagent - A Harris Hematoxylin,R4,0,29-08-2024 17:29:58.823,August,Placed In,54
+PAP,ps,29-08-2024,J14,Reagent-C EA50,R3,0,29-08-2024 17:33:30.645,August,Picked From,54
+PAP,ps,29-08-2024,J15,95% Alcohol,R3,0,29-08-2024 17:33:36.753,August,Placed In,54
+PAP,ps,29-08-2024,W1,Tap Water,--,0,29-08-2024 17:34:41.181,August,Water Valve : 1 is On,54
+PAP,ps,29-08-2024,J6,Reagent - A Harris Hematoxylin,R4,0,29-08-2024 17:35:08.656,August,Picked From,54
+PAP,ps,29-08-2024,W1,Running TAP Water,R4,0,29-08-2024 17:35:16.246,August,Placed In,54
+PAP,ps,29-08-2024,J15,95% Alcohol,R3,0,29-08-2024 17:35:44.396,August,Picked From,54
+PAP,ps,29-08-2024,J16,95% Alcohol,R3,0,29-08-2024 17:35:50.465,August,Placed In,54
+PAP,ps,29-08-2024,W1,Tap Water,--,0,29-08-2024 17:37:16.453,August,Water Valve : 1 is Off,54
+PAP,ps,29-08-2024,W1,Running TAP Water,R4,0,29-08-2024 17:37:24.705,August,Picked From,54
+PAP,ps,29-08-2024,W1,Tap Water,--,0,29-08-2024 17:37:24.887,August,Water Valve : 1 is On,54
+PAP,ps,29-08-2024,J7,1%Acid Alcohol,R4,0,29-08-2024 17:37:31.856,August,Dipped In,54
+PAP,ps,29-08-2024,W1,Running TAP Water,R4,0,29-08-2024 17:37:39.451,August,Placed In,54
+PAP,ps,29-08-2024,J16,95% Alcohol,R3,0,29-08-2024 17:37:58.064,August,Picked From,54
+PAP,ps,29-08-2024,J17,100 % Alcohol,R3,0,29-08-2024 17:38:04.164,August,Placed In,54
+PAP,ps,29-08-2024,J17,100 % Alcohol,R3,0,29-08-2024 17:38:39.828,August,Picked From,54
+PAP,ps,29-08-2024,J18,100 % Alcohol,R3,0,29-08-2024 17:38:47.401,August,Placed In,54
+PAP,ps,29-08-2024,J18,100 % Alcohol,R3,0,29-08-2024 17:39:22.996,August,Picked From,54
+PAP,ps,29-08-2024,J19,100 % Alcohol,R3,0,29-08-2024 17:39:29.122,August,Placed In,54
+PAP,ps,29-08-2024,J19,100 % Alcohol,R3,0,29-08-2024 17:40:04.783,August,Picked From,54
+PAP,ps,29-08-2024,J20,XYLENE-1,R3,0,29-08-2024 17:40:10.853,August,Placed In,54
+PAP,ps,29-08-2024,W1,Tap Water,--,0,29-08-2024 17:40:17.668,August,Water Valve : 1 is Off,54
+PAP,ps,29-08-2024,W1,Running TAP Water,R4,0,29-08-2024 17:40:25.428,August,Picked From,54
+PAP,ps,29-08-2024,J8,DI Water,R4,0,29-08-2024 17:41:57.028,August,Dipped In,54
+PAP,ps,29-08-2024,J9,95% Alcohol,R4,0,29-08-2024 17:42:03.121,August,Placed In,54
+PAP,ps,29-08-2024,J20,XYLENE-1,R3,0,29-08-2024 17:42:17.485,August,Picked From,54
+PAP,ps,29-08-2024,J21,XYLENE-2,R3,0,29-08-2024 17:42:23.568,August,Placed In,54
+PAP,ps,29-08-2024,J9,95% Alcohol,R4,0,29-08-2024 17:44:11.283,August,Picked From,54
+PAP,ps,29-08-2024,J10,95% Alcohol,R4,0,29-08-2024 17:44:18.857,August,Placed In,54
+PAP,ps,29-08-2024,J21,XYLENE-2,R3,0,29-08-2024 17:44:32.288,August,Picked From,54
+PAP,ps,29-08-2024,J22,XYLENE-3,R3,0,29-08-2024 17:44:38.393,August,Placed In,54
+PAP,ps,29-08-2024,J10,95% Alcohol,R4,0,29-08-2024 17:46:28.956,August,Picked From,54
+PAP,ps,29-08-2024,J11,Reagent B Orange G6,R4,0,29-08-2024 17:46:35.044,August,Placed In,54
+PAP,ps,29-08-2024,J22,XYLENE-3,R3,0,29-08-2024 17:46:48.012,August,Picked From,54
+PAP,ps,29-08-2024,U3,Unloading,R3,0,29-08-2024 17:46:57.597,August,Placed In,54
+PAP,ps,29-08-2024,U3,Unloading,R3,0,29-08-2024 17:46:58.604,August,Test Completed,54
+PAP,ps,29-08-2024,J11,Reagent B Orange G6,R4,0,29-08-2024 17:49:43.179,August,Picked From,54
+PAP,ps,29-08-2024,J12,95% Alcohol,R4,0,29-08-2024 17:49:49.270,August,Placed In,54
+PAP,ps,29-08-2024,J12,95% Alcohol,R4,0,29-08-2024 17:50:25.932,August,Picked From,54
+PAP,ps,29-08-2024,J13,95% Alcohol,R4,0,29-08-2024 17:50:32.132,August,Placed In,54
+PAP,ps,29-08-2024,J13,95% Alcohol,R4,0,29-08-2024 17:51:07.737,August,Picked From,54
+PAP,ps,29-08-2024,J14,Reagent-C EA50,R4,0,29-08-2024 17:51:13.830,August,Placed In,54
+PAP,ps,29-08-2024,J14,Reagent-C EA50,R4,0,29-08-2024 18:01:19.621,August,Picked From,54
+PAP,ps,29-08-2024,J15,95% Alcohol,R4,0,29-08-2024 18:01:25.719,August,Placed In,54
+PAP,ps,29-08-2024,J15,95% Alcohol,R4,0,29-08-2024 18:03:31.330,August,Picked From,54
+PAP,ps,29-08-2024,J16,95% Alcohol,R4,0,29-08-2024 18:03:37.409,August,Placed In,54
+PAP,ps,29-08-2024,J16,95% Alcohol,R4,0,29-08-2024 18:05:43.051,August,Picked From,54
+PAP,ps,29-08-2024,J17,100 % Alcohol,R4,0,29-08-2024 18:05:49.132,August,Placed In,54
+PAP,ps,29-08-2024,J17,100 % Alcohol,R4,0,29-08-2024 18:06:24.777,August,Picked From,54
+PAP,ps,29-08-2024,J18,100 % Alcohol,R4,0,29-08-2024 18:06:32.407,August,Placed In,54
+PAP,ps,29-08-2024,J18,100 % Alcohol,R4,0,29-08-2024 18:07:07.983,August,Picked From,54
+PAP,ps,29-08-2024,J19,100 % Alcohol,R4,0,29-08-2024 18:07:14.071,August,Placed In,54
+PAP,ps,29-08-2024,J19,100 % Alcohol,R4,0,29-08-2024 18:08:01.106,August,Picked From,54
+PAP,ps,29-08-2024,J20,XYLENE-1,R4,0,29-08-2024 18:08:07.183,August,Placed In,54
+PAP,ps,29-08-2024,J20,XYLENE-1,R4,0,29-08-2024 18:10:12.840,August,Picked From,54
+PAP,ps,29-08-2024,J21,XYLENE-2,R4,0,29-08-2024 18:10:18.923,August,Placed In,54
+PAP,ps,29-08-2024,J21,XYLENE-2,R4,0,29-08-2024 18:12:24.561,August,Picked From,54
+PAP,ps,29-08-2024,J22,XYLENE-3,R4,0,29-08-2024 18:12:30.642,August,Placed In,54
+PAP,ps,29-08-2024,J22,XYLENE-3,R4,0,29-08-2024 18:14:37.244,August,Picked From,54
+PAP,ps,29-08-2024,U4,Unloading,R4,0,29-08-2024 18:14:46.326,August,Placed In,54
+PAP,ps,29-08-2024,U4,Unloading,R4,0,29-08-2024 18:14:47.346,August,Test Completed,54
+PAP,ps,29-08-2024,-,-,-,0,29-08-2024 18:15:31.493,August,Protorun Stopped,54

@@ -1,0 +1,1396 @@
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13521
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 13:11:20
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13521
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1495,22-05-2025 13:11:31
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13521
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 13:13:13
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13521
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1495,22-05-2025 13:13:20
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13521
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 13:14:46
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13521
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1495,22-05-2025 13:25:04
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13521
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 13:25:48
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13521
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1495,22-05-2025 13:25:59
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13521
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 13:26:16
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13521
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1495,22-05-2025 13:26:41
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13521
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 13:27:11
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13521
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1495,22-05-2025 13:27:18
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13521
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 13:27:55
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13521
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1495,22-05-2025 13:28:44
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13521
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 13:29:01
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13521
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 13:29:58
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13521
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 13:39:33
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13521
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 13:47:34
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 15:44:18
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1495,22-05-2025 15:44:29
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 15:45:41
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1495,22-05-2025 15:45:48
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 15:47:00
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1495,22-05-2025 15:56:47
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 15:57:58
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1495,22-05-2025 15:58:23
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 15:59:39
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1495,22-05-2025 16:00:27
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 16:00:58
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1495,22-05-2025 16:01:09
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 16:01:41
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 16:02:24
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1495,22-05-2025 16:02:31
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 16:03:43
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1495,22-05-2025 16:14:00
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 16:15:32
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1495,22-05-2025 16:15:57
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 16:17:09
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1495,22-05-2025 16:17:57
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 16:19:54
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 16:20:44
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1495,22-05-2025 16:20:55
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 16:22:10
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1495,22-05-2025 16:22:17
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 16:23:30
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1495,22-05-2025 16:33:18
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 16:35:13
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1495,22-05-2025 16:35:38
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 16:36:50
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1495,22-05-2025 16:37:38
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 16:39:04
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 16:41:55
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1495,22-05-2025 16:42:06
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 16:43:23
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1495,22-05-2025 16:43:29
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 16:44:42
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1495,22-05-2025 16:54:21
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 16:56:22
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1495,22-05-2025 16:56:47
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 16:58:00
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1495,22-05-2025 16:58:49
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 17:00:02
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Communication Failed for func_code: 2, SeqNo: 86,22-05-2025 17:03:42
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Communication Failed for func_code: 2, SeqNo: 85,22-05-2025 17:22:14
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Communication Failed for func_code: 2, SeqNo: 85,22-05-2025 17:22:16
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Communication Failed for func_code: 2, SeqNo: 85,22-05-2025 17:22:17
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Communication Failed for func_code: 2, SeqNo: 85,22-05-2025 17:22:18
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Communication Failed for func_code: 12, SeqNo: 85,22-05-2025 17:29:31
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Communication Failed for func_code: 13, SeqNo: 0,22-05-2025 17:52:29
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 18:08:50
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1495,22-05-2025 18:09:02
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 18:10:15
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1495,22-05-2025 18:10:21
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 18:11:34
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 18:18:56
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1495,22-05-2025 18:19:07
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 18:20:19
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1495,22-05-2025 18:20:26
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1495,22-05-2025 18:21:02
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 18:21:39
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 18:22:15
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1495,22-05-2025 18:22:27
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 18:23:40
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1495,22-05-2025 18:23:54
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 18:25:09
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 18:27:15
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1495,22-05-2025 18:27:25
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 18:28:50
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 18:32:35
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 18:40:14
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 13515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext() in E:\PathnSituProjects\HENewProj\HematoxinandEosin\HematoxinandEosin\Form_RunProto.cs:line 1488,22-05-2025 18:41:02
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext(),22-05-2025 18:46:33
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext(),22-05-2025 18:47:29
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext(),22-05-2025 18:57:35
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext(),22-05-2025 18:58:12
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext(),22-05-2025 18:59:08
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext(),22-05-2025 19:07:59
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext(),22-05-2025 19:08:10
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext(),22-05-2025 19:09:29
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext(),22-05-2025 19:09:43
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext(),22-05-2025 19:09:50
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext(),22-05-2025 19:10:41
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext(),22-05-2025 19:10:53
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext(),22-05-2025 19:11:08
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext(),22-05-2025 19:12:08
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext(),22-05-2025 19:12:22
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext(),22-05-2025 19:13:47
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext(),22-05-2025 19:19:20
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext(),22-05-2025 19:19:31
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext(),22-05-2025 19:20:43
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext(),22-05-2025 19:20:50
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext(),22-05-2025 19:21:14
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext(),22-05-2025 19:22:02
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext(),22-05-2025 19:22:37
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext(),22-05-2025 19:22:49
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext(),22-05-2025 19:24:01
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext(),22-05-2025 19:24:15
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext(),22-05-2025 19:25:31
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext(),22-05-2025 19:30:26
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext(),22-05-2025 19:30:37
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext(),22-05-2025 19:31:51
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext(),22-05-2025 19:31:58
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext(),22-05-2025 19:32:28
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext(),22-05-2025 19:33:10
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext(),22-05-2025 19:33:41
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext(),22-05-2025 19:33:52
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext(),22-05-2025 19:35:50
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext(),22-05-2025 19:36:04
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext(),22-05-2025 19:37:31
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext(),22-05-2025 19:42:38
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext(),22-05-2025 19:44:07
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Water Valves On / Off condifition failed  In watervalveonpff functionSystem.InvalidOperationException: Queue empty.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.Queue`1.Dequeue()
+   at HematoxinandEosin.Form_RunProto.<snd_rcvCmd>d__1049.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at HematoxinandEosin.Form_RunProto.<watervalveonpff>d__919.MoveNext(),22-05-2025 19:44:18
+--------------------------------------------------------------------------

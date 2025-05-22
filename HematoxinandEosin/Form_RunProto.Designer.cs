@@ -139,8 +139,18 @@ namespace HematoxinandEosin
             this.tmr_opencmd_toload_Nxtrack = new System.Windows.Forms.Timer(this.components);
             this.tmr_next_Lar_lvl_sense = new System.Windows.Forms.Timer(this.components);
             this.tmr_home = new System.Windows.Forms.Timer(this.components);
+            this.ProtoDetails = new System.Windows.Forms.LinkLabel();
+            this.pnl_ProtocolDetails = new System.Windows.Forms.Panel();
+            this.dgv_protodetails = new System.Windows.Forms.DataGridView();
+            this.Sno = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Jno = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RegName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.incTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dips = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel_Jarscalibration.SuspendLayout();
             this.pnl_Jars.SuspendLayout();
+            this.pnl_ProtocolDetails.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_protodetails)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_RA
@@ -197,6 +207,8 @@ namespace HematoxinandEosin
             // panel_Jarscalibration
             // 
             this.panel_Jarscalibration.BackColor = System.Drawing.Color.White;
+            this.panel_Jarscalibration.Controls.Add(this.pnl_ProtocolDetails);
+            this.panel_Jarscalibration.Controls.Add(this.ProtoDetails);
             this.panel_Jarscalibration.Controls.Add(this.cbo_protocol);
             this.panel_Jarscalibration.Controls.Add(this.lbl_protosel);
             this.panel_Jarscalibration.Controls.Add(this.lbl_NxtRack);
@@ -2004,6 +2016,70 @@ namespace HematoxinandEosin
             this.tmr_home.Interval = 500;
             this.tmr_home.Tick += new System.EventHandler(this.tmr_home_Tick);
             // 
+            // ProtoDetails
+            // 
+            this.ProtoDetails.AutoSize = true;
+            this.ProtoDetails.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProtoDetails.Location = new System.Drawing.Point(639, 36);
+            this.ProtoDetails.Name = "ProtoDetails";
+            this.ProtoDetails.Size = new System.Drawing.Size(154, 20);
+            this.ProtoDetails.TabIndex = 108;
+            this.ProtoDetails.TabStop = true;
+            this.ProtoDetails.Text = "View Protocol Details";
+            this.ProtoDetails.MouseLeave += new System.EventHandler(this.ProtoDetails_MouseLeave);
+            this.ProtoDetails.MouseHover += new System.EventHandler(this.ProtoDetails_MouseHover);
+            // 
+            // pnl_ProtocolDetails
+            // 
+            this.pnl_ProtocolDetails.Controls.Add(this.dgv_protodetails);
+            this.pnl_ProtocolDetails.Location = new System.Drawing.Point(15, 12);
+            this.pnl_ProtocolDetails.Name = "pnl_ProtocolDetails";
+            this.pnl_ProtocolDetails.Size = new System.Drawing.Size(704, 550);
+            this.pnl_ProtocolDetails.TabIndex = 109;
+            this.pnl_ProtocolDetails.Visible = false;
+            // 
+            // dgv_protodetails
+            // 
+            this.dgv_protodetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_protodetails.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Sno,
+            this.Jno,
+            this.RegName,
+            this.incTime,
+            this.dips});
+            this.dgv_protodetails.Location = new System.Drawing.Point(7, 6);
+            this.dgv_protodetails.Name = "dgv_protodetails";
+            this.dgv_protodetails.Size = new System.Drawing.Size(688, 539);
+            this.dgv_protodetails.TabIndex = 0;
+            // 
+            // Sno
+            // 
+            this.Sno.HeaderText = "S.No";
+            this.Sno.Name = "Sno";
+            this.Sno.Width = 75;
+            // 
+            // Jno
+            // 
+            this.Jno.HeaderText = "Jar No";
+            this.Jno.Name = "Jno";
+            // 
+            // RegName
+            // 
+            this.RegName.HeaderText = "Reagent Name";
+            this.RegName.Name = "RegName";
+            this.RegName.Width = 180;
+            // 
+            // incTime
+            // 
+            this.incTime.HeaderText = "Incubation Time (Seconds)";
+            this.incTime.Name = "incTime";
+            this.incTime.Width = 180;
+            // 
+            // dips
+            // 
+            this.dips.HeaderText = "No of Dips";
+            this.dips.Name = "dips";
+            // 
             // Form_RunProto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2021,6 +2097,8 @@ namespace HematoxinandEosin
             this.panel_Jarscalibration.ResumeLayout(false);
             this.panel_Jarscalibration.PerformLayout();
             this.pnl_Jars.ResumeLayout(false);
+            this.pnl_ProtocolDetails.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_protodetails)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2134,5 +2212,13 @@ namespace HematoxinandEosin
         private System.Windows.Forms.Timer tmr_opencmd_toload_Nxtrack;
         private System.Windows.Forms.Timer tmr_next_Lar_lvl_sense;
         private System.Windows.Forms.Timer tmr_home;
+        private System.Windows.Forms.Panel pnl_ProtocolDetails;
+        private System.Windows.Forms.DataGridView dgv_protodetails;
+        private System.Windows.Forms.LinkLabel ProtoDetails;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Sno;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Jno;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RegName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn incTime;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dips;
     }
 }

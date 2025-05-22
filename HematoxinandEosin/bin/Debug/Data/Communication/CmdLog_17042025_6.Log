@@ -1,0 +1,1333 @@
+Command Sent (SeqNo: 0, Retry: 0) SET TEMPERATURE - #0,10,32*870a  * 17-04-2025 15:26:47.357
+CRC-Response (SeqNo: 0) - 0,10,F000*1ae9 * 17-04-2025 15:26:47.610
+Command Sent (SeqNo: 1, Retry: 0) HEATER ON - #1,12,1*dbe7  * 17-04-2025 15:26:48.725
+CRC-Response (SeqNo: 1) - 1,12,F000*68e5 * 17-04-2025 15:26:48.833
+Command Sent (SeqNo: 2, Retry: 0) HEATER DOOR CLOSE - #2,8,1,0*21eb  * 17-04-2025 15:26:49.412
+CRC-Response (SeqNo: 2) - 2,8,I001*fd79 * 17-04-2025 15:26:49.531
+CRC-Response (SeqNo: 2) - 2,8,F000*29bb * 17-04-2025 15:26:49.866
+Command Sent (SeqNo: 3, Retry: 0) READ TEMPERATURE - #3,11*ed1a  * 17-04-2025 15:26:50.443
+CRC-Response (SeqNo: 3) - 3,11,F000,545*d48f * 17-04-2025 15:26:50.558
+Command Sent (SeqNo: 4, Retry: 0) WATER VALVE - 1 CONTROL OFF - #4,13,1,0*80ea  * 17-04-2025 15:27:05.631
+CRC-Response (SeqNo: 4) - 4,13,F000*e9db * 17-04-2025 15:27:05.761
+Command Sent (SeqNo: 5, Retry: 0) WATER VALVE - 2 CONTROL OFF - #5,13,2,0*4cdb  * 17-04-2025 15:27:06.334
+CRC-Response (SeqNo: 5) - 5,13,F000*79d6 * 17-04-2025 15:27:06.454
+Command Sent (SeqNo: 6, Retry: 0) WATER VALVE - 3 CONTROL OFF - #6,13,3,0*99ca  * 17-04-2025 15:27:07.29
+CRC-Response (SeqNo: 6) - 6,13,F000*89c2 * 17-04-2025 15:27:07.149
+Command Sent (SeqNo: 7, Retry: 0) WATER VALVE - 4 CONTROL OFF - #7,13,4,0*94ba  * 17-04-2025 15:27:07.740
+CRC-Response (SeqNo: 7) - 7,13,F000*19cf * 17-04-2025 15:27:07.860
+Command Sent (SeqNo: 8, Retry: 0) WATER VALVE - 5 CONTROL OFF - #8,13,5,0*14ab  * 17-04-2025 15:27:08.423
+CRC-Response (SeqNo: 8) - 8,13,F000*e98e * 17-04-2025 15:27:08.535
+Command Sent (SeqNo: 9, Retry: 0) WATER VALVE - 6 CONTROL OFF - #9,13,6,0*d89a  * 17-04-2025 15:27:09.100
+CRC-Response (SeqNo: 9) - 9,13,F000*7983 * 17-04-2025 15:27:09.219
+Command Sent (SeqNo: 10, Retry: 0) Home Command - #10,5,01111111*2199  * 17-04-2025 15:27:09.782
+CRC-Response (SeqNo: 10) - 10,5,I001,01111111*c9ef * 17-04-2025 15:27:09.902
+CRC-Response (SeqNo: 10) - 10,5,F000*8728 * 17-04-2025 15:27:09.902
+Command Sent (SeqNo: 11, Retry: 0) Home Command - #11,5,01111111*e264  * 17-04-2025 15:27:11.987
+CRC-Response (SeqNo: 11) - 11,5,I001,01111111*59be * 17-04-2025 15:27:12.108
+CRC-Response (SeqNo: 11) - 11,5,F000*4be9 * 17-04-2025 15:27:12.109
+Command Sent (SeqNo: 12, Retry: 0) Level Sensing For L1 - #12,4,17564,16380,0,0*6888  * 17-04-2025 15:27:13.194
+CRC-Response (SeqNo: 12) - 12,4,I001*5b6a * 17-04-2025 15:27:13.393
+CRC-Response (SeqNo: 12) - 12,4,F000,988*04db * 17-04-2025 15:27:21.663
+L1 Value - 988 * 17-04-2025 15:27:21.687
+Command Sent (SeqNo: 13, Retry: 0) Level Sensing For L2 - #13,4,13934,16380,0,0*90ad  * 17-04-2025 15:27:22.239
+CRC-Response (SeqNo: 13) - 13,4,I001*97ab * 17-04-2025 15:27:22.360
+CRC-Response (SeqNo: 13) - 13,4,F000,985*02e7 * 17-04-2025 15:27:24.636
+L2 Value - 985 * 17-04-2025 15:27:24.650
+Command Sent (SeqNo: 14, Retry: 0) Level Sensing For L3 - #14,4,10304,16380,0,0*e907  * 17-04-2025 15:27:25.213
+CRC-Response (SeqNo: 14) - 14,4,I001*71ea * 17-04-2025 15:27:25.335
+CRC-Response (SeqNo: 14) - 14,4,F000,989*cc12 * 17-04-2025 15:27:27.618
+L3 Value - 989 * 17-04-2025 15:27:27.635
+Command Sent (SeqNo: 15, Retry: 0) Home Command - #15,5,01111111*2d95  * 17-04-2025 15:27:28.194
+CRC-Response (SeqNo: 15) - 15,5,I001,01111111*98fc * 17-04-2025 15:27:28.317
+CRC-Response (SeqNo: 15) - 15,5,F000*b8e8 * 17-04-2025 15:27:28.317
+Command Sent (SeqNo: 16, Retry: 0) Home Command - #16,5,01111111*2991  * 17-04-2025 15:27:29.893
+CRC-Response (SeqNo: 16) - 16,5,I001,01111111*680c * 17-04-2025 15:27:30.14
+CRC-Response (SeqNo: 16) - 16,5,F000*ada8 * 17-04-2025 15:27:30.14
+Rack - 1Protocol Started * 17-04-2025 15:27:31.307
+Command Sent (SeqNo: 17, Retry: 0) Rack-1 Picked from L1 - With RA:2 - #17,2,2,17564,16380,0,0*c95b  * 17-04-2025 15:27:31.422
+CRC-Response (SeqNo: 17) - 17,2,I001,2*7462 * 17-04-2025 15:27:31.538
+CRC-Response (SeqNo: 17) - 17,2,F000,2*4b33 * 17-04-2025 15:27:38.712
+RA Picked Rack From L1 * 17-04-2025 15:27:38.715
+Command Sent (SeqNo: 18, Retry: 0) Rack-1 Placed in H1 - With RA:2 - #18,3,2,2688,1000,0,1*f3aa  * 17-04-2025 15:27:39.84
+CRC-Response (SeqNo: 18) - 18,3,I001,2*8893 * 17-04-2025 15:27:39.223
+CRC-Response (SeqNo: 18) - 18,3,F000,2*b7c2 * 17-04-2025 15:27:46.91
+RA Placed Rack in H1 * 17-04-2025 15:27:46.94
+Command Sent (SeqNo: 19, Retry: 0) HEATER DOOR CLOSE - #19,8,1,0*32c8  * 17-04-2025 15:27:46.712
+CRC-Response (SeqNo: 19) - 19,8,I001*242b * 17-04-2025 15:27:46.836
+CRC-Response (SeqNo: 19) - 19,8,F000*f0e9 * 17-04-2025 15:27:47.174
+Command Sent (SeqNo: 20, Retry: 0) READ TEMPERATURE - #20,11*4907  * 17-04-2025 15:27:47.752
+CRC-Response (SeqNo: 20) - 20,11,F000,-273*d868 * 17-04-2025 15:27:47.872
+Command Sent (SeqNo: 21, Retry: 0) READ TEMPERATURE - #21,11*b506  * 17-04-2025 15:28:02.944
+CRC-Response (SeqNo: 21) - 21,11,F000,545*8e13 * 17-04-2025 15:28:03.93
+Command Sent (SeqNo: 22, Retry: 0) READ TEMPERATURE - #22,11*f106  * 17-04-2025 15:28:07.559
+CRC-Response (SeqNo: 22) - 22,11,F000,-273*1a6b * 17-04-2025 15:28:07.677
+Command Sent (SeqNo: 23, Retry: 0) READ TEMPERATURE - #23,11*0d07  * 17-04-2025 15:28:18.158
+CRC-Response (SeqNo: 23) - 23,11,F000,-273*db6b * 17-04-2025 15:28:18.270
+Command Sent (SeqNo: 24, Retry: 0) READ TEMPERATURE - #24,11*7906  * 17-04-2025 15:28:33.353
+CRC-Response (SeqNo: 24) - 24,11,F000,545*8b1f * 17-04-2025 15:28:33.469
+Command Sent (SeqNo: 25, Retry: 0) READ TEMPERATURE - #25,11*8507  * 17-04-2025 15:28:48.536
+CRC-Response (SeqNo: 25) - 25,11,F000,545*0a1d * 17-04-2025 15:28:48.661
+Command Sent (SeqNo: 26, Retry: 0) READ TEMPERATURE - #26,11*c107  * 17-04-2025 15:29:03.753
+CRC-Response (SeqNo: 26) - 26,11,F000,545*c918 * 17-04-2025 15:29:03.877
+Command Sent (SeqNo: 27, Retry: 0) READ TEMPERATURE - #27,11*3d06  * 17-04-2025 15:29:18.937
+CRC-Response (SeqNo: 27) - 27,11,F000,545*481a * 17-04-2025 15:29:19.57
+Command Sent (SeqNo: 28, Retry: 0) READ TEMPERATURE - #28,11*2905  * 17-04-2025 15:29:34.126
+CRC-Response (SeqNo: 28) - 28,11,F000,545*470e * 17-04-2025 15:29:34.265
+Command Sent (SeqNo: 29, Retry: 0) READ TEMPERATURE - #29,11*d504  * 17-04-2025 15:29:49.332
+CRC-Response (SeqNo: 29) - 29,11,F000,545*c60c * 17-04-2025 15:29:49.456
+Command Sent (SeqNo: 30, Retry: 0) READ TEMPERATURE - #30,11*893a  * 17-04-2025 15:30:04.526
+CRC-Response (SeqNo: 30) - 30,11,F000,545*ce11 * 17-04-2025 15:30:04.677
+Command Sent (SeqNo: 31, Retry: 0) READ TEMPERATURE - #31,11*753b  * 17-04-2025 15:30:19.749
+CRC-Response (SeqNo: 31) - 31,11,F000,545*4f13 * 17-04-2025 15:30:19.875
+Command Sent (SeqNo: 32, Retry: 0) READ TEMPERATURE - #32,11*313b  * 17-04-2025 15:30:34.942
+CRC-Response (SeqNo: 32) - 32,11,F000,-273*1aaa * 17-04-2025 15:30:35.64
+Command Sent (SeqNo: 33, Retry: 0) READ TEMPERATURE - #33,11*cd3a  * 17-04-2025 15:30:50.134
+CRC-Response (SeqNo: 33) - 33,11,F000,545*0d14 * 17-04-2025 15:30:50.256
+Command Sent (SeqNo: 34, Retry: 0) READ TEMPERATURE - #34,11*b93b  * 17-04-2025 15:31:05.340
+CRC-Response (SeqNo: 34) - 34,11,F000,545*4a1f * 17-04-2025 15:31:05.462
+Command Sent (SeqNo: 35, Retry: 0) READ TEMPERATURE - #35,11*453a  * 17-04-2025 15:31:20.536
+CRC-Response (SeqNo: 35) - 35,11,F000,545*cb1d * 17-04-2025 15:31:20.656
+Command Sent (SeqNo: 36, Retry: 0) READ TEMPERATURE - #36,11*013a  * 17-04-2025 15:31:35.721
+CRC-Response (SeqNo: 36) - 36,11,F000,545*0818 * 17-04-2025 15:31:35.843
+Command Sent (SeqNo: 37, Retry: 0) READ TEMPERATURE - #37,11*fd3b  * 17-04-2025 15:31:50.912
+CRC-Response (SeqNo: 37) - 37,11,F000,545*891a * 17-04-2025 15:31:51.30
+Command Sent (SeqNo: 38, Retry: 0) READ TEMPERATURE - #38,11*e938  * 17-04-2025 15:32:06.108
+CRC-Response (SeqNo: 38) - 38,11,F000,545*860e * 17-04-2025 15:32:06.233
+Command Sent (SeqNo: 39, Retry: 0) READ TEMPERATURE - #39,11*1539  * 17-04-2025 15:32:21.298
+CRC-Response (SeqNo: 39) - 39,11,F000,447*06dc * 17-04-2025 15:32:21.430
+Command Sent (SeqNo: 40, Retry: 0) READ TEMPERATURE - #40,11*498f  * 17-04-2025 15:32:36.489
+CRC-Response (SeqNo: 40) - 40,11,F000,545*0917 * 17-04-2025 15:32:36.614
+Command Sent (SeqNo: 41, Retry: 0) READ TEMPERATURE - #41,11*b58e  * 17-04-2025 15:32:51.673
+CRC-Response (SeqNo: 41) - 41,11,F000,447*89c5 * 17-04-2025 15:32:51.799
+Command Sent (SeqNo: 42, Retry: 0) READ TEMPERATURE - #42,11*f18e  * 17-04-2025 15:33:06.862
+CRC-Response (SeqNo: 42) - 42,11,F000,545*4b10 * 17-04-2025 15:33:06.989
+Command Sent (SeqNo: 43, Retry: 0) READ TEMPERATURE - #43,11*0d8f  * 17-04-2025 15:33:22.53
+CRC-Response (SeqNo: 43) - 43,11,F000,545*ca12 * 17-04-2025 15:33:22.179
+Command Sent (SeqNo: 44, Retry: 0) READ TEMPERATURE - #44,11*798e  * 17-04-2025 15:33:37.254
+CRC-Response (SeqNo: 44) - 44,11,F000,545*8d19 * 17-04-2025 15:33:37.383
+Command Sent (SeqNo: 45, Retry: 0) HEATER DOOR OPEN - #45,8,1,1*cd05  * 17-04-2025 15:33:51.896
+CRC-Response (SeqNo: 45) - 45,8,I001*2114 * 17-04-2025 15:33:52.33
+CRC-Response (SeqNo: 45) - 45,8,F000*f5d6 * 17-04-2025 15:33:52.367
+Rack - 2Protocol Started * 17-04-2025 15:33:52.893
+Command Sent (SeqNo: 46, Retry: 0) Rack-2 Picked from L2 - With RA:2 - #46,2,2,13934,16380,0,0*23c6  * 17-04-2025 15:33:52.972
+CRC-Response (SeqNo: 46) - 46,2,I001,2*7d22 * 17-04-2025 15:33:53.93
+CRC-Response (SeqNo: 46) - 46,2,F000,2*4273 * 17-04-2025 15:33:59.555
+RA Picked Rack From L2 * 17-04-2025 15:33:59.557
+Command Sent (SeqNo: 47, Retry: 0) Rack-2 Placed in H2 - With RA:2 - #47,3,2,2688,8700,0,1*1987  * 17-04-2025 15:34:00.111
+CRC-Response (SeqNo: 47) - 47,3,I001,2*74b2 * 17-04-2025 15:34:00.242
+CRC-Response (SeqNo: 47) - 47,3,F000,2*4be3 * 17-04-2025 15:34:06.691
+RA Placed Rack in H2 * 17-04-2025 15:34:06.694
+Command Sent (SeqNo: 48, Retry: 0) HEATER DOOR CLOSE - #48,8,1,0*cd18  * 17-04-2025 15:34:07.698
+CRC-Response (SeqNo: 48) - 48,8,I001*b8d5 * 17-04-2025 15:34:07.839
+CRC-Response (SeqNo: 48) - 48,8,F000*6c17 * 17-04-2025 15:34:08.173
+Command Sent (SeqNo: 49, Retry: 0) READ TEMPERATURE - #49,11*d58c  * 17-04-2025 15:34:08.750
+CRC-Response (SeqNo: 49) - 49,11,F000,545*c00a * 17-04-2025 15:34:08.864
+Command Sent (SeqNo: 50, Retry: 0) READ TEMPERATURE - #50,11*89b2  * 17-04-2025 15:34:23.928
+CRC-Response (SeqNo: 50) - 50,11,F000,545*c817 * 17-04-2025 15:34:24.48
+Command Sent (SeqNo: 51, Retry: 0) READ TEMPERATURE - #51,11*75b3  * 17-04-2025 15:34:27.709
+CRC-Response (SeqNo: 51) - 51,11,F000,545*4915 * 17-04-2025 15:34:27.830
+Command Sent (SeqNo: 52, Retry: 0) READ TEMPERATURE - #52,11*31b3  * 17-04-2025 15:34:39.120
+CRC-Response (SeqNo: 52) - 52,11,F000,545*8a10 * 17-04-2025 15:34:39.236
+Command Sent (SeqNo: 53, Retry: 0) READ TEMPERATURE - #53,11*cdb2  * 17-04-2025 15:34:54.311
+CRC-Response (SeqNo: 53) - 53,11,F000,545*0b12 * 17-04-2025 15:34:54.435
+Command Sent (SeqNo: 54, Retry: 0) READ TEMPERATURE - #54,11*b9b3  * 17-04-2025 15:35:09.511
+CRC-Response (SeqNo: 54) - 54,11,F000,545*4c19 * 17-04-2025 15:35:09.643
+Command Sent (SeqNo: 55, Retry: 0) READ TEMPERATURE - #55,11*45b2  * 17-04-2025 15:35:24.718
+CRC-Response (SeqNo: 55) - 55,11,F000,545*cd1b * 17-04-2025 15:35:24.843
+Command Sent (SeqNo: 56, Retry: 0) READ TEMPERATURE - #56,11*01b2  * 17-04-2025 15:35:39.929
+CRC-Response (SeqNo: 56) - 56,11,F000,545*0e1e * 17-04-2025 15:35:40.53
+Command Sent (SeqNo: 57, Retry: 0) READ TEMPERATURE - #57,11*fdb3  * 17-04-2025 15:35:55.116
+CRC-Response (SeqNo: 57) - 57,11,F000,545*8f1c * 17-04-2025 15:35:55.237
+Command Sent (SeqNo: 58, Retry: 0) READ TEMPERATURE - #58,11*e9b0  * 17-04-2025 15:36:10.307
+CRC-Response (SeqNo: 58) - 58,11,F000,545*8008 * 17-04-2025 15:36:10.431
+Command Sent (SeqNo: 59, Retry: 0) READ TEMPERATURE - #59,11*15b1  * 17-04-2025 15:36:25.487
+CRC-Response (SeqNo: 59) - 59,11,F000,545*010a * 17-04-2025 15:36:25.614
+Command Sent (SeqNo: 60, Retry: 0) READ TEMPERATURE - #60,11*89f6  * 17-04-2025 15:36:40.691
+CRC-Response (SeqNo: 60) - 60,11,F000,545*cb14 * 17-04-2025 15:36:40.820
+Command Sent (SeqNo: 61, Retry: 0) READ TEMPERATURE - #61,11*75f7  * 17-04-2025 15:36:55.875
+CRC-Response (SeqNo: 61) - 61,11,F000,545*4a16 * 17-04-2025 15:36:56.0
+Command Sent (SeqNo: 62, Retry: 0) READ TEMPERATURE - #62,11*31f7  * 17-04-2025 15:37:11.75
+CRC-Response (SeqNo: 62) - 62,11,F000,545*8913 * 17-04-2025 15:37:11.195
+Command Sent (SeqNo: 63, Retry: 0) READ TEMPERATURE - #63,11*cdf6  * 17-04-2025 15:37:26.276
+CRC-Response (SeqNo: 63) - 63,11,F000,545*0811 * 17-04-2025 15:37:26.403
+Command Sent (SeqNo: 64, Retry: 0) READ TEMPERATURE - #64,11*b9f7  * 17-04-2025 15:37:42.493
+CRC-Response (SeqNo: 64) - 64,11,F000,545*4f1a * 17-04-2025 15:37:42.611
+Command Sent (SeqNo: 65, Retry: 0) HEATER DOOR OPEN - #65,8,1,1*1484  * 17-04-2025 15:37:46.943
+CRC-Response (SeqNo: 65) - 65,8,I001*410d * 17-04-2025 15:37:47.70
+CRC-Response (SeqNo: 65) - 65,8,F000*95cf * 17-04-2025 15:37:47.411
+Command Sent (SeqNo: 66, Retry: 0) Rack-1 Picked from H1 - With RA:2 - #66,2,2,2688,1000,0,1*3d24  * 17-04-2025 15:37:47.985
+CRC-Response (SeqNo: 66) - 66,2,I001,2*c529 * 17-04-2025 15:37:48.107
+CRC-Response (SeqNo: 66) - 66,2,F000,2*fa78 * 17-04-2025 15:37:53.877
+RA Picked Rack From H1 * 17-04-2025 15:37:53.886
+Command Sent (SeqNo: 67, Retry: 0) HEATER DOOR CLOSE - #67,8,1,0*1466  * 17-04-2025 15:37:54.110
+CRC-Response (SeqNo: 67) - 67,8,I001*988c * 17-04-2025 15:37:54.251
+CRC-Response (SeqNo: 67) - 67,8,F000*4c4e * 17-04-2025 15:37:54.589
+Command Sent (SeqNo: 68, Retry: 0) Rack-1 Placed in J1 - With RA:2 - #68,3,2,10304,800,0,0*d494  * 17-04-2025 15:37:55.173
+CRC-Response (SeqNo: 68) - 68,3,I001,2*fc89 * 17-04-2025 15:37:55.298
+CRC-Response (SeqNo: 68) - 68,3,F000,2*c3d8 * 17-04-2025 15:38:01.331
+RA Placed Rack in J1 * 17-04-2025 15:38:01.334
+Command Sent (SeqNo: 69, Retry: 0) READ TEMPERATURE - #69,11*15f5  * 17-04-2025 15:38:05.990
+CRC-Response (SeqNo: 69) - 69,11,F000,545*0209 * 17-04-2025 15:38:06.109
+Command Sent (SeqNo: 70, Retry: 0) READ TEMPERATURE - #70,11*49cb  * 17-04-2025 15:38:21.178
+CRC-Response (SeqNo: 70) - 70,11,F000,447*0bc4 * 17-04-2025 15:38:21.326
+Command Sent (SeqNo: 71, Retry: 0) READ TEMPERATURE - #71,11*b5ca  * 17-04-2025 15:38:36.394
+CRC-Response (SeqNo: 71) - 71,11,F000,545*8b16 * 17-04-2025 15:38:36.517
+Command Sent (SeqNo: 72, Retry: 0) READ TEMPERATURE - #72,11*f1ca  * 17-04-2025 15:38:51.587
+CRC-Response (SeqNo: 72) - 72,11,F000,545*4813 * 17-04-2025 15:38:51.707
+Command Sent (SeqNo: 73, Retry: 0) READ TEMPERATURE - #73,11*0dcb  * 17-04-2025 15:39:06.778
+CRC-Response (SeqNo: 73) - 73,11,F000,-273*d8ae * 17-04-2025 15:39:06.901
+Command Sent (SeqNo: 74, Retry: 0) READ TEMPERATURE - #74,11*79ca  * 17-04-2025 15:39:21.970
+CRC-Response (SeqNo: 74) - 74,11,F000,545*8e1a * 17-04-2025 15:39:22.96
+Command Sent (SeqNo: 75, Retry: 0) READ TEMPERATURE - #75,11*85cb  * 17-04-2025 15:39:37.163
+CRC-Response (SeqNo: 75) - 75,11,F000,545*0f18 * 17-04-2025 15:39:37.284
+Command Sent (SeqNo: 76, Retry: 0) READ TEMPERATURE - #76,11*c1cb  * 17-04-2025 15:39:53.352
+CRC-Response (SeqNo: 76) - 76,11,F000,545*cc1d * 17-04-2025 15:39:53.470
+Command Sent (SeqNo: 77, Retry: 0) Rack-1 Picked from J1 - With RA:2 - #77,2,2,10304,800,0,0*80af  * 17-04-2025 15:40:02.174
+CRC-Response (SeqNo: 77) - 77,2,I001,2*fc7c * 17-04-2025 15:40:02.298
+CRC-Response (SeqNo: 77) - 77,2,F000,2*c32d * 17-04-2025 15:40:07.367
+RA Picked Rack From J1 * 17-04-2025 15:40:07.369
+Command Sent (SeqNo: 78, Retry: 0) Rack-1 Placed in J2 - With RA:2 - #78,3,2,13934,800,0,0*d67c  * 17-04-2025 15:40:07.805
+CRC-Response (SeqNo: 78) - 78,3,I001,2*008d * 17-04-2025 15:40:07.942
+CRC-Response (SeqNo: 78) - 78,3,F000,2*3fdc * 17-04-2025 15:40:13.530
+RA Placed Rack in J2 * 17-04-2025 15:40:13.533
+Command Sent (SeqNo: 79, Retry: 0) READ TEMPERATURE - #79,11*d5c8  * 17-04-2025 15:40:18.234
+CRC-Response (SeqNo: 79) - 79,11,F000,545*c309 * 17-04-2025 15:40:18.357
+Command Sent (SeqNo: 80, Retry: 0) HEATER DOOR OPEN - #80,8,1,1*9850  * 17-04-2025 15:40:23.839
+CRC-Response (SeqNo: 80) - 80,8,I001*1e81 * 17-04-2025 15:40:23.959
+CRC-Response (SeqNo: 80) - 80,8,F000*ca43 * 17-04-2025 15:40:24.298
+Rack - R3Protocol Started * 17-04-2025 15:40:24.828
+Command Sent (SeqNo: 81, Retry: 0) Rack-3 Picked from L3 - With RA:2 - #81,2,2,10304,16380,0,0*cc63  * 17-04-2025 15:40:24.901
+CRC-Response (SeqNo: 81) - 81,2,I001,2*f7ac * 17-04-2025 15:40:25.27
+CRC-Response (SeqNo: 81) - 81,2,F000,2*c8fd * 17-04-2025 15:40:31.422
+RA Picked Rack From L3 * 17-04-2025 15:40:31.424
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Placed in H1 - With RA:2 - #82,3,2,2688,1000,0,1*b2ed  * 17-04-2025 15:40:31.529
+CRC-Response (SeqNo: 82) - 82,3,I001,2*349d * 17-04-2025 15:40:31.657
+CRC-Response (SeqNo: 82) - 82,3,F000,2*0bcc * 17-04-2025 15:40:38.58
+RA Placed Rack in H1 * 17-04-2025 15:40:38.60
+Command Sent (SeqNo: 83, Retry: 0) HEATER DOOR CLOSE - #83,8,1,0*58a2  * 17-04-2025 15:40:38.708
+CRC-Response (SeqNo: 83) - 83,8,I001*0bc1 * 17-04-2025 15:40:38.848
+CRC-Response (SeqNo: 83) - 83,8,F000*df03 * 17-04-2025 15:40:39.185
+Command Sent (SeqNo: 84, Retry: 0) READ TEMPERATURE - #84,11*789e  * 17-04-2025 15:40:39.747
+CRC-Response (SeqNo: 84) - 84,11,F000,545*8115 * 17-04-2025 15:40:39.864
+Command Sent (SeqNo: 85, Retry: 0) READ TEMPERATURE - #85,11*849f  * 17-04-2025 15:40:54.958
+CRC-Response (SeqNo: 85) - 85,11,F000,545*0017 * 17-04-2025 15:40:55.111
+Command Sent (SeqNo: 86, Retry: 0) READ TEMPERATURE - #86,11*c09f  * 17-04-2025 15:40:59.713
+CRC-Response (SeqNo: 86) - 86,11,F000,545*c312 * 17-04-2025 15:40:59.828
+Command Sent (SeqNo: 87, Retry: 0) READ TEMPERATURE - #87,11*3c9e  * 17-04-2025 15:41:10.182
+CRC-Response (SeqNo: 87) - 87,11,F000,545*4210 * 17-04-2025 15:41:10.299
+Command Sent (SeqNo: 88, Retry: 0) READ TEMPERATURE - #88,11*289d  * 17-04-2025 15:41:25.372
+CRC-Response (SeqNo: 88) - 88,11,F000,545*4d04 * 17-04-2025 15:41:25.499
+Command Sent (SeqNo: 89, Retry: 0) READ TEMPERATURE - #89,11*d49c  * 17-04-2025 15:41:40.563
+CRC-Response (SeqNo: 89) - 89,11,F000,545*cc06 * 17-04-2025 15:41:40.676
+Command Sent (SeqNo: 90, Retry: 0) READ TEMPERATURE - #90,11*88a2  * 17-04-2025 15:41:55.735
+CRC-Response (SeqNo: 90) - 90,11,F000,545*c41b * 17-04-2025 15:41:55.853
+Command Sent (SeqNo: 91, Retry: 0) READ TEMPERATURE - #91,11*74a3  * 17-04-2025 15:42:11.956
+CRC-Response (SeqNo: 91) - 91,11,F000,447*44c9 * 17-04-2025 15:42:12.74
+Command Sent (SeqNo: 92, Retry: 0) Rack-1 Picked from J2 - With RA:2 - #92,2,2,13934,800,0,0*b0df  * 17-04-2025 15:42:14.388
+CRC-Response (SeqNo: 92) - 92,2,I001,2*0458 * 17-04-2025 15:42:14.527
+CRC-Response (SeqNo: 92) - 92,2,F000,2*3b09 * 17-04-2025 15:42:20.952
+RA Picked Rack From J2 * 17-04-2025 15:42:20.956
+Command Sent (SeqNo: 93, Retry: 0) Rack-1 Placed in J4 - With RA:2 - #93,3,2,21194,800,0,0*9845  * 17-04-2025 15:42:21.516
+CRC-Response (SeqNo: 93) - 93,3,I001,2*0dc8 * 17-04-2025 15:42:21.653
+CRC-Response (SeqNo: 93) - 93,3,F000,2*3299 * 17-04-2025 15:42:27.653
+RA Placed Rack in J4 * 17-04-2025 15:42:27.655
+Command Sent (SeqNo: 94, Retry: 0) READ TEMPERATURE - #94,11*b8a3  * 17-04-2025 15:42:32.495
+CRC-Response (SeqNo: 94) - 94,11,F000,545*4015 * 17-04-2025 15:42:32.608
+Command Sent (SeqNo: 95, Retry: 0) READ TEMPERATURE - #95,11*44a2  * 17-04-2025 15:42:47.683
+CRC-Response (SeqNo: 95) - 95,11,F000,545*c117 * 17-04-2025 15:42:47.799
+Command Sent (SeqNo: 96, Retry: 0) READ TEMPERATURE - #96,11*00a2  * 17-04-2025 15:43:02.857
+CRC-Response (SeqNo: 96) - 96,11,F000,545*0212 * 17-04-2025 15:43:02.976
+Command Sent (SeqNo: 97, Retry: 0) READ TEMPERATURE - #97,11*fca3  * 17-04-2025 15:43:18.46
+CRC-Response (SeqNo: 97) - 97,11,F000,545*8310 * 17-04-2025 15:43:18.164
+Command Sent (SeqNo: 98, Retry: 0) READ TEMPERATURE - #98,11*e8a0  * 17-04-2025 15:43:33.253
+CRC-Response (SeqNo: 98) - 98,11,F000,545*8c04 * 17-04-2025 15:43:33.392
+Command Sent (SeqNo: 99, Retry: 0) READ TEMPERATURE - #99,11*14a1  * 17-04-2025 15:43:48.474
+CRC-Response (SeqNo: 99) - 99,11,F000,-273*d62a * 17-04-2025 15:43:48.597
+Command Sent (SeqNo: 100, Retry: 0) READ TEMPERATURE - #100,11*b35e  * 17-04-2025 15:44:04.680
+CRC-Response (SeqNo: 100) - 100,11,F000,545*6708 * 17-04-2025 15:44:04.796
+Command Sent (SeqNo: 101, Retry: 0) HEATER DOOR OPEN - #101,8,1,1*9452  * 17-04-2025 15:44:07.840
+CRC-Response (SeqNo: 101) - 101,8,I001*df0c * 17-04-2025 15:44:07.961
+CRC-Response (SeqNo: 101) - 101,8,F000*0bce * 17-04-2025 15:44:08.307
+Command Sent (SeqNo: 102, Retry: 0) Rack-2 Picked from H2 - With RA:2 - #102,2,2,2688,8700,0,1*e3f1  * 17-04-2025 15:44:08.876
+CRC-Response (SeqNo: 102) - 102,2,I001,2*fda9 * 17-04-2025 15:44:08.986
+CRC-Response (SeqNo: 102) - 102,2,F000,2*c2f8 * 17-04-2025 15:44:16.261
+RA Picked Rack From H2 * 17-04-2025 15:44:16.263
+Command Sent (SeqNo: 103, Retry: 0) HEATER DOOR CLOSE - #103,8,1,0*94b0  * 17-04-2025 15:44:16.460
+CRC-Response (SeqNo: 103) - 103,8,I001*068d * 17-04-2025 15:44:16.592
+CRC-Response (SeqNo: 103) - 103,8,F000*d24f * 17-04-2025 15:44:16.928
+Command Sent (SeqNo: 104, Retry: 0) Rack-2 Placed in J1 - With RA:2 - #104,3,2,10304,800,0,0*c115  * 17-04-2025 15:44:17.508
+CRC-Response (SeqNo: 104) - 104,3,I001,2*2e88 * 17-04-2025 15:44:17.625
+CRC-Response (SeqNo: 104) - 104,3,F000,2*11d9 * 17-04-2025 15:44:23.685
+RA Placed Rack in J1 * 17-04-2025 15:44:23.687
+Command Sent (SeqNo: 105, Retry: 0) READ TEMPERATURE - #105,11*7f5e  * 17-04-2025 15:44:27.907
+CRC-Response (SeqNo: 105) - 105,11,F000,545*6204 * 17-04-2025 15:44:28.26
+Command Sent (SeqNo: 106, Retry: 0) Rack-1 Picked from J4 - With RA:2 - #106,2,2,21194,800,0,0*7e1e  * 17-04-2025 15:44:28.497
+CRC-Response (SeqNo: 106) - 106,2,I001,2*28e8 * 17-04-2025 15:44:28.617
+CRC-Response (SeqNo: 106) - 106,2,F000,2*17b9 * 17-04-2025 15:44:35.31
+RA Picked Rack From J4 * 17-04-2025 15:44:35.33
+Command Sent (SeqNo: 107, Retry: 0) Rack-1 Placed in J5 - With RA:2 - #107,3,2,24824,800,0,0*6721  * 17-04-2025 15:44:35.596
+CRC-Response (SeqNo: 107) - 107,3,I001,2*2178 * 17-04-2025 15:44:35.732
+CRC-Response (SeqNo: 107) - 107,3,F000,2*1e29 * 17-04-2025 15:44:41.324
+RA Placed Rack in J5 * 17-04-2025 15:44:41.326
+Command Sent (SeqNo: 108, Retry: 0) READ TEMPERATURE - #108,11*d35c  * 17-04-2025 15:44:46.552
+CRC-Response (SeqNo: 108) - 108,11,F000,545*2f17 * 17-04-2025 15:44:46.673
+Command Sent (SeqNo: 109, Retry: 0) READ TEMPERATURE - #109,11*2f5d  * 17-04-2025 15:45:01.766
+CRC-Response (SeqNo: 109) - 109,11,F000,545*ae15 * 17-04-2025 15:45:01.878
+Command Sent (SeqNo: 110, Retry: 0) READ TEMPERATURE - #110,11*7363  * 17-04-2025 15:45:16.937
+CRC-Response (SeqNo: 110) - 110,11,F000,545*a608 * 17-04-2025 15:45:17.61
+Command Sent (SeqNo: 111, Retry: 0) READ TEMPERATURE - #111,11*8f62  * 17-04-2025 15:45:32.129
+CRC-Response (SeqNo: 111) - 111,11,F000,-273*d300 * 17-04-2025 15:45:32.256
+Command Sent (SeqNo: 112, Retry: 0) READ TEMPERATURE - #112,11*cb62  * 17-04-2025 15:45:47.334
+CRC-Response (SeqNo: 112) - 112,11,F000,-273*d003 * 17-04-2025 15:45:47.459
+Command Sent (SeqNo: 113, Retry: 0) READ TEMPERATURE - #113,11*3763  * 17-04-2025 15:46:02.541
+CRC-Response (SeqNo: 113) - 113,11,F000,545*650d * 17-04-2025 15:46:02.664
+Command Sent (SeqNo: 114, Retry: 0) READ TEMPERATURE - #114,11*4362  * 17-04-2025 15:46:18.736
+CRC-Response (SeqNo: 114) - 114,11,F000,545*2206 * 17-04-2025 15:46:18.862
+Command Sent (SeqNo: 115, Retry: 0) Rack-2 Picked from J1 - With RA:2 - #115,2,2,10304,800,0,0*7c44  * 17-04-2025 15:46:24.507
+CRC-Response (SeqNo: 115) - 115,2,I001,2*db1c * 17-04-2025 15:46:24.629
+CRC-Response (SeqNo: 115) - 115,2,F000,2*e44d * 17-04-2025 15:46:31.429
+RA Picked Rack From J1 * 17-04-2025 15:46:31.431
+Command Sent (SeqNo: 116, Retry: 0) Rack-2 Placed in J2 - With RA:2 - #116,3,2,13934,800,0,0*7b84  * 17-04-2025 15:46:31.642
+CRC-Response (SeqNo: 116) - 116,3,I001,2*182d * 17-04-2025 15:46:31.770
+CRC-Response (SeqNo: 116) - 116,3,F000,2*277c * 17-04-2025 15:46:37.362
+RA Placed Rack in J2 * 17-04-2025 15:46:37.365
+Command Sent (SeqNo: 117, Retry: 0) Rack-1 Picked from J5 - With RA:2 - #117,2,2,24824,800,0,0*264d  * 17-04-2025 15:46:41.947
+CRC-Response (SeqNo: 117) - 117,2,I001,2*11bd * 17-04-2025 15:46:42.69
+CRC-Response (SeqNo: 117) - 117,2,F000,2*2eec * 17-04-2025 15:46:48.471
+RA Picked Rack From J5 * 17-04-2025 15:46:48.474
+Command Sent (SeqNo: 118, Retry: 0) Rack-1 Placed in J6 - With RA:2 - #118,3,2,28454,800,0,0*39d5  * 17-04-2025 15:46:48.586
+CRC-Response (SeqNo: 118) - 118,3,I001,2*ed4c * 17-04-2025 15:46:48.722
+CRC-Response (SeqNo: 118) - 118,3,F000,2*d21d * 17-04-2025 15:46:54.321
+RA Placed Rack in J6 * 17-04-2025 15:46:54.323
+Command Sent (SeqNo: 119, Retry: 0) READ TEMPERATURE - #119,11*ef60  * 17-04-2025 15:46:59.590
+CRC-Response (SeqNo: 119) - 119,11,F000,545*6f15 * 17-04-2025 15:46:59.704
+Command Sent (SeqNo: 120, Retry: 0) Home Command - #120,5,00111111*3914  * 17-04-2025 15:47:10.186
+CRC-Response (SeqNo: 120) - 120,5,I001,00111111*7528 * 17-04-2025 15:47:10.318
+CRC-Response (SeqNo: 120) - 120,5,F000*ba17 * 17-04-2025 15:47:10.319
+Command Sent (SeqNo: 121, Retry: 0) HEATER DOOR OPEN - #121,8,1,1*4dd3  * 17-04-2025 15:47:10.889
+CRC-Response (SeqNo: 121) - 121,8,I001*bf15 * 17-04-2025 15:47:11.12
+CRC-Response (SeqNo: 121) - 121,8,F000*6bd7 * 17-04-2025 15:47:11.348
+Command Sent (SeqNo: 122, Retry: 0) Level Sensing For L1 - #122,4,17564,16380,0,0*79d6  * 17-04-2025 15:47:11.909
+CRC-Response (SeqNo: 122) - 122,4,I001*6655 * 17-04-2025 15:47:12.33
+CRC-Response (SeqNo: 122) - 122,4,F000,983*1b07 * 17-04-2025 15:47:20.302
+L1 Value - 983 * 17-04-2025 15:47:20.318
+Command Sent (SeqNo: 123, Retry: 0) Level Sensing For L2 - #123,4,13934,16380,0,0*81f3  * 17-04-2025 15:47:20.878
+CRC-Response (SeqNo: 123) - 123,4,I001*aa94 * 17-04-2025 15:47:20.998
+CRC-Response (SeqNo: 123) - 123,4,F000,982*183b * 17-04-2025 15:47:23.284
+L2 Value - 982 * 17-04-2025 15:47:23.302
+Command Sent (SeqNo: 124, Retry: 0) Level Sensing For L3 - #124,4,10304,16380,0,0*f859  * 17-04-2025 15:47:23.865
+CRC-Response (SeqNo: 124) - 124,4,I001*4cd5 * 17-04-2025 15:47:23.978
+CRC-Response (SeqNo: 124) - 124,4,F000,985*118f * 17-04-2025 15:47:26.266
+L3 Value - 985 * 17-04-2025 15:47:26.277
+Command Sent (SeqNo: 125, Retry: 0) Home Command - #125,5,01111111*f508  * 17-04-2025 15:47:26.841
+CRC-Response (SeqNo: 125) - 125,5,I001,01111111*e42b * 17-04-2025 15:47:26.964
+CRC-Response (SeqNo: 125) - 125,5,F000*85d7 * 17-04-2025 15:47:26.964
+Command Sent (SeqNo: 126, Retry: 0) Home Command - #126,5,01111111*f10c  * 17-04-2025 15:47:28.543
+CRC-Response (SeqNo: 126) - 126,5,I001,01111111*14db * 17-04-2025 15:47:28.681
+CRC-Response (SeqNo: 126) - 126,5,F000*9097 * 17-04-2025 15:47:28.681
+Rack - 4Protocol Started * 17-04-2025 15:47:29.968
+Command Sent (SeqNo: 127, Retry: 0) Rack-4 Picked from L1 - With RA:2 - #127,2,2,17564,16380,0,0*a5a3  * 17-04-2025 15:47:30.40
+CRC-Response (SeqNo: 127) - 127,2,I001,2*55b2 * 17-04-2025 15:47:30.169
+CRC-Response (SeqNo: 127) - 127,2,F000,2*6ae3 * 17-04-2025 15:47:37.334
+RA Picked Rack From L1 * 17-04-2025 15:47:37.336
+Command Sent (SeqNo: 128, Retry: 0) Rack-4 Placed in H2 - With RA:2 - #128,3,2,2688,8700,0,1*4842  * 17-04-2025 15:47:37.688
+CRC-Response (SeqNo: 128) - 128,3,I001,2*a943 * 17-04-2025 15:47:37.813
+CRC-Response (SeqNo: 128) - 128,3,F000,2*9612 * 17-04-2025 15:47:44.677
+RA Placed Rack in H2 * 17-04-2025 15:47:44.680
+Command Sent (SeqNo: 129, Retry: 0) HEATER DOOR CLOSE - #129,8,1,0*4d9b  * 17-04-2025 15:47:45.299
+CRC-Response (SeqNo: 129) - 129,8,I001*1914 * 17-04-2025 15:47:45.439
+CRC-Response (SeqNo: 129) - 129,8,F000*cdd6 * 17-04-2025 15:47:45.777
+Command Sent (SeqNo: 130, Retry: 0) READ TEMPERATURE - #130,11*b31a  * 17-04-2025 15:47:46.348
+CRC-Response (SeqNo: 130) - 130,11,F000,545*640b * 17-04-2025 15:47:46.471
+Command Sent (SeqNo: 131, Retry: 0) READ TEMPERATURE - #131,11*4f1b  * 17-04-2025 15:48:01.552
+CRC-Response (SeqNo: 131) - 131,11,F000,447*e4d9 * 17-04-2025 15:48:01.668
+Command Sent (SeqNo: 132, Retry: 0) READ TEMPERATURE - #132,11*0b1b  * 17-04-2025 15:48:06.56
+CRC-Response (SeqNo: 132) - 132,11,F000,545*260c * 17-04-2025 15:48:06.173
+Command Sent (SeqNo: 133, Retry: 0) READ TEMPERATURE - #133,11*f71a  * 17-04-2025 15:48:16.752
+CRC-Response (SeqNo: 133) - 133,11,F000,545*a70e * 17-04-2025 15:48:16.871
+Command Sent (SeqNo: 134, Retry: 0) READ TEMPERATURE - #134,11*831b  * 17-04-2025 15:48:32.955
+CRC-Response (SeqNo: 134) - 134,11,F000,545*e005 * 17-04-2025 15:48:33.77
+Command Sent (SeqNo: 135, Retry: 0) WATER VALVE - 1 CONTROL ON - #135,13,1,1*4bcb  * 17-04-2025 15:48:38.6
+5 Seconds Timer increments in Jar J2 for R2 as Command Execution under process in other function and timer updated for tmr_r2_incub() * 17-04-2025 15:48:38.11
+CRC-Response (SeqNo: 135) - 135,13,F000*61d1 * 17-04-2025 15:48:38.122
+Command Sent (SeqNo: 136, Retry: 0) Rack-2 Picked from J2 - With RA:2 - #136,2,2,13934,800,0,0*09ac  * 17-04-2025 15:48:43.78
+CRC-Response (SeqNo: 136) - 136,2,I001,2*6ce7 * 17-04-2025 15:48:43.200
+CRC-Response (SeqNo: 136) - 136,2,F000,2*53b6 * 17-04-2025 15:48:49.651
+RA Picked Rack From J2 * 17-04-2025 15:48:49.653
+Command Sent (SeqNo: 137, Retry: 0) Rack-2 Placed in J4 - With RA:2 - #137,3,2,21194,800,0,0*2136  * 17-04-2025 15:48:50.199
+CRC-Response (SeqNo: 137) - 137,3,I001,2*6577 * 17-04-2025 15:48:50.336
+5 Seconds Timer increments in Jar J6 for R1 as Command Execution under process in other function and timer updated for tmr_r1_incub() * 17-04-2025 15:48:54.960
+CRC-Response (SeqNo: 137) - 137,3,F000,2*5a26 * 17-04-2025 15:48:56.329
+RA Placed Rack in J4 * 17-04-2025 15:48:56.332
+Command Sent (SeqNo: 138, Retry: 0) Rack-1 Picked from J6 - With RA:2 - #138,2,2,28454,800,0,0*4bfd  * 17-04-2025 15:49:00.43
+CRC-Response (SeqNo: 138) - 138,2,I001,2*9986 * 17-04-2025 15:49:00.166
+CRC-Response (SeqNo: 138) - 138,2,F000,2*a6d7 * 17-04-2025 15:49:06.158
+RA Picked Rack From J6 * 17-04-2025 15:49:06.161
+Command Sent (SeqNo: 139, Retry: 0) RA-1 Movement - #139,5,00000111*4937  * 17-04-2025 15:49:06.662
+CRC-Response (SeqNo: 139) - 139,5,I001,00000111*3692 * 17-04-2025 15:49:06.798
+CRC-Response (SeqNo: 139) - 139,5,F000*40da * 17-04-2025 15:49:06.798
+Command Sent (SeqNo: 140, Retry: 0) Rack-1 Placed in W1 - With RA:2 - #140,3,2,42974,800,0,0*b570  * 17-04-2025 15:49:07.742
+CRC-Response (SeqNo: 140) - 140,3,I001,2*cbdc * 17-04-2025 15:49:07.868
+CRC-Response (SeqNo: 140) - 140,3,F000,2*f48d * 17-04-2025 15:49:14.677
+RA Placed Rack in W1 * 17-04-2025 15:49:14.678
+Command Sent (SeqNo: 141, Retry: 0) RA2 Home Command - #141,5,00111000*ac71  * 17-04-2025 15:49:14.880
+CRC-Response (SeqNo: 141) - 141,5,I001,00111000*fc08 * 17-04-2025 15:49:15.409
+CRC-Response (SeqNo: 141) - 141,5,F000*d6fd * 17-04-2025 15:49:15.409
+Command Sent (SeqNo: 142, Retry: 0) READ TEMPERATURE - #142,11*cbae  * 17-04-2025 15:49:18.68
+CRC-Response (SeqNo: 142) - 142,11,F000,447*e0da * 17-04-2025 15:49:18.183
+Command Sent (SeqNo: 143, Retry: 0) READ TEMPERATURE - #143,11*37af  * 17-04-2025 15:49:33.243
+CRC-Response (SeqNo: 143) - 143,11,F000,545*6008 * 17-04-2025 15:49:33.364
+Command Sent (SeqNo: 144, Retry: 0) READ TEMPERATURE - #144,11*43ae  * 17-04-2025 15:49:48.419
+CRC-Response (SeqNo: 144) - 144,11,F000,545*2703 * 17-04-2025 15:49:48.547
+Command Sent (SeqNo: 145, Retry: 0) READ TEMPERATURE - #145,11*bfaf  * 17-04-2025 15:50:03.613
+CRC-Response (SeqNo: 145) - 145,11,F000,545*a601 * 17-04-2025 15:50:03.725
+Command Sent (SeqNo: 146, Retry: 0) READ TEMPERATURE - #146,11*fbaf  * 17-04-2025 15:50:18.806
+CRC-Response (SeqNo: 146) - 146,11,F000,545*6504 * 17-04-2025 15:50:18.928
+Command Sent (SeqNo: 147, Retry: 0) READ TEMPERATURE - #147,11*07ae  * 17-04-2025 15:50:35.8
+CRC-Response (SeqNo: 147) - 147,11,F000,447*e5d6 * 17-04-2025 15:50:35.139
+Command Sent (SeqNo: 148, Retry: 0) HEATER DOOR OPEN - #148,8,1,1*67ca  * 17-04-2025 15:50:38.703
+CRC-Response (SeqNo: 148) - 148,8,I001*75fe * 17-04-2025 15:50:38.826
+CRC-Response (SeqNo: 148) - 148,8,F000*a13c * 17-04-2025 15:50:39.164
+Command Sent (SeqNo: 149, Retry: 0) Rack-3 Picked from H1 - With RA:2 - #149,2,2,2688,1000,0,1*e810  * 17-04-2025 15:50:39.745
+CRC-Response (SeqNo: 149) - 149,2,I001,2*28cd * 17-04-2025 15:50:39.866
+CRC-Response (SeqNo: 149) - 149,2,F000,2*179c * 17-04-2025 15:50:45.360
+RA Picked Rack From H1 * 17-04-2025 15:50:45.364
+Command Sent (SeqNo: 150, Retry: 0) HEATER DOOR CLOSE - #150,8,1,0*ab43  * 17-04-2025 15:50:45.846
+CRC-Response (SeqNo: 150) - 150,8,I001*43f2 * 17-04-2025 15:50:45.982
+CRC-Response (SeqNo: 150) - 150,8,F000*9730 * 17-04-2025 15:50:46.319
+Command Sent (SeqNo: 151, Retry: 0) Rack-3 Placed in J1 - With RA:2 - #151,3,2,10304,800,0,0*5815  * 17-04-2025 15:50:46.893
+CRC-Response (SeqNo: 151) - 151,3,I001,2*f289 * 17-04-2025 15:50:47.16
+CRC-Response (SeqNo: 151) - 151,3,F000,2*cdd8 * 17-04-2025 15:50:53.58
+RA Placed Rack in J1 * 17-04-2025 15:50:53.61
+Command Sent (SeqNo: 152, Retry: 0) Rack-2 Picked from J4 - With RA:2 - #152,2,2,21194,800,0,0*1b23  * 17-04-2025 15:50:57.54
+CRC-Response (SeqNo: 152) - 152,2,I001,2*31b8 * 17-04-2025 15:50:57.177
+CRC-Response (SeqNo: 152) - 152,2,F000,2*0ee9 * 17-04-2025 15:51:03.595
+RA Picked Rack From J4 * 17-04-2025 15:51:03.597
+Command Sent (SeqNo: 153, Retry: 0) Rack-2 Placed in J5 - With RA:2 - #153,3,2,24824,800,0,0*021c  * 17-04-2025 15:51:04.160
+CRC-Response (SeqNo: 153) - 153,3,I001,2*3828 * 17-04-2025 15:51:04.295
+CRC-Response (SeqNo: 153) - 153,3,F000,2*0779 * 17-04-2025 15:51:09.899
+RA Placed Rack in J5 * 17-04-2025 15:51:09.903
+Command Sent (SeqNo: 154, Retry: 0) READ TEMPERATURE - #154,11*8393  * 17-04-2025 15:51:14.791
+CRC-Response (SeqNo: 154) - 154,11,F000,545*e603 * 17-04-2025 15:51:14.911
+Command Sent (SeqNo: 155, Retry: 0) WATER VALVE - 1 CONTROL OFF - #155,13,1,0*2b21  * 17-04-2025 15:51:15.79
+CRC-Response (SeqNo: 155) - 155,13,F000*7e31 * 17-04-2025 15:51:15.205
+Command Sent (SeqNo: 156, Retry: 0) Rack-1 Picked from W1 - With RA:1 - #156,2,1,42974,800,0,0*7dd7  * 17-04-2025 15:51:15.276
+CRC-Response (SeqNo: 156) - 156,2,I001,1*e5b9 * 17-04-2025 15:51:15.395
+CRC-Response (SeqNo: 156) - 156,2,F000,1*dae8 * 17-04-2025 15:51:23.164
+RA Picked Rack From W1 * 17-04-2025 15:51:23.168
+Command Sent (SeqNo: 157, Retry: 0) RA-2 Movement - #157,5,00111000*257b  * 17-04-2025 15:51:23.699
+CRC-Response (SeqNo: 157) - 157,5,I001,00111000*a1ba * 17-04-2025 15:51:23.831
+CRC-Response (SeqNo: 157) - 157,5,F000*6c70 * 17-04-2025 15:51:23.831
+Command Sent (SeqNo: 158, Retry: 0) Rack-1 Placed in J8 - With RA:1 - #158,3,1,35714,800,0,0*7fc6  * 17-04-2025 15:51:24.767
+CRC-Response (SeqNo: 158) - 158,3,I001,1*dc19 * 17-04-2025 15:51:24.890
+CRC-Response (SeqNo: 158) - 158,3,F000,1*e348 * 17-04-2025 15:51:30.893
+RA Placed Rack in J8 * 17-04-2025 15:51:30.898
+Command Sent (SeqNo: 159, Retry: 0) RA1 Home Command - #159,5,00000111*8f3e  * 17-04-2025 15:51:31.351
+CRC-Response (SeqNo: 159) - 159,5,I001,00000111*bf72 * 17-04-2025 15:51:31.900
+CRC-Response (SeqNo: 159) - 159,5,F000*e0f1 * 17-04-2025 15:51:31.900
+Command Sent (SeqNo: 160, Retry: 0) READ TEMPERATURE - #160,11*b3d6  * 17-04-2025 15:51:35.97
+CRC-Response (SeqNo: 160) - 160,11,F000,447*60de * 17-04-2025 15:51:35.216
+Command Sent (SeqNo: 161, Retry: 0) READ TEMPERATURE - #161,11*4fd7  * 17-04-2025 15:51:50.308
+CRC-Response (SeqNo: 161) - 161,11,F000,-273*d147 * 17-04-2025 15:51:50.437
+Command Sent (SeqNo: 162, Retry: 0) READ TEMPERATURE - #162,11*0bd7  * 17-04-2025 15:52:05.499
+CRC-Response (SeqNo: 162) - 162,11,F000,545*2309 * 17-04-2025 15:52:05.611
+Command Sent (SeqNo: 163, Retry: 0) READ TEMPERATURE - #163,11*f7d6  * 17-04-2025 15:52:20.685
+CRC-Response (SeqNo: 163) - 163,11,F000,545*a20b * 17-04-2025 15:52:20.804
+Command Sent (SeqNo: 164, Retry: 0) READ TEMPERATURE - #164,11*83d7  * 17-04-2025 15:52:36.886
+CRC-Response (SeqNo: 164) - 164,11,F000,545*e500 * 17-04-2025 15:52:37.12
+Command Sent (SeqNo: 165, Retry: 0) READ TEMPERATURE - #165,11*7fd6  * 17-04-2025 15:52:52.87
+CRC-Response (SeqNo: 165) - 165,11,F000,545*6402 * 17-04-2025 15:52:52.211
+Command Sent (SeqNo: 166, Retry: 0) Rack-3 Picked from J1 - With RA:2 - #166,2,2,10304,800,0,0*8fb5  * 17-04-2025 15:52:53.741
+CRC-Response (SeqNo: 166) - 166,2,I001,2*a0f6 * 17-04-2025 15:52:53.864
+CRC-Response (SeqNo: 166) - 166,2,F000,2*9fa7 * 17-04-2025 15:53:00.196
+RA Picked Rack From J1 * 17-04-2025 15:53:00.203
+Command Sent (SeqNo: 167, Retry: 0) Rack-3 Placed in J2 - With RA:2 - #167,3,2,13934,800,0,0*300c  * 17-04-2025 15:53:00.357
+CRC-Response (SeqNo: 167) - 167,3,I001,2*a966 * 17-04-2025 15:53:00.493
+CRC-Response (SeqNo: 167) - 167,3,F000,2*9637 * 17-04-2025 15:53:06.96
+RA Placed Rack in J2 * 17-04-2025 15:53:06.99
+Command Sent (SeqNo: 168, Retry: 0) Rack-2 Picked from J5 - With RA:2 - #168,2,2,24824,800,0,0*84af  * 17-04-2025 15:53:10.735
+CRC-Response (SeqNo: 168) - 168,2,I001,2*5597 * 17-04-2025 15:53:10.847
+CRC-Response (SeqNo: 168) - 168,2,F000,2*6ac6 * 17-04-2025 15:53:17.248
+RA Picked Rack From J5 * 17-04-2025 15:53:17.250
+Command Sent (SeqNo: 169, Retry: 0) Rack-2 Placed in J6 - With RA:2 - #169,3,2,28454,800,0,0*725d  * 17-04-2025 15:53:17.826
+CRC-Response (SeqNo: 169) - 169,3,I001,2*5c07 * 17-04-2025 15:53:17.978
+CRC-Response (SeqNo: 169) - 169,3,F000,2*6356 * 17-04-2025 15:53:23.584
+RA Placed Rack in J6 * 17-04-2025 15:53:23.587
+Command Sent (SeqNo: 170, Retry: 0) READ TEMPERATURE - #170,11*73eb  * 17-04-2025 15:53:28.798
+CRC-Response (SeqNo: 170) - 170,11,F000,545*a00e * 17-04-2025 15:53:28.918
+Command Sent (SeqNo: 171, Retry: 0) READ TEMPERATURE - #171,11*8fea  * 17-04-2025 15:53:43.988
+CRC-Response (SeqNo: 171) - 171,11,F000,545*210c * 17-04-2025 15:53:44.122
+Command Sent (SeqNo: 172, Retry: 0) READ TEMPERATURE - #172,11*cbea  * 17-04-2025 15:53:59.190
+CRC-Response (SeqNo: 172) - 172,11,F000,545*e209 * 17-04-2025 15:53:59.310
+Command Sent (SeqNo: 173, Retry: 0) HEATER DOOR OPEN - #173,8,1,1*b230  * 17-04-2025 15:54:01.399
+CRC-Response (SeqNo: 173) - 173,8,I001*36ab * 17-04-2025 15:54:01.523
+CRC-Response (SeqNo: 173) - 173,8,F000*e269 * 17-04-2025 15:54:01.857
+Rack - 5Protocol Started * 17-04-2025 15:54:02.386
+Command Sent (SeqNo: 174, Retry: 0) Rack-5 Picked from L2 - With RA:2 - #174,2,2,13934,16380,0,0*ad1d  * 17-04-2025 15:54:02.458
+CRC-Response (SeqNo: 174) - 174,2,I001,2*9653 * 17-04-2025 15:54:02.595
+CRC-Response (SeqNo: 174) - 174,2,F000,2*a902 * 17-04-2025 15:54:09.418
+RA Picked Rack From L2 * 17-04-2025 15:54:09.421
+Command Sent (SeqNo: 175, Retry: 0) Rack-5 Placed in H1 - With RA:2 - #175,3,2,2688,1000,0,1*1a16  * 17-04-2025 15:54:09.571
+CRC-Response (SeqNo: 175) - 175,3,I001,2*9fc3 * 17-04-2025 15:54:09.702
+CRC-Response (SeqNo: 175) - 175,3,F000,2*a092 * 17-04-2025 15:54:16.155
+RA Placed Rack in H1 * 17-04-2025 15:54:16.157
+Command Sent (SeqNo: 176, Retry: 0) HEATER DOOR CLOSE - #176,8,1,0*72a4  * 17-04-2025 15:54:17.227
+CRC-Response (SeqNo: 176) - 176,8,I001*096b * 17-04-2025 15:54:17.379
+CRC-Response (SeqNo: 176) - 176,8,F000*dda9 * 17-04-2025 15:54:17.733
+Command Sent (SeqNo: 177, Retry: 0) READ TEMPERATURE - #177,11*07ea  * 17-04-2025 15:54:18.306
+CRC-Response (SeqNo: 177) - 177,11,F000,545*e705 * 17-04-2025 15:54:18.430
+Command Sent (SeqNo: 178, Retry: 0) Rack-1 Picked from J8 - With RA:2 - #178,2,2,35714,800,0,0*0cad  * 17-04-2025 15:54:31.876
+CRC-Response (SeqNo: 178) - 178,2,I001,2*a993 * 17-04-2025 15:54:31.995
+CRC-Response (SeqNo: 178) - 178,2,F000,2*96c2 * 17-04-2025 15:54:40.864
+RA Picked Rack From J8 * 17-04-2025 15:54:40.867
+Command Sent (SeqNo: 179, Retry: 0) RA-1 Movement - #179,5,00000111*cd39  * 17-04-2025 15:54:40.940
+CRC-Response (SeqNo: 179) - 179,5,I001,00000111*07d3 * 17-04-2025 15:54:41.71
+CRC-Response (SeqNo: 179) - 179,5,F000*80e8 * 17-04-2025 15:54:41.71
+Command Sent (SeqNo: 180, Retry: 0) Rack-1 Placed in W2 - With RA:2 - #180,3,2,46604,800,0,0*7910  * 17-04-2025 15:54:42.4
+CRC-Response (SeqNo: 180) - 180,3,I001,2*9be3 * 17-04-2025 15:54:42.117
+CRC-Response (SeqNo: 180) - 180,3,F000,2*a4b2 * 17-04-2025 15:54:48.538
+RA Placed Rack in W2 * 17-04-2025 15:54:48.543
+Command Sent (SeqNo: 181, Retry: 0) RA2 Home Command - #181,5,00111000*6060  * 17-04-2025 15:54:49.116
+CRC-Response (SeqNo: 181) - 181,5,I001,00111000*afcb * 17-04-2025 15:54:49.659
+CRC-Response (SeqNo: 181) - 181,5,F000*d6a8 * 17-04-2025 15:54:49.659
+Command Sent (SeqNo: 182, Retry: 0) READ TEMPERATURE - #182,11*cabe  * 17-04-2025 15:54:52.304
+CRC-Response (SeqNo: 182) - 182,11,F000,545*ed06 * 17-04-2025 15:54:52.422
+Command Sent (SeqNo: 183, Retry: 0) Rack-3 Picked from J2 - With RA:2 - #183,2,2,13934,800,0,0*bfc5  * 17-04-2025 15:55:06.882
+CRC-Response (SeqNo: 183) - 183,2,I001,2*58d2 * 17-04-2025 15:55:07.8
+CRC-Response (SeqNo: 183) - 183,2,F000,2*6783 * 17-04-2025 15:55:13.750
+RA Picked Rack From J2 * 17-04-2025 15:55:13.753
+Command Sent (SeqNo: 184, Retry: 0) Rack-3 Placed in J4 - With RA:2 - #184,3,2,21194,800,0,0*1fd7  * 17-04-2025 15:55:13.991
+CRC-Response (SeqNo: 184) - 184,3,I001,2*4ea2 * 17-04-2025 15:55:14.123
+CRC-Response (SeqNo: 184) - 184,3,F000,2*71f3 * 17-04-2025 15:55:20.126
+RA Placed Rack in J4 * 17-04-2025 15:55:20.139
+Command Sent (SeqNo: 185, Retry: 0) WATER VALVE - 1 CONTROL ON - #185,13,1,1*7bb8  * 17-04-2025 15:55:21.243
+CRC-Response (SeqNo: 185) - 185,13,F000*84a0 * 17-04-2025 15:55:21.356
+Command Sent (SeqNo: 186, Retry: 0) Rack-2 Picked from J6 - With RA:2 - #186,2,2,28454,800,0,0*d832  * 17-04-2025 15:55:24.196
+CRC-Response (SeqNo: 186) - 186,2,I001,2*48c2 * 17-04-2025 15:55:24.313
+CRC-Response (SeqNo: 186) - 186,2,F000,2*7793 * 17-04-2025 15:55:30.308
+RA Picked Rack From J6 * 17-04-2025 15:55:30.311
+Command Sent (SeqNo: 187, Retry: 0) RA-1 Movement - #187,5,00000111*15c4  * 17-04-2025 15:55:30.761
+CRC-Response (SeqNo: 187) - 187,5,I001,00000111*7384 * 17-04-2025 15:55:30.900
+CRC-Response (SeqNo: 187) - 187,5,F000*fc28 * 17-04-2025 15:55:30.901
+Command Sent (SeqNo: 188, Retry: 0) Rack-2 Placed in W1 - With RA:2 - #188,3,2,42974,800,0,0*1982  * 17-04-2025 15:55:31.827
+CRC-Response (SeqNo: 188) - 188,3,I001,2*7162 * 17-04-2025 15:55:31.949
+CRC-Response (SeqNo: 188) - 188,3,F000,2*4e33 * 17-04-2025 15:55:38.758
+RA Placed Rack in W1 * 17-04-2025 15:55:38.761
+Command Sent (SeqNo: 189, Retry: 0) RA2 Home Command - #189,5,00111000*bf81  * 17-04-2025 15:55:38.937
+CRC-Response (SeqNo: 189) - 189,5,I001,00111000*6d4c * 17-04-2025 15:55:39.475
+CRC-Response (SeqNo: 189) - 189,5,F000*70a9 * 17-04-2025 15:55:39.475
+Command Sent (SeqNo: 190, Retry: 0) READ TEMPERATURE - #190,11*b282  * 17-04-2025 15:55:41.910
+CRC-Response (SeqNo: 190) - 190,11,F000,545*6e01 * 17-04-2025 15:55:42.31
+Command Sent (SeqNo: 191, Retry: 0) WATER VALVE - 2 CONTROL OFF - #191,13,2,0*d885  * 17-04-2025 15:55:49.277
+CRC-Response (SeqNo: 191) - 191,13,F000*81c3 * 17-04-2025 15:55:49.394
+Command Sent (SeqNo: 192, Retry: 0) Rack-1 Picked from W2 - With RA:1 - #192,2,1,46604,800,0,0*8146  * 17-04-2025 15:55:49.468
+CRC-Response (SeqNo: 192) - 192,2,I001,1*60c7 * 17-04-2025 15:55:49.600
+CRC-Response (SeqNo: 192) - 192,2,F000,1*5f96 * 17-04-2025 15:55:56.951
+RA Picked Rack From W2 * 17-04-2025 15:55:56.958
+Command Sent (SeqNo: 193, Retry: 0) Rack-1 Placed in J9 - With RA:1 - #193,3,1,39344,800,0,0*a765  * 17-04-2025 15:55:57.427
+CRC-Response (SeqNo: 193) - 193,3,I001,1*6957 * 17-04-2025 15:55:57.560
+CRC-Response (SeqNo: 193) - 193,3,F000,1*5606 * 17-04-2025 15:56:03.574
+RA Placed Rack in J9 * 17-04-2025 15:56:03.579
+Command Sent (SeqNo: 194, Retry: 0) READ TEMPERATURE - #194,11*8283  * 17-04-2025 15:56:08.345
+CRC-Response (SeqNo: 194) - 194,11,F000,545*ea0f * 17-04-2025 15:56:08.464
+Command Sent (SeqNo: 195, Retry: 0) READ TEMPERATURE - #195,11*7e82  * 17-04-2025 15:56:23.546
+CRC-Response (SeqNo: 195) - 195,11,F000,545*6b0d * 17-04-2025 15:56:23.665
+Command Sent (SeqNo: 196, Retry: 0) READ TEMPERATURE - #196,11*3a82  * 17-04-2025 15:56:38.758
+CRC-Response (SeqNo: 196) - 196,11,F000,545*a808 * 17-04-2025 15:56:38.875
+Command Sent (SeqNo: 197, Retry: 0) WATER VALVE - 2 CONTROL ON - #197,13,2,1*32c4  * 17-04-2025 15:56:47.192
+CRC-Response (SeqNo: 197) - 197,13,F000*21e8 * 17-04-2025 15:56:47.306
+Command Sent (SeqNo: 198, Retry: 0) Rack-1 Picked from J9 - With RA:1 - #198,2,1,39344,800,0,0*1292  * 17-04-2025 15:57:04.251
+CRC-Response (SeqNo: 198) - 198,2,I001,1*40e7 * 17-04-2025 15:57:04.377
+CRC-Response (SeqNo: 198) - 198,2,F000,1*7fb6 * 17-04-2025 15:57:09.467
+RA Picked Rack From J9 * 17-04-2025 15:57:09.470
+Command Sent (SeqNo: 199, Retry: 0) Rack-1 Placed in W2 - With RA:1 - #199,3,1,46604,800,0,0*34b1  * 17-04-2025 15:57:09.867
+CRC-Response (SeqNo: 199) - 199,3,I001,1*4977 * 17-04-2025 15:57:10.13
+CRC-Response (SeqNo: 199) - 199,3,F000,1*7626 * 17-04-2025 15:57:16.17
+RA Placed Rack in W2 * 17-04-2025 15:57:16.20
+Command Sent (SeqNo: 200, Retry: 0) READ TEMPERATURE - #200,11*805e  * 17-04-2025 15:57:20.264
+CRC-Response (SeqNo: 200) - 200,11,F000,545*664b * 17-04-2025 15:57:20.392
+Command Sent (SeqNo: 201, Retry: 0) Rack-3 Picked from J4 - With RA:2 - #201,2,2,21194,800,0,0*3998  * 17-04-2025 15:57:21.8
+CRC-Response (SeqNo: 201) - 201,2,I001,2*f65d * 17-04-2025 15:57:21.129
+CRC-Response (SeqNo: 201) - 201,2,F000,2*c90c * 17-04-2025 15:57:28.695
+RA Picked Rack From J4 * 17-04-2025 15:57:28.730
+Command Sent (SeqNo: 202, Retry: 0) Rack-3 Placed in J5 - With RA:2 - #202,3,2,24824,800,0,0*98de  * 17-04-2025 15:57:29.134
+CRC-Response (SeqNo: 202) - 202,3,I001,2*356c * 17-04-2025 15:57:29.271
+CRC-Response (SeqNo: 202) - 202,3,F000,2*0a3d * 17-04-2025 15:57:34.872
+RA Placed Rack in J5 * 17-04-2025 15:57:34.874
+18 Seconds Timer increments in Jar W1 for R2 as Command Execution under process in other function and timer updated for tmr_r2_incub() * 17-04-2025 15:57:39.263
+Command Sent (SeqNo: 203, Retry: 0) HEATER DOOR OPEN - #203,8,1,1*a465  * 17-04-2025 15:57:45.299
+CRC-Response (SeqNo: 203) - 203,8,I001*097d * 17-04-2025 15:57:45.426
+CRC-Response (SeqNo: 203) - 203,8,F000*ddbf * 17-04-2025 15:57:45.758
+Command Sent (SeqNo: 204, Retry: 0) Rack-4 Picked from H2 - With RA:2 - #204,2,2,2688,8700,0,1*584a  * 17-04-2025 15:57:46.335
+CRC-Response (SeqNo: 204) - 204,2,I001,2*e64d * 17-04-2025 15:57:46.456
+CRC-Response (SeqNo: 204) - 204,2,F000,2*d91c * 17-04-2025 15:57:54.137
+RA Picked Rack From H2 * 17-04-2025 15:57:54.140
+Command Sent (SeqNo: 205, Retry: 0) HEATER DOOR CLOSE - #205,8,1,0*64c2  * 17-04-2025 15:57:54.454
+CRC-Response (SeqNo: 205) - 205,8,I001*23fd * 17-04-2025 15:57:54.606
+CRC-Response (SeqNo: 205) - 205,8,F000*f73f * 17-04-2025 15:57:54.942
+Command Sent (SeqNo: 206, Retry: 0) Rack-4 Placed in J1 - With RA:2 - #206,3,2,10304,800,0,0*4a5f  * 17-04-2025 15:57:55.515
+CRC-Response (SeqNo: 206) - 206,3,I001,2*e02d * 17-04-2025 15:57:55.654
+5 Seconds Timer increments in Jar W1 for R2 as Command Execution under process in other function and timer updated for tmr_r2_incub() * 17-04-2025 15:57:57.322
+CRC-Response (SeqNo: 206) - 206,3,F000,2*df7c * 17-04-2025 15:58:01.689
+RA Placed Rack in J1 * 17-04-2025 15:58:01.691
+Command Sent (SeqNo: 207, Retry: 0) WATER VALVE - 1 CONTROL OFF - #207,13,1,0*ad6f  * 17-04-2025 15:58:02.628
+CRC-Response (SeqNo: 207) - 207,13,F000*4a37 * 17-04-2025 15:58:02.754
+Command Sent (SeqNo: 208, Retry: 0) Rack-2 Picked from W1 - With RA:1 - #208,2,1,42974,800,0,0*f242  * 17-04-2025 15:58:02.824
+CRC-Response (SeqNo: 208) - 208,2,I001,1*d8cd * 17-04-2025 15:58:02.941
+CRC-Response (SeqNo: 208) - 208,2,F000,1*e79c * 17-04-2025 15:58:08.555
+RA Picked Rack From W1 * 17-04-2025 15:58:08.562
+Command Sent (SeqNo: 209, Retry: 0) RA-2 Movement - #209,5,00111000*f49d  * 17-04-2025 15:58:08.764
+CRC-Response (SeqNo: 209) - 209,5,I001,00111000*4b8a * 17-04-2025 15:58:08.900
+CRC-Response (SeqNo: 209) - 209,5,F000*bf3e * 17-04-2025 15:58:08.900
+Command Sent (SeqNo: 210, Retry: 0) Rack-2 Placed in J8 - With RA:1 - #210,3,1,35714,800,0,0*a9e6  * 17-04-2025 15:58:09.832
+CRC-Response (SeqNo: 210) - 210,3,I001,1*0289 * 17-04-2025 15:58:09.954
+CRC-Response (SeqNo: 210) - 210,3,F000,1*3dd8 * 17-04-2025 15:58:15.964
+RA Placed Rack in J8 * 17-04-2025 15:58:15.967
+Command Sent (SeqNo: 211, Retry: 0) RA1 Home Command - #211,5,00000111*d7d2  * 17-04-2025 15:58:16.442
+5 Seconds Timer increments in Jar W2 for R1 as Command Execution under process in other function and timer updated for tmr_r1_incub() * 17-04-2025 15:58:16.983
+CRC-Response (SeqNo: 211) - 211,5,I001,00000111*08f0 * 17-04-2025 15:58:16.985
+CRC-Response (SeqNo: 211) - 211,5,F000*8932 * 17-04-2025 15:58:16.985
+Command Sent (SeqNo: 212, Retry: 0) WATER VALVE - 2 CONTROL OFF - #212,13,2,0*0252  * 17-04-2025 15:58:22.39
+CRC-Response (SeqNo: 212) - 212,13,F000*df59 * 17-04-2025 15:58:22.163
+Command Sent (SeqNo: 213, Retry: 0) Rack-1 Picked from W2 - With RA:1 - #213,2,1,46604,800,0,0*07a9  * 17-04-2025 15:58:22.232
+CRC-Response (SeqNo: 213) - 213,2,I001,1*c1b8 * 17-04-2025 15:58:22.352
+CRC-Response (SeqNo: 213) - 213,2,F000,1*fee9 * 17-04-2025 15:58:29.711
+RA Picked Rack From W2 * 17-04-2025 15:58:29.715
+Command Sent (SeqNo: 214, Retry: 0) Rack-1 Placed in J18 - With RA:1 - #214,3,1,39344,8590,0,0*1862  * 17-04-2025 15:58:30.201
+CRC-Response (SeqNo: 214) - 214,3,I001,1*d7c8 * 17-04-2025 15:58:30.344
+CRC-Response (SeqNo: 214) - 214,3,F000,1*e899 * 17-04-2025 15:58:36.349
+RA Placed Rack in J18 * 17-04-2025 15:58:36.352
+Command Sent (SeqNo: 215, Retry: 0) READ TEMPERATURE - #215,11*8c63  * 17-04-2025 15:58:40.260
+CRC-Response (SeqNo: 215) - 215,11,F000,545*a247 * 17-04-2025 15:58:40.375
+Command Sent (SeqNo: 216, Retry: 0) READ TEMPERATURE - #216,11*c863  * 17-04-2025 15:58:55.456
+CRC-Response (SeqNo: 216) - 216,11,F000,545*6142 * 17-04-2025 15:58:55.572
+Command Sent (SeqNo: 217, Retry: 0) READ TEMPERATURE - #217,11*3462  * 17-04-2025 15:59:10.663
+CRC-Response (SeqNo: 217) - 217,11,F000,545*e040 * 17-04-2025 15:59:10.787
+Command Sent (SeqNo: 218, Retry: 0) WATER VALVE - 6 CONTROL ON - #218,13,6,1*7c52  * 17-04-2025 15:59:20.57
+CRC-Response (SeqNo: 218) - 218,13,F000*7f27 * 17-04-2025 15:59:20.174
+Command Sent (SeqNo: 219, Retry: 0) Rack-3 Picked from J5 - With RA:2 - #219,2,2,24824,800,0,0*fc14  * 17-04-2025 15:59:35.558
+CRC-Response (SeqNo: 219) - 219,2,I001,2*e0d8 * 17-04-2025 15:59:35.692
+5 Seconds Timer increments in Jar J18 for R1 as Command Execution under process in other function and timer updated for tmr_r1_incub() * 17-04-2025 15:59:37.94
+5 Seconds Timer increments in Jar J18 for R1 as Command Execution under process in other function and timer updated for tmr_r1_incub() * 17-04-2025 15:59:42.128
+CRC-Response (SeqNo: 219) - 219,2,F000,2*df89 * 17-04-2025 15:59:43.645
+RA Picked Rack From J5 * 17-04-2025 15:59:43.648
+Command Sent (SeqNo: 220, Retry: 0) Rack-3 Placed in J6 - With RA:2 - #220,3,2,28454,800,0,0*5840  * 17-04-2025 15:59:44.200
+CRC-Response (SeqNo: 220) - 220,3,I001,2*47c6 * 17-04-2025 15:59:44.342
+5 Seconds Timer increments in Jar J18 for R1 as Command Execution under process in other function and timer updated for tmr_r1_incub() * 17-04-2025 15:59:47.138
+CRC-Response (SeqNo: 220) - 220,3,F000,2*7897 * 17-04-2025 15:59:49.944
+RA Placed Rack in J6 * 17-04-2025 15:59:49.947
+Command Sent (SeqNo: 221, Retry: 0) Rack-1 Picked from J18 - With RA:1 - #221,2,1,39344,8590,0,0*82cc  * 17-04-2025 15:59:52.218
+CRC-Response (SeqNo: 221) - 221,2,I001,1*4f16 * 17-04-2025 15:59:52.338
+CRC-Response (SeqNo: 221) - 221,2,F000,1*7047 * 17-04-2025 15:59:57.424
+RA Picked Rack From J18 * 17-04-2025 15:59:57.427
+Command Sent (SeqNo: 222, Retry: 0) Rack-1 Placed in W6 - With RA:1 - #222,3,1,42974,8590,0,0*5dd2  * 17-04-2025 15:59:57.821
+CRC-Response (SeqNo: 222) - 222,3,I001,1*8c27 * 17-04-2025 15:59:57.956
+5 Secconds Timer increments in Jar J1 for R4 as Command Execution under process in other function and timer updated for tmr_r4_incub() * 17-04-2025 16:00:02.526
+CRC-Response (SeqNo: 222) - 222,3,F000,1*b376 * 17-04-2025 16:00:03.554
+RA Placed Rack in W6 * 17-04-2025 16:00:03.557
+Command Sent (SeqNo: 223, Retry: 0) Rack-4 Picked from J1 - With RA:2 - #223,2,2,10304,800,0,0*f4bb  * 17-04-2025 16:00:07.613
+CRC-Response (SeqNo: 223) - 223,2,I001,2*84f7 * 17-04-2025 16:00:07.738
+CRC-Response (SeqNo: 223) - 223,2,F000,2*bba6 * 17-04-2025 16:00:14.947
+RA Picked Rack From J1 * 17-04-2025 16:00:14.950
+Command Sent (SeqNo: 224, Retry: 0) Rack-4 Placed in J2 - With RA:2 - #224,3,2,13934,800,0,0*c38a  * 17-04-2025 16:00:15.265
+CRC-Response (SeqNo: 224) - 224,3,I001,2*9287 * 17-04-2025 16:00:15.400
+CRC-Response (SeqNo: 224) - 224,3,F000,2*add6 * 17-04-2025 16:00:21.1
+RA Placed Rack in J2 * 17-04-2025 16:00:21.4
+Command Sent (SeqNo: 225, Retry: 0) READ TEMPERATURE - #225,11*8c27  * 17-04-2025 16:00:25.342
+CRC-Response (SeqNo: 225) - 225,11,F000,545*a144 * 17-04-2025 16:00:25.473
+Command Sent (SeqNo: 226, Retry: 0) HEATER DOOR OPEN - #226,8,1,1*7db1  * 17-04-2025 16:00:32.550
+CRC-Response (SeqNo: 226) - 226,8,I001*56a4 * 17-04-2025 16:00:32.675
+CRC-Response (SeqNo: 226) - 226,8,F000*8266 * 17-04-2025 16:00:33.21
+Rack - 6Protocol Started * 17-04-2025 16:00:33.568
+Command Sent (SeqNo: 227, Retry: 0) Rack-6 Picked from L3 - With RA:2 - #227,2,2,10304,16380,0,0*49f0  * 17-04-2025 16:00:33.641
+CRC-Response (SeqNo: 227) - 227,2,I001,2*51b6 * 17-04-2025 16:00:33.780
+CRC-Response (SeqNo: 227) - 227,2,F000,2*6ee7 * 17-04-2025 16:00:40.172
+RA Picked Rack From L3 * 17-04-2025 16:00:40.174
+Command Sent (SeqNo: 228, Retry: 0) Rack-6 Placed in H2 - With RA:2 - #228,3,2,2688,8700,0,1*7b71  * 17-04-2025 16:00:40.264
+CRC-Response (SeqNo: 228) - 228,3,I001,2*ad47 * 17-04-2025 16:00:40.395
+CRC-Response (SeqNo: 228) - 228,3,F000,2*9216 * 17-04-2025 16:00:46.440
+RA Placed Rack in H2 * 17-04-2025 16:00:46.444
+Command Sent (SeqNo: 229, Retry: 0) HEATER DOOR CLOSE - #229,8,1,0*bd8f  * 17-04-2025 16:00:47.371
+CRC-Response (SeqNo: 229) - 229,8,I001*16e4 * 17-04-2025 16:00:47.508
+CRC-Response (SeqNo: 229) - 229,8,F000*c226 * 17-04-2025 16:00:47.848
+Command Sent (SeqNo: 230, Retry: 0) READ TEMPERATURE - #230,11*801a  * 17-04-2025 16:00:48.406
+CRC-Response (SeqNo: 230) - 230,11,F000,-273*e2c2 * 17-04-2025 16:00:48.526
+Command Sent (SeqNo: 231, Retry: 0) WATER VALVE - 2 CONTROL ON - #231,13,2,1*b7ca  * 17-04-2025 16:00:59.909
+CRC-Response (SeqNo: 231) - 231,13,F000*e5ec * 17-04-2025 16:01:00.23
+Command Sent (SeqNo: 232, Retry: 0) WATER VALVE - 6 CONTROL OFF - #232,13,6,0*a30a  * 17-04-2025 16:01:04.82
+CRC-Response (SeqNo: 232) - 232,13,F000*15f8 * 17-04-2025 16:01:04.198
+Command Sent (SeqNo: 233, Retry: 0) Rack-1 Picked from W6 - With RA:1 - #233,2,1,42974,8590,0,0*a1ae  * 17-04-2025 16:01:04.270
+CRC-Response (SeqNo: 233) - 233,2,I001,1*79b3 * 17-04-2025 16:01:04.400
+CRC-Response (SeqNo: 233) - 233,2,F000,1*46e2 * 17-04-2025 16:01:09.474
+RA Picked Rack From W6 * 17-04-2025 16:01:09.477
+Command Sent (SeqNo: 234, Retry: 0) RA-2 Movement - #234,5,00111000*e475  * 17-04-2025 16:01:09.696
+CRC-Response (SeqNo: 234) - 234,5,I001,00111000*9cee * 17-04-2025 16:01:09.834
+CRC-Response (SeqNo: 234) - 234,5,F000*d6eb * 17-04-2025 16:01:09.834
+Command Sent (SeqNo: 235, Retry: 0) Rack-1 Placed in J19 - With RA:1 - #235,3,1,35714,8590,0,0*e48d  * 17-04-2025 16:01:10.775
+CRC-Response (SeqNo: 235) - 235,3,I001,1*aa92 * 17-04-2025 16:01:10.903
+CRC-Response (SeqNo: 235) - 235,3,F000,1*95c3 * 17-04-2025 16:01:16.906
+11 Seconds Timer increments in Jar J8 for R2 as Command Execution under process in other function and timer updated for tmr_r2_incub() * 17-04-2025 16:01:16.915
+RA Placed Rack in J19 * 17-04-2025 16:01:16.916
+Command Sent (SeqNo: 236, Retry: 0) RA1 Home Command - #236,5,00000111*5e20  * 17-04-2025 16:01:17.351
+CRC-Response (SeqNo: 236) - 236,5,I001,00000111*81e3 * 17-04-2025 16:01:17.905
+CRC-Response (SeqNo: 236) - 236,5,F000*0f6a * 17-04-2025 16:01:17.906
+Command Sent (SeqNo: 237, Retry: 0) Rack-2 Picked from J8 - With RA:2 - #237,2,2,35714,800,0,0*ae38  * 17-04-2025 16:01:28.57
+CRC-Response (SeqNo: 237) - 237,2,I001,2*adb2 * 17-04-2025 16:01:28.175
+CRC-Response (SeqNo: 237) - 237,2,F000,2*92e3 * 17-04-2025 16:01:37.371
+RA Picked Rack From J8 * 17-04-2025 16:01:37.374
+Command Sent (SeqNo: 238, Retry: 0) RA-1 Movement - #238,5,00000111*89c9  * 17-04-2025 16:01:37.695
+CRC-Response (SeqNo: 238) - 238,5,I001,00000111*e287 * 17-04-2025 16:01:37.916
+CRC-Response (SeqNo: 238) - 238,5,F000*83eb * 17-04-2025 16:01:37.917
+Command Sent (SeqNo: 239, Retry: 0) Rack-2 Placed in W2 - With RA:2 - #239,3,2,46604,800,0,0*ad59  * 17-04-2025 16:01:38.752
+CRC-Response (SeqNo: 239) - 239,3,I001,2*9412 * 17-04-2025 16:01:38.871
+CRC-Response (SeqNo: 239) - 239,3,F000,2*ab43 * 17-04-2025 16:01:45.279
+RA Placed Rack in W2 * 17-04-2025 16:01:45.281
+Command Sent (SeqNo: 240, Retry: 0) RA2 Home Command - #240,5,00111000*6c8f  * 17-04-2025 16:01:45.818
+CRC-Response (SeqNo: 240) - 240,5,I001,00111000*281d * 17-04-2025 16:01:46.363
+CRC-Response (SeqNo: 240) - 240,5,F000*15cc * 17-04-2025 16:01:46.364
+Command Sent (SeqNo: 241, Retry: 0) WATER VALVE - 1 CONTROL ON - #241,13,1,1*871c  * 17-04-2025 16:01:46.709
+CRC-Response (SeqNo: 241) - 241,13,F000*3f5d * 17-04-2025 16:01:46.826
+Command Sent (SeqNo: 242, Retry: 0) Rack-3 Picked from J6 - With RA:2 - #242,2,2,28454,800,0,0*16e0  * 17-04-2025 16:01:50.715
+CRC-Response (SeqNo: 242) - 242,2,I001,2*c9b8 * 17-04-2025 16:01:50.840
+CRC-Response (SeqNo: 242) - 242,2,F000,2*f6e9 * 17-04-2025 16:01:59.205
+RA Picked Rack From J6 * 17-04-2025 16:01:59.207
+Command Sent (SeqNo: 243, Retry: 0) RA-1 Movement - #243,5,00000111*1527  * 17-04-2025 16:01:59.354
+CRC-Response (SeqNo: 243) - 243,5,I001,00000111*a541 * 17-04-2025 16:01:59.489
+CRC-Response (SeqNo: 243) - 243,5,F000*008c * 17-04-2025 16:01:59.490
+Command Sent (SeqNo: 244, Retry: 0) Rack-3 Placed in W1 - With RA:2 - #244,3,2,42974,800,0,0*b6b2  * 17-04-2025 16:02:00.435
+CRC-Response (SeqNo: 244) - 244,3,I001,2*1a99 * 17-04-2025 16:02:00.556
+CRC-Response (SeqNo: 244) - 244,3,F000,2*25c8 * 17-04-2025 16:02:07.365
+RA Placed Rack in W1 * 17-04-2025 16:02:07.369
+Command Sent (SeqNo: 245, Retry: 0) RA2 Home Command - #245,5,00111000*6083  * 17-04-2025 16:02:07.559
+CRC-Response (SeqNo: 245) - 245,5,I001,00111000*790e * 17-04-2025 16:02:08.107
+CRC-Response (SeqNo: 245) - 245,5,F000*2a0c * 17-04-2025 16:02:08.107
+Command Sent (SeqNo: 246, Retry: 0) READ TEMPERATURE - #246,11*c8af  * 17-04-2025 16:02:10.617
+CRC-Response (SeqNo: 246) - 246,11,F000,545*6447 * 17-04-2025 16:02:10.734
+Command Sent (SeqNo: 247, Retry: 0) Rack-1 Picked from J19 - With RA:2 - #247,2,2,35714,8590,0,0*bc93  * 17-04-2025 16:02:17.509
+CRC-Response (SeqNo: 247) - 247,2,I001,2*d9a8 * 17-04-2025 16:02:17.629
+5 Secconds Timer increments in Jar J2 for R4 as Command Execution under process in other function and timer updated for tmr_r4_incub() * 17-04-2025 16:02:21.592
+5 Secconds Timer increments in Jar J2 for R4 as Command Execution under process in other function and timer updated for tmr_r4_incub() * 17-04-2025 16:02:26.620
+CRC-Response (SeqNo: 247) - 247,2,F000,2*e6f9 * 17-04-2025 16:02:26.811
+RA Picked Rack From J19 * 17-04-2025 16:02:26.814
+Command Sent (SeqNo: 248, Retry: 0) Rack-1 Placed in J20 - With RA:2 - #248,3,2,32084,8590,0,0*ae46  * 17-04-2025 16:02:27.117
+CRC-Response (SeqNo: 248) - 248,3,I001,2*2559 * 17-04-2025 16:02:27.242
+5 Secconds Timer increments in Jar J2 for R4 as Command Execution under process in other function and timer updated for tmr_r4_incub() * 17-04-2025 16:02:31.648
+CRC-Response (SeqNo: 248) - 248,3,F000,2*1a08 * 17-04-2025 16:02:32.849
+RA Placed Rack in J20 * 17-04-2025 16:02:32.857
+Command Sent (SeqNo: 249, Retry: 0) Rack-4 Picked from J2 - With RA:2 - #249,2,2,13934,800,0,0*987d  * 17-04-2025 16:02:36.702
+CRC-Response (SeqNo: 249) - 249,2,I001,2*2cc9 * 17-04-2025 16:02:36.819
+CRC-Response (SeqNo: 249) - 249,2,F000,2*1398 * 17-04-2025 16:02:44.46
+RA Picked Rack From J2 * 17-04-2025 16:02:44.48
+Command Sent (SeqNo: 250, Retry: 0) Rack-4 Placed in J4 - With RA:2 - #250,3,2,21194,800,0,0*0038  * 17-04-2025 16:02:44.318
+CRC-Response (SeqNo: 250) - 250,3,I001,2*33dc * 17-04-2025 16:02:44.446
+5 Seconds Timer increments in Jar W2 for R2 as Command Execution under process in other function and timer updated for tmr_r2_incub() * 17-04-2025 16:02:45.871
+CRC-Response (SeqNo: 250) - 250,3,F000,2*0c8d * 17-04-2025 16:02:50.458
+RA Placed Rack in J4 * 17-04-2025 16:02:50.464
+11 Seconds Timer increments in Jar W2 for R2 as Command Execution under process in other function and timer updated for tmr_r2_incub() * 17-04-2025 16:02:50.879
+Command Sent (SeqNo: 251, Retry: 0) WATER VALVE - 2 CONTROL OFF - #251,13,2,0*d720  * 17-04-2025 16:03:01.963
+CRC-Response (SeqNo: 251) - 251,13,F000*fa0c * 17-04-2025 16:03:02.113
+Command Sent (SeqNo: 252, Retry: 0) Rack-2 Picked from W2 - With RA:1 - #252,2,1,46604,800,0,0*7f65  * 17-04-2025 16:03:02.182
+CRC-Response (SeqNo: 252) - 252,2,I001,1*34fc * 17-04-2025 16:03:02.303
+CRC-Response (SeqNo: 252) - 252,2,F000,1*0bad * 17-04-2025 16:03:09.658
+RA Picked Rack From W2 * 17-04-2025 16:03:09.661
+Command Sent (SeqNo: 253, Retry: 0) Rack-2 Placed in J9 - With RA:1 - #253,3,1,39344,800,0,0*5946  * 17-04-2025 16:03:10.101
+CRC-Response (SeqNo: 253) - 253,3,I001,1*3d6c * 17-04-2025 16:03:10.241
+CRC-Response (SeqNo: 253) - 253,3,F000,1*023d * 17-04-2025 16:03:16.244
+RA Placed Rack in J9 * 17-04-2025 16:03:16.246
+Command Sent (SeqNo: 254, Retry: 0) Rack-1 Picked from J20 - With RA:2 - #254,2,2,32084,8590,0,0*4e17  * 17-04-2025 16:03:18.328
+CRC-Response (SeqNo: 254) - 254,2,I001,2*2a5c * 17-04-2025 16:03:18.449
+CRC-Response (SeqNo: 254) - 254,2,F000,2*150d * 17-04-2025 16:03:24.863
+RA Picked Rack From J20 * 17-04-2025 16:03:24.866
+Command Sent (SeqNo: 255, Retry: 0) Rack-1 Placed in J21 - With RA:2 - #255,3,2,28454,8590,0,0*cba9  * 17-04-2025 16:03:25.429
+CRC-Response (SeqNo: 255) - 255,3,I001,2*23cc * 17-04-2025 16:03:25.561
+CRC-Response (SeqNo: 255) - 255,3,F000,2*1c9d * 17-04-2025 16:03:31.172
+RA Placed Rack in J21 * 17-04-2025 16:03:31.175
+Command Sent (SeqNo: 0, Retry: 0) READ TEMPERATURE - #0,11*a91a  * 17-04-2025 16:03:35.552
+CRC-Response (SeqNo: 0) - 0,11,F000,545*178a * 17-04-2025 16:03:35.669
+Command Sent (SeqNo: 1, Retry: 0) READ TEMPERATURE - #1,11*551b  * 17-04-2025 16:03:53.754
+CRC-Response (SeqNo: 1) - 1,11,F000,545*9688 * 17-04-2025 16:03:53.888
+Command Sent (SeqNo: 2, Retry: 0) WATER VALVE - 2 CONTROL ON - #2,13,2,1*6a5b  * 17-04-2025 16:03:59.768
+CRC-Response (SeqNo: 2) - 2,13,F000*49f0 * 17-04-2025 16:03:59.885
+Command Sent (SeqNo: 3, Retry: 0) WATER VALVE - 1 CONTROL OFF - #3,13,1,0*66ab  * 17-04-2025 16:04:07.804
+CRC-Response (SeqNo: 3) - 3,13,F000*d9fd * 17-04-2025 16:04:07.924
+Command Sent (SeqNo: 4, Retry: 0) Rack-3 Picked from W1 - With RA:1 - #4,2,1,42974,800,0,0*793d  * 17-04-2025 16:04:07.995
+CRC-Response (SeqNo: 4) - 4,2,I001,1*655f * 17-04-2025 16:04:08.113
+CRC-Response (SeqNo: 4) - 4,2,F000,1*5a0e * 17-04-2025 16:04:13.727
+RA Picked Rack From W1 * 17-04-2025 16:04:13.739
+Command Sent (SeqNo: 5, Retry: 0) RA-2 Movement - #5,5,00111000*e530  * 17-04-2025 16:04:13.905
+CRC-Response (SeqNo: 5) - 5,5,I001,00111000*af22 * 17-04-2025 16:04:14.39
+CRC-Response (SeqNo: 5) - 5,5,F000*d2fb * 17-04-2025 16:04:14.39
+Command Sent (SeqNo: 6, Retry: 0) Rack-3 Placed in J8 - With RA:1 - #6,3,1,35714,800,0,0*2a3f  * 17-04-2025 16:04:14.972
+CRC-Response (SeqNo: 6) - 6,3,I001,1*633f * 17-04-2025 16:04:15.93
+5 Seconds Timer increments in Jar J9 for R2 as Command Execution under process in other function and timer updated for tmr_r2_incub() * 17-04-2025 16:04:16.737
+5 Secconds Timer increments in Jar H1 for R5 as Command Execution under process in other function and timer upated for tmr_r5_incub() * 17-04-2025 16:04:17.324
+CRC-Response (SeqNo: 6) - 6,3,F000,1*5c6e * 17-04-2025 16:04:21.113
+RA Placed Rack in J8 * 17-04-2025 16:04:21.116
+Command Sent (SeqNo: 7, Retry: 0) RA1 Home Command - #7,5,00000111*5f65  * 17-04-2025 16:04:21.572
+5 Seconds Timer increments in Jar J9 for R2 as Command Execution under process in other function and timer updated for tmr_r2_incub() * 17-04-2025 16:04:22.110
+CRC-Response (SeqNo: 7) - 7,5,I001,00000111*b22f * 17-04-2025 16:04:22.126
+CRC-Response (SeqNo: 7) - 7,5,F000*0b7a * 17-04-2025 16:04:22.126
+11 Secconds Timer increments in Jar H1 for R5 as Command Execution under process in other function and timer upated for tmr_r5_incub() * 17-04-2025 16:04:22.354
+Command Sent (SeqNo: 8, Retry: 0) Rack-2 Picked from J9 - With RA:1 - #8,2,1,39344,800,0,0*6311  * 17-04-2025 16:04:27.171
+CRC-Response (SeqNo: 8) - 8,2,I001,1*5a9f * 17-04-2025 16:04:27.293
+5 Seconds Timer increments in Jar J21 for R1 as Command Execution under process in other function and timer updated for tmr_r1_incub() * 17-04-2025 16:04:31.638
+5 Secconds Timer increments in Jar H1 for R5 as Command Execution under process in other function and timer upated for tmr_r5_incub() * 17-04-2025 16:04:33.406
+CRC-Response (SeqNo: 8) - 8,2,F000,1*65ce * 17-04-2025 16:04:35.462
+RA Picked Rack From J9 * 17-04-2025 16:04:35.465
+Command Sent (SeqNo: 9, Retry: 0) Rack-2 Placed in W2 - With RA:1 - #9,3,1,46604,800,0,0*4532  * 17-04-2025 16:04:35.767
+CRC-Response (SeqNo: 9) - 9,3,I001,1*530f * 17-04-2025 16:04:35.898
+5 Seconds Timer increments in Jar J21 for R1 as Command Execution under process in other function and timer updated for tmr_r1_incub() * 17-04-2025 16:04:36.670
+5 Secconds Timer increments in Jar H1 for R5 as Command Execution under process in other function and timer upated for tmr_r5_incub() * 17-04-2025 16:04:38.416
+5 Seconds Timer increments in Jar J21 for R1 as Command Execution under process in other function and timer updated for tmr_r1_incub() * 17-04-2025 16:04:41.667
+CRC-Response (SeqNo: 9) - 9,3,F000,1*6c5e * 17-04-2025 16:04:41.913
+RA Placed Rack in W2 * 17-04-2025 16:04:41.916
+Command Sent (SeqNo: 10, Retry: 0) HEATER DOOR OPEN - #10,8,1,1*f290  * 17-04-2025 16:04:42.927
+CRC-Response (SeqNo: 10) - 10,8,I001*4eeb * 17-04-2025 16:04:43.62
+CRC-Response (SeqNo: 10) - 10,8,F000*9a29 * 17-04-2025 16:04:43.405
+Command Sent (SeqNo: 11, Retry: 0) Rack-5 Picked from H1 - With RA:2 - #11,2,2,2688,1000,0,1*fe24  * 17-04-2025 16:04:43.970
+CRC-Response (SeqNo: 11) - 11,2,I001,2*6b82 * 17-04-2025 16:04:44.89
+5 Seconds Timer increments in Jar J21 for R1 as Command Execution under process in other function and timer updated for tmr_r1_incub() * 17-04-2025 16:04:46.708
+CRC-Response (SeqNo: 11) - 11,2,F000,2*54d3 * 17-04-2025 16:04:49.573
+RA Picked Rack From H1 * 17-04-2025 16:04:49.575
+Command Sent (SeqNo: 12, Retry: 0) HEATER DOOR CLOSE - #12,8,1,0*f272  * 17-04-2025 16:04:50.65
+CRC-Response (SeqNo: 12) - 12,8,I001*976a * 17-04-2025 16:04:50.198
+CRC-Response (SeqNo: 12) - 12,8,F000*43a8 * 17-04-2025 16:04:50.535
+Command Sent (SeqNo: 13, Retry: 0) Rack-5 Placed in J1 - With RA:2 - #13,3,2,10304,800,0,0*4687  * 17-04-2025 16:04:51.115
+5 Secconds Timer increments in Jar J4 for R4 as Command Execution under process in other function and timer updated for tmr_r4_incub() * 17-04-2025 16:04:51.120
+CRC-Response (SeqNo: 13) - 13,3,I001,2*6de2 * 17-04-2025 16:04:51.236
+5 Seconds Timer increments in Jar J21 for R1 as Command Execution under process in other function and timer updated for tmr_r1_incub() * 17-04-2025 16:04:51.699
+5 Secconds Timer increments in Jar J4 for R4 as Command Execution under process in other function and timer updated for tmr_r4_incub() * 17-04-2025 16:04:56.157
+5 Seconds Timer increments in Jar J21 for R1 as Command Execution under process in other function and timer updated for tmr_r1_incub() * 17-04-2025 16:04:56.714
+CRC-Response (SeqNo: 13) - 13,3,F000,2*52b3 * 17-04-2025 16:04:57.285
+RA Placed Rack in J1 * 17-04-2025 16:04:57.287
+11 Secconds Timer increments in Jar J4 for R4 as Command Execution under process in other function and timer updated for tmr_r4_incub() * 17-04-2025 16:05:01.152
+Command Sent (SeqNo: 14, Retry: 0) Rack-1 Picked from J21 - With RA:2 - #14,2,2,28454,8590,0,0*bc50  * 17-04-2025 16:05:01.800
+CRC-Response (SeqNo: 14) - 14,2,I001,2*7b92 * 17-04-2025 16:05:01.918
+CRC-Response (SeqNo: 14) - 14,2,F000,2*44c3 * 17-04-2025 16:05:09.160
+RA Picked Rack From J21 * 17-04-2025 16:05:09.169
+Command Sent (SeqNo: 15, Retry: 0) Rack-1 Placed in J22 - With RA:2 - #15,3,2,24824,8590,0,0*3927  * 17-04-2025 16:05:09.400
+CRC-Response (SeqNo: 15) - 15,3,I001,2*7202 * 17-04-2025 16:05:09.541
+5 Secconds Timer increments in Jar J4 for R4 as Command Execution under process in other function and timer updated for tmr_r4_incub() * 17-04-2025 16:05:12.151
+CRC-Response (SeqNo: 15) - 15,3,F000,2*4d53 * 17-04-2025 16:05:15.146
+RA Placed Rack in J22 * 17-04-2025 16:05:15.148
+Command Sent (SeqNo: 16, Retry: 0) Rack-4 Picked from J4 - With RA:2 - #16,2,2,21194,800,0,0*8d39  * 17-04-2025 16:05:17.204
+CRC-Response (SeqNo: 16) - 16,2,I001,2*b133 * 17-04-2025 16:05:17.361
+CRC-Response (SeqNo: 16) - 16,2,F000,2*8e62 * 17-04-2025 16:05:23.108
+RA Picked Rack From J4 * 17-04-2025 16:05:23.112
+Command Sent (SeqNo: 17, Retry: 0) Rack-4 Placed in J5 - With RA:2 - #17,3,2,24824,800,0,0*9406  * 17-04-2025 16:05:23.274
+CRC-Response (SeqNo: 17) - 17,3,I001,2*b8a3 * 17-04-2025 16:05:23.410
+CRC-Response (SeqNo: 17) - 17,3,F000,2*87f2 * 17-04-2025 16:05:29.2
+RA Placed Rack in J5 * 17-04-2025 16:05:29.5
+Command Sent (SeqNo: 18, Retry: 0) READ TEMPERATURE - #18,11*2941  * 17-04-2025 16:05:33.918
+CRC-Response (SeqNo: 18) - 18,11,F000,545*440d * 17-04-2025 16:05:34.40
+Command Sent (SeqNo: 19, Retry: 0) WATER VALVE - 2 CONTROL OFF - #19,13,2,0*73c8  * 17-04-2025 16:05:42.593
+CRC-Response (SeqNo: 19) - 19,13,F000*b4a8 * 17-04-2025 16:05:42.722
+Command Sent (SeqNo: 20, Retry: 0) Rack-2 Picked from W2 - With RA:1 - #20,2,1,46604,800,0,0*6180  * 17-04-2025 16:05:42.791
+CRC-Response (SeqNo: 20) - 20,2,I001,1*eb9c * 17-04-2025 16:05:42.926
+CRC-Response (SeqNo: 20) - 20,2,F000,1*d4cd * 17-04-2025 16:05:48.3
+RA Picked Rack From W2 * 17-04-2025 16:05:48.6
+Command Sent (SeqNo: 21, Retry: 0) Rack-2 Placed in J18 - With RA:1 - #21,3,1,39344,8590,0,0*a04d  * 17-04-2025 16:05:48.214
+CRC-Response (SeqNo: 21) - 21,3,I001,1*e20c * 17-04-2025 16:05:48.350
+CRC-Response (SeqNo: 21) - 21,3,F000,1*dd5d * 17-04-2025 16:05:54.363
+RA Placed Rack in J18 * 17-04-2025 16:05:54.366
+Command Sent (SeqNo: 22, Retry: 0) READ TEMPERATURE - #22,11*f106  * 17-04-2025 16:05:58.631
+CRC-Response (SeqNo: 22) - 22,11,F000,545*4d16 * 17-04-2025 16:05:58.750
+Command Sent (SeqNo: 23, Retry: 0) READ TEMPERATURE - #23,11*0d07  * 17-04-2025 16:06:13.815
+CRC-Response (SeqNo: 23) - 23,11,F000,545*cc14 * 17-04-2025 16:06:13.949
+Command Sent (SeqNo: 24, Retry: 0) Rack-1 Picked from J22 - With RA:2 - #24,2,2,24824,8590,0,0*2778  * 17-04-2025 16:06:15.673
+CRC-Response (SeqNo: 24) - 24,2,I001,2*3f9d * 17-04-2025 16:06:15.804
+CRC-Response (SeqNo: 24) - 24,2,F000,2*00cc * 17-04-2025 16:06:21.574
+RA Picked Rack From J22 * 17-04-2025 16:06:21.578
+Command Sent (SeqNo: 25, Retry: 0) Rack-1 Placed in J23 - With RA:2 - #25,3,2,21194,8590,0,0*3721  * 17-04-2025 16:06:21.781
+CRC-Response (SeqNo: 25) - 25,3,I001,2*360d * 17-04-2025 16:06:21.921
+CRC-Response (SeqNo: 25) - 25,3,F000,2*095c * 17-04-2025 16:06:27.516
+RA Placed Rack in J23 * 17-04-2025 16:06:27.519
+Command Sent (SeqNo: 26, Retry: 0) READ TEMPERATURE - #26,11*c107  * 17-04-2025 16:06:32.692
+CRC-Response (SeqNo: 26) - 26,11,F000,545*c918 * 17-04-2025 16:06:32.802
+Command Sent (SeqNo: 27, Retry: 0) WATER VALVE - 6 CONTROL ON - #27,13,6,1*0edd  * 17-04-2025 16:06:37.879
+CRC-Response (SeqNo: 27) - 27,13,F000*db14 * 17-04-2025 16:06:38.9
+Command Sent (SeqNo: 28, Retry: 0) Rack-2 Picked from J18 - With RA:1 - #28,2,1,39344,8590,0,0*c4c0  * 17-04-2025 16:06:54.945
+CRC-Response (SeqNo: 28) - 28,2,I001,1*011d * 17-04-2025 16:06:55.76
+5 Secconds Timer increments in Jar J1 for R5 as Command Execution under process in other function and timer upated for tmr_r5_incub() * 17-04-2025 16:06:57.949
+CRC-Response (SeqNo: 28) - 28,2,F000,1*3e4c * 17-04-2025 16:07:00.157
+RA Picked Rack From J18 * 17-04-2025 16:07:00.160
+Command Sent (SeqNo: 29, Retry: 0) Rack-2 Placed in W6 - With RA:1 - #29,3,1,42974,8590,0,0*f9a7  * 17-04-2025 16:07:00.551
+CRC-Response (SeqNo: 29) - 29,3,I001,1*088d * 17-04-2025 16:07:00.698
+5 Secconds Timer increments in Jar J1 for R5 as Command Execution under process in other function and timer upated for tmr_r5_incub() * 17-04-2025 16:07:02.950
+CRC-Response (SeqNo: 29) - 29,3,F000,1*37dc * 17-04-2025 16:07:06.283
+RA Placed Rack in W6 * 17-04-2025 16:07:06.285
+Command Sent (SeqNo: 30, Retry: 0) Rack-5 Picked from J1 - With RA:2 - #30,2,2,10304,800,0,0*70eb  * 17-04-2025 16:07:08.18
+CRC-Response (SeqNo: 30) - 30,2,I001,2*16d8 * 17-04-2025 16:07:08.142
+CRC-Response (SeqNo: 30) - 30,2,F000,2*2989 * 17-04-2025 16:07:14.548
+RA Picked Rack From J1 * 17-04-2025 16:07:14.551
+Command Sent (SeqNo: 31, Retry: 0) Rack-5 Placed in J2 - With RA:2 - #31,3,2,13934,800,0,0*cf52  * 17-04-2025 16:07:15.108
+CRC-Response (SeqNo: 31) - 31,3,I001,2*1f48 * 17-04-2025 16:07:15.246
+CRC-Response (SeqNo: 31) - 31,3,F000,2*2019 * 17-04-2025 16:07:20.846
+RA Placed Rack in J2 * 17-04-2025 16:07:20.851
+Command Sent (SeqNo: 32, Retry: 0) Rack-3 Picked from J8 - With RA:2 - #32,2,2,35714,800,0,0*73dd  * 17-04-2025 16:07:21.964
+CRC-Response (SeqNo: 32) - 32,2,I001,2*dc79 * 17-04-2025 16:07:22.87
+5 Seconds Timer increments in Jar J23 for R1 as Command Execution under process in other function and timer updated for tmr_r1_incub() * 17-04-2025 16:07:27.958
+CRC-Response (SeqNo: 32) - 32,2,F000,2*e328 * 17-04-2025 16:07:29.719
+RA Picked Rack From J8 * 17-04-2025 16:07:29.722
+11 Secconds Timer increments in Jar J5 for R4 as Command Execution under process in other function and timer updated for tmr_r4_incub() * 17-04-2025 16:07:29.784
+Command Sent (SeqNo: 33, Retry: 0) RA-1 Movement - #33,5,00000111*4ab7  * 17-04-2025 16:07:30.59
+CRC-Response (SeqNo: 33) - 33,5,I001,00000111*ac93 * 17-04-2025 16:07:30.198
+CRC-Response (SeqNo: 33) - 33,5,F000*f271 * 17-04-2025 16:07:30.198
+Command Sent (SeqNo: 34, Retry: 0) Rack-3 Placed in W2 - With RA:2 - #34,3,2,46604,800,0,0*115e  * 17-04-2025 16:07:31.123
+CRC-Response (SeqNo: 34) - 34,3,I001,2*0f58 * 17-04-2025 16:07:31.245
+5 Seconds Timer increments in Jar J23 for R1 as Command Execution under process in other function and timer updated for tmr_r1_incub() * 17-04-2025 16:07:32.976
+CRC-Response (SeqNo: 34) - 34,3,F000,2*3009 * 17-04-2025 16:07:37.658
+RA Placed Rack in W2 * 17-04-2025 16:07:37.664
+11 Seconds Timer increments in Jar J23 for R1 as Command Execution under process in other function and timer updated for tmr_r1_incub() * 17-04-2025 16:07:37.982
+Command Sent (SeqNo: 35, Retry: 0) RA2 Home Command - #35,5,00111000*3f13  * 17-04-2025 16:07:38.224
+CRC-Response (SeqNo: 35) - 35,5,I001,00111000*70dc * 17-04-2025 16:07:38.763
+CRC-Response (SeqNo: 35) - 35,5,F000*d8f1 * 17-04-2025 16:07:38.763
+11 Secconds Timer increments in Jar J5 for R4 as Command Execution under process in other function and timer updated for tmr_r4_incub() * 17-04-2025 16:07:40.791
+Command Sent (SeqNo: 36, Retry: 0) Rack-1 Picked from J23 - With RA:2 - #36,2,2,21194,8590,0,0*2924  * 17-04-2025 16:07:49.47
+CRC-Response (SeqNo: 36) - 36,2,I001,2*0938 * 17-04-2025 16:07:49.170
+5 Secconds Timer increments in Jar J5 for R4 as Command Execution under process in other function and timer updated for tmr_r4_incub() * 17-04-2025 16:07:51.826
+CRC-Response (SeqNo: 36) - 36,2,F000,2*3669 * 17-04-2025 16:07:56.742
+RA Picked Rack From J23 * 17-04-2025 16:07:56.745
+11 Secconds Timer increments in Jar J5 for R4 as Command Execution under process in other function and timer updated for tmr_r4_incub() * 17-04-2025 16:07:56.854
+Command Sent (SeqNo: 37, Retry: 0) Rack-1 Placed in J24 - With RA:2 - #37,3,2,17564,8590,0,0*1a83  * 17-04-2025 16:07:57.145
+CRC-Response (SeqNo: 37) - 37,3,I001,2*00a8 * 17-04-2025 16:07:57.287
+CRC-Response (SeqNo: 37) - 37,3,F000,2*3ff9 * 17-04-2025 16:08:02.872
+RA Placed Rack in J24 * 17-04-2025 16:08:02.875
+18 Seconds Timer increments in Jar W6 for R2 as Command Execution under process in other function and timer updated for tmr_r2_incub() * 17-04-2025 16:08:06.730
+Command Sent (SeqNo: 38, Retry: 0) Rack-4 Picked from J5 - With RA:2 - #38,2,2,24824,800,0,0*f379  * 17-04-2025 16:08:07.951
+CRC-Response (SeqNo: 38) - 38,2,I001,2*fc59 * 17-04-2025 16:08:08.71
+CRC-Response (SeqNo: 38) - 38,2,F000,2*c308 * 17-04-2025 16:08:14.83
+RA Picked Rack From J5 * 17-04-2025 16:08:14.85
+Command Sent (SeqNo: 39, Retry: 0) Rack-4 Placed in J6 - With RA:2 - #39,3,2,28454,800,0,0*058b  * 17-04-2025 16:08:14.564
+CRC-Response (SeqNo: 39) - 39,3,I001,2*f5c9 * 17-04-2025 16:08:14.703
+CRC-Response (SeqNo: 39) - 39,3,F000,2*ca98 * 17-04-2025 16:08:20.294
+RA Placed Rack in J6 * 17-04-2025 16:08:20.298
+Command Sent (SeqNo: 40, Retry: 0) WATER VALVE - 6 CONTROL OFF - #40,13,6,0*8876  * 17-04-2025 16:08:24.796
+CRC-Response (SeqNo: 40) - 40,13,F000*f4d2 * 17-04-2025 16:08:24.913
+Command Sent (SeqNo: 41, Retry: 0) Rack-2 Picked from W6 - With RA:1 - #41,2,1,42974,8590,0,0*2a71  * 17-04-2025 16:08:24.984
+CRC-Response (SeqNo: 41) - 41,2,I001,1*a6d3 * 17-04-2025 16:08:25.101
+CRC-Response (SeqNo: 41) - 41,2,F000,1*9982 * 17-04-2025 16:08:32.884
+RA Picked Rack From W6 * 17-04-2025 16:08:32.887
+Command Sent (SeqNo: 42, Retry: 0) RA-2 Movement - #42,5,00111000*b3ed  * 17-04-2025 16:08:33.401
+CRC-Response (SeqNo: 42) - 42,5,I001,00111000*34df * 17-04-2025 16:08:33.538
+CRC-Response (SeqNo: 42) - 42,5,F000*0e96 * 17-04-2025 16:08:33.538
+Command Sent (SeqNo: 43, Retry: 0) Rack-2 Placed in J19 - With RA:1 - #43,3,1,35714,8590,0,0*eba3  * 17-04-2025 16:08:34.470
+CRC-Response (SeqNo: 43) - 43,3,I001,1*a0b3 * 17-04-2025 16:08:34.594
+5 Secconds Timer increments in Jar W2 for R3 as Command Execution under process in other function and timer upadted for tmr_r3_incub() * 17-04-2025 16:08:38.320
+CRC-Response (SeqNo: 43) - 43,3,F000,1*9fe2 * 17-04-2025 16:08:40.607
+RA Placed Rack in J19 * 17-04-2025 16:08:40.610
+Command Sent (SeqNo: 44, Retry: 0) RA1 Home Command - #44,5,00000111*c649  * 17-04-2025 16:08:41.65
+CRC-Response (SeqNo: 44) - 44,5,I001,00000111*e890 * 17-04-2025 16:08:41.614
+CRC-Response (SeqNo: 44) - 44,5,F000*2416 * 17-04-2025 16:08:41.615
+Command Sent (SeqNo: 45, Retry: 0) WATER VALVE - 2 CONTROL OFF - #45,13,2,0*76f7  * 17-04-2025 16:08:43.390
+CRC-Response (SeqNo: 45) - 45,13,F000*a4ed * 17-04-2025 16:08:43.511
+Command Sent (SeqNo: 46, Retry: 0) Rack-3 Picked from W2 - With RA:1 - #46,2,1,46604,800,0,0*8f80  * 17-04-2025 16:08:43.581
+CRC-Response (SeqNo: 46) - 46,2,I001,1*7c62 * 17-04-2025 16:08:43.697
+CRC-Response (SeqNo: 46) - 46,2,F000,1*4333 * 17-04-2025 16:08:51.64
+RA Picked Rack From W2 * 17-04-2025 16:08:51.67
+Command Sent (SeqNo: 47, Retry: 0) Rack-3 Placed in J9 - With RA:1 - #47,3,1,39344,800,0,0*a9a3  * 17-04-2025 16:08:51.520
+CRC-Response (SeqNo: 47) - 47,3,I001,1*75f2 * 17-04-2025 16:08:51.656
+CRC-Response (SeqNo: 47) - 47,3,F000,1*4aa3 * 17-04-2025 16:08:57.659
+RA Placed Rack in J9 * 17-04-2025 16:08:57.662
+Command Sent (SeqNo: 48, Retry: 0) READ TEMPERATURE - #48,11*298d  * 17-04-2025 16:09:02.276
+CRC-Response (SeqNo: 48) - 48,11,F000,545*4108 * 17-04-2025 16:09:02.397
+Command Sent (SeqNo: 49, Retry: 0) READ TEMPERATURE - #49,11*d58c  * 17-04-2025 16:09:20.485
+CRC-Response (SeqNo: 49) - 49,11,F000,545*c00a * 17-04-2025 16:09:20.818
+Command Sent (SeqNo: 50, Retry: 0) Rack-5 Picked from J2 - With RA:2 - #50,2,2,13934,800,0,0*c5b6  * 17-04-2025 16:09:21.492
+CRC-Response (SeqNo: 50) - 50,2,I001,2*9ec6 * 17-04-2025 16:09:21.624
+CRC-Response (SeqNo: 50) - 50,2,F000,2*a197 * 17-04-2025 16:09:28.373
+RA Picked Rack From J2 * 17-04-2025 16:09:28.376
+Command Sent (SeqNo: 51, Retry: 0) Rack-5 Placed in J4 - With RA:2 - #51,3,2,21194,800,0,0*ed2c  * 17-04-2025 16:09:28.600
+CRC-Response (SeqNo: 51) - 51,3,I001,2*9756 * 17-04-2025 16:09:28.731
+CRC-Response (SeqNo: 51) - 51,3,F000,2*a807 * 17-04-2025 16:09:34.729
+RA Placed Rack in J4 * 17-04-2025 16:09:34.730
+Command Sent (SeqNo: 52, Retry: 0) READ TEMPERATURE - #52,11*31b3  * 17-04-2025 16:09:39.580
+CRC-Response (SeqNo: 52) - 52,11,F000,545*8a10 * 17-04-2025 16:09:39.694
+Command Sent (SeqNo: 53, Retry: 0) Rack-2 Picked from J19 - With RA:2 - #53,2,2,35714,8590,0,0*37a2  * 17-04-2025 16:09:41.231
+CRC-Response (SeqNo: 53) - 53,2,I001,2*9136 * 17-04-2025 16:09:41.367
+CRC-Response (SeqNo: 53) - 53,2,F000,2*ae67 * 17-04-2025 16:09:48.182
+RA Picked Rack From J19 * 17-04-2025 16:09:48.184
+Command Sent (SeqNo: 54, Retry: 0) Rack-2 Placed in J20 - With RA:2 - #54,3,2,32084,8590,0,0*6c96  * 17-04-2025 16:09:48.353
+CRC-Response (SeqNo: 54) - 54,3,I001,2*8746 * 17-04-2025 16:09:48.480
+CRC-Response (SeqNo: 54) - 54,3,F000,2*b817 * 17-04-2025 16:09:54.77
+RA Placed Rack in J20 * 17-04-2025 16:09:54.81
+Command Sent (SeqNo: 55, Retry: 0) WATER VALVE - 2 CONTROL ON - #55,13,2,1*263b  * 17-04-2025 16:09:55.333
+CRC-Response (SeqNo: 55) - 55,13,F000*61bc * 17-04-2025 16:09:55.447
+Command Sent (SeqNo: 56, Retry: 0) Rack-3 Picked from J9 - With RA:1 - #56,2,1,39344,800,0,0*14f2  * 17-04-2025 16:09:58.342
+CRC-Response (SeqNo: 56) - 56,2,I001,1*8066 * 17-04-2025 16:09:58.464
+5 Seconds Timer increments in Jar J24 for R1 as Command Execution under process in other function and timer updated for tmr_r1_incub() * 17-04-2025 16:10:03.507
+CRC-Response (SeqNo: 56) - 56,2,F000,1*bf37 * 17-04-2025 16:10:03.552
+RA Picked Rack From J9 * 17-04-2025 16:10:03.555
+Command Sent (SeqNo: 57, Retry: 0) Rack-3 Placed in W2 - With RA:1 - #57,3,1,46604,800,0,0*32d1  * 17-04-2025 16:10:03.967
+CRC-Response (SeqNo: 57) - 57,3,I001,1*89f6 * 17-04-2025 16:10:04.112
+5 Seconds Timer increments in Jar J24 for R1 as Command Execution under process in other function and timer updated for tmr_r1_incub() * 17-04-2025 16:10:08.497
+CRC-Response (SeqNo: 57) - 57,3,F000,1*b6a7 * 17-04-2025 16:10:10.121
+RA Placed Rack in W2 * 17-04-2025 16:10:10.124
+Command Sent (SeqNo: 58, Retry: 0) WATER VALVE - 1 CONTROL ON - #58,13,1,1*bf0a  * 17-04-2025 16:10:11.85
+CRC-Response (SeqNo: 58) - 58,13,F000*f1e4 * 17-04-2025 16:10:11.207
+Command Sent (SeqNo: 59, Retry: 0) Rack-1 Picked from J24 - With RA:2 - #59,2,2,17564,8590,0,0*afdd  * 17-04-2025 16:10:13.548
+CRC-Response (SeqNo: 59) - 59,2,I001,2*b116 * 17-04-2025 16:10:13.670
+CRC-Response (SeqNo: 59) - 59,2,F000,2*8e47 * 17-04-2025 16:10:20.487
+RA Picked Rack From J24 * 17-04-2025 16:10:20.492
+Command Sent (SeqNo: 60, Retry: 0) Rack-1 Placed in J25 - With RA:2 - #60,3,2,13934,8590,0,0*a06c  * 17-04-2025 16:10:20.704
+CRC-Response (SeqNo: 60) - 60,3,I001,2*1608 * 17-04-2025 16:10:20.833
+5 Secconds Timer increments in Jar J6 for R4 as Command Execution under process in other function and timer updated for tmr_r4_incub() * 17-04-2025 16:10:20.903
+5 Secconds Timer increments in Jar J6 for R4 as Command Execution under process in other function and timer updated for tmr_r4_incub() * 17-04-2025 16:10:25.917
+CRC-Response (SeqNo: 60) - 60,3,F000,2*2959 * 17-04-2025 16:10:26.430
+RA Placed Rack in J25 * 17-04-2025 16:10:26.433
+Command Sent (SeqNo: 61, Retry: 0) Rack-4 Picked from J6 - With RA:2 - #61,2,2,28454,800,0,0*a1f4  * 17-04-2025 16:10:31.2
+CRC-Response (SeqNo: 61) - 61,2,I001,2*1f98 * 17-04-2025 16:10:31.123
+CRC-Response (SeqNo: 61) - 61,2,F000,2*20c9 * 17-04-2025 16:10:37.949
+RA Picked Rack From J6 * 17-04-2025 16:10:37.951
+Command Sent (SeqNo: 62, Retry: 0) RA-1 Movement - #62,5,00000111*8c46  * 17-04-2025 16:10:38.97
+CRC-Response (SeqNo: 62) - 62,5,I001,00000111*f1d2 * 17-04-2025 16:10:38.230
+CRC-Response (SeqNo: 62) - 62,5,F000*6e8f * 17-04-2025 16:10:38.317
+Command Sent (SeqNo: 63, Retry: 0) Rack-4 Placed in W1 - With RA:2 - #63,3,2,42974,800,0,0*3157  * 17-04-2025 16:10:39.153
+CRC-Response (SeqNo: 63) - 63,3,I001,2*19f8 * 17-04-2025 16:10:39.275
+5 Seconds Timer increments in Jar J20 for R2 as Command Execution under process in other function and timer updated for tmr_r2_incub() * 17-04-2025 16:10:39.529
+5 Seconds Timer increments in Jar J20 for R2 as Command Execution under process in other function and timer updated for tmr_r2_incub() * 17-04-2025 16:10:44.531
+CRC-Response (SeqNo: 63) - 63,3,F000,2*26a9 * 17-04-2025 16:10:46.90
+RA Placed Rack in W1 * 17-04-2025 16:10:46.93
+Command Sent (SeqNo: 64, Retry: 0) RA2 Home Command - #64,5,00111000*f9e2  * 17-04-2025 16:10:46.269
+CRC-Response (SeqNo: 64) - 64,5,I001,00111000*2d9d * 17-04-2025 16:10:46.815
+CRC-Response (SeqNo: 64) - 64,5,F000*440f * 17-04-2025 16:10:46.815
+11 Secconds Timer increments in Jar H2 for R6 as Command Execution under process in other function and timer updated for tmr_r6_incub() * 17-04-2025 16:10:47.43
+Command Sent (SeqNo: 65, Retry: 0) Rack-2 Picked from J20 - With RA:2 - #65,2,2,32084,8590,0,0*72c9  * 17-04-2025 16:10:49.586
+CRC-Response (SeqNo: 65) - 65,2,I001,2*cad9 * 17-04-2025 16:10:49.710
+5 Secconds Timer increments in Jar H2 for R6 as Command Execution under process in other function and timer updated for tmr_r6_incub() * 17-04-2025 16:10:58.95
+CRC-Response (SeqNo: 65) - 65,2,F000,2*f588 * 17-04-2025 16:10:58.483
+RA Picked Rack From J20 * 17-04-2025 16:10:58.486
+Command Sent (SeqNo: 66, Retry: 0) Rack-2 Placed in J21 - With RA:2 - #66,3,2,28454,8590,0,0*150e  * 17-04-2025 16:10:58.701
+CRC-Response (SeqNo: 66) - 66,3,I001,2*09e8 * 17-04-2025 16:10:58.842
+5 Secconds Timer increments in Jar H2 for R6 as Command Execution under process in other function and timer updated for tmr_r6_incub() * 17-04-2025 16:11:03.153
+CRC-Response (SeqNo: 66) - 66,3,F000,2*36b9 * 17-04-2025 16:11:04.431
+RA Placed Rack in J21 * 17-04-2025 16:11:04.435
+Command Sent (SeqNo: 67, Retry: 0) HEATER DOOR OPEN - #67,8,1,1*d4a7  * 17-04-2025 16:11:08.218
+CRC-Response (SeqNo: 67) - 67,8,I001*988c * 17-04-2025 16:11:08.334
+CRC-Response (SeqNo: 67) - 67,8,F000*4c4e * 17-04-2025 16:11:08.673
+Command Sent (SeqNo: 68, Retry: 0) Rack-6 Picked from H2 - With RA:2 - #68,2,2,2688,8700,0,1*7ef8  * 17-04-2025 16:11:09.237
+CRC-Response (SeqNo: 68) - 68,2,I001,2*3048 * 17-04-2025 16:11:09.382
+5 Secconds Timer increments in Jar W2 for R3 as Command Execution under process in other function and timer upadted for tmr_r3_incub() * 17-04-2025 16:11:10.637
+5 Secconds Timer increments in Jar W2 for R3 as Command Execution under process in other function and timer upadted for tmr_r3_incub() * 17-04-2025 16:11:15.655
+CRC-Response (SeqNo: 68) - 68,2,F000,2*0f19 * 17-04-2025 16:11:17.442
+RA Picked Rack From H2 * 17-04-2025 16:11:17.445
+Command Sent (SeqNo: 69, Retry: 0) HEATER DOOR CLOSE - #69,8,1,0*d489  * 17-04-2025 16:11:17.871
+CRC-Response (SeqNo: 69) - 69,8,I001*140d * 17-04-2025 16:11:18.2
+CRC-Response (SeqNo: 69) - 69,8,F000*c0cf * 17-04-2025 16:11:18.337
+Command Sent (SeqNo: 70, Retry: 0) Rack-6 Placed in J1 - With RA:2 - #70,3,2,10304,800,0,0*644b  * 17-04-2025 16:11:18.915
+CRC-Response (SeqNo: 70) - 70,3,I001,2*ea0c * 17-04-2025 16:11:19.51
+5 Secconds Timer increments in Jar W2 for R3 as Command Execution under process in other function and timer upadted for tmr_r3_incub() * 17-04-2025 16:11:20.658
+CRC-Response (SeqNo: 70) - 70,3,F000,2*d55d * 17-04-2025 16:11:25.104
+RA Placed Rack in J1 * 17-04-2025 16:11:25.107
+Command Sent (SeqNo: 71, Retry: 0) WATER VALVE - 2 CONTROL OFF - #71,13,2,0*75e2  * 17-04-2025 16:11:26.42
+CRC-Response (SeqNo: 71) - 71,13,F000*6b2f * 17-04-2025 16:11:26.232
+Command Sent (SeqNo: 72, Retry: 0) Rack-3 Picked from W2 - With RA:1 - #72,2,1,46604,800,0,0*8c35  * 17-04-2025 16:11:26.296
+CRC-Response (SeqNo: 72) - 72,2,I001,1*ed2c * 17-04-2025 16:11:26.420
+CRC-Response (SeqNo: 72) - 72,2,F000,1*d27d * 17-04-2025 16:11:33.780
+RA Picked Rack From W2 * 17-04-2025 16:11:33.784
+Command Sent (SeqNo: 73, Retry: 0) Rack-3 Placed in J18 - With RA:1 - #73,3,1,39344,8590,0,0*1761  * 17-04-2025 16:11:34.253
+CRC-Response (SeqNo: 73) - 73,3,I001,1*e4bc * 17-04-2025 16:11:34.389
+5 Secconds Timer increments in Jar J4 for R5 as Command Execution under process in other function and timer upated for tmr_r5_incub() * 17-04-2025 16:11:35.450
+CRC-Response (SeqNo: 73) - 73,3,F000,1*dbed * 17-04-2025 16:11:40.408
+RA Placed Rack in J18 * 17-04-2025 16:11:40.411
+11 Secconds Timer increments in Jar J4 for R5 as Command Execution under process in other function and timer upated for tmr_r5_incub() * 17-04-2025 16:11:40.458
+Command Sent (SeqNo: 74, Retry: 0) Rack-5 Picked from J4 - With RA:2 - #74,2,2,21194,800,0,0*53c8  * 17-04-2025 16:11:51.505
+CRC-Response (SeqNo: 74) - 74,2,I001,2*f38c * 17-04-2025 16:11:51.625
+CRC-Response (SeqNo: 74) - 74,2,F000,2*ccdd * 17-04-2025 16:11:58.30
+RA Picked Rack From J4 * 17-04-2025 16:11:58.40
+Command Sent (SeqNo: 75, Retry: 0) Rack-5 Placed in J5 - With RA:2 - #75,3,2,24824,800,0,0*4af7  * 17-04-2025 16:11:58.603
+CRC-Response (SeqNo: 75) - 75,3,I001,2*fa1c * 17-04-2025 16:11:58.743
+CRC-Response (SeqNo: 75) - 75,3,F000,2*c54d * 17-04-2025 16:12:04.341
+RA Placed Rack in J5 * 17-04-2025 16:12:04.344
+Command Sent (SeqNo: 76, Retry: 0) Rack-2 Picked from J21 - With RA:2 - #76,2,2,28454,8590,0,0*384f  * 17-04-2025 16:12:05.254
+CRC-Response (SeqNo: 76) - 76,2,I001,2*392d * 17-04-2025 16:12:05.380
+CRC-Response (SeqNo: 76) - 76,2,F000,2*067c * 17-04-2025 16:12:11.167
+RA Picked Rack From J21 * 17-04-2025 16:12:11.170
+Command Sent (SeqNo: 77, Retry: 0) Rack-2 Placed in J22 - With RA:2 - #77,3,2,24824,8590,0,0*bd38  * 17-04-2025 16:12:11.375
+CRC-Response (SeqNo: 77) - 77,3,I001,2*30bd * 17-04-2025 16:12:11.509
+CRC-Response (SeqNo: 77) - 77,3,F000,2*0fec * 17-04-2025 16:12:17.108
+RA Placed Rack in J22 * 17-04-2025 16:12:17.112
+Command Sent (SeqNo: 78, Retry: 0) WATER VALVE - 6 CONTROL ON - #78,13,6,1*1ea2  * 17-04-2025 16:12:24.12
+CRC-Response (SeqNo: 78) - 78,13,F000*3b45 * 17-04-2025 16:12:24.132
+Command Sent (SeqNo: 79, Retry: 0) Rack-1 Picked from J25 - With RA:2 - #79,2,2,13934,8590,0,0*15f1  * 17-04-2025 16:12:27.176
+CRC-Response (SeqNo: 79) - 79,2,I001,2*091d * 17-04-2025 16:12:27.302
+CRC-Response (SeqNo: 79) - 79,2,F000,2*364c * 17-04-2025 16:12:33.712
+RA Picked Rack From J25 * 17-04-2025 16:12:33.715
+Command Sent (SeqNo: 80, Retry: 0) RA-1 Movement - #80,5,00000111*c5a9  * 17-04-2025 16:12:33.797
+CRC-Response (SeqNo: 80) - 80,5,I001,00000111*7a11 * 17-04-2025 16:12:33.944
+CRC-Response (SeqNo: 80) - 80,5,F000*d742 * 17-04-2025 16:12:33.944
+Command Sent (SeqNo: 81, Retry: 0) Rack-1 Placed in U1 - With RA:2 - #81,3,2,61124,16380,0,0*76e7  * 17-04-2025 16:12:34.875
+CRC-Response (SeqNo: 81) - 81,3,I001,2*3b6d * 17-04-2025 16:12:35.1
+5 Secconds Timer increments in Jar J18 for R3 as Command Execution under process in other function and timer upadted for tmr_r3_incub() * 17-04-2025 16:12:41.16
+CRC-Response (SeqNo: 81) - 81,3,F000,2*043c * 17-04-2025 16:12:45.468
+RA Placed Rack in U1 * 17-04-2025 16:12:45.471
+Rack - 1Protocol Ended * 17-04-2025 16:12:46.426
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:12:48.521
+5 Secconds Timer increments in Jar W1 for R4 as Command Execution under process in other function and timer updated for tmr_r4_incub() * 17-04-2025 16:12:48.534
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:12:48.655
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:12:48.708
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:12:48.825
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:12:48.879
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:12:48.995
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:12:49.49
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:12:49.166
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:12:49.220
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:12:49.335
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:12:49.389
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:12:49.506
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:12:49.560
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:12:49.677
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:12:49.729
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:12:49.847
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:12:49.942
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:12:50.65
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:12:50.119
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:12:50.236
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:12:50.290
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:12:50.407
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:12:50.461
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:12:50.576
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:12:50.629
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:12:50.748
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:12:50.801
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:12:50.919
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:12:50.973
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:12:51.90
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:12:51.142
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:12:51.259
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:12:51.313
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:12:51.428
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:12:51.482
+5 Secconds Timer increments in Jar W1 for R4 as Command Execution under process in other function and timer updated for tmr_r4_incub() * 17-04-2025 16:12:51.538
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:12:51.599
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:12:51.652
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:12:51.769
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:12:51.822
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:12:51.938
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:12:51.992
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:12:52.109
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:12:52.163
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:12:52.278
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:12:52.330
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:12:52.451
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:12:52.504
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:12:52.620
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:12:52.672
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:12:52.794
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:12:52.847
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:12:52.963
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:12:53.16
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:12:53.136
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:12:53.189
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:12:53.305
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:12:53.360
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:12:53.474
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:12:53.528
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:12:53.642
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:12:53.695
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:12:53.814
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:12:53.867
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:12:53.983
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:12:54.37
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:12:54.155
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:12:54.208
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:12:54.326
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:12:54.379
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:12:54.496
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:12:54.549
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:12:54.666
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:12:54.719
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:12:54.838
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:12:54.891
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:12:55.10
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:12:55.63
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:12:55.180
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:12:55.232
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:12:55.347
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:12:55.399
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:12:55.516
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:12:55.568
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:12:55.684
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:12:55.736
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:12:55.853
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:12:55.907
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:12:56.24
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:12:56.77
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:12:56.193
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:12:56.246
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:12:56.365
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:12:56.418
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:12:56.536
+5 Secconds Timer increments in Jar W1 for R4 as Command Execution under process in other function and timer updated for tmr_r4_incub() * 17-04-2025 16:12:56.546
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:12:56.589
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:12:56.704
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:12:56.767
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:12:56.891
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:12:56.944
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:12:57.62
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:12:57.114
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:12:57.233
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:12:57.286
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:12:57.398
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:12:57.451
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:12:57.565
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:12:57.616
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:12:57.735
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:12:57.787
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:12:57.907
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:12:57.960
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:12:58.78
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:12:58.130
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:12:58.247
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:12:58.300
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:12:58.417
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:12:58.470
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:12:58.588
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:12:58.641
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:12:58.757
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:12:58.810
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:12:58.923
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:12:58.976
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:12:59.92
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:12:59.145
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:12:59.262
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:12:59.315
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:12:59.431
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:12:59.483
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:12:59.599
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:12:59.652
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:12:59.785
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:12:59.838
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:12:59.955
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:13:00.8
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:13:00.123
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:13:00.175
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:13:00.290
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:13:00.343
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:13:00.460
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:13:00.513
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:13:00.628
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:13:00.680
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:13:00.798
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:13:00.851
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:13:00.967
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:13:01.20
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:13:01.196
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:13:01.248
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:13:01.366
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:13:01.420
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:13:01.536
+5 Secconds Timer increments in Jar W1 for R4 as Command Execution under process in other function and timer updated for tmr_r4_incub() * 17-04-2025 16:13:01.577
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:13:01.588
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:13:01.704
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:13:01.758
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:13:01.874
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:13:01.928
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:13:02.75
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:13:02.127
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:13:02.246
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:13:02.298
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:13:02.413
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:13:02.466
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:13:02.583
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:13:02.636
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:13:02.753
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:13:02.805
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:13:02.923
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:13:02.976
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:13:03.91
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:13:03.143
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:13:03.262
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:13:03.316
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:13:03.432
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:13:03.485
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:13:03.602
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:13:03.654
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:13:03.787
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:13:03.839
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:13:03.955
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:13:04.9
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:13:04.127
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:13:04.180
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:13:04.295
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:13:04.348
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:13:04.468
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:13:04.520
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:13:04.636
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:13:04.688
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:13:04.807
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:13:04.860
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:13:04.976
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:13:05.30
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:13:05.147
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:13:05.199
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:13:05.315
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:13:05.368
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:13:05.487
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:13:05.539
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:13:05.656
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:13:05.708
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:13:05.826
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:13:05.878
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:13:05.997
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:13:06.50
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:13:06.166
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:13:06.219
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:13:06.334
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:13:06.387
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:13:06.504
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:13:06.558
+5 Secconds Timer increments in Jar W1 for R4 as Command Execution under process in other function and timer updated for tmr_r4_incub() * 17-04-2025 16:13:06.606
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:13:06.674
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:13:06.726
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:13:06.846
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:13:06.899
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:13:07.17
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:13:07.70
+Rack Unloaded From U1 * 17-04-2025 16:13:07.164
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:13:07.189
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:13:07.241
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:13:07.356
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:13:07.409
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:13:07.527
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:13:07.580
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:13:07.697
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:13:07.748
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:13:07.867
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:13:07.919
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:13:08.37
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:13:08.91
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:13:08.208
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:13:08.261
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:13:08.381
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:13:08.433
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:13:08.549
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:13:08.601
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:13:08.718
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:13:08.770
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:13:08.888
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:13:08.942
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:13:09.59
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:13:09.113
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:13:09.228
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:13:09.280
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:13:09.398
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:13:09.451
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:13:09.567
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:13:09.620
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:13:09.738
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:13:09.790
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:13:09.908
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:13:09.962
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:13:10.76
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:13:10.129
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:13:10.246
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:2 - #82,2,2,39344,8590,0,0*34b2  * 17-04-2025 16:13:10.298
+User Aborted / Stopped the application forcefully  * 17-04-2025 16:13:10.387
+CRC-Response (SeqNo: 82) - 82,2,F006,2*c6ed * 17-04-2025 16:13:10.419
+Command Sent (SeqNo: 82, Retry: 0) Rack-3 Picked from J18 - With RA:1 - #82,2,1,39344,8590,0,0*c5f2  * 17-04-2025 16:13:10.471
+CRC-Response (SeqNo: 82) - 82,2,F006,1*c7ad * 17-04-2025 16:13:13.541
+Command Sent (SeqNo: 82, Retry: 0) HEATER OFF - #83,12,0*2185  * 17-04-2025 16:13:13.593
+CRC-Response (SeqNo: 82) - 83,12,F000*ea07 * 17-04-2025 16:13:13.712
+Command Sent (SeqNo: 83, Retry: 0) HEATER OFF - #83,12,0*2185  * 17-04-2025 16:13:13.775
+CRC-Response (SeqNo: 83) - 83,12,F000*ea07 * 17-04-2025 16:13:13.897

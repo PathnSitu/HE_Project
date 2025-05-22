@@ -1,0 +1,767 @@
+Device Intialization started * 08-03-2025 10:16:45.204
+Command * SET TEMPERATURE - #0,10,37*84ca
+ * 08-03-2025 10:16:45.333
+CRC-Response  - 0,10,F000*1ae9 * 08-03-2025 10:16:45.545
+Command * WATER VALVE - 1 CONTROL ON - #1,13,1,1*7feb
+ * 08-03-2025 10:16:46.609
+CRC-Response  - 1,13,F000*b9e4 * 08-03-2025 10:16:46.829
+Command * WATER VALVE - 2 CONTROL ON - #2,13,2,1*6a5b
+ * 08-03-2025 10:16:46.885
+CRC-Response  - 2,13,F000*49f0 * 08-03-2025 10:16:52.99
+Command * WATER VALVE - 3 CONTROL ON - #3,13,3,1*66cb
+ * 08-03-2025 10:16:52.460
+CRC-Response  - 3,13,F000*d9fd * 08-03-2025 10:16:52.669
+Command * WATER VALVE - 4 CONTROL ON - #4,13,4,1*413b
+ * 08-03-2025 10:16:53.239
+CRC-Response  - 4,13,F000*e9db * 08-03-2025 10:16:53.445
+Command * WATER VALVE - 5 CONTROL ON - #5,13,5,1*4dab
+ * 08-03-2025 10:16:54.13
+CRC-Response  - 5,13,F000*79d6 * 08-03-2025 10:16:54.224
+Command * WATER VALVE - 6 CONTROL ON - #6,13,6,1*581b
+ * 08-03-2025 10:16:54.765
+CRC-Response  - 6,13,F000*89c2 * 08-03-2025 10:16:54.981
+Command * Home Command - #7,5,00100100*dea4
+ * 08-03-2025 10:16:55.534
+CRC-Response  - 7,5,I001,00100100*33ee * 08-03-2025 10:16:55.741
+CRC-Response  - 7,5,F000*0b7a * 08-03-2025 10:16:57.607
+Command * Home Command - #8,5,01111111*665c
+ * 08-03-2025 10:16:59.809
+CRC-Response  - 8,5,I001,01111111*6c37 * 08-03-2025 10:17:00.26
+CRC-Response  - 8,5,F000*4b3a * 08-03-2025 10:17:13.304
+Command * Home Command - #9,5,01111111*a5a1
+ * 08-03-2025 10:17:15.796
+CRC-Response  - 9,5,I001,01111111*fc66 * 08-03-2025 10:17:16.9
+CRC-Response  - 9,5,F000*87fb * 08-03-2025 10:17:29.286
+Command * Level Sensing For U1 - #10,4,61124,16380,0,0*9f4f
+ * 08-03-2025 10:17:31.189
+CRC-Response  - 10,4,I001*82eb * 08-03-2025 10:17:31.560
+CRC-Response  - 10,4,F000,695*95d2 * 08-03-2025 10:17:35.556
+U2 Value - 695 * 08-03-2025 10:17:35.581
+Command * Level Sensing For U2 - #11,4,57494,16380,0,0*bade
+ * 08-03-2025 10:17:35.624
+CRC-Response  - 11,4,I001*4e2a * 08-03-2025 10:17:40.834
+CRC-Response  - 11,4,F000,691*952e * 08-03-2025 10:17:40.836
+U2 Value - 691 * 08-03-2025 10:17:40.850
+Command * Level Sensing For U3 - #12,4,53864,16380,0,0*e29a
+ * 08-03-2025 10:17:41.179
+CRC-Response  - 12,4,I001*5b6a * 08-03-2025 10:17:41.391
+CRC-Response  - 12,4,F000,659*572e * 08-03-2025 10:17:43.684
+U3 Value - 659 * 08-03-2025 10:17:43.700
+Command * Level Sensing For U4 - #13,4,50234,16380,0,0*1bb0
+ * 08-03-2025 10:17:43.957
+CRC-Response  - 13,4,I001*97ab * 08-03-2025 10:17:44.164
+CRC-Response  - 13,4,F000,599*9426 * 08-03-2025 10:17:46.471
+U4 Value - 599 * 08-03-2025 10:17:46.486
+Command * Level Sensing For U5 - #14,4,46604,16380,0,0*e9c8
+ * 08-03-2025 10:17:46.723
+CRC-Response  - 14,4,I001*71ea * 08-03-2025 10:17:46.937
+CRC-Response  - 14,4,F000,666*ab66 * 08-03-2025 10:17:49.228
+U5 Value - 666 * 08-03-2025 10:17:49.244
+Command * Level Sensing For U6 - #15,4,42974,16380,0,0*1511
+ * 08-03-2025 10:17:49.482
+CRC-Response  - 15,4,I001*bd2b * 08-03-2025 10:17:49.693
+CRC-Response  - 15,4,F000,587*c8ae * 08-03-2025 10:17:51.999
+U6 Value - 587 * 08-03-2025 10:17:52.14
+Command * SET TEMPERATURE - #0,10,32*870a
+ * 08-03-2025 13:22:53.624
+CRC-Response  - 0,10,F000*1ae9 * 08-03-2025 13:22:53.834
+Command * HEATER ON - #1,12,1*dbe7
+ * 08-03-2025 13:22:54.902
+CRC-Response  - 1,12,F000*68e5 * 08-03-2025 13:22:55.121
+Command * HEATER DOOR CLOSE - #2,8,1,0*21eb
+ * 08-03-2025 13:22:55.998
+CRC-Response  - 2,8,I001*fd79 * 08-03-2025 13:22:56.206
+CRC-Response  - 2,8,F000*29bb * 08-03-2025 13:22:56.548
+Command * READ TEMPERATURE - #3,11*ed1a
+ * 08-03-2025 13:22:56.760
+CRC-Response  - 3,11,F000,545*d48f * 08-03-2025 13:22:56.967
+Command * WATER VALVE - 1 CONTROL OFF - #4,13,1,0*80ea
+ * 08-03-2025 13:23:02.21
+CRC-Response  - 4,13,F000*e9db * 08-03-2025 13:23:02.225
+Command * WATER VALVE - 2 CONTROL OFF - #5,13,2,0*4cdb
+ * 08-03-2025 13:23:02.785
+CRC-Response  - 5,13,F000*79d6 * 08-03-2025 13:23:03.1
+Command * WATER VALVE - 3 CONTROL OFF - #6,13,3,0*99ca
+ * 08-03-2025 13:23:03.551
+CRC-Response  - 6,13,F000*89c2 * 08-03-2025 13:23:03.760
+Command * WATER VALVE - 4 CONTROL OFF - #7,13,4,0*94ba
+ * 08-03-2025 13:23:04.319
+CRC-Response  - 7,13,F000*19cf * 08-03-2025 13:23:04.538
+Command * WATER VALVE - 5 CONTROL OFF - #8,13,5,0*14ab
+ * 08-03-2025 13:23:05.82
+CRC-Response  - 8,13,F000*e98e * 08-03-2025 13:23:05.291
+Command * WATER VALVE - 6 CONTROL OFF - #9,13,6,0*d89a
+ * 08-03-2025 13:23:05.849
+CRC-Response  - 9,13,F000*7983 * 08-03-2025 13:23:06.61
+Command * Home Command - #10,5,01111111*2199
+ * 08-03-2025 13:23:06.613
+CRC-Response  - 10,5,I001,01111111*c9ef * 08-03-2025 13:23:06.822
+CRC-Response  - 10,5,F000*8728 * 08-03-2025 13:23:20.92
+Command * Home Command - #11,5,01111111*e264
+ * 08-03-2025 13:23:22.504
+CRC-Response  - 11,5,I001,01111111*59be * 08-03-2025 13:23:22.723
+CRC-Response  - 11,5,F000*4be9 * 08-03-2025 13:23:35.993
+Command * Level Sensing For L1 - #12,4,17564,16380,0,0*6888
+ * 08-03-2025 13:23:37.424
+CRC-Response  - 12,4,I001*5b6a * 08-03-2025 13:23:37.636
+CRC-Response  - 12,4,F000,728*67bc * 08-03-2025 13:23:45.964
+L1 Value - 500 * 08-03-2025 13:23:45.989
+Command * Level Sensing For L2 - #13,4,13934,16380,0,0*90ad
+ * 08-03-2025 13:23:46.284
+CRC-Response  - 13,4,I001*97ab * 08-03-2025 13:23:46.491
+CRC-Response  - 13,4,F000,726*60c0 * 08-03-2025 13:23:48.797
+L2 Value - 500 * 08-03-2025 13:23:48.812
+Command * Level Sensing For L3 - #14,4,10304,16380,0,0*e907
+ * 08-03-2025 13:23:49.53
+CRC-Response  - 14,4,I001*71ea * 08-03-2025 13:23:49.263
+CRC-Response  - 14,4,F000,732*f835 * 08-03-2025 13:23:51.557
+L3 Value - 500 * 08-03-2025 13:23:51.575
+Command * Home Command - #15,5,01111111*2d95
+ * 08-03-2025 13:23:51.874
+CRC-Response  - 15,5,I001,01111111*98fc * 08-03-2025 13:23:52.87
+CRC-Response  - 15,5,F000*b8e8 * 08-03-2025 13:24:05.357
+Command * Home Command - #16,5,01111111*2991
+ * 08-03-2025 13:24:07.827
+CRC-Response  - 16,5,I001,01111111*680c * 08-03-2025 13:24:08.37
+CRC-Response  - 16,5,F000*ada8 * 08-03-2025 13:24:21.303
+Command * HEATER DOOR OPEN - #17,8,1,1*32e6
+ * 08-03-2025 13:24:25.767
+CRC-Response  - 17,8,I001*a8aa * 08-03-2025 13:24:25.985
+CRC-Response  - 17,8,F000*7c68 * 08-03-2025 13:24:26.311
+Command * Level Sensing For L1 - #18,4,17564,16380,0,0*b113
+ * 08-03-2025 13:24:26.541
+CRC-Response  - 18,4,I001*24ea * 08-03-2025 13:24:26.762
+CRC-Response  - 18,4,F000,730*29a4 * 08-03-2025 13:24:30.436
+L1 Value - 500 * 08-03-2025 13:24:30.449
+Command * Level Sensing For L2 - #19,4,13934,16380,0,0*4936
+ * 08-03-2025 13:24:30.828
+CRC-Response  - 19,4,I001*e82b * 08-03-2025 13:24:31.36
+CRC-Response  - 19,4,F000,729*7c98 * 08-03-2025 13:24:33.327
+L2 Value - 500 * 08-03-2025 13:24:33.342
+Command * Level Sensing For L3 - #20,4,10304,16380,0,0*eab2
+ * 08-03-2025 13:24:33.582
+CRC-Response  - 20,4,I001*72ff * 08-03-2025 13:24:33.790
+CRC-Response  - 20,4,F000,737*f701 * 08-03-2025 13:24:36.96
+L3 Value - 500 * 08-03-2025 13:24:36.113
+Command * Home Command - #21,5,01111111*2161
+ * 08-03-2025 13:24:36.350
+CRC-Response  - 21,5,I001,01111111*1d4e * 08-03-2025 13:24:36.559
+CRC-Response  - 21,5,F000*bbfd * 08-03-2025 13:24:49.833
+Command * Level Sensing For L1 - #23,4,17564,16380,0,0*a7f1
+ * 08-03-2025 13:24:50.216
+CRC-Response  - 23,4,F005*b0bd * 08-03-2025 13:24:50.423
+User Aborted / Stopped the application forcefully  * 08-03-2025 13:25:37.27
+Command * HEATER OFF - #24,12,0*962e
+ * 08-03-2025 13:25:40.221
+CRC-Response  - 24,12,F000*fa01 * 08-03-2025 13:25:40.472
+Command * WATER VALVE - 1 CONTROL OFF - #25,13,1,0*d62c
+ * 08-03-2025 13:25:41.350
+CRC-Response  - 25,13,F000*bb0d * 08-03-2025 13:25:41.557
+Command * WATER VALVE - 2 CONTROL OFF - #26,13,2,0*c39c
+ * 08-03-2025 13:25:42.124
+CRC-Response  - 26,13,F000*4b19 * 08-03-2025 13:25:42.334
+Command * WATER VALVE - 3 CONTROL OFF - #27,13,3,0*cf0c
+ * 08-03-2025 13:25:42.894
+CRC-Response  - 27,13,F000*db14 * 08-03-2025 13:25:43.113
+Command * WATER VALVE - 4 CONTROL OFF - #28,13,4,0*4efd
+ * 08-03-2025 13:25:43.665
+CRC-Response  - 28,13,F000*2b55 * 08-03-2025 13:25:43.875
+Command * WATER VALVE - 5 CONTROL OFF - #29,13,5,0*426d
+ * 08-03-2025 13:25:44.422
+CRC-Response  - 29,13,F000*bb58 * 08-03-2025 13:25:44.634
+Command * WATER VALVE - 6 CONTROL OFF - #30,13,6,0*b850
+ * 08-03-2025 13:25:45.207
+CRC-Response  - 30,13,F000*2e63 * 08-03-2025 13:25:45.422
+User Aborted / Stopped the application forcefully  * 08-03-2025 13:27:40.904
+User Aborted / Stopped the application forcefully  * 08-03-2025 13:28:29.60
+Command * SET TEMPERATURE - #0,10,32*870a
+ * 08-03-2025 13:29:23.596
+CRC-Response  - 0,10,F000*1ae9 * 08-03-2025 13:29:23.845
+Command * HEATER ON - #1,12,1*dbe7
+ * 08-03-2025 13:29:24.906
+CRC-Response  - 1,12,F000*68e5 * 08-03-2025 13:29:25.124
+Command * HEATER DOOR CLOSE - #2,8,1,0*21eb
+ * 08-03-2025 13:29:25.994
+CRC-Response  - 2,8,I001*fd79 * 08-03-2025 13:29:26.205
+CRC-Response  - 2,8,F000*29bb * 08-03-2025 13:29:26.546
+Command * READ TEMPERATURE - #3,11*ed1a
+ * 08-03-2025 13:29:26.753
+CRC-Response  - 3,11,F000,545*d48f * 08-03-2025 13:29:26.962
+Command * WATER VALVE - 1 CONTROL OFF - #4,13,1,0*80ea
+ * 08-03-2025 13:29:32.23
+CRC-Response  - 4,13,F000*e9db * 08-03-2025 13:29:32.229
+Command * WATER VALVE - 2 CONTROL OFF - #5,13,2,0*4cdb
+ * 08-03-2025 13:29:32.796
+CRC-Response  - 5,13,F000*79d6 * 08-03-2025 13:29:33.3
+Command * WATER VALVE - 3 CONTROL OFF - #6,13,3,0*99ca
+ * 08-03-2025 13:29:33.553
+CRC-Response  - 6,13,F000*89c2 * 08-03-2025 13:29:33.762
+Command * WATER VALVE - 4 CONTROL OFF - #7,13,4,0*94ba
+ * 08-03-2025 13:29:34.329
+CRC-Response  - 7,13,F000*19cf * 08-03-2025 13:29:34.536
+Command * WATER VALVE - 5 CONTROL OFF - #8,13,5,0*14ab
+ * 08-03-2025 13:29:35.88
+CRC-Response  - 8,13,F000*e98e * 08-03-2025 13:29:35.296
+Command * WATER VALVE - 6 CONTROL OFF - #9,13,6,0*d89a
+ * 08-03-2025 13:29:35.873
+CRC-Response  - 9,13,F000*7983 * 08-03-2025 13:29:36.83
+Command * Home Command - #10,5,01111111*2199
+ * 08-03-2025 13:29:36.648
+CRC-Response  - 10,5,I001,01111111*c9ef * 08-03-2025 13:29:36.853
+CRC-Response  - 10,5,F000*8728 * 08-03-2025 13:29:50.131
+Command * Home Command - #11,5,01111111*e264
+ * 08-03-2025 13:29:52.607
+CRC-Response  - 11,5,I001,01111111*59be * 08-03-2025 13:29:52.816
+CRC-Response  - 11,5,F000*4be9 * 08-03-2025 13:30:06.106
+Command * Level Sensing For L1 - #12,4,17564,16380,0,0*6888
+ * 08-03-2025 13:30:07.462
+CRC-Response  - 12,4,I001*5b6a * 08-03-2025 13:30:07.671
+CRC-Response  - 12,4,F000,673*30af * 08-03-2025 13:30:16.16
+Command * Level Sensing For L2 - #13,4,13934,16380,0,0*90ad
+ * 08-03-2025 13:31:48.132
+L2 Value - 200 * 08-03-2025 13:31:48.173
+Command * Level Sensing For L3 - #14,4,10304,16380,0,0*e907
+ * 08-03-2025 13:31:56.101
+CRC-Response  - 14,4,I001*71ea * 08-03-2025 13:31:56.242
+CRC-Response  - 14,4,F000,679*3f27 * 08-03-2025 13:31:58.660
+L3 Value - 200 * 08-03-2025 13:32:03.120
+Command * Home Command - #15,5,01111111*2d95
+ * 08-03-2025 13:32:03.180
+CRC-Response  - 15,5,I001,01111111*98fc * 08-03-2025 13:32:08.410
+CRC-Response  - 15,5,F000*b8e8 * 08-03-2025 13:32:16.678
+Command * Home Command - #17,5,01111111*ea6c
+ * 08-03-2025 13:32:17.877
+CRC-Response  - 17,5,I001,01111111*f85d * 08-03-2025 13:32:18.86
+CRC-Response  - 17,5,F000*6169 * 08-03-2025 13:32:31.366
+Rack - 1Protocol Started * 08-03-2025 13:32:41.467
+Command * Rack-1 Picked from L1 - #18,2,1,17564,16380,0,0*c654
+ * 08-03-2025 13:32:41.553
+CRC-Response  - 18,2,I001,1*4512 * 08-03-2025 13:32:41.783
+CRC-Response  - 18,2,F000,1*7a43 * 08-03-2025 13:32:47.801
+RA Picked Rack From L1 * 08-03-2025 13:32:47.805
+Command * Rack-1 Placed in H1 - #19,3,1,2688,1000,0,1*0ed4
+ * 08-03-2025 13:32:47.940
+CRC-Response  - 19,3,I001,1*4c82 * 08-03-2025 13:32:48.157
+CRC-Response  - 19,3,F000,1*73d3 * 08-03-2025 13:32:55.46
+RA Placed Rack in H1 * 08-03-2025 13:32:55.49
+Command * HEATER DOOR CLOSE - #20,8,1,0*2711
+ * 08-03-2025 13:32:55.234
+CRC-Response  - 20,8,I001*beff * 08-03-2025 13:32:55.449
+CRC-Response  - 20,8,F000*6a3d * 08-03-2025 13:32:55.788
+Command * READ TEMPERATURE - #21,11*b506
+ * 08-03-2025 13:32:56.8
+CRC-Response  - 21,11,F000,545*8e13 * 08-03-2025 13:32:56.224
+Command * HEATER DOOR OPEN - #22,8,1,1*27f3
+ * 08-03-2025 13:39:00.28
+CRC-Response  - 22,8,I001*677e * 08-03-2025 13:39:00.498
+CRC-Response  - 22,8,F000*b3bc * 08-03-2025 13:39:00.563
+Rack - 2Protocol Started * 08-03-2025 13:39:01.518
+Command * Rack-2 Picked from L3 - #23,2,1,10304,16380,0,0*a19a
+ * 08-03-2025 13:39:01.603
+CRC-Response  - 23,2,I001,1*e46c * 08-03-2025 13:39:01.810
+CRC-Response  - 23,2,F000,1*db3d * 08-03-2025 13:39:08.218
+RA Picked Rack From L3 * 08-03-2025 13:39:08.222
+Command * Rack-2 Placed in H2 - #24,3,1,2688,8700,0,1*3a08
+ * 08-03-2025 13:39:08.411
+CRC-Response  - 24,3,I001,1*f21c * 08-03-2025 13:39:08.624
+CRC-Response  - 24,3,F000,1*cd4d * 08-03-2025 13:39:14.684
+RA Placed Rack in H2 * 08-03-2025 13:39:14.688
+Command * HEATER DOOR CLOSE - #25,8,1,0*2744
+ * 08-03-2025 13:39:15.241
+CRC-Response  - 25,8,I001*813f * 08-03-2025 13:39:15.460
+CRC-Response  - 25,8,F000*55fd * 08-03-2025 13:39:15.786
+Command * READ TEMPERATURE - #26,11*c107
+ * 08-03-2025 13:39:16.28
+CRC-Response  - 26,11,F000,545*c918 * 08-03-2025 13:39:16.234
+Command * HEATER DOOR OPEN - #27,8,1,1*27a6
+ * 08-03-2025 13:42:55.481
+CRC-Response  - 27,8,I001*58be * 08-03-2025 13:42:55.733
+CRC-Response  - 27,8,F000*8c7c * 08-03-2025 13:42:56.27
+Command * Rack-1 Picked from H1 - #28,2,1,2688,1000,0,1*51fc
+ * 08-03-2025 13:42:56.282
+CRC-Response  - 28,2,I001,1*011d * 08-03-2025 13:42:56.491
+CRC-Response  - 28,2,F000,1*3e4c * 08-03-2025 13:43:02.291
+RA Picked Rack From H1 * 08-03-2025 13:43:02.295
+Command * HEATER DOOR CLOSE - #29,8,1,0*2788
+ * 08-03-2025 13:43:02.576
+CRC-Response  - 29,8,I001*d43f * 08-03-2025 13:43:02.786
+CRC-Response  - 29,8,F000*00fd * 08-03-2025 13:43:03.126
+Command * Rack-1 Placed in J1 - #30,3,1,10304,800,0,0*e1f9
+ * 08-03-2025 13:43:03.334
+CRC-Response  - 30,3,I001,1*db59 * 08-03-2025 13:43:03.546
+CRC-Response  - 30,3,F000,1*e408 * 08-03-2025 13:43:09.618
+RA Placed Rack in J1 * 08-03-2025 13:43:09.622
+Command * Rack-1 Picked from J1 - #31,2,1,10304,800,0,0*8d95
+ * 08-03-2025 13:45:10.749
+CRC-Response  - 31,2,I001,1*d2c9 * 08-03-2025 13:45:10.973
+CRC-Response  - 31,2,F000,1*ed98 * 08-03-2025 13:45:16.56
+RA Picked Rack From J1 * 08-03-2025 13:45:16.60
+Command * Rack-1 Placed in J2 - #32,3,1,13934,800 ,0,0*bc94
+ * 08-03-2025 13:45:16.613
+CRC-Response  - 32,3,I001,1*11f8 * 08-03-2025 13:45:16.830
+CRC-Response  - 32,3,F000,1*2ea9 * 08-03-2025 13:45:22.441
+RA Placed Rack in J2 * 08-03-2025 13:45:22.443
+Command * HEATER DOOR OPEN - #33,8,1,1*2b22
+ * 08-03-2025 13:45:34.183
+CRC-Response  - 33,8,I001*3bb2 * 08-03-2025 13:45:34.404
+CRC-Response  - 33,8,F000*ef70 * 08-03-2025 13:45:34.727
+Command * Level Sensing For L1 - #34,4,17564,16380,0,0*0279
+ * 08-03-2025 13:45:34.967
+CRC-Response  - 34,4,I001*11f3 * 08-03-2025 13:45:35.176
+CRC-Response  - 34,4,F000,693*1aa4 * 08-03-2025 13:45:39.269
+L1 Value - 200 * 08-03-2025 13:45:47.190
+Command * Level Sensing For L2 - #35,4,13934,16380,0,0*fa5c
+ * 08-03-2025 13:45:47.257
+CRC-Response  - 35,4,I001*dd32 * 08-03-2025 13:45:52.474
+CRC-Response  - 35,4,F000,706*4ace * 08-03-2025 13:45:52.476
+L3 Value - 200 * 08-03-2025 13:46:00.437
+Command * Level Sensing For L3 - #36,4,10304,16380,0,0*b307
+ * 08-03-2025 13:46:00.504
+CRC-Response  - 36,4,I001*c872 * 08-03-2025 13:46:00.736
+CRC-Response  - 36,4,F000,697*1e5c * 08-03-2025 13:46:03.13
+L3 Value - 200 * 08-03-2025 13:46:05.771
+Command * Level Sensing For L1 - #38,4,17564,16380,0,0*536a
+ * 08-03-2025 13:46:05.829
+CRC-Response  - 38,4,I001*44f3 * 08-03-2025 13:46:11.64
+CRC-Response  - 38,4,F000,692*ca75 * 08-03-2025 13:46:11.68
+Command * Level Sensing For L2 - #39,4,13934,16380,0,0*ab4f
+ * 08-03-2025 13:46:13.173
+L2 Value - 200 * 08-03-2025 13:46:46.203
+Command * Level Sensing For L3 - #40,4,10304,16380,0,0*8c3a
+ * 08-03-2025 13:46:46.277
+CRC-Response  - 40,4,I001*d2d4 * 08-03-2025 13:46:51.512
+CRC-Response  - 40,4,F000,708*c548 * 08-03-2025 13:46:51.513
+Command * Home Command - #41,5,01111111*e768
+ * 08-03-2025 13:47:03.509
+L3 Value - 200 * 08-03-2025 13:47:22.536
+Command * Level Sensing For L1 - #42,4,17564,16380,0,0*3d44
+ * 08-03-2025 13:47:22.599
+11 Secconds Timer incrementes in Jar J2 for R1 as other racks picking by RA in tmr_r1_incub() * 08-03-2025 13:47:27.619
+CRC-Response  - 42,4,I001*0b55 * 08-03-2025 13:47:27.831
+CRC-Response  - 42,4,F000,707*06f1 * 08-03-2025 13:47:27.833
+11 Secconds Timer incrementes in Jar J2 for R1 as other racks picking by RA in tmr_r1_incub() * 08-03-2025 13:47:34.934
+Command * Level Sensing For L2 - #43,4,13934,16380,0,0*c561
+ * 08-03-2025 13:47:34.988
+L2 Value - 200 * 08-03-2025 13:47:44.550
+Command * Level Sensing For L3 - #44,4,10304,16380,0,0*bccb
+ * 08-03-2025 13:47:44.619
+11 Secconds Timer incrementes in Jar J2 for R1 as other racks picking by RA in tmr_r1_incub() * 08-03-2025 13:47:49.637
+CRC-Response  - 44,4,I001*21d5 * 08-03-2025 13:47:49.849
+CRC-Response  - 44,4,F000,699*5a2f * 08-03-2025 13:47:49.851
+L3 Value - 200 * 08-03-2025 13:47:49.868
+Command * Home Command - #45,5,01111111*2899
+ * 08-03-2025 13:47:50.198
+CRC-Response  - 45,5,I001,01111111*55ec * 08-03-2025 13:47:50.406
+11 Secconds Timer incrementes in Jar J2 for R1 as other racks picking by RA in tmr_r1_incub() * 08-03-2025 13:47:56.661
+CRC-Response  - 45,5,F000*e8d7 * 08-03-2025 13:48:03.685
+Command * Home Command - #46,5,01111111*2c9d
+ * 08-03-2025 13:48:05.35
+CRC-Response  - 46,5,I001,01111111*a51c * 08-03-2025 13:48:05.248
+11 Secconds Timer incrementes in Jar J2 for R1 as other racks picking by RA in tmr_r1_incub() * 08-03-2025 13:48:07.698
+CRC-Response  - 46,5,F000*fd97 * 08-03-2025 13:48:18.528
+11 Secconds Timer incrementes in Jar J2 for R1 as other racks picking by RA in tmr_r1_incub() * 08-03-2025 13:48:18.731
+Rack - R3Protocol Started * 08-03-2025 13:48:23.321
+Command * Rack-3 Picked from L1 - #47,2,1,17564,16380,0,0*063e
+ * 08-03-2025 13:48:23.411
+CRC-Response  - 47,2,I001,1*b933 * 08-03-2025 13:48:23.661
+CRC-Response  - 47,2,F000,1*8662 * 08-03-2025 13:48:29.651
+RA Picked Rack From L1 * 08-03-2025 13:48:29.657
+11 Secconds Timer incrementes in Jar J2 for R1 as other racks picking by RA in tmr_r1_incub() * 08-03-2025 13:48:29.744
+Command * Rack-3 Placed in H1 - #48,3,1,2688,1000,0,1*a725
+ * 08-03-2025 13:48:30.253
+CRC-Response  - 48,3,I001,1*45c2 * 08-03-2025 13:48:30.473
+CRC-Response  - 48,3,F000,1*7a93 * 08-03-2025 13:48:37.345
+RA Placed Rack in H1 * 08-03-2025 13:48:37.350
+Command * HEATER DOOR CLOSE - #49,8,1,0*0d08
+ * 08-03-2025 13:48:37.597
+CRC-Response  - 49,8,I001*7414 * 08-03-2025 13:48:37.808
+CRC-Response  - 49,8,F000*a0d6 * 08-03-2025 13:48:38.148
+Command * READ TEMPERATURE - #50,11*89b2
+ * 08-03-2025 13:48:38.390
+CRC-Response  - 50,11,F000,545*c817 * 08-03-2025 13:48:38.595
+Command * Rack-1 Picked from J2 - #51,2,1,13934,800 ,0,0*15e7
+ * 08-03-2025 13:48:40.838
+CRC-Response  - 51,2,I001,1*5ad7 * 08-03-2025 13:48:41.55
+CRC-Response  - 51,2,F000,1*6586 * 08-03-2025 13:48:47.534
+RA Picked Rack From J2 * 08-03-2025 13:48:47.538
+Command * Rack-1 Placed in J4 - #52,3,1,21194,800 ,0,0*9c36
+ * 08-03-2025 13:48:47.660
+CRC-Response  - 52,3,I001,1*99e6 * 08-03-2025 13:48:47.873
+CRC-Response  - 52,3,F000,1*a6b7 * 08-03-2025 13:48:53.906
+RA Placed Rack in J4 * 08-03-2025 13:48:53.910
+Command * HEATER DOOR OPEN - #53,8,1,1*01a2
+ * 08-03-2025 13:49:15.959
+CRC-Response  - 53,8,I001*9b99 * 08-03-2025 13:49:16.219
+CRC-Response  - 53,8,F000*4f5b * 08-03-2025 13:49:16.511
+Command * Rack-2 Picked from H2 - #54,2,1,2688,8700,0,1*1dec
+ * 08-03-2025 13:49:16.789
+CRC-Response  - 54,2,I001,1*4ac7 * 08-03-2025 13:49:17.3
+CRC-Response  - 54,2,F000,1*7596 * 08-03-2025 13:49:24.290
+RA Picked Rack From H2 * 08-03-2025 13:49:24.292
+Command * HEATER DOOR CLOSE - #55,8,1,0*c105
+ * 08-03-2025 13:49:24.613
+CRC-Response  - 55,8,I001*b119 * 08-03-2025 13:49:24.832
+CRC-Response  - 55,8,F000*65db * 08-03-2025 13:49:25.159
+Command * Rack-2 Placed in J1 - #56,3,1,10304,800,0,0*0ff9
+ * 08-03-2025 13:49:25.385
+CRC-Response  - 56,3,I001,1*4ca7 * 08-03-2025 13:49:25.592
+CRC-Response  - 56,3,F000,1*73f6 * 08-03-2025 13:49:31.668
+RA Placed Rack in J1 * 08-03-2025 13:49:31.672
+Command * Rack-1 Picked from J4 - #57,2,1,21194,800 ,0,0*35ab
+ * 08-03-2025 13:50:54.395
+CRC-Response  - 57,2,I001,1*4537 * 08-03-2025 13:50:54.617
+CRC-Response  - 57,2,F000,1*7a66 * 08-03-2025 13:51:01.44
+RA Picked Rack From J4 * 08-03-2025 13:51:01.48
+Command * Rack-1 Placed in J5 - #58,3,1,24824,800 ,0,0*0a9b
+ * 08-03-2025 13:51:01.229
+CRC-Response  - 58,3,I001,1*b9c6 * 08-03-2025 13:51:01.444
+CRC-Response  - 58,3,F000,1*8697 * 08-03-2025 13:51:07.62
+RA Placed Rack in J5 * 08-03-2025 13:51:07.66
+Command * Rack-2 Picked from J1 - #59,2,1,10304,800,0,0*8aff
+ * 08-03-2025 13:51:32.614
+CRC-Response  - 59,2,I001,1*b056 * 08-03-2025 13:51:32.842
+CRC-Response  - 59,2,F000,1*8f07 * 08-03-2025 13:51:39.666
+RA Picked Rack From J1 * 08-03-2025 13:51:39.670
+Command * Rack-2 Placed in J2 - #60,3,1,13934,800 ,0,0*0bb8
+ * 08-03-2025 13:51:40.41
+CRC-Response  - 60,3,I001,1*1748 * 08-03-2025 13:51:40.254
+CRC-Response  - 60,3,F000,1*2819 * 08-03-2025 13:51:45.871
+RA Placed Rack in J2 * 08-03-2025 13:51:45.875
+Command * Rack-1 Picked from J5 - #61,2,1,24824,800 ,0,0*5d25
+ * 08-03-2025 13:53:08.21
+CRC-Response  - 61,2,I001,1*1ed8 * 08-03-2025 13:53:08.338
+CRC-Response  - 61,2,F000,1*2189 * 08-03-2025 13:53:14.679
+RA Picked Rack From J5 * 08-03-2025 13:53:14.684
+Command * Rack-1 Placed in J6 - #62,3,1,28454,800 ,0,0*3a2b
+ * 08-03-2025 13:53:14.965
+CRC-Response  - 62,3,I001,1*dde9 * 08-03-2025 13:53:15.176
+CRC-Response  - 62,3,F000,1*e2b8 * 08-03-2025 13:53:20.793
+RA Placed Rack in J6 * 08-03-2025 13:53:20.799
+Command * Rack-2 Picked from J2 - #63,2,1,13934,800 ,0,0*c4ad
+ * 08-03-2025 13:53:46.730
+CRC-Response  - 63,2,I001,1*d479 * 08-03-2025 13:53:47.138
+CRC-Response  - 63,2,F000,1*eb28 * 08-03-2025 13:53:53.803
+RA Picked Rack From J2 * 08-03-2025 13:53:53.807
+Command * Rack-2 Placed in J4 - #64,3,1,21194,800 ,0,0*c98d
+ * 08-03-2025 13:53:54.239
+CRC-Response  - 64,3,I001,1*c209 * 08-03-2025 13:53:54.452
+CRC-Response  - 64,3,F000,1*fd58 * 08-03-2025 13:54:00.489
+RA Placed Rack in J4 * 08-03-2025 13:54:00.494
+Command * HEATER DOOR OPEN - #65,8,1,1*1484
+ * 08-03-2025 13:54:42.356
+CRC-Response  - 65,8,I001*410d * 08-03-2025 13:54:42.587
+CRC-Response  - 65,8,F000*95cf * 08-03-2025 13:54:42.906
+Rack - 4Protocol Started * 08-03-2025 13:54:43.602
+Command * Rack-4 Picked from L3 - #66,2,1,10304,16380,0,0*078a
+ * 08-03-2025 13:54:43.687
+CRC-Response  - 66,2,I001,1*c469 * 08-03-2025 13:54:43.897
+CRC-Response  - 66,2,F000,1*fb38 * 08-03-2025 13:54:50.337
+RA Picked Rack From L3 * 08-03-2025 13:54:50.342
+Command * Rack-4 Placed in H2 - #67,3,1,2688,8700,0,1*fabd
+ * 08-03-2025 13:54:50.504
+CRC-Response  - 67,3,I001,1*cdf9 * 08-03-2025 13:54:50.723
+CRC-Response  - 67,3,F000,1*f2a8 * 08-03-2025 13:54:56.773
+RA Placed Rack in H2 * 08-03-2025 13:54:56.775
+Command * HEATER DOOR CLOSE - #68,8,1,0*1499
+ * 08-03-2025 13:54:57.335
+CRC-Response  - 68,8,I001*d8cc * 08-03-2025 13:54:57.550
+CRC-Response  - 68,8,F000*0c0e * 08-03-2025 13:54:57.892
+Command * READ TEMPERATURE - #69,11*15f5
+ * 08-03-2025 13:54:58.95
+CRC-Response  - 69,11,F000,545*0209 * 08-03-2025 13:54:58.312
+Command * WATER VALVE - 1 CONTROL ON - #70,13,1,1*7912
+ * 08-03-2025 13:55:03.555
+CRC-Response  - 70,13,F000*fb22 * 08-03-2025 13:55:03.761
+Command * Rack-1 Picked from J6 - #71,2,1,28454,800 ,0,0*242e
+ * 08-03-2025 13:55:21.551
+CRC-Response  - 71,2,I001,1*e2dc * 08-03-2025 13:55:21.760
+CRC-Response  - 71,2,F000,1*dd8d * 08-03-2025 13:55:29.874
+RA Picked Rack From J6 * 08-03-2025 13:55:29.880
+Command * Rack-1 Placed in W1 - #72,3,1,42974,800 ,0,0*8cc3
+ * 08-03-2025 13:55:30.360
+CRC-Response  - 72,3,I001,1*21ed * 08-03-2025 13:55:30.573
+CRC-Response  - 72,3,F000,1*1ebc * 08-03-2025 13:55:37.412
+RA Placed Rack in W1 * 08-03-2025 13:55:37.414
+Command * Rack-2 Picked from J4 - #73,2,1,21194,800 ,0,0*5379
+ * 08-03-2025 13:56:00.976
+CRC-Response  - 73,2,I001,1*287d * 08-03-2025 13:56:01.191
+CRC-Response  - 73,2,F000,1*172c * 08-03-2025 13:56:08.859
+RA Picked Rack From J4 * 08-03-2025 13:56:08.861
+Command * Rack-2 Placed in J5 - #74,3,1,24824,800 ,0,0*25a8
+ * 08-03-2025 13:56:09.281
+CRC-Response  - 74,3,I001,1*3e0d * 08-03-2025 13:56:09.496
+CRC-Response  - 74,3,F000,1*015c * 08-03-2025 13:56:15.118
+RA Placed Rack in J5 * 08-03-2025 13:56:15.120
+Command * WATER VALVE - 1 CONTROL OFF - #75,13,1,0*8613
+ * 08-03-2025 13:57:37.875
+CRC-Response  - 75,13,F000*ab1d * 08-03-2025 13:57:38.94
+Command * Rack-1 Picked from W1 - #76,2,1,42974,800 ,0,0*f463
+ * 08-03-2025 13:57:38.159
+CRC-Response  - 76,2,I001,1*386d * 08-03-2025 13:57:43.379
+CRC-Response  - 76,2,F000,1*073c * 08-03-2025 13:57:45.629
+RA Picked Rack From W1 * 08-03-2025 13:57:45.632
+Command * Rack-1 Placed in J8 - #77,3,1,35714,800 ,0,0*06f5
+ * 08-03-2025 13:57:45.755
+CRC-Response  - 77,3,I001,1*31fd * 08-03-2025 13:57:45.968
+CRC-Response  - 77,3,F000,1*0eac * 08-03-2025 13:57:51.990
+RA Placed Rack in J8 * 08-03-2025 13:57:51.994
+Command * Rack-2 Picked from J5 - #78,2,1,24824,800 ,0,0*14e9
+ * 08-03-2025 13:58:15.808
+CRC-Response  - 78,2,I001,1*cd0c * 08-03-2025 13:58:16.90
+CRC-Response  - 78,2,F000,1*f25d * 08-03-2025 13:58:22.444
+RA Picked Rack From J5 * 08-03-2025 13:58:22.447
+Command * Rack-2 Placed in J6 - #79,3,1,28454,800 ,0,0*919e
+ * 08-03-2025 13:58:22.711
+CRC-Response  - 79,3,I001,1*c49c * 08-03-2025 13:58:22.925
+CRC-Response  - 79,3,F000,1*fbcd * 08-03-2025 13:58:28.543
+RA Placed Rack in J6 * 08-03-2025 13:58:28.546
+Command * HEATER DOOR OPEN - #80,8,1,1*9850
+ * 08-03-2025 13:58:38.299
+CRC-Response  - 80,8,I001*1e81 * 08-03-2025 13:58:38.511
+CRC-Response  - 80,8,F000*ca43 * 08-03-2025 13:58:38.854
+Command * Rack-3 Picked from H1 - #81,2,1,2688,1000,0,1*67bb
+ * 08-03-2025 13:58:39.68
+CRC-Response  - 81,2,I001,1*f6ec * 08-03-2025 13:58:39.287
+CRC-Response  - 81,2,F000,1*c9bd * 08-03-2025 13:58:47.392
+RA Picked Rack From H1 * 08-03-2025 13:58:47.394
+Command * HEATER DOOR CLOSE - #82,8,1,0*98b2
+ * 08-03-2025 13:58:47.854
+CRC-Response  - 82,8,I001*c700 * 08-03-2025 13:58:48.60
+CRC-Response  - 82,8,F000*13c2 * 08-03-2025 13:58:53.82
+Command * Rack-3 Placed in J1 - #83,3,1,10304,800,0,0*df18
+ * 08-03-2025 13:58:53.414
+CRC-Response  - 83,3,I001,1*f08c * 08-03-2025 13:58:53.624
+CRC-Response  - 83,3,F000,1*cfdd * 08-03-2025 13:58:59.697
+RA Placed Rack in J1 * 08-03-2025 13:58:59.701
+Command * WATER VALVE - 1 CONTROL ON - #84,13,1,1*7a52
+ * 08-03-2025 14:00:11.319
+CRC-Response  - 84,13,F000*0b20 * 08-03-2025 14:00:11.728
+Command * Rack-2 Picked from J6 - #85,2,1,28454,800 ,0,0*5f20
+ * 08-03-2025 14:00:29.376
+CRC-Response  - 85,2,I001,1*23ad * 08-03-2025 14:00:29.597
+CRC-Response  - 85,2,F000,1*1cfc * 08-03-2025 14:00:36.845
+RA Picked Rack From J6 * 08-03-2025 14:00:36.848
+Command * Rack-2 Placed in W1 - #86,3,1,42974,800 ,0,0*f7cd
+ * 08-03-2025 14:00:37.200
+CRC-Response  - 86,3,I001,1*e09c * 08-03-2025 14:00:37.418
+CRC-Response  - 86,3,F000,1*dfcd * 08-03-2025 14:00:44.258
+RA Placed Rack in W1 * 08-03-2025 14:00:44.260
+Command * WATER VALVE - 2 CONTROL ON - #87,13,2,1*6fe2
+ * 08-03-2025 14:00:44.570
+CRC-Response  - 87,13,F000*fb34 * 08-03-2025 14:00:45.213
+Command * Rack-1 Picked from J8 - #88,2,1,35714,800 ,0,0*fb0f
+ * 08-03-2025 14:00:52.569
+CRC-Response  - 88,2,I001,1*d93c * 08-03-2025 14:00:52.778
+CRC-Response  - 88,2,F000,1*e66d * 08-03-2025 14:00:58.807
+RA Picked Rack From J8 * 08-03-2025 14:00:58.810
+Command * Rack-1 Placed in W2 - #89,3,1,46604,800 ,0,0*ed99
+ * 08-03-2025 14:00:58.893
+CRC-Response  - 89,3,I001,1*d0ac * 08-03-2025 14:00:59.102
+11 Secconds Timer incrementes in Jar J1 for R3 as other racks picking by RA in tmr_r3_incub() * 08-03-2025 14:01:00.533
+CRC-Response  - 89,3,F000,1*effd * 08-03-2025 14:01:05.550
+RA Placed Rack in W2 * 08-03-2025 14:01:05.560
+Command * Rack-3 Picked from J1 - #90,2,1,10304,800,0,0*da30
+ * 08-03-2025 14:01:11.647
+CRC-Response  - 90,2,I001,1*cfb9 * 08-03-2025 14:01:11.859
+CRC-Response  - 90,2,F000,1*f0e8 * 08-03-2025 14:01:21.171
+RA Picked Rack From J1 * 08-03-2025 14:01:21.175
+Command * Rack-3 Placed in J2 - #91,3,1,13934,800 ,0,0*257a
+ * 08-03-2025 14:01:21.573
+CRC-Response  - 91,3,I001,1*c629 * 08-03-2025 14:01:21.788
+CRC-Response  - 91,3,F000,1*f978 * 08-03-2025 14:01:27.397
+RA Placed Rack in J2 * 08-03-2025 14:01:27.399
+Command * WATER VALVE - 2 CONTROL OFF - #92,13,2,0*00ee
+ * 08-03-2025 14:02:05.844
+CRC-Response  - 92,13,F000*6e5a * 08-03-2025 14:02:06.70
+Command * Rack-1 Picked from W2 - #93,2,1,46604,800 ,0,0*6b40
+ * 08-03-2025 14:02:06.139
+CRC-Response  - 93,2,I001,1*c049 * 08-03-2025 14:02:11.365
+CRC-Response  - 93,2,F000,1*ff18 * 08-03-2025 14:02:15.255
+RA Picked Rack From W2 * 08-03-2025 14:02:15.260
+Command * Rack-1 Placed in J9 - #94,3,1,39344,800 ,0,0*d4af
+ * 08-03-2025 14:02:15.738
+CRC-Response  - 94,3,I001,1*d639 * 08-03-2025 14:02:15.950
+CRC-Response  - 94,3,F000,1*e968 * 08-03-2025 14:02:21.981
+RA Placed Rack in J9 * 08-03-2025 14:02:21.985
+Command * WATER VALVE - 1 CONTROL OFF - #95,13,1,0*e65f
+ * 08-03-2025 14:02:45.10
+CRC-Response  - 95,13,F000*5e7c * 08-03-2025 14:02:45.232
+Command * Rack-2 Picked from W1 - #96,2,1,42974,800 ,0,0*da8c
+ * 08-03-2025 14:02:45.287
+CRC-Response  - 96,2,I001,1*d059 * 08-03-2025 14:02:50.508
+CRC-Response  - 96,2,F000,1*ef08 * 08-03-2025 14:02:51.112
+RA Picked Rack From W1 * 08-03-2025 14:02:51.117
+Command * Rack-2 Placed in J8 - #97,3,1,35714,800 ,0,0*281a
+ * 08-03-2025 14:02:51.364
+CRC-Response  - 97,3,I001,1*d9c9 * 08-03-2025 14:02:51.576
+CRC-Response  - 97,3,F000,1*e698 * 08-03-2025 14:02:57.597
+RA Placed Rack in J8 * 08-03-2025 14:02:57.601
+Command * WATER VALVE - 2 CONTROL ON - #98,13,2,1*bfaf
+ * 08-03-2025 14:03:04.798
+CRC-Response  - 98,13,F000*ce24 * 08-03-2025 14:03:05.15
+Command * Rack-1 Picked from J9 - #99,2,1,39344,800 ,0,0*34d3
+ * 08-03-2025 14:03:22.843
+CRC-Response  - 99,2,I001,1*e069 * 08-03-2025 14:03:23.72
+11 Secconds Timer incrementes in Jar J2 for R3 as other racks picking by RA in tmr_r3_incub() * 08-03-2025 14:03:28.411
+CRC-Response  - 99,2,F000,1*df38 * 08-03-2025 14:03:28.676
+RA Picked Rack From J9 * 08-03-2025 14:03:28.680
+Command * Rack-1 Placed in W2 - #100,3,1,46604,800 ,0,0*f66f
+ * 08-03-2025 14:03:29.207
+CRC-Response  - 100,3,I001,1*fa89 * 08-03-2025 14:03:29.417
+CRC-Response  - 100,3,F000,1*c5d8 * 08-03-2025 14:03:35.442
+RA Placed Rack in W2 * 08-03-2025 14:03:35.443
+Command * Rack-3 Picked from J2 - #101,2,1,13934,800 ,0,0*8b11
+ * 08-03-2025 14:03:39.561
+CRC-Response  - 101,2,I001,1*f319 * 08-03-2025 14:03:39.777
+CRC-Response  - 101,2,F000,1*cc48 * 08-03-2025 14:03:48.664
+RA Picked Rack From J2 * 08-03-2025 14:03:48.668
+Command * Rack-3 Placed in J4 - #102,3,1,21194,800 ,0,0*02c0
+ * 08-03-2025 14:03:48.951
+CRC-Response  - 102,3,I001,1*3028 * 08-03-2025 14:03:49.171
+CRC-Response  - 102,3,F000,1*0f79 * 08-03-2025 14:03:55.192
+RA Placed Rack in J4 * 08-03-2025 14:03:55.196
+Command * WATER VALVE - 2 CONTROL OFF - #103,13,2,0*516e
+ * 08-03-2025 14:04:35.707
+CRC-Response  - 103,13,F000*ce0a * 08-03-2025 14:04:35.993
+Command * Rack-1 Picked from W2 - #104,2,1,46604,800 ,0,0*8ecf
+ * 08-03-2025 14:04:36.47
+CRC-Response  - 104,2,I001,1*e309 * 08-03-2025 14:04:41.274
+CRC-Response  - 104,2,F000,1*dc58 * 08-03-2025 14:04:44.322
+RA Picked Rack From W2 * 08-03-2025 14:04:44.325
+Command * Rack-1 Placed in J18 - #105,3,1,39344,8590,0,0*0d3c
+ * 08-03-2025 14:04:44.679
+CRC-Response  - 105,3,I001,1*ea99 * 08-03-2025 14:04:44.895
+CRC-Response  - 105,3,F000,1*d5c8 * 08-03-2025 14:04:50.906
+RA Placed Rack in J18 * 08-03-2025 14:04:50.909
+Command * HEATER DOOR OPEN - #106,8,1,1*5424
+ * 08-03-2025 14:04:58.312
+CRC-Response  - 106,8,I001*394d * 08-03-2025 14:04:58.527
+CRC-Response  - 106,8,F000*ed8f * 08-03-2025 14:04:58.855
+Command * Rack-4 Picked from H2 - #107,2,1,2688,8700,0,1*2e7e
+ * 08-03-2025 14:04:59.85
+CRC-Response  - 107,2,I001,1*ecf9 * 08-03-2025 14:04:59.302
+CRC-Response  - 107,2,F000,1*d3a8 * 08-03-2025 14:05:08.640
+RA Picked Rack From H2 * 08-03-2025 14:05:08.643
+Command * HEATER DOOR CLOSE - #108,8,1,0*540a
+ * 08-03-2025 14:05:08.948
+CRC-Response  - 108,8,I001*b5cc * 08-03-2025 14:05:09.165
+CRC-Response  - 108,8,F000*610e * 08-03-2025 14:05:09.492
+Command * Rack-4 Placed in J1 - #109,3,1,10304,800,0,0*6d78
+ * 08-03-2025 14:05:09.750
+CRC-Response  - 109,3,I001,1*d559 * 08-03-2025 14:05:09.956
+CRC-Response  - 109,3,F000,1*ea08 * 08-03-2025 14:05:16.22
+RA Placed Rack in J1 * 08-03-2025 14:05:16.25
+Command * WATER VALVE - 2 CONTROL ON - #110,13,2,1*14e2
+ * 08-03-2025 14:05:40.460
+CRC-Response  - 110,13,F000*fb4f * 08-03-2025 14:05:40.872
+Command * WATER VALVE - 6 CONTROL ON - #111,13,6,1*1962
+ * 08-03-2025 14:05:43.182
+CRC-Response  - 111,13,F000*6b42 * 08-03-2025 14:05:43.391
+Command * Rack-1 Picked from J18 - #112,2,1,39344,8590,0,0*97c8
+ * 08-03-2025 14:05:51.171
+CRC-Response  - 112,2,I001,1*00ed * 08-03-2025 14:05:51.378
+11 Secconds Timer incrementes in Jar J4 for R3 as other racks picking by RA in tmr_r3_incub() * 08-03-2025 14:05:55.746
+11 Secconds Timer incrementes in Jar J8 for R2 as other racks picking by RA in tmr_r2_incub() * 08-03-2025 14:05:58.454
+CRC-Response  - 112,2,F000,1*3fbc * 08-03-2025 14:05:59.857
+RA Picked Rack From J18 * 08-03-2025 14:05:59.859
+Command * Rack-1 Placed in W6 - #113,3,1,42974,8590,0,0*aaaf
+ * 08-03-2025 14:05:59.975
+CRC-Response  - 113,3,I001,1*097d * 08-03-2025 14:06:00.181
+CRC-Response  - 113,3,F000,1*362c * 08-03-2025 14:06:05.789
+RA Placed Rack in W6 * 08-03-2025 14:06:05.795
+Command * Rack-3 Picked from J4 - #114,2,1,21194,800 ,0,0*4909
+ * 08-03-2025 14:06:06.846
+CRC-Response  - 114,2,I001,1*1f0d * 08-03-2025 14:06:07.201
+11 Secconds Timer incrementes in Jar J8 for R2 as other racks picking by RA in tmr_r2_incub() * 08-03-2025 14:06:09.518
+CRC-Response  - 114,2,F000,1*205c * 08-03-2025 14:06:14.723
+RA Picked Rack From J4 * 08-03-2025 14:06:14.727
+Command * Rack-3 Placed in J5 - #115,3,1,24824,800 ,0,0*5950
+ * 08-03-2025 14:06:14.902
+CRC-Response  - 115,3,I001,1*169d * 08-03-2025 14:06:15.111
+11 Secconds Timer incrementes in Jar J8 for R2 as other racks picking by RA in tmr_r2_incub() * 08-03-2025 14:06:20.527
+CRC-Response  - 115,3,F000,1*29cc * 08-03-2025 14:06:20.742
+RA Placed Rack in J5 * 08-03-2025 14:06:20.745
+Command * Rack-2 Picked from J8 - #116,2,1,35714,800 ,0,0*865c
+ * 08-03-2025 14:06:31.633
+CRC-Response  - 116,2,I001,1*d5ac * 08-03-2025 14:06:31.839
+CRC-Response  - 116,2,F000,1*eafd * 08-03-2025 14:06:38.283
+RA Picked Rack From J8 * 08-03-2025 14:06:38.287
+Command * Rack-2 Placed in W2 - #117,3,1,46604,800 ,0,0*90ca
+ * 08-03-2025 14:06:38.480
+CRC-Response  - 117,3,I001,1*dc3c * 08-03-2025 14:06:38.700
+CRC-Response  - 117,3,F000,1*e36d * 08-03-2025 14:06:45.128
+RA Placed Rack in W2 * 08-03-2025 14:06:45.132
+Command * WATER VALVE - 6 CONTROL OFF - #118,13,6,0*b363
+ * 08-03-2025 14:07:06.560
+CRC-Response  - 118,13,F000*3b28 * 08-03-2025 14:07:06.813
+Command * Rack-1 Picked from W6 - #119,2,1,42974,8590,0,0*fd66
+ * 08-03-2025 14:07:06.868
+CRC-Response  - 119,2,I001,1*e59c * 08-03-2025 14:07:12.101
+CRC-Response  - 119,2,F000,1*dacd * 08-03-2025 14:07:12.873
+RA Picked Rack From W6 * 08-03-2025 14:07:12.878
+Command * Rack-1 Placed in J19 - #120,3,1,35714,8590,0,0*7522
+ * 08-03-2025 14:07:13.463
+CRC-Response  - 120,3,I001,1*4282 * 08-03-2025 14:07:13.669
+11 Secconds Timer incrementes in Jar J1 for R4 as other racks picking by RA in tmr_r4_incub() * 08-03-2025 14:07:16.877
+CRC-Response  - 120,3,F000,1*7dd3 * 08-03-2025 14:07:19.711
+RA Placed Rack in J19 * 08-03-2025 14:07:19.715
+Command * Rack-4 Picked from J1 - #121,2,1,10304,800,0,0*7eb2
+ * 08-03-2025 14:07:27.943
+CRC-Response  - 121,2,I001,1*4b12 * 08-03-2025 14:07:28.151
+CRC-Response  - 121,2,F000,1*7443 * 08-03-2025 14:07:36.228
+RA Picked Rack From J1 * 08-03-2025 14:07:36.233
+Command * Rack-4 Placed in J2 - #122,3,1,13934,800 ,0,0*a627
+ * 08-03-2025 14:07:36.751
+CRC-Response  - 122,3,I001,1*8823 * 08-03-2025 14:07:36.970
+CRC-Response  - 122,3,F000,1*b772 * 08-03-2025 14:07:42.585
+RA Placed Rack in J2 * 08-03-2025 14:07:42.588
+Command * WATER VALVE - 2 CONTROL OFF - #123,13,2,0*3177
+ * 08-03-2025 14:07:45.567
+CRC-Response  - 123,13,F000*04ab * 08-03-2025 14:07:45.772
+Command * Rack-2 Picked from W2 - #124,2,1,46604,800 ,0,0*6cec
+ * 08-03-2025 14:07:45.827
+CRC-Response  - 124,2,I001,1*5b02 * 08-03-2025 14:07:51.54
+CRC-Response  - 124,2,F000,1*6453 * 08-03-2025 14:07:54.931
+RA Picked Rack From W2 * 08-03-2025 14:07:54.934
+Command * Rack-2 Placed in J9 - #125,3,1,39344,800 ,0,0*b58b
+ * 08-03-2025 14:07:55.493
+CRC-Response  - 125,3,I001,1*5292 * 08-03-2025 14:07:55.704
+CRC-Response  - 125,3,F000,1*6dc3 * 08-03-2025 14:08:01.731
+RA Placed Rack in J9 * 08-03-2025 14:08:01.736
+Command * Rack-1 Picked from J19 - #126,2,1,35714,8590,0,0*effb
+ * 08-03-2025 14:08:20.39
+CRC-Response  - 126,2,I001,1*91a3 * 08-03-2025 14:08:20.245
+11 Secconds Timer incrementes in Jar J5 for R3 as other racks picking by RA in tmr_r3_incub() * 08-03-2025 14:08:21.673
+CRC-Response  - 126,2,F000,1*aef2 * 08-03-2025 14:08:26.47
+RA Picked Rack From J19 * 08-03-2025 14:08:26.50
+Command * Rack-1 Placed in J20 - #127,3,1,32084,8590,0,0*d247
+ * 08-03-2025 14:08:26.372
+CRC-Response  - 127,3,I001,1*9833 * 08-03-2025 14:08:26.590
+CRC-Response  - 127,3,F000,1*a762 * 08-03-2025 14:08:32.200
+RA Placed Rack in J20 * 08-03-2025 14:08:32.204
+Command * Rack-3 Picked from J5 - #128,2,1,24824,800 ,0,0*8a1f
+ * 08-03-2025 14:08:32.811
+CRC-Response  - 128,2,I001,1*64c2 * 08-03-2025 14:08:33.17
+CRC-Response  - 128,2,F000,1*5b93 * 08-03-2025 14:08:39.49
+RA Picked Rack From J5 * 08-03-2025 14:08:39.54
+Command * Rack-3 Placed in J6 - #129,3,1,28454,800 ,0,0*0f68
+ * 08-03-2025 14:08:39.207
+CRC-Response  - 129,3,I001,1*6d52 * 08-03-2025 14:08:39.419
+CRC-Response  - 129,3,F000,1*5203 * 08-03-2025 14:08:45.47
+RA Placed Rack in J6 * 08-03-2025 14:08:45.50
+Command * WATER VALVE - 2 CONTROL ON - #130,13,2,1*74fb
+ * 08-03-2025 14:08:45.960
+CRC-Response  - 130,13,F000*31ee * 08-03-2025 14:08:46.176
+User Aborted / Stopped the application forcefully  * 08-03-2025 14:08:54.735
+Command * HEATER OFF - #131,12,0*d0a7
+ * 08-03-2025 14:08:57.935
+CRC-Response  - 131,12,F000*70e2 * 08-03-2025 14:08:58.141
+Command * WATER VALVE - 1 CONTROL OFF - #132,13,1,0*6d4b
+ * 08-03-2025 14:08:59.3
+CRC-Response  - 132,13,F000*51f7 * 08-03-2025 14:08:59.214
+Command * WATER VALVE - 3 CONTROL ON - #133,13,3,1*a1ea
+ * 08-03-2025 14:08:59.765
+CRC-Response  - 133,13,F000*c1fa * 08-03-2025 14:08:59.977
+Command * WATER VALVE - 4 CONTROL ON - #134,13,4,1*861a
+ * 08-03-2025 14:09:00.539
+CRC-Response  - 134,13,F000*f1dc * 08-03-2025 14:09:00.753

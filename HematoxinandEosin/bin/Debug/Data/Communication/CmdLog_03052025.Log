@@ -1,0 +1,76 @@
+Device Intialization started * 03-05-2025 10:38:21.486
+Command Sent (SeqNo: 0, Retry: 0) SET TEMPERATURE - #0,10,37*84ca  * 03-05-2025 10:38:21.553
+No response for func_code: 10, SeqNo: 1, Retry: 1 * 03-05-2025 10:38:51.696
+Error sending func_code: 10, SeqNo: 1, Retry: 2, Error: The port is closed. * 03-05-2025 10:38:51.775
+Error sending func_code: 10, SeqNo: 1, Retry: 3, Error: The port is closed. * 03-05-2025 10:38:51.813
+Command Sent (SeqNo: 0, Retry: 0) WATER VALVE - 1 CONTROL OFF - #0,13,1,0*73eb  * 03-05-2025 10:39:39.820
+No response for func_code: 13, SeqNo: 1, Retry: 1 * 03-05-2025 10:40:10.196
+Error sending func_code: 13, SeqNo: 1, Retry: 2, Error: The port is closed. * 03-05-2025 10:40:10.260
+Error sending func_code: 13, SeqNo: 1, Retry: 3, Error: The port is closed. * 03-05-2025 10:40:10.332
+User Aborted / Stopped the application forcefully  * 03-05-2025 10:40:32.492
+Command Sent (SeqNo: 0, Retry: 0) SET TEMPERATURE - #0,10,32*870a  * 03-05-2025 10:41:45.696
+CRC-Response (SeqNo: 0) - 0,10,F000*1ae9 * 03-05-2025 10:41:46.155
+Command Sent (SeqNo: 1, Retry: 0) HEATER ON - #1,12,1*dbe7  * 03-05-2025 10:41:47.378
+CRC-Response (SeqNo: 1) - 1,12,F000*68e5 * 03-05-2025 10:41:47.525
+Command Sent (SeqNo: 2, Retry: 0) HEATER DOOR CLOSE - #2,8,1,0*21eb  * 03-05-2025 10:41:48.126
+CRC-Response (SeqNo: 2) - 2,8,I001*fd79 * 03-05-2025 10:41:48.247
+CRC-Response (SeqNo: 2) - 2,8,F000*29bb * 03-05-2025 10:41:48.590
+Command Sent (SeqNo: 3, Retry: 0) READ TEMPERATURE - #3,11*ed1a  * 03-05-2025 10:41:49.217
+CRC-Response (SeqNo: 3) - 3,11,F000,545*d48f * 03-05-2025 10:41:49.337
+Command Sent (SeqNo: 4, Retry: 0) WATER VALVE - 1 CONTROL OFF - #4,13,1,0*80ea  * 03-05-2025 10:42:04.446
+CRC-Response (SeqNo: 4) - 4,13,F000*e9db * 03-05-2025 10:42:04.578
+Command Sent (SeqNo: 5, Retry: 0) WATER VALVE - 2 CONTROL OFF - #5,13,2,0*4cdb  * 03-05-2025 10:42:05.182
+CRC-Response (SeqNo: 5) - 5,13,F000*79d6 * 03-05-2025 10:42:05.302
+Command Sent (SeqNo: 6, Retry: 0) WATER VALVE - 3 CONTROL OFF - #6,13,3,0*99ca  * 03-05-2025 10:42:05.898
+CRC-Response (SeqNo: 6) - 6,13,F000*89c2 * 03-05-2025 10:42:06.21
+Command Sent (SeqNo: 7, Retry: 0) WATER VALVE - 4 CONTROL OFF - #7,13,4,0*94ba  * 03-05-2025 10:42:06.614
+CRC-Response (SeqNo: 7) - 7,13,F000*19cf * 03-05-2025 10:42:06.736
+Command Sent (SeqNo: 8, Retry: 0) WATER VALVE - 5 CONTROL OFF - #8,13,5,0*14ab  * 03-05-2025 10:42:07.317
+CRC-Response (SeqNo: 8) - 8,13,F000*e98e * 03-05-2025 10:42:07.436
+Command Sent (SeqNo: 9, Retry: 0) WATER VALVE - 6 CONTROL OFF - #9,13,6,0*d89a  * 03-05-2025 10:42:08.36
+CRC-Response (SeqNo: 9) - 9,13,F000*7983 * 03-05-2025 10:42:08.157
+Command Sent (SeqNo: 10, Retry: 0) Home Command - #10,5,01111111*2199  * 03-05-2025 10:42:08.755
+CRC-Response (SeqNo: 10) - 10,5,I001,01111111*c9ef * 03-05-2025 10:42:08.879
+CRC-Response (SeqNo: 10) - 10,5,F000,11111111*cf6b * 03-05-2025 10:42:08.880
+Command Sent (SeqNo: 11, Retry: 0) Home Command - #11,5,01111111*e264  * 03-05-2025 10:42:10.983
+CRC-Response (SeqNo: 11) - 11,5,I001,01111111*59be * 03-05-2025 10:42:11.109
+CRC-Response (SeqNo: 11) - 11,5,F000,11111111*5f3a * 03-05-2025 10:42:11.110
+Command Sent (SeqNo: 12, Retry: 0) Level Sensing For L1 - #12,4,17564,16380,0,0*6888  * 03-05-2025 10:42:13.241
+CRC-Response (SeqNo: 12) - 12,4,I001*5b6a * 03-05-2025 10:42:13.356
+CRC-Response (SeqNo: 12) - 12,4,F000,753*90ff * 03-05-2025 10:42:21.667
+L1 Value - 753 * 03-05-2025 10:42:21.723
+Command Sent (SeqNo: 13, Retry: 0) Level Sensing For L2 - #13,4,13934,16380,0,0*90ad  * 03-05-2025 10:42:22.310
+CRC-Response (SeqNo: 13) - 13,4,I001*97ab * 03-05-2025 10:42:22.433
+CRC-Response (SeqNo: 13) - 13,4,F000,760*a242 * 03-05-2025 10:42:24.725
+L2 Value - 760 * 03-05-2025 10:42:24.767
+Command Sent (SeqNo: 14, Retry: 0) Level Sensing For L3 - #14,4,10304,16380,0,0*e907  * 03-05-2025 10:42:25.339
+CRC-Response (SeqNo: 14) - 14,4,I001*71ea * 03-05-2025 10:42:25.462
+CRC-Response (SeqNo: 14) - 14,4,F000,756*9b37 * 03-05-2025 10:42:27.749
+L3 Value - 756 * 03-05-2025 10:42:27.797
+Command Sent (SeqNo: 15, Retry: 0) Home Command - #15,5,01111111*2d95  * 03-05-2025 10:42:28.364
+CRC-Response (SeqNo: 15) - 15,5,I001,01111111*98fc * 03-05-2025 10:42:28.487
+CRC-Response (SeqNo: 15) - 15,5,F000,11111111*9e78 * 03-05-2025 10:42:28.487
+Command Sent (SeqNo: 16, Retry: 0) Home Command - #16,5,01111111*2991  * 03-05-2025 10:42:30.102
+CRC-Response (SeqNo: 16) - 16,5,I001,01111111*680c * 03-05-2025 10:42:30.225
+CRC-Response (SeqNo: 16) - 16,5,F000,11111111*6e88 * 03-05-2025 10:42:30.225
+Rack - 1Protocol Started * 03-05-2025 10:42:31.781
+Command Sent (SeqNo: 17, Retry: 0) Rack-1 Picked from L1 - With RA:2 - #17,2,2,17564,16380,0,0*c95b  * 03-05-2025 10:42:31.980
+CRC-Response (SeqNo: 17) - 17,2,I001,2*7462 * 03-05-2025 10:42:32.110
+CRC-Response (SeqNo: 17) - 17,2,F000,2*4b33 * 03-05-2025 10:42:39.271
+RA Picked Rack From L1 * 03-05-2025 10:42:39.275
+Command Sent (SeqNo: 18, Retry: 0) Rack-1 Placed in H1 - With RA:2 - #18,3,2,2688,1000,0,1*f3aa  * 03-05-2025 10:42:39.658
+CRC-Response (SeqNo: 18) - 18,3,I001,2*8893 * 03-05-2025 10:42:39.792
+CRC-Response (SeqNo: 18) - 18,3,F000,2*b7c2 * 03-05-2025 10:42:46.650
+RA Placed Rack in H1 * 03-05-2025 10:42:46.652
+Command Sent (SeqNo: 19, Retry: 0) HEATER DOOR CLOSE - #19,8,1,0*32c8  * 03-05-2025 10:42:47.326
+CRC-Response (SeqNo: 19) - 19,8,I001*242b * 03-05-2025 10:42:47.472
+CRC-Response (SeqNo: 19) - 19,8,F000*f0e9 * 03-05-2025 10:42:47.808
+Command Sent (SeqNo: 20, Retry: 0) READ TEMPERATURE - #20,11*4907  * 03-05-2025 10:42:48.408
+CRC-Response (SeqNo: 20) - 20,11,F000,545*0f11 * 03-05-2025 10:42:48.526
+Command Sent (SeqNo: 21, Retry: 0) READ TEMPERATURE - #21,11*b506  * 03-05-2025 10:43:03.607
+CRC-Response (SeqNo: 21) - 21,11,F000,-273*1968 * 03-05-2025 10:43:03.737
+User Aborted / Stopped the application forcefully  * 03-05-2025 10:43:17.212
+Command Sent (SeqNo: 22, Retry: 0) HEATER OFF - #22,12,0*f02e  * 03-05-2025 10:43:20.329
+Error sending func_code: 12, SeqNo: 22, Retry: 1, Error: The port is closed. * 03-05-2025 10:43:20.699
+Error sending func_code: 12, SeqNo: 22, Retry: 2, Error: The port is closed. * 03-05-2025 10:43:20.772
+Error sending func_code: 12, SeqNo: 22, Retry: 3, Error: The port is closed. * 03-05-2025 10:43:20.841

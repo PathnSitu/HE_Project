@@ -12,7 +12,7 @@ namespace HematoxinandEosin
     class RequiredVariables
     {
         public static string Msgtext = "Hematoxin and Eosin";
-        public static string VerNoRevNo = "PnS H&&E Automation Ver.0 && Rev.2-T23-C10-DA";
+        public static string VerNoRevNo = "PnS H&&E Automation Ver.0 && Rev.2-T23-C13-DA";
         public static string UserName = "";
         public static string decryptpassword = "";
         public static string HintQuestion = "";

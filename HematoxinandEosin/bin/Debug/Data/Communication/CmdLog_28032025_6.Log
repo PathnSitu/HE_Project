@@ -1,0 +1,487 @@
+Command Sent WATER VALVE - 1 CONTROL OFF - #0,13,1,0*73eb  * 28-03-2025 15:55:53.664
+CRC-Response  - 0,13,F000*29e9 * 28-03-2025 15:55:53.907
+Command Sent WATER VALVE - 2 CONTROL OFF - #1,13,2,0*bfda  * 28-03-2025 15:55:54.568
+CRC-Response  - 1,13,F000*b9e4 * 28-03-2025 15:55:54.778
+Command Sent WATER VALVE - 3 CONTROL OFF - #2,13,3,0*6acb  * 28-03-2025 15:55:55.446
+CRC-Response  - 2,13,F000*49f0 * 28-03-2025 15:55:55.662
+Command Sent WATER VALVE - 4 CONTROL OFF - #3,13,4,0*67bb  * 28-03-2025 15:55:56.318
+CRC-Response  - 3,13,F000*d9fd * 28-03-2025 15:55:56.530
+Command Sent WATER VALVE - 5 CONTROL OFF - #4,13,5,0*41ab  * 28-03-2025 15:55:57.198
+CRC-Response  - 4,13,F000*e9db * 28-03-2025 15:55:57.414
+Command Sent WATER VALVE - 6 CONTROL OFF - #5,13,6,0*8d9a  * 28-03-2025 15:55:58.79
+CRC-Response  - 5,13,F000*79d6 * 28-03-2025 15:55:58.295
+Command Sent Home Command - #6,5,01111111*b1b5  * 28-03-2025 15:55:58.960
+CRC-Response  - 6,5,I001,01111111*0f53 * 28-03-2025 15:55:59.176
+CRC-Response  - 6,5,F000*c7bb * 28-03-2025 15:55:59.179
+Command Sent Home Command - #7,5,01111111*7248  * 28-03-2025 15:56:01.844
+CRC-Response  - 7,5,I001,01111111*9f02 * 28-03-2025 15:56:02.62
+CRC-Response  - 7,5,F000*0b7a * 28-03-2025 15:56:02.64
+Command Sent Level Sensing For L1 - #8,4,17564,16380,0,0*ab6b  * 28-03-2025 15:56:03.722
+CRC-Response  - 8,4,I001*4ef9 * 28-03-2025 15:56:03.939
+CRC-Response  - 8,4,F000,963*23a2 * 28-03-2025 15:56:12.211
+L1 Value - 963 * 28-03-2025 15:56:12.226
+Command Sent Level Sensing For L2 - #9,4,13934,16380,0,0*534e  * 28-03-2025 15:56:12.600
+CRC-Response  - 9,4,I001*8238 * 28-03-2025 15:56:12.814
+CRC-Response  - 9,4,F000,959*17df * 28-03-2025 15:56:15.97
+L2 Value - 959 * 28-03-2025 15:56:15.117
+Command Sent Level Sensing For L3 - #10,4,10304,16380,0,0*d9f6  * 28-03-2025 15:56:15.484
+CRC-Response  - 10,4,I001*82eb * 28-03-2025 15:56:15.699
+CRC-Response  - 10,4,F000,962*a4a6 * 28-03-2025 15:56:17.989
+L3 Value - 962 * 28-03-2025 15:56:18.6
+Command Sent Home Command - #11,5,01111111*e264  * 28-03-2025 15:56:18.361
+CRC-Response  - 11,5,I001,01111111*59be * 28-03-2025 15:56:18.577
+CRC-Response  - 11,5,F000*4be9 * 28-03-2025 15:56:18.580
+Command Sent Home Command - #12,5,01111111*e660  * 28-03-2025 15:56:20.249
+CRC-Response  - 12,5,I001,01111111*a94e * 28-03-2025 15:56:20.461
+CRC-Response  - 12,5,F000*5ea9 * 28-03-2025 15:56:20.466
+Rack - 1Protocol Started * 28-03-2025 15:56:21.732
+Command Sent Rack-1 Picked from L1 - #13,2,2,17564,16380,0,0*4d1e  * 28-03-2025 15:56:21.919
+CRC-Response  - 13,2,I001,2*a123 * 28-03-2025 15:56:22.135
+CRC-Response  - 13,2,F000,2*9e72 * 28-03-2025 15:56:29.314
+RA Picked Rack From L1 * 28-03-2025 15:56:29.321
+Command Sent Rack-1 Placed in J13 - #14,3,2,64754,800,0,0*9acd  * 28-03-2025 15:56:29.828
+CRC-Response  - 14,3,I001,2*b753 * 28-03-2025 15:56:30.43
+CRC-Response  - 14,3,F000,2*8802 * 28-03-2025 15:56:40.515
+RA Placed Rack in J13 * 28-03-2025 15:56:40.519
+Command Sent Rack-1 Placed in J13 - #15,1,2,2688,800 ,0*3aa1  * 28-03-2025 15:56:41.247
+CRC-Response  - 15,1,I001,2*ab83 * 28-03-2025 15:56:41.460
+CRC-Response  - 15,1,F000,2*94d2 * 28-03-2025 15:56:49.241
+Command Sent READ TEMPERATURE - #16,11*c143  * 28-03-2025 15:56:49.972
+CRC-Response  - 16,11,F000,-273*df2d * 28-03-2025 15:56:50.184
+Command Sent READ TEMPERATURE - #17,11*3d42  * 28-03-2025 15:57:00.352
+CRC-Response  - 17,11,F000,-273*1e2d * 28-03-2025 15:57:00.597
+Command Sent READ TEMPERATURE - #18,11*2941  * 28-03-2025 15:57:10.761
+CRC-Response  - 18,11,F000,-273*1122 * 28-03-2025 15:57:10.976
+Command Sent READ TEMPERATURE - #19,11*d540  * 28-03-2025 15:57:21.125
+CRC-Response  - 19,11,F000,-273*d022 * 28-03-2025 15:57:21.339
+Command Sent READ TEMPERATURE - #20,11*4907  * 28-03-2025 15:57:31.501
+CRC-Response  - 20,11,F000,-273*d868 * 28-03-2025 15:57:31.717
+Command Sent READ TEMPERATURE - #21,11*b506  * 28-03-2025 15:57:41.872
+CRC-Response  - 21,11,F000,-273*1968 * 28-03-2025 15:57:42.82
+Command Sent READ TEMPERATURE - #22,11*f106  * 28-03-2025 15:57:52.233
+CRC-Response  - 22,11,F000,-273*1a6b * 28-03-2025 15:57:52.452
+Command Sent READ TEMPERATURE - #23,11*0d07  * 28-03-2025 15:58:02.613
+CRC-Response  - 23,11,F000,-273*db6b * 28-03-2025 15:58:02.828
+Command Sent READ TEMPERATURE - #24,11*7906  * 28-03-2025 15:58:12.993
+CRC-Response  - 24,11,F000,-273*1c6d * 28-03-2025 15:58:13.206
+Command Sent READ TEMPERATURE - #25,11*8507  * 28-03-2025 15:58:24.366
+CRC-Response  - 25,11,F000,-273*dd6d * 28-03-2025 15:58:24.583
+Command Sent READ TEMPERATURE - #26,11*c107  * 28-03-2025 15:58:35.753
+CRC-Response  - 26,11,F000,-273*de6e * 28-03-2025 15:58:36.25
+Command Sent Rack-1 Picked from J13 - #27,2,1,64754,800,0,0*7cdf  * 28-03-2025 15:58:41.744
+CRC-Response  - 27,2,I001,1*312d * 28-03-2025 15:58:41.958
+CRC-Response  - 27,2,F000,1*0e7c * 28-03-2025 15:58:47.311
+RA Picked Rack From J13 * 28-03-2025 15:58:47.315
+Command Sent Rack-1 Placed in J12 - #28,3,1,61124,800,0,0*a77a  * 28-03-2025 15:58:47.636
+CRC-Response  - 28,3,I001,1*cddc * 28-03-2025 15:58:47.851
+CRC-Response  - 28,3,F000,1*f28d * 28-03-2025 15:58:53.467
+RA Placed Rack in J12 * 28-03-2025 15:58:53.470
+Command Sent READ TEMPERATURE - #29,11*d504  * 28-03-2025 15:58:57.740
+CRC-Response  - 29,11,F000,-273*d161 * 28-03-2025 15:58:57.954
+Command Sent READ TEMPERATURE - #30,11*893a  * 28-03-2025 15:59:08.110
+CRC-Response  - 30,11,F000,-273*d8a9 * 28-03-2025 15:59:08.329
+Command Sent READ TEMPERATURE - #31,11*753b  * 28-03-2025 15:59:18.497
+CRC-Response  - 31,11,F000,-273*19a9 * 28-03-2025 15:59:18.710
+Command Sent READ TEMPERATURE - #32,11*313b  * 28-03-2025 15:59:28.868
+CRC-Response  - 32,11,F000,-273*1aaa * 28-03-2025 15:59:29.78
+Command Sent READ TEMPERATURE - #33,11*cd3a  * 28-03-2025 15:59:39.230
+CRC-Response  - 33,11,F000,-273*dbaa * 28-03-2025 15:59:39.446
+Command Sent READ TEMPERATURE - #34,11*b93b  * 28-03-2025 15:59:49.590
+CRC-Response  - 34,11,F000,-273*1cac * 28-03-2025 15:59:49.812
+Command Sent READ TEMPERATURE - #35,11*453a  * 28-03-2025 15:59:59.978
+CRC-Response  - 35,11,F000,-273*ddac * 28-03-2025 16:00:00.185
+Command Sent READ TEMPERATURE - #36,11*013a  * 28-03-2025 16:00:10.344
+CRC-Response  - 36,11,F000,-273*deaf * 28-03-2025 16:00:10.554
+Command Sent READ TEMPERATURE - #37,11*fd3b  * 28-03-2025 16:00:20.702
+CRC-Response  - 37,11,F000,-273*1faf * 28-03-2025 16:00:20.917
+Command Sent READ TEMPERATURE - #38,11*e938  * 28-03-2025 16:00:31.80
+CRC-Response  - 38,11,F000,-273*10a0 * 28-03-2025 16:00:31.297
+Command Sent READ TEMPERATURE - #39,11*1539  * 28-03-2025 16:00:42.463
+CRC-Response  - 39,11,F000,-273*d1a0 * 28-03-2025 16:00:42.864
+Command Sent READ TEMPERATURE - #40,11*498f  * 28-03-2025 16:00:53.32
+CRC-Response  - 40,11,F000,-273*daee * 28-03-2025 16:00:53.248
+Command Sent Rack-1 Picked from J12 - #41,2,1,61124,800,0,0*cc7c  * 28-03-2025 16:00:54.39
+CRC-Response  - 41,2,I001,1*a6d3 * 28-03-2025 16:00:54.250
+CRC-Response  - 41,2,F000,1*9982 * 28-03-2025 16:00:59.351
+RA Picked Rack From J12 * 28-03-2025 16:00:59.354
+Command Sent Rack-1 Placed in J11 - #42,3,1,57494,800,0,0*fa04  * 28-03-2025 16:00:59.943
+CRC-Response  - 42,3,I001,1*65e2 * 28-03-2025 16:01:00.159
+CRC-Response  - 42,3,F000,1*5ab3 * 28-03-2025 16:01:05.760
+RA Placed Rack in J11 * 28-03-2025 16:01:05.765
+Command Sent READ TEMPERATURE - #43,11*0d8f  * 28-03-2025 16:01:10.29
+CRC-Response  - 43,11,F000,-273*d9ed * 28-03-2025 16:01:10.247
+Command Sent READ TEMPERATURE - #44,11*798e  * 28-03-2025 16:01:20.417
+CRC-Response  - 44,11,F000,-273*1eeb * 28-03-2025 16:01:20.629
+Command Sent Home Command - #45,5,00111111*e889  * 28-03-2025 16:01:23.963
+CRC-Response  - 45,5,I001,00111111*95fc * 28-03-2025 16:01:24.174
+CRC-Response  - 45,5,F000*e8d7 * 28-03-2025 16:01:24.183
+Rack - 2Protocol Started * 28-03-2025 16:01:24.674
+Command Sent Rack-2 Picked from L2 - #46,2,2,13934,16380,0,0*23c6  * 28-03-2025 16:01:24.843
+CRC-Response  - 46,2,I001,2*7d22 * 28-03-2025 16:01:25.58
+CRC-Response  - 46,2,F000,2*4273 * 28-03-2025 16:01:31.822
+RA Picked Rack From L2 * 28-03-2025 16:01:31.826
+Command Sent Rack-2 Placed in J13 - #47,3,2,64754,800,0,0*8b45  * 28-03-2025 16:01:32.256
+CRC-Response  - 47,3,I001,2*74b2 * 28-03-2025 16:01:32.476
+CRC-Response  - 47,3,F000,2*4be3 * 28-03-2025 16:01:43.359
+RA Placed Rack in J13 * 28-03-2025 16:01:43.364
+Command Sent Rack-2 Placed in J13 - #48,1,2,2688,800 ,0*6425  * 28-03-2025 16:01:44.148
+CRC-Response  - 48,1,I001,2*9d03 * 28-03-2025 16:01:44.365
+CRC-Response  - 48,1,F000,2*a252 * 28-03-2025 16:01:52.140
+Command Sent READ TEMPERATURE - #49,11*d58c  * 28-03-2025 16:01:52.748
+CRC-Response  - 49,11,F000,-273*d3e7 * 28-03-2025 16:01:52.959
+Command Sent READ TEMPERATURE - #50,11*89b2  * 28-03-2025 16:02:03.125
+CRC-Response  - 50,11,F000,-273*da2f * 28-03-2025 16:02:03.335
+Command Sent READ TEMPERATURE - #51,11*75b3  * 28-03-2025 16:02:13.505
+CRC-Response  - 51,11,F000,-273*1b2f * 28-03-2025 16:02:13.717
+Command Sent READ TEMPERATURE - #52,11*31b3  * 28-03-2025 16:02:23.876
+CRC-Response  - 52,11,F000,-273*182c * 28-03-2025 16:02:24.86
+Command Sent READ TEMPERATURE - #53,11*cdb2  * 28-03-2025 16:02:34.267
+CRC-Response  - 53,11,F000,-273*d92c * 28-03-2025 16:02:34.479
+Command Sent READ TEMPERATURE - #54,11*b9b3  * 28-03-2025 16:02:44.662
+CRC-Response  - 54,11,F000,-273*1e2a * 28-03-2025 16:02:44.875
+Command Sent READ TEMPERATURE - #55,11*45b2  * 28-03-2025 16:02:56.43
+CRC-Response  - 55,11,F000,-273*df2a * 28-03-2025 16:02:56.256
+Command Sent Rack-1 Picked from J11 - #56,2,1,57494,800,0,0*8b99  * 28-03-2025 16:03:06.354
+CRC-Response  - 56,2,I001,1*8066 * 28-03-2025 16:03:06.679
+CRC-Response  - 56,2,F000,1*bf37 * 28-03-2025 16:03:12.723
+RA Picked Rack From J11 * 28-03-2025 16:03:12.728
+Command Sent Rack-1 Placed in J10 - #57,3,1,53864,800,0,0*480b  * 28-03-2025 16:03:13.373
+CRC-Response  - 57,3,I001,1*89f6 * 28-03-2025 16:03:13.586
+CRC-Response  - 57,3,F000,1*b6a7 * 28-03-2025 16:03:19.200
+RA Placed Rack in J10 * 28-03-2025 16:03:19.206
+Command Sent READ TEMPERATURE - #58,11*e9b0  * 28-03-2025 16:03:24.360
+CRC-Response  - 58,11,F000,-273*1226 * 28-03-2025 16:03:24.577
+Command Sent READ TEMPERATURE - #59,11*15b1  * 28-03-2025 16:03:41.742
+CRC-Response  - 59,11,F000,-273*d326 * 28-03-2025 16:03:42.3
+Command Sent Rack-2 Picked from J13 - #60,2,1,64754,800,0,0*8c9b  * 28-03-2025 16:03:43.668
+CRC-Response  - 60,2,I001,1*db89 * 28-03-2025 16:03:43.877
+CRC-Response  - 60,2,F000,1*e4d8 * 28-03-2025 16:03:50.304
+RA Picked Rack From J13 * 28-03-2025 16:03:50.308
+Command Sent Rack-2 Placed in J12 - #61,3,1,61124,800,0,0*be54  * 28-03-2025 16:03:50.568
+CRC-Response  - 61,3,I001,1*d219 * 28-03-2025 16:03:50.784
+CRC-Response  - 61,3,F000,1*ed48 * 28-03-2025 16:03:56.398
+RA Placed Rack in J12 * 28-03-2025 16:03:56.401
+Command Sent READ TEMPERATURE - #62,11*31f7  * 28-03-2025 16:04:00.661
+CRC-Response  - 62,11,F000,-273*196f * 28-03-2025 16:04:00.872
+Command Sent READ TEMPERATURE - #63,11*cdf6  * 28-03-2025 16:04:11.35
+CRC-Response  - 63,11,F000,-273*d86f * 28-03-2025 16:04:11.250
+Command Sent READ TEMPERATURE - #64,11*b9f7  * 28-03-2025 16:04:21.411
+CRC-Response  - 64,11,F000,-273*1f69 * 28-03-2025 16:04:21.797
+Command Sent READ TEMPERATURE - #65,11*45f6  * 28-03-2025 16:04:31.967
+CRC-Response  - 65,11,F000,-273*de69 * 28-03-2025 16:04:32.179
+Command Sent READ TEMPERATURE - #66,11*01f6  * 28-03-2025 16:04:42.344
+CRC-Response  - 66,11,F000,-273*dd6a * 28-03-2025 16:04:42.557
+Command Sent READ TEMPERATURE - #67,11*fdf7  * 28-03-2025 16:04:52.748
+CRC-Response  - 67,11,F000,-273*1c6a * 28-03-2025 16:04:52.957
+Command Sent READ TEMPERATURE - #68,11*e9f4  * 28-03-2025 16:05:04.123
+CRC-Response  - 68,11,F000,-273*1365 * 28-03-2025 16:05:04.338
+Command Sent READ TEMPERATURE - #69,11*15f5  * 28-03-2025 16:05:15.518
+CRC-Response  - 69,11,F000,-273*d265 * 28-03-2025 16:05:15.735
+Command Sent Rack-1 Picked from J10 - #70,2,1,53864,800,0,0*4e96  * 28-03-2025 16:05:19.773
+CRC-Response  - 70,2,I001,1*278d * 28-03-2025 16:05:19.985
+CRC-Response  - 70,2,F000,1*18dc * 28-03-2025 16:05:26.0
+RA Picked Rack From J10 * 28-03-2025 16:05:26.3
+Command Sent Rack-1 Placed in J9 - #71,3,1,39344,800,0,0*126f  * 28-03-2025 16:05:26.669
+CRC-Response  - 71,3,I001,1*2e1d * 28-03-2025 16:05:26.885
+CRC-Response  - 71,3,F000,1*114c * 28-03-2025 16:05:33.703
+RA Placed Rack in J9 * 28-03-2025 16:05:33.706
+Command Sent READ TEMPERATURE - #72,11*f1ca  * 28-03-2025 16:05:36.766
+CRC-Response  - 72,11,F000,-273*19ae * 28-03-2025 16:05:36.983
+Command Sent READ TEMPERATURE - #73,11*0dcb  * 28-03-2025 16:05:55.146
+CRC-Response  - 73,11,F000,-273*d8ae * 28-03-2025 16:05:55.364
+Command Sent Rack-2 Picked from J12 - #74,2,1,61124,800,0,0*33f4  * 28-03-2025 16:05:57.954
+CRC-Response  - 74,2,I001,1*f2cc * 28-03-2025 16:05:58.161
+CRC-Response  - 74,2,F000,1*cd9d * 28-03-2025 16:06:05.813
+RA Picked Rack From J12 * 28-03-2025 16:06:05.815
+Command Sent Rack-2 Placed in J11 - #75,3,1,57494,800,0,0*bdf5  * 28-03-2025 16:06:06.344
+CRC-Response  - 75,3,I001,1*fb5c * 28-03-2025 16:06:06.558
+CRC-Response  - 75,3,F000,1*c40d * 28-03-2025 16:06:12.168
+RA Placed Rack in J11 * 28-03-2025 16:06:12.170
+Command Sent READ TEMPERATURE - #76,11*c1cb  * 28-03-2025 16:06:16.960
+CRC-Response  - 76,11,F000,-273*ddab * 28-03-2025 16:06:17.168
+Command Sent Home Command - #77,5,00111111*ec75  * 28-03-2025 16:06:26.864
+CRC-Response  - 77,5,I001,00111111*b1ad * 28-03-2025 16:06:27.76
+CRC-Response  - 77,5,F000*c142 * 28-03-2025 16:06:27.85
+Rack - R3Protocol Started * 28-03-2025 16:06:27.589
+Command Sent Rack-3 Picked from L3 - #78,2,2,10304,16380,0,0*1545  * 28-03-2025 16:06:27.773
+CRC-Response  - 78,2,I001,2*cc4c * 28-03-2025 16:06:28.9
+CRC-Response  - 78,2,F000,2*f31d * 28-03-2025 16:06:34.466
+RA Picked Rack From L3 * 28-03-2025 16:06:34.468
+Command Sent Rack-3 Placed in J13 - #79,3,2,64754,800,0,0*516b  * 28-03-2025 16:06:34.671
+CRC-Response  - 79,3,I001,2*c5dc * 28-03-2025 16:06:34.882
+CRC-Response  - 79,3,F000,2*fa8d * 28-03-2025 16:06:46.175
+RA Placed Rack in J13 * 28-03-2025 16:06:46.178
+Command Sent Rack-3 Placed in J13 - #80,1,2,2688,800 ,0*f561  * 28-03-2025 16:06:47.42
+CRC-Response  - 80,1,I001,2*27bd * 28-03-2025 16:06:47.251
+CRC-Response  - 80,1,F000,2*18ec * 28-03-2025 16:06:55.40
+Command Sent READ TEMPERATURE - #81,11*b49e  * 28-03-2025 16:06:55.652
+CRC-Response  - 81,11,F000,-273*1ee2 * 28-03-2025 16:06:55.862
+Command Sent READ TEMPERATURE - #82,11*f09e  * 28-03-2025 16:07:06.23
+CRC-Response  - 82,11,F000,-273*1de1 * 28-03-2025 16:07:06.265
+Command Sent WATER VALVE - 1 CONTROL ON - #83,13,1,1*9c13  * 28-03-2025 16:07:17.50
+CRC-Response  - 83,13,F000*3b06 * 28-03-2025 16:07:17.266
+Command Sent Rack-1 Picked from J9 - #84,2,1,39344,800,0,0*b0a6  * 28-03-2025 16:07:35.52
+CRC-Response  - 84,2,I001,1*e6fc * 28-03-2025 16:07:35.286
+CRC-Response  - 84,2,F000,1*d9ad * 28-03-2025 16:07:43.436
+RA Picked Rack From J9 * 28-03-2025 16:07:43.438
+Command Sent Rack-1 Placed in W1 - #85,3,1,42974,800,0,0*97f5  * 28-03-2025 16:07:43.965
+CRC-Response  - 85,3,I001,1*ef6c * 28-03-2025 16:07:44.180
+CRC-Response  - 85,3,F000,1*d03d * 28-03-2025 16:07:49.785
+RA Placed Rack in W1 * 28-03-2025 16:07:49.788
+Command Sent READ TEMPERATURE - #86,11*c09f  * 28-03-2025 16:07:54.427
+CRC-Response  - 86,11,F000,-273*d9e4 * 28-03-2025 16:07:54.639
+Command Sent Rack-2 Picked from J11 - #87,2,1,57494,800,0,0*6b89  * 28-03-2025 16:08:12.769
+CRC-Response  - 87,2,I001,1*e90c * 28-03-2025 16:08:13.102
+CRC-Response  - 87,2,F000,1*d65d * 28-03-2025 16:08:19.808
+RA Picked Rack From J11 * 28-03-2025 16:08:19.811
+Command Sent Rack-2 Placed in J10 - #88,3,1,53864,800,0,0*4171  * 28-03-2025 16:08:20.287
+CRC-Response  - 88,3,I001,1*15fd * 28-03-2025 16:08:20.497
+CRC-Response  - 88,3,F000,1*2aac * 28-03-2025 16:08:26.120
+RA Placed Rack in J10 * 28-03-2025 16:08:26.123
+Command Sent READ TEMPERATURE - #89,11*d49c  * 28-03-2025 16:08:30.798
+CRC-Response  - 89,11,F000,-273*d6eb * 28-03-2025 16:08:31.17
+Command Sent Rack-3 Picked from J13 - #90,2,1,64754,800,0,0*72cf  * 28-03-2025 16:08:46.558
+CRC-Response  - 90,2,I001,1*cfb9 * 28-03-2025 16:08:46.770
+CRC-Response  - 90,2,F000,1*f0e8 * 28-03-2025 16:08:53.195
+RA Picked Rack From J13 * 28-03-2025 16:08:53.198
+Command Sent Rack-3 Placed in J12 - #91,3,1,61124,800,0,0*4000  * 28-03-2025 16:08:53.462
+CRC-Response  - 91,3,I001,1*c629 * 28-03-2025 16:08:53.676
+CRC-Response  - 91,3,F000,1*f978 * 28-03-2025 16:08:59.280
+RA Placed Rack in J12 * 28-03-2025 16:08:59.283
+Command Sent READ TEMPERATURE - #92,11*30a3  * 28-03-2025 16:09:04.177
+CRC-Response  - 92,11,F000,-273*1d20 * 28-03-2025 16:09:04.391
+Command Sent READ TEMPERATURE - #93,11*cca2  * 28-03-2025 16:09:14.567
+CRC-Response  - 93,11,F000,-273*dc20 * 28-03-2025 16:09:14.777
+Command Sent READ TEMPERATURE - #94,11*b8a3  * 28-03-2025 16:09:24.944
+CRC-Response  - 94,11,F000,-273*1b26 * 28-03-2025 16:09:25.157
+Command Sent READ TEMPERATURE - #95,11*44a2  * 28-03-2025 16:09:36.319
+CRC-Response  - 95,11,F000,-273*da26 * 28-03-2025 16:09:36.590
+Command Sent READ TEMPERATURE - #96,11*00a2  * 28-03-2025 16:09:47.761
+CRC-Response  - 96,11,F000,-273*d925 * 28-03-2025 16:09:47.975
+Command Sent WATER VALVE - 1 CONTROL OFF - #97,13,1,0*3fde  * 28-03-2025 16:09:50.380
+CRC-Response  - 97,13,F000*3e65 * 28-03-2025 16:09:50.588
+Command Sent Rack-1 Picked from W1 - #98,2,1,42974,800,0,0*7bb7  * 28-03-2025 16:09:50.765
+CRC-Response  - 98,2,I001,1*2538 * 28-03-2025 16:09:50.977
+CRC-Response  - 98,2,F000,1*1a69 * 28-03-2025 16:09:58.217
+RA Picked Rack From W1 * 28-03-2025 16:09:58.221
+Command Sent Rack-1 Placed in J8 - #99,3,1,35714,800,0,0*6cf1  * 28-03-2025 16:09:58.672
+CRC-Response  - 99,3,I001,1*2ca8 * 28-03-2025 16:09:58.884
+CRC-Response  - 99,3,F000,1*13f9 * 28-03-2025 16:10:04.893
+RA Placed Rack in J8 * 28-03-2025 16:10:04.897
+Command Sent Rack-1 Placed in J8 - #100,1,1,64754,800 ,0*b3a6  * 28-03-2025 16:10:06.34
+CRC-Response  - 100,1,I001,1*2308 * 28-03-2025 16:10:06.250
+CRC-Response  - 100,1,F000,1*1c59 * 28-03-2025 16:10:10.333
+Command Sent READ TEMPERATURE - #101,11*4f5f  * 28-03-2025 16:10:14.394
+CRC-Response  - 101,11,F000,-273*d3c1 * 28-03-2025 16:10:14.602
+Command Sent READ TEMPERATURE - #102,11*0b5f  * 28-03-2025 16:10:24.762
+CRC-Response  - 102,11,F000,-273*d0c2 * 28-03-2025 16:10:24.974
+Command Sent Rack-2 Picked from J10 - #103,2,1,53864,800,0,0*9f7d  * 28-03-2025 16:10:27.671
+CRC-Response  - 103,2,I001,1*39b8 * 28-03-2025 16:10:27.885
+CRC-Response  - 103,2,F000,1*06e9 * 28-03-2025 16:10:34.309
+RA Picked Rack From J10 * 28-03-2025 16:10:34.314
+Command Sent Rack-2 Placed in J9 - #104,3,1,39344,800,0,0*4b0c  * 28-03-2025 16:10:34.572
+CRC-Response  - 104,3,I001,1*2fc8 * 28-03-2025 16:10:34.787
+CRC-Response  - 104,3,F000,1*1099 * 28-03-2025 16:10:41.605
+RA Placed Rack in J9 * 28-03-2025 16:10:41.608
+Command Sent READ TEMPERATURE - #105,11*7f5e  * 28-03-2025 16:10:44.672
+CRC-Response  - 105,11,F000,-273*17c4 * 28-03-2025 16:10:44.887
+Command Sent Rack-3 Picked from J12 - #106,2,1,61124,800,0,0*1e22  * 28-03-2025 16:10:59.853
+CRC-Response  - 106,2,I001,1*29a8 * 28-03-2025 16:11:00.79
+CRC-Response  - 106,2,F000,1*16f9 * 28-03-2025 16:11:07.707
+RA Picked Rack From J12 * 28-03-2025 16:11:07.709
+Command Sent Rack-3 Placed in J11 - #107,3,1,57494,800,0,0*9023  * 28-03-2025 16:11:08.261
+CRC-Response  - 107,3,I001,1*2038 * 28-03-2025 16:11:08.479
+CRC-Response  - 107,3,F000,1*1f69 * 28-03-2025 16:11:14.75
+RA Placed Rack in J11 * 28-03-2025 16:11:14.78
+Command Sent READ TEMPERATURE - #108,11*d35c  * 28-03-2025 16:11:19.53
+CRC-Response  - 108,11,F000,-273*dac8 * 28-03-2025 16:11:19.272
+Command Sent Home Command - #109,11*2f5d  * 28-03-2025 16:11:29.641
+CRC-Response  - 109,11,F000,-273*1bc8 * 28-03-2025 16:11:29.846
+Command Sent Home Command - #110,5,00111111*fa11  * 28-03-2025 16:11:30.35
+CRC-Response  - 110,5,I001,00111111*31d8 * 28-03-2025 16:11:30.250
+CRC-Response  - 110,5,F000*4a03 * 28-03-2025 16:11:30.252
+Command Sent READ TEMPERATURE - #111,11*8f62  * 28-03-2025 16:11:40.13
+CRC-Response  - 111,11,F000,-273*d300 * 28-03-2025 16:11:40.228
+Command Sent READ TEMPERATURE - #112,11*cb62  * 28-03-2025 16:11:48.582
+CRC-Response  - 112,11,F000,-273*d003 * 28-03-2025 16:11:48.787
+Command Sent READ TEMPERATURE - #113,11*3763  * 28-03-2025 16:11:50.413
+CRC-Response  - 113,11,F000,-273*1103 * 28-03-2025 16:11:50.620
+Command Sent READ TEMPERATURE - #114,11*4362  * 28-03-2025 16:12:00.797
+CRC-Response  - 114,11,F000,-273*d605 * 28-03-2025 16:12:01.13
+Command Sent READ TEMPERATURE - #115,11*bf63  * 28-03-2025 16:12:11.181
+CRC-Response  - 115,11,F000,-273*1705 * 28-03-2025 16:12:11.396
+Command Sent READ TEMPERATURE - #116,11*fb63  * 28-03-2025 16:12:21.573
+CRC-Response  - 116,11,F000,-273*1406 * 28-03-2025 16:12:21.826
+Command Sent WATER VALVE - 1 CONTROL ON - #117,13,1,1*f253  * 28-03-2025 16:12:23.957
+CRC-Response  - 117,13,F000*cb69 * 28-03-2025 16:12:24.174
+Command Sent Rack-2 Picked from J9 - #118,2,1,39344,800,0,0*5b73  * 28-03-2025 16:12:41.953
+CRC-Response  - 118,2,I001,1*20cd * 28-03-2025 16:12:42.211
+CRC-Response  - 118,2,F000,1*1f9c * 28-03-2025 16:12:50.339
+RA Picked Rack From J9 * 28-03-2025 16:12:50.344
+Command Sent Rack-2 Placed in W1 - #119,3,1,42974,800,0,0*7c20  * 28-03-2025 16:12:50.891
+CRC-Response  - 119,3,I001,1*295d * 28-03-2025 16:12:51.108
+CRC-Response  - 119,3,F000,1*160c * 28-03-2025 16:12:56.724
+RA Placed Rack in W1 * 28-03-2025 16:12:56.731
+Command Sent WATER VALVE - 2 CONTROL ON - #120,13,2,1*e4f6  * 28-03-2025 16:12:57.567
+CRC-Response  - 120,13,F000*f4bf * 28-03-2025 16:12:57.775
+Command Sent Rack-1 Picked from J8 - #121,2,2,35714,800,0,0*c4be  * 28-03-2025 16:13:05.561
+CRC-Response  - 121,2,I001,2*4a52 * 28-03-2025 16:13:05.800
+5 Secconds Timer increments in Jar J11 for R3 as Command Execution under process in other function and timer upadted for tmr_r3_incub() * 28-03-2025 16:13:14.502
+CRC-Response  - 121,2,F000,2*7503 * 28-03-2025 16:13:14.968
+RA Picked Rack From J8 * 28-03-2025 16:13:14.973
+Command Sent Rack-1 Placed in W2 - #122,3,2,46604,800,0,0*6af1  * 28-03-2025 16:13:15.518
+CRC-Response  - 122,3,F006,2*b7d2 * 28-03-2025 16:13:15.728
+Command Sent Rack-1 Placed in W2 - #122,3,1,46604,800,0,0*6bb2  * 28-03-2025 16:13:15.899
+5 Secconds Timer increments in Jar J11 for R3 as Command Execution under process in other function and timer upadted for tmr_r3_incub() * 28-03-2025 16:13:19.501
+CRC-Response  - 122,3,F006,1*b692 * 28-03-2025 16:13:21.109
+Command Sent Rack-1 Placed in W2 - #122,3,2,46604,800,0,0*6af1  * 28-03-2025 16:13:21.281
+5 Secconds Timer increments in Jar J11 for R3 as Command Execution under process in other function and timer upadted for tmr_r3_incub() * 28-03-2025 16:13:24.512
+CRC-Response  - 122,3,F006,2*b7d2 * 28-03-2025 16:13:26.488
+Command Sent Rack-1 Placed in W2 - #122,3,1,46604,800,0,0*6bb2  * 28-03-2025 16:13:26.646
+5 Secconds Timer increments in Jar J11 for R3 as Command Execution under process in other function and timer upadted for tmr_r3_incub() * 28-03-2025 16:13:29.518
+CRC-Response  - 122,3,F006,1*b692 * 28-03-2025 16:13:31.863
+Command Sent Rack-1 Placed in W2 - #122,3,2,46604,800,0,0*6af1  * 28-03-2025 16:13:32.36
+5 Secconds Timer increments in Jar J11 for R3 as Command Execution under process in other function and timer upadted for tmr_r3_incub() * 28-03-2025 16:13:34.526
+CRC-Response  - 122,3,F006,2*b7d2 * 28-03-2025 16:13:37.251
+Command Sent Rack-1 Placed in W2 - #122,3,1,46604,800,0,0*6bb2  * 28-03-2025 16:13:37.410
+5 Secconds Timer increments in Jar J11 for R3 as Command Execution under process in other function and timer upadted for tmr_r3_incub() * 28-03-2025 16:13:39.530
+CRC-Response  - 122,3,F006,1*b692 * 28-03-2025 16:13:42.624
+Command Sent Rack-1 Placed in W2 - #122,3,2,46604,800,0,0*6af1  * 28-03-2025 16:13:42.784
+5 Secconds Timer increments in Jar J11 for R3 as Command Execution under process in other function and timer upadted for tmr_r3_incub() * 28-03-2025 16:13:44.529
+CRC-Response  - 122,3,F006,2*b7d2 * 28-03-2025 16:13:48.1
+Command Sent Rack-1 Placed in W2 - #122,3,1,46604,800,0,0*6bb2  * 28-03-2025 16:13:48.171
+5 Secconds Timer increments in Jar J11 for R3 as Command Execution under process in other function and timer upadted for tmr_r3_incub() * 28-03-2025 16:13:49.549
+CRC-Response  - 122,3,F006,1*b692 * 28-03-2025 16:13:53.377
+Command Sent Rack-1 Placed in W2 - #122,3,2,46604,800,0,0*6af1  * 28-03-2025 16:13:53.553
+5 Secconds Timer increments in Jar J11 for R3 as Command Execution under process in other function and timer upadted for tmr_r3_incub() * 28-03-2025 16:13:54.547
+CRC-Response  - 122,3,F006,2*b7d2 * 28-03-2025 16:13:58.762
+Command Sent Rack-1 Placed in W2 - #122,3,1,46604,800,0,0*6bb2  * 28-03-2025 16:13:58.931
+5 Secconds Timer increments in Jar J11 for R3 as Command Execution under process in other function and timer upadted for tmr_r3_incub() * 28-03-2025 16:13:59.554
+CRC-Response  - 122,3,F006,1*b692 * 28-03-2025 16:14:04.155
+Command Sent Rack-1 Placed in W2 - #122,3,2,46604,800,0,0*6af1  * 28-03-2025 16:14:04.314
+5 Secconds Timer increments in Jar J11 for R3 as Command Execution under process in other function and timer upadted for tmr_r3_incub() * 28-03-2025 16:14:04.555
+CRC-Response  - 122,3,F006,2*b7d2 * 28-03-2025 16:14:09.519
+11 Secconds Timer increments in Jar J11 for R3 as Command Execution under process in other function and timer upadted for tmr_r3_incub() * 28-03-2025 16:14:09.550
+Command Sent Rack-1 Placed in W2 - #122,3,1,46604,800,0,0*6bb2  * 28-03-2025 16:14:09.681
+CRC-Response  - 122,3,F006,1*b692 * 28-03-2025 16:14:14.886
+Command Sent Rack-1 Placed in W2 - #122,3,2,46604,800,0,0*6af1  * 28-03-2025 16:14:15.54
+CRC-Response  - 122,3,F006,2*b7d2 * 28-03-2025 16:14:20.283
+Command Sent Rack-1 Placed in W2 - #122,3,1,46604,800,0,0*6bb2  * 28-03-2025 16:14:20.491
+5 Secconds Timer increments in Jar J11 for R3 as Command Execution under process in other function and timer upadted for tmr_r3_incub() * 28-03-2025 16:14:20.553
+5 Secconds Timer increments in Jar J11 for R3 as Command Execution under process in other function and timer upadted for tmr_r3_incub() * 28-03-2025 16:14:25.548
+CRC-Response  - 122,3,F006,1*b692 * 28-03-2025 16:14:25.713
+Command Sent Rack-1 Placed in W2 - #122,3,2,46604,800,0,0*6af1  * 28-03-2025 16:14:25.874
+5 Secconds Timer increments in Jar J11 for R3 as Command Execution under process in other function and timer upadted for tmr_r3_incub() * 28-03-2025 16:14:30.541
+CRC-Response  - 122,3,F006,2*b7d2 * 28-03-2025 16:14:31.84
+Command Sent Rack-1 Placed in W2 - #122,3,1,46604,800,0,0*6bb2  * 28-03-2025 16:14:31.256
+User Aborted / Stopped the application forcefully  * 28-03-2025 16:14:33.708
+CRC-Response  - 122,3,F006,1*b692 * 28-03-2025 16:14:36.471
+Command Sent WATER VALVE - 1 CONTROL OFF - #122,3,2,46604,800,0,0*6af1  * 28-03-2025 16:14:36.755
+Command Sent WATER VALVE - 2 CONTROL ON - #123,13,1,0*3187  * 28-03-2025 16:14:41.920
+CRC-Response  - 123,13,F000*04ab * 28-03-2025 16:14:42.132
+Command Sent READ TEMPERATURE - #124,11*4326  * 28-03-2025 16:14:57.892
+CRC-Response  - 124,11,F000,-273*d746 * 28-03-2025 16:14:58.114
+Command Sent READ TEMPERATURE - #125,11*bf27  * 28-03-2025 16:15:08.260
+CRC-Response  - 125,11,F000,-273*1646 * 28-03-2025 16:15:08.476
+Command Sent READ TEMPERATURE - #126,11*fb27  * 28-03-2025 16:15:18.619
+CRC-Response  - 126,11,F000,-273*1545 * 28-03-2025 16:15:18.832
+Command Sent READ TEMPERATURE - #127,11*0726  * 28-03-2025 16:15:29.10
+CRC-Response  - 127,11,F000,-273*d445 * 28-03-2025 16:15:29.220
+Command Sent READ TEMPERATURE - #128,11*1325  * 28-03-2025 16:15:39.374
+CRC-Response  - 128,11,F000,-273*db4a * 28-03-2025 16:15:39.603
+Command Sent READ TEMPERATURE - #129,11*ef24  * 28-03-2025 16:15:49.784
+CRC-Response  - 129,11,F000,-273*1a4a * 28-03-2025 16:15:49.996
+Command Sent READ TEMPERATURE - #130,11*b31a  * 28-03-2025 16:16:00.155
+CRC-Response  - 130,11,F000,-273*1382 * 28-03-2025 16:16:00.369
+Command Sent READ TEMPERATURE - #131,11*4f1b  * 28-03-2025 16:16:10.534
+CRC-Response  - 131,11,F000,-273*d282 * 28-03-2025 16:16:10.748
+Command Sent READ TEMPERATURE - #132,11*0b1b  * 28-03-2025 16:16:20.917
+CRC-Response  - 132,11,F000,-273*d181 * 28-03-2025 16:16:21.164
+Command Sent READ TEMPERATURE - #133,11*f71a  * 28-03-2025 16:16:31.340
+CRC-Response  - 133,11,F000,-273*1081 * 28-03-2025 16:16:31.552
+Command Sent READ TEMPERATURE - #134,11*831b  * 28-03-2025 16:16:41.704
+CRC-Response  - 134,11,F000,-273*d787 * 28-03-2025 16:16:41.923
+Command Sent READ TEMPERATURE - #135,11*7f1a  * 28-03-2025 16:16:52.75
+CRC-Response  - 135,11,F000,-273*1687 * 28-03-2025 16:16:52.288
+Command Sent READ TEMPERATURE - #136,11*3b1a  * 28-03-2025 16:17:02.451
+CRC-Response  - 136,11,F000,-273*1584 * 28-03-2025 16:17:02.660
+Command Sent READ TEMPERATURE - #137,11*c71b  * 28-03-2025 16:17:12.818
+CRC-Response  - 137,11,F000,-273*d484 * 28-03-2025 16:17:13.159
+Command Sent READ TEMPERATURE - #138,11*d318  * 28-03-2025 16:17:23.312
+CRC-Response  - 138,11,F000,-273*db8b * 28-03-2025 16:17:23.528
+Command Sent READ TEMPERATURE - #139,11*2f19  * 28-03-2025 16:17:33.683
+CRC-Response  - 139,11,F000,-273*1a8b * 28-03-2025 16:17:33.897
+Command Sent READ TEMPERATURE - #140,11*73af  * 28-03-2025 16:17:44.46
+CRC-Response  - 140,11,F000,-273*11c5 * 28-03-2025 16:17:44.320
+Command Sent READ TEMPERATURE - #141,11*8fae  * 28-03-2025 16:17:54.468
+CRC-Response  - 141,11,F000,-273*d0c5 * 28-03-2025 16:17:54.682
+Command Sent READ TEMPERATURE - #142,11*cbae  * 28-03-2025 16:18:04.860
+CRC-Response  - 142,11,F000,-273*d3c6 * 28-03-2025 16:18:05.76
+Command Sent READ TEMPERATURE - #143,11*37af  * 28-03-2025 16:18:15.237
+CRC-Response  - 143,11,F000,-273*12c6 * 28-03-2025 16:18:15.449
+Command Sent READ TEMPERATURE - #144,11*43ae  * 28-03-2025 16:18:25.617
+CRC-Response  - 144,11,F000,-273*d5c0 * 28-03-2025 16:18:25.829
+Command Sent READ TEMPERATURE - #145,11*bfaf  * 28-03-2025 16:18:35.986
+CRC-Response  - 145,11,F000,-273*14c0 * 28-03-2025 16:18:36.208
+Command Sent READ TEMPERATURE - #146,11*fbaf  * 28-03-2025 16:18:46.379
+CRC-Response  - 146,11,F000,-273*17c3 * 28-03-2025 16:18:46.589
+Command Sent READ TEMPERATURE - #147,11*07ae  * 28-03-2025 16:18:56.747
+CRC-Response  - 147,11,F000,-273*d6c3 * 28-03-2025 16:18:56.962
+Command Sent READ TEMPERATURE - #148,11*13ad  * 28-03-2025 16:19:07.138
+CRC-Response  - 148,11,F000,-273*d9cc * 28-03-2025 16:19:07.356
+Command Sent READ TEMPERATURE - #149,11*efac  * 28-03-2025 16:19:17.526
+CRC-Response  - 149,11,F000,-273*18cc * 28-03-2025 16:19:17.736
+Command Sent READ TEMPERATURE - #150,11*b392  * 28-03-2025 16:19:27.903
+CRC-Response  - 150,11,F000,-273*1104 * 28-03-2025 16:19:28.117
+Command Sent READ TEMPERATURE - #151,11*4f93  * 28-03-2025 16:19:38.266
+CRC-Response  - 151,11,F000,-273*d004 * 28-03-2025 16:19:38.482
+Command Sent READ TEMPERATURE - #152,11*0b93  * 28-03-2025 16:19:48.664
+CRC-Response  - 152,11,F000,-273*d307 * 28-03-2025 16:19:48.897
+Command Sent READ TEMPERATURE - #153,11*f792  * 28-03-2025 16:19:59.48
+CRC-Response  - 153,11,F000,-273*1207 * 28-03-2025 16:19:59.260
+Command Sent READ TEMPERATURE - #154,11*8393  * 28-03-2025 16:20:09.418
+CRC-Response  - 154,11,F000,-273*d501 * 28-03-2025 16:20:09.636
+Command Sent READ TEMPERATURE - #155,11*7f92  * 28-03-2025 16:20:19.794
+CRC-Response  - 155,11,F000,-273*1401 * 28-03-2025 16:20:20.10
+Command Sent READ TEMPERATURE - #156,11*3b92  * 28-03-2025 16:20:30.169
+CRC-Response  - 156,11,F000,-273*1702 * 28-03-2025 16:20:30.381
+Command Sent READ TEMPERATURE - #157,11*c793  * 28-03-2025 16:20:40.539
+CRC-Response  - 157,11,F000,-273*d602 * 28-03-2025 16:20:40.753
+Command Sent READ TEMPERATURE - #158,11*d390  * 28-03-2025 16:20:50.909
+CRC-Response  - 158,11,F000,-273*d90d * 28-03-2025 16:20:51.122
+Command Sent READ TEMPERATURE - #159,11*2f91  * 28-03-2025 16:21:01.289
+CRC-Response  - 159,11,F000,-273*180d * 28-03-2025 16:21:01.507
+Command Sent READ TEMPERATURE - #160,11*b3d6  * 28-03-2025 16:21:11.674
+CRC-Response  - 160,11,F000,-273*1047 * 28-03-2025 16:21:11.886
+Command Sent READ TEMPERATURE - #161,11*4fd7  * 28-03-2025 16:21:22.50
+CRC-Response  - 161,11,F000,-273*d147 * 28-03-2025 16:21:22.261
+Command Sent READ TEMPERATURE - #162,11*0bd7  * 28-03-2025 16:21:32.426
+CRC-Response  - 162,11,F000,-273*d244 * 28-03-2025 16:21:32.701
+Command Sent READ TEMPERATURE - #163,11*f7d6  * 28-03-2025 16:21:42.862
+CRC-Response  - 163,11,F000,-273*1344 * 28-03-2025 16:21:43.77
+Command Sent READ TEMPERATURE - #164,11*83d7  * 28-03-2025 16:21:53.236
+CRC-Response  - 164,11,F000,-273*d442 * 28-03-2025 16:21:53.453
+Command Sent READ TEMPERATURE - #165,11*7fd6  * 28-03-2025 16:22:03.611
+CRC-Response  - 165,11,F000,-273*1542 * 28-03-2025 16:22:03.827
+Command Sent READ TEMPERATURE - #166,11*3bd6  * 28-03-2025 16:22:13.989
+CRC-Response  - 166,11,F000,-273*1641 * 28-03-2025 16:22:14.206
+Command Sent READ TEMPERATURE - #167,11*c7d7  * 28-03-2025 16:22:24.377
+CRC-Response  - 167,11,F000,-273*d741 * 28-03-2025 16:22:24.621
+Command Sent READ TEMPERATURE - #168,11*d3d4  * 28-03-2025 16:22:34.789
+CRC-Response  - 168,11,F000,-273*d84e * 28-03-2025 16:22:35.3
+Command Sent READ TEMPERATURE - #169,11*2fd5  * 28-03-2025 16:22:45.163
+CRC-Response  - 169,11,F000,-273*194e * 28-03-2025 16:22:45.381
+Command Sent READ TEMPERATURE - #170,11*73eb  * 28-03-2025 16:22:55.535
+CRC-Response  - 170,11,F000,-273*1086 * 28-03-2025 16:22:55.751
+Command Sent READ TEMPERATURE - #171,11*8fea  * 28-03-2025 16:23:05.903
+CRC-Response  - 171,11,F000,-273*d186 * 28-03-2025 16:23:06.118
+Command Sent READ TEMPERATURE - #172,11*cbea  * 28-03-2025 16:23:16.273
+CRC-Response  - 172,11,F000,-273*d285 * 28-03-2025 16:23:16.492
+Command Sent READ TEMPERATURE - #173,11*37eb  * 28-03-2025 16:23:26.640
+CRC-Response  - 173,11,F000,-273*1385 * 28-03-2025 16:23:26.851
+Command Sent READ TEMPERATURE - #174,11*43ea  * 28-03-2025 16:23:37.26
+CRC-Response  - 174,11,F000,-273*d483 * 28-03-2025 16:23:37.236
+Command Sent READ TEMPERATURE - #175,11*bfeb  * 28-03-2025 16:23:47.407
+CRC-Response  - 175,11,F000,-273*1583 * 28-03-2025 16:23:47.622
+Command Sent READ TEMPERATURE - #176,11*fbeb  * 28-03-2025 16:23:57.797
+CRC-Response  - 176,11,F000,-273*1680 * 28-03-2025 16:23:58.102

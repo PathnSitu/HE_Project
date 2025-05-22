@@ -1,0 +1,13 @@
+Command * RACK HOLDING STATUS - #0,7*d92c
+ * 12-12-2023 16:05:01.765
+Device Intialization started * 12-12-2023 16:05:08.107
+Command * Home Command - #1,5,11111111*b681
+ * 12-12-2023 16:05:08.109
+Device Intialization started * 12-12-2023 16:06:33.302
+Command * RACK HOLDING STATUS - #2,7*198d
+ * 12-12-2023 16:07:18.609
+Response  - 2,7,F000,01*583a * 12-12-2023 16:07:18.810
+Device Intialization started * 12-12-2023 16:08:29.905
+Command * RACK HOLDING STATUS - #3,7*d9dc
+ * 12-12-2023 16:09:21.468
+Response  - 3,7,F000,01*a43e * 12-12-2023 16:09:21.687
